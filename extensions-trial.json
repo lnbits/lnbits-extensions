@@ -1,0 +1,13 @@
+{
+    "extensions": [
+        {
+            "id": "scheduledpayments",
+            "name": "Scheduled Payments",
+            "shortDescription": "Schedule recurring payments in the future.",
+            "icon": "schedule",
+            "archive": "https://github.com/motorina0/lnbits-extensions/raw/9c274add8759a198b75691e19c540c18e1967876/extensions/scheduledpayments.zip",
+            "hash": "",
+            "presentation": ""
+        }
+    ]
+}
