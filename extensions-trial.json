@@ -5,9 +5,42 @@
             "name": "Scheduled Payments",
             "shortDescription": "Schedule recurring payments in the future.",
             "icon": "schedule",
-            "archive": "https://github.com/motorina0/lnbits-extensions/raw/9c274add8759a198b75691e19c540c18e1967876/extensions/scheduledpayments.zip",
+            "archive": "https://github.com/lnbits/lnbits-extensions/raw/9c274add8759a198b75691e19c540c18e1967876/extensions/scheduledpayments.zip",
             "hash": "",
             "presentation": ""
-        }
+        },
+        {
+            "id": "lnurlp",
+            "name": "LNURL Pay Links",
+            "version": 1,
+            "shortDescription": "Upgrade to version 111111111",
+            "icon": "receipt",
+            "details": "All charge names should be <code>111111111</code>. API panel must show: <br> <h1>111111111</h1>",
+            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/new/lnurlp/1/lnurlp.zip",
+            "hash": "a22d02de6bf306a7a504cd344e032cc6d48837a1d4aeb569a55a57507bf9a43a",
+            "presentation": ""
+        },
+        {
+            "id": "lnurlp",
+            "name": "LNURL Pay Links",
+            "version": 2,
+            "shortDescription": "Upgrade to version 22222",
+            "icon": "receipt",
+            "details": "All charge names should be <code>22222</code>. API panel must show: <br> <h1>22222</h1>",
+            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/new/lnurlp/2/lnurlp.zip",
+            "hash": "3ec5fd66d8eb3495a801f87ebaf662afe6b8aa01eb67d7518533ecd6ff9d310d",
+            "presentation": ""
+        },
+        {
+            "id": "lnurlp",
+            "name": "LNURL Pay Links",
+            "version": 3,
+            "shortDescription": "Upgrade to version 33333",
+            "icon": "receipt",
+            "details": "All charge names should be <code>3333</code>. API panel must show: <br> <h1>3333</h1>",
+            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/new/lnurlp/3/lnurlp.zip",
+            "hash": "a68a43f3eec7d5ed1bda845c240f7338629271fd9923ac8a97e24c185b16c41d",
+            "presentation": ""
+        },
     ]
 }
