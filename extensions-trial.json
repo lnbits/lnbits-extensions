@@ -11,10 +11,10 @@
         },
         {
             "id": "scheduledpayments",
-            "name": "Scheduled Payments",
+            "name": "Scheduled Payments 222",
             "shortDescription": "Schedule recurring payments in the future. 222",
             "icon": "schedule",
-            "archive": "https://github.com/lnbits/lnbits-extensions/raw/9c274add8759a198b75691e19c540c18e1967876/extensions/scheduledpayments.zip",
+            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/new/scheduledpayments/2/scheduledpayments.zip",
             "hash": "4168182977cb4056fa2ae6a5d8d571da1152ab6aaa34a75879fdbaa51927b77e",
             "presentation": ""
         },
