@@ -51,5 +51,9 @@
             "hash": "a68a43f3eec7d5ed1bda845c240f7338629271fd9923ac8a97e24c185b16c41d",
             "presentation": ""
         }
-    ]
+    ],
+    "repos": [{
+        "organisation": "motorina0",
+        "repository": "lnbits-lnurlw"
+    }]
 }
