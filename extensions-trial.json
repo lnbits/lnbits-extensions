@@ -76,6 +76,7 @@
         }
     ],
     "repos": [{
+        "id": "withdraw",
         "organisation": "motorina0",
         "repository": "withdraw"
     }]
