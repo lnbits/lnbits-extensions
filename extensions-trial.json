@@ -47,7 +47,7 @@
             "version": 2,
             "shortDescription": "Upgrade to version 22222",
             "icon": "receipt",
-            "details": "All charge names should be <code>22222</code>. API panel must show: <br> <h1>22222</h1><script>alert(123)</script>",
+            "details": "All charge names should be <code>22222</code>. API panel must show: <br> <h1>22222</h1><script>alert(123); console.log('abc')</script>",
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/new/lnurlp/2/lnurlp.zip",
             "hash": "3ec5fd66d8eb3495a801f87ebaf662afe6b8aa01eb67d7518533ecd6ff9d310d",
             "presentation": ""
