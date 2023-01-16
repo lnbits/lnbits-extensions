@@ -62,6 +62,17 @@
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/new/lnurlp/3/lnurlp.zip",
             "hash": "a68a43f3eec7d5ed1bda845c240f7338629271fd9923ac8a97e24c185b16c41d",
             "presentation": ""
+        },
+        {
+            "id": "withdraw",
+            "name": "LNURLw",
+            "version": "v2.2",
+            "shortDescription": "Make LNURL withdraw links",
+            "icon": "receipt",
+            "details": "x123",
+            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/new/withdraw/1/withdraw.zip",
+            "hash": "60c856f3fb94b4707fd2feed916dd86a8c802fc5645ee7e4e12bb7911fbf7237",
+            "presentation": ""
         }
     ],
     "repos": [{
