@@ -5,6 +5,7 @@
             "name": "Scheduled Payments 222",
             "shortDescription": "Schedule recurring payments in the future. 222",
             "icon": "schedule",
+            "version": 1,
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/new/scheduledpayments/2/scheduledpayments.zip",
             "hash": "4168182977cb4056fa2ae6a5d8d571da1152ab6aaa34a75879fdbaa51927b77e",
             "presentation": ""
