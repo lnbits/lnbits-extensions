@@ -75,9 +75,16 @@
             "hash": "60c856f3fb94b4707fd2feed916dd86a8c802fc5645ee7e4e12bb7911fbf7237"
         }
     ],
-    "repos": [{
-        "id": "withdraw",
-        "organisation": "motorina0",
-        "repository": "withdraw"
-    }]
+    "repos": [
+        {
+            "id": "withdraw",
+            "organisation": "motorina0",
+            "repository": "withdraw"
+        },
+        {
+            "id": "scheduledpayments",
+            "organisation": "motorina0",
+            "repository": "scheduled-payments-extension"
+        }
+    ]
 }
