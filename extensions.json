@@ -3,7 +3,7 @@
         {
             "id": "scheduledpayments",
             "name": "Scheduled Payments",
-            "shortDescription": "Schedule recurring payments in the future.",
+            "short_description": "Schedule recurring payments in the future.",
             "icon": "schedule",
             "version": "0.1",
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/scheduledpayments.zip",
