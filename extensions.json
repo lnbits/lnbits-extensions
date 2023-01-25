@@ -3,7 +3,7 @@
          {
             "id": "copilot",
             "name": "Streamer Copilot",
-            "version": "v2",
+            "version": "0.3",
             "short_description": "For streamers to accept sats and trigger gifs",
             "icon": "https://i.imgur.com/Az9NNR5.png",
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/copilot/streamer-copilot-extension.zip",
