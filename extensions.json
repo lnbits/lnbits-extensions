@@ -4,7 +4,7 @@
             "id": "copilot",
             "name": "Streamer Copilot",
             "version": "v2",
-            "short_description": "Tool to help streamers accept sats for tips",
+            "short_description": "Tool to help streamers accept sats for tips.",
             "iconURL": "https://i.imgur.com/Az9NNR5.png",
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/copilot/streamer-copilot-extension.zip",
             "hash": "74fbadf31460628a1f3a37458650e175"
