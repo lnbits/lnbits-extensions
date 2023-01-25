@@ -6,7 +6,7 @@
             "version": "v2",
             "short_description": "Tool to help streamers accept sats for tips",
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/copilot/streamer-copilot-extension.zip",
-            "hash": ""
+            "hash": "74fbadf31460628a1f3a37458650e175"
         }
     ]
 }
