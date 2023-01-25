@@ -1,4 +1,5 @@
 {
+    "featured": ["copilot"],
     "extensions": [
          {
             "id": "copilot",
