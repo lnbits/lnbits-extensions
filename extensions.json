@@ -1,13 +1,12 @@
 {
     "extensions": [
-        {
-            "id": "scheduledpayments",
-            "name": "Scheduled Payments",
-            "short_description": "Schedule recurring payments in the future.",
-            "icon": "schedule",
-            "version": "0.1",
-            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/scheduledpayments.zip",
-            "hash": "e010b0893d95ba586605e60aec45a3983612fdf3964d511b0cbcc1297df879ce"
+         {
+            "id": "copilot",
+            "name": "Streamer Copilot",
+            "version": "v2",
+            "short_description": "Tool to help streamers accept sats for tips",
+            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/withdraw/1/withdraw.zip",
+            "hash": ""
         }
     ]
 }
