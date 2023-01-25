@@ -5,7 +5,7 @@
             "name": "Streamer Copilot",
             "version": "v2",
             "short_description": "Tool to help streamers accept sats for tips",
-            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/withdraw/1/withdraw.zip",
+            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/copilot/streamer-copilot-extension.zip",
             "hash": ""
         }
     ]
