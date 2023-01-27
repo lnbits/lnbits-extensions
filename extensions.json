@@ -3,12 +3,23 @@
     "extensions": [
          {
             "id": "copilot",
+            "repo": "https://github.com/lnbits/streamer-copilot-extension",
             "name": "Streamer Copilot",
             "version": "0.3",
             "short_description": "For streamers to accept sats and trigger gifs",
             "icon": "https://raw.githubusercontent.com/lnbits/streamer-copilot-extension/main/static/bitcoin-streaming.png",
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/copilot/streamer-copilot-extension.zip",
             "hash": "b4feec7292c190a3a98a0aba65f5632354b0db804dd409b89af7bbc1f548c35f"
+        },
+        {
+            "id": "lnticket",
+            "repo": "https://github.com/lnbits/support-tickets-extension",
+            "name": "Support Tickets",
+            "version": "0.3",
+            "short_description": "Get paid sats to answer questions",
+            "icon": "https://raw.githubusercontent.com/lnbits/support-tickets-extension/main/static/image/lntickets.png",
+            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/lnticket/support-tickets-extension.zip",
+            "hash": "fc39e367474c6d1337004555c3625dbaef29fc5c0ee5e2ddeeb47d8f0a8bb4e1"
         }
     ]
 }
