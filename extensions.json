@@ -30,6 +30,16 @@
             "icon": "https://raw.githubusercontent.com/lnbits/tpos-extension/main/static/image/tpos.png",
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/tpos/tpos-extension.zip",
             "hash": "088636453a27e3ca10884dd0e4ffe0e6dd52bfe0f2d741ceacd48e2400eef86f"
+        },
+        {
+            "id": "usermanager",
+            "repo": "https://github.com/lnbits/usermanager-extension",
+            "name": "User Manager",
+            "version": "0.3",
+            "short_description": "Generate users and wallets",
+            "icon": "https://raw.githubusercontent.com/lnbits/usermanager-extension/main/static/image/usermanager.png",
+            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/usermanager/usermanager-extension.zip",
+            "hash": "6d0d990f0c987ad7f98ba610424dd977179827234619bf5ff3428f0a065ed7f6"
         }
     ]
 }
