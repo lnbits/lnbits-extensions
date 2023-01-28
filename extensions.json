@@ -1,5 +1,5 @@
 {
-    "featured": ["copilot"],
+    "featured": ["tpos","usermanager","lnticket"],
     "extensions": [
          {
             "id": "copilot",
