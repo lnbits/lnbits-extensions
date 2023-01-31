@@ -40,6 +40,16 @@
             "icon": "https://raw.githubusercontent.com/lnbits/usermanager-extension/main/static/image/usermanager.png",
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/usermanager/usermanager-extension.zip",
             "hash": "6d0d990f0c987ad7f98ba610424dd977179827234619bf5ff3428f0a065ed7f6"
+        },
+        {
+            "id": "example",
+            "repo": "https://github.com/lnbits/example-extension",
+            "name": "Build your own!",
+            "version": "0.1",
+            "short_description": "Guide for extension developers",
+            "icon": "https://raw.githubusercontent.com/lnbits/example-extension/main/static/bitcoin-extension.png",
+            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/example/example-extension.zip",
+            "hash": "3b5279b9038e31dcbb673b081ab482bd6b855c3ebfde9cd90ad4e98c93f5271a"
         }
     ]
 }
