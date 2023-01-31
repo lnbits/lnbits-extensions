@@ -84,6 +84,11 @@
             "id": "reviews",
             "organisation": "motorina0",
             "repository": "reviews-extension"
+        },
+        {
+            "id": "nostrrelay",
+            "organisation": "lnbits",
+            "repository": "nostr-relay-extension"
         }
     ]
 }
