@@ -1,6 +1,6 @@
 # LNbits Vetted Extensions
 Official registry for vetted LNbits extensions<br/>
-To submit an extension to this registry upload the extension release .zip <a href="https://github.com/lnbits/lnbits-extensions/tree/main/extensions">here</a>, add add your manifest <a href="https://github.com/lnbits/lnbits-extensions/blob/main/extensions.json">here</a>.
+To submit an extension to this registry upload the extension release `.zip` <a href="https://github.com/lnbits/lnbits-extensions/tree/main/extensions">here</a>, add add your manifest <a href="https://github.com/lnbits/lnbits-extensions/blob/main/extensions.json">here</a>.
 
 For an exensions local <a href="https://github.com/lnbits/gerty-extension/blob/main/manifest.json">manifest.json</a> use the `repo` format:
 ```
@@ -27,5 +27,5 @@ For the <a href="https://github.com/lnbits/lnbits-extensions/blob/main/extension
             "hash": "b7912ebfdb7bd5043e9781ce9e2e74db77e748d8de188573ffcdd7420085a5da"
         },
 ```
-To get the hash of your relase .zip in terminal run: <br/>
+To get the hash of your relase `.zip` in terminal run: <br/>
 `shasum -a 256 'usermanager-extension.zip' `
