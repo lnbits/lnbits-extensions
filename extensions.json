@@ -1,5 +1,5 @@
 {
-    "featured": ["tpos","usermanager","lnticket"],
+    "featured": ["tpos","jukebox","gerty","usermanager","lnticket"],
     "extensions": [
          {
             "id": "copilot",
@@ -20,6 +20,16 @@
             "icon": "https://raw.githubusercontent.com/lnbits/gerty-extension/main/static/gerty.png",
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/gerty/gerty-extension-0.1.2.zip",
             "hash": "e308a9127573d006ab88534790a8d96c80d9b28649205e696673bc514141cd07"
+        },
+        {
+            "id": "jukebox",
+            "repo": "https://github.com/lnbits/jukebox-extension",
+            "name": "Jukebox",
+            "version": "0.2.1",
+            "short_description": "Sats powered Spotify Jukebox",
+            "icon": "https://raw.githubusercontent.com/lnbits/jukebox-extension/main/static/image/jukebox.png",
+            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/jukebox/jukebox-extension-0.2.1.zip",
+            "hash": "1e8d0414d608e0949af34ebc40daf0f52563095127474ff53baae5fded30a701"
         },
         {
             "id": "lnticket",
