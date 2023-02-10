@@ -2,7 +2,7 @@
 Official registry for vetted LNbits extensions<br/>
 To submit an extension to this registry upload the extension release `.zip` <a href="https://github.com/lnbits/lnbits-extensions/tree/main/extensions">here</a>, add add your manifest <a href="https://github.com/lnbits/lnbits-extensions/blob/main/extensions.json">here</a>.
 
-For the <a href="https://github.com/lnbits/lnbits-extensions/blob/main/extensions.json">manfest.json</a> file in this repo use the `extensions` format:
+The <a href="https://github.com/lnbits/lnbits-extensions/blob/main/extensions.json">manfest.json</a> file in this repo MUST use the `extensions` format:
 ```
          {
             "id": "copilot",
