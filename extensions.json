@@ -11,6 +11,16 @@
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/copilot/copilot.zip",
             "hash": "b7912ebfdb7bd5043e9781ce9e2e74db77e748d8de188573ffcdd7420085a5da"
         },
+         {
+            "id": "gerty",
+            "repo": "https://github.com/lnbits/gerty-extension",
+            "name": "Gerty",
+            "version": "0.2.1",
+            "short_description": "Your bitcoin assistant",
+            "icon": "https://raw.githubusercontent.com/lnbits/gerty-extension/main/static/gerty.png",
+            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/gerty/gerty-extension-0.1.2.zip",
+            "hash": "e308a9127573d006ab88534790a8d96c80d9b28649205e696673bc514141cd07"
+        },
         {
             "id": "lnticket",
             "repo": "https://github.com/lnbits/support-tickets-extension",
