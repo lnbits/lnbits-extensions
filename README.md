@@ -1,4 +1,4 @@
-# LNbits Extensions
+# LNbits Vetted Extensions
 Official registry for vetted lnbits extensions<br/>
 To submit an extension to this registry make a PR uploading the extension release zip <a href="https://github.com/lnbits/lnbits-extensions/tree/main/extensions">here</a> an extensions manifest <a href="/extensions.json">here</a>, and add to the manifest <a href="https://github.com/lnbits/lnbits-extensions/blob/main/extensions.json">here</a>.
 
