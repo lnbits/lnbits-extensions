@@ -28,4 +28,4 @@ For the <a href="https://github.com/lnbits/lnbits-extensions/blob/main/extension
         },
 ```
 To get the hash of your relase .zip in terminal run: <br/>
-`shasum -a 256 '/home/arcbtc/projects/lnbits-extensions/extensions/usermanager/usermanager-extension.zip' `
+`shasum -a 256 'usermanager-extension.zip' `
