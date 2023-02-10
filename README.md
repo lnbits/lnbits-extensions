@@ -14,7 +14,7 @@ For an exensions local <a href="https://github.com/lnbits/gerty-extension/blob/m
     ]
 }
 ```
-For the <a href="https://github.com/lnbits/lnbits-extensions/blob/main/extensions.json">manfest.json</a> file in this repo use the `extension` formet:
+For the <a href="https://github.com/lnbits/lnbits-extensions/blob/main/extensions.json">manfest.json</a> file in this repo use the `extension` format:
 ```
          {
             "id": "copilot",
@@ -27,3 +27,5 @@ For the <a href="https://github.com/lnbits/lnbits-extensions/blob/main/extension
             "hash": "b7912ebfdb7bd5043e9781ce9e2e74db77e748d8de188573ffcdd7420085a5da"
         },
 ```
+To get the hash of your relase zip run in terminal:
+`shasum -a 256 '/home/arcbtc/projects/lnbits-extensions/extensions/usermanager/usermanager-extension.zip' `
