@@ -77,7 +77,7 @@
             "name": "Events",
             "version": "0.1",
             "short_description": "Sell and register event tickets",
-            "icon": "https://raw.githubusercontent.com/lnbits/events/main/static/bitcoin-extension.png",
+            "icon": "https://raw.githubusercontent.com/lnbits/events/main/static/image/events.png",
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/events/events-0.1.zip",
             "hash": "d96479d6d5e970d86366bd78ccdd82d3ad7a0c99067c4d80fb8243b682954890"
         }
