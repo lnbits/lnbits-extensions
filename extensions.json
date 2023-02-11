@@ -33,41 +33,41 @@
         },
         {
             "id": "lnticket",
-            "repo": "https://github.com/lnbits/support-tickets-extension",
+            "repo": "https://github.com/lnbits/lnticket",
             "name": "Support Tickets",
             "version": "0.3",
             "short_description": "Get paid sats to answer questions",
-            "icon": "https://raw.githubusercontent.com/lnbits/support-tickets-extension/main/static/image/lntickets.png",
+            "icon": "https://raw.githubusercontent.com/lnbits/lnticket/main/static/image/lntickets.png",
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/lnticket/support-tickets-extension.zip",
             "hash": "fc39e367474c6d1337004555c3625dbaef29fc5c0ee5e2ddeeb47d8f0a8bb4e1"
         },
         {
             "id": "tpos",
-            "repo": "https://github.com/lnbits/tpos-extension",
+            "repo": "https://github.com/lnbits/tpos",
             "name": "TPoS",
             "version": "0.3",
             "short_description": "Secure, mobile-ready, instant and shareable point of sale",
-            "icon": "https://raw.githubusercontent.com/lnbits/tpos-extension/main/static/image/tpos.png",
+            "icon": "https://raw.githubusercontent.com/lnbits/tpos/main/static/image/tpos.png",
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/tpos/tpos-extension.zip",
             "hash": "088636453a27e3ca10884dd0e4ffe0e6dd52bfe0f2d741ceacd48e2400eef86f"
         },
         {
             "id": "usermanager",
-            "repo": "https://github.com/lnbits/usermanager-extension",
+            "repo": "https://github.com/lnbits/usermanager",
             "name": "User Manager",
             "version": "0.3",
             "short_description": "Generate users and wallets",
-            "icon": "https://raw.githubusercontent.com/lnbits/usermanager-extension/main/static/image/usermanager.png",
+            "icon": "https://raw.githubusercontent.com/lnbits/usermanager/main/static/image/usermanager.png",
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/usermanager/usermanager-extension.zip",
             "hash": "6d0d990f0c987ad7f98ba610424dd977179827234619bf5ff3428f0a065ed7f6"
         },
         {
             "id": "example",
-            "repo": "https://github.com/lnbits/example-extension",
+            "repo": "https://github.com/lnbits/example",
             "name": "Build your own!",
             "version": "0.1",
             "short_description": "Guide for extension developers",
-            "icon": "https://raw.githubusercontent.com/lnbits/example-extension/main/static/bitcoin-extension.png",
+            "icon": "https://raw.githubusercontent.com/lnbits/example/main/static/bitcoin-extension.png",
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/example/example-extension.zip",
             "hash": "3b5279b9038e31dcbb673b081ab482bd6b855c3ebfde9cd90ad4e98c93f5271a"
         }
