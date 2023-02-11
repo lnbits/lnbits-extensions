@@ -80,6 +80,16 @@
             "icon": "https://raw.githubusercontent.com/lnbits/events/main/static/image/events.png",
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/events/events-0.1.zip",
             "hash": "d96479d6d5e970d86366bd78ccdd82d3ad7a0c99067c4d80fb8243b682954890"
+        },
+        {
+            "id": "lnurldevice",
+            "repo": "https://github.com/lnbits/lnurldevice",
+            "name": "LNURLDevices",
+            "version": "0.1",
+            "short_description": "Points of sale, ATMs, swictches",
+            "icon": "https://raw.githubusercontent.com/lnbits/lnurldevice/main/static/image/lnurldevice.png",
+            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/lnurldevice/lnurldevice-0.1.zip",
+            "hash": "1206182624c58726133966b03c817ed76fc28622b41d28f2c6541381a96baa40"
         }
     ]
 }
