@@ -86,10 +86,20 @@
             "repo": "https://github.com/lnbits/lnurldevice",
             "name": "LNURLDevices",
             "version": "0.1",
-            "short_description": "Points of sale, ATMs, swictches",
+            "short_description": "Points of sale, ATMs, switches",
             "icon": "https://raw.githubusercontent.com/lnbits/lnurldevice/main/static/image/lnurldevice.png",
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/lnurldevice/lnurldevice-0.1.zip",
             "hash": "1206182624c58726133966b03c817ed76fc28622b41d28f2c6541381a96baa40"
+        },
+        {
+            "id": "smtp",
+            "repo": "https://github.com/dni/lnbits-smtp-extension",
+            "name": "SMTP",
+            "version": "0.1",
+            "short_description": "Let People send emails an earn sats",
+            "icon": "https://github.com/dni/lnbits-smtp-extension/raw/main/static/smtp-bitcoin-email.png",
+            "archive": "https://github.com/dni/lnbits-smtp-extension/archive/refs/tags/0.1.zip",
+            "hash": "074b1c557c92927c17cbffce9c98de652c4f152e89ebd809a465fe40d23efa31"
         }
     ]
 }
