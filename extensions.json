@@ -96,7 +96,7 @@
             "repo": "https://github.com/dni/lnbits-smtp-extension",
             "name": "SMTP",
             "version": "0.1",
-            "short_description": "Let People send emails an earn sats",
+            "short_description": "Let People send emails and earn sats",
             "icon": "https://github.com/dni/lnbits-smtp-extension/raw/main/static/smtp-bitcoin-email.png",
             "archive": "https://github.com/dni/lnbits-smtp-extension/archive/refs/tags/0.1.zip",
             "hash": "074b1c557c92927c17cbffce9c98de652c4f152e89ebd809a465fe40d23efa31"
