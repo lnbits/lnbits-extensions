@@ -139,7 +139,7 @@
             "version": "0.0.0.2",
             "short_description": "Create NIP05 address for your domains",
             "icon": "https://github.com/lnbits/nostrnip5/raw/main/static/image/nostrnip5.png",
-            "archive": "https://github.com/lnbits/lnbits-extensions/raw/nostrnip5/extensions/nostrnip5/nostrnip5-0.0.0.2.zip",
+            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/nostrnip5/nostrnip5-0.0.0.2.zip",
             "hash": "21b78a802f299f93112784fc1d19357109eba7458e4b07cfb85928e8c84650d0"
         }
     ]
