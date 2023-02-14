@@ -109,7 +109,16 @@
             "short_description": "Let People send emails and earn sats",
             "icon": "https://github.com/lnbits/discordbot/raw/main/static/image/discordbot.png",
             "archive": "https://github.com/lnbits/discordbot/archive/refs/tags/0.1.zip",
-            "hash": "3e9468ed0d3b2f46ddd2814a1f9865dbc714eb2b07b6a7c68887ed5dd8c2ee38"
+            "hash": "3e9468ed0d3b2f46ddd2814a1f9865dbc714eb2b07b6a7c68887ed5dd8c2ee38"        },
+        {
+            "id": "hivemind",
+            "repo": "https://github.com/lnbits/hivemind",
+            "name": "Hivemind",
+            "version": "0.1",
+            "short_description": "Make cheap talk expensive!",
+            "icon": "https://github.com/lnbits/hivemind/raw/main/static/image/hivemind.png",
+            "archive": "https://github.com/lnbits/hivemind/archive/refs/tags/0.1.zip",
+            "hash": "e543c3a5ff0a12d4f597256255791ba6d38c54e23cc2a135a7a52832810316b3"
         }
     ]
     
