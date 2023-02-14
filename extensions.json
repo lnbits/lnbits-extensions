@@ -131,6 +131,17 @@
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/boltcards/boltcards-0.0.0.1.zip",
             "hash": "3dfdaad2c1515f58b4c41fba0a92a268feb1641da0f86af7ba7be28d7de034af"
         }
+        ,
+        {
+            "id": "nostrnip5",
+            "repo": "https://github.com/lnbits/nostrnip5",
+            "name": "nostrnip5",
+            "version": "0.0.0.2",
+            "short_description": "Create NIP05 address for your domains",
+            "icon": "https://github.com/lnbits/nostrnip5/raw/main/static/image/nostrnip5.png",
+            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/nostrnip5/nostrnip5-0.0.0.2.zip",
+            "hash": "21b78a802f299f93112784fc1d19357109eba7458e4b07cfb85928e8c84650d0"
+        }
     ]
     
 }
