@@ -170,6 +170,46 @@
             "icon": "https://github.com/lnbits/boltz-extension/raw/main/static/image/satsdice.png",
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/satsdice/satsdice-0.0.0.1.zip",
             "hash": "3c16e3bb0d92c76f9c018c42bc064bad84cfa8675c562486cc6f7fe57439b200"
+        },
+        {
+            "id": "offlineshop",
+            "repo": "https://github.com/lnbits/offlineshop",
+            "name": "Offlineshop",
+            "version": "0.1",
+            "short_description": "Receive payments for products offline!",
+            "icon": "https://github.com/lnbits/offlineshop/raw/main/static/image/offlineshop.png",
+            "archive": "https://github.com/lnbits/offlineshop/archive/refs/tags/0.1.zip",
+            "hash": "f946589e9f9af5e5b9436b316491745c4fff79f7778a2412e84cba06c4eecf94"
+        },
+        {
+            "id": "subdomains",
+            "repo": "https://github.com/lnbits/subdomains",
+            "name": "Subdomains",
+            "version": "0.1",
+            "short_description": "Sell subdomains of your domain",
+            "icon": "https://github.com/lnbits/subdomains/raw/main/static/image/subdomains.png",
+            "archive": "https://github.com/lnbits/subdomains/archive/refs/tags/0.1.zip",
+            "hash": "471a712408e37ef8939c6da423894b974c151395951647e477545c3cdd4efcd1"
+        },
+        {
+            "id": "streamalerts",
+            "repo": "https://github.com/lnbits/streamalerts",
+            "name": "Streamalerts",
+            "version": "0.1",
+            "short_description": "Bitcoin donations in stream alerts",
+            "icon": "https://github.com/lnbits/streamalerts/raw/main/static/image/streamalerts.png",
+            "archive": "https://github.com/lnbits/streamalerts/archive/refs/tags/0.1.zip",
+            "hash": "0cffcc2ba5c042ade082e770c33768f1c7834f26a5dae757f00ef8d45a4eba67"
+        },
+        {
+            "id": "livestream",
+            "repo": "https://github.com/lnbits/livestream",
+            "name": "Livestream",
+            "version": "0.1",
+            "short_description": "Sell tracks and split revenue (lnurl-pay)",
+            "icon": "https://github.com/lnbits/livestream/raw/main/static/image/livestream.png",
+            "archive": "https://github.com/lnbits/livestream/archive/refs/tags/0.1.zip",
+            "hash": "974533595633ac9739347aeb8492629fa82656c25126415ecc09bc36adf90128"
         }
     ]
 
