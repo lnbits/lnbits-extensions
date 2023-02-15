@@ -15,7 +15,7 @@
             "id": "gerty",
             "repo": "https://github.com/lnbits/gerty",
             "name": "Gerty",
-            "version": "0.2.1",
+            "version": "0.1.2",
             "short_description": "Your bitcoin assistant",
             "icon": "https://raw.githubusercontent.com/lnbits/gerty/main/static/gerty.png",
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/gerty/gerty-extension-0.1.2.zip",
