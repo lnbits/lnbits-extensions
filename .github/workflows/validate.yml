@@ -1,11 +1,16 @@
-name: Validate JSONs
-on: [pull_request]
+name: Validate JSON
+on:
+  push:
+    paths:
+      - '**.json'
+  pull_request:
+
 jobs:
-  verify-json-validation:
+  validate-json:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Validate JSON
-        uses: docker://orrosenblatt/validate-json-action:latest
-        env:
-          INPUT_JSONS: extensions.json
+      - uses: actions/checkout@v2
+      - name: json-syntax-check
+        uses: limitusus/json-syntax-check@v1
+        with:
+          pattern: "\\.json$"
