@@ -62,6 +62,16 @@
             "hash": "6d0d990f0c987ad7f98ba610424dd977179827234619bf5ff3428f0a065ed7f6"
         },
         {
+            "id": "pegging",
+            "repo": "https://github.com/lnbits/stable-wallets",
+            "name": "Pegged Assets",
+            "version": "0.0.2",
+            "short_description": "Keep a pegged balance in a wallet",
+            "icon": "https://raw.githubusercontent.com/lnbits/lnbits/stable-wallets/blob/main/static/image/peg.png",
+            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/pegging/pegging-extension.zip",
+            "hash": "030c8a12e7b835d20151a45a55c8c5e5ee5cdb2922ec0a5b267c66badc53e783"
+        },
+        {
             "id": "example",
             "repo": "https://github.com/lnbits/example",
             "name": "Build your own!",
