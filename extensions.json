@@ -220,6 +220,16 @@
             "icon": "https://github.com/lnbits/lnurlp/raw/main/static/image/lnurl-pay.png",
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/lnurlp/lnurlp-0.1.zip",
             "hash": "962e6ed946dcd1a449d7a95dd3725988a4a469c8fae6769645e42971405dd810"
+        },
+        {
+            "id": "cashu",
+            "repo": "https://github.com/lnbits/cashu",
+            "name": "Cashu",
+            "version": "0.1",
+            "short_description": "ECash mint and wallet",
+            "icon": "https://github.com/lnbits/cashu/raw/main/static/image/cashu.png",
+            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/cashu/cashu-0.1.zip",
+            "hash": "eab1b69edc00d546b599907b43cb09bd729fb8b7de3adfd0d30012e5df3b330f"
         }
     ]
 
