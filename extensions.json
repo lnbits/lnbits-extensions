@@ -230,6 +230,16 @@
             "icon": "https://github.com/lnbits/cashu/raw/main/static/image/cashu.png",
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/cashu/cashu-0.1.zip",
             "hash": "eab1b69edc00d546b599907b43cb09bd729fb8b7de3adfd0d30012e5df3b330f"
+        },
+        {
+            "id": "deezy",
+            "repo": "https://github.com/lnbits/deezy",
+            "name": "Deezy",
+            "version": "0.1",
+            "short_description": "Swap between LN and Onchain",
+            "icon": "https://github.com/lnbits/deezy/raw/main/static/deezy.png",
+            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/deezy/deezy-0.1.zip",
+            "hash": "49eb7bd209d3684b87e17e9200dad823f2265493a054e0531d8c5238f0fd9561"
         }
     ]
 
