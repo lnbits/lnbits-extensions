@@ -247,7 +247,7 @@
             "name": "Marketplace",
             "version": "0.1",
             "short_description": "Webshop/market on LNbits",
-            "icon": "https://github.com/lnbits/market/raw/main/static/image/bitcoin-shop.png",
+            "icon": "https://github.com/lnbits/market/raw/main/static/images/bitcoin-shop.png",
             "archive": "https://github.com/lnbits/market/archive/refs/tags/0.1.zip",
             "hash": "00d2eaaf3031e7b4da7ae1a8344fb4c9fa5072be9460e7c7c653641da8134bdf"
         }
