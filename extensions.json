@@ -240,6 +240,16 @@
             "icon": "https://github.com/lnbits/deezy/raw/main/static/deezy.png",
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/deezy/deezy-0.1.zip",
             "hash": "49eb7bd209d3684b87e17e9200dad823f2265493a054e0531d8c5238f0fd9561"
+        },
+        {
+            "id": "market",
+            "repo": "https://github.com/lnbits/market",
+            "name": "Marketplace",
+            "version": "0.1",
+            "short_description": "Webshop/market on LNbits",
+            "icon": "https://github.com/lnbits/market/raw/main/static/image/bitcoin-shop.png",
+            "archive": "https://github.com/lnbits/market/archive/refs/tags/0.1.zip",
+            "hash": "00d2eaaf3031e7b4da7ae1a8344fb4c9fa5072be9460e7c7c653641da8134bdf"
         }
     ]
 
