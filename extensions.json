@@ -240,6 +240,16 @@
             "icon": "https://github.com/lnbits/deezy/raw/main/static/deezy.png",
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/deezy/deezy-0.1.zip",
             "hash": "49eb7bd209d3684b87e17e9200dad823f2265493a054e0531d8c5238f0fd9561"
+        },
+        {
+            "id": "paywall",
+            "repo": "https://github.com/lnbits/paywall",
+            "name": "Paywall",
+            "version": "0.2",
+            "short_description": "Create paywalls for content",
+            "icon": "https://github.com/lnbits/paywall/raw/main/static/image/paywall.png",
+            "archive": "https://github.com/lnbits/paywall/archive/refs/tags/0.2.zip",
+            "hash": "03dccdf94b110a34af4b036a6b3d8931b66c76999301451f74906aa1e57b0512"
         }
     ]
 
