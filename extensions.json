@@ -240,6 +240,16 @@
             "icon": "https://github.com/lnbits/deezy/raw/main/static/deezy.png",
             "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/deezy/deezy-0.1.zip",
             "hash": "49eb7bd209d3684b87e17e9200dad823f2265493a054e0531d8c5238f0fd9561"
+        },
+        {
+            "id": "withdraw",
+            "repo": "https://github.com/lnbits/withdraw",
+            "name": "LNURLw",
+            "version": "0.1",
+            "short_description": "Make LNURL withdraw links",
+            "icon": "https://github.com/lnbits/withdraw/raw/main/static/image/lnurl-withdraw.png",
+            "archive": "https://github.com/lnbits/withdraw/archive/refs/tags/0.1.zip",
+            "hash": "789cbf18dcbb9e7772bedf41bbd45060f3ab7a503ebe1ad1acda8f3c6c731521"
         }
     ]
 
