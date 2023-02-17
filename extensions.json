@@ -291,6 +291,16 @@
             "icon": "https://github.com/lnbits/bleskomat/raw/main/static/images/bleskomat.png",
             "archive": "https://github.com/lnbits/bleskomat/archive/refs/tags/0.1.zip",
             "hash": "abf11879aa7c53afb3adf32405aad08b6aa35c7cc2a22e38c03e8acc48b7a8ff"
+        },
+        {
+            "id": "tipjar",
+            "repo": "https://github.com/lnbits/tipjar",
+            "name": "Tip Jar",
+            "version": "0.1",
+            "short_description": "Accept Bitcoin donations, with messages attached!",
+            "icon": "https://github.com/lnbits/tipjar/raw/main/static/images/tipjar.png",
+            "archive": "https://github.com/lnbits/tipjar/archive/refs/tags/0.1.zip",
+            "hash": "dd956028a3dd38feac62e3ef761f038e034a559e2253f89094343a497d33d3d9"
         }
     ]
 }
