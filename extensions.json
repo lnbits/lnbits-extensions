@@ -159,7 +159,7 @@
             "short_description": "Perform onchain/offchain swaps",
             "icon": "https://github.com/lnbits/boltz-extension/raw/main/static/image/boltz.png",
             "archive": "https://github.com/lnbits/boltz-extension/archive/refs/tags/0.1.zip",
-            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            "hash": "2617c88d811706cb191cf49e81bb78db910e408edd649e759182780fb9a96737"
         },
         {
             "id": "satsdice",
