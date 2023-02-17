@@ -278,7 +278,7 @@
             "name": "SatsPay Server",
             "version": "0.1",
             "short_description": "Create onchain and LN charges",
-            "icon": "https://github.com/lnbits/satspay/raw/main/static/images/satspay.png",
+            "icon": "https://github.com/lnbits/satspay/raw/main/static/image/satspay.png",
             "archive": "https://github.com/lnbits/satspay/archive/refs/tags/0.1.zip",
             "hash": "ca9cf4da836ca08395a8e759a7848b5caa7d8edbeae7ae0308b27c0f286fae5d"
         },
@@ -288,7 +288,7 @@
             "name": "Bleskomat",
             "version": "0.1",
             "short_description": "Connect a Bleskomat ATM to an lnbits",
-            "icon": "https://github.com/lnbits/bleskomat/raw/main/static/images/bleskomat.png",
+            "icon": "https://github.com/lnbits/bleskomat/raw/main/static/image/bleskomat.png",
             "archive": "https://github.com/lnbits/bleskomat/archive/refs/tags/0.1.zip",
             "hash": "abf11879aa7c53afb3adf32405aad08b6aa35c7cc2a22e38c03e8acc48b7a8ff"
         }
