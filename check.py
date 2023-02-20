@@ -36,13 +36,18 @@ class Extension:
 
         # check for typos
         if not self.name[0].isupper():
-            assert False, f"{self.name}: name does not start with uppercase letter"
+            print(f"{self.name}: name does not start with uppercase letter")
+            assert False
+
         if not self.short_description[0].isupper():
-            assert False, f"{self.name}: short_description does not start with uppercase letter"
-        if not self.short_description.endswith("."):
-            assert False, f"{self.name}: short_description does not ends with ."
+            print(f"{self.name}: short_description does not start with uppercase letter")
+            assert False
+        if self.short_description.endswith("."):
+            print(f"{self.name}: short_description does end with .")
+            assert False
         if not self.id == self.id.lower():
-            assert False, f"{self.name}: id has mixed casing"
+            print(f"{self.name}: id has mixed casing")
+            assert False
 
         # print archive info from json
         hash_archive = get_remote_hash(self.archive)
