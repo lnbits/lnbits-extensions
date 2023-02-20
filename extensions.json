@@ -159,7 +159,7 @@
             "short_description": "Perform onchain/offchain swaps",
             "icon": "https://github.com/lnbits/boltz-extension/raw/main/static/image/boltz.png",
             "archive": "https://github.com/lnbits/boltz-extension/archive/refs/tags/0.1.zip",
-            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            "hash": "2617c88d811706cb191cf49e81bb78db910e408edd649e759182780fb9a96737"
         },
         {
             "id": "satsdice",
@@ -250,7 +250,106 @@
             "icon": "https://github.com/lnbits/invoices/raw/main/static/invoices.png",
             "archive": "https://github.com/lnbits/invoices/archive/refs/tags/0.1.zip",
             "hash": "2ab8fafa6a18f482f68d18bfab160481f6fa09271488f022d09fdbee8c8fe765"
+        },
+        {
+            "id": "withdraw",
+            "repo": "https://github.com/lnbits/withdraw",
+            "name": "LNURLw",
+            "version": "0.1",
+            "short_description": "Make LNURL withdraw links",
+            "icon": "https://github.com/lnbits/withdraw/raw/main/static/image/lnurl-withdraw.png",
+            "archive": "https://github.com/lnbits/withdraw/archive/refs/tags/0.1.zip",
+            "hash": "789cbf18dcbb9e7772bedf41bbd45060f3ab7a503ebe1ad1acda8f3c6c731521"
+        },
+        {
+            "id": "paywall",
+            "repo": "https://github.com/lnbits/paywall",
+            "name": "Paywall",
+            "version": "0.2",
+            "short_description": "Create paywalls for content",
+            "icon": "https://github.com/lnbits/paywall/raw/main/static/image/paywall.png",
+            "archive": "https://github.com/lnbits/paywall/archive/refs/tags/0.2.zip",
+            "hash": "03dccdf94b110a34af4b036a6b3d8931b66c76999301451f74906aa1e57b0512"
+        },
+        {
+            "id": "market",
+            "repo": "https://github.com/lnbits/market",
+            "name": "Marketplace",
+            "version": "0.2",
+            "short_description": "Webshop/market on LNbits",
+            "icon": "https://github.com/lnbits/market/raw/main/static/images/bitcoin-shop.png",
+            "archive": "https://github.com/lnbits/market/archive/refs/tags/0.2.zip",
+            "hash": "656293d72cd93eadd23cb4649a3dd9c4a5e60f14a5f2f47101651b5eea6f4b22"
+        },
+        {
+            "id": "satspay",
+            "repo": "https://github.com/lnbits/satspay",
+            "name": "SatsPay Server",
+            "version": "0.2",
+            "short_description": "Create onchain and LN charges",
+            "icon": "https://github.com/lnbits/satspay/raw/main/static/image/satspay.png",
+            "archive": "https://github.com/lnbits/satspay/archive/refs/tags/0.2.zip",
+            "hash": "81e594093c68889b04b8de8b27e532705354261bb0829eaf76fa8f12354fcc13"
+        },
+        {
+            "id": "bleskomat",
+            "repo": "https://github.com/lnbits/bleskomat",
+            "name": "Bleskomat",
+            "version": "0.1",
+            "short_description": "Connect a Bleskomat ATM to an lnbits",
+            "icon": "https://github.com/lnbits/bleskomat/raw/main/static/image/bleskomat.png",
+            "archive": "https://github.com/lnbits/bleskomat/archive/refs/tags/0.1.zip",
+            "hash": "abf11879aa7c53afb3adf32405aad08b6aa35c7cc2a22e38c03e8acc48b7a8ff"
+        },
+        {
+            "id": "tipjar",
+            "repo": "https://github.com/lnbits/tipjar",
+            "name": "Tip Jar",
+            "version": "0.1",
+            "short_description": "Accept Bitcoin donations, with messages attached!",
+            "icon": "https://github.com/lnbits/tipjar/raw/main/static/image/tipjar.png",
+            "archive": "https://github.com/lnbits/tipjar/archive/refs/tags/0.1.zip",
+            "hash": "dd956028a3dd38feac62e3ef761f038e034a559e2253f89094343a497d33d3d9"
+        },
+        {
+            "id": "lndhub",
+            "repo": "https://github.com/lnbits/lndhub",
+            "name": "LndHub",
+            "version": "0.1",
+            "short_description": "Access lnbits from BlueWallet or Zeus",
+            "icon": "https://github.com/lnbits/lndhub/raw/main/static/image/lndhub.png",
+            "archive": "https://github.com/lnbits/lndhub/archive/refs/tags/0.1.zip",
+            "hash": "d97fe51a85ff1f5f670daf1b32e7d8c5fc90b0c998308017107bfdf837910fda"
+        },
+        {
+            "id": "scrub",
+            "repo": "https://github.com/lnbits/scrub",
+            "name": "SCRUB",
+            "version": "0.1",
+            "short_description": "Pass payments to LNURLp/LNaddress",
+            "icon": "https://github.com/lnbits/scrub/raw/main/static/image/scrub.png",
+            "archive": "https://github.com/lnbits/scrub/archive/refs/tags/0.1.zip",
+            "hash": "c5c668278801b611845bebb4103e7cb9139ccf96b15ba42e60c6b382edf7e086"
+        },
+        {
+            "id": "lnaddress",
+            "repo": "https://github.com/lnbits/lnaddress",
+            "name": "Lightning Address",
+            "version": "0.2",
+            "short_description": "Sell LN addresses for your domain",
+            "icon": "https://github.com/lnbits/lnaddress/raw/main/static/image/lnaddress.png",
+            "archive": "https://github.com/lnbits/lnaddress/archive/refs/tags/0.2.zip",
+            "hash": "48b01d418d08ae902e30307c2ac425fee70ce0c5212b383bd83bb789ec8ca70c"
+        },
+        {
+            "id": "watchonly",
+            "repo": "https://github.com/lnbits/watchonly",
+            "name": "Onchain Wallet",
+            "version": "0.1",
+            "short_description": "Onchain watch only wallets",
+            "icon": "https://github.com/lnbits/watchonly/raw/main/static/bitcoin-wallet.png",
+            "archive": "https://github.com/lnbits/watchonly/archive/refs/tags/0.1.zip",
+            "hash": "3dbca3f7a6f99d3f1a6ebb9475607075054cfb583c5bf58bc5bb67be11f0b5d2"
         }
     ]
-
 }
