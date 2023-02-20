@@ -247,7 +247,7 @@
             "name": "Invoices",
             "version": "0.1",
             "short_description": "Create invoices for your clients.",
-            "icon": "https://github.com/lnbits/invoices/raw/main/static/invoices.png",
+            "icon": "https://github.com/lnbits/invoices/raw/main/static/image/invoices.png",
             "archive": "https://github.com/lnbits/invoices/archive/refs/tags/0.1.zip",
             "hash": "2ab8fafa6a18f482f68d18bfab160481f6fa09271488f022d09fdbee8c8fe765"
         },
