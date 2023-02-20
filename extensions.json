@@ -242,7 +242,16 @@
             "hash": "49eb7bd209d3684b87e17e9200dad823f2265493a054e0531d8c5238f0fd9561"
         },
         {
-
+            "id": "invoices",
+            "repo": "https://github.com/lnbits/invoices",
+            "name": "Invoices",
+            "version": "0.1",
+            "short_description": "Create invoices for your clients",
+            "icon": "https://github.com/lnbits/invoices/raw/main/static/image/invoices.png",
+            "archive": "https://github.com/lnbits/invoices/archive/refs/tags/0.1.zip",
+            "hash": "2ab8fafa6a18f482f68d18bfab160481f6fa09271488f022d09fdbee8c8fe765"
+        },
+        {
             "id": "withdraw",
             "repo": "https://github.com/lnbits/withdraw",
             "name": "LNURLw",
