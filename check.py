@@ -35,10 +35,14 @@ class Extension:
         print(f"Checking '{self.name}' extension ({self.id} {self.version})")
 
         # check for typos
-        assert self.name[0].isupper()
-        assert self.short_description[0].isupper()
-        assert not self.short_description.endswith(".")
-        assert self.id == self.id.lower()
+        if not self.name[0].isupper():
+            assert False, f"{self.name}: name does not start with uppercase letter"
+        if not self.short_description[0].isupper():
+            assert False, f"{self.name}: short_description does not start with uppercase letter"
+        if not self.short_description.endswith("."):
+            assert False, f"{self.name}: short_description does not ends with ."
+        if not self.id == self.id.lower():
+            assert False, f"{self.name}: id has mixed casing"
 
         # print archive info from json
         hash_archive = get_remote_hash(self.archive)
