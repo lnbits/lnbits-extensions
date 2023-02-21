@@ -168,7 +168,7 @@
             "version": "0.0.0.1",
             "short_description": "Make your own Satoshi-dice games",
             "icon": "https://github.com/lnbits/satsdice/raw/main/static/image/satsdice.png",
-            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/satsdice/satsdice-0.0.0.1.zip",
+            "archive": "https://github.com/lnbits/satsdice/archive/refs/tags/0.0.0.1.zip",
             "hash": "3c16e3bb0d92c76f9c018c42bc064bad84cfa8675c562486cc6f7fe57439b200"
         },
         {
