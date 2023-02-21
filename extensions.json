@@ -58,8 +58,8 @@
             "version": "0.3",
             "short_description": "Generate users and wallets",
             "icon": "https://raw.githubusercontent.com/lnbits/usermanager/main/static/image/usermanager.png",
-            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/usermanager/usermanager-extension.zip",
-            "hash": "6d0d990f0c987ad7f98ba610424dd977179827234619bf5ff3428f0a065ed7f6"
+            "archive": "https://github.com/lnbits/usermanager/archive/refs/tags/0.3.zip",
+            "hash": "a6be3dd5469c7302ac98b0cc7d9f622dbb7d6d7bd03edf4bc7f671c727a4cc80"
         },
         {
             "id": "example",
