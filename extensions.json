@@ -148,7 +148,7 @@
             "version": "0.0.0.1",
             "short_description": "Split incoming payments across wallets",
             "icon": "https://github.com/lnbits/splitpayments/raw/main/static/image/split-payments.png",
-            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/splitpayments/splitpayments-0.0.0.1.zip",
+            "archive": "https://github.com/lnbits/splitpayments/archive/refs/tags/0.0.0.1.zip",
             "hash": "6c57e6f663c305471b0ff9d0167d75274f63bc2f9c9624368f37876d384ea8c0"
         },
         {
