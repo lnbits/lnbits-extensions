@@ -88,7 +88,7 @@
             "version": "0.1",
             "short_description": "Points of sale, ATMs, switches",
             "icon": "https://raw.githubusercontent.com/lnbits/lnurldevice/main/static/image/lnurldevice.png",
-            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/lnurldevice/lnurldevice-0.1.zip",
+            "archive": "https://github.com/lnbits/lnurldevice/archive/refs/tags/0.1.zip",
             "hash": "1206182624c58726133966b03c817ed76fc28622b41d28f2c6541381a96baa40"
         },
         {
