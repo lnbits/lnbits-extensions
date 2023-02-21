@@ -28,8 +28,8 @@
             "version": "0.2.1",
             "short_description": "Sats powered Spotify Jukebox",
             "icon": "https://raw.githubusercontent.com/lnbits/jukebox/main/static/image/jukebox.png",
-            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/jukebox/jukebox-extension-0.2.1.zip",
-            "hash": "1e8d0414d608e0949af34ebc40daf0f52563095127474ff53baae5fded30a701"
+            "archive": "https://github.com/lnbits/jukebox/archive/refs/tags/0.2.1.zip",
+            "hash": "26d72488a89281ae15e28fccbfd3baeeab47947445e4ebecffc107a8d114c7cb"
         },
         {
             "id": "lnticket",
