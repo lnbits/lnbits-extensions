@@ -18,8 +18,8 @@
             "version": "0.1.2",
             "short_description": "Your bitcoin assistant",
             "icon": "https://raw.githubusercontent.com/lnbits/gerty/main/static/gerty.png",
-            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/gerty/gerty-extension-0.1.2.zip",
-            "hash": "e308a9127573d006ab88534790a8d96c80d9b28649205e696673bc514141cd07"
+            "archive": "https://github.com/lnbits/gerty/archive/refs/tags/0.1.2.zip",
+            "hash": "baff0b6162ffb65cc0b4c721a4aa40a7d3d48acd55a3e344cba3eb1d35cf2074"
         },
         {
             "id": "jukebox",
