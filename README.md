@@ -29,7 +29,7 @@ For an exensions local <a href="https://github.com/lnbits/gerty-extension/blob/m
 }
 ```
 
-### getting sha256 checksum for your release
+### Getting sha256 checksum for your release
 
 To get the hash of your relase `.zip` in terminal run: <br/>
 ```console
@@ -45,3 +45,10 @@ sha256sum usermanager-extension.zip
 $ wget -O - https://github.com/dni/lnbits-smtp-extension/archive/refs/tags/0.1.zip 2> /dev/null | sha256sum | cut -d" " -f 1
 074b1c557c92927c17cbffce9c98de652c4f152e89ebd809a465fe40d23efa31
 ```
+
+### Lighter zip archive
+ - documentation, tests and other type of files should not be included in the `zip` archive generated when a GitHub release is created
+ - in order to exclude these files one must:
+    - create a `.gitattributes` file (on the top level of the repo)
+    - add a line for the ignored files/dirs: `README.md export-ignore`
+    - see example [here](https://github.com/lnbits/nostr-relay-extension/blob/main/.gitattributes)
