@@ -34,19 +34,25 @@ class Extension:
     def validate(self):
         print(f"Checking '{self.name}' extension ({self.id} {self.version})")
 
-        # check for typos
+        # sanity checks
         if not self.name[0].isupper():
-            print(f"{self.name}: name does not start with uppercase letter")
+            print("- ERROR: name does not start with uppercase letter")
             assert False
-
         if not self.short_description[0].isupper():
-            print(f"{self.name}: short_description does not start with uppercase letter")
+            print("- ERROR: short_description does not start with uppercase letter")
             assert False
         if self.short_description.endswith("."):
-            print(f"{self.name}: short_description does end with .")
+            print(f"- ERROR: short_description does end with '.'")
             assert False
         if not self.id == self.id.lower():
-            print(f"{self.name}: id has mixed casing")
+            print("- ERROR: id has mixed casing")
+            assert False
+        if not self.archive.startswith(self.repo):
+            print("- ERROR: archive URL does not start with repo URL")
+            assert False
+        if not self.archive.endswith(f"{self.version}.zip"):
+            bn = basename(self.archive)
+            print(f"- ERROR: archive '{bn}' does not end with version (expected: {self.version}.zip)")
             assert False
 
         # print archive info from json
@@ -69,7 +75,7 @@ class Extension:
         return self.hash == hash_archive and icon_ok
 
 
-def main():
+def main(args):
     # load stuff from json
     try:
         print(f"Loading {EXTENSIONS_FILE}")
@@ -94,9 +100,11 @@ def main():
         return False
     print()
 
-    # check all extensions
     failed = []
     for ext in extensions:
+        # skip extension if args are provided and extension mentioned
+        if args and ext["id"] not in args:
+            continue
         e = Extension(ext)
         try:
             assert e.validate()
@@ -116,5 +124,5 @@ def main():
 
 
 if __name__ == "__main__":
-    if not main():
+    if not main(sys.argv[1:]):
         sys.exit(1)

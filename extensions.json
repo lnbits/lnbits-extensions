@@ -8,7 +8,7 @@
             "version": "0.4",
             "short_description": "For streamers to accept sats and trigger gifs",
             "icon": "https://raw.githubusercontent.com/lnbits/copilot/main/static/bitcoin-streaming.png",
-            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/copilot/copilot.zip",
+            "archive": "https://github.com/lnbits/copilot/archive/refs/tags/0.4.zip",
             "hash": "b7912ebfdb7bd5043e9781ce9e2e74db77e748d8de188573ffcdd7420085a5da"
         },
          {
@@ -18,8 +18,8 @@
             "version": "0.1.2",
             "short_description": "Your bitcoin assistant",
             "icon": "https://raw.githubusercontent.com/lnbits/gerty/main/static/gerty.png",
-            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/gerty/gerty-extension-0.1.2.zip",
-            "hash": "e308a9127573d006ab88534790a8d96c80d9b28649205e696673bc514141cd07"
+            "archive": "https://github.com/lnbits/gerty/archive/refs/tags/0.1.2.zip",
+            "hash": "baff0b6162ffb65cc0b4c721a4aa40a7d3d48acd55a3e344cba3eb1d35cf2074"
         },
         {
             "id": "jukebox",
@@ -28,8 +28,8 @@
             "version": "0.2.1",
             "short_description": "Sats powered Spotify Jukebox",
             "icon": "https://raw.githubusercontent.com/lnbits/jukebox/main/static/image/jukebox.png",
-            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/jukebox/jukebox-extension-0.2.1.zip",
-            "hash": "1e8d0414d608e0949af34ebc40daf0f52563095127474ff53baae5fded30a701"
+            "archive": "https://github.com/lnbits/jukebox/archive/refs/tags/0.2.1.zip",
+            "hash": "26d72488a89281ae15e28fccbfd3baeeab47947445e4ebecffc107a8d114c7cb"
         },
         {
             "id": "lnticket",
@@ -58,8 +58,8 @@
             "version": "0.3",
             "short_description": "Generate users and wallets",
             "icon": "https://raw.githubusercontent.com/lnbits/usermanager/main/static/image/usermanager.png",
-            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/usermanager/usermanager-extension.zip",
-            "hash": "6d0d990f0c987ad7f98ba610424dd977179827234619bf5ff3428f0a065ed7f6"
+            "archive": "https://github.com/lnbits/usermanager/archive/refs/tags/0.3.zip",
+            "hash": "a6be3dd5469c7302ac98b0cc7d9f622dbb7d6d7bd03edf4bc7f671c727a4cc80"
         },
         {
             "id": "example",
@@ -78,7 +78,7 @@
             "version": "0.1",
             "short_description": "Sell and register event tickets",
             "icon": "https://raw.githubusercontent.com/lnbits/events/main/static/image/events.png",
-            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/events/events-0.1.zip",
+            "archive": "https://github.com/lnbits/events/archive/refs/tags/0.1.zip",
             "hash": "d96479d6d5e970d86366bd78ccdd82d3ad7a0c99067c4d80fb8243b682954890"
         },
         {
@@ -88,7 +88,7 @@
             "version": "0.1",
             "short_description": "Points of sale, ATMs, switches",
             "icon": "https://raw.githubusercontent.com/lnbits/lnurldevice/main/static/image/lnurldevice.png",
-            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/lnurldevice/lnurldevice-0.1.zip",
+            "archive": "https://github.com/lnbits/lnurldevice/archive/refs/tags/0.1.zip",
             "hash": "1206182624c58726133966b03c817ed76fc28622b41d28f2c6541381a96baa40"
         },
         {
@@ -128,7 +128,7 @@
             "version": "0.0.0.1",
             "short_description": "Manage your Bolt Cards self custodian way",
             "icon": "https://github.com/lnbits/boltcards/raw/main/static/image/boltcard.png",
-            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/boltcards/boltcards-0.0.0.1.zip",
+            "archive": "https://github.com/lnbits/boltcards/archive/refs/tags/0.0.0.1.zip",
             "hash": "3dfdaad2c1515f58b4c41fba0a92a268feb1641da0f86af7ba7be28d7de034af"
         },
         {
@@ -138,7 +138,7 @@
             "version": "0.0.0.2",
             "short_description": "Create NIP05 address for your domains",
             "icon": "https://github.com/lnbits/nostrnip5/raw/main/static/image/nostrnip5.png",
-            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/nostrnip5/nostrnip5-0.0.0.2.zip",
+            "archive": "https://github.com/lnbits/nostrnip5/archive/refs/tags/0.0.0.2.zip",
             "hash": "21b78a802f299f93112784fc1d19357109eba7458e4b07cfb85928e8c84650d0"
         },
         {
@@ -148,7 +148,7 @@
             "version": "0.0.0.1",
             "short_description": "Split incoming payments across wallets",
             "icon": "https://github.com/lnbits/splitpayments/raw/main/static/image/split-payments.png",
-            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/splitpayments/splitpayments-0.0.0.1.zip",
+            "archive": "https://github.com/lnbits/splitpayments/archive/refs/tags/0.0.0.1.zip",
             "hash": "6c57e6f663c305471b0ff9d0167d75274f63bc2f9c9624368f37876d384ea8c0"
         },
         {
@@ -168,7 +168,7 @@
             "version": "0.0.0.1",
             "short_description": "Make your own Satoshi-dice games",
             "icon": "https://github.com/lnbits/satsdice/raw/main/static/image/satsdice.png",
-            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/satsdice/satsdice-0.0.0.1.zip",
+            "archive": "https://github.com/lnbits/satsdice/archive/refs/tags/0.0.0.1.zip",
             "hash": "3c16e3bb0d92c76f9c018c42bc064bad84cfa8675c562486cc6f7fe57439b200"
         },
         {
@@ -218,7 +218,7 @@
             "version": "0.1",
             "short_description": "Create static payment links",
             "icon": "https://github.com/lnbits/lnurlp/raw/main/static/image/lnurl-pay.png",
-            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/lnurlp/lnurlp-0.1.zip",
+            "archive": "https://github.com/lnbits/lnurlp/archive/refs/tags/0.1.zip",
             "hash": "962e6ed946dcd1a449d7a95dd3725988a4a469c8fae6769645e42971405dd810"
         },
         {
@@ -238,7 +238,7 @@
             "version": "0.1",
             "short_description": "Swap between LN and Onchain",
             "icon": "https://github.com/lnbits/deezy/raw/main/static/deezy.png",
-            "archive": "https://github.com/lnbits/lnbits-extensions/raw/main/extensions/deezy/deezy-0.1.zip",
+            "archive": "https://github.com/lnbits/deezy/archive/refs/tags/0.1.zip",
             "hash": "49eb7bd209d3684b87e17e9200dad823f2265493a054e0531d8c5238f0fd9561"
         },
         {
