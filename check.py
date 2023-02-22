@@ -36,19 +36,19 @@ class Extension:
 
         # sanity checks
         if not self.name[0].isupper():
-            print(f"- ERROR: name does not start with uppercase letter")
+            print("- ERROR: name does not start with uppercase letter")
             assert False
         if not self.short_description[0].isupper():
-            print(f"- ERROR: short_description does not start with uppercase letter")
+            print("- ERROR: short_description does not start with uppercase letter")
             assert False
         if self.short_description.endswith("."):
             print(f"- ERROR: short_description does end with '.'")
             assert False
         if not self.id == self.id.lower():
-            print(f"- ERROR: id has mixed casing")
+            print("- ERROR: id has mixed casing")
             assert False
         if not self.archive.startswith(self.repo):
-            print(f"- ERROR: archive URL does not start with repo URL")
+            print("- ERROR: archive URL does not start with repo URL")
             assert False
         if not self.archive.endswith(f"{self.version}.zip"):
             bn = basename(self.archive)
