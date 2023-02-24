@@ -350,6 +350,16 @@
             "icon": "https://github.com/lnbits/watchonly/raw/main/static/bitcoin-wallet.png",
             "archive": "https://github.com/lnbits/watchonly/archive/refs/tags/0.1.zip",
             "hash": "3dbca3f7a6f99d3f1a6ebb9475607075054cfb583c5bf58bc5bb67be11f0b5d2"
+        },
+        {
+            "id": "strike",
+            "repo": "https://github.com/lnbits/strike",
+            "name": "Strike",
+            "version": "0.1.1",
+            "short_description": "Forward payments to your Strike",
+            "icon": "https://raw.githubusercontent.com/lnbits/strike/main/static/strike.png",
+            "archive": "https://github.com/lnbits/strike/archive/refs/tags/0.1.1.zip",
+            "hash": "3fb0b72f84749a7b0f374bb1389d067aaee46b8c484763c1e200826547aa0c6f"
         }
     ]
 }
