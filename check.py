@@ -104,6 +104,7 @@ class Extension:
                 "satsdice",
                 "smtp",
                 "streamalerts",
+                "strike",
                 "subdomains",
                 "withdraw",
             ]:
