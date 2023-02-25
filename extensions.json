@@ -350,6 +350,16 @@
             "icon": "https://github.com/lnbits/watchonly/raw/main/static/bitcoin-wallet.png",
             "archive": "https://github.com/lnbits/watchonly/archive/refs/tags/0.1.zip",
             "hash": "3dbca3f7a6f99d3f1a6ebb9475607075054cfb583c5bf58bc5bb67be11f0b5d2"
+        },
+        {
+            "id": "pegging",
+            "repo": "https://github.com/lnbits/pegging",
+            "name": "Pegging",
+            "version": "0.0.3",
+            "short_description": "Currency pegged wallet balance",
+            "icon": "https://github.com/lnbits/pegging/raw/main/static/image/peg.png",
+            "archive": "https://github.com/lnbits/pegging/archive/refs/tags/0.0.3.zip",
+            "hash": "ca5448a940a69bb46bbc40037a148336aca50d7bbac440b6afcf11629c5b9154"
         }
     ]
 }
