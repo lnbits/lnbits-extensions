@@ -2,7 +2,7 @@
 
 Official registry for vetted LNbits extensions
 
-To submit an extension to this registry add your manifest into the [`manifest.json`](extensions.json) file in this repository.
+To submit an extension to this registry add your manifest into the [`extensions.json`](extensions.json) file in this repository.
 
 The file MUST use the `extensions` format:
 
