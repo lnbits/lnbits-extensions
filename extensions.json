@@ -215,11 +215,11 @@
             "id": "lnurlp",
             "repo": "https://github.com/lnbits/lnurlp",
             "name": "LNURLp",
-            "version": "0.1",
+            "version": "0.2",
             "short_description": "Create static payment links",
             "icon": "https://github.com/lnbits/lnurlp/raw/main/static/image/lnurl-pay.png",
-            "archive": "https://github.com/lnbits/lnurlp/archive/refs/tags/0.1.zip",
-            "hash": "962e6ed946dcd1a449d7a95dd3725988a4a469c8fae6769645e42971405dd810"
+            "archive": "https://github.com/lnbits/lnurlp/archive/refs/tags/0.2.zip",
+            "hash": "ba62cd8599f465df1c9fdcc2ba3fc105b1c783e573453d725ddd87b0110cb5e6"
         },
         {
             "id": "cashu",
