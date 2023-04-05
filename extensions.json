@@ -55,11 +55,11 @@
             "id": "usermanager",
             "repo": "https://github.com/lnbits/usermanager",
             "name": "User Manager",
-            "version": "0.3",
+            "version": "0.3.1",
             "short_description": "Generate users and wallets",
             "icon": "https://raw.githubusercontent.com/lnbits/usermanager/main/static/image/usermanager.png",
-            "archive": "https://github.com/lnbits/usermanager/archive/refs/tags/0.3.zip",
-            "hash": "a6be3dd5469c7302ac98b0cc7d9f622dbb7d6d7bd03edf4bc7f671c727a4cc80"
+            "archive": "https://github.com/lnbits/usermanager/archive/refs/tags/0.3.1.zip",
+            "hash": "ef5decd06dafb418271bb7d4c2caebd8e9149ce4e09ab8009b77508463a94fe0"
         },
         {
             "id": "example",
