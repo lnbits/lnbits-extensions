@@ -350,6 +350,36 @@
             "icon": "https://github.com/lnbits/watchonly/raw/main/static/bitcoin-wallet.png",
             "archive": "https://github.com/lnbits/watchonly/archive/refs/tags/0.1.zip",
             "hash": "3dbca3f7a6f99d3f1a6ebb9475607075054cfb583c5bf58bc5bb67be11f0b5d2"
+        },
+        {
+            "id": "nostrclient",
+            "repo": "https://github.com/lnbits/nostrclient",
+            "name": "Nostr Client",
+            "version": "v0.1.4",
+            "short_description": "Nostr event multiplexer",
+            "icon": "https://raw.githubusercontent.com/lnbits/nostrclient/main/static/images/nostr-bitcoin.png",
+            "archive": "https://github.com/lnbits/nostrclient/archive/refs/tags/v0.1.4.zip",
+            "hash": "d89e9777d51d7cb0e8ae45b2b56177a71f3d91ea64d15e2bead53e72e04d6921"
+        },
+        {
+            "id": "nostrrelay",
+            "repo": "https://github.com/lnbits/nostr-relay-extension",
+            "name": "Nostr Relay",
+            "version": "v0.24",
+            "short_description": "Create and manage multiple nostr relays",
+            "icon": "https://raw.githubusercontent.com/lnbits/nostr-relay-extension/main/static/image/nostrrelay.png",
+            "archive": "https://github.com/lnbits/nostr-relay-extension/archive/refs/tags/v0.24.zip",
+            "hash": "bade7fc84afa5c3b84c096ef7018fb7c804c0775e54be685a91d93948a3714ce"
+        },
+        {
+            "id": "nostrmarket",
+            "repo": "https://github.com/lnbits/nostrmarket",
+            "name": "Nostr Market",
+            "version": "v0.2.3",
+            "short_description": "Nostr merchant and market",
+            "icon": "https://raw.githubusercontent.com/lnbits/nostrmarket/v0.2.3/static/images/bitcoin-shop.png",
+            "archive": "https://github.com/lnbits/nostrmarket/archive/refs/tags/v0.2.3.zip",
+            "hash": "49455116fb882a3eb3f547ba1e7fb1bf39c39f07a6c189c2797454b9df3cdaf6"
         }
     ]
 }
