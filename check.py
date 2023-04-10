@@ -84,7 +84,6 @@ class Extension:
 
         if CHECK_ZIP_CONTENTS:
             filelist = archive_zip.namelist()
-            print("### filelist", filelist)
             prefix = f"{basename(self.repo)}-{self.version}"
 
             mandatory_files = MANDATORY_FILES.copy()
