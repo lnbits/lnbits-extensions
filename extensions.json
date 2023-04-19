@@ -355,7 +355,7 @@
             "id": "nostrclient",
             "repo": "https://github.com/lnbits/nostrclient",
             "name": "Nostr Client",
-            "version": "v0.1.5",
+            "version": "0.1.5",
             "short_description": "Nostr event multiplexer",
             "icon": "https://raw.githubusercontent.com/lnbits/nostrclient/main/static/images/nostr-bitcoin.png",
             "archive": "https://github.com/lnbits/nostrclient/archive/refs/tags/v0.1.5.zip",
@@ -365,21 +365,21 @@
             "id": "nostrrelay",
             "repo": "https://github.com/lnbits/nostr-relay-extension",
             "name": "Nostr Relay",
-            "version": "v0.24",
+            "version": "0.25",
             "short_description": "Create and manage multiple nostr relays",
             "icon": "https://raw.githubusercontent.com/lnbits/nostr-relay-extension/main/static/image/nostrrelay.png",
-            "archive": "https://github.com/lnbits/nostr-relay-extension/archive/refs/tags/v0.24.zip",
-            "hash": "bade7fc84afa5c3b84c096ef7018fb7c804c0775e54be685a91d93948a3714ce"
+            "archive": "https://github.com/lnbits/nostr-relay-extension/archive/refs/tags/v0.25.zip",
+            "hash": "948ff1ad563722ca754d16c0aabe7024fa49a42eed6901cb14febcba19d53b4d"
         },
         {
             "id": "nostrmarket",
             "repo": "https://github.com/lnbits/nostrmarket",
             "name": "Nostr Market",
-            "version": "v0.2.3",
+            "version": "0.2.5",
             "short_description": "Nostr merchant and market",
-            "icon": "https://raw.githubusercontent.com/lnbits/nostrmarket/v0.2.3/static/images/bitcoin-shop.png",
-            "archive": "https://github.com/lnbits/nostrmarket/archive/refs/tags/v0.2.3.zip",
-            "hash": "49455116fb882a3eb3f547ba1e7fb1bf39c39f07a6c189c2797454b9df3cdaf6"
+            "icon": "https://raw.githubusercontent.com/lnbits/nostrmarket/v0.2.5/static/images/bitcoin-shop.png",
+            "archive": "https://github.com/lnbits/nostrmarket/archive/refs/tags/v0.2.5.zip",
+            "hash": "17384d6ae5ec21fdfbdb42dd803cc137293bde63ea789daf852c526ca086fafd"
         }
     ]
 }
