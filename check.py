@@ -83,7 +83,7 @@ class Extension:
             archive_zip.extractall("extensions")
 
         if CHECK_ZIP_CONTENTS:
-            filelist = [basename(n) for n in archive_zip.namelist()]
+            filelist = archive_zip.namelist()
             print('### filelist', filelist)
             prefix = f"{basename(self.repo)}-{self.version}"
 
