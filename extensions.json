@@ -345,11 +345,11 @@
             "id": "watchonly",
             "repo": "https://github.com/lnbits/watchonly",
             "name": "Onchain Wallet",
-            "version": "0.2",
+            "version": "0.2.1",
             "short_description": "Onchain watch only wallets",
             "icon": "https://github.com/lnbits/watchonly/raw/main/static/bitcoin-wallet.png",
-            "archive": "https://github.com/lnbits/watchonly/archive/refs/tags/v0.2.zip",
-            "hash": "d1b757a5f6f1d24dd4b9aba4b1ed8c568607cc927d07a6baf37b0a55023f0532"
+            "archive": "https://github.com/lnbits/watchonly/archive/refs/tags/v0.2.1.zip",
+            "hash": "ba9533505fd8736eb48f18f9b64939590ca060f2234d366c8e6f7e812a7104f8"
         },
         {
             "id": "nostrclient",
