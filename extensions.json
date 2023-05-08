@@ -155,11 +155,11 @@
             "id": "boltz",
             "repo": "https://github.com/lnbits/boltz-extension",
             "name": "Boltz",
-            "version": "0.2.2",
+            "version": "0.2.3",
             "short_description": "Perform onchain/offchain swaps",
             "icon": "https://github.com/lnbits/boltz-extension/raw/main/static/image/boltz.png",
-            "archive": "https://github.com/lnbits/boltz-extension/archive/refs/tags/0.2.2.zip",
-            "hash": "f086f4c62eed925d5e29fbd525d5aaa3b181407c49fafb5f7d40fb0738835542"
+            "archive": "https://github.com/lnbits/boltz-extension/archive/refs/tags/0.2.3.zip",
+            "hash": "e72ccbf0a07752d79c1205550223a1b8a3b8cd864bb6d0040e601c38548e421d"
         },
         {
             "id": "satsdice",
