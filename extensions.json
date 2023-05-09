@@ -379,7 +379,7 @@
             "short_description": "Nostr merchant and market",
             "icon": "https://raw.githubusercontent.com/lnbits/nostrmarket/v0.2.8/static/images/bitcoin-shop.png",
             "archive": "https://github.com/lnbits/nostrmarket/archive/refs/tags/v0.2.8.zip",
-            "hash": "5097ec1f5eec7283dc5077084a2382058bd957d02b6dac6dd1c86b84f6a7ecf6"
+            "hash": "f6ff7566d66d0614f48e22ca32eddb4e99ad2212c9fd6ea0961f8da45083608b"
         }
     ]
 }
