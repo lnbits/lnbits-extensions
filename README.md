@@ -52,3 +52,14 @@ baff0b6162ffb65cc0b4c721a4aa40a7d3d48acd55a3e344cba3eb1d35cf2074
 
 - after editing the `manifest.json` file in this repo you should run `python3 check.py` as a sanity check
 - you can run `python3 check.py foo bar` only to run sanity checks on extensions named `foo` and `bar`
+
+
+### util for cloning and pulling all extensions
+cloning all extensions into `extensions` dir. requires `jq` to be installed.
+```sh
+sh utils.sh clone
+```
+pulling all extensions from `extensions` dir
+```sh
+sh utils.sh pull
+```
