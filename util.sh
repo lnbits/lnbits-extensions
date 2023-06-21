@@ -17,10 +17,9 @@ pull() {
     cd extensions
     jq -r '.extensions[] | .repo + " " + .id' ../extensions.json | while read -r line
     do
-        repo=$(echo $line | cut -f1 -d" " | sed 's/https:\/\//git@/' | sed 's/\//:/')
+        # repo=$(echo $line | cut -f1 -d" " | sed 's/https:\/\//git@/' | sed 's/\//:/')
         id=$(echo $line | cut -f2 -d" ")
         cd $id
-        git remote set-url origin $repo
         git pull
         cd ..
     done
