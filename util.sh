@@ -4,18 +4,23 @@
 clone() {
     mkdir -p extensions
     cd extensions
-    cat ../extensions.json | jq -r '.extensions[].repo' | while read -r line
+    jq -r '.extensions[] | .repo + " " + .id' ../extensions.json | while read -r line
     do
-        git clone $line
+        repo=$(echo $line | cut -f1 -d" " | sed 's/https:\/\//git@/' | sed 's/\//:/')
+        id=$(echo $line | cut -f2 -d" ")
+        git clone $repo $id
     done
 }
 
 # pulls all extensions from extensions.json
 pull() {
     cd extensions
-    cat ../extensions.json | jq -r '.extensions[].id' | while read -r line
+    jq -r '.extensions[] | .repo + " " + .id' ../extensions.json | while read -r line
     do
-        cd $line
+        repo=$(echo $line | cut -f1 -d" " | sed 's/https:\/\//git@/' | sed 's/\//:/')
+        id=$(echo $line | cut -f2 -d" ")
+        cd $id
+        git remote set-url origin $repo
         git pull
         cd ..
     done
