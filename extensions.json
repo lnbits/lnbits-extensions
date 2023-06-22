@@ -165,11 +165,11 @@
             "id": "satsdice",
             "repo": "https://github.com/lnbits/satsdice",
             "name": "Satsdice",
-            "version": "0.0.0.1",
+            "version": "0.1.0",
             "short_description": "Make your own Satoshi-dice games",
             "icon": "https://github.com/lnbits/satsdice/raw/main/static/image/satsdice.png",
-            "archive": "https://github.com/lnbits/satsdice/archive/refs/tags/0.0.0.1.zip",
-            "hash": "3c16e3bb0d92c76f9c018c42bc064bad84cfa8675c562486cc6f7fe57439b200"
+            "archive": "https://github.com/lnbits/satsdice/archive/refs/tags/0.1.0.zip",
+            "hash": "c94f38c7a00b453e5d1e6a73a698f3ed77cff7889581adb6f3c169341920ede5"
         },
         {
             "id": "offlineshop",
