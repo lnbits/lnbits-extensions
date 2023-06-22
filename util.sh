@@ -25,6 +25,14 @@ pull() {
     done
 }
 
+# gives you lnbits env variables for all extensions
+env() {
+    env=$(jq -rj '.extensions[].id+","' ./extensions.json | sed 's/.$//')
+    echo "LNBITS_EXTENSIONS_DEFAULT_INSTALL=\"$env\""
+}
+
+
+
 # execute functions
 $@
 

@@ -57,9 +57,13 @@ baff0b6162ffb65cc0b4c721a4aa40a7d3d48acd55a3e344cba3eb1d35cf2074
 ### util for cloning and pulling all extensions
 cloning all extensions into `extensions` dir. requires `jq` to be installed.
 ```sh
-sh utils.sh clone
+sh util.sh clone
 ```
 pulling all extensions from `extensions` dir
 ```sh
-sh utils.sh pull
+sh util.sh pull
+```
+get lnbits env variables for all extensions
+```sh
+sh util.sh env
 ```
