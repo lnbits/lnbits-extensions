@@ -35,8 +35,8 @@ For an exensions local [`manifest.json`](https://github.com/lnbits/gerty/blob/ma
 
 ### Getting sha256 checksum for a release
 
-``` bash
-curl -L https://github.com/lnbits/gerty/archive/refs/tags/0.1.2.zip | sha256sum | cut -d " " -f 1
+```console
+$ wget -O - https://github.com/lnbits/withdraw/archive/refs/tags/0.1.1.zip 2> /dev/null | sha256sum | cut -d" " -f 1
 baff0b6162ffb65cc0b4c721a4aa40a7d3d48acd55a3e344cba3eb1d35cf2074
 ```
 
