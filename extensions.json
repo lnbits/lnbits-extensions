@@ -82,6 +82,16 @@
             "hash": "da42d6e4dd47b5e0b2455d4da6d83f778ce686106c5613e00e95dd528da23a4e"
         },
         {
+            "id": "bookie",
+            "repo": "https://github.com/oren-z0/bookie",
+            "name": "Bookie",
+            "version": "0.1.1",
+            "short_description": "Manage bets on competitions with friends",
+            "icon": "https://raw.githubusercontent.com/oren-z0/bookie/main/static/image/bookie.png",
+            "archive": "https://github.com/oren-z0/bookie/archive/refs/tags/0.1.1.zip",
+            "hash": "9e5d52b7635ff2889a7a9a3377d094ab15349a199afd4680d18543abb4dee83d"
+        },
+        {
             "id": "lnurldevice",
             "repo": "https://github.com/lnbits/lnurldevice",
             "name": "LNURLDevices",
