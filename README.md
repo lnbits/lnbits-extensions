@@ -67,3 +67,8 @@ get lnbits env variables for all extensions
 ```sh
 sh util.sh env
 ```
+
+### Example video on how to release a extension into this repo
+
+https://github.com/lnbits/lnbits-extensions/assets/1743657/0d0a6626-655b-4528-9547-9fdc348cf9a6
+
