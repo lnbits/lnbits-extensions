@@ -5,11 +5,11 @@
             "id": "copilot",
             "repo": "https://github.com/lnbits/copilot",
             "name": "Streamer Copilot",
-            "version": "0.4.1",
+            "version": "0.4.2",
             "short_description": "For streamers to accept sats and trigger gifs",
             "icon": "https://raw.githubusercontent.com/lnbits/copilot/main/static/bitcoin-streaming.png",
-            "archive": "https://github.com/lnbits/copilot/archive/refs/tags/0.4.1.zip",
-            "hash": "17e91ff5a9fd4af5b88209f100737601163580561c158e1c3859b44dcc1bacc7"
+            "archive": "https://github.com/lnbits/copilot/archive/refs/tags/0.4.2.zip",
+            "hash": "3242bf1bba26162cf883b63b848c66dc8589494d6ed1756126f60f84e5f4e096"
         },
          {
             "id": "gerty",
