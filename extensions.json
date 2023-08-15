@@ -380,6 +380,16 @@
             "icon": "https://raw.githubusercontent.com/lnbits/nostrmarket/main/static/images/bitcoin-shop.png",
             "archive": "https://github.com/lnbits/nostrmarket/archive/refs/tags/v0.3.4.zip",
             "hash": "9639cea6f24e99e746cbd1a6f04b2aa3da74872ef35ca24b3790e58a5414c120"
+        },
+        {
+            "id": "dfxswiss",
+            "repo": "https://github.com/DFXswiss/lnbits-extensions/",
+            "name": "DFX.swiss",
+            "version": "0.1.1",
+            "short_description": "European Fiat on and off ramp for Lightning",
+            "icon": "https://avatars.githubusercontent.com/u/91702835",
+            "archive": "",
+            "hash": ""
         }
     ]
 }
