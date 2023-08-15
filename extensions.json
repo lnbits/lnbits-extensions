@@ -389,7 +389,7 @@
             "short_description": "European Fiat on and off ramp for Lightning",
             "icon": "https://avatars.githubusercontent.com/u/91702835",
             "archive": "https://github.com/DFXswiss/lnbits-extensions/archive/refs/tags/v0.1.1.zip",
-            "hash": ""
+            "hash": "0c8dcfc76abedec0fcb2afde2f754462785564d7a1887483e74dea708bd28dde"
         }
     ]
 }
