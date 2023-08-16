@@ -1,3 +1,5 @@
+$ wget -O - https://github.com/DFXswiss/DFXswiss/archive/refs/tags/0.1.2.zip 2> /dev/null | sha256sum | cut -d" " -f 1
+
 # LNbits Vetted Extensions
 
 Official registry for vetted LNbits extensions
