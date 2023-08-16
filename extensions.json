@@ -385,11 +385,11 @@
             "id": "dfxswiss",
             "repo": "https://github.com/DFXswiss/DFXswiss/",
             "name": "DFX.swiss",
-            "version": "0.1.2",
+            "version": "0.1.3",
             "short_description": "European Fiat on and off ramp for Lightning",
             "icon": "https://avatars.githubusercontent.com/u/91702835",
-            "archive": "https://github.com/DFXswiss/DFXswiss/archive/refs/tags/v0.1.2.zip",
-            "hash": "77109c2443c13b96cd2f6f429c8ea771c2cbf686bead820479c2fc45d6f78b5d"
+            "archive": "https://github.com/DFXswiss/DFXswiss/archive/refs/tags/v0.1.3.zip",
+            "hash": "aec92ec053540b03d64a52d421a6fea0e42834f7b1fbbbff106dd86d7b4db65a"
         }
     ]
 }
