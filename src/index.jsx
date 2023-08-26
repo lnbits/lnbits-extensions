@@ -8,7 +8,9 @@ render(
             <For each={data.extensions}>
                 {(ext) => (
                     <div class="extension">
-                        <img src={ext.icon} alt={ext.id} />
+                        <a target="_blank" href={ext.repo}>
+                            <img src={ext.icon} alt={ext.id} />
+                        </a>
                         <h2>{ext.id}</h2>
                         <span class="version">{ext.version}</span>
                         <p>{ext.short_description}</p>

@@ -27,13 +27,13 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1200px;
-    margin: 21px auto;
+    margin: 42px auto;
 }
 
 .version {
     background: $pink;
     border-radius: 21px;
-    padding: 6px 12px;
+    padding: 2px 8px;
     display: inline-block;
 }
 
@@ -44,7 +44,7 @@ a {
     background: #2a2f4a;
     border-radius: 5px;
     img {
-        width: 66.6%;
+        width: 50%;
         margin: 12px auto;
         display: block;
     }
