@@ -1,0 +1,41 @@
+{
+    "name": "lnbits-extensions",
+    "version": "1.0.0",
+    "description": "LNbits Extension Repository",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prettier": "./node_modules/prettier/bin-prettier.js --write .",
+        "build": "vite build; cp dist/index.html dist/404.html",
+        "start": "vite",
+        "serve": "vite preview"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lnbits/lnbits-extensions.git"
+    },
+    "keywords": [
+        "LNbits",
+        "Lightning",
+        "Bitcoin",
+        "Wallet",
+        "Bitcoin",
+        "Developer",
+        "Tools"
+    ],
+    "author": "Alan Bits <alan@lnbits.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/lnbits/lnbits-extensions/issues"
+    },
+    "homepage": "https://extensions.lnbits.org/",
+    "devDependencies": {
+        "prettier": "^2.8.8",
+        "sass": "^1.64.2",
+        "vite": "^4.3.9",
+        "vite-plugin-solid": "^2.6.1"
+    },
+    "dependencies": {
+        "solid-js": "^1.7.0"
+    }
+}
