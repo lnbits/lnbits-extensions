@@ -1,19 +1,19 @@
 name: Check JSON
 on:
-  push:
-    paths:
-      - '**.json'
-  pull_request:
+    push:
+        paths:
+            - "**.json"
+    pull_request:
 
 jobs:
-  check-json:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-      - name: Install dependencies
-        run: pip install Pillow requests
-      - name: Run check.py
-        run: python check.py
+    check-json:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: actions/setup-python@v4
+              with:
+                  python-version: "3.10"
+            - name: Install dependencies
+              run: pip install Pillow requests
+            - name: Run check.py
+              run: python check.py

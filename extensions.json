@@ -1,7 +1,7 @@
 {
-    "featured": ["tpos","jukebox","gerty","usermanager","lnticket"],
+    "featured": ["tpos", "jukebox", "gerty", "usermanager", "lnticket"],
     "extensions": [
-         {
+        {
             "id": "copilot",
             "repo": "https://github.com/lnbits/copilot",
             "name": "Streamer Copilot",
@@ -11,7 +11,7 @@
             "archive": "https://github.com/lnbits/copilot/archive/refs/tags/0.4.3.zip",
             "hash": "5d6ffaff2f39451de34679df8b9bdc06f9968faa04e3630e067ba65d4f1a766c"
         },
-         {
+        {
             "id": "gerty",
             "repo": "https://github.com/lnbits/gerty",
             "name": "Gerty",

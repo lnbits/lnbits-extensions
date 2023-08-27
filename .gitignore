@@ -1,2 +1,5 @@
 *.sqlite
+.mypy_cache
 extensions
+node_modules
+dist
