@@ -1,5 +1,11 @@
 {
-    "featured": ["tpos", "jukebox", "gerty", "usermanager", "lnticket"],
+    "featured": [
+        "tpos",
+        "jukebox",
+        "gerty",
+        "usermanager",
+        "lnticket"
+    ],
     "extensions": [
         {
             "id": "copilot",
@@ -65,11 +71,11 @@
             "id": "example",
             "repo": "https://github.com/lnbits/example",
             "name": "Build your own!",
-            "version": "0.2",
+            "version": "v0.3.0",
             "short_description": "Guide for extension developers",
             "icon": "https://raw.githubusercontent.com/lnbits/example/main/static/bitcoin-extension.png",
-            "archive": "https://github.com/lnbits/example/archive/refs/tags/0.2.zip",
-            "hash": "8142a6e8dea0a03c89cdb110bee5b9dd519ab6a19737204e2e13e8a9578b4ff1"
+            "archive": "https://github.com/lnbits/example/archive/ref/tags/v0.3.0.zip",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
             "id": "events",
