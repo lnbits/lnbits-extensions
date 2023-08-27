@@ -31,7 +31,24 @@ env() {
     echo "LNBITS_EXTENSIONS_DEFAULT_INSTALL=\"$env\""
 }
 
+# param: extension id (example)
+# param: key (version)
+# param: value (v0.0.0)
+update_extension_attribute(){
+    tmp=$(mktemp)
+    jq --indent 4 --arg id $1 --arg key $2 --arg value $3 \
+       '( .extensions[] | select(.id == $id) ) |= with_entries(if .key == $key then .value = $value else . end)' \
+       extensions.json > "$tmp" && mv "$tmp" extensions.json
+}
 
+# param: extension id (example)
+# param: version (v0.0.0)
+update_extension() {
+    archive="https://github.com/lnbits/$1/archive/ref/tags/$2.zip"
+    update_extension_attribute $1 version $2
+    update_extension_attribute $1 archive $archive
+    update_extension_attribute $1 hash $(wget -O - $archive 2> /dev/null | sha256sum | cut -d" " -f 1)
+}
 
 # execute functions
 $@
@@ -39,3 +56,4 @@ $@
 # example
 # sh util.sh clone
 # sh util.sh pull
+# sh util.sh update_extension example "v0.0.0"

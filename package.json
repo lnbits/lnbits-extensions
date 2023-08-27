@@ -28,7 +28,7 @@
     "bugs": {
         "url": "https://github.com/lnbits/lnbits-extensions/issues"
     },
-    "homepage": "https://extensions.lnbits.org/",
+    "homepage": "https://extensions.lnbits.com/",
     "devDependencies": {
         "prettier": "^2.8.8",
         "sass": "^1.64.2",

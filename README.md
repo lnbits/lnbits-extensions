@@ -73,6 +73,12 @@ get lnbits env variables for all extensions
 sh util.sh env
 ```
 
+update a extension in extensions.json with id and version
+
+```sh
+sh util.sh update_extension example v0.4.2
+```
+
 ### Example video on how to release a extension into this repo
 
 this uses a github workflow like this: https://github.com/lnbits/example/blob/main/.github/workflows/release.yml
