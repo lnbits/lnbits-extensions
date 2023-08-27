@@ -74,7 +74,7 @@
             "version": "v0.3.0",
             "short_description": "Guide for extension developers",
             "icon": "https://raw.githubusercontent.com/lnbits/example/main/static/bitcoin-extension.png",
-            "archive": "https://github.com/lnbits/example/archive/ref/tags/v0.3.0.zip",
+            "archive": "https://github.com/lnbits/example/archive/refs/tags/v0.3.0.zip",
             "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         },
         {
