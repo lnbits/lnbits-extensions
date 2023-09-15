@@ -361,11 +361,11 @@
             "id": "nostrclient",
             "repo": "https://github.com/lnbits/nostrclient",
             "name": "Nostr Client",
-            "version": "0.2.2",
+            "version": "0.3.0",
             "short_description": "Nostr event multiplexer",
             "icon": "https://raw.githubusercontent.com/lnbits/nostrclient/main/static/images/nostr-bitcoin.png",
-            "archive": "https://github.com/lnbits/nostrclient/archive/refs/tags/v0.2.2.zip",
-            "hash": "54e455dbdf038c4e9cb4cea6f74df73f5989419e91bf1ece3887eca2e3981687"
+            "archive": "https://github.com/lnbits/nostrclient/archive/refs/tags/v0.3.0.zip",
+            "hash": "c22e3e63d36ccb4a767fca60597066d0493cda9e51cb61bd5f151d4c31d93ca8"
         },
         {
             "id": "nostrrelay",
@@ -381,11 +381,11 @@
             "id": "nostrmarket",
             "repo": "https://github.com/lnbits/nostrmarket",
             "name": "Nostr Market",
-            "version": "0.3.4",
+            "version": "0.4.2",
             "short_description": "Nostr merchant and market",
             "icon": "https://raw.githubusercontent.com/lnbits/nostrmarket/main/static/images/bitcoin-shop.png",
-            "archive": "https://github.com/lnbits/nostrmarket/archive/refs/tags/v0.3.4.zip",
-            "hash": "9639cea6f24e99e746cbd1a6f04b2aa3da74872ef35ca24b3790e58a5414c120"
+            "archive": "https://github.com/lnbits/nostrmarket/archive/refs/tags/v0.4.2.zip",
+            "hash": "778fe1e241583715f22423289c8ffc5bd7ec56375595e27dadbf50f27fe16879"
         }
     ]
 }
