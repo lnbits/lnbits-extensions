@@ -123,6 +123,10 @@ class Extension:
                 if fn not in filelist:
                     return False, f"file {fn} not contained in the archive"
 
+            # check for StaticFiles usage in __init__.py and warn if found
+            uses_StaticFiles = b"StaticFiles" in archive_zip.open(f"{prefix}/__init__.py").read()
+            print("- StaticFiles detected :", "YES!" if uses_StaticFiles else "no")
+
         # check icon
         try:
             icon = get_remote_file(self.icon)
