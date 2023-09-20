@@ -1,8 +1,9 @@
 $pink: #ff1ee6;
+$bg: #1f2234;
 
 html,
 body {
-    background: #1f2234;
+    background: $bg;
     color: white;
     text-align: center;
     font-family: sans-serif;
@@ -48,4 +49,18 @@ a {
         margin: 12px auto;
         display: block;
     }
+}
+.btn {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 3px 8px;
+    background: $bg;
+    &:hover {
+        background: $pink;
+        text-decoration: none;
+    }
+    margin-left: 6px;
+    margin-bottom: 8px;
 }

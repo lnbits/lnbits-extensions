@@ -14,11 +14,10 @@ render(
                         <h2>{ext.id}</h2>
                         <span class="version">{ext.version}</span>
                         <p>{ext.short_description}</p>
-                        <a target="_blank" href={ext.repo}>
+                        <a class="btn" target="_blank" href={ext.repo}>
                             github
                         </a>
-                        <br />
-                        <a target="_blank" href={ext.archine}>
+                        <a class="btn" target="_blank" href={ext.archive}>
                             download
                         </a>
                     </div>
