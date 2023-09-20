@@ -91,21 +91,16 @@ class Extension:
             # this is fixed in master, but we are waiting for the upcoming release
             if self.id in [
                 "bleskomat",
-                "boltcards",
                 "deezy",
                 "discordbot",
-                "events",
                 "hivemind",
                 "livestream",
                 "market",
                 "nostrnip5",
-                "offlineshop",
                 "paywall",
-                "satsdice",
                 "smtp",
                 "streamalerts",
                 "subdomains",
-                "withdraw",
             ]:
                 mandatory_files.remove("LICENSE")
 
