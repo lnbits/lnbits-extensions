@@ -381,11 +381,11 @@
             "id": "nostrmarket",
             "repo": "https://github.com/lnbits/nostrmarket",
             "name": "Nostr Market",
-            "version": "0.4.2",
+            "version": "0.4.4",
             "short_description": "Nostr merchant and market",
             "icon": "https://raw.githubusercontent.com/lnbits/nostrmarket/main/static/images/bitcoin-shop.png",
-            "archive": "https://github.com/lnbits/nostrmarket/archive/refs/tags/v0.4.2.zip",
-            "hash": "778fe1e241583715f22423289c8ffc5bd7ec56375595e27dadbf50f27fe16879"
+            "archive": "https://github.com/lnbits/nostrmarket/archive/refs/tags/v0.4.4.zip",
+            "hash": "c6e227d88d7792ecbb69bf11a422dca8952a9ca00dc832755ad20b6d538195b5"
         }
     ]
 }
