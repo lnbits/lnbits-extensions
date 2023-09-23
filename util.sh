@@ -45,7 +45,7 @@ update_extension_attribute(){
 # param: version (v0.0.0)
 update_extension() {
     archive="https://github.com/lnbits/$1/archive/refs/tags/$2.zip"
-    wget -q --spider $archive || echo "ERROR: release does not exist" ; exit 1
+    wget -q --spider $archive || { echo "ERROR: release does not exist" ; exit 1 ; }
     update_extension_attribute $1 version $(echo $2 | sed -r "s/v//")
     update_extension_attribute $1 archive $archive
     update_extension_attribute $1 hash $(wget -O - $archive 2> /dev/null | sha256sum | cut -d" " -f 1)
