@@ -32,7 +32,18 @@
             "id": "gerty",
             "repo": "https://github.com/lnbits/gerty",
             "name": "Gerty",
+            "version": "0.1.4",
+            "short_description": "Your Bitcoin assistant",
+            "icon": "https://raw.githubusercontent.com/lnbits/gerty/main/static/gerty.png",
+            "archive": "https://github.com/lnbits/gerty/archive/refs/tags/0.1.4.zip",
+            "hash": "d676c40ab1242fb1c21fed89b0af2df8c0fee96c9f75686bb23d4635b6bccac3"
+        },
+        {
+            "id": "gerty",
+            "repo": "https://github.com/lnbits/gerty",
+            "name": "Gerty",
             "version": "0.1.5",
+            "min_lnbits_version": "0.11.0",
             "short_description": "Your Bitcoin assistant",
             "icon": "https://raw.githubusercontent.com/lnbits/gerty/main/static/gerty.png",
             "archive": "https://github.com/lnbits/gerty/archive/refs/tags/v0.1.5.zip",
