@@ -53,6 +53,16 @@
             "id": "jukebox",
             "repo": "https://github.com/lnbits/jukebox",
             "name": "Jukebox",
+            "version": "0.2.4",
+            "short_description": "Sats powered Spotify Jukebox",
+            "icon": "https://raw.githubusercontent.com/lnbits/jukebox/main/static/image/jukebox.png",
+            "archive": "https://github.com/lnbits/jukebox/archive/refs/tags/0.2.4.zip",
+            "hash": "9a3416e06698ef37a420c354f8cd7852ce14fcf453185044863ba3a888febddf"
+        },
+        {
+            "id": "jukebox",
+            "repo": "https://github.com/lnbits/jukebox",
+            "name": "Jukebox",
             "version": "0.2.5",
             "short_description": "Sats powered Spotify Jukebox",
             "icon": "https://raw.githubusercontent.com/lnbits/jukebox/main/static/image/jukebox.png",
