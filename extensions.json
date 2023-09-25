@@ -131,11 +131,11 @@
             "id": "boltcards",
             "repo": "https://github.com/lnbits/boltcards",
             "name": "Boltcards",
-            "version": "0.0.3",
+            "version": "0.0.4",
             "short_description": "Manage your Bolt Cards self custodian way",
             "icon": "https://github.com/lnbits/boltcards/raw/main/static/image/boltcard.png",
-            "archive": "https://github.com/lnbits/boltcards/archive/refs/tags/0.0.3.zip",
-            "hash": "46aa131dc1b57002b4189ba305550d8d44f5ce8ffa98a4fbb3c69b9cdd4cbe6e"
+            "archive": "https://github.com/lnbits/boltcards/archive/refs/tags/v0.0.4.zip",
+            "hash": "31273e09b161198cf72a001af8b56bb4b04a3e128f4c43ac66c1d0088622a732"
         },
         {
             "id": "nostrnip5",
