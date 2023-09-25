@@ -301,11 +301,11 @@
             "id": "bleskomat",
             "repo": "https://github.com/lnbits/bleskomat",
             "name": "Bleskomat",
-            "version": "0.1.1",
+            "version": "0.1.2",
             "short_description": "Connect a Bleskomat ATM to an lnbits",
             "icon": "https://github.com/lnbits/bleskomat/raw/main/static/image/bleskomat.png",
-            "archive": "https://github.com/lnbits/bleskomat/archive/refs/tags/v0.1.1.zip",
-            "hash": "2f01ec513b59236f153a1619fd20af60952fc8384c15332f398a722e75b0c104"
+            "archive": "https://github.com/lnbits/bleskomat/archive/refs/tags/v0.1.2.zip",
+            "hash": "d62fe9dc2a5e9f592bf8529d193c986be2661452d85397d1123cba231f2910f1"
         },
         {
             "id": "tipjar",
