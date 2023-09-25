@@ -82,11 +82,11 @@
             "id": "example",
             "repo": "https://github.com/lnbits/example",
             "name": "Build your own!",
-            "version": "0.3.1",
+            "version": "0.3.2",
             "short_description": "Guide for extension developers",
             "icon": "https://raw.githubusercontent.com/lnbits/example/main/static/bitcoin-extension.png",
-            "archive": "https://github.com/lnbits/example/archive/refs/tags/v0.3.1.zip",
-            "hash": "d3d766834e95987c42527ed706dec26feba7556b61a0823c1be339e510534d0a"
+            "archive": "https://github.com/lnbits/example/archive/refs/tags/v0.3.2.zip",
+            "hash": "50bd0da64ffebaa443e955c72052b2362e2cb63f77b0270ebca83fbb2e3a8821"
         },
         {
             "id": "events",
