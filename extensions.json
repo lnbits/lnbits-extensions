@@ -179,11 +179,11 @@
             "id": "lnurldevice",
             "repo": "https://github.com/lnbits/lnurldevice",
             "name": "LNURLDevices",
-            "version": "0.5.7",
+            "version": "0.5.5",
             "short_description": "Points of sale, ATMs, switches",
             "icon": "https://raw.githubusercontent.com/lnbits/lnurldevice/main/static/image/lnurldevice.png",
-            "archive": "https://github.com/lnbits/lnurldevice/archive/refs/tags/v0.5.7.zip",
-            "hash": "ac6bf26cb442a7ab7a8c6549750129aa7c415b53b7928672bfe7e0a8874cb063"
+            "archive": "https://github.com/lnbits/lnurldevice/archive/refs/tags/0.5.5.zip",
+            "hash": "9baa1af6370d272114840f2d208bbf40f3be1f6e60948300320e5feac664c4ba"
         },
         {
             "id": "lnurldevice",
