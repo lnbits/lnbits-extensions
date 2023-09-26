@@ -613,6 +613,17 @@
             "hash": "ba9533505fd8736eb48f18f9b64939590ca060f2234d366c8e6f7e812a7104f8"
         },
         {
+            "id": "watchonly",
+            "repo": "https://github.com/lnbits/watchonly",
+            "name": "Onchain Wallet",
+            "version": "0.2.2",
+            "min_lnbits_version": "0.11.0",
+            "short_description": "Onchain watch only wallets",
+            "icon": "https://github.com/lnbits/watchonly/raw/main/static/bitcoin-wallet.png",
+            "archive": "https://github.com/lnbits/watchonly/archive/refs/tags/v0.2.2.zip",
+            "hash": "a1379c13e399777bba4ad26260a35b16f658db376b82dda87e052b6ba52b12a8"
+        },
+        {
             "id": "nostrclient",
             "repo": "https://github.com/lnbits/nostrclient",
             "name": "Nostr Client",
