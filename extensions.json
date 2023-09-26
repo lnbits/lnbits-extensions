@@ -517,6 +517,17 @@
             "hash": "c27422db6727066878e31d71de223f9fdd3a97f47177ec0539d97cfc8ae66493"
         },
         {
+            "id": "scrub",
+            "repo": "https://github.com/lnbits/scrub",
+            "name": "SCRUB",
+            "version": "0.3.1",
+            "min_lnbits_version": "0.11.0",
+            "short_description": "Pass payments to LNURLp/LNaddress",
+            "icon": "https://github.com/lnbits/scrub/raw/main/static/image/scrub.png",
+            "archive": "https://github.com/lnbits/scrub/archive/refs/tags/v0.3.1.zip",
+            "hash": "db1c3c4befd6b57352110976a2ddfe8b65fe5708aba6ac9dfb52ad069d58cde1"
+        },
+        {
             "id": "lnaddress",
             "repo": "https://github.com/lnbits/lnaddress",
             "name": "Lightning Address",
