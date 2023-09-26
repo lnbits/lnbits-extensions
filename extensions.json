@@ -288,6 +288,7 @@
             "repo": "https://github.com/lnbits/livestream",
             "name": "Livestream",
             "version": "0.1.1",
+            "min_lnbits_version": "0.11.0",
             "short_description": "Sell tracks and split revenue (lnurl-pay)",
             "icon": "https://github.com/lnbits/livestream/raw/main/static/image/livestream.png",
             "archive": "https://github.com/lnbits/livestream/archive/refs/tags/v0.1.1.zip",
