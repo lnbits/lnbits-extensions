@@ -248,11 +248,11 @@
             "id": "splitpayments",
             "repo": "https://github.com/lnbits/splitpayments",
             "name": "Splitpayments",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "short_description": "Split incoming payments across wallets",
             "icon": "https://github.com/lnbits/splitpayments/raw/main/static/image/split-payments.png",
-            "archive": "https://github.com/lnbits/splitpayments/archive/refs/tags/0.1.0.zip",
-            "hash": "7878119afad8522d6c5ed424e1a7d59e33962ede494b17e896820928ecec308a"
+            "archive": "https://github.com/lnbits/splitpayments/archive/refs/tags/v0.1.1.zip",
+            "hash": "83c1aa9b492906290ffe2f546f9206ae6f990813e809732b1d3b0ddada9be1f9"
         },
         {
             "id": "boltz",
