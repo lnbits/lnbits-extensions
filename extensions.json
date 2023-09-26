@@ -291,22 +291,22 @@
         },
         {
             "id": "boltz",
-            "repo": "https://github.com/lnbits/boltz-extension",
+            "repo": "https://github.com/lnbits/boltz",
             "name": "Boltz",
             "version": "0.2.6",
             "short_description": "Perform onchain/offchain swaps",
-            "icon": "https://github.com/lnbits/boltz-extension/raw/main/static/image/boltz.png",
-            "archive": "https://github.com/lnbits/boltz-extension/archive/refs/tags/0.2.6.zip",
+            "icon": "https://github.com/lnbits/boltz/raw/main/static/image/boltz.png",
+            "archive": "https://github.com/lnbits/boltz/archive/refs/tags/0.2.6.zip",
             "hash": "898dafb8a1fd10fa9731cc5738a5685549ab87b86a060c9a6100bd50f8d3ad10"
         },
         {
             "id": "boltz",
-            "repo": "https://github.com/lnbits/boltz-extension",
+            "repo": "https://github.com/lnbits/boltz",
             "name": "Boltz",
             "version": "0.2.8",
             "short_description": "Perform onchain/offchain swaps",
-            "icon": "https://github.com/lnbits/boltz-extension/raw/main/static/image/boltz.png",
-            "archive": "https://github.com/lnbits/boltz-extension/archive/refs/tags/v0.2.8.zip",
+            "icon": "https://github.com/lnbits/boltz/raw/main/static/image/boltz.png",
+            "archive": "https://github.com/lnbits/boltz/archive/refs/tags/v0.2.8.zip",
             "hash": "3009700def184da837df4f7d873c0298356591993caaff929c2bad01f3cdad5d"
         },
         {
