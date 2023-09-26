@@ -74,6 +74,16 @@
             "id": "lnticket",
             "repo": "https://github.com/lnbits/lnticket",
             "name": "Support Tickets",
+            "version": "0.4",
+            "short_description": "Get paid sats to answer questions",
+            "icon": "https://raw.githubusercontent.com/lnbits/lnticket/main/static/image/lntickets.png",
+            "archive": "https://github.com/lnbits/lnticket/archive/refs/tags/0.4.zip",
+            "hash": "98b826684ff3c89d450e6ca10a491f6f791fc7cc8c921db9a19f65f6da3cc487"
+        },
+        {
+            "id": "lnticket",
+            "repo": "https://github.com/lnbits/lnticket",
+            "name": "Support Tickets",
             "version": "0.4.1",
             "short_description": "Get paid sats to answer questions",
             "icon": "https://raw.githubusercontent.com/lnbits/lnticket/main/static/image/lntickets.png",
