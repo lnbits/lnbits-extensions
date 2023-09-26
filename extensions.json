@@ -706,6 +706,17 @@
             "hash": "948ff1ad563722ca754d16c0aabe7024fa49a42eed6901cb14febcba19d53b4d"
         },
         {
+            "id": "nostrrelay",
+            "repo": "https://github.com/lnbits/nostr-relay-extension",
+            "name": "Nostr Relay",
+            "version": "0.25.1",
+            "min_lnbits_version": "0.11.0",
+            "short_description": "Create and manage multiple nostr relays",
+            "icon": "https://raw.githubusercontent.com/lnbits/nostr-relay-extension/main/static/image/nostrrelay.png",
+            "archive": "https://github.com/lnbits/nostr-relay-extension/archive/refs/tags/v0.25.1.zip",
+            "hash": "e1d9a5e7601e8958e41369050db4414ccdaa878a22226cc335ef722064add687"
+        },
+        {
             "id": "nostrmarket",
             "repo": "https://github.com/lnbits/nostrmarket",
             "name": "Nostr Market",
