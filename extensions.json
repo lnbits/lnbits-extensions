@@ -267,6 +267,16 @@
             "id": "offlineshop",
             "repo": "https://github.com/lnbits/offlineshop",
             "name": "Offlineshop",
+            "version": "0.1.1",
+            "short_description": "Receive payments for products offline!",
+            "icon": "https://github.com/lnbits/offlineshop/raw/main/static/image/offlineshop.png",
+            "archive": "https://github.com/lnbits/offlineshop/archive/refs/tags/0.1.1.zip",
+            "hash": "974310abe16a6e22af8189f22ed7b6efff4436cbef696eb543c3b53031579c90"
+        },
+        {
+            "id": "offlineshop",
+            "repo": "https://github.com/lnbits/offlineshop",
+            "name": "Offlineshop",
             "version": "0.1.2",
             "short_description": "Receive payments for products offline!",
             "icon": "https://github.com/lnbits/offlineshop/raw/main/static/image/offlineshop.png",
