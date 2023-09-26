@@ -123,6 +123,17 @@
             "hash": "218dffc589ebc1cd9efb0f43570910803bb485d0db5544e57725202f69ac89bb"
         },
         {
+            "id": "usermanager",
+            "repo": "https://github.com/lnbits/usermanager",
+            "name": "User Manager",
+            "version": "0.3.2",
+            "min_lnbits_version": "0.11.0",
+            "short_description": "Generate users and wallets",
+            "icon": "https://raw.githubusercontent.com/lnbits/usermanager/main/static/image/usermanager.png",
+            "archive": "https://github.com/lnbits/usermanager/archive/refs/tags/v0.3.2.zip",
+            "hash": "84c7e575ab69b264d32f692b6f36eccb04d3fdfcefa447fd37ea729bbd67453c"
+        },
+        {
             "id": "example",
             "repo": "https://github.com/lnbits/example",
             "name": "Build your own!",
