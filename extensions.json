@@ -428,7 +428,18 @@
             "id": "lnaddress",
             "repo": "https://github.com/lnbits/lnaddress",
             "name": "Lightning Address",
+            "version": "0.2",
+            "short_description": "Sell LN addresses for your domain",
+            "icon": "https://github.com/lnbits/lnaddress/raw/main/static/image/lnaddress.png",
+            "archive": "https://github.com/lnbits/lnaddress/archive/refs/tags/0.2.zip",
+            "hash": "48b01d418d08ae902e30307c2ac425fee70ce0c5212b383bd83bb789ec8ca70c"
+        },
+        {
+            "id": "lnaddress",
+            "repo": "https://github.com/lnbits/lnaddress",
+            "name": "Lightning Address",
             "version": "0.2.1",
+            "min_lnbits_version": "0.11.0",
             "short_description": "Sell LN addresses for your domain",
             "icon": "https://github.com/lnbits/lnaddress/raw/main/static/image/lnaddress.png",
             "archive": "https://github.com/lnbits/lnaddress/archive/refs/tags/v0.2.1.zip",
