@@ -318,6 +318,16 @@
             "id": "streamalerts",
             "repo": "https://github.com/lnbits/streamalerts",
             "name": "Streamalerts",
+            "version": "0.2",
+            "short_description": "Bitcoin donations in stream alerts",
+            "icon": "https://github.com/lnbits/streamalerts/raw/main/static/image/streamalerts.png",
+            "archive": "https://github.com/lnbits/streamalerts/archive/refs/tags/0.2.zip",
+            "hash": "fe85c421a888db25a4cc92e1ff1b4bce340efb07d4c78467a0b85fcceb21c810"
+        },
+        {
+            "id": "streamalerts",
+            "repo": "https://github.com/lnbits/streamalerts",
+            "name": "Streamalerts",
             "version": "0.2.1",
             "short_description": "Bitcoin donations in stream alerts",
             "icon": "https://github.com/lnbits/streamalerts/raw/main/static/image/streamalerts.png",
