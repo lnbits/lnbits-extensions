@@ -491,11 +491,11 @@
             "id": "tipjar",
             "repo": "https://github.com/lnbits/tipjar",
             "name": "Tip Jar",
-            "version": "0.2.2",
+            "version": "0.2.3",
             "short_description": "Accept Bitcoin donations, with messages attached!",
             "icon": "https://github.com/lnbits/tipjar/raw/main/static/image/tipjar.png",
-            "archive": "https://github.com/lnbits/tipjar/archive/refs/tags/0.2.2.zip",
-            "hash": "72d80664a9345bc0e6e6dac18e4509e2ead6eafae9193c2fc4250679a21594b1"
+            "archive": "https://github.com/lnbits/tipjar/archive/refs/tags/v0.2.3.zip",
+            "hash": "f0ff33abf507019732dfa334c6673d684b8971ef7a3b383de4b89841cae7b294"
         },
         {
             "id": "lndhub",
