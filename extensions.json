@@ -388,6 +388,16 @@
             "id": "paywall",
             "repo": "https://github.com/lnbits/paywall",
             "name": "Paywall",
+            "version": "0.2",
+            "short_description": "Create paywalls for content",
+            "icon": "https://github.com/lnbits/paywall/raw/main/static/image/paywall.png",
+            "archive": "https://github.com/lnbits/paywall/archive/refs/tags/0.2.zip",
+            "hash": "03dccdf94b110a34af4b036a6b3d8931b66c76999301451f74906aa1e57b0512"
+        },
+        {
+            "id": "paywall",
+            "repo": "https://github.com/lnbits/paywall",
+            "name": "Paywall",
             "version": "0.2.1",
             "short_description": "Create paywalls for content",
             "icon": "https://github.com/lnbits/paywall/raw/main/static/image/paywall.png",
