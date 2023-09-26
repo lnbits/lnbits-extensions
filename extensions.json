@@ -326,6 +326,17 @@
             "hash": "471a712408e37ef8939c6da423894b974c151395951647e477545c3cdd4efcd1"
         },
         {
+            "id": "subdomains",
+            "repo": "https://github.com/lnbits/subdomains",
+            "name": "Subdomains",
+            "version": "0.1.1",
+            "min_lnbits_version": "0.11.0",
+            "short_description": "Sell subdomains of your domain",
+            "icon": "https://github.com/lnbits/subdomains/raw/main/static/image/subdomains.png",
+            "archive": "https://github.com/lnbits/subdomains/archive/refs/tags/v0.1.1.zip",
+            "hash": "0161896c4eca381ac694e5ed1e2d7364edfae7db9aa44cf7d91e42fa7eec3f41"
+        },
+        {
             "id": "streamalerts",
             "repo": "https://github.com/lnbits/streamalerts",
             "name": "Streamalerts",
