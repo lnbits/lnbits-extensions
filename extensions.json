@@ -678,7 +678,18 @@
             "id": "nostrclient",
             "repo": "https://github.com/lnbits/nostrclient",
             "name": "Nostr Client",
+            "version": "0.3.1",
+            "short_description": "Nostr event multiplexer",
+            "icon": "https://raw.githubusercontent.com/lnbits/nostrclient/main/static/images/nostr-bitcoin.png",
+            "archive": "https://github.com/lnbits/nostrclient/archive/refs/tags/v0.3.1.zip",
+            "hash": "14ac880fa19ac0cbbe4ed156f7ae2ec1008a4ffe50e3d22ed353f0c48e9fafc1"
+        },
+        {
+            "id": "nostrclient",
+            "repo": "https://github.com/lnbits/nostrclient",
+            "name": "Nostr Client",
             "version": "0.3.2",
+            "min_lnbits_version": "0.11.0",
             "short_description": "Nostr event multiplexer",
             "icon": "https://raw.githubusercontent.com/lnbits/nostrclient/main/static/images/nostr-bitcoin.png",
             "archive": "https://github.com/lnbits/nostrclient/archive/refs/tags/v0.3.2.zip",
