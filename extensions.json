@@ -523,6 +523,7 @@
             "repo": "https://github.com/lnbits/market",
             "name": "Marketplace",
             "version": "0.2.1",
+            "min_lnbits_version": "0.11.0",
             "short_description": "Webshop/market on LNbits",
             "icon": "https://github.com/lnbits/market/raw/main/static/images/bitcoin-shop.png",
             "archive": "https://github.com/lnbits/market/archive/refs/tags/v0.2.1.zip",
