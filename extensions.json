@@ -448,6 +448,17 @@
             "hash": "7c53de7f3edf2e91a98a99a175c24edc17ed0a5eeb97588c6a24138785b1065b"
         },
         {
+            "id": "cashu",
+            "repo": "https://github.com/lnbits/cashu",
+            "name": "Cashu",
+            "version": "0.3.0",
+            "min_lnbits_version": "0.11.0",
+            "short_description": "Ecash mint and wallet",
+            "icon": "https://github.com/lnbits/cashu/raw/main/static/image/cashu.png",
+            "archive": "https://github.com/lnbits/cashu/archive/refs/tags/0.3.0.zip",
+            "hash": "8fc4bc322126eb7cd702af4a185a67daee2d0d74e4ba4943c3f677014cc83be4"
+        },
+        {
             "id": "deezy",
             "repo": "https://github.com/lnbits/deezy",
             "name": "Deezy",
