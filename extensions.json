@@ -204,7 +204,7 @@
             "short_description": "Let People send emails and earn sats",
             "icon": "https://github.com/lnbits/smtp/raw/main/static/smtp-bitcoin-email.png",
             "archive": "https://github.com/lnbits/smtp/archive/refs/tags/0.1.zip",
-            "hash": "074b1c557c92927c17cbffce9c98de652c4f152e89ebd809a465fe40d23efa31"
+            "hash": "270a9af3c26b7c3ccf7f610652ae7b50fd158868c7827f162117199ef288081c"
         },
         {
             "id": "smtp",
@@ -298,7 +298,7 @@
             "short_description": "Perform onchain/offchain swaps",
             "icon": "https://github.com/lnbits/boltz/raw/main/static/image/boltz.png",
             "archive": "https://github.com/lnbits/boltz/archive/refs/tags/0.2.6.zip",
-            "hash": "898dafb8a1fd10fa9731cc5738a5685549ab87b86a060c9a6100bd50f8d3ad10"
+            "hash": "85766761091003400993024b01211908bfbc34fd9d057d58366b68b9e8ec9c6f"
         },
         {
             "id": "boltz",
@@ -739,7 +739,7 @@
             "short_description": "Create and manage multiple nostr relays",
             "icon": "https://raw.githubusercontent.com/lnbits/nostrrelay/main/static/image/nostrrelay.png",
             "archive": "https://github.com/lnbits/nostrrelay/archive/refs/tags/v0.25.zip",
-            "hash": "948ff1ad563722ca754d16c0aabe7024fa49a42eed6901cb14febcba19d53b4d"
+            "hash": "f0cf070dab3eb634a798a20d12a3c24d829f3c317fb41d09d60e5baa733895d1"
         },
         {
             "id": "nostrrelay",

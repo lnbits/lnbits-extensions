@@ -49,6 +49,7 @@ class Extension:
         self.icon = ext["icon"]
         self.archive = ext["archive"]
         self.hash = ext["hash"]
+        self.min_lnbits_version = ext.get("min_lnbits_version")
 
     def validate(self) -> (bool, str):
         print(f"Checking '{self.name}' extension ({self.id} {self.version})")
@@ -73,6 +74,8 @@ class Extension:
         print(f"- url  : {self.archive}")
         print(f"- hash : {self.hash} (expected)")
         print(f"- hash : {archive_hash} (real)")
+        if self.hash != archive_hash:
+            return False, f"hash mismatch {self.hash} != {archive_hash}"
 
         # check downloaded zip
         bad_file = archive_zip.testzip()
@@ -117,6 +120,28 @@ class Extension:
                 fn = f"{prefix}/{f}"
                 if fn not in filelist:
                     return False, f"file {fn} not contained in the archive"
+
+            # check config
+            config = json.load(archive_zip.open(f"{prefix}/config.json"))
+
+            # don't check name for now, they mismatch quite often :(
+            """
+            name = config.get("name")
+            if name != self.name:
+                return False, f"name mismatch: {name} != {self.name}"
+            """
+
+            # don't check short_description for now, they mismatch quite often :(
+            """
+            short_description = config.get("short_description")
+            if short_description != self.short_description:
+                return False, f"short_description mismatch: {short_description} != {self.short_description}"
+            """
+
+            min_lnbits_version = config.get("min_lnbits_version")
+            print(f"- min_lnbits_version : {min_lnbits_version}")
+            if min_lnbits_version != self.min_lnbits_version:
+                return False, f"min_lnbits_version mismatch: {min_lnbits_version} != {self.min_lnbits_version}"
 
         # check icon
         try:
@@ -166,7 +191,7 @@ def main(args):
             print("OK")
         else:
             print(f"FAILED: {err}")
-            failed[ext["id"]] = err
+            failed[f"{ext['id']} {ext['version']}"] = err
         print()
 
     print("Failed extensions:")
