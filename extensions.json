@@ -441,11 +441,12 @@
             "id": "cashu",
             "repo": "https://github.com/lnbits/cashu",
             "name": "Cashu",
-            "version": "0.2.6",
+            "version": "0.3.1",
+            "min_lnbits_version": "0.11.0",
             "short_description": "Ecash mint and wallet",
             "icon": "https://github.com/lnbits/cashu/raw/main/static/image/cashu.png",
-            "archive": "https://github.com/lnbits/cashu/archive/refs/tags/0.2.6.zip",
-            "hash": "7c53de7f3edf2e91a98a99a175c24edc17ed0a5eeb97588c6a24138785b1065b"
+            "archive": "https://github.com/lnbits/cashu/archive/refs/tags/0.3.1.zip",
+            "hash": "2ab7eff9d8410daa9c96076272b4f780e518c9df3fc444f70957ae58f1965e9c"
         },
         {
             "id": "cashu",
