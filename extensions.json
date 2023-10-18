@@ -442,6 +442,7 @@
             "repo": "https://github.com/lnbits/cashu",
             "name": "Cashu",
             "version": "0.3.1",
+            "min_lnbits_version": "0.11.0",
             "short_description": "Ecash mint and wallet",
             "icon": "https://github.com/lnbits/cashu/raw/main/static/image/cashu.png",
             "archive": "https://github.com/lnbits/cashu/archive/refs/tags/0.3.1.zip",
