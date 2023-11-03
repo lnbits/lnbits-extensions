@@ -222,7 +222,7 @@
             "repo": "https://github.com/lnbits/discordbot",
             "name": "Discordbot",
             "version": "0.1",
-            "short_description": "Let People send emails and earn sats",
+            "short_description": "Provide wallets for Discord users",
             "icon": "https://github.com/lnbits/discordbot/raw/main/static/image/discordbot.png",
             "archive": "https://github.com/lnbits/discordbot/archive/refs/tags/0.1.zip",
             "hash": "3e9468ed0d3b2f46ddd2814a1f9865dbc714eb2b07b6a7c68887ed5dd8c2ee38"
