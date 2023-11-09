@@ -176,6 +176,16 @@
             "hash": "4f2020c13cde8999cf625ca9abf1ad4a896094fe319e15ca75852dffe01b14c3"
         },
         {
+            "id": "bets4sats",
+            "repo": "https://github.com/oren-z0/bets4sats",
+            "name": "Bets4Sats",
+            "version": "0.1.7",
+            "short_description": "Manage bets on competitions with friends",
+            "icon": "https://raw.githubusercontent.com/oren-z0/bets4sats/main/static/image/bets4sats.png",
+            "archive": "https://github.com/oren-z0/bets4sats/archive/refs/tags/0.1.7.zip",
+            "hash": "8d5720b2af381e95a058bd13208183ce74f87949db8c6d3d30026451d9ada27e"
+        },
+        {
             "id": "lnurldevice",
             "repo": "https://github.com/lnbits/lnurldevice",
             "name": "LNURLDevices",
