@@ -781,7 +781,7 @@
             "version": "0.1",
             "min_lnbits_version": "0.11.1",
             "short_description": "Nostr BoltCards Manager",
-            "icon": "https://raw.githubusercontent.com/lnbits/example/main/static/bitcoin-extension.png",
+            "icon": "https://raw.githubusercontent.com/ponthief/cardanostra/main/static/cardanostra.png",
             "archive": "https://github.com/ponthief/cardanostra/archive/refs/tags/0.1.zip",
             "hash": "07ff269291a67d2e094681115884eccbe128a60931d0e87926a9cc87aed2cb29"
         }
