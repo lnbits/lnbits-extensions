@@ -222,7 +222,7 @@
             "repo": "https://github.com/lnbits/discordbot",
             "name": "Discordbot",
             "version": "0.1",
-            "short_description": "Let People send emails and earn sats",
+            "short_description": "Provide wallets for Discord users",
             "icon": "https://github.com/lnbits/discordbot/raw/main/static/image/discordbot.png",
             "archive": "https://github.com/lnbits/discordbot/archive/refs/tags/0.1.zip",
             "hash": "3e9468ed0d3b2f46ddd2814a1f9865dbc714eb2b07b6a7c68887ed5dd8c2ee38"
@@ -441,23 +441,12 @@
             "id": "cashu",
             "repo": "https://github.com/lnbits/cashu",
             "name": "Cashu",
-            "version": "0.3.1",
+            "version": "0.3.2",
             "min_lnbits_version": "0.11.0",
             "short_description": "Ecash mint and wallet",
             "icon": "https://github.com/lnbits/cashu/raw/main/static/image/cashu.png",
-            "archive": "https://github.com/lnbits/cashu/archive/refs/tags/0.3.1.zip",
-            "hash": "2ab7eff9d8410daa9c96076272b4f780e518c9df3fc444f70957ae58f1965e9c"
-        },
-        {
-            "id": "cashu",
-            "repo": "https://github.com/lnbits/cashu",
-            "name": "Cashu",
-            "version": "0.3.0",
-            "min_lnbits_version": "0.11.0",
-            "short_description": "Ecash mint and wallet",
-            "icon": "https://github.com/lnbits/cashu/raw/main/static/image/cashu.png",
-            "archive": "https://github.com/lnbits/cashu/archive/refs/tags/0.3.0.zip",
-            "hash": "8fc4bc322126eb7cd702af4a185a67daee2d0d74e4ba4943c3f677014cc83be4"
+            "archive": "https://github.com/lnbits/cashu/archive/refs/tags/0.3.2.zip",
+            "hash": "0cc1af2a586f849740cb2bd6d0153ddffb84fcdb5381627ca1bb272ee16e8c2c"
         },
         {
             "id": "deezy",
@@ -767,12 +756,12 @@
             "id": "nostrmarket",
             "repo": "https://github.com/lnbits/nostrmarket",
             "name": "Nostr Market",
-            "version": "0.5.0",
+            "version": "0.5.1",
             "min_lnbits_version": "0.11.0",
             "short_description": "Nostr merchant and market",
             "icon": "https://raw.githubusercontent.com/lnbits/nostrmarket/main/static/images/bitcoin-shop.png",
-            "archive": "https://github.com/lnbits/nostrmarket/archive/refs/tags/v0.5.0.zip",
-            "hash": "81ced4e414587f4eac3625d30069a7c0092164a92edf801ff3b7ca39f9dcf361"
+            "archive": "https://github.com/lnbits/nostrmarket/archive/refs/tags/v0.5.1.zip",
+            "hash": "e587fcaf30bc610f2e457a3d7811dfcae7e437148fea96803546c066bd83a556"
         },
         {
             "id": "cardanostra",
