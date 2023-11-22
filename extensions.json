@@ -427,11 +427,22 @@
             "hash": "68add89dec0ece8f102243f166d9776dc3fd00b26c600e47a4e6bcab1a76d64f"
         },
         {
+             "id": "lnurlp",
+             "repo": "https://github.com/lnbits/lnurlp",
+             "name": "LNURLp",
+             "version": "0.3.3",
+             "min_lnbits_version": "0.11.0",
+             "short_description": "Create static payment links",
+             "icon": "https://github.com/lnbits/lnurlp/raw/main/static/image/lnurl-pay.png",
+             "archive": "https://github.com/lnbits/lnurlp/archive/refs/tags/v0.3.3.zip",
+             "hash": "e4f614e986745564ac3e15bccab09860dd007cc1494ecad3a78eb138f918e223"
+        },
+        {
             "id": "lnurlp",
             "repo": "https://github.com/lnbits/lnurlp",
             "name": "LNURLp",
             "version": "0.4.0",
-            "min_lnbits_version": "0.11.0",
+            "min_lnbits_version": "0.11.2",
             "short_description": "Create static payment links",
             "icon": "https://github.com/lnbits/lnurlp/raw/main/static/image/lnurl-pay.png",
             "archive": "https://github.com/lnbits/lnurlp/archive/refs/tags/v0.4.0.zip",
