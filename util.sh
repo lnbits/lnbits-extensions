@@ -39,7 +39,9 @@ env() {
 # param: value (v0.0.0)
 update_extension_attribute(){
     tmp=$(mktemp)
-    jq --indent 4 --arg id $1 --arg key $2 --arg value $3 '( .extensions[] | select(.min_lnbits_version != null) | select(.id == $id) ) |= with_entries(if .key == $key then .value = $value else . end)' extensions.json > "$tmp" && mv "$tmp" extensions.json
+    version=$(jq -r --arg id $1 '[.extensions[] | select(.id == $id)] | last | .version' ./extensions.json)
+    jq_cmd_string='( .extensions[] | select(.id == $id) | select(.version == $version) ) |= with_entries(if .key == $key then .value = $value else . end)'
+    jq --indent 4 --arg id $1 --arg key $2 --arg value $3 --arg version $version "$jq_cmd_string" extensions.json > "$tmp" && mv "$tmp" extensions.json
 }
 
 # param: extension id (example)
