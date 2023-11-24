@@ -441,6 +441,16 @@
             "id": "cashu",
             "repo": "https://github.com/lnbits/cashu",
             "name": "Cashu",
+            "version": "0.2.6",
+            "short_description": "Chaumian Ecash mint",
+            "icon": "https://github.com/lnbits/cashu/raw/main/static/image/cashu.png",
+            "archive": "https://github.com/lnbits/cashu/archive/refs/tags/0.2.6.zip",
+            "hash": "7c53de7f3edf2e91a98a99a175c24edc17ed0a5eeb97588c6a24138785b1065b"
+        },
+        {
+            "id": "cashu",
+            "repo": "https://github.com/lnbits/cashu",
+            "name": "Cashu",
             "version": "0.3.2",
             "min_lnbits_version": "0.11.0",
             "short_description": "Chaumian Ecash mint",
@@ -448,16 +458,6 @@
             "archive": "https://github.com/lnbits/cashu/archive/refs/tags/0.3.2.zip",
             "hash": "0cc1af2a586f849740cb2bd6d0153ddffb84fcdb5381627ca1bb272ee16e8c2c"
         },
-        {
-            "id": "cashu",
-            "repo": "https://github.com/lnbits/cashu",
-            "name": "Cashu",
-            "version": "0.2.6",
-            "short_description": "Chaumian Ecash mint",
-            "icon": "https://github.com/lnbits/cashu/raw/main/static/image/cashu.png",
-            "archive": "https://github.com/lnbits/cashu/archive/refs/tags/0.2.6.zip",
-            "hash": "7c53de7f3edf2e91a98a99a175c24edc17ed0a5eeb97588c6a24138785b1065b"
-        },        
         {
             "id": "deezy",
             "repo": "https://github.com/lnbits/deezy",
