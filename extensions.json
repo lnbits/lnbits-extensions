@@ -110,7 +110,7 @@
             "short_description": "Secure, mobile-ready, instant and shareable point of sale",
             "icon": "https://raw.githubusercontent.com/lnbits/tpos/main/static/image/tpos.png",
             "archive": "https://github.com/lnbits/tpos/archive/refs/tags/v0.4.3.zip",
-            "hash": "24cd0aa4b552447dd7128f67bd869e552c7f029716bf1f2c1fe70d59d601c2de"
+            "hash": "439e6f51128562718ac391b2a6a117630a8d28f64ee9f75e5de6ffbc36cc67b9"
         },
         {
             "id": "tpos",
