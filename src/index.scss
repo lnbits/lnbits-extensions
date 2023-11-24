@@ -31,11 +31,15 @@ a {
     margin: 42px auto;
 }
 
+.min-version,
 .version {
     background: $pink;
     border-radius: 21px;
     padding: 2px 8px;
     display: inline-block;
+}
+.min-version {
+    background: $bg;
 }
 
 .extension {
