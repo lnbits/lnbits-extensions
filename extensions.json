@@ -105,12 +105,12 @@
             "id": "tpos",
             "repo": "https://github.com/lnbits/tpos",
             "name": "TPoS",
-            "version": "0.5.0",
+            "version": "0.5.1",
             "min_lnbits_version": "0.11.0",
             "short_description": "Secure, mobile-ready, instant and shareable point of sale",
             "icon": "https://raw.githubusercontent.com/lnbits/tpos/main/static/image/tpos.png",
-            "archive": "https://github.com/lnbits/tpos/archive/refs/tags/v0.5.0.zip",
-            "hash": "24cd0aa4b552447dd7128f67bd869e552c7f029716bf1f2c1fe70d59d601c2de"
+            "archive": "https://github.com/lnbits/tpos/archive/refs/tags/v0.5.1.zip",
+            "hash": "40b83366783e20ffa2536f3ee9e007579b78901b526994cd6758885095b208e2"
         },
         {
             "id": "usermanager",
@@ -427,15 +427,15 @@
             "hash": "68add89dec0ece8f102243f166d9776dc3fd00b26c600e47a4e6bcab1a76d64f"
         },
         {
-             "id": "lnurlp",
-             "repo": "https://github.com/lnbits/lnurlp",
-             "name": "LNURLp",
-             "version": "0.3.3",
-             "min_lnbits_version": "0.11.0",
-             "short_description": "Create static payment links",
-             "icon": "https://github.com/lnbits/lnurlp/raw/main/static/image/lnurl-pay.png",
-             "archive": "https://github.com/lnbits/lnurlp/archive/refs/tags/v0.3.3.zip",
-             "hash": "e4f614e986745564ac3e15bccab09860dd007cc1494ecad3a78eb138f918e223"
+            "id": "lnurlp",
+            "repo": "https://github.com/lnbits/lnurlp",
+            "name": "LNURLp",
+            "version": "0.3.3",
+            "min_lnbits_version": "0.11.0",
+            "short_description": "Create static payment links",
+            "icon": "https://github.com/lnbits/lnurlp/raw/main/static/image/lnurl-pay.png",
+            "archive": "https://github.com/lnbits/lnurlp/archive/refs/tags/v0.3.3.zip",
+            "hash": "e4f614e986745564ac3e15bccab09860dd007cc1494ecad3a78eb138f918e223"
         },
         {
             "id": "lnurlp",
