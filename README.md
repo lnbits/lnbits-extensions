@@ -3,6 +3,15 @@
 Official registry for vetted LNbits extensions
 
 To submit an extension to this registry add your manifest into the [`extensions.json`](extensions.json) file in this repository.
+### Important
+
+Only submit fully working extensions, we are not here to review and imrpove your code.
+
+Do not add dependencies, LNbits has plenty of dependencies you can use.
+
+Te easier an extension is to review, the quicker the review process will be.
+
+### Manifest format
 
 The file MUST use the `extensions` format:
 
