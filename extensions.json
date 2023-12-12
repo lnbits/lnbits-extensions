@@ -113,6 +113,17 @@
             "hash": "439e6f51128562718ac391b2a6a117630a8d28f64ee9f75e5de6ffbc36cc67b9"
         },
         {
+            "id": "tpos",
+            "repo": "https://github.com/lnbits/tpos",
+            "name": "TPoS",
+            "version": "0.5.1",
+            "min_lnbits_version": "0.11.2",
+            "short_description": "Secure, mobile-ready, instant and shareable point of sale",
+            "icon": "https://raw.githubusercontent.com/lnbits/tpos/main/static/image/tpos.png",
+            "archive": "https://github.com/lnbits/tpos/archive/refs/tags/v0.5.1.zip",
+            "hash": "40b83366783e20ffa2536f3ee9e007579b78901b526994cd6758885095b208e2"
+        },
+        {
             "id": "usermanager",
             "repo": "https://github.com/lnbits/usermanager",
             "name": "User Manager",
@@ -312,6 +323,17 @@
             "hash": "762c709e1660c183e16154c50f84531947ecf52f881e480f60c225ef066f183c"
         },
         {
+            "id": "boltz",
+            "repo": "https://github.com/lnbits/boltz",
+            "name": "Boltz",
+            "version": "0.3.1",
+            "min_lnbits_version": "0.11.2",
+            "short_description": "Perform onchain/offchain swaps",
+            "icon": "https://github.com/lnbits/boltz/raw/main/static/image/boltz.png",
+            "archive": "https://github.com/lnbits/boltz/archive/refs/tags/v0.3.1.zip",
+            "hash": "a203dbf8a9e44b98d4f245d53e7bcaddb5d87773fd76e2f5bf7ac3801bcfb4f7"
+        },
+        {
             "id": "satsdice",
             "repo": "https://github.com/lnbits/satsdice",
             "name": "Satsdice",
@@ -438,15 +460,36 @@
             "hash": "e4f614e986745564ac3e15bccab09860dd007cc1494ecad3a78eb138f918e223"
         },
         {
+            "id": "lnurlp",
+            "repo": "https://github.com/lnbits/lnurlp",
+            "name": "LNURLp",
+            "version": "0.4.4",
+            "min_lnbits_version": "0.11.2",
+            "short_description": "Create static payment links",
+            "icon": "https://github.com/lnbits/lnurlp/raw/main/static/image/lnurl-pay.png",
+            "archive": "https://github.com/lnbits/lnurlp/archive/refs/tags/v0.4.4.zip",
+            "hash": "a2f5fdf748d87f23baa872910e56e83f12d55a33bb9c0064c6755e051f3d7ce8"
+        },
+        {
             "id": "cashu",
             "repo": "https://github.com/lnbits/cashu",
             "name": "Cashu",
-            "version": "0.3.2",
-            "min_lnbits_version": "0.11.0",
-            "short_description": "Ecash mint and wallet",
+            "version": "0.2.6",
+            "short_description": "Chaumian Ecash mint",
             "icon": "https://github.com/lnbits/cashu/raw/main/static/image/cashu.png",
-            "archive": "https://github.com/lnbits/cashu/archive/refs/tags/0.3.2.zip",
-            "hash": "0cc1af2a586f849740cb2bd6d0153ddffb84fcdb5381627ca1bb272ee16e8c2c"
+            "archive": "https://github.com/lnbits/cashu/archive/refs/tags/0.2.6.zip",
+            "hash": "7c53de7f3edf2e91a98a99a175c24edc17ed0a5eeb97588c6a24138785b1065b"
+        },
+        {
+            "id": "cashu",
+            "repo": "https://github.com/lnbits/cashu",
+            "name": "Cashu",
+            "version": "0.3.3",
+            "min_lnbits_version": "0.11.0",
+            "short_description": "Chaumian Ecash mint",
+            "icon": "https://github.com/lnbits/cashu/raw/main/static/image/cashu.png",
+            "archive": "https://github.com/lnbits/cashu/archive/refs/tags/0.3.3.zip",
+            "hash": "6dd9d539f555559f94e4f9b530d2bf79f9f933095bc9e9d112259ee48af22cd7"
         },
         {
             "id": "deezy",
@@ -567,12 +610,12 @@
             "id": "satspay",
             "repo": "https://github.com/lnbits/satspay",
             "name": "SatsPay Server",
-            "version": "0.2.5",
+            "version": "0.2.6",
             "min_lnbits_version": "0.11.0",
             "short_description": "Create onchain and LN charges",
             "icon": "https://github.com/lnbits/satspay/raw/main/static/image/satspay.png",
-            "archive": "https://github.com/lnbits/satspay/archive/refs/tags/v0.2.5.zip",
-            "hash": "41c772d7b641b21a4a8688284c0b9c7b5b5ff89d2fc784cfcb4e78b601640bd2"
+            "archive": "https://github.com/lnbits/satspay/archive/refs/tags/v0.2.6.zip",
+            "hash": "cc0b4ccdd4909cc1c09b1da3a5aa1bd77db1ff6a5446f58e0ec13e17b877d59c"
         },
         {
             "id": "bleskomat",
@@ -609,12 +652,12 @@
             "id": "tipjar",
             "repo": "https://github.com/lnbits/tipjar",
             "name": "Tip Jar",
-            "version": "0.2.3",
+            "version": "0.2.4",
             "min_lnbits_version": "0.11.0",
             "short_description": "Accept Bitcoin donations, with messages attached!",
             "icon": "https://github.com/lnbits/tipjar/raw/main/static/image/tipjar.png",
-            "archive": "https://github.com/lnbits/tipjar/archive/refs/tags/v0.2.3.zip",
-            "hash": "f0ff33abf507019732dfa334c6673d684b8971ef7a3b383de4b89841cae7b294"
+            "archive": "https://github.com/lnbits/tipjar/archive/refs/tags/v0.2.4.zip",
+            "hash": "1fdb8f18ebbd10f7f1d67cedb8ac3c2f5c97f4096fb3dc650b9475e73c67b289"
         },
         {
             "id": "lndhub",
@@ -714,12 +757,12 @@
             "id": "nostrclient",
             "repo": "https://github.com/lnbits/nostrclient",
             "name": "Nostr Client",
-            "version": "0.3.2",
+            "version": "0.3.7",
             "min_lnbits_version": "0.11.0",
             "short_description": "Nostr event multiplexer",
             "icon": "https://raw.githubusercontent.com/lnbits/nostrclient/main/static/images/nostr-bitcoin.png",
-            "archive": "https://github.com/lnbits/nostrclient/archive/refs/tags/v0.3.2.zip",
-            "hash": "03164ccfe13a43f5cb08a4abda0e43fe48d38c39f14f0b794c87bd6d78e54689"
+            "archive": "https://github.com/lnbits/nostrclient/archive/refs/tags/v0.3.7.zip",
+            "hash": "61323bb77a48614cde18b2a6fd424306cbff8cafc6fc4a7a4222270a52fa4bf5"
         },
         {
             "id": "nostrrelay",
