@@ -9,8 +9,8 @@ import requests
 from PIL import Image
 
 EXTENSIONS_FILE = "extensions.json"
-UNPACK_ZIP_CONTENTS = False
 CHECK_ZIP_CONTENTS = True
+UNPACK_ZIP_CONTENTS = False
 
 MANDATORY_FILES = [
     "LICENSE",
@@ -20,12 +20,15 @@ MANDATORY_FILES = [
     "manifest.json",
 ]
 
-# set to True to enable caching of downloaded files, useful for debug
-CACHE_DOWNLOADS = False
-if CACHE_DOWNLOADS:
+try:
+    # use requests_cache if installed
+    # useful for subsequent runs of the check
+    # so the files are not downloaded again and again
     import requests_cache
 
-    requests_cache.install_cache("lnbits-extensions-cache")
+    requests_cache.install_cache("lnbits-extensions-download-cache")
+except ImportError:
+    pass
 
 
 def get_remote_file(url):
@@ -67,7 +70,7 @@ class Extension:
             return False, "archive URL does not start with repo URL"
         if not self.archive.endswith(f"{self.version}.zip"):
             bn = basename(self.archive)
-            return False, "archive name '{bn}' doesn't end with {self.version}.zip"
+            return False, f"archive name '{bn}' doesn't end with {self.version}.zip"
 
         # print archive info from json
         archive_hash, archive_zip = get_remote_zip(self.archive)
@@ -96,10 +99,8 @@ class Extension:
                 "bleskomat",
                 "deezy",
                 "discordbot",
-                "hivemind",
                 "livestream",
                 "market",
-                "nostrnip5",
                 "paywall",
                 "smtp",
                 "streamalerts",
@@ -141,14 +142,17 @@ class Extension:
             min_lnbits_version = config.get("min_lnbits_version")
             print(f"- min_lnbits_version : {min_lnbits_version}")
             if min_lnbits_version != self.min_lnbits_version:
-                return False, f"min_lnbits_version mismatch: {min_lnbits_version} != {self.min_lnbits_version}"
+                return (
+                    False,
+                    f"min_lnbits_version mismatch: {min_lnbits_version} != {self.min_lnbits_version}",
+                )
 
         # check icon
         try:
             icon = get_remote_file(self.icon)
             img = Image.open(BytesIO(icon))
             print(f"- icon : OK {img.size[0]}x{img.size[1]} @ {img.mode} ({self.icon})")
-        except Exception as ex:
+        except Exception:
             print(f"- icon : broken ({self.icon})")
             return False, f"broken icon ({self.icon})"
 
