@@ -827,6 +827,16 @@
             "icon": "https://raw.githubusercontent.com/lnbits/nostrmarket/main/static/images/bitcoin-shop.png",
             "archive": "https://github.com/lnbits/nostrmarket/archive/refs/tags/v0.6.0.zip",
             "hash": "97f6b33fc901551bda90527b3c2d1f80b22608dc1cf23fd92a1ad00cf372c779"
+        },
+        {
+            "id": "lncalendar",
+            "repo": "https://github.com/lnbits/lncalendar",
+            "name": "LNCalendar",
+            "version": "0.1.1",
+            "short_description": "For streamers to accept sats and trigger gifs",
+            "icon": "https://raw.githubusercontent.com/lnbits/lncalendar/main/static/image/paywall.png",
+            "archive": "https://github.com/lnbits/lncalendar/archive/refs/tags/0.1.1.zip",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         }
     ]
 }
