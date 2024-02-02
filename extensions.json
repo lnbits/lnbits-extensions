@@ -1259,6 +1259,17 @@
             "details_link": "https://raw.githubusercontent.com/lnbits/lncalendar/main/config.json",
             "archive": "https://github.com/lnbits/lncalendar/archive/refs/tags/v0.1.5.zip",
             "hash": "2d904d2c966268dab373944cdfad09fac7aeaf41b2265603e98fee2fbb8e2e71"
+        },
+        {
+            "id": "scheduler",
+            "repo": "https://github.com/bitkarrot/scheduler",
+            "name": "Scheduler",
+            "version": "0.1.1",
+            "min_lnbits_version": "0.12.0",
+            "short_description": "Generate Scheduled tasks via crontabs for lnbits",
+            "icon": "https://raw.githubusercontent.com/bitkarrot/scheduler/main/static/image/scheduler.png",
+            "archive": "https://github.com/bitkarrot/scheduler/archive/refs/tags/v0.1.1.zip",
+            "hash": "db7470dc51a4d8bf3c0e3da49d6dd37bd584f60302778682165ce359d327e06c"
         }
     ]
 }
