@@ -904,7 +904,7 @@
             "short_description": "Generate Scheduled tasks via crontabs for lnbits",
             "icon": "https://github.com/bitkarrot/scheduler/blob/main/static/image/scheduler.png",
             "archive": "https://github.com/bitkarrot/scheduler/archive/refs/tags/v0.1.1.zip",
-            "hash": "17afc9d5be8c3c347bd53e06793982fbd58ccf5ee8cc6ddaa6c7841ed6e76c0e"
+            "hash": "db7470dc51a4d8bf3c0e3da49d6dd37bd584f60302778682165ce359d327e06c"
         }
     ]
 }
