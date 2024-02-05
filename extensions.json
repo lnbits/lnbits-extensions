@@ -179,12 +179,12 @@
             "id": "events",
             "repo": "https://github.com/lnbits/events",
             "name": "Events",
-            "version": "0.1.3",
+            "version": "0.1.4",
             "min_lnbits_version": "0.11.0",
             "short_description": "Sell and register event tickets",
             "icon": "https://raw.githubusercontent.com/lnbits/events/main/static/image/events.png",
-            "archive": "https://github.com/lnbits/events/archive/refs/tags/v0.1.3.zip",
-            "hash": "4f2020c13cde8999cf625ca9abf1ad4a896094fe319e15ca75852dffe01b14c3"
+            "archive": "https://github.com/lnbits/events/archive/refs/tags/v0.1.4.zip",
+            "hash": "1e97a037247fc4a6adafca0ecb0f9723d443bc2c70d1a6ebedab57859051e341"
         },
         {
             "id": "lnurldevice",
