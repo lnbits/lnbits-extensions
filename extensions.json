@@ -490,7 +490,7 @@
             "short_description": "Chaumian Ecash mint",
             "icon": "https://github.com/lnbits/cashu/raw/main/static/image/cashu.png",
             "archive": "https://github.com/lnbits/cashu/archive/refs/tags/0.4.0.zip",
-            "hash": "e1160565c1f2c7d38c5ff4ed37d212f6df9d65778eeb88224a4fbd6fcb10eaf9"
+            "hash": "b1edfd2e0401ed2e940ee108766a9b79ff1967905ff845c28606f23a0cb49175"
         },        
         {
             "id": "deezy",
