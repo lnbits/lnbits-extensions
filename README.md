@@ -42,6 +42,35 @@ For an exensions local [`manifest.json`](https://github.com/lnbits/gerty/blob/ma
 }
 ```
 
+### Paid extensions
+It is possible for developers to require a payment for their extensions. In order to do so an extension release must have this field:
+```json
+   "pay_link": "# payment URL"
+```
+
+**Example**:
+```json
+{
+    "id": "testext",
+    "repo": "https://github.com/lnbits/testext",
+    "name": "Test Extension",
+    "version": "0.5",
+    "short_description": "Private Test Extension",
+    "icon": "https://raw.githubusercontent.com/lnbits/example/main/static/bitcoin-extension.png",
+    "archive": "https://legend.lnbits.com/paywall/download/BNv6XjB4DKLBQt7q5w4HuG",
+    "pay_link": "https://legend.lnbits.com/paywall/api/v1/paywalls/invoice/BNv6XjB4DKLBQt7q5w4HuG",
+    "hash": "455527407fcfdc5e8aba93f16802d1083d36dcdfdde829f919cee07420791d61"
+}
+```
+
+The specifications for the `pay_link` URL are as follows:
+| Request                      | Response                                                                | Description                                                       |
+|------------------------------|-------------------------------------------------------------------------|-------------------------------------------------------------------|
+| `HTTP GET pay_link`               | `{"amount": 5 }`                                                        | Get the amount in `sats` required by this extensio release.       |
+| `HTTP GET pay_link?amount=5`      | `{ "payment_hash": "3bf...7ec", "payment_request": "lnbc50n1p...r3m" }` | Get an invoice for the specified amount (or higher).              |
+| `HTTP WS pay_link/{payment_hash}` | `{"paid": true\|false}`                                               | Open a `websocket` to be notified when the invoice has been paid. |
+
+
 ### Getting sha256 checksum for a release
 
 ```console
