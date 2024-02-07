@@ -63,7 +63,7 @@ It is possible for developers to require a payment for their extensions. In orde
 }
 ```
 
-The `pay_link` endpoint must follow these specifications (implemnted in the [Paywall Extension](https://github.com/lnbits/paywall/))
+If you do not want to use the [Paywall LNbits Extension](https://github.com/lnbits/paywall/) to server your extension, but instead you want to use your own paywall, then the `pay_link` endpoint must follow these specifications: 
 
 <table>
 <tr>
@@ -87,7 +87,7 @@ GET pay_link
 ````
     
 </td>
-<td>Get the amount in `sats` required by this extensio release.</td>
+<td>Get the amount in `sats` required by this extension release.</td>
 </tr>
 <tr>
 <td>
@@ -107,7 +107,7 @@ GET pay_link?amount=5
 ```
     
 </td>
-<td>Get an invoice for the specified amount (or higher).</td>
+<td>Request an invoice for the specified amount (or higher).</td>
 </tr>
 <tr>
 <td>
