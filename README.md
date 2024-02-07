@@ -63,12 +63,77 @@ It is possible for developers to require a payment for their extensions. In orde
 }
 ```
 
-The specifications for the `pay_link` URL are as follows:
-| Request                      | Response                                                                | Description                                                       |
-|------------------------------|-------------------------------------------------------------------------|-------------------------------------------------------------------|
-| `HTTP GET pay_link`               | `{"amount": 5 }`                                                        | Get the amount in `sats` required by this extensio release.       |
-| `HTTP GET pay_link?amount=5`      | `{ "payment_hash": "3bf...7ec", "payment_request": "lnbc50n1p...r3m" }` | Get an invoice for the specified amount (or higher).              |
-| `HTTP WS pay_link/{payment_hash}` | `{"paid": true\|false}`                                               | Open a `websocket` to be notified when the invoice has been paid. |
+The `pay_link` endpoint must follow these specifications (implemnted in the [Paywall Extension](https://github.com/lnbits/paywall/))
+
+<table>
+<tr>
+<th>HTTP Request</th>
+<th>HTTP Response</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
+
+```HTTP
+GET pay_link
+```
+</td>
+<td>
+
+```json
+{
+    "amount": 5
+}
+````
+    
+</td>
+<td>Get the amount in `sats` required by this extensio release.</td>
+</tr>
+<tr>
+<td>
+
+```HTTP
+GET pay_link?amount=5
+```
+    
+</td>
+<td>
+
+```json
+{
+    "payment_hash": "04c33f37d01aff...fd7c407a",
+    "payment_request": "lnbc50n1pju...n7h8gucqn2cgau"
+}
+```
+    
+</td>
+<td>Get an invoice for the specified amount (or higher).</td>
+</tr>
+<tr>
+<td>
+
+```HTTP
+WS pay_link/{payment_hash}
+
+```
+
+</td>
+<td>
+
+```json
+{"paid": true|false}
+```
+
+</td>
+<td>Open a websocket to be notified when the invoice has been paid.</td>
+</tr>
+</table>
+
+In order to download the file one must add the `payment_hash` and an `version` (optional) query parameters to the `archive` URL. Eg:
+
+```HTTP
+GET https://legend.lnbits.com/paywall/download/BNv6XjB4DKLBQt7q5w4HuG?payment_hash=3bf...7ec&version=v0.1
+```
 
 
 ### Getting sha256 checksum for a release
