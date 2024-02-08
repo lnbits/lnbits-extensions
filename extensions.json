@@ -117,7 +117,7 @@
             "repo": "https://github.com/lnbits/tpos",
             "name": "TPoS",
             "version": "0.6.0",
-            "min_lnbits_version": "0.12.0",
+            "min_lnbits_version": "0.11.2",
             "short_description": "Secure, mobile-ready, instant and shareable point of sale",
             "icon": "https://raw.githubusercontent.com/lnbits/tpos/main/static/image/tpos.png",
             "archive": "https://github.com/lnbits/tpos/archive/refs/tags/v0.6.0.zip",
