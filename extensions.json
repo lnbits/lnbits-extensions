@@ -485,12 +485,12 @@
             "id": "cashu",
             "repo": "https://github.com/lnbits/cashu",
             "name": "Cashu",
-            "version": "0.4.4",
+            "version": "0.4.5",
             "min_lnbits_version": "0.11.0",
             "short_description": "Chaumian Ecash mint",
             "icon": "https://github.com/lnbits/cashu/raw/main/static/image/cashu.png",
             "archive": "https://github.com/lnbits/cashu/archive/refs/tags/0.4.4.zip",
-            "hash": "a041432174e2abbf4e843733bbecb8e08a97b660eb8ee22a7af83d36f87465e0"
+            "hash": "bbf87677beb52fe54acba42a9c88d37e77f2b271642788a1bb3f8481b84d9190"
         },
         {
             "id": "deezy",
