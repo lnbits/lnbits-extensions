@@ -47,7 +47,7 @@ jobs:
           cd lnbits
           git checkout dev
           poetry install
-          poetry run lnbits > logs/lnbits.log &
+          poetry run lnbits &
           sleep 5
 
       - name: run jmx scripts
