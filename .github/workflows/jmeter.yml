@@ -29,6 +29,14 @@ jobs:
           mkdir logs
           mkdir reports
 
+      - name: install jmeter
+        run: |
+          make install-jmeter
+
+      - name: start mirror server
+        run: |
+          make start-mirror-server
+
       - name: Setup LNbits and run
         env:
           LNBITS_ADMIN_UI: true
@@ -40,14 +48,6 @@ jobs:
           git checkout dev
           poetry install
           poetry run lnbits > logs/lnbits.log &
-
-      - name: install jmeter
-        run: |
-          make install-jmeter
-
-      - name: start mirror server
-        run: |
-          make start-mirror-server
 
       - name: run jmx scripts
         run: |
