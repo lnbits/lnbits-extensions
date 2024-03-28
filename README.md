@@ -65,7 +65,7 @@ It is possible for developers to require a payment for their extensions. In orde
 
 The [Paywall LNbist Extension](https://github.com/lnbits/paywall/blob/main/README.md#file-paywall) can be used to serve the extension `zip` file.
 
-If you do not want to use the [Paywall LNbits Extension](https://github.com/lnbits/paywall/) to server your extension, but instead you want to use your own paywall, then the `pay_link` endpoint must follow these specifications: 
+If you do not want to use the [Paywall LNbits Extension](https://github.com/lnbits/paywall/) to server your extension, but instead you want to use your own paywall, then the `pay_link` endpoint must follow these specifications:
 
 <table>
 <tr>
@@ -87,7 +87,7 @@ GET pay_link
     "amount": 5
 }
 ````
-    
+
 </td>
 <td>Get the amount in `sats` required by this extension release.</td>
 </tr>
@@ -97,7 +97,7 @@ GET pay_link
 ```HTTP
 GET pay_link?amount=5
 ```
-    
+
 </td>
 <td>
 
@@ -107,7 +107,7 @@ GET pay_link?amount=5
     "payment_request": "lnbc50n1pju...n7h8gucqn2cgau"
 }
 ```
-    
+
 </td>
 <td>Request an invoice for the specified amount (or higher).</td>
 </tr>
@@ -189,3 +189,19 @@ sh util.sh update_extension example v0.4.2
 this uses a github workflow like this: https://github.com/lnbits/example/blob/main/.github/workflows/release.yml
 
 https://github.com/lnbits/lnbits-extensions/assets/1743657/0d0a6626-655b-4528-9547-9fdc348cf9a6
+
+
+# Integration Tests
+## setup
+```sh
+make install-jmeter
+```
+## configure
+make sure lnbits is running and start the mirror server
+```sh
+make start-mirror-server
+```
+## run
+```sh
+make test
+```
