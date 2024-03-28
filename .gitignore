@@ -3,3 +3,7 @@
 extensions
 node_modules
 dist
+apache-jmeter*
+logs
+reports
+jmeter.log
