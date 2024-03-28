@@ -1,18 +1,10 @@
 name: JMeter Tests
 
 on:
-  workflow_call:
-    inputs:
-      python-version:
-        description: "Python Version"
-        required: true
-        default: "3.9"
-        type: string
-      poetry-version:
-        description: "Poetry Version"
-        required: true
-        default: "1.5.1"
-        type: string
+  push:
+    branches:
+      - main
+  pull_request:
 
 jobs:
   action_build:
@@ -21,16 +13,16 @@ jobs:
 
       - uses: actions/checkout@v4
 
-      - name: Set up Python ${{ inputs.python-version }}
+      - name: Set up Python 3.9
         uses: actions/setup-python@v5
         with:
-          python-version: ${{ inputs.python-version }}
+          python-version: "3.9"
           cache: "pip"
 
-      - name: Set up Poetry ${{ inputs.poetry-version }}
+      - name: Set up Poetry 1.5.1
         uses: abatilo/actions-poetry@v2
         with:
-          poetry-version: ${{ inputs.poetry-version }}
+          poetry-version: "1.5.1"
 
       - name: create logs and reports dir
         run: |
