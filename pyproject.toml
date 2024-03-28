@@ -2,7 +2,7 @@
 name = "lnbits-extensions"
 version = "1.0.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Alan Bits <alan@lnbits.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
