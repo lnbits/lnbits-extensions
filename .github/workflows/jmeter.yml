@@ -1,0 +1,64 @@
+name: JMeter Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  jmeter:
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.9"
+          cache: "pip"
+
+      - name: Set up Poetry 1.5.1
+        uses: abatilo/actions-poetry@v2
+        with:
+          poetry-version: "1.5.1"
+
+      - name: create logs and reports dir
+        run: |
+          mkdir logs
+          mkdir reports
+
+      - name: install jmeter
+        run: |
+          make install-jmeter
+
+      - name: start mirror server
+        run: |
+          make start-mirror-server
+
+      - name: Setup LNbits and run
+        env:
+          LNBITS_ADMIN_UI: true
+          LNBITS_EXTENSIONS_DEFAULT_INSTALL: "watchonly, satspay, tipjar, tpos, lnurlp, withdraw"
+          LNBITS_EXTENSIONS_MANIFESTS: "https://raw.githubusercontent.com/lnbits/lnbits/${{ GITHUB_REF##*/ }}/extensions.json"
+          LNBITS_BACKEND_WALLET_CLASS: FakeWallet
+        run: |
+          git clone https://github.com/lnbits/lnbits.git
+          cd lnbits
+          git checkout dev
+          poetry install
+          poetry run lnbits &
+          sleep 5
+
+      - name: run jmx scripts
+        run: |
+          make test
+
+      - uses: actions/upload-artifact@v4
+        if: ${{ always() }}
+        with:
+          name: jmeter-test-results
+          path: |
+            reports/
+            logs/
