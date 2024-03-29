@@ -1,9 +1,6 @@
 name: JMeter Tests
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
 
 jobs:
@@ -41,7 +38,7 @@ jobs:
         env:
           LNBITS_ADMIN_UI: true
           LNBITS_EXTENSIONS_DEFAULT_INSTALL: "watchonly, satspay, tipjar, tpos, lnurlp, withdraw"
-          LNBITS_EXTENSIONS_MANIFESTS: "https://raw.githubusercontent.com/lnbits/lnbits/${{ GITHUB_REF##*/ }}/extensions.json"
+          LNBITS_EXTENSIONS_MANIFESTS: "https://raw.githubusercontent.com/lnbits/lnbits/${{ github.event.pull_request.base.ref }}/extensions.json"
           LNBITS_BACKEND_WALLET_CLASS: FakeWallet
         run: |
           git clone https://github.com/lnbits/lnbits.git
