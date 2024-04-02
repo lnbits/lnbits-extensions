@@ -632,12 +632,12 @@
             "id": "bleskomat",
             "repo": "https://github.com/lnbits/bleskomat",
             "name": "Bleskomat",
-            "version": "0.1.2",
+            "version": "0.2.0",
             "min_lnbits_version": "0.11.0",
             "short_description": "Connect a Bleskomat ATM to an lnbits",
             "icon": "https://github.com/lnbits/bleskomat/raw/main/static/image/bleskomat.png",
-            "archive": "https://github.com/lnbits/bleskomat/archive/refs/tags/v0.1.2.zip",
-            "hash": "d62fe9dc2a5e9f592bf8529d193c986be2661452d85397d1123cba231f2910f1"
+            "archive": "https://github.com/lnbits/bleskomat/archive/refs/tags/v0.2.0.zip",
+            "hash": "d9d61ae17e8c7c7fa0712901f635a586259f72e91ce9e53eb1414f5c2c8a5b94"
         },
         {
             "id": "tipjar",
