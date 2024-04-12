@@ -34,6 +34,12 @@
             <stringProp name="Argument.desc">Comma separated values, no spaces.</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="extensionsManifestPath" elementType="Argument">
+            <stringProp name="Argument.name">extensionsManifestPath</stringProp>
+            <stringProp name="Argument.value">/lnbits/lnbits-extensions/main/extensions.json</stringProp>
+            <stringProp name="Argument.desc">HTTP path for the raw.githubusercontent.com repo</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
@@ -166,7 +172,7 @@
           <stringProp name="HTTPSampler.port">&quot;&quot;</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/lnbits/lnbits-extensions/main/extensions.json</stringProp>
+          <stringProp name="HTTPSampler.path">${extensionsManifestPath}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
