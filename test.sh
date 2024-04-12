@@ -6,8 +6,9 @@ for file in $files; do
     rm -r reports logs
     echo "Running test with $file"
     filename=$(basename "$file" ".jmx")
+    echo "Using Extension Manifest: $EXTENSIONS_MANIFEST_PATH"
     ./apache-jmeter-5.6.2/bin/jmeter -DextensionsManifestPath="$EXTENSIONS_MANIFEST_PATH" -n -t $file -l logs/$filename.log -e -o reports ;
-    error_count=$(cat jmeter.log | grep -m 1 "summary =" | awk '{print $19}')
+    error_count=$(cat jmeter.log | grep "summary =" | grep "Err:     1" | wc -l)
     echo "Error count: '$error_count'"
     echo "##########"
     echo "$error_count" == "0"
