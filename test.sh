@@ -1,7 +1,7 @@
 #!/bin/bash
 files=$( ls ./integration/*.jmx)
 echo "Files: $files"
-for file in $( ls ./integration/*.jmx); do
+for file in $files; do
     echo "Cleaning logs"
     rm -r reports logs
     echo "Running test with $file"
@@ -14,9 +14,9 @@ for file in $( ls ./integration/*.jmx); do
     echo "###########$error_count ###########"
     if [ "$error_count" = "0" ]; then
         echo "Test $filename OK."
-        rm -r reports/*
     else
         echo "Test $filename failed. Error count: '$error_count'."
+        cat logs/$filename.log
         exit 1
     fi
 done
