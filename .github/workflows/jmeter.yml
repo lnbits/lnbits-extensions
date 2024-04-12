@@ -50,6 +50,8 @@ jobs:
           sleep 5
 
       - name: run jmx scripts
+        env:
+          EXTENSIONS_MANIFEST_PATH: "/lnbits/lnbits-extensions/${{ github.event.pull_request.head.ref }}/extensions.json"
         run: |
           make test
 
