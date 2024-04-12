@@ -36,7 +36,7 @@
           </elementProp>
           <elementProp name="extensionsManifestPath" elementType="Argument">
             <stringProp name="Argument.name">extensionsManifestPath</stringProp>
-            <stringProp name="Argument.value">/lnbits/lnbits-extensions/main/extensions.json</stringProp>
+            <stringProp name="Argument.value">${__property(extensionsManifestPath,,/lnbits/lnbits-extensions/main/extensions.json)}</stringProp>
             <stringProp name="Argument.desc">HTTP path for the raw.githubusercontent.com repo</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
