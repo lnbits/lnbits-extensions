@@ -52,6 +52,12 @@ jobs:
       - name: run jmx scripts
         run: |
           make test
+
+      - name: log results
+        if: ${{ always() }}
+        run: |
+          # catch up time for lnbits
+          sleep 1
           cat lnbits/data/logs/debug.log
 
       - uses: actions/upload-artifact@v4
