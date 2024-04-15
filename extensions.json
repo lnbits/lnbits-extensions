@@ -29,6 +29,17 @@
             "hash": "0ce8f5998aece7d6161eb163b4f93d0070057257569539fcab76529c545fce7e"
         },
         {
+            "id": "copilot",
+            "repo": "https://github.com/lnbits/copilot",
+            "name": "Streamer Copilot",
+            "version": "0.5.0",
+            "min_lnbits_version": "0.12.6",
+            "short_description": "For streamers to accept sats and trigger gifs",
+            "icon": "https://raw.githubusercontent.com/lnbits/copilot/main/static/bitcoin-streaming.png",
+            "archive": "https://github.com/lnbits/copilot/archive/refs/tags/v0.5.0.zip",
+            "hash": "82b9694e08804995c5b4b5e6d80d3d72cafc4d222fa85c386c734a3ec98b1863"
+        },
+        {
             "id": "gerty",
             "repo": "https://github.com/lnbits/gerty",
             "name": "Gerty",
@@ -124,6 +135,17 @@
             "hash": "8cbb63e9025766ec0c9c8c3deedbe474643bef51fc8f0c33816d0c0e098acdea"
         },
         {
+            "id": "tpos",
+            "repo": "https://github.com/lnbits/tpos",
+            "name": "TPoS",
+            "version": "0.7.0",
+            "min_lnbits_version": "0.12.6",
+            "short_description": "Secure, mobile-ready, instant and shareable point of sale",
+            "icon": "https://raw.githubusercontent.com/lnbits/tpos/main/static/image/tpos.png",
+            "archive": "https://github.com/lnbits/tpos/archive/refs/tags/v0.7.0.zip",
+            "hash": "efd75107525e8132bcd1e4faa7736acc10f7d951c5ef30f4f6349e9b7add43cb"
+        },
+        {
             "id": "usermanager",
             "repo": "https://github.com/lnbits/usermanager",
             "name": "User Manager",
@@ -206,6 +228,17 @@
             "icon": "https://raw.githubusercontent.com/lnbits/lnurldevice/main/static/image/lnurldevice.png",
             "archive": "https://github.com/lnbits/lnurldevice/archive/refs/tags/v0.5.8.zip",
             "hash": "c796e36bbffafdd8771919a6d26d532113adff6e8505ae2686463ab62ca778b0"
+        },
+        {
+            "id": "lnurldevice",
+            "repo": "https://github.com/lnbits/lnurldevice",
+            "name": "LNURLDevices",
+            "version": "0.6.0",
+            "min_lnbits_version": "0.12.6",
+            "short_description": "Points of sale, ATMs, switches",
+            "icon": "https://raw.githubusercontent.com/lnbits/lnurldevice/main/static/image/lnurldevice.png",
+            "archive": "https://github.com/lnbits/lnurldevice/archive/refs/tags/v0.6.0.zip",
+            "hash": "239628bbbaff8b59862a80bf676e0b721e082bb5eb00331b1f06070ef9ad13a8"
         },
         {
             "id": "smtp",
@@ -671,6 +704,17 @@
             "hash": "020285c94ac2e4c7001c228d3f9e0199d54421d87743229cf2ff01519dd83bad"
         },
         {
+            "id": "lndhub",
+            "repo": "https://github.com/lnbits/lndhub",
+            "name": "LndHub",
+            "version": "0.4.0",
+            "min_lnbits_version": "0.12.6",
+            "short_description": "Access lnbits from BlueWallet or Zeus",
+            "icon": "https://github.com/lnbits/lndhub/raw/main/static/image/lndhub.png",
+            "archive": "https://github.com/lnbits/lndhub/archive/refs/tags/v0.4.0.zip",
+            "hash": "3878f8f041d95c4ed0bced27240c481abc63ea2556131475d21231d47bd124db"
+        },
+        {
             "id": "scrub",
             "repo": "https://github.com/lnbits/scrub",
             "name": "SCRUB",
@@ -787,6 +831,17 @@
             "hash": "dd26874eaf75f8650a545f8295077a042ff06ea30b5c7c4289e3c49d68e490e7"
         },
         {
+            "id": "nostrrelay",
+            "repo": "https://github.com/lnbits/nostrrelay",
+            "name": "Nostr Relay",
+            "version": "0.26.0",
+            "min_lnbits_version": "0.12.6",
+            "short_description": "Create and manage multiple nostr relays",
+            "icon": "https://raw.githubusercontent.com/lnbits/nostrrelay/main/static/image/nostrrelay.png",
+            "archive": "https://github.com/lnbits/nostrrelay/archive/refs/tags/v0.26.0.zip",
+            "hash": "abc6008e53ab6a72a4cf0953816d488bce026542df20937c2d3ca8bae99d4a69"
+        },
+        {
             "id": "nostrmarket",
             "repo": "https://github.com/lnbits/nostrmarket",
             "name": "Nostr Market",
@@ -817,6 +872,17 @@
             "icon": "https://raw.githubusercontent.com/lnbits/nostrmarket/main/static/images/bitcoin-shop.png",
             "archive": "https://github.com/lnbits/nostrmarket/archive/refs/tags/v0.6.0.zip",
             "hash": "97f6b33fc901551bda90527b3c2d1f80b22608dc1cf23fd92a1ad00cf372c779"
+        },
+        {
+            "id": "nostrmarket",
+            "repo": "https://github.com/lnbits/nostrmarket",
+            "name": "Nostr Market",
+            "version": "0.7.0",
+            "min_lnbits_version": "0.12.6",
+            "short_description": "Nostr merchant and market",
+            "icon": "https://raw.githubusercontent.com/lnbits/nostrmarket/main/static/images/bitcoin-shop.png",
+            "archive": "https://github.com/lnbits/nostrmarket/archive/refs/tags/v0.7.0.zip",
+            "hash": "c8975c37a19d27f0f158e84577a8ca53435fda8f4574e4570961e3afb2c4c8b9"
         },
         {
             "id": "lncalendar",
