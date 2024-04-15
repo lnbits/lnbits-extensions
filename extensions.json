@@ -704,6 +704,17 @@
             "hash": "020285c94ac2e4c7001c228d3f9e0199d54421d87743229cf2ff01519dd83bad"
         },
         {
+            "id": "lndhub",
+            "repo": "https://github.com/lnbits/lndhub",
+            "name": "LndHub",
+            "version": "0.4.0",
+            "min_lnbits_version": "0.12.6",
+            "short_description": "Access lnbits from BlueWallet or Zeus",
+            "icon": "https://github.com/lnbits/lndhub/raw/main/static/image/lndhub.png",
+            "archive": "https://github.com/lnbits/lndhub/archive/refs/tags/v0.4.0.zip",
+            "hash": "3878f8f041d95c4ed0bced27240c481abc63ea2556131475d21231d47bd124db"
+        },
+        {
             "id": "scrub",
             "repo": "https://github.com/lnbits/scrub",
             "name": "SCRUB",
