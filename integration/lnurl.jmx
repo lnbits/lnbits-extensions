@@ -65,7 +65,7 @@
           </elementProp>
           <elementProp name="mirrorPort" elementType="Argument">
             <stringProp name="Argument.name">mirrorPort</stringProp>
-            <stringProp name="Argument.value">${__property(mirrorPort,,5050)}</stringProp>
+            <stringProp name="Argument.value">${__property(mirrorPort,,8081)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -2581,7 +2581,7 @@ if (resp.balance !== userBalance * 1000) {
         <hashTree/>
       </hashTree>
       <HttpMirrorControl guiclass="HttpMirrorControlGui" testclass="HttpMirrorControl" testname="[callback] HTTP Mirror Server" enabled="true">
-        <stringProp name="HttpMirrorControlGui.port">5050</stringProp>
+        <stringProp name="HttpMirrorControlGui.port">8081</stringProp>
         <stringProp name="HttpMirrorControlGui.maxPoolSize">0</stringProp>
         <stringProp name="HttpMirrorControlGui.maxQueueSize">25</stringProp>
       </HttpMirrorControl>

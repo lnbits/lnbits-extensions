@@ -2285,7 +2285,7 @@ if (resp.length !== parallelWithdrawUsers) {
       </ResultCollector>
       <hashTree/>
       <HttpMirrorControl guiclass="HttpMirrorControlGui" testclass="HttpMirrorControl" testname="HTTP Mirror Server" enabled="true">
-        <stringProp name="HttpMirrorControlGui.port">5050</stringProp>
+        <stringProp name="HttpMirrorControlGui.port">8081</stringProp>
         <stringProp name="HttpMirrorControlGui.maxPoolSize">0</stringProp>
         <stringProp name="HttpMirrorControlGui.maxQueueSize">25</stringProp>
       </HttpMirrorControl>
