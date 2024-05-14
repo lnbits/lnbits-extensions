@@ -563,12 +563,12 @@
             "id": "livestream",
             "repo": "https://github.com/lnbits/livestream",
             "name": "Livestream",
-            "version": "0.1.3",
+            "version": "0.2.0",
             "min_lnbits_version": "0.11.0",
             "short_description": "Sell tracks and split revenue (lnurl-pay)",
             "icon": "https://github.com/lnbits/livestream/raw/main/static/image/livestream.png",
-            "archive": "https://github.com/lnbits/livestream/archive/refs/tags/v0.1.3.zip",
-            "hash": "012e10282463fbbcfb9f191d39f7a5c38dd10e7e8ed6e4b5c845ff4e77eca0da"
+            "archive": "https://github.com/lnbits/livestream/archive/refs/tags/v0.2.0.zip",
+            "hash": "ed764ae3f3a879f7b7a84716216995b6a0f7796628e746c69b350fdeaf5e43e4"
         },
         {
             "id": "lnurlp",
