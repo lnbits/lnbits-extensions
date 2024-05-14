@@ -287,12 +287,12 @@
             "id": "smtp",
             "repo": "https://github.com/lnbits/smtp",
             "name": "SMTP",
-            "version": "0.2.1",
+            "version": "0.3.0",
             "min_lnbits_version": "0.11.0",
             "short_description": "Let People send emails and earn sats",
             "icon": "https://github.com/lnbits/smtp/raw/main/static/smtp-bitcoin-email.png",
-            "archive": "https://github.com/lnbits/smtp/archive/refs/tags/v0.2.1.zip",
-            "hash": "d8c2fc4c85f2be65d982a9f2d27a24a0aa474487b697e69484d6cebea6068410"
+            "archive": "https://github.com/lnbits/smtp/archive/refs/tags/v0.3.0.zip",
+            "hash": "937afd960b43507e9556de7c4c00b4492369cad8e744ae50127b6538dbfdadc6"
         },
         {
             "id": "discordbot",
