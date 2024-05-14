@@ -921,12 +921,12 @@
             "id": "lncalendar",
             "repo": "https://github.com/lnbits/lncalendar",
             "name": "LNCalendar",
-            "version": "0.1.2",
+            "version": "0.2.0",
             "min_lnbits_version": "0.12.0",
             "short_description": "A paid scheduling extension for LNBits that lets you schedule blocks of time on your calendar and get paid in Bitcoin",
             "icon": "https://raw.githubusercontent.com/lnbits/lncalendar/main/static/image/lncalendar.png",
-            "archive": "https://github.com/lnbits/lncalendar/archive/refs/tags/v0.1.2.zip",
-            "hash": "8ea76bfaeb32f19fc0e1b8e48b286936842d1afb1d8d49233e78865cf55a3a79"
+            "archive": "https://github.com/lnbits/lncalendar/archive/refs/tags/v0.2.0.zip",
+            "hash": "2797a44477cf08c283b0a9b6c71c151612780dc1d97506852c7813b97c9856e9"
         }
     ]
 }
