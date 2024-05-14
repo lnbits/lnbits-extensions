@@ -623,12 +623,23 @@
             "id": "market",
             "repo": "https://github.com/lnbits/market",
             "name": "Marketplace",
-            "version": "0.2.5",
+            "version": "0.2.4",
             "min_lnbits_version": "0.11.0",
             "short_description": "Webshop/market on LNbits",
             "icon": "https://github.com/lnbits/market/raw/main/static/images/bitcoin-shop.png",
-            "archive": "https://github.com/lnbits/market/archive/refs/tags/v0.2.5.zip",
-            "hash": "bdedfc48ff39284c12b9f403fd71f87bda6b0147b127b7f86e44afd4f07ea358"
+            "archive": "https://github.com/lnbits/market/archive/refs/tags/v0.2.4.zip",
+            "hash": "eec1f072e06233ef3b9ccdd25e14ed1aa105f98e2ae17694fa119900830302bc"
+        },
+        {
+            "id": "market",
+            "repo": "https://github.com/lnbits/market",
+            "name": "Marketplace",
+            "version": "0.3.0",
+            "min_lnbits_version": "0.12.5",
+            "short_description": "Webshop/market on LNbits",
+            "icon": "https://github.com/lnbits/market/raw/main/static/images/bitcoin-shop.png",
+            "archive": "https://github.com/lnbits/market/archive/refs/tags/v0.3.0.zip",
+            "hash": "655781f24c7751f41866602b4f840971c6181a422123dc6174141ad0dcdd1d96"
         },
         {
             "id": "satspay",
