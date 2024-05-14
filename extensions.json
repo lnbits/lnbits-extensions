@@ -750,7 +750,7 @@
             "repo": "https://github.com/lnbits/lnaddress",
             "name": "Lightning Address",
             "version": "0.2.3",
-            "min_lnbits_version": "0.11.0",
+            "min_lnbits_version": "0.12.5",
             "short_description": "Sell LN addresses for your domain",
             "icon": "https://github.com/lnbits/lnaddress/raw/main/static/image/lnaddress.png",
             "archive": "https://github.com/lnbits/lnaddress/archive/refs/tags/v0.2.3.zip",
