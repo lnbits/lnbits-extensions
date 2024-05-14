@@ -602,12 +602,23 @@
             "id": "paywall",
             "repo": "https://github.com/lnbits/paywall",
             "name": "Paywall",
-            "version": "0.3.1",
+            "version": "0.3.0",
             "min_lnbits_version": "0.11.0",
             "short_description": "Create paywalls for content",
             "icon": "https://github.com/lnbits/paywall/raw/main/static/image/paywall.png",
-            "archive": "https://github.com/lnbits/paywall/archive/refs/tags/v0.3.1.zip",
-            "hash": "45d298af2f3fc4cb2597d55beac814abfb96df219f2f03bfbd5dc66e73ebb014"
+            "archive": "https://github.com/lnbits/paywall/archive/refs/tags/v0.3.0.zip",
+            "hash": "54f623232f112a1706e50efbff8628c9907813aa2fa1c1e21f10d07f60f7fdf4"
+        },
+        {
+            "id": "paywall",
+            "repo": "https://github.com/lnbits/paywall",
+            "name": "Paywall",
+            "version": "0.4.0",
+            "min_lnbits_version": "0.12.5",
+            "short_description": "Create paywalls for content",
+            "icon": "https://github.com/lnbits/paywall/raw/main/static/image/paywall.png",
+            "archive": "https://github.com/lnbits/paywall/archive/refs/tags/v0.4.0.zip",
+            "hash": "f4e7cfb6be9ce425f320e78f7b8ebba2bd79b377f4a6547542bf7ca5af386ff3"
         },
         {
             "id": "market",
