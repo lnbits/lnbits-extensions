@@ -329,12 +329,23 @@
             "id": "boltcards",
             "repo": "https://github.com/lnbits/boltcards",
             "name": "Boltcards",
-            "version": "0.0.6",
+            "version": "0.0.5",
             "min_lnbits_version": "0.11.0",
             "short_description": "Manage your Bolt Cards self custodian way",
             "icon": "https://github.com/lnbits/boltcards/raw/main/static/image/boltcard.png",
-            "archive": "https://github.com/lnbits/boltcards/archive/refs/tags/v0.0.6.zip",
-            "hash": "01104fbb31f7e16df6ae24f389dccc3562ba5f9fd536fa8053dbfd2ad3f4caf3"
+            "archive": "https://github.com/lnbits/boltcards/archive/refs/tags/v0.0.5.zip",
+            "hash": "92d4c28d603c482181d5673effae9aa89f9ab730c26a58e17fad93bf3099e4e9"
+        },
+        {
+            "id": "boltcards",
+            "repo": "https://github.com/lnbits/boltcards",
+            "name": "Boltcards",
+            "version": "0.1.0",
+            "min_lnbits_version": "0.12.5",
+            "short_description": "Manage your Bolt Cards self custodian way",
+            "icon": "https://github.com/lnbits/boltcards/raw/main/static/image/boltcard.png",
+            "archive": "https://github.com/lnbits/boltcards/archive/refs/tags/v0.1.0.zip",
+            "hash": "9f9ac52beecd0457d0456abb7a581df5c8d97830172a01d0591d38958debb57f"
         },
         {
             "id": "nostrnip5",
