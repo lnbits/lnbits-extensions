@@ -377,7 +377,7 @@
             "short_description": "Create NIP05 address for your domains",
             "icon": "https://github.com/lnbits/nostrnip5/raw/main/static/image/nostrnip5.png",
             "archive": "https://github.com/lnbits/nostrnip5/archive/refs/tags/v0.1.0.zip",
-            "hash": "fd9e60781913c66ab78057237b69ff8dc2ce02a9a5ce2c183e4bf05c90bfa05c"
+            "hash": "fe9f1e6482ceed6381628d144ff2c66b696cb90d0f5a782f544537f0a5b28062"
         },
         {
             "id": "splitpayments",
