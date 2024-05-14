@@ -731,38 +731,6 @@
             "hash": "f4e7cfb6be9ce425f320e78f7b8ebba2bd79b377f4a6547542bf7ca5af386ff3"
         },
         {
-            "id": "market",
-            "repo": "https://github.com/lnbits/market",
-            "name": "Marketplace",
-            "version": "0.2",
-            "short_description": "Webshop/market on LNbits",
-            "icon": "https://github.com/lnbits/market/raw/main/static/images/bitcoin-shop.png",
-            "archive": "https://github.com/lnbits/market/archive/refs/tags/0.2.zip",
-            "hash": "656293d72cd93eadd23cb4649a3dd9c4a5e60f14a5f2f47101651b5eea6f4b22"
-        },
-        {
-            "id": "market",
-            "repo": "https://github.com/lnbits/market",
-            "name": "Marketplace",
-            "version": "0.2.4",
-            "min_lnbits_version": "0.11.0",
-            "short_description": "Webshop/market on LNbits",
-            "icon": "https://github.com/lnbits/market/raw/main/static/images/bitcoin-shop.png",
-            "archive": "https://github.com/lnbits/market/archive/refs/tags/v0.2.4.zip",
-            "hash": "eec1f072e06233ef3b9ccdd25e14ed1aa105f98e2ae17694fa119900830302bc"
-        },
-        {
-            "id": "market",
-            "repo": "https://github.com/lnbits/market",
-            "name": "Marketplace",
-            "version": "0.3.0",
-            "min_lnbits_version": "0.12.5",
-            "short_description": "Webshop/market on LNbits",
-            "icon": "https://github.com/lnbits/market/raw/main/static/images/bitcoin-shop.png",
-            "archive": "https://github.com/lnbits/market/archive/refs/tags/v0.3.0.zip",
-            "hash": "655781f24c7751f41866602b4f840971c6181a422123dc6174141ad0dcdd1d96"
-        },
-        {
             "id": "satspay",
             "repo": "https://github.com/lnbits/satspay",
             "name": "SatsPay Server",
