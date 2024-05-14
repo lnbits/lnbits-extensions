@@ -771,12 +771,12 @@
             "id": "lnaddress",
             "repo": "https://github.com/lnbits/lnaddress",
             "name": "Lightning Address",
-            "version": "0.2.2",
+            "version": "0.3.0",
             "min_lnbits_version": "0.11.0",
             "short_description": "Sell LN addresses for your domain",
             "icon": "https://github.com/lnbits/lnaddress/raw/main/static/image/lnaddress.png",
-            "archive": "https://github.com/lnbits/lnaddress/archive/refs/tags/v0.2.2.zip",
-            "hash": "4aa33bfc6945c75cd3c496c1e85dddcb0b7b35214ecd225874722e74e99960de"
+            "archive": "https://github.com/lnbits/lnaddress/archive/refs/tags/v0.3.0.zip",
+            "hash": "03432a3e788fcbfebb74fe58355dc4526bced9173493dcb48269681a190815ee"
         },
         {
             "id": "watchonly",
