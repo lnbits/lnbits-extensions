@@ -79,7 +79,7 @@
             "short_description": "Sats powered Spotify Jukebox",
             "icon": "https://raw.githubusercontent.com/lnbits/jukebox/main/static/image/jukebox.png",
             "archive": "https://github.com/lnbits/jukebox/archive/refs/tags/v0.2.6.zip",
-            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            "hash": "09f3a06139f21aed6b55f5bf8c885d4a33fa0459740f66b6b19b0b2289d93c54"
         },
         {
             "id": "jukebox",
