@@ -444,12 +444,12 @@
             "id": "subdomains",
             "repo": "https://github.com/lnbits/subdomains",
             "name": "Subdomains",
-            "version": "0.1.2",
+            "version": "0.2.0",
             "min_lnbits_version": "0.11.0",
             "short_description": "Sell subdomains of your domain",
             "icon": "https://github.com/lnbits/subdomains/raw/main/static/image/subdomains.png",
-            "archive": "https://github.com/lnbits/subdomains/archive/refs/tags/v0.1.2.zip",
-            "hash": "6cda21f4176730ec23cf82e680e20381d1645e31ec99eb3d79219a77cd20473c"
+            "archive": "https://github.com/lnbits/subdomains/archive/refs/tags/v0.2.0.zip",
+            "hash": "8360014f6f6d131b3cf8a29cabff217cb996728a488c7e34e505f742acd7a952"
         },
         {
             "id": "streamalerts",
