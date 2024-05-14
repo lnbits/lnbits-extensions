@@ -656,7 +656,7 @@
             "repo": "https://github.com/lnbits/satspay",
             "name": "SatsPay Server",
             "version": "0.3.0",
-            "min_lnbits_version": "0.11.0",
+            "min_lnbits_version": "0.12.5",
             "short_description": "Create onchain and LN charges",
             "icon": "https://github.com/lnbits/satspay/raw/main/static/image/satspay.png",
             "archive": "https://github.com/lnbits/satspay/archive/refs/tags/v0.3.0.zip",
