@@ -106,12 +106,23 @@
             "id": "lnticket",
             "repo": "https://github.com/lnbits/lnticket",
             "name": "Support Tickets",
-            "version": "0.4.2",
+            "version": "0.4.1",
             "min_lnbits_version": "0.11.0",
             "short_description": "Get paid sats to answer questions",
             "icon": "https://raw.githubusercontent.com/lnbits/lnticket/main/static/image/lntickets.png",
-            "archive": "https://github.com/lnbits/lnticket/archive/refs/tags/v0.4.2.zip",
-            "hash": "ac609eede032bd4f4235f1a79f0927394857f256dbc28dcd45e1eb54614282f5"
+            "archive": "https://github.com/lnbits/lnticket/archive/refs/tags/v0.4.1.zip",
+            "hash": "d6eb163c48323b26943331e6fe1d8828c39c439c9a9c32972ea0218e72c53013"
+        },
+        {
+            "id": "lnticket",
+            "repo": "https://github.com/lnbits/lnticket",
+            "name": "Support Tickets",
+            "version": "0.5.0",
+            "min_lnbits_version": "0.12.5",
+            "short_description": "Get paid sats to answer questions",
+            "icon": "https://raw.githubusercontent.com/lnbits/lnticket/main/static/image/lntickets.png",
+            "archive": "https://github.com/lnbits/lnticket/archive/refs/tags/v0.5.0.zip",
+            "hash": "12993d65493242b939225384464bd56ca3acc9295f0b7cb7a4ec6ec0aac97551"
         },
         {
             "id": "tpos",
