@@ -889,7 +889,7 @@
             "repo": "https://github.com/lnbits/lncalendar",
             "name": "LNCalendar",
             "version": "0.1.3",
-            "min_lnbits_version": "0.12.6",
+            "min_lnbits_version": "0.12.5",
             "short_description": "A paid scheduling extension for LNBits that lets you schedule blocks of time on your calendar and get paid in Bitcoin",
             "icon": "https://raw.githubusercontent.com/lnbits/lncalendar/main/static/image/lncalendar.png",
             "archive": "https://github.com/lnbits/lncalendar/archive/refs/tags/v0.1.3.zip",
