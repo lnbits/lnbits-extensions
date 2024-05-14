@@ -361,12 +361,12 @@
             "id": "nostrnip5",
             "repo": "https://github.com/lnbits/nostrnip5",
             "name": "NostrNip5",
-            "version": "0.0.4",
+            "version": "0.1.0",
             "min_lnbits_version": "0.11.0",
             "short_description": "Create NIP05 address for your domains",
             "icon": "https://github.com/lnbits/nostrnip5/raw/main/static/image/nostrnip5.png",
-            "archive": "https://github.com/lnbits/nostrnip5/archive/refs/tags/v0.0.4.zip",
-            "hash": "0c2b814832328806d70e26dc06d3ec25e866f938750512f3d182e46ffbe64035"
+            "archive": "https://github.com/lnbits/nostrnip5/archive/refs/tags/v0.1.0.zip",
+            "hash": "fd9e60781913c66ab78057237b69ff8dc2ce02a9a5ce2c183e4bf05c90bfa05c"
         },
         {
             "id": "splitpayments",
