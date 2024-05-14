@@ -749,12 +749,12 @@
             "id": "lnaddress",
             "repo": "https://github.com/lnbits/lnaddress",
             "name": "Lightning Address",
-            "version": "0.2.2",
+            "version": "0.2.3",
             "min_lnbits_version": "0.11.0",
             "short_description": "Sell LN addresses for your domain",
             "icon": "https://github.com/lnbits/lnaddress/raw/main/static/image/lnaddress.png",
-            "archive": "https://github.com/lnbits/lnaddress/archive/refs/tags/v0.2.2.zip",
-            "hash": "4aa33bfc6945c75cd3c496c1e85dddcb0b7b35214ecd225874722e74e99960de"
+            "archive": "https://github.com/lnbits/lnaddress/archive/refs/tags/v0.2.3.zip",
+            "hash": "1e5ace321988ecfaddb1ac6d3dcac17b3b9e72c52869a4f10d02738ee2388f9e"
         },
         {
             "id": "watchonly",
