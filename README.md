@@ -57,8 +57,8 @@ It is possible for developers to require a payment for their extensions. In orde
     "version": "0.5",
     "short_description": "Private Test Extension",
     "icon": "https://raw.githubusercontent.com/lnbits/example/main/static/bitcoin-extension.png",
-    "archive": "https://legend.lnbits.com/paywall/download/BNv6XjB4DKLBQt7q5w4HuG",
-    "pay_link": "https://legend.lnbits.com/paywall/api/v1/paywalls/invoice/BNv6XjB4DKLBQt7q5w4HuG",
+    "archive": "https://demo.lnbits.com/paywall/download/m2FVCFktJzMcGKXTaHbyhi",
+    "pay_link": "https://demo.lnbits.com/paywall/api/v1/paywalls/invoice/m2FVCFktJzMcGKXTaHbyhi",
     "hash": "455527407fcfdc5e8aba93f16802d1083d36dcdfdde829f919cee07420791d61"
 }
 ```
@@ -134,7 +134,7 @@ WS pay_link/{payment_hash}
 In order to download the file one must add the `payment_hash` and an `version` (optional) query parameters to the `archive` URL. Eg:
 
 ```HTTP
-GET https://legend.lnbits.com/paywall/download/BNv6XjB4DKLBQt7q5w4HuG?payment_hash=3bf...7ec&version=v0.1
+GET https://demo.lnbits.com/paywall/download/m2FVCFktJzMcGKXTaHbyhi?payment_hash=3bf...7ec&version=v0.1
 ```
 
 
