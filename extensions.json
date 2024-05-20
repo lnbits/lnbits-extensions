@@ -835,8 +835,8 @@
             "version": "0.1",
             "short_description": "Private Test Extension",
             "icon": "https://raw.githubusercontent.com/lnbits/example/main/static/bitcoin-extension.png",
-            "archive": "https://legend.lnbits.com/paywall/download/UwM4TTqhNDBXJBjfbMkDBC",
-            "pay_link": "https://legend.lnbits.com/paywall/api/v1/paywalls/invoice/UwM4TTqhNDBXJBjfbMkDBC",
+            "archive": "https://demo.lnbits.com/paywall/download/FX2Ra9kuqiPTehComiPuTa",
+            "pay_link": "https://demo.lnbits.com/paywall/api/v1/paywalls/invoice/FX2Ra9kuqiPTehComiPuTa",
             "hash": "c9bc5189633c53380cb7796a7a43760aab0c9a6a5501fb98f9cb4dfa3debd158"
         },
         {
@@ -846,8 +846,8 @@
             "version": "0.2",
             "short_description": "Private Test Extension",
             "icon": "https://raw.githubusercontent.com/lnbits/example/main/static/bitcoin-extension.png",
-            "archive": "https://legend.lnbits.com/paywall/download/UwM4TTqhNDBXJBjfbMkDBC",
-            "pay_link": "https://legend.lnbits.com/paywall/api/v1/paywalls/invoice/UwM4TTqhNDBXJBjfbMkDBC",
+            "archive": "https://demo.lnbits.com/paywall/download/FX2Ra9kuqiPTehComiPuTa",
+            "pay_link": "https://demo.lnbits.com/paywall/api/v1/paywalls/invoice/FX2Ra9kuqiPTehComiPuTa",
             "hash": "ed6000fa13478c2998bd71d49f9947924dc29c4d194394d77d6364f7c118beea"
         },
         {
@@ -857,8 +857,8 @@
             "version": "0.3",
             "short_description": "Private Test Extension",
             "icon": "https://raw.githubusercontent.com/lnbits/example/main/static/bitcoin-extension.png",
-            "archive": "https://legend.lnbits.com/paywall/download/TbvMUfr7fMqVbQED9jMpbF",
-            "pay_link": "https://legend.lnbits.com/paywall/api/v1/paywalls/invoice/TbvMUfr7fMqVbQED9jMpbF",
+            "archive": "https://demo.lnbits.com/paywall/download/m2FVCFktJzMcGKXTaHbyhi",
+            "pay_link": "https://demo.lnbits.com/paywall/api/v1/paywalls/invoice/m2FVCFktJzMcGKXTaHbyhi",
             "hash": "4b884340f3ee331c365015b2235b84570077c7956c9939ed2dd7f685cee6ed60"
         },
         {
@@ -868,8 +868,8 @@
             "version": "0.4",
             "short_description": "Private Test Extension",
             "icon": "https://raw.githubusercontent.com/lnbits/example/main/static/bitcoin-extension.png",
-            "archive": "https://legend.lnbits.com/paywall/download/TbvMUfr7fMqVbQED9jMpbF",
-            "pay_link": "https://legend.lnbits.com/paywall/api/v1/paywalls/invoice/TbvMUfr7fMqVbQED9jMpbF",
+            "archive": "https://demo.lnbits.com/paywall/download/m2FVCFktJzMcGKXTaHbyhi",
+            "pay_link": "https://demo.lnbits.com/paywall/api/v1/paywalls/invoice/m2FVCFktJzMcGKXTaHbyhi",
             "hash": "1f68631047b59faa23963d1effd8b438d40d21fcba1f3d248cdd736a6fe6a995"
         },
         {
@@ -879,8 +879,8 @@
             "version": "0.5",
             "short_description": "Private Test Extension",
             "icon": "https://raw.githubusercontent.com/lnbits/example/main/static/bitcoin-extension.png",
-            "archive": "https://legend.lnbits.com/paywall/download/TbvMUfr7fMqVbQED9jMpbF",
-            "pay_link": "https://legend.lnbits.com/paywall/api/v1/paywalls/invoice/TbvMUfr7fMqVbQED9jMpbF",
+            "archive": "https://demo.lnbits.com/paywall/download/m2FVCFktJzMcGKXTaHbyhi",
+            "pay_link": "https://demo.lnbits.com/paywall/api/v1/paywalls/invoice/m2FVCFktJzMcGKXTaHbyhi",
             "hash": "455527407fcfdc5e8aba93f16802d1083d36dcdfdde829f919cee07420791d61"
         },
         {
@@ -890,8 +890,8 @@
             "version": "0.6",
             "short_description": "Private Test Extension",
             "icon": "https://raw.githubusercontent.com/lnbits/example/main/static/bitcoin-extension.png",
-            "archive": "https://legend.lnbits.com/paywall/download/TbvMUfr7fMqVbQED9jMpbF",
-            "pay_link": "https://legend.lnbits.com/paywall/api/v1/paywalls/invoice/TbvMUfr7fMqVbQED9jMpbF",
+            "archive": "https://demo.lnbits.com/paywall/download/m2FVCFktJzMcGKXTaHbyhi",
+            "pay_link": "https://demo.lnbits.com/paywall/api/v1/paywalls/invoice/m2FVCFktJzMcGKXTaHbyhi",
             "hash": "dcc58670094c8545f372a431bbdf13ebd9f83face5a13bf33156c36fd1d2284b"
         }
     ]
