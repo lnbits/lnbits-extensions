@@ -142,8 +142,8 @@ for (var i = 0; i &lt; resp.extensions.length; i++) {
 
 extensionList = Object.keys(extensions);
 vars.put(&quot;extensions&quot;, extensionList);
-//extensionList.length
-vars.put(&quot;extensionsLength&quot;, 3);
+
+vars.put(&quot;extensionsLength&quot;, extensionList.length);
 </stringProp>
           </JSR223PostProcessor>
           <hashTree/>
