@@ -153,7 +153,7 @@ vars.put(&quot;extensionsLength&quot;, extensionList.length);
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
-            <stringProp name="-1909749757">Fragments</stringProp>
+            <stringProp name="917634862">Reusable Fragments</stringProp>
             <stringProp name="-1867960008">Install all extensions</stringProp>
           </collectionProp>
         </ModuleController>
@@ -162,7 +162,7 @@ vars.put(&quot;extensionsLength&quot;, extensionList.length);
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
-            <stringProp name="-1909749757">Fragments</stringProp>
+            <stringProp name="917634862">Reusable Fragments</stringProp>
             <stringProp name="-3274736">Enable all extensions</stringProp>
           </collectionProp>
         </ModuleController>
@@ -171,7 +171,7 @@ vars.put(&quot;extensionsLength&quot;, extensionList.length);
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
-            <stringProp name="-1909749757">Fragments</stringProp>
+            <stringProp name="917634862">Reusable Fragments</stringProp>
             <stringProp name="-281751791">Uninstall all extensions</stringProp>
           </collectionProp>
         </ModuleController>
@@ -180,7 +180,7 @@ vars.put(&quot;extensionsLength&quot;, extensionList.length);
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
-            <stringProp name="-1909749757">Fragments</stringProp>
+            <stringProp name="917634862">Reusable Fragments</stringProp>
             <stringProp name="-1867960008">Install all extensions</stringProp>
           </collectionProp>
         </ModuleController>
@@ -189,7 +189,7 @@ vars.put(&quot;extensionsLength&quot;, extensionList.length);
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
-            <stringProp name="-1909749757">Fragments</stringProp>
+            <stringProp name="917634862">Reusable Fragments</stringProp>
             <stringProp name="-3274736">Enable all extensions</stringProp>
           </collectionProp>
         </ModuleController>
@@ -539,7 +539,7 @@ vars.put(&quot;extension&quot;, extensions.split(&quot;,&quot;)[extensionIndex -
                 <collectionProp name="ModuleController.node_path">
                   <stringProp name="764597751">Test Plan</stringProp>
                   <stringProp name="764597751">Test Plan</stringProp>
-                  <stringProp name="-1909749757">Fragments</stringProp>
+                  <stringProp name="917634862">Reusable Fragments</stringProp>
                   <stringProp name="2066081973">Install extension: ${extension}</stringProp>
                 </collectionProp>
               </ModuleController>
@@ -662,7 +662,7 @@ vars.put(&quot;extension&quot;, extensions.split(&quot;,&quot;)[extensionIndex -
                 <collectionProp name="ModuleController.node_path">
                   <stringProp name="764597751">Test Plan</stringProp>
                   <stringProp name="764597751">Test Plan</stringProp>
-                  <stringProp name="-1909749757">Fragments</stringProp>
+                  <stringProp name="917634862">Reusable Fragments</stringProp>
                   <stringProp name="-530915174">Enable/disable extension ${extension}</stringProp>
                 </collectionProp>
               </ModuleController>
