@@ -150,6 +150,7 @@ vars.put(&quot;extensionsLength&quot;, extensionList.length);
           <hashTree/>
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[server] Login super user" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
@@ -159,7 +160,6 @@ vars.put(&quot;extensionsLength&quot;, extensionList.length);
               </elementProp>
             </collectionProp>
           </elementProp>
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <stringProp name="HTTPSampler.domain">${host}</stringProp>
           <stringProp name="HTTPSampler.port">${port}</stringProp>
           <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
@@ -256,7 +256,7 @@ vars.put(&quot;extension&quot;, extensions.split(&quot;,&quot;)[extensionIndex -
                 <stringProp name="764597751">Test Plan</stringProp>
                 <stringProp name="764597751">Test Plan</stringProp>
                 <stringProp name="-1909749757">Fragments</stringProp>
-                <stringProp name="-345650999">Install extension  [${extensionIndex}/${extensionsLength}]: ${extension}</stringProp>
+                <stringProp name="2066081973">Install extension: ${extension}</stringProp>
               </collectionProp>
             </ModuleController>
             <hashTree/>
