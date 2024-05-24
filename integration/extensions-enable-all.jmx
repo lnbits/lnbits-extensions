@@ -34,6 +34,11 @@
             <stringProp name="Argument.desc">Comma separated values, no spaces.</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="adminExtensions" elementType="Argument">
+            <stringProp name="Argument.name">adminExtensions</stringProp>
+            <stringProp name="Argument.value">nostrclient</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
           <elementProp name="extensionsManifestPath" elementType="Argument">
             <stringProp name="Argument.name">extensionsManifestPath</stringProp>
             <stringProp name="Argument.value">${__property(extensionsManifestPath,,/lnbits/lnbits-extensions/main/extensions.json)}</stringProp>
@@ -140,10 +145,14 @@ for (var i = 0; i &lt; resp.extensions.length; i++) {
   }
 }
 
+
+
 extensionList = Object.keys(extensions);
+extensionList[1] = &apos;nostrclient&apos;
 vars.put(&quot;extensions&quot;, extensionList);
 
-//extensionList.length = 3
+extensionList.length = 3
+
 vars.put(&quot;extensionsLength&quot;, extensionList.length);
 </stringProp>
           </JSR223PostProcessor>
@@ -652,11 +661,24 @@ vars.put(&quot;extension&quot;, extensions.split(&quot;,&quot;)[extensionIndex -
                 <stringProp name="filename"></stringProp>
                 <stringProp name="cacheKey">true</stringProp>
                 <stringProp name="script">var extensions = vars.get(&quot;extensions&quot;)
+var adminExtensions = vars.get(&quot;adminExtensions&quot;)
 var extensionIndex = vars.get(&quot;extensionIndex&quot;)
+var extesion = extensions.split(&quot;,&quot;)[extensionIndex - 1]
+var isAdminExtension = adminExtensions.split(&quot;,&quot;).indexOf(extesion) !== -1
 
-vars.put(&quot;extension&quot;, extensions.split(&quot;,&quot;)[extensionIndex - 1])
-</stringProp>
+vars.put(&quot;extension&quot;, extesion)
+vars.put(&quot;isAdminExtension&quot;, isAdminExtension)
+
+var responseCode = prev.getResponseCode()
+
+vars.put(&quot;responseCode&quot;, responseCode)</stringProp>
               </JSR223Sampler>
+              <hashTree/>
+              <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+                <boolProp name="displayJMeterProperties">false</boolProp>
+                <boolProp name="displayJMeterVariables">true</boolProp>
+                <boolProp name="displaySystemProperties">false</boolProp>
+              </DebugSampler>
               <hashTree/>
               <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname=" Enable/disable Extension Module" enabled="true">
                 <collectionProp name="ModuleController.node_path">
@@ -1542,7 +1564,7 @@ vars.put(&quot;version&quot;, latestRelease.version)
               <stringProp name="Assertion.custom_message"></stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
               <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">8</intProp>
+              <intProp name="Assertion.test_type">40</intProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
@@ -1609,12 +1631,39 @@ vars.put(&quot;version&quot;, latestRelease.version)
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 200" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="49586">200</stringProp>
+                <stringProp name="51509">401</stringProp>
               </collectionProp>
               <stringProp name="Assertion.custom_message"></stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">8</intProp>
+              <boolProp name="Assertion.assume_success">true</boolProp>
+              <intProp name="Assertion.test_type">40</intProp>
             </ResponseAssertion>
+            <hashTree/>
+            <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check Status Code 200 (or 401 for admin extension)" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="script">var responseCode = +prev.getResponseCode()
+var isAdminExtension = vars.get(&quot;isAdminExtension&quot;)
+
+
+if (isAdminExtension === &apos;true&apos;) {
+  if (responseCode !== 200 &amp;&amp; responseCode !== 401) {
+    AssertionResult.setFailureMessage(
+      &quot;Expected response code 200 for 401 for admin extension but got: &quot; +
+        responseCode
+    );
+    AssertionResult.setFailure(true);
+  }
+} else if (responseCode !== 200) {
+  AssertionResult.setFailureMessage(
+    &quot;Expected response code 200 but got: &quot; + responseCode
+  );
+  AssertionResult.setFailure(true);
+}
+</stringProp>
+            </JSR223Assertion>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[${extension}] Disable extension" enabled="true">
@@ -1908,14 +1957,41 @@ vars.put(&quot;version&quot;, latestRelease.version)
               </collectionProp>
             </HeaderManager>
             <hashTree/>
+            <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check Status Code 200 (or 401 for admin extension)" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="script">var responseCode = +prev.getResponseCode()
+var isAdminExtension = vars.get(&quot;isAdminExtension&quot;)
+
+
+if (isAdminExtension === &quot;true&quot;) {
+  if (responseCode !== 200 &amp;&amp; responseCode !== 401) {
+    AssertionResult.setFailureMessage(
+      &quot;Expected response code 200 for 401 for admin extension but got: &quot; +
+        responseCode
+    );
+    AssertionResult.setFailure(true);
+  }
+} else if (responseCode !== 200) {
+  AssertionResult.setFailureMessage(
+    &quot;Expected response code 200 but got: &quot; + responseCode
+  );
+  AssertionResult.setFailure(true);
+}
+</stringProp>
+            </JSR223Assertion>
+            <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 200" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="49586">200</stringProp>
+                <stringProp name="51509">401</stringProp>
               </collectionProp>
               <stringProp name="Assertion.custom_message"></stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">8</intProp>
+              <boolProp name="Assertion.assume_success">true</boolProp>
+              <intProp name="Assertion.test_type">40</intProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
