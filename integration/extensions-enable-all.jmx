@@ -148,10 +148,11 @@ for (var i = 0; i &lt; resp.extensions.length; i++) {
 
 
 extensionList = Object.keys(extensions);
-extensionList[1] = &apos;nostrclient&apos;
+//extensionList[1] = &apos;nostrclient&apos;
+//extensionList.length = 3
 vars.put(&quot;extensions&quot;, extensionList);
 
-extensionList.length = 3
+
 
 vars.put(&quot;extensionsLength&quot;, extensionList.length);
 </stringProp>
@@ -878,7 +879,7 @@ vars.put(&quot;extension&quot;, extensions.split(&quot;,&quot;)[extensionIndex -
                 <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
                 <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
                 <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout">60000</stringProp>
               </HTTPSamplerProxy>
               <hashTree>
                 <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -1325,23 +1326,6 @@ vars.put(&quot;version&quot;, latestRelease.version)
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
-            <hashTree/>
-            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Extract latest release" enabled="false">
-              <stringProp name="scriptLanguage">javascript</stringProp>
-              <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
-              <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-var latestRelease = resp[resp.length - 1]
-
-var ext_id = vars.get(&quot;extension&quot;)
-
-vars.put(&quot;ext_id&quot;, ext_id)
-vars.put(&quot;archive&quot;, latestRelease.archive)
-vars.put(&quot;source_repo&quot;, latestRelease.source_repo)
-vars.put(&quot;version&quot;, latestRelease.version)
-</stringProp>
-            </JSR223PreProcessor>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[${extension}] Go to extension page after install (HTTP 403 or 404)" enabled="true">
