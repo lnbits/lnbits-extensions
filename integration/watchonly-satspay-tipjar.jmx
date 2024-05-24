@@ -53,6 +53,11 @@
             <stringProp name="Argument.value">3000</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="mirrorPort" elementType="Argument">
+            <stringProp name="Argument.name">mirrorPort</stringProp>
+            <stringProp name="Argument.value">${__property(mirrorPort,,8500)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
@@ -119,29 +124,14 @@
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[watchonly] Enable &quot;watchonly&quot;" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-              <collectionProp name="Arguments.arguments">
-                <elementProp name="usr" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.name">usr</stringProp>
-                  <stringProp name="Argument.value">${userId}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-                <elementProp name="enable" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.name">enable</stringProp>
-                  <stringProp name="Argument.value">watchonly</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-              </collectionProp>
+              <collectionProp name="Arguments.arguments"/>
             </elementProp>
             <stringProp name="HTTPSampler.domain">${host}</stringProp>
             <stringProp name="HTTPSampler.port">${port}</stringProp>
             <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
-            <stringProp name="HTTPSampler.path">/extensions</stringProp>
-            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <stringProp name="HTTPSampler.path">/api/v1/extension/watchonly/enable</stringProp>
+            <stringProp name="HTTPSampler.method">PUT</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
             <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -189,6 +179,15 @@
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
+            <hashTree/>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check Status Value" enabled="true">
+              <stringProp name="JSON_PATH">success</stringProp>
+              <stringProp name="EXPECTED_VALUE">true</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">true</boolProp>
+            </JSONPathAssertion>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[watchonly] Go to &quot;watchonly&quot; page" enabled="true">
@@ -764,29 +763,14 @@ if (resp.address !== expectedAddress) {
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[satspay] Enable &quot;satspay&quot;" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-              <collectionProp name="Arguments.arguments">
-                <elementProp name="usr" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.name">usr</stringProp>
-                  <stringProp name="Argument.value">${userId}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-                <elementProp name="enable" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.name">enable</stringProp>
-                  <stringProp name="Argument.value">satspay</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-              </collectionProp>
+              <collectionProp name="Arguments.arguments"/>
             </elementProp>
             <stringProp name="HTTPSampler.domain">${host}</stringProp>
             <stringProp name="HTTPSampler.port">${port}</stringProp>
             <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
-            <stringProp name="HTTPSampler.path">/extensions</stringProp>
-            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <stringProp name="HTTPSampler.path">/api/v1/extension/satspay/enable</stringProp>
+            <stringProp name="HTTPSampler.method">PUT</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
             <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -834,6 +818,15 @@ if (resp.address !== expectedAddress) {
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
+            <hashTree/>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check Status Value" enabled="true">
+              <stringProp name="JSON_PATH">success</stringProp>
+              <stringProp name="EXPECTED_VALUE">true</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">true</boolProp>
+            </JSONPathAssertion>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[satspay] Go to &quot;satspay&quot; page" enabled="true">
@@ -1305,7 +1298,7 @@ vars.put(&quot;chargeId&quot;, resp.id || &apos;no-charge-id&apos;);</stringProp
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                      <stringProp name="Argument.value">{&quot;onchain&quot;:false,&quot;onchainwallet&quot;:null,&quot;lnbits&quot;:true,&quot;description&quot;:&quot;lightning charge [${chargeCounter}]&quot;,&quot;time&quot;:1220,&quot;amount&quot;:${amountGenerator},&quot;lnbitswallet&quot;:&quot;${walletId}&quot;,&quot;webhook&quot;:&quot;http://localhost:8081&quot;,&quot;completelink&quot;:&quot;https://twitter.com&quot;,&quot;completelinktext&quot;:&quot;Have Fun&quot;}</stringProp>
+                      <stringProp name="Argument.value">{&quot;onchain&quot;:false,&quot;onchainwallet&quot;:null,&quot;lnbits&quot;:true,&quot;description&quot;:&quot;lightning charge [${chargeCounter}]&quot;,&quot;time&quot;:1220,&quot;amount&quot;:${amountGenerator},&quot;lnbitswallet&quot;:&quot;${walletId}&quot;,&quot;webhook&quot;:&quot;http://localhost:${mirrorPort}&quot;,&quot;completelink&quot;:&quot;https://twitter.com&quot;,&quot;completelinktext&quot;:&quot;Have Fun&quot;}</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                     </elementProp>
                   </collectionProp>
@@ -2027,29 +2020,14 @@ if (pendingCount !== 1) {
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[tipjar] Enable &quot;tipjar&quot;" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-              <collectionProp name="Arguments.arguments">
-                <elementProp name="usr" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.name">usr</stringProp>
-                  <stringProp name="Argument.value">${userId}</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-                <elementProp name="enable" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.name">enable</stringProp>
-                  <stringProp name="Argument.value">tipjar</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                </elementProp>
-              </collectionProp>
+              <collectionProp name="Arguments.arguments"/>
             </elementProp>
             <stringProp name="HTTPSampler.domain">${host}</stringProp>
             <stringProp name="HTTPSampler.port">${port}</stringProp>
             <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
-            <stringProp name="HTTPSampler.path">/extensions</stringProp>
-            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <stringProp name="HTTPSampler.path">/api/v1/extension/tipjar/enable</stringProp>
+            <stringProp name="HTTPSampler.method">PUT</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
             <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -2093,6 +2071,15 @@ if (pendingCount !== 1) {
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
+            <hashTree/>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check Status Value" enabled="true">
+              <stringProp name="JSON_PATH">success</stringProp>
+              <stringProp name="EXPECTED_VALUE">true</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">true</boolProp>
+            </JSONPathAssertion>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[tipjar] Go to &quot;tipjar&quot; page" enabled="true">
@@ -2239,7 +2226,7 @@ if (pendingCount !== 1) {
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;wallet&quot;:&quot;${walletId}&quot;,&quot;name&quot;:&quot;Nakamoto&quot;,&quot;webhook&quot;:&quot;${scheme}://${host}:8081&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;wallet&quot;:&quot;${walletId}&quot;,&quot;name&quot;:&quot;Nakamoto&quot;,&quot;webhook&quot;:&quot;${scheme}://${host}:${mirrorPort}&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -3124,7 +3111,7 @@ vars.put(&quot;userBalance&quot;, userBalance)</stringProp>
         <hashTree/>
       </hashTree>
       <HttpMirrorControl guiclass="HttpMirrorControlGui" testclass="HttpMirrorControl" testname="[callback] HTTP Mirror Server" enabled="true">
-        <stringProp name="HttpMirrorControlGui.port">8081</stringProp>
+        <stringProp name="HttpMirrorControlGui.port">8500</stringProp>
         <stringProp name="HttpMirrorControlGui.maxPoolSize">0</stringProp>
         <stringProp name="HttpMirrorControlGui.maxQueueSize">25</stringProp>
       </HttpMirrorControl>
