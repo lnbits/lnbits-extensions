@@ -477,8 +477,8 @@ vars.put(&quot;extensionsLength&quot;, extensionList.length);
       <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Fragments" enabled="false"/>
       <hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Install all extensions" enabled="true">
-          <boolProp name="TransactionController.includeTimers">false</boolProp>
           <boolProp name="TransactionController.parent">false</boolProp>
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[server] Login super user" enabled="true">
