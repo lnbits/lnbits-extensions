@@ -30,7 +30,7 @@
           </elementProp>
           <elementProp name="excludedExtensions" elementType="Argument">
             <stringProp name="Argument.name">excludedExtensions</stringProp>
-            <stringProp name="Argument.value">discordbot,cashu,streamalerts</stringProp>
+            <stringProp name="Argument.value">discordbot</stringProp>
             <stringProp name="Argument.desc">Comma separated values, no spaces.</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
@@ -63,7 +63,7 @@
       </HeaderManager>
       <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
-        <stringProp name="ThreadGroup.on_sample_error">stopthread</stringProp>
+        <stringProp name="ThreadGroup.on_sample_error">stoptest</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
@@ -518,7 +518,7 @@ vars.put(&quot;extensionsLength&quot;, extensionList.length);
               <boolProp name="CounterConfig.per_user">true</boolProp>
             </CounterConfig>
             <hashTree/>
-            <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Install Extension  [${extensionIndex}/${extensionsLength}]" enabled="true">
+            <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Install Extension [${extensionIndex}/${extensionsLength}]" enabled="true">
               <boolProp name="TransactionController.includeTimers">false</boolProp>
               <boolProp name="TransactionController.parent">true</boolProp>
             </TransactionController>
@@ -646,19 +646,7 @@ vars.put(&quot;extension&quot;, extensions.split(&quot;,&quot;)[extensionIndex -
               <boolProp name="TransactionController.parent">true</boolProp>
             </TransactionController>
             <hashTree>
-              <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Extract extension data" enabled="true">
-                <stringProp name="scriptLanguage">groovy</stringProp>
-                <stringProp name="parameters"></stringProp>
-                <stringProp name="filename"></stringProp>
-                <stringProp name="cacheKey">true</stringProp>
-                <stringProp name="script">var extensions = vars.get(&quot;extensions&quot;)
-var extensionIndex = vars.get(&quot;extensionIndex&quot;)
-
-vars.put(&quot;extension&quot;, extensions.split(&quot;,&quot;)[extensionIndex - 1])
-</stringProp>
-              </JSR223PreProcessor>
-              <hashTree/>
-              <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="Extract extension data " enabled="false">
+              <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="Extract extension data " enabled="true">
                 <stringProp name="scriptLanguage">javascript</stringProp>
                 <stringProp name="parameters"></stringProp>
                 <stringProp name="filename"></stringProp>
@@ -1556,11 +1544,6 @@ vars.put(&quot;version&quot;, latestRelease.version)
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
-            <hashTree/>
-            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a bit" enabled="false">
-              <stringProp name="ConstantTimer.delay">3000</stringProp>
-              <stringProp name="TestPlan.comments">for the callback to be invoked</stringProp>
-            </ConstantTimer>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[${extension}] Go to extension page (enabled)" enabled="true">
