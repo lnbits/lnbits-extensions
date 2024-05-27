@@ -60,7 +60,7 @@
         <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
         <stringProp name="HTTPSampler.implementation">Java</stringProp>
         <stringProp name="HTTPSampler.connect_timeout">20000</stringProp>
-        <stringProp name="HTTPSampler.response_timeout">30000</stringProp>
+        <stringProp name="HTTPSampler.response_timeout">60000</stringProp>
       </ConfigTestElement>
       <hashTree/>
       <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -148,8 +148,8 @@ for (var i = 0; i &lt; resp.extensions.length; i++) {
 
 
 extensionList = Object.keys(extensions);
-//extensionList[1] = &apos;nostrclient&apos;
-//extensionList.length = 3
+extensionList[1] = &apos;nostrmarket&apos;
+extensionList.length = 3
 vars.put(&quot;extensions&quot;, extensionList);
 
 
@@ -431,7 +431,7 @@ vars.put(&quot;extensionsLength&quot;, extensionList.length);
         <hashTree/>
       </hashTree>
       <HttpMirrorControl guiclass="HttpMirrorControlGui" testclass="HttpMirrorControl" testname="[callback] HTTP Mirror Server" enabled="true">
-        <stringProp name="HttpMirrorControlGui.port">8081</stringProp>
+        <stringProp name="HttpMirrorControlGui.port">8500</stringProp>
         <stringProp name="HttpMirrorControlGui.maxPoolSize">0</stringProp>
         <stringProp name="HttpMirrorControlGui.maxQueueSize">25</stringProp>
       </HttpMirrorControl>
@@ -873,13 +873,15 @@ vars.put(&quot;extension&quot;, extensions.split(&quot;,&quot;)[extensionIndex -
                 <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
                 <stringProp name="HTTPSampler.path">/api/v1/extension/${extension}</stringProp>
                 <stringProp name="HTTPSampler.method">DELETE</stringProp>
-                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
                 <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
                 <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
                 <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
                 <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.implementation">Java</stringProp>
                 <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                 <stringProp name="HTTPSampler.response_timeout">60000</stringProp>
+                <stringProp name="TestPlan.comments">DO NOT follow redirects, it will call the endpint twice if it takes too long</stringProp>
               </HTTPSamplerProxy>
               <hashTree>
                 <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
