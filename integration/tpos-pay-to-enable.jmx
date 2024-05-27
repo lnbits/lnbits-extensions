@@ -1813,7 +1813,7 @@ if (isAdminExtension === &apos;true&apos;) {
       </ProxyControl>
       <hashTree/>
       <HttpMirrorControl guiclass="HttpMirrorControlGui" testclass="HttpMirrorControl" testname="[callback] HTTP Mirror Server" enabled="true">
-        <stringProp name="HttpMirrorControlGui.port">8081</stringProp>
+        <stringProp name="HttpMirrorControlGui.port">8500</stringProp>
         <stringProp name="HttpMirrorControlGui.maxPoolSize">0</stringProp>
         <stringProp name="HttpMirrorControlGui.maxQueueSize">25</stringProp>
       </HttpMirrorControl>
