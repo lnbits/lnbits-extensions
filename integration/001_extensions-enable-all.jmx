@@ -148,8 +148,8 @@ for (var i = 0; i &lt; resp.extensions.length; i++) {
 
 
 extensionList = Object.keys(extensions);
-extensionList[1] = &apos;nostrmarket&apos;
-extensionList.length = 3
+//extensionList[1] = &apos;nostrmarket&apos;
+//extensionList.length = 3
 vars.put(&quot;extensions&quot;, extensionList);
 
 
