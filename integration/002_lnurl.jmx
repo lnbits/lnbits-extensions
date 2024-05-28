@@ -2074,7 +2074,7 @@ vars.put(&quot;userBalance&quot;, userBalance)</stringProp>
                     <hashTree/>
                   </hashTree>
                   <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a bit" enabled="true">
-                    <stringProp name="ConstantTimer.delay">100</stringProp>
+                    <stringProp name="ConstantTimer.delay">1000</stringProp>
                     <stringProp name="TestPlan.comments">for the callback to be invoked</stringProp>
                   </ConstantTimer>
                   <hashTree/>
