@@ -21,5 +21,5 @@ for file in $files; do
         cat logs/$filename.log
         exit 1
     fi
-    date
 done
+date
