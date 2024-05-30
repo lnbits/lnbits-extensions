@@ -420,19 +420,14 @@
             <intProp name="Assertion.test_type">8</intProp>
           </ResponseAssertion>
           <hashTree/>
-          <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check Balance is Zero" enabled="true">
-            <stringProp name="cacheKey">true</stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-if (resp.balance !== 0) {
-	AssertionResult.setFailureMessage(&quot;Balance is not zero, but: &quot;+ resp.balance);
-	AssertionResult.setFailure(true)
-}
-</stringProp>
-            <stringProp name="scriptLanguage">javascript</stringProp>
-          </JSR223Assertion>
+          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check Balance is Zero" enabled="true">
+            <stringProp name="JSON_PATH">balance</stringProp>
+            <stringProp name="EXPECTED_VALUE">0</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">false</boolProp>
+            <boolProp name="ISREGEX">false</boolProp>
+          </JSONPathAssertion>
           <hashTree/>
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[wallet] Get payments" enabled="true">
