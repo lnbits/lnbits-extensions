@@ -1020,7 +1020,7 @@ vars.put(&quot;ATMtposId&quot;, resp.id || &apos;no-tpos-id&apos;);</stringProp>
             <stringProp name="LoopController.loops">1</stringProp>
           </LoopController>
           <hashTree>
-            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a sec" enabled="true">
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a sec" enabled="false">
               <stringProp name="ConstantTimer.delay">1000</stringProp>
             </ConstantTimer>
             <hashTree/>
@@ -1188,23 +1188,14 @@ vars.put(&quot;ATMtposId&quot;, resp.id || &apos;no-tpos-id&apos;);</stringProp>
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check payment hash" enabled="true">
-              <stringProp name="scriptLanguage">javascript</stringProp>
-              <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
-              <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var paymentHash = vars.get(&quot;paymentHash&quot;)
-
-if (!resp.payment_hash) {
-	AssertionResult.setFailureMessage(&quot;Payment failed&quot;);
-	AssertionResult.setFailure(true)
-} else if (resp.payment_hash !== paymentHash) {
-	AssertionResult.setFailureMessage(&quot;Payment hash expected to be &apos;&quot;+paymentHash+&quot;&apos;, but was: &quot; + resp.payment_hash);
-	AssertionResult.setFailure(true)
-}</stringProp>
-            </JSR223Assertion>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check payment_hash" enabled="true">
+              <stringProp name="JSON_PATH">payment_hash</stringProp>
+              <stringProp name="EXPECTED_VALUE">${paymentHash}</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+            </JSONPathAssertion>
             <hashTree/>
           </hashTree>
           <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a sec" enabled="false">
@@ -1578,23 +1569,14 @@ if (!resp.payment_hash) {
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check payment hash" enabled="true">
-              <stringProp name="scriptLanguage">javascript</stringProp>
-              <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
-              <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var paymentHash = vars.get(&quot;paymentHash&quot;)
-
-if (!resp.payment_hash) {
-	AssertionResult.setFailureMessage(&quot;Payment failed&quot;);
-	AssertionResult.setFailure(true)
-} else if (resp.payment_hash !== paymentHash) {
-	AssertionResult.setFailureMessage(&quot;Payment hash expected to be &apos;&quot;+paymentHash+&quot;&apos;, but was: &quot; + resp.payment_hash);
-	AssertionResult.setFailure(true)
-}</stringProp>
-            </JSR223Assertion>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check payment_hash" enabled="true">
+              <stringProp name="JSON_PATH">payment_hash</stringProp>
+              <stringProp name="EXPECTED_VALUE">${paymentHash}</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+            </JSONPathAssertion>
             <hashTree/>
           </hashTree>
           <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a sec" enabled="true">
@@ -1946,7 +1928,7 @@ if (!resp.payment_hash) {
             </JSONPostProcessor>
             <hashTree/>
           </hashTree>
-          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a sec" enabled="true">
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a sec" enabled="false">
             <stringProp name="ConstantTimer.delay">1100</stringProp>
           </ConstantTimer>
           <hashTree/>
@@ -2037,23 +2019,14 @@ if (!resp.payment_hash) {
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check payment hash" enabled="true">
-              <stringProp name="scriptLanguage">javascript</stringProp>
-              <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
-              <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var paymentHash = vars.get(&quot;paymentHash&quot;)
-
-if (!resp.payment_hash) {
-	AssertionResult.setFailureMessage(&quot;Payment failed&quot;);
-	AssertionResult.setFailure(true)
-} else if (resp.payment_hash !== paymentHash) {
-	AssertionResult.setFailureMessage(&quot;Payment hash expected to be &apos;&quot;+paymentHash+&quot;&apos;, but was: &quot; + resp.payment_hash);
-	AssertionResult.setFailure(true)
-}</stringProp>
-            </JSR223Assertion>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check payment_hash" enabled="true">
+              <stringProp name="JSON_PATH">payment_hash</stringProp>
+              <stringProp name="EXPECTED_VALUE">${paymentHash}</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+            </JSONPathAssertion>
             <hashTree/>
           </hashTree>
           <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a sec" enabled="true">
@@ -2662,7 +2635,7 @@ if (!resp.payment_hash) {
             </JSONPostProcessor>
             <hashTree/>
           </hashTree>
-          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a sec" enabled="true">
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a sec" enabled="false">
             <stringProp name="ConstantTimer.delay">1100</stringProp>
           </ConstantTimer>
           <hashTree/>
