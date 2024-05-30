@@ -2153,7 +2153,7 @@ vars.put(&quot;receiveInkey&quot;, receiveInkey)
           <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check Executed Withdraws" enabled="true">
             <stringProp name="scriptLanguage">javascript</stringProp>
             <stringProp name="parameters"></stringProp>
-            <stringProp name="filename">${configPath}/lnurlw_check_executed_withdraws.js</stringProp>
+            <stringProp name="filename">${configPath}/scripts/lnurlw_check_executed_withdraws.js</stringProp>
             <stringProp name="cacheKey">true</stringProp>
             <stringProp name="script"></stringProp>
           </JSR223Assertion>

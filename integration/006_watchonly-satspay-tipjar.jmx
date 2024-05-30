@@ -58,6 +58,11 @@
             <stringProp name="Argument.value">${__property(mirrorPort,,8500)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="configPath" elementType="Argument">
+            <stringProp name="Argument.name">configPath</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(import org.apache.jmeter.services.FileServer; FileServer.getFileServer().getBaseDir();)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
@@ -482,46 +487,75 @@
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="JSR223 Assertion" enabled="false">
-              <stringProp name="scriptLanguage">groovy</stringProp>
-              <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
-              <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-if (!resp.id) {
-	AssertionResult.setFailureMessage(&quot;Onchain account not created&quot;);
-	AssertionResult.setFailure(true)
-}
-
-delete resp.id
-
-var expectedAccount = [{
-	&quot;masterpub&quot;: &quot;zpub6roF3uF1YsrxvSK9cC7kpT7xt45i6aZffVg5SHWkqcEMTpA2fnB9eF45wgM7EXAmFDazxyWGsDbwCMUTiteYFhBJNLrgpkBjVet9S98UXor&quot;,
-	&quot;fingerprint&quot;: &quot;8eb84369&quot;,
-	&quot;title&quot;: &quot;segwit&quot;,
-	&quot;address_no&quot;: 79,
-	&quot;balance&quot;: 0,
-	&quot;type&quot;: &quot;p2wpkh&quot;,
-	&quot;network&quot;: &quot;Mainnet&quot;,
-	&quot;meta&quot;: &quot;{\&quot;accountPath\&quot;:\&quot;m/84&apos;/0&apos;/0&apos;\&quot;}&quot;
-}]
-
-if (JSON.stringify(resp) !== JSON.stringify(expectedAccount)) {
-	AssertionResult.setFailureMessage(&quot;Expected account incorrect: &quot; + JSON.stringify(expectedAccount));
-	AssertionResult.setFailure(true)
-}</stringProp>
-            </JSR223Assertion>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract Account Id" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">onchainAccountId</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">id</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+              <stringProp name="JSONPostProcessor.defaultValues">no-onchain-account-id</stringProp>
+            </JSONPostProcessor>
             <hashTree/>
-            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Extract Account Id" enabled="true">
-              <stringProp name="scriptLanguage">javascript</stringProp>
-              <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
-              <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-vars.put(&quot;onchainAccountId&quot;, resp.id || &apos;no-onchain-account-id&apos;);</stringProp>
-            </JSR223PostProcessor>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check fingerprint" enabled="true">
+              <stringProp name="JSON_PATH">fingerprint</stringProp>
+              <stringProp name="EXPECTED_VALUE">e78afd66</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+            </JSONPathAssertion>
+            <hashTree/>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check masterpub" enabled="true">
+              <stringProp name="JSON_PATH">masterpub</stringProp>
+              <stringProp name="EXPECTED_VALUE">zpub6rsRjqj6BTbD9DjqrY4p14tUx5kdA8ZGCTJD99wZTxD5wfvCkyXKrK3s7M3B1eFN6NbRhmbDDRDC8LF3Bn5gmxxN9rF8mDpZsGC6isGrK1g</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+            </JSONPathAssertion>
+            <hashTree/>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check title" enabled="true">
+              <stringProp name="JSON_PATH">title</stringProp>
+              <stringProp name="EXPECTED_VALUE">segwit</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+            </JSONPathAssertion>
+            <hashTree/>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check balance" enabled="true">
+              <stringProp name="JSON_PATH">balance</stringProp>
+              <stringProp name="EXPECTED_VALUE">0</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+            </JSONPathAssertion>
+            <hashTree/>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check address_no" enabled="true">
+              <stringProp name="JSON_PATH">address_no</stringProp>
+              <stringProp name="EXPECTED_VALUE">-1</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+            </JSONPathAssertion>
+            <hashTree/>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check type" enabled="true">
+              <stringProp name="JSON_PATH">type</stringProp>
+              <stringProp name="EXPECTED_VALUE">p2wpkh</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+            </JSONPathAssertion>
+            <hashTree/>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check network" enabled="true">
+              <stringProp name="JSON_PATH">network</stringProp>
+              <stringProp name="EXPECTED_VALUE">Mainnet</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+            </JSONPathAssertion>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[watchonly] Get  accounts" enabled="true">
@@ -580,25 +614,6 @@ vars.put(&quot;onchainAccountId&quot;, resp.id || &apos;no-onchain-account-id&ap
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check Accounts" enabled="true">
-              <stringProp name="scriptLanguage">javascript</stringProp>
-              <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
-              <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var accounts = JSON.parse(prev.getResponseDataAsString())
-
-if (accounts.length === 0) {
-	AssertionResult.setFailureMessage(&quot;No onchain account found&quot;);
-	AssertionResult.setFailure(true)
-}
-
-var accountId = vars.get(&quot;onchainAccountId&quot;)
-if (accountId !== accounts[0].id) {
-	AssertionResult.setFailureMessage(&quot;Incorrect account id: &quot;+accountId + &quot; / &quot;+accounts[0].id);
-	AssertionResult.setFailure(true)
-}</stringProp>
-            </JSR223Assertion>
-            <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 200" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="49586">200</stringProp>
@@ -608,6 +623,69 @@ if (accountId !== accounts[0].id) {
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
+            <hashTree/>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check fingerprint" enabled="true">
+              <stringProp name="JSON_PATH">$[0].fingerprint</stringProp>
+              <stringProp name="EXPECTED_VALUE">e78afd66</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+            </JSONPathAssertion>
+            <hashTree/>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check masterpub" enabled="true">
+              <stringProp name="JSON_PATH">$[0].masterpub</stringProp>
+              <stringProp name="EXPECTED_VALUE">zpub6rsRjqj6BTbD9DjqrY4p14tUx5kdA8ZGCTJD99wZTxD5wfvCkyXKrK3s7M3B1eFN6NbRhmbDDRDC8LF3Bn5gmxxN9rF8mDpZsGC6isGrK1g</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+            </JSONPathAssertion>
+            <hashTree/>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check title" enabled="true">
+              <stringProp name="JSON_PATH">$[0].title</stringProp>
+              <stringProp name="EXPECTED_VALUE">segwit</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+            </JSONPathAssertion>
+            <hashTree/>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check balance" enabled="true">
+              <stringProp name="JSON_PATH">$[0].balance</stringProp>
+              <stringProp name="EXPECTED_VALUE">0</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+            </JSONPathAssertion>
+            <hashTree/>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check address_no" enabled="true">
+              <stringProp name="JSON_PATH">$[0].address_no</stringProp>
+              <stringProp name="EXPECTED_VALUE">-1</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+            </JSONPathAssertion>
+            <hashTree/>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check type" enabled="true">
+              <stringProp name="JSON_PATH">$[0].type</stringProp>
+              <stringProp name="EXPECTED_VALUE">p2wpkh</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+            </JSONPathAssertion>
+            <hashTree/>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check network" enabled="true">
+              <stringProp name="JSON_PATH">$[0].network</stringProp>
+              <stringProp name="EXPECTED_VALUE">Mainnet</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+            </JSONPathAssertion>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[watchonly] Get account addresses" enabled="true">
@@ -730,20 +808,6 @@ if (addresses.length !== 25) {
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check New Address" enabled="true">
-              <stringProp name="scriptLanguage">javascript</stringProp>
-              <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
-              <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var expectedAddress = &apos;bc1qtmfyj6s76xhrsgd4aw6qq9tc9d48vnd0690k5w&apos;
-if (resp.address !== expectedAddress) {
-	AssertionResult.setFailureMessage(&quot;Expected addresses &apos;&quot;+expectedAddress+&quot;&apos;, got &quot; + resp.address );
-	AssertionResult.setFailure(true)
-}</stringProp>
-            </JSR223Assertion>
-            <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 200" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="49586">200</stringProp>
@@ -753,6 +817,15 @@ if (resp.address !== expectedAddress) {
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
+            <hashTree/>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check New Address" enabled="true">
+              <stringProp name="JSON_PATH">address</stringProp>
+              <stringProp name="EXPECTED_VALUE">bc1qtmfyj6s76xhrsgd4aw6qq9tc9d48vnd0690k5w</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+            </JSONPathAssertion>
             <hashTree/>
           </hashTree>
         </hashTree>
@@ -1048,16 +1121,6 @@ if (resp.address !== expectedAddress) {
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Extract Charge Id" enabled="true">
-              <stringProp name="scriptLanguage">javascript</stringProp>
-              <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
-              <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-vars.put(&quot;chargeId&quot;, resp.id || &apos;no-charge-id&apos;);</stringProp>
-            </JSR223PostProcessor>
-            <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="49586">200</stringProp>
@@ -1067,6 +1130,12 @@ vars.put(&quot;chargeId&quot;, resp.id || &apos;no-charge-id&apos;);</stringProp
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
+            <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract Charge Id" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">chargeId</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">id</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+            </JSONPostProcessor>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[satspay] Open charge page" enabled="true">
@@ -1351,19 +1420,6 @@ vars.put(&quot;chargeId&quot;, resp.id || &apos;no-charge-id&apos;);</stringProp
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
-                <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Extract Lightning Charge Id" enabled="true">
-                  <stringProp name="scriptLanguage">javascript</stringProp>
-                  <stringProp name="parameters"></stringProp>
-                  <stringProp name="filename"></stringProp>
-                  <stringProp name="cacheKey">true</stringProp>
-                  <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-vars.put(&quot;lightningChargeId&quot;, resp.id || &apos;no-lightning-charge-id&apos;);
-vars.put(&quot;paymentRequest&quot;, resp.payment_request || &apos;no-lpayment-request&apos;);
-
-</stringProp>
-                </JSR223PostProcessor>
-                <hashTree/>
                 <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 200" enabled="true">
                   <collectionProp name="Asserion.test_strings">
                     <stringProp name="49586">200</stringProp>
@@ -1373,6 +1429,18 @@ vars.put(&quot;paymentRequest&quot;, resp.payment_request || &apos;no-lpayment-r
                   <boolProp name="Assertion.assume_success">false</boolProp>
                   <intProp name="Assertion.test_type">8</intProp>
                 </ResponseAssertion>
+                <hashTree/>
+                <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract Lightning Charge Id" enabled="true">
+                  <stringProp name="JSONPostProcessor.referenceNames">lightningChargeId</stringProp>
+                  <stringProp name="JSONPostProcessor.jsonPathExprs">id</stringProp>
+                  <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+                </JSONPostProcessor>
+                <hashTree/>
+                <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract paymentRequest" enabled="true">
+                  <stringProp name="JSONPostProcessor.referenceNames">paymentRequest</stringProp>
+                  <stringProp name="JSONPostProcessor.jsonPathExprs">payment_request</stringProp>
+                  <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+                </JSONPostProcessor>
                 <hashTree/>
               </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[satspay] Go to charge page" enabled="true">
@@ -1503,18 +1571,6 @@ if (resp.paid) {
                 </JSR223Assertion>
                 <hashTree/>
               </hashTree>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think Time" enabled="true">
-                <intProp name="ActionProcessor.action">1</intProp>
-                <intProp name="ActionProcessor.target">0</intProp>
-                <stringProp name="ActionProcessor.duration">${thinkTime}</stringProp>
-              </TestAction>
-              <hashTree>
-                <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-                  <stringProp name="ConstantTimer.delay">1000</stringProp>
-                  <stringProp name="RandomTimer.range">100</stringProp>
-                </UniformRandomTimer>
-                <hashTree/>
-              </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[wallet] Pay Invoice" enabled="true">
                 <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -1639,24 +1695,23 @@ if (resp.paid) {
                   <intProp name="Assertion.test_type">8</intProp>
                 </ResponseAssertion>
                 <hashTree/>
-                <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check balance" enabled="true">
-                  <stringProp name="scriptLanguage">javascript</stringProp>
-                  <stringProp name="parameters"></stringProp>
-                  <stringProp name="filename"></stringProp>
-                  <stringProp name="cacheKey">true</stringProp>
-                  <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var amount = +vars.get(&apos;amountGenerator&apos;)
-if (resp.balance !== amount) {
-	AssertionResult.setFailureMessage(&quot;Expected balance to be &quot;+amount+&quot;, got &quot; + resp.amount);
-	AssertionResult.setFailure(true)
-}
-
-if (!resp.paid) {
-	AssertionResult.setFailureMessage(&quot;Expected charge to be paid&quot;);
-	AssertionResult.setFailure(true)
-}</stringProp>
-                </JSR223Assertion>
+                <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check paid" enabled="true">
+                  <stringProp name="JSON_PATH">paid</stringProp>
+                  <stringProp name="EXPECTED_VALUE">true</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                  <boolProp name="EXPECT_NULL">false</boolProp>
+                  <boolProp name="INVERT">false</boolProp>
+                  <boolProp name="ISREGEX">false</boolProp>
+                </JSONPathAssertion>
+                <hashTree/>
+                <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check balance" enabled="true">
+                  <stringProp name="JSON_PATH">balance</stringProp>
+                  <stringProp name="EXPECTED_VALUE">${amountGenerator}</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                  <boolProp name="EXPECT_NULL">false</boolProp>
+                  <boolProp name="INVERT">false</boolProp>
+                  <boolProp name="ISREGEX">false</boolProp>
+                </JSONPathAssertion>
                 <hashTree/>
               </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[satspay] Get lightning charge  (after)" enabled="true">
@@ -1716,44 +1771,9 @@ if (!resp.paid) {
                 <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check charge webhook call" enabled="true">
                   <stringProp name="scriptLanguage">javascript</stringProp>
                   <stringProp name="parameters"></stringProp>
-                  <stringProp name="filename"></stringProp>
+                  <stringProp name="filename">${configPath}/scripts/satspay_check_charge_webhook_call.js</stringProp>
                   <stringProp name="cacheKey">true</stringProp>
-                  <stringProp name="script">var payment = JSON.parse(prev.getResponseDataAsString())
-
-if (!payment.paid || !payment.lnbitswallet || !payment.webhook){
-	AssertionResult.setFailureMessage(&quot;Charge not correctly updated after paiment: &quot;+ payment.id);
-	AssertionResult.setFailure(true)
-}
-
-var extra = JSON.parse(payment.extra)
-if (!extra.webhook_response) {
-	AssertionResult.setFailureMessage(&quot;Webhook response missing for payment: &quot;+ payment.id);
-	AssertionResult.setFailure(true)
-}
-
-var separatorIndex = extra.webhook_response.indexOf(&quot;\r\n\r\n&quot;)
-if (separatorIndex == -1) {
-	AssertionResult.setFailureMessage(&quot;Webhook response has wrong format&quot;+ extra.webhook_response);
-	AssertionResult.setFailure(true)
-}
-var headers = extra.webhook_response.substring(0, separatorIndex)
-var bodyStr = extra.webhook_response.substring(separatorIndex)
-
-var body = JSON.parse(bodyStr)
-
-
-if (vars.get(&quot;lightningChargeId&quot;) !== body.id) {
-	AssertionResult.setFailureMessage(&quot;Wrong webhook charge id. Expected: &quot;+ vars.get(&quot;lightningChargeId&quot;) + &quot;, but got &quot;+ body.id);
-	AssertionResult.setFailure(true)
-}
-
-if (vars.get(&quot;paymentRequest&quot;) !== body.payment_request) {
-	AssertionResult.setFailureMessage(&quot;Wrong webhook charge payment request. Expected: &quot;+ vars.get(&quot;paymentRequest&quot;) + &quot;, but got &quot;+ body.payment_request);
-	AssertionResult.setFailure(true)
-}
-
-
-</stringProp>
+                  <stringProp name="script"></stringProp>
                 </JSR223Assertion>
                 <hashTree/>
               </hashTree>
@@ -1826,18 +1846,9 @@ if (vars.get(&quot;paymentRequest&quot;) !== body.payment_request) {
             <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check charges" enabled="true">
               <stringProp name="scriptLanguage">javascript</stringProp>
               <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
+              <stringProp name="filename">${configPath}/scripts/satspay_check_charges_count.js</stringProp>
               <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var paidChargeCount = +vars.get(&apos;paidChargeCount&apos;)
-
-var totalChargeCount = paidChargeCount + 2; // one onchain and one to expire
-if (resp.length !== totalChargeCount) {
-	AssertionResult.setFailureMessage(&quot;Expected charges count to be &quot;+totalChargeCount+&quot;, got &quot; + resp.length);
-	AssertionResult.setFailure(true)
-}
-</stringProp>
+              <stringProp name="script"></stringProp>
             </JSR223Assertion>
             <hashTree/>
           </hashTree>
@@ -1901,24 +1912,9 @@ if (resp.length !== totalChargeCount) {
             <hashTree/>
             <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check Balance" enabled="true">
               <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="filename"></stringProp>
+              <stringProp name="filename">${configPath}/scripts/satspay_check_wallet_balance.js</stringProp>
               <stringProp name="parameters"></stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var paidChargeCount = +vars.get(&apos;paidChargeCount&apos;)
-var balance = 0
-var startAmount = 10
-for (var i=0; i&lt; paidChargeCount; i++) {
-	balance += startAmount + i
-}
-
-// millisats
-if (resp.balance !== balance * 1000) {
-	AssertionResult.setFailureMessage(&quot;Expected balance to be &quot;+balance+&quot;, but got: &quot;+ resp.balance);
-	AssertionResult.setFailure(true)
-}
-
-vars.put(&quot;userBalance&quot;, resp.balance)</stringProp>
+              <stringProp name="script"></stringProp>
               <stringProp name="scriptLanguage">javascript</stringProp>
             </JSR223Assertion>
             <hashTree/>
@@ -1983,31 +1979,9 @@ vars.put(&quot;userBalance&quot;, resp.balance)</stringProp>
             <hashTree/>
             <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check payments status" enabled="true">
               <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="filename"></stringProp>
+              <stringProp name="filename">${configPath}/scripts/satspay_check_payments_status.js</stringProp>
               <stringProp name="parameters"></stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var paidChargeCount = +vars.get(&apos;paidChargeCount&apos;)
-// one payment is the expired one
-var totalPaymentsCount = paidChargeCount + 1
-
-if (resp.length != totalPaymentsCount) {
-	AssertionResult.setFailureMessage(&quot;Expected total &quot;+totalPaymentsCount+&quot;  paymet, but got: &quot;+ resp.length);
-	AssertionResult.setFailure(true)
-}
-
-var pendingCount = 0
-
-for (var i=0; i&lt;resp.length; i++) {
-  var payment = resp[i]
-  if (payment.pending) pendingCount++
-}
-
-if (pendingCount !== 1) {
-	AssertionResult.setFailureMessage(&quot;Expected one pending paymet, but got: &quot;+ pendingCount);
-	AssertionResult.setFailure(true)
-}
-</stringProp>
+              <stringProp name="script"></stringProp>
               <stringProp name="scriptLanguage">javascript</stringProp>
             </JSR223Assertion>
             <hashTree/>
@@ -2289,7 +2263,7 @@ if (pendingCount !== 1) {
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Extract tipjar Id" enabled="true">
+            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Extract tipjar Id" enabled="false">
               <stringProp name="scriptLanguage">javascript</stringProp>
               <stringProp name="parameters"></stringProp>
               <stringProp name="filename"></stringProp>
@@ -2299,7 +2273,7 @@ if (pendingCount !== 1) {
 vars.put(&quot;tipjarId&quot;, resp.id || &apos;no-tipjar-id&apos;);</stringProp>
             </JSR223PostProcessor>
             <hashTree/>
-            <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check tipjar" enabled="true">
+            <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check tipjar" enabled="false">
               <stringProp name="scriptLanguage">javascript</stringProp>
               <stringProp name="parameters"></stringProp>
               <stringProp name="filename"></stringProp>
@@ -2312,6 +2286,22 @@ if (resp.name !== &quot;Nakamoto&quot;) {
 }
 </stringProp>
             </JSR223Assertion>
+            <hashTree/>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check tipjar" enabled="true">
+              <stringProp name="JSON_PATH">name</stringProp>
+              <stringProp name="EXPECTED_VALUE">Nakamoto</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+            </JSONPathAssertion>
+            <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract tipjar Id" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">tipjarId</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">id</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+              <stringProp name="JSONPostProcessor.defaultValues">no-tipjar-id</stringProp>
+            </JSONPostProcessor>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[tipjar] Open tipjar page" enabled="true">
