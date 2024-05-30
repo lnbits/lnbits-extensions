@@ -1552,23 +1552,23 @@ if (addresses.length !== 25) {
                   <intProp name="Assertion.test_type">8</intProp>
                 </ResponseAssertion>
                 <hashTree/>
-                <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check balance zero" enabled="true">
-                  <stringProp name="scriptLanguage">javascript</stringProp>
-                  <stringProp name="parameters"></stringProp>
-                  <stringProp name="filename"></stringProp>
-                  <stringProp name="cacheKey">true</stringProp>
-                  <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-if (resp.balance !== 0) {
-	AssertionResult.setFailureMessage(&quot;Expected balance to be zero, got &quot; + resp.amount);
-	AssertionResult.setFailure(true)
-}
-
-if (resp.paid) {
-	AssertionResult.setFailureMessage(&quot;Expected charge to not be paid&quot;);
-	AssertionResult.setFailure(true)
-}</stringProp>
-                </JSR223Assertion>
+                <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check not paid" enabled="true">
+                  <stringProp name="JSON_PATH">paid</stringProp>
+                  <stringProp name="EXPECTED_VALUE">false</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                  <boolProp name="EXPECT_NULL">false</boolProp>
+                  <boolProp name="INVERT">false</boolProp>
+                  <boolProp name="ISREGEX">false</boolProp>
+                </JSONPathAssertion>
+                <hashTree/>
+                <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check balance is zero" enabled="true">
+                  <stringProp name="JSON_PATH">balance</stringProp>
+                  <stringProp name="EXPECTED_VALUE">0</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                  <boolProp name="EXPECT_NULL">false</boolProp>
+                  <boolProp name="INVERT">false</boolProp>
+                  <boolProp name="ISREGEX">false</boolProp>
+                </JSONPathAssertion>
                 <hashTree/>
               </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[wallet] Pay Invoice" enabled="true">
@@ -2263,30 +2263,6 @@ if (resp.paid) {
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Extract tipjar Id" enabled="false">
-              <stringProp name="scriptLanguage">javascript</stringProp>
-              <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
-              <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-vars.put(&quot;tipjarId&quot;, resp.id || &apos;no-tipjar-id&apos;);</stringProp>
-            </JSR223PostProcessor>
-            <hashTree/>
-            <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check tipjar" enabled="false">
-              <stringProp name="scriptLanguage">javascript</stringProp>
-              <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
-              <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-if (resp.name !== &quot;Nakamoto&quot;) {
-	AssertionResult.setFailureMessage(&quot;Expected tipjar name to be &apos;Nakamoto&apos;, got &quot; + resp.name);
-	AssertionResult.setFailure(true)
-}
-</stringProp>
-            </JSR223Assertion>
-            <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check tipjar" enabled="true">
               <stringProp name="JSON_PATH">name</stringProp>
               <stringProp name="EXPECTED_VALUE">Nakamoto</stringProp>
@@ -2450,34 +2426,22 @@ if (resp.name !== &quot;Nakamoto&quot;) {
                   <intProp name="Assertion.test_type">8</intProp>
                 </ResponseAssertion>
                 <hashTree/>
-                <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check charge URL" enabled="true">
-                  <stringProp name="scriptLanguage">javascript</stringProp>
-                  <stringProp name="parameters"></stringProp>
-                  <stringProp name="filename"></stringProp>
-                  <stringProp name="cacheKey">true</stringProp>
-                  <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-if (!resp.redirect_url || !resp.redirect_url.startsWith(&quot;/satspay/&quot;)) {
-	AssertionResult.setFailureMessage(&quot;Expected redirect url to start with &apos;/satspay/&apos;, but was: &quot; + resp.redirect_url);
-	AssertionResult.setFailure(true)
-}
-</stringProp>
-                </JSR223Assertion>
-                <hashTree/>
                 <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Extract charge URL for tip" enabled="true">
                   <stringProp name="scriptLanguage">javascript</stringProp>
                   <stringProp name="parameters"></stringProp>
-                  <stringProp name="filename"></stringProp>
+                  <stringProp name="filename">${configPath}/scripts/tipjar_extract_charge_url_for_tip.js</stringProp>
                   <stringProp name="cacheKey">true</stringProp>
-                  <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-vars.put(&quot;tipChargeUrl&quot;, resp.redirect_url || &apos;no-tip-charge-url&apos;);
-
-if (resp.redirect_url) {
-	var tipChargeId = resp.redirect_url.split(&quot;/&quot;)[2]
-	vars.put(&quot;tipChargeId&quot;, tipChargeId || &apos;no-tip-charge-id&apos;);
-}</stringProp>
+                  <stringProp name="script"></stringProp>
                 </JSR223PostProcessor>
+                <hashTree/>
+                <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check charge URL" enabled="true">
+                  <stringProp name="JSON_PATH">redirect_url</stringProp>
+                  <stringProp name="EXPECTED_VALUE">/satspay/.*$</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                  <boolProp name="EXPECT_NULL">false</boolProp>
+                  <boolProp name="INVERT">false</boolProp>
+                  <boolProp name="ISREGEX">true</boolProp>
+                </JSONPathAssertion>
                 <hashTree/>
               </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[satspay] Open charge for tipjar" enabled="true">
@@ -2600,36 +2564,17 @@ if (resp.redirect_url) {
                 <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check charge" enabled="true">
                   <stringProp name="scriptLanguage">javascript</stringProp>
                   <stringProp name="parameters"></stringProp>
-                  <stringProp name="filename"></stringProp>
+                  <stringProp name="filename">${configPath}/scripts/satspay_check_charge_details.js</stringProp>
                   <stringProp name="cacheKey">true</stringProp>
-                  <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var tipCounter = +vars.get(&quot;tipCounter&quot;)
-var name = &quot;Hal&quot;
-var description = &quot;Let&apos;s go ...&quot; + tipCounter + &quot;!&quot;
-
-if (resp.description !== description) {
-	AssertionResult.setFailureMessage(&quot;Expected name to be  &apos;Hal&apos;, but was: &quot; + resp.name);
-	AssertionResult.setFailure(true)
-}
-
-if (resp.description !== description) {
-	AssertionResult.setFailureMessage(&quot;Expected description to be  &apos;Let&apos;s go!&apos;, but was: &quot; + resp.description);
-	AssertionResult.setFailure(true)
-}
-</stringProp>
+                  <stringProp name="script"></stringProp>
                 </JSR223Assertion>
                 <hashTree/>
-                <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Extract tip payment request" enabled="true">
-                  <stringProp name="scriptLanguage">javascript</stringProp>
-                  <stringProp name="parameters"></stringProp>
-                  <stringProp name="filename"></stringProp>
-                  <stringProp name="cacheKey">true</stringProp>
-                  <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-vars.put(&quot;tipPaymentRequest&quot;, resp.payment_request || &apos;no-tip-payment-request&apos;);
-</stringProp>
-                </JSR223PostProcessor>
+                <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract tip payment request" enabled="true">
+                  <stringProp name="JSONPostProcessor.referenceNames">tipPaymentRequest</stringProp>
+                  <stringProp name="JSONPostProcessor.jsonPathExprs">payment_request</stringProp>
+                  <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+                  <stringProp name="JSONPostProcessor.defaultValues">no-tip-payment-request</stringProp>
+                </JSONPostProcessor>
                 <hashTree/>
               </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[tipjar] Get created tips" enabled="true">
@@ -2689,27 +2634,13 @@ vars.put(&quot;tipPaymentRequest&quot;, resp.payment_request || &apos;no-tip-pay
                 <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check tips for user" enabled="true">
                   <stringProp name="scriptLanguage">javascript</stringProp>
                   <stringProp name="parameters"></stringProp>
-                  <stringProp name="filename"></stringProp>
+                  <stringProp name="filename">${configPath}/scripts/tipjar_check_tips_for_user.js</stringProp>
                   <stringProp name="cacheKey">true</stringProp>
-                  <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var tipCounter = +vars.get(&quot;tipCounter&quot;)
-
-if (resp.length !== tipCounter) {
-	AssertionResult.setFailureMessage(&quot;Expected &quot;+tipCounter+&quot; tips, but got: &quot; + resp.length);
-	AssertionResult.setFailure(true)
-} else {
-	var tip = resp[tipCounter - 1]
-	var message = &quot;Let&apos;s go ...&quot; + tipCounter + &quot;!&quot;
-	if (!tip || tip.name !== &quot;Hal&quot; || tip.message !== message || tip.sats !== 21) {
-		AssertionResult.setFailureMessage(&quot;Expected tip to &apos;&quot; + message + &quot;&apos;, but was: &quot; + JSON.stringify(resp));
-		AssertionResult.setFailure(true)
-	}
-}</stringProp>
+                  <stringProp name="script"></stringProp>
                 </JSR223Assertion>
                 <hashTree/>
               </hashTree>
-              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think Time" enabled="true">
+              <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think Time" enabled="false">
                 <intProp name="ActionProcessor.action">1</intProp>
                 <intProp name="ActionProcessor.target">0</intProp>
                 <stringProp name="ActionProcessor.duration">${thinkTime}</stringProp>
@@ -2851,22 +2782,9 @@ if (resp.length !== tipCounter) {
                 <hashTree/>
                 <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check Balance" enabled="true">
                   <stringProp name="cacheKey">true</stringProp>
-                  <stringProp name="filename"></stringProp>
+                  <stringProp name="filename">${configPath}/scripts/tipjar_check_user_balance.js</stringProp>
                   <stringProp name="parameters"></stringProp>
-                  <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var tipCounter = +vars.get(&apos;tipCounter&apos;)
-var userBalance = +vars.get(&quot;userBalance&quot;)
-
-userBalance += 21 * 1000
-
-// millisats
-if (resp.balance !== userBalance) {
-	AssertionResult.setFailureMessage(&quot;Expected balance to be &quot;+userBalance+&quot;, but got: &quot;+ resp.balance);
-	AssertionResult.setFailure(true)
-}
-
-vars.put(&quot;userBalance&quot;, userBalance)</stringProp>
+                  <stringProp name="script"></stringProp>
                   <stringProp name="scriptLanguage">javascript</stringProp>
                 </JSR223Assertion>
                 <hashTree/>
