@@ -129,19 +129,31 @@
             <intProp name="Assertion.test_type">8</intProp>
           </ResponseAssertion>
           <hashTree/>
-          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Extract user and wallet" enabled="true">
-            <stringProp name="cacheKey">true</stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-vars.put(&quot;userId&quot;, resp.user || &quot;no-user-id&quot;);
-vars.put(&quot;walletId&quot;, resp.id || &quot;no-wallet-id&quot;);
-vars.put(&quot;inkey&quot;, resp.inkey || &apos;no-inkey&apos;);
-vars.put(&quot;adminkey&quot;, resp.adminkey || &apos;no-adminkey&apos;);
-</stringProp>
-            <stringProp name="scriptLanguage">javascript</stringProp>
-          </JSR223PostProcessor>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON userId" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">userId</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">user</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON walletId" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">walletId</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">id</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON inkey" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">inkey</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">inkey</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">no-inkey</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON adminkey" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">adminkey</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">adminkey</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">no-adminkey</stringProp>
+          </JSONPostProcessor>
           <hashTree/>
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[wallet] Login with user id" enabled="true">
