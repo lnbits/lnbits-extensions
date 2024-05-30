@@ -68,6 +68,11 @@
             <stringProp name="Argument.value">${__property(mirrorPort,,8500)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="configPath" elementType="Argument">
+            <stringProp name="Argument.name">configPath</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(import org.apache.jmeter.services.FileServer; FileServer.getFileServer().getBaseDir();)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
@@ -484,34 +489,17 @@
                 <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check created pay link" enabled="true">
                   <stringProp name="scriptLanguage">javascript</stringProp>
                   <stringProp name="parameters"></stringProp>
-                  <stringProp name="filename"></stringProp>
+                  <stringProp name="filename">${configPath}/scripts/lnurl_check_created_pay_link.js</stringProp>
                   <stringProp name="cacheKey">true</stringProp>
-                  <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var walletId = vars.get(&quot;walletId&quot;)
-var lnurlpCounter = +vars.get(&quot;lnurlpCounter&quot;)
-
-if (!resp.id) {
-	AssertionResult.setFailureMessage(&quot;Pay Link not created&quot;);
-	AssertionResult.setFailure(true)
-} else if (resp.wallet !== walletId){
-	AssertionResult.setFailureMessage(&quot;Pay Link description expected to be &apos;&quot;+walletId+&quot;&apos;, but was: &quot; + resp.wallet);
-	AssertionResult.setFailure(true)
-} else if (resp.description !== &quot;receive payments &quot;+lnurlpCounter){
-	AssertionResult.setFailureMessage(&quot;Pay Link description expected to be &apos;receive payments &quot;+lnurlpCounter+&quot;&apos;, but was: &quot; + resp.description);
-	AssertionResult.setFailure(true)
-}</stringProp>
+                  <stringProp name="script"></stringProp>
                 </JSR223Assertion>
                 <hashTree/>
                 <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Extract pay link ID" enabled="true">
                   <stringProp name="scriptLanguage">javascript</stringProp>
                   <stringProp name="parameters"></stringProp>
-                  <stringProp name="filename"></stringProp>
+                  <stringProp name="filename">${configPath}/scripts/lnurl_extract_pay_link_id.js</stringProp>
                   <stringProp name="cacheKey">true</stringProp>
-                  <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-vars.put(&quot;payLinkId&quot;, resp.id || &apos;no-pay-link-id&apos;);
-vars.put(&quot;payLinkLnurl&quot;, resp.lnurl || &apos;no-pay-link-lnurl&apos;);</stringProp>
+                  <stringProp name="script"></stringProp>
                 </JSR223PostProcessor>
                 <hashTree/>
               </hashTree>
@@ -988,23 +976,9 @@ vars.put(&quot;payLinkLnurl&quot;, resp.lnurl || &apos;no-pay-link-lnurl&apos;);
                     <hashTree/>
                     <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check Balance" enabled="true">
                       <stringProp name="cacheKey">true</stringProp>
-                      <stringProp name="filename"></stringProp>
+                      <stringProp name="filename">${configPath}/scripts/lnurl_check_balance.js</stringProp>
                       <stringProp name="parameters"></stringProp>
-                      <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var lnurlpCounter = +vars.get(&apos;lnurlpCounter&apos;)
-
-
-var userBalance = +vars.get(&quot;userBalance&quot;)
-userBalance += 10 + lnurlpCounter
-
-// millisats
-if (resp.balance !== userBalance * 1000) {
-	AssertionResult.setFailureMessage(&quot;Expected balance to be &quot;+userBalance * 1000+&quot;, but got: &quot;+ resp.balance);
-	AssertionResult.setFailure(true)
-}
-
-vars.put(&quot;userBalance&quot;, userBalance)</stringProp>
+                      <stringProp name="script"></stringProp>
                       <stringProp name="scriptLanguage">javascript</stringProp>
                     </JSR223Assertion>
                     <hashTree/>
@@ -1073,34 +1047,9 @@ vars.put(&quot;userBalance&quot;, userBalance)</stringProp>
                     <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check webhook response" enabled="true">
                       <stringProp name="scriptLanguage">javascript</stringProp>
                       <stringProp name="parameters"></stringProp>
-                      <stringProp name="filename"></stringProp>
+                      <stringProp name="filename">${configPath}/scripts/lnurl_check_webhook_response.js</stringProp>
                       <stringProp name="cacheKey">true</stringProp>
-                      <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-var paymenHash = vars.get(&quot;paymenHash&quot;)
-
-
-var whResp = resp.details.extra.wh_response
-var separatorIndex = whResp.indexOf(&quot;\r\n\r\n&quot;)
-if (separatorIndex == -1) {
-	AssertionResult.setFailureMessage(&quot;Webhook response has wrong format: &quot; + whResp);
-	AssertionResult.setFailure(true)
-} else {
-	var headers = whResp.substring(0, separatorIndex)
-	var bodyStr = whResp.substring(separatorIndex)
-	var body = JSON.parse(bodyStr)
-	if (body.payment_hash !== paymenHash) {
-		AssertionResult.setFailureMessage(&quot;Incorrect webhook payment hash: &quot; + JSON.stringify(body));
-		AssertionResult.setFailure(true)
-	} else if (headers.indexOf(&quot;h1: 1&quot;) === -1) {
-		AssertionResult.setFailureMessage(&quot;Expected header missing: &apos;h1&apos;: &apos;1&apos;&quot;);
-		AssertionResult.setFailure(true)
-	} else if (!body.body || !body.body.b2 || body.body.b2 !== 2) {
-		AssertionResult.setFailureMessage(&quot;Expected body field missing: \&quot;body\&quot;: {\&quot;b2\&quot;: 2}, found: &quot; + JSON.stringify(body.body));
-		AssertionResult.setFailure(true)
-	}
-}
-
-</stringProp>
+                      <stringProp name="script"></stringProp>
                     </JSR223Assertion>
                     <hashTree/>
                   </hashTree>
@@ -1568,23 +1517,9 @@ if (separatorIndex == -1) {
                 <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check created pay link" enabled="true">
                   <stringProp name="scriptLanguage">javascript</stringProp>
                   <stringProp name="parameters"></stringProp>
-                  <stringProp name="filename"></stringProp>
+                  <stringProp name="filename">${configPath}/scripts/lnurl_check_created_withdraw_link.js</stringProp>
                   <stringProp name="cacheKey">true</stringProp>
-                  <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var walletId = vars.get(&quot;walletId&quot;)
-var lnurlwCounter = +vars.get(&quot;lnurlwCounter&quot;)
-
-if (!resp.id) {
-	AssertionResult.setFailureMessage(&quot;Withdraw Link not created&quot;);
-	AssertionResult.setFailure(true)
-} else if (resp.wallet !== walletId) {
-	AssertionResult.setFailureMessage(&quot;Withdraw Link wallet expected to be &apos;&quot; + walletId + &quot;&apos;, but was: &quot; + resp.wallet);
-	AssertionResult.setFailure(true)
-} else if (resp.title !== &quot;withdraw &quot; + lnurlwCounter) {
-	AssertionResult.setFailureMessage(&quot;Withdraw Link description expected to be &apos;withdraw &quot; + lnurlwCounter + &quot;&apos;, but was: &quot; + resp.description);
-	AssertionResult.setFailure(true)
-}</stringProp>
+                  <stringProp name="script"></stringProp>
                 </JSR223Assertion>
                 <hashTree/>
                 <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract withdraw link id" enabled="true">
@@ -2055,20 +1990,9 @@ if (!resp.id) {
                     <hashTree/>
                     <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check Balance" enabled="true">
                       <stringProp name="cacheKey">true</stringProp>
-                      <stringProp name="filename"></stringProp>
+                      <stringProp name="filename">${configPath}/scripts/lnurl_check_balance_after_withdraw.js</stringProp>
                       <stringProp name="parameters"></stringProp>
-                      <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var userBalance = +vars.get(&quot;userBalance&quot;)
-userBalance -= 10
-
-// millisats
-if (resp.balance !== userBalance * 1000) {
-	AssertionResult.setFailureMessage(&quot;Expected balance to be &quot;+userBalance * 1000+&quot;, but got: &quot;+ resp.balance);
-	AssertionResult.setFailure(true)
-}
-
-vars.put(&quot;userBalance&quot;, userBalance)</stringProp>
+                      <stringProp name="script"></stringProp>
                       <stringProp name="scriptLanguage">javascript</stringProp>
                     </JSR223Assertion>
                     <hashTree/>
@@ -2137,34 +2061,9 @@ vars.put(&quot;userBalance&quot;, userBalance)</stringProp>
                     <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check webhook response" enabled="true">
                       <stringProp name="scriptLanguage">javascript</stringProp>
                       <stringProp name="parameters"></stringProp>
-                      <stringProp name="filename"></stringProp>
+                      <stringProp name="filename">${configPath}/scripts/lnurl_check_webhook_response.js</stringProp>
                       <stringProp name="cacheKey">true</stringProp>
-                      <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-var paymenHash = vars.get(&quot;paymenHash&quot;)
-
-
-var whResp = resp.details.extra.wh_response
-var separatorIndex = whResp.indexOf(&quot;\r\n\r\n&quot;)
-if (separatorIndex == -1) {
-	AssertionResult.setFailureMessage(&quot;Webhook response has wrong format: &quot; + whResp);
-	AssertionResult.setFailure(true)
-} else {
-	var headers = whResp.substring(0, separatorIndex)
-	var bodyStr = whResp.substring(separatorIndex)
-	var body = JSON.parse(bodyStr)
-	if (body.payment_hash !== paymenHash) {
-		AssertionResult.setFailureMessage(&quot;Incorrect webhook payment hash: &quot; + JSON.stringify(body));
-		AssertionResult.setFailure(true)
-	} else if (headers.indexOf(&quot;h1: 1&quot;) === -1) {
-		AssertionResult.setFailureMessage(&quot;Expected header missing: &apos;h1&apos;: &apos;1&apos;&quot;);
-		AssertionResult.setFailure(true)
-	} else if (!body.body || !body.body.b2 || body.body.b2 !== 2) {
-		AssertionResult.setFailureMessage(&quot;Expected body field missing: \&quot;body\&quot;: {\&quot;b2\&quot;: 2}, found: &quot; + JSON.stringify(body.body));
-		AssertionResult.setFailure(true)
-	}
-}
-
-</stringProp>
+                      <stringProp name="script"></stringProp>
                     </JSR223Assertion>
                     <hashTree/>
                   </hashTree>
@@ -2232,26 +2131,9 @@ if (separatorIndex == -1) {
             <hashTree/>
             <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check Balance" enabled="true">
               <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="filename"></stringProp>
+              <stringProp name="filename">${configPath}/scripts/lnurl_check_receive_wallet_balance.js</stringProp>
               <stringProp name="parameters"></stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString());
-
-var withdrawAmount = 10;
-var lnurlwCount = +vars.get(&quot;lnurlwCount&quot;);
-var withdrawCountPerLnurlw = +vars.get(&quot;withdrawCountPerLnurlw&quot;);
-
-var userBalance = withdrawAmount * lnurlwCount * withdrawCountPerLnurlw;
-
-// millisats
-if (resp.balance !== userBalance * 1000) {
-  AssertionResult.setFailureMessage(
-    &quot;Expected balance to be &quot; +
-      userBalance * 1000 +
-      &quot;, but got: &quot; +
-      resp.balance
-  );
-  AssertionResult.setFailure(true);
-}</stringProp>
+              <stringProp name="script"></stringProp>
               <stringProp name="scriptLanguage">javascript</stringProp>
             </JSR223Assertion>
             <hashTree/>
