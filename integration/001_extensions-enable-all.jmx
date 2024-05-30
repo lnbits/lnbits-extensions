@@ -45,6 +45,11 @@
             <stringProp name="Argument.desc">HTTP path for the raw.githubusercontent.com repo</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="config_path" elementType="Argument">
+            <stringProp name="Argument.name">config_path</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(import org.apache.jmeter.services.FileServer; FileServer.getFileServer().getBaseDir();)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
@@ -131,31 +136,9 @@
           <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Extract extension IDs" enabled="true">
             <stringProp name="scriptLanguage">javascript</stringProp>
             <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
+            <stringProp name="filename">${config_path}/scripts/extract_extensions_ids.js</stringProp>
             <stringProp name="cacheKey">true</stringProp>
-            <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString());
-var excludedExtensions = (vars.get(&quot;excludedExtensions&quot;) || &quot;&quot;).split(&quot;,&quot;);
-
-var extensions = {};
-
-for (var i = 0; i &lt; resp.extensions.length; i++) {
-  var ext = resp.extensions[i];
-  if (excludedExtensions.indexOf(ext.id) === -1) {
-    extensions[ext.id] = true;
-  }
-}
-
-
-
-extensionList = Object.keys(extensions);
-//extensionList[1] = &apos;nostrmarket&apos;
-//extensionList.length = 3
-vars.put(&quot;extensions&quot;, extensionList);
-
-
-
-vars.put(&quot;extensionsLength&quot;, extensionList.length);
-</stringProp>
+            <stringProp name="script"></stringProp>
           </JSR223PostProcessor>
           <hashTree/>
         </hashTree>
@@ -536,13 +519,9 @@ vars.put(&quot;extensionsLength&quot;, extensionList.length);
               <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="Extract extension data" enabled="true">
                 <stringProp name="scriptLanguage">javascript</stringProp>
                 <stringProp name="parameters"></stringProp>
-                <stringProp name="filename"></stringProp>
+                <stringProp name="filename">${config_path}/scripts/extract_extension_data.js</stringProp>
                 <stringProp name="cacheKey">true</stringProp>
-                <stringProp name="script">var extensions = vars.get(&quot;extensions&quot;)
-var extensionIndex = vars.get(&quot;extensionIndex&quot;)
-
-vars.put(&quot;extension&quot;, extensions.split(&quot;,&quot;)[extensionIndex - 1])
-</stringProp>
+                <stringProp name="script"></stringProp>
               </JSR223Sampler>
               <hashTree/>
               <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Install Extension Module" enabled="true">
@@ -659,20 +638,9 @@ vars.put(&quot;extension&quot;, extensions.split(&quot;,&quot;)[extensionIndex -
               <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="Extract extension data " enabled="true">
                 <stringProp name="scriptLanguage">javascript</stringProp>
                 <stringProp name="parameters"></stringProp>
-                <stringProp name="filename"></stringProp>
+                <stringProp name="filename">${config_path}/scripts/extract_extension_data.js</stringProp>
                 <stringProp name="cacheKey">true</stringProp>
-                <stringProp name="script">var extensions = vars.get(&quot;extensions&quot;)
-var adminExtensions = vars.get(&quot;adminExtensions&quot;)
-var extensionIndex = vars.get(&quot;extensionIndex&quot;)
-var extesion = extensions.split(&quot;,&quot;)[extensionIndex - 1]
-var isAdminExtension = adminExtensions.split(&quot;,&quot;).indexOf(extesion) !== -1
-
-vars.put(&quot;extension&quot;, extesion)
-vars.put(&quot;isAdminExtension&quot;, isAdminExtension)
-
-var responseCode = prev.getResponseCode()
-
-vars.put(&quot;responseCode&quot;, responseCode)</stringProp>
+                <stringProp name="script"></stringProp>
               </JSR223Sampler>
               <hashTree/>
               <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
@@ -854,13 +822,9 @@ vars.put(&quot;responseCode&quot;, responseCode)</stringProp>
               <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="Extract extension data " enabled="true">
                 <stringProp name="scriptLanguage">javascript</stringProp>
                 <stringProp name="parameters"></stringProp>
-                <stringProp name="filename"></stringProp>
+                <stringProp name="filename">${config_path}/scripts/extract_extension_data.js</stringProp>
                 <stringProp name="cacheKey">true</stringProp>
-                <stringProp name="script">var extensions = vars.get(&quot;extensions&quot;)
-var extensionIndex = vars.get(&quot;extensionIndex&quot;)
-
-vars.put(&quot;extension&quot;, extensions.split(&quot;,&quot;)[extensionIndex - 1])
-</stringProp>
+                <stringProp name="script"></stringProp>
               </JSR223Sampler>
               <hashTree/>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[${extension}] Uninstall extension" enabled="true">
@@ -1156,18 +1120,9 @@ vars.put(&quot;extension&quot;, extensions.split(&quot;,&quot;)[extensionIndex -
             <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Extract latest release" enabled="true">
               <stringProp name="scriptLanguage">javascript</stringProp>
               <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
+              <stringProp name="filename">${config_path}/scripts/extract_latest_extension_release.js</stringProp>
               <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-var latestRelease = resp[resp.length - 1]
-
-var ext_id = vars.get(&quot;extension&quot;)
-
-vars.put(&quot;ext_id&quot;, ext_id)
-vars.put(&quot;archive&quot;, latestRelease.archive)
-vars.put(&quot;source_repo&quot;, latestRelease.source_repo)
-vars.put(&quot;version&quot;, latestRelease.version)
-</stringProp>
+              <stringProp name="script"></stringProp>
             </JSR223PostProcessor>
             <hashTree/>
           </hashTree>
@@ -1628,27 +1583,9 @@ vars.put(&quot;version&quot;, latestRelease.version)
             <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check Status Code 200 (or 401 for admin extension)" enabled="true">
               <stringProp name="scriptLanguage">javascript</stringProp>
               <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
+              <stringProp name="filename">${config_path}/scripts/check_admin_extension_status_code.js</stringProp>
               <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var responseCode = +prev.getResponseCode()
-var isAdminExtension = vars.get(&quot;isAdminExtension&quot;)
-
-
-if (isAdminExtension === &apos;true&apos;) {
-  if (responseCode !== 200 &amp;&amp; responseCode !== 401) {
-    AssertionResult.setFailureMessage(
-      &quot;Expected response code 200 for 401 for admin extension but got: &quot; +
-        responseCode
-    );
-    AssertionResult.setFailure(true);
-  }
-} else if (responseCode !== 200) {
-  AssertionResult.setFailureMessage(
-    &quot;Expected response code 200 but got: &quot; + responseCode
-  );
-  AssertionResult.setFailure(true);
-}
-</stringProp>
+              <stringProp name="script">	</stringProp>
             </JSR223Assertion>
             <hashTree/>
           </hashTree>
@@ -1725,11 +1662,6 @@ if (isAdminExtension === &apos;true&apos;) {
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
-            <hashTree/>
-            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a bit" enabled="false">
-              <stringProp name="ConstantTimer.delay">3000</stringProp>
-              <stringProp name="TestPlan.comments">for the callback to be invoked</stringProp>
-            </ConstantTimer>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[${extension}] Go to extension page (disabled)" enabled="true">
@@ -1877,11 +1809,6 @@ if (isAdminExtension === &apos;true&apos;) {
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a bit" enabled="false">
-              <stringProp name="ConstantTimer.delay">3000</stringProp>
-              <stringProp name="TestPlan.comments">for the callback to be invoked</stringProp>
-            </ConstantTimer>
-            <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[${extension}] Go to extension page (enabled)" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
@@ -1946,27 +1873,9 @@ if (isAdminExtension === &apos;true&apos;) {
             <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check Status Code 200 (or 401 for admin extension)" enabled="true">
               <stringProp name="scriptLanguage">javascript</stringProp>
               <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
+              <stringProp name="filename">${config_path}/scripts/check_admin_extension_status_code.js</stringProp>
               <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var responseCode = +prev.getResponseCode()
-var isAdminExtension = vars.get(&quot;isAdminExtension&quot;)
-
-
-if (isAdminExtension === &quot;true&quot;) {
-  if (responseCode !== 200 &amp;&amp; responseCode !== 401) {
-    AssertionResult.setFailureMessage(
-      &quot;Expected response code 200 for 401 for admin extension but got: &quot; +
-        responseCode
-    );
-    AssertionResult.setFailure(true);
-  }
-} else if (responseCode !== 200) {
-  AssertionResult.setFailureMessage(
-    &quot;Expected response code 200 but got: &quot; + responseCode
-  );
-  AssertionResult.setFailure(true);
-}
-</stringProp>
+              <stringProp name="script"></stringProp>
             </JSR223Assertion>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 200" enabled="true">

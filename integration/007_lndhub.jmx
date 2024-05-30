@@ -38,6 +38,11 @@
             <stringProp name="Argument.value">3</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="configPath" elementType="Argument">
+            <stringProp name="Argument.name">configPath</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(import org.apache.jmeter.services.FileServer; FileServer.getFileServer().getBaseDir();)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
@@ -774,18 +779,9 @@
           <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check balance value" enabled="true">
             <stringProp name="scriptLanguage">javascript</stringProp>
             <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
+            <stringProp name="filename">${configPath}/scripts/lndhub_check_balance.js</stringProp>
             <stringProp name="cacheKey">true</stringProp>
-            <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-
-var count = +vars.get(&quot;defaultPaymentCount&quot;)
-var paymentDelta = 20
-
-if (resp.BTC.AvailableBalance !== paymentDelta * count) {
-	AssertionResult.setFailureMessage(&quot;Expected balance &quot;+paymentDelta * count+&quot; but got: &quot; + resp.BTC.AvailableBalance);
-	AssertionResult.setFailure(true)
-} </stringProp>
+            <stringProp name="script"></stringProp>
           </JSR223Assertion>
           <hashTree/>
         </hashTree>
@@ -842,34 +838,9 @@ if (resp.BTC.AvailableBalance !== paymentDelta * count) {
           <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check transactions" enabled="true">
             <stringProp name="scriptLanguage">javascript</stringProp>
             <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
+            <stringProp name="filename">${configPath}/scripts/lndhub_check_transactions.js</stringProp>
             <stringProp name="cacheKey">true</stringProp>
-            <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-
-var count = +vars.get(&quot;defaultPaymentCount&quot;)
-
-if (resp.length !== count) {
-	AssertionResult.setFailureMessage(&quot;Expected &quot;+ count+&quot; transactions but got: &quot; + resp.length);
-	AssertionResult.setFailure(true)
-} else {
-	for (var i=0;i&lt;count;i++){
-		if (resp[i].value !== -1) {
-			AssertionResult.setFailureMessage(i + &quot;. Expected value -1 but got: &quot; + resp[i].value);
-			AssertionResult.setFailure(true)
-
-			break
-		}
-
-		if (!resp[i].memo.startsWith(&quot;admin invoice &quot;)) {
-			AssertionResult.setFailureMessage(i + &quot;. Expected memo &apos;admin invoice X&apos; but got: &quot; + resp[i].memo);
-			AssertionResult.setFailure(true)
-
-			break
-		}
-	}
-	
-}</stringProp>
+            <stringProp name="script"></stringProp>
           </JSR223Assertion>
           <hashTree/>
         </hashTree>
@@ -922,34 +893,9 @@ if (resp.length !== count) {
           <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check payments" enabled="true">
             <stringProp name="scriptLanguage">javascript</stringProp>
             <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
+            <stringProp name="filename">${configPath}/scripts/lndhub_check_payments.js</stringProp>
             <stringProp name="cacheKey">true</stringProp>
-            <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-
-var count = +vars.get(&quot;defaultPaymentCount&quot;)
-
-if (resp.length !== count) {
-	AssertionResult.setFailureMessage(&quot;Expected &quot;+ count+&quot; transactions but got: &quot; + resp.length);
-	AssertionResult.setFailure(true)
-} else {
-	for (var i=0;i&lt;count;i++){
-		if (resp[i].amt !== 21) {
-			AssertionResult.setFailureMessage(i + &quot;. Expected value 21 but got: &quot; + resp[i].amt);
-			AssertionResult.setFailure(true)
-
-			break
-		}
-		var description = &quot;user invoice &quot;
-		if (!resp[i].description.startsWith(description)) {
-			AssertionResult.setFailureMessage(i + &quot;. Expected memo &apos;&quot;+description+&quot;&apos; but got: &quot; + resp[i].description);
-			AssertionResult.setFailure(true)
-
-			break
-		}
-	}
-	
-}</stringProp>
+            <stringProp name="script"></stringProp>
           </JSR223Assertion>
           <hashTree/>
         </hashTree>
@@ -1150,17 +1096,9 @@ if (resp.length !== count) {
           <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check payments" enabled="true">
             <stringProp name="scriptLanguage">javascript</stringProp>
             <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
+            <stringProp name="filename">${configPath}/scripts/lndhub_check_payments_after_payment.js</stringProp>
             <stringProp name="cacheKey">true</stringProp>
-            <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var mobilePaymentCount = 1
-var count = +vars.get(&quot;defaultPaymentCount&quot;) + mobilePaymentCount
-
-if (resp.length !== count) {
-	AssertionResult.setFailureMessage(&quot;Expected &quot;+ count+&quot; transactions but got: &quot; + resp.length);
-	AssertionResult.setFailure(true)
-}</stringProp>
+            <stringProp name="script"></stringProp>
           </JSR223Assertion>
           <hashTree/>
         </hashTree>
@@ -1365,19 +1303,9 @@ if (resp.length !== count) {
           <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check transactions" enabled="true">
             <stringProp name="scriptLanguage">javascript</stringProp>
             <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
+            <stringProp name="filename">${configPath}/scripts/lndhub_check_transactions_after_payment.js</stringProp>
             <stringProp name="cacheKey">true</stringProp>
-            <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-
-var mobilePaymentCount = 1
-var count = +vars.get(&quot;defaultPaymentCount&quot;) + mobilePaymentCount
-
-
-if (resp.length !== count) {
-	AssertionResult.setFailureMessage(&quot;Expected &quot;+ count + &quot; transactions but got: &quot; + resp.length);
-	AssertionResult.setFailure(true)
-}</stringProp>
+            <stringProp name="script"></stringProp>
           </JSR223Assertion>
           <hashTree/>
         </hashTree>
@@ -1439,19 +1367,9 @@ if (resp.length !== count) {
           <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check balance value" enabled="true">
             <stringProp name="scriptLanguage">javascript</stringProp>
             <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
+            <stringProp name="filename">${configPath}/scripts/lndhub_check_balance_after_payments.js</stringProp>
             <stringProp name="cacheKey">true</stringProp>
-            <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-
-var count = +vars.get(&quot;defaultPaymentCount&quot;)
-var paymentDelta = 20
-var mobilePaymentDelta = 20
-
-if (resp.BTC.AvailableBalance !== paymentDelta * count + mobilePaymentDelta) {
-	AssertionResult.setFailureMessage(&quot;Expected balance &quot;+paymentDelta * count+&quot; but got: &quot; + resp.BTC.AvailableBalance);
-	AssertionResult.setFailure(true)
-} </stringProp>
+            <stringProp name="script"></stringProp>
           </JSR223Assertion>
           <hashTree/>
         </hashTree>

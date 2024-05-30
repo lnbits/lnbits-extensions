@@ -33,6 +33,11 @@
             <stringProp name="Argument.value">3000</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="configPath" elementType="Argument">
+            <stringProp name="Argument.name">configPath</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(import org.apache.jmeter.services.FileServer; FileServer.getFileServer().getBaseDir();)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
@@ -428,40 +433,17 @@
             <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check created TPoS" enabled="true">
               <stringProp name="scriptLanguage">javascript</stringProp>
               <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
+              <stringProp name="filename">${configPath}/scripts/tpos_check_tip_wallet_created.js</stringProp>
               <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString());
-
-var walletId = vars.get(&quot;walletId&quot;);
-var userId = vars.get(&quot;userId&quot;);
-if (!resp.id) {
-  AssertionResult.setFailureMessage(&quot;TPoS not created&quot;);
-  AssertionResult.setFailure(true);
-} else if (resp.user !== userId) {
-  AssertionResult.setFailureMessage(
-    &quot;TPoS user id expected to be &apos;&quot; + userId + &quot;&apos;, but was: &quot; + resp.user
-  );
-  AssertionResult.setFailure(true);
-} else if (resp.name !== &quot;tips wallet&quot;) {
-  AssertionResult.setFailureMessage(
-    &quot;TPoS name expected to be &apos;tips wallet&apos;, but was: &quot; + resp.name
-  );
-  AssertionResult.setFailure(true);
-}
-</stringProp>
+              <stringProp name="script"></stringProp>
             </JSR223Assertion>
             <hashTree/>
             <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Extract user id and wallet" enabled="true">
               <stringProp name="scriptLanguage">javascript</stringProp>
               <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
+              <stringProp name="filename">${configPath}/scripts/tpos_extract_tip_wallet_data.js</stringProp>
               <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-vars.put(&quot;tipWalletId&quot;, resp.id || &quot;no-tip-wallet-id&quot;);
-vars.put(&quot;tipinkey&quot;, resp.inkey || &apos;no-tip-inkey&apos;);
-vars.put(&quot;tipadminkey&quot;, resp.adminkey || &apos;no-tip-adminkey&apos;);
-</stringProp>
+              <stringProp name="script"></stringProp>
             </JSR223PostProcessor>
             <hashTree/>
           </hashTree>
@@ -549,30 +531,17 @@ vars.put(&quot;tipadminkey&quot;, resp.adminkey || &apos;no-tip-adminkey&apos;);
             <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check created TPoS" enabled="true">
               <stringProp name="scriptLanguage">javascript</stringProp>
               <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
+              <stringProp name="filename">${configPath}/scripts/tpos_check_created.js</stringProp>
               <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var walletId = vars.get(&quot;walletId&quot;)
-
-if (!resp.id) {
-	AssertionResult.setFailureMessage(&quot;TPoS not created&quot;);
-	AssertionResult.setFailure(true)
-} else if (resp.wallet !== walletId){
-	AssertionResult.setFailureMessage(&quot;TPoS description expected to be &apos;&quot;+walletId+&quot;&apos;, but was: &quot; + resp.wallet);
-	AssertionResult.setFailure(true)
-}</stringProp>
+              <stringProp name="script"></stringProp>
             </JSR223Assertion>
             <hashTree/>
-            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Extract tpos ID" enabled="true">
-              <stringProp name="scriptLanguage">javascript</stringProp>
-              <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
-              <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-vars.put(&quot;tposId&quot;, resp.id || &apos;no-tpos-id&apos;);</stringProp>
-            </JSR223PostProcessor>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract TPos ID" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">tposId</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">id</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+              <stringProp name="JSONPostProcessor.defaultValues">no-tpos-id</stringProp>
+            </JSONPostProcessor>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[tpos] Update tpos (add tips)" enabled="true">
@@ -659,27 +628,9 @@ vars.put(&quot;tposId&quot;, resp.id || &apos;no-tpos-id&apos;);</stringProp>
             <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check updated TPoS" enabled="true">
               <stringProp name="scriptLanguage">javascript</stringProp>
               <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
+              <stringProp name="filename">${configPath}/scripts/tops_check_updated.js</stringProp>
               <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var walletId = vars.get(&quot;walletId&quot;)
-var tipWalletId = vars.get(&quot;tipWalletId&quot;)
-var tipOptions = vars.get(&quot;tipOptions&quot;)
-
-if (!resp.id) {
-	AssertionResult.setFailureMessage(&quot;TPoS not updated&quot;);
-	AssertionResult.setFailure(true)
-} else if (resp.wallet !== walletId){
-	AssertionResult.setFailureMessage(&quot;TPoS description expected to be &apos;&quot;+walletId+&quot;&apos;, but was: &quot; + resp.wallet);
-	AssertionResult.setFailure(true)
-} else if (resp.tip_wallet != tipWalletId) {
-	AssertionResult.setFailureMessage(&quot;Tip wallet expected to be &apos;&quot;+tipWalletId+&quot;&apos;, but was: &quot; + resp.tip_wallet);
-	AssertionResult.setFailure(true)
-} else if (resp.tip_options != tipOptions) {
-	AssertionResult.setFailureMessage(&quot;Tip options expected to be &apos;&quot;+tipOptions+&quot;&apos;, but was: &quot; + resp.tip_options);
-	AssertionResult.setFailure(true)
-}</stringProp>
+              <stringProp name="script"></stringProp>
             </JSR223Assertion>
             <hashTree/>
           </hashTree>
@@ -767,30 +718,17 @@ if (!resp.id) {
             <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check created TPoS" enabled="true">
               <stringProp name="scriptLanguage">javascript</stringProp>
               <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
+              <stringProp name="filename">${configPath}/scripts/tpos_check_atm_created.js</stringProp>
               <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var walletId = vars.get(&quot;walletId&quot;)
-
-if (!resp.id) {
-	AssertionResult.setFailureMessage(&quot;TPoS not created&quot;);
-	AssertionResult.setFailure(true)
-} else if (resp.wallet !== walletId){
-	AssertionResult.setFailureMessage(&quot;TPoS description expected to be &apos;&quot;+walletId+&quot;&apos;, but was: &quot; + resp.wallet);
-	AssertionResult.setFailure(true)
-}</stringProp>
+              <stringProp name="script"></stringProp>
             </JSR223Assertion>
             <hashTree/>
-            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Extract tpos ID" enabled="true">
-              <stringProp name="scriptLanguage">javascript</stringProp>
-              <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
-              <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-vars.put(&quot;ATMtposId&quot;, resp.id || &apos;no-tpos-id&apos;);</stringProp>
-            </JSR223PostProcessor>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract ATM TPos ID" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">ATMtposId</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">id</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+              <stringProp name="JSONPostProcessor.defaultValues">no-tpos-id</stringProp>
+            </JSONPostProcessor>
             <hashTree/>
           </hashTree>
         </hashTree>
@@ -1076,10 +1014,6 @@ vars.put(&quot;ATMtposId&quot;, resp.id || &apos;no-tpos-id&apos;);</stringProp>
             <stringProp name="LoopController.loops">1</stringProp>
           </LoopController>
           <hashTree>
-            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a sec" enabled="true">
-              <stringProp name="ConstantTimer.delay">1100</stringProp>
-            </ConstantTimer>
-            <hashTree/>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[tpos] Check payment" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
@@ -1244,27 +1178,18 @@ vars.put(&quot;ATMtposId&quot;, resp.id || &apos;no-tpos-id&apos;);</stringProp>
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check payment hash" enabled="true">
-              <stringProp name="scriptLanguage">javascript</stringProp>
-              <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
-              <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var paymentHash = vars.get(&quot;paymentHash&quot;)
-
-if (!resp.payment_hash) {
-	AssertionResult.setFailureMessage(&quot;Payment failed&quot;);
-	AssertionResult.setFailure(true)
-} else if (resp.payment_hash !== paymentHash) {
-	AssertionResult.setFailureMessage(&quot;Payment hash expected to be &apos;&quot;+paymentHash+&quot;&apos;, but was: &quot; + resp.payment_hash);
-	AssertionResult.setFailure(true)
-}</stringProp>
-            </JSR223Assertion>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check payment_hash" enabled="true">
+              <stringProp name="JSON_PATH">payment_hash</stringProp>
+              <stringProp name="EXPECTED_VALUE">${paymentHash}</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+            </JSONPathAssertion>
             <hashTree/>
           </hashTree>
-          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a sec" enabled="true">
-            <stringProp name="ConstantTimer.delay">1100</stringProp>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a sec" enabled="false">
+            <stringProp name="ConstantTimer.delay">1000</stringProp>
           </ConstantTimer>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[tpos] Check payment 1" enabled="true">
@@ -1634,23 +1559,14 @@ if (!resp.payment_hash) {
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check payment hash" enabled="true">
-              <stringProp name="scriptLanguage">javascript</stringProp>
-              <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
-              <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var paymentHash = vars.get(&quot;paymentHash&quot;)
-
-if (!resp.payment_hash) {
-	AssertionResult.setFailureMessage(&quot;Payment failed&quot;);
-	AssertionResult.setFailure(true)
-} else if (resp.payment_hash !== paymentHash) {
-	AssertionResult.setFailureMessage(&quot;Payment hash expected to be &apos;&quot;+paymentHash+&quot;&apos;, but was: &quot; + resp.payment_hash);
-	AssertionResult.setFailure(true)
-}</stringProp>
-            </JSR223Assertion>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check payment_hash" enabled="true">
+              <stringProp name="JSON_PATH">payment_hash</stringProp>
+              <stringProp name="EXPECTED_VALUE">${paymentHash}</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+            </JSONPathAssertion>
             <hashTree/>
           </hashTree>
           <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a sec" enabled="true">
@@ -2002,7 +1918,7 @@ if (!resp.payment_hash) {
             </JSONPostProcessor>
             <hashTree/>
           </hashTree>
-          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a sec" enabled="true">
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a sec" enabled="false">
             <stringProp name="ConstantTimer.delay">1100</stringProp>
           </ConstantTimer>
           <hashTree/>
@@ -2093,23 +2009,14 @@ if (!resp.payment_hash) {
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check payment hash" enabled="true">
-              <stringProp name="scriptLanguage">javascript</stringProp>
-              <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
-              <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var paymentHash = vars.get(&quot;paymentHash&quot;)
-
-if (!resp.payment_hash) {
-	AssertionResult.setFailureMessage(&quot;Payment failed&quot;);
-	AssertionResult.setFailure(true)
-} else if (resp.payment_hash !== paymentHash) {
-	AssertionResult.setFailureMessage(&quot;Payment hash expected to be &apos;&quot;+paymentHash+&quot;&apos;, but was: &quot; + resp.payment_hash);
-	AssertionResult.setFailure(true)
-}</stringProp>
-            </JSR223Assertion>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check payment_hash" enabled="true">
+              <stringProp name="JSON_PATH">payment_hash</stringProp>
+              <stringProp name="EXPECTED_VALUE">${paymentHash}</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+            </JSONPathAssertion>
             <hashTree/>
           </hashTree>
           <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a sec" enabled="true">
@@ -2718,7 +2625,7 @@ if (!resp.payment_hash) {
             </JSONPostProcessor>
             <hashTree/>
           </hashTree>
-          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a sec" enabled="true">
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a sec" enabled="false">
             <stringProp name="ConstantTimer.delay">1100</stringProp>
           </ConstantTimer>
           <hashTree/>
@@ -2819,21 +2726,11 @@ if (!resp.payment_hash) {
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check Balance" enabled="true">
+            <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check User Balance" enabled="true">
               <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="filename"></stringProp>
+              <stringProp name="filename">${configPath}/scripts/tpos_check_user_balance.js</stringProp>
               <stringProp name="parameters"></stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var userBalance = +vars.get(&quot;userBalance&quot;)
-var amount = +vars.get(&quot;amount&quot;)
-userBalance -= amount * 1000
-
-// millisats
-if (resp.balance !== userBalance) {
-	AssertionResult.setFailureMessage(&quot;Expected balance to be &quot;+userBalance+&quot;, but got: &quot;+ resp.balance);
-	AssertionResult.setFailure(true)
-}</stringProp>
+              <stringProp name="script"></stringProp>
               <stringProp name="scriptLanguage">javascript</stringProp>
             </JSR223Assertion>
             <hashTree/>
@@ -2898,19 +2795,9 @@ if (resp.balance !== userBalance) {
             <hashTree/>
             <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check Balance" enabled="true">
               <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="filename"></stringProp>
+              <stringProp name="filename">${configPath}/scripts/tpos_check_admin_balance.js</stringProp>
               <stringProp name="parameters"></stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var adminBalance = +vars.get(&quot;adminBalance&quot;)
-var amount = +vars.get(&quot;amount&quot;)
-adminBalance += amount * 1000
-
-// millisats
-if (resp.balance !== adminBalance) {
-	AssertionResult.setFailureMessage(&quot;Expected balance to be &quot;+adminBalance+&quot;, but got: &quot;+ resp.balance);
-	AssertionResult.setFailure(true)
-}</stringProp>
+              <stringProp name="script"></stringProp>
               <stringProp name="scriptLanguage">javascript</stringProp>
             </JSR223Assertion>
             <hashTree/>
@@ -3142,54 +3029,6 @@ if (resp.balance !== adminBalance) {
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ProxyControl guiclass="ProxyControlGui" testclass="ProxyControl" testname="HTTP(S) Test Script Recorder" enabled="false">
-        <stringProp name="ProxyControlGui.port">8888</stringProp>
-        <collectionProp name="ProxyControlGui.exclude_list">
-          <stringProp name="805311387">windowsupdate\.microsoft\.com.*</stringProp>
-          <stringProp name="1179605444">(?i).*\.(bmp|css|js|gif|ico|jpe?g|png|swf|eot|otf|ttf|mp4|woff|woff2)</stringProp>
-          <stringProp name="110431874">.*msg\.yahoo\.com.*</stringProp>
-          <stringProp name="-88591710">www\.download\.windowsupdate\.com.*</stringProp>
-          <stringProp name="1323576868">toolbarqueries\.google\..*</stringProp>
-          <stringProp name="1739087931">http?://self-repair\.mozilla\.org.*</stringProp>
-          <stringProp name="1206954446">tiles.*\.mozilla\.com.*</stringProp>
-          <stringProp name="-1424663473">.*detectportal\.firefox\.com.*</stringProp>
-          <stringProp name="1779943373">us\.update\.toolbar\.yahoo\.com.*</stringProp>
-          <stringProp name="-190610036">.*\.google\.com.*/safebrowsing/.*</stringProp>
-          <stringProp name="-1899150273">api\.bing\.com.*</stringProp>
-          <stringProp name="-958112859">toolbar\.google\.com.*</stringProp>
-          <stringProp name="-192420923">.*yimg\.com.*</stringProp>
-          <stringProp name="-576820688">toolbar\.msn\.com.*</stringProp>
-          <stringProp name="305776760">(?i).*\.(bmp|css|js|gif|ico|jpe?g|png|swf|eot|otf|ttf|mp4|woff|woff2)[\?;].*</stringProp>
-          <stringProp name="-1435252351">toolbar\.avg\.com/.*</stringProp>
-          <stringProp name="2118375536">www\.google-analytics\.com.*</stringProp>
-          <stringProp name="-1279148329">pgq\.yahoo\.com.*</stringProp>
-          <stringProp name="1815174768">safebrowsing.*\.google\.com.*</stringProp>
-          <stringProp name="-1314416226">sqm\.microsoft\.com.*</stringProp>
-          <stringProp name="587935979">g\.msn.*</stringProp>
-          <stringProp name="1629558731">clients.*\.google.*</stringProp>
-          <stringProp name="11072252">.*toolbar\.yahoo\.com.*</stringProp>
-          <stringProp name="1726898318">geo\.yahoo\.com.*</stringProp>
-        </collectionProp>
-        <collectionProp name="ProxyControlGui.include_list"/>
-        <boolProp name="ProxyControlGui.capture_http_headers">true</boolProp>
-        <intProp name="ProxyControlGui.grouping_mode">4</intProp>
-        <boolProp name="ProxyControlGui.add_assertion">false</boolProp>
-        <stringProp name="ProxyControlGui.sampler_type_name"></stringProp>
-        <boolProp name="ProxyControlGui.sampler_redirect_automatically">false</boolProp>
-        <boolProp name="ProxyControlGui.sampler_follow_redirects">true</boolProp>
-        <boolProp name="ProxyControlGui.use_keepalive">true</boolProp>
-        <boolProp name="ProxyControlGui.sampler_download_images">false</boolProp>
-        <boolProp name="ProxyControlGui.regex_match">true</boolProp>
-        <stringProp name="ProxyControlGui.content_type_include"></stringProp>
-        <stringProp name="ProxyControlGui.content_type_exclude"></stringProp>
-        <boolProp name="ProxyControlGui.notify_child_sl_filtered">false</boolProp>
-        <stringProp name="ProxyControlGui.proxy_prefix_http_sampler_name"></stringProp>
-        <intProp name="ProxyControlGui.proxy_http_sampler_naming_mode">0</intProp>
-        <stringProp name="ProxyControlGui.proxy_pause_http_sampler"></stringProp>
-        <boolProp name="ProxyControlGui.detect_graphql_request">true</boolProp>
-        <stringProp name="ProxyControlGui.default_encoding">UTF-8</stringProp>
-      </ProxyControl>
-      <hashTree/>
       <HttpMirrorControl guiclass="HttpMirrorControlGui" testclass="HttpMirrorControl" testname="[callback] HTTP Mirror Server" enabled="true">
         <stringProp name="HttpMirrorControlGui.port">8500</stringProp>
         <stringProp name="HttpMirrorControlGui.maxPoolSize">0</stringProp>

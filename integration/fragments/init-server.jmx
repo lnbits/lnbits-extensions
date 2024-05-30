@@ -335,17 +335,19 @@
             <intProp name="Assertion.test_type">8</intProp>
           </ResponseAssertion>
           <hashTree/>
-          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Extract admin wallet and keys" enabled="true">
-            <stringProp name="cacheKey">true</stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())[0]
-
-vars.put(&quot;adminWalletId&quot;, resp.id || &quot;no-admin-wallet-id&quot;);
-vars.put(&quot;adminWalletKey&quot;, resp.adminkey || &apos;no-adminkey&apos;);
-</stringProp>
-            <stringProp name="scriptLanguage">javascript</stringProp>
-          </JSR223PostProcessor>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract adminWalletId" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">adminWalletId</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$[0].id</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">no-admin-wallet-id</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract adminWalletKey" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">adminWalletKey</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$[0].adminkey</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">no-admin-wallet-key</stringProp>
+          </JSONPostProcessor>
           <hashTree/>
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[server] Top up wallet" enabled="true">

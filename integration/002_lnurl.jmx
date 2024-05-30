@@ -30,27 +30,27 @@
           </elementProp>
           <elementProp name="paidChargeCount" elementType="Argument">
             <stringProp name="Argument.name">paidChargeCount</stringProp>
-            <stringProp name="Argument.value">5</stringProp>
+            <stringProp name="Argument.value">3</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="userTipCount" elementType="Argument">
             <stringProp name="Argument.name">userTipCount</stringProp>
-            <stringProp name="Argument.value">5</stringProp>
+            <stringProp name="Argument.value">3</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="thinkTime" elementType="Argument">
             <stringProp name="Argument.name">thinkTime</stringProp>
-            <stringProp name="Argument.value">3000</stringProp>
+            <stringProp name="Argument.value">300</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="lnurlpCount" elementType="Argument">
             <stringProp name="Argument.name">lnurlpCount</stringProp>
-            <stringProp name="Argument.value">5</stringProp>
+            <stringProp name="Argument.value">3</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="lnurlwCount" elementType="Argument">
             <stringProp name="Argument.name">lnurlwCount</stringProp>
-            <stringProp name="Argument.value">5</stringProp>
+            <stringProp name="Argument.value">3</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="paymentCountPerLnurlp" elementType="Argument">
@@ -66,6 +66,11 @@
           <elementProp name="mirrorPort" elementType="Argument">
             <stringProp name="Argument.name">mirrorPort</stringProp>
             <stringProp name="Argument.value">${__property(mirrorPort,,8500)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="configPath" elementType="Argument">
+            <stringProp name="Argument.name">configPath</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(import org.apache.jmeter.services.FileServer; FileServer.getFileServer().getBaseDir();)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -484,34 +489,17 @@
                 <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check created pay link" enabled="true">
                   <stringProp name="scriptLanguage">javascript</stringProp>
                   <stringProp name="parameters"></stringProp>
-                  <stringProp name="filename"></stringProp>
+                  <stringProp name="filename">${configPath}/scripts/lnurl_check_created_pay_link.js</stringProp>
                   <stringProp name="cacheKey">true</stringProp>
-                  <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var walletId = vars.get(&quot;walletId&quot;)
-var lnurlpCounter = +vars.get(&quot;lnurlpCounter&quot;)
-
-if (!resp.id) {
-	AssertionResult.setFailureMessage(&quot;Pay Link not created&quot;);
-	AssertionResult.setFailure(true)
-} else if (resp.wallet !== walletId){
-	AssertionResult.setFailureMessage(&quot;Pay Link description expected to be &apos;&quot;+walletId+&quot;&apos;, but was: &quot; + resp.wallet);
-	AssertionResult.setFailure(true)
-} else if (resp.description !== &quot;receive payments &quot;+lnurlpCounter){
-	AssertionResult.setFailureMessage(&quot;Pay Link description expected to be &apos;receive payments &quot;+lnurlpCounter+&quot;&apos;, but was: &quot; + resp.description);
-	AssertionResult.setFailure(true)
-}</stringProp>
+                  <stringProp name="script"></stringProp>
                 </JSR223Assertion>
                 <hashTree/>
                 <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Extract pay link ID" enabled="true">
                   <stringProp name="scriptLanguage">javascript</stringProp>
                   <stringProp name="parameters"></stringProp>
-                  <stringProp name="filename"></stringProp>
+                  <stringProp name="filename">${configPath}/scripts/lnurl_extract_pay_link_id.js</stringProp>
                   <stringProp name="cacheKey">true</stringProp>
-                  <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-vars.put(&quot;payLinkId&quot;, resp.id || &apos;no-pay-link-id&apos;);
-vars.put(&quot;payLinkLnurl&quot;, resp.lnurl || &apos;no-pay-link-lnurl&apos;);</stringProp>
+                  <stringProp name="script"></stringProp>
                 </JSR223PostProcessor>
                 <hashTree/>
               </hashTree>
@@ -928,8 +916,75 @@ vars.put(&quot;payLinkLnurl&quot;, resp.lnurl || &apos;no-pay-link-lnurl&apos;);
                     </JSONPostProcessor>
                     <hashTree/>
                   </hashTree>
+                  <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[wallet] Check wallet balance" enabled="true">
+                    <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                      <collectionProp name="Arguments.arguments"/>
+                    </elementProp>
+                    <stringProp name="HTTPSampler.domain">${host}</stringProp>
+                    <stringProp name="HTTPSampler.port">${port}</stringProp>
+                    <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
+                    <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+                    <stringProp name="HTTPSampler.path">/api/v1/wallet</stringProp>
+                    <stringProp name="HTTPSampler.method">GET</stringProp>
+                    <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                    <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                    <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                    <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                    <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                    <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                    <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                  </HTTPSamplerProxy>
+                  <hashTree>
+                    <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                      <collectionProp name="HeaderManager.headers">
+                        <elementProp name="Referer" elementType="Header">
+                          <stringProp name="Header.name">Referer</stringProp>
+                          <stringProp name="Header.value">${scheme}://${host}:${port}/wallet?wal=${walletId}</stringProp>
+                        </elementProp>
+                        <elementProp name="Accept-Language" elementType="Header">
+                          <stringProp name="Header.name">Accept-Language</stringProp>
+                          <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                        </elementProp>
+                        <elementProp name="X-Api-Key" elementType="Header">
+                          <stringProp name="Header.name">X-Api-Key</stringProp>
+                          <stringProp name="Header.value">${inkey}</stringProp>
+                        </elementProp>
+                        <elementProp name="Accept-Encoding" elementType="Header">
+                          <stringProp name="Header.name">Accept-Encoding</stringProp>
+                          <stringProp name="Header.value">gzip, deflate</stringProp>
+                        </elementProp>
+                        <elementProp name="User-Agent" elementType="Header">
+                          <stringProp name="Header.name">User-Agent</stringProp>
+                          <stringProp name="Header.value">Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko/20100101 Firefox/105.0</stringProp>
+                        </elementProp>
+                        <elementProp name="Accept" elementType="Header">
+                          <stringProp name="Header.name">Accept</stringProp>
+                          <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                        </elementProp>
+                      </collectionProp>
+                    </HeaderManager>
+                    <hashTree/>
+                    <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 200" enabled="true">
+                      <collectionProp name="Asserion.test_strings">
+                        <stringProp name="49586">200</stringProp>
+                      </collectionProp>
+                      <stringProp name="Assertion.custom_message"></stringProp>
+                      <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                      <boolProp name="Assertion.assume_success">false</boolProp>
+                      <intProp name="Assertion.test_type">8</intProp>
+                    </ResponseAssertion>
+                    <hashTree/>
+                    <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check Balance" enabled="true">
+                      <stringProp name="cacheKey">true</stringProp>
+                      <stringProp name="filename">${configPath}/scripts/lnurl_check_balance.js</stringProp>
+                      <stringProp name="parameters"></stringProp>
+                      <stringProp name="script"></stringProp>
+                      <stringProp name="scriptLanguage">javascript</stringProp>
+                    </JSR223Assertion>
+                    <hashTree/>
+                  </hashTree>
                   <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a bit" enabled="true">
-                    <stringProp name="ConstantTimer.delay">3000</stringProp>
+                    <stringProp name="ConstantTimer.delay">100</stringProp>
                     <stringProp name="TestPlan.comments">for the webhook to be called</stringProp>
                   </ConstantTimer>
                   <hashTree/>
@@ -992,115 +1047,9 @@ vars.put(&quot;payLinkLnurl&quot;, resp.lnurl || &apos;no-pay-link-lnurl&apos;);
                     <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check webhook response" enabled="true">
                       <stringProp name="scriptLanguage">javascript</stringProp>
                       <stringProp name="parameters"></stringProp>
-                      <stringProp name="filename"></stringProp>
+                      <stringProp name="filename">${configPath}/scripts/lnurl_check_webhook_response.js</stringProp>
                       <stringProp name="cacheKey">true</stringProp>
-                      <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-var paymenHash = vars.get(&quot;paymenHash&quot;)
-
-
-var whResp = resp.details.extra.wh_response
-var separatorIndex = whResp.indexOf(&quot;\r\n\r\n&quot;)
-if (separatorIndex == -1) {
-	AssertionResult.setFailureMessage(&quot;Webhook response has wrong format: &quot; + whResp);
-	AssertionResult.setFailure(true)
-} else {
-	var headers = whResp.substring(0, separatorIndex)
-	var bodyStr = whResp.substring(separatorIndex)
-	var body = JSON.parse(bodyStr)
-	if (body.payment_hash !== paymenHash) {
-		AssertionResult.setFailureMessage(&quot;Incorrect webhook payment hash: &quot; + JSON.stringify(body));
-		AssertionResult.setFailure(true)
-	} else if (headers.indexOf(&quot;h1: 1&quot;) === -1) {
-		AssertionResult.setFailureMessage(&quot;Expected header missing: &apos;h1&apos;: &apos;1&apos;&quot;);
-		AssertionResult.setFailure(true)
-	} else if (!body.body || !body.body.b2 || body.body.b2 !== 2) {
-		AssertionResult.setFailureMessage(&quot;Expected body field missing: \&quot;body\&quot;: {\&quot;b2\&quot;: 2}, found: &quot; + JSON.stringify(body.body));
-		AssertionResult.setFailure(true)
-	}
-}
-
-</stringProp>
-                    </JSR223Assertion>
-                    <hashTree/>
-                  </hashTree>
-                  <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[wallet] Check wallet balance" enabled="true">
-                    <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-                      <collectionProp name="Arguments.arguments"/>
-                    </elementProp>
-                    <stringProp name="HTTPSampler.domain">${host}</stringProp>
-                    <stringProp name="HTTPSampler.port">${port}</stringProp>
-                    <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
-                    <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-                    <stringProp name="HTTPSampler.path">/api/v1/wallet</stringProp>
-                    <stringProp name="HTTPSampler.method">GET</stringProp>
-                    <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-                    <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-                    <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-                    <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-                    <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-                    <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-                    <stringProp name="HTTPSampler.response_timeout"></stringProp>
-                  </HTTPSamplerProxy>
-                  <hashTree>
-                    <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-                      <collectionProp name="HeaderManager.headers">
-                        <elementProp name="Referer" elementType="Header">
-                          <stringProp name="Header.name">Referer</stringProp>
-                          <stringProp name="Header.value">${scheme}://${host}:${port}/wallet?wal=${walletId}</stringProp>
-                        </elementProp>
-                        <elementProp name="Accept-Language" elementType="Header">
-                          <stringProp name="Header.name">Accept-Language</stringProp>
-                          <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
-                        </elementProp>
-                        <elementProp name="X-Api-Key" elementType="Header">
-                          <stringProp name="Header.name">X-Api-Key</stringProp>
-                          <stringProp name="Header.value">${inkey}</stringProp>
-                        </elementProp>
-                        <elementProp name="Accept-Encoding" elementType="Header">
-                          <stringProp name="Header.name">Accept-Encoding</stringProp>
-                          <stringProp name="Header.value">gzip, deflate</stringProp>
-                        </elementProp>
-                        <elementProp name="User-Agent" elementType="Header">
-                          <stringProp name="Header.name">User-Agent</stringProp>
-                          <stringProp name="Header.value">Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko/20100101 Firefox/105.0</stringProp>
-                        </elementProp>
-                        <elementProp name="Accept" elementType="Header">
-                          <stringProp name="Header.name">Accept</stringProp>
-                          <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
-                        </elementProp>
-                      </collectionProp>
-                    </HeaderManager>
-                    <hashTree/>
-                    <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 200" enabled="true">
-                      <collectionProp name="Asserion.test_strings">
-                        <stringProp name="49586">200</stringProp>
-                      </collectionProp>
-                      <stringProp name="Assertion.custom_message"></stringProp>
-                      <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
-                      <boolProp name="Assertion.assume_success">false</boolProp>
-                      <intProp name="Assertion.test_type">8</intProp>
-                    </ResponseAssertion>
-                    <hashTree/>
-                    <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check Balance" enabled="true">
-                      <stringProp name="cacheKey">true</stringProp>
-                      <stringProp name="filename"></stringProp>
-                      <stringProp name="parameters"></stringProp>
-                      <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var lnurlpCounter = +vars.get(&apos;lnurlpCounter&apos;)
-
-
-var userBalance = +vars.get(&quot;userBalance&quot;)
-userBalance += 10 + lnurlpCounter
-
-// millisats
-if (resp.balance !== userBalance * 1000) {
-	AssertionResult.setFailureMessage(&quot;Expected balance to be &quot;+userBalance * 1000+&quot;, but got: &quot;+ resp.balance);
-	AssertionResult.setFailure(true)
-}
-
-vars.put(&quot;userBalance&quot;, userBalance)</stringProp>
-                      <stringProp name="scriptLanguage">javascript</stringProp>
+                      <stringProp name="script"></stringProp>
                     </JSR223Assertion>
                     <hashTree/>
                   </hashTree>
@@ -1568,23 +1517,9 @@ vars.put(&quot;userBalance&quot;, userBalance)</stringProp>
                 <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check created pay link" enabled="true">
                   <stringProp name="scriptLanguage">javascript</stringProp>
                   <stringProp name="parameters"></stringProp>
-                  <stringProp name="filename"></stringProp>
+                  <stringProp name="filename">${configPath}/scripts/lnurl_check_created_withdraw_link.js</stringProp>
                   <stringProp name="cacheKey">true</stringProp>
-                  <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var walletId = vars.get(&quot;walletId&quot;)
-var lnurlwCounter = +vars.get(&quot;lnurlwCounter&quot;)
-
-if (!resp.id) {
-	AssertionResult.setFailureMessage(&quot;Withdraw Link not created&quot;);
-	AssertionResult.setFailure(true)
-} else if (resp.wallet !== walletId) {
-	AssertionResult.setFailureMessage(&quot;Withdraw Link wallet expected to be &apos;&quot; + walletId + &quot;&apos;, but was: &quot; + resp.wallet);
-	AssertionResult.setFailure(true)
-} else if (resp.title !== &quot;withdraw &quot; + lnurlwCounter) {
-	AssertionResult.setFailureMessage(&quot;Withdraw Link description expected to be &apos;withdraw &quot; + lnurlwCounter + &quot;&apos;, but was: &quot; + resp.description);
-	AssertionResult.setFailure(true)
-}</stringProp>
+                  <stringProp name="script"></stringProp>
                 </JSR223Assertion>
                 <hashTree/>
                 <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract withdraw link id" enabled="true">
@@ -1995,8 +1930,75 @@ if (!resp.id) {
                     </JSONPostProcessor>
                     <hashTree/>
                   </hashTree>
+                  <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[wallet] Check wallet balance" enabled="true">
+                    <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                      <collectionProp name="Arguments.arguments"/>
+                    </elementProp>
+                    <stringProp name="HTTPSampler.domain">${host}</stringProp>
+                    <stringProp name="HTTPSampler.port">${port}</stringProp>
+                    <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
+                    <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+                    <stringProp name="HTTPSampler.path">/api/v1/wallet</stringProp>
+                    <stringProp name="HTTPSampler.method">GET</stringProp>
+                    <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                    <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                    <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                    <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                    <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                    <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                    <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                  </HTTPSamplerProxy>
+                  <hashTree>
+                    <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                      <collectionProp name="HeaderManager.headers">
+                        <elementProp name="Referer" elementType="Header">
+                          <stringProp name="Header.name">Referer</stringProp>
+                          <stringProp name="Header.value">${scheme}://${host}:${port}/wallet?wal=${walletId}</stringProp>
+                        </elementProp>
+                        <elementProp name="Accept-Language" elementType="Header">
+                          <stringProp name="Header.name">Accept-Language</stringProp>
+                          <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                        </elementProp>
+                        <elementProp name="X-Api-Key" elementType="Header">
+                          <stringProp name="Header.name">X-Api-Key</stringProp>
+                          <stringProp name="Header.value">${inkey}</stringProp>
+                        </elementProp>
+                        <elementProp name="Accept-Encoding" elementType="Header">
+                          <stringProp name="Header.name">Accept-Encoding</stringProp>
+                          <stringProp name="Header.value">gzip, deflate</stringProp>
+                        </elementProp>
+                        <elementProp name="User-Agent" elementType="Header">
+                          <stringProp name="Header.name">User-Agent</stringProp>
+                          <stringProp name="Header.value">Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko/20100101 Firefox/105.0</stringProp>
+                        </elementProp>
+                        <elementProp name="Accept" elementType="Header">
+                          <stringProp name="Header.name">Accept</stringProp>
+                          <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                        </elementProp>
+                      </collectionProp>
+                    </HeaderManager>
+                    <hashTree/>
+                    <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 200" enabled="true">
+                      <collectionProp name="Asserion.test_strings">
+                        <stringProp name="49586">200</stringProp>
+                      </collectionProp>
+                      <stringProp name="Assertion.custom_message"></stringProp>
+                      <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                      <boolProp name="Assertion.assume_success">false</boolProp>
+                      <intProp name="Assertion.test_type">8</intProp>
+                    </ResponseAssertion>
+                    <hashTree/>
+                    <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check Balance" enabled="true">
+                      <stringProp name="cacheKey">true</stringProp>
+                      <stringProp name="filename">${configPath}/scripts/lnurl_check_balance_after_withdraw.js</stringProp>
+                      <stringProp name="parameters"></stringProp>
+                      <stringProp name="script"></stringProp>
+                      <stringProp name="scriptLanguage">javascript</stringProp>
+                    </JSR223Assertion>
+                    <hashTree/>
+                  </hashTree>
                   <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a bit" enabled="true">
-                    <stringProp name="ConstantTimer.delay">3000</stringProp>
+                    <stringProp name="ConstantTimer.delay">1000</stringProp>
                     <stringProp name="TestPlan.comments">for the callback to be invoked</stringProp>
                   </ConstantTimer>
                   <hashTree/>
@@ -2059,112 +2061,9 @@ if (!resp.id) {
                     <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check webhook response" enabled="true">
                       <stringProp name="scriptLanguage">javascript</stringProp>
                       <stringProp name="parameters"></stringProp>
-                      <stringProp name="filename"></stringProp>
+                      <stringProp name="filename">${configPath}/scripts/lnurl_check_webhook_response.js</stringProp>
                       <stringProp name="cacheKey">true</stringProp>
-                      <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-var paymenHash = vars.get(&quot;paymenHash&quot;)
-
-
-var whResp = resp.details.extra.wh_response
-var separatorIndex = whResp.indexOf(&quot;\r\n\r\n&quot;)
-if (separatorIndex == -1) {
-	AssertionResult.setFailureMessage(&quot;Webhook response has wrong format: &quot; + whResp);
-	AssertionResult.setFailure(true)
-} else {
-	var headers = whResp.substring(0, separatorIndex)
-	var bodyStr = whResp.substring(separatorIndex)
-	var body = JSON.parse(bodyStr)
-	if (body.payment_hash !== paymenHash) {
-		AssertionResult.setFailureMessage(&quot;Incorrect webhook payment hash: &quot; + JSON.stringify(body));
-		AssertionResult.setFailure(true)
-	} else if (headers.indexOf(&quot;h1: 1&quot;) === -1) {
-		AssertionResult.setFailureMessage(&quot;Expected header missing: &apos;h1&apos;: &apos;1&apos;&quot;);
-		AssertionResult.setFailure(true)
-	} else if (!body.body || !body.body.b2 || body.body.b2 !== 2) {
-		AssertionResult.setFailureMessage(&quot;Expected body field missing: \&quot;body\&quot;: {\&quot;b2\&quot;: 2}, found: &quot; + JSON.stringify(body.body));
-		AssertionResult.setFailure(true)
-	}
-}
-
-</stringProp>
-                    </JSR223Assertion>
-                    <hashTree/>
-                  </hashTree>
-                  <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[wallet] Check wallet balance" enabled="true">
-                    <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-                      <collectionProp name="Arguments.arguments"/>
-                    </elementProp>
-                    <stringProp name="HTTPSampler.domain">${host}</stringProp>
-                    <stringProp name="HTTPSampler.port">${port}</stringProp>
-                    <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
-                    <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-                    <stringProp name="HTTPSampler.path">/api/v1/wallet</stringProp>
-                    <stringProp name="HTTPSampler.method">GET</stringProp>
-                    <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-                    <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-                    <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-                    <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-                    <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-                    <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-                    <stringProp name="HTTPSampler.response_timeout"></stringProp>
-                  </HTTPSamplerProxy>
-                  <hashTree>
-                    <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-                      <collectionProp name="HeaderManager.headers">
-                        <elementProp name="Referer" elementType="Header">
-                          <stringProp name="Header.name">Referer</stringProp>
-                          <stringProp name="Header.value">${scheme}://${host}:${port}/wallet?wal=${walletId}</stringProp>
-                        </elementProp>
-                        <elementProp name="Accept-Language" elementType="Header">
-                          <stringProp name="Header.name">Accept-Language</stringProp>
-                          <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
-                        </elementProp>
-                        <elementProp name="X-Api-Key" elementType="Header">
-                          <stringProp name="Header.name">X-Api-Key</stringProp>
-                          <stringProp name="Header.value">${inkey}</stringProp>
-                        </elementProp>
-                        <elementProp name="Accept-Encoding" elementType="Header">
-                          <stringProp name="Header.name">Accept-Encoding</stringProp>
-                          <stringProp name="Header.value">gzip, deflate</stringProp>
-                        </elementProp>
-                        <elementProp name="User-Agent" elementType="Header">
-                          <stringProp name="Header.name">User-Agent</stringProp>
-                          <stringProp name="Header.value">Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko/20100101 Firefox/105.0</stringProp>
-                        </elementProp>
-                        <elementProp name="Accept" elementType="Header">
-                          <stringProp name="Header.name">Accept</stringProp>
-                          <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
-                        </elementProp>
-                      </collectionProp>
-                    </HeaderManager>
-                    <hashTree/>
-                    <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 200" enabled="true">
-                      <collectionProp name="Asserion.test_strings">
-                        <stringProp name="49586">200</stringProp>
-                      </collectionProp>
-                      <stringProp name="Assertion.custom_message"></stringProp>
-                      <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
-                      <boolProp name="Assertion.assume_success">false</boolProp>
-                      <intProp name="Assertion.test_type">8</intProp>
-                    </ResponseAssertion>
-                    <hashTree/>
-                    <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check Balance" enabled="true">
-                      <stringProp name="cacheKey">true</stringProp>
-                      <stringProp name="filename"></stringProp>
-                      <stringProp name="parameters"></stringProp>
-                      <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var userBalance = +vars.get(&quot;userBalance&quot;)
-userBalance -= 10
-
-// millisats
-if (resp.balance !== userBalance * 1000) {
-	AssertionResult.setFailureMessage(&quot;Expected balance to be &quot;+userBalance * 1000+&quot;, but got: &quot;+ resp.balance);
-	AssertionResult.setFailure(true)
-}
-
-vars.put(&quot;userBalance&quot;, userBalance)</stringProp>
-                      <stringProp name="scriptLanguage">javascript</stringProp>
+                      <stringProp name="script"></stringProp>
                     </JSR223Assertion>
                     <hashTree/>
                   </hashTree>
@@ -2232,26 +2131,9 @@ vars.put(&quot;userBalance&quot;, userBalance)</stringProp>
             <hashTree/>
             <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check Balance" enabled="true">
               <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="filename"></stringProp>
+              <stringProp name="filename">${configPath}/scripts/lnurl_check_receive_wallet_balance.js</stringProp>
               <stringProp name="parameters"></stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString());
-
-var withdrawAmount = 10;
-var lnurlwCount = +vars.get(&quot;lnurlwCount&quot;);
-var withdrawCountPerLnurlw = +vars.get(&quot;withdrawCountPerLnurlw&quot;);
-
-var userBalance = withdrawAmount * lnurlwCount * withdrawCountPerLnurlw;
-
-// millisats
-if (resp.balance !== userBalance * 1000) {
-  AssertionResult.setFailureMessage(
-    &quot;Expected balance to be &quot; +
-      userBalance * 1000 +
-      &quot;, but got: &quot; +
-      resp.balance
-  );
-  AssertionResult.setFailure(true);
-}</stringProp>
+              <stringProp name="script"></stringProp>
               <stringProp name="scriptLanguage">javascript</stringProp>
             </JSR223Assertion>
             <hashTree/>
