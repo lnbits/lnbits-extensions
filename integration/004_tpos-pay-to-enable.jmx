@@ -33,6 +33,11 @@
             <stringProp name="Argument.value">tpos</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="configPath" elementType="Argument">
+            <stringProp name="Argument.name">configPath</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(import org.apache.jmeter.services.FileServer; FileServer.getFileServer().getBaseDir();)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
@@ -320,18 +325,9 @@
             <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Extract latest release" enabled="true">
               <stringProp name="scriptLanguage">javascript</stringProp>
               <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
+              <stringProp name="filename">${configPath}/scripts/extract_latest_extension_release.js</stringProp>
               <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-var latestRelease = resp[resp.length - 1]
-
-var ext_id = vars.get(&quot;extension&quot;)
-
-vars.put(&quot;ext_id&quot;, ext_id)
-vars.put(&quot;archive&quot;, latestRelease.archive)
-vars.put(&quot;source_repo&quot;, latestRelease.source_repo)
-vars.put(&quot;version&quot;, latestRelease.version)
-</stringProp>
+              <stringProp name="script"></stringProp>
             </JSR223PostProcessor>
             <hashTree/>
           </hashTree>
@@ -666,27 +662,9 @@ vars.put(&quot;version&quot;, latestRelease.version)
             <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check Status Code 200 (or 401 for admin extension)" enabled="true">
               <stringProp name="scriptLanguage">javascript</stringProp>
               <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
+              <stringProp name="filename">${configPath}/scripts/check_admin_extension_status_code.js</stringProp>
               <stringProp name="cacheKey">true</stringProp>
-              <stringProp name="script">var responseCode = +prev.getResponseCode()
-var isAdminExtension = vars.get(&quot;isAdminExtension&quot;)
-
-
-if (isAdminExtension === &apos;true&apos;) {
-  if (responseCode !== 200 &amp;&amp; responseCode !== 401) {
-    AssertionResult.setFailureMessage(
-      &quot;Expected response code 200 for 401 for admin extension but got: &quot; +
-        responseCode
-    );
-    AssertionResult.setFailure(true);
-  }
-} else if (responseCode !== 200) {
-  AssertionResult.setFailureMessage(
-    &quot;Expected response code 200 but got: &quot; + responseCode
-  );
-  AssertionResult.setFailure(true);
-}
-</stringProp>
+              <stringProp name="script"></stringProp>
             </JSR223Assertion>
             <hashTree/>
           </hashTree>
