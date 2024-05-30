@@ -1240,7 +1240,7 @@
               <stringProp name="JSONPostProcessor.defaultValues">no-receive-inkey</stringProp>
             </JSONPostProcessor>
             <hashTree/>
-            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
+            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Export Props" enabled="true">
               <stringProp name="scriptLanguage">javascript</stringProp>
               <stringProp name="parameters"></stringProp>
               <stringProp name="filename"></stringProp>
@@ -1360,27 +1360,32 @@ props.put(&quot;receiveInkey&quot;, receiveInkey)
                   <intProp name="Assertion.test_type">8</intProp>
                 </ResponseAssertion>
                 <hashTree/>
-                <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check created pay link" enabled="true">
-                  <stringProp name="scriptLanguage">javascript</stringProp>
-                  <stringProp name="parameters"></stringProp>
-                  <stringProp name="filename"></stringProp>
-                  <stringProp name="cacheKey">true</stringProp>
-                  <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString())
-
-var walletId = vars.get(&quot;walletId&quot;)
-var lnurlwCounter = +vars.get(&quot;lnurlwCounter&quot;)
-
-if (!resp.id) {
-	AssertionResult.setFailureMessage(&quot;Withdraw Link not created&quot;);
-	AssertionResult.setFailure(true)
-} else if (resp.wallet !== walletId) {
-	AssertionResult.setFailureMessage(&quot;Withdraw Link wallet expected to be &apos;&quot; + walletId + &quot;&apos;, but was: &quot; + resp.wallet);
-	AssertionResult.setFailure(true)
-} else if (resp.title !== &quot;withdraw &quot; + lnurlwCounter) {
-	AssertionResult.setFailureMessage(&quot;Withdraw Link description expected to be &apos;withdraw &quot; + lnurlwCounter + &quot;&apos;, but was: &quot; + resp.description);
-	AssertionResult.setFailure(true)
-}</stringProp>
-                </JSR223Assertion>
+                <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check id" enabled="true">
+                  <stringProp name="JSON_PATH">id</stringProp>
+                  <stringProp name="EXPECTED_VALUE">.+</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                  <boolProp name="EXPECT_NULL">false</boolProp>
+                  <boolProp name="INVERT">false</boolProp>
+                  <boolProp name="ISREGEX">true</boolProp>
+                </JSONPathAssertion>
+                <hashTree/>
+                <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check wallet" enabled="true">
+                  <stringProp name="JSON_PATH">wallet</stringProp>
+                  <stringProp name="EXPECTED_VALUE">${walletId}</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                  <boolProp name="EXPECT_NULL">false</boolProp>
+                  <boolProp name="INVERT">false</boolProp>
+                  <boolProp name="ISREGEX">false</boolProp>
+                </JSONPathAssertion>
+                <hashTree/>
+                <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check title" enabled="true">
+                  <stringProp name="JSON_PATH">title</stringProp>
+                  <stringProp name="EXPECTED_VALUE">withdraw ${lnurlwCounter}</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                  <boolProp name="EXPECT_NULL">false</boolProp>
+                  <boolProp name="INVERT">false</boolProp>
+                  <boolProp name="ISREGEX">false</boolProp>
+                </JSONPathAssertion>
                 <hashTree/>
                 <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract withdraw link id" enabled="true">
                   <stringProp name="JSONPostProcessor.referenceNames">withdrawLinkId</stringProp>
@@ -1672,7 +1677,7 @@ if (!resp.id) {
                   <stringProp name="JSONPostProcessor.defaultValues">no-withdrawlink-callback</stringProp>
                 </JSONPostProcessor>
                 <hashTree/>
-                <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
+                <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Export Props" enabled="true">
                   <stringProp name="scriptLanguage">javascript</stringProp>
                   <stringProp name="parameters"></stringProp>
                   <stringProp name="filename"></stringProp>
@@ -2017,7 +2022,7 @@ props.put(&quot;withdrawLinkCallback&quot;, withdrawLinkCallback)</stringProp>
             <stringProp name="JSONPostProcessor.defaultValues">no-payment-hash</stringProp>
           </JSONPostProcessor>
           <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Import Props" enabled="true">
             <stringProp name="scriptLanguage">javascript</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
@@ -2134,7 +2139,7 @@ vars.put(&quot;receiveInkey&quot;, receiveInkey)
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Import Props" enabled="true">
             <stringProp name="scriptLanguage">groovy</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
@@ -2148,41 +2153,9 @@ vars.put(&quot;receiveInkey&quot;, receiveInkey)
           <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check Executed Withdraws" enabled="true">
             <stringProp name="scriptLanguage">javascript</stringProp>
             <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
+            <stringProp name="filename">${configPath}/lnurlw_check_executed_withdraws.js</stringProp>
             <stringProp name="cacheKey">true</stringProp>
-            <stringProp name="script">var resp = JSON.parse(prev.getResponseDataAsString());
-
-var parallelWithdrawUsers = +vars.get(&quot;parallelWithdrawUsers&quot;);
-var maxWithdrawsPerLink = +vars.get(&quot;maxWithdrawsPerLink&quot;);
-
-if (resp.length !== parallelWithdrawUsers) {
-  AssertionResult.setFailureMessage(
-    &quot;Expected &quot; +
-      parallelWithdrawUsers +
-      &quot; parallel withdraw attempts, but got &quot; +
-      resp.length
-  );
-  AssertionResult.setFailure(true);
-} else {
-  var withdrawOkCount = 0;
-
-  for (var i = 0; i &lt; resp.length; i++) {
-    if (resp[i].pending === false) {
-      withdrawOkCount++;
-    }
-  }
-
-  if (withdrawOkCount !== maxWithdrawsPerLink) {
-    AssertionResult.setFailureMessage(
-      &quot;Expected &quot; +
-        maxWithdrawsPerLink +
-        &quot; successfull wihdraws, but got &quot; +
-        withdrawOkCount
-    );
-    AssertionResult.setFailure(true);
-  }
-}
-</stringProp>
+            <stringProp name="script"></stringProp>
           </JSR223Assertion>
           <hashTree/>
         </hashTree>
