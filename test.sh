@@ -22,4 +22,5 @@ for file in $files; do
         exit 1
     fi
 done
+echo "Done"
 date
