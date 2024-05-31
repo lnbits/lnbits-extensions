@@ -594,7 +594,7 @@
         {
             "id": "lnurlp",
             "repo": "https://github.com/lnbits/lnurlp",
-            "name": "LNURLp",
+            "name": "Pay Links",
             "version": "0.3.3",
             "min_lnbits_version": "0.11.0",
             "short_description": "Create static payment links",
@@ -605,7 +605,7 @@
         {
             "id": "lnurlp",
             "repo": "https://github.com/lnbits/lnurlp",
-            "name": "LNURLp",
+            "name": "Pay Links",
             "version": "0.4.4",
             "min_lnbits_version": "0.11.2",
             "short_description": "Create static payment links",
@@ -616,7 +616,7 @@
         {
             "id": "lnurlp",
             "repo": "https://github.com/lnbits/lnurlp",
-            "name": "LNURLp",
+            "name": "Pay Links",
             "version": "0.5.0",
             "min_lnbits_version": "0.12.4",
             "short_description": "Create static payment links",
@@ -680,7 +680,7 @@
         {
             "id": "withdraw",
             "repo": "https://github.com/lnbits/withdraw",
-            "name": "LNURLw",
+            "name": "Withdraw Links",
             "version": "0.1.2",
             "short_description": "Make LNURL withdraw links",
             "icon": "https://github.com/lnbits/withdraw/raw/main/static/image/lnurl-withdraw.png",
@@ -690,7 +690,7 @@
         {
             "id": "withdraw",
             "repo": "https://github.com/lnbits/withdraw",
-            "name": "LNURLw",
+            "name": "Withdraw Links",
             "version": "0.1.9",
             "min_lnbits_version": "0.11.0",
             "short_description": "Make LNURL withdraw links",
