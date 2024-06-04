@@ -1090,7 +1090,7 @@
             "min_lnbits_version": "0.12.0",
             "short_description": "Ask the magic eightball",
             "icon": "https://i.imgur.com/DY4qvRc.png",
-            "archive": "https://demo.lnbits.com/paywall/NMLajc43MLqYiRYYqBdJHM",
+            "archive": "https://demo.lnbits.com/paywall/download/NMLajc43MLqYiRYYqBdJHM",
             "pay_link": "https://demo.lnbits.com/paywall/api/v1/paywalls/invoice/NMLajc43MLqYiRYYqBdJHM",
             "hash": "bbe8686e0ccf13d58937b63649e0d6b81e71658bcef33413387e9621ce210248"
         }
