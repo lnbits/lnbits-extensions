@@ -1081,6 +1081,17 @@
             "icon": "https://raw.githubusercontent.com/lnbits/lncalendar/main/static/image/lncalendar.png",
             "archive": "https://github.com/lnbits/lncalendar/archive/refs/tags/v0.1.2.zip",
             "hash": "8ea76bfaeb32f19fc0e1b8e48b286936842d1afb1d8d49233e78865cf55a3a79"
+        },
+        {
+            "id": "myextension",
+            "repo": "https://github.com/lnbits/myextension",
+            "name": "MyExtension",
+            "version": "0.0.1",
+            "min_lnbits_version": "0.12.0",
+            "short_description": "Minimal extension to build on",
+            "icon": "https://raw.githubusercontent.com/lnbits/myextension/main/static/image/myextension.png",
+            "archive": "https://github.com/lnbits/myextension/archive/refs/tags/v0.0.1.zip",
+            "hash": "7970ab56b47b3981b995ed29796a6b1a824370334e95fb1dbde11c09254e579a"
         }
     ]
 }
