@@ -57,7 +57,7 @@
             "min_lnbits_version": "0.11.0",
             "short_description": "Your Bitcoin assistant",
             "icon": "https://raw.githubusercontent.com/lnbits/gerty/main/static/gerty.png",
-            "config": "https://raw.githubusercontent.com/lnbits/gerty/main/config.json",
+            "details_link": "https://raw.githubusercontent.com/lnbits/gerty/main/config.json",
             "archive": "https://github.com/lnbits/gerty/archive/refs/tags/v0.1.6.zip",
             "hash": "76eda0f26346a238e425b352e2bf953de96b1daae52f54f11add4a925e9cdb98"
         },
