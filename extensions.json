@@ -1081,6 +1081,18 @@
             "icon": "https://raw.githubusercontent.com/lnbits/lncalendar/main/static/image/lncalendar.png",
             "archive": "https://github.com/lnbits/lncalendar/archive/refs/tags/v0.1.2.zip",
             "hash": "8ea76bfaeb32f19fc0e1b8e48b286936842d1afb1d8d49233e78865cf55a3a79"
+        },
+        {
+            "id": "eightball",
+            "repo": "https://github.com/lnbits/eightball",
+            "name": "EightBall",
+            "version": "0.0.1",
+            "min_lnbits_version": "0.12.0",
+            "short_description": "A Magic Eightball Extension",
+            "icon": "https://raw.githubusercontent.com/lnbits/eightball/main/static/image/eightball.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/eightball/main/config.json",
+            "archive": "https://github.com/lnbits/eightball/archive/refs/tags/v0.0.1.zip",
+            "hash": "6a15ff428039e3d8a210941b88f4dd6993524d3f6ebc609ceefdd723bbc27216"
         }
     ]
 }
