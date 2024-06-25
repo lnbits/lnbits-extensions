@@ -5,9 +5,24 @@ html,
 body {
     background: $bg;
     color: white;
-    text-align: center;
     font-family: sans-serif;
     padding: 42px 0;
+    background: radial-gradient(
+            89.59% 89.59% at 50% 0%,
+            rgb(62, 5, 55) 0%,
+            rgba(37, 124, 255, 0.01) 47.4%,
+            rgba(13, 16, 23, 0) 100%
+        ),
+        #0d1017;
+}
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
 }
 
 a {
@@ -37,20 +52,33 @@ a {
     border-radius: 21px;
     padding: 2px 8px;
     display: inline-block;
+    font-size: 14px;
+    margin-left: 8px;
 }
 .min-version {
     background: $bg;
 }
 
 .extension {
-    width: 210px;
-    padding: 10px;
-    margin: 10px;
-    background: #2a2f4a;
+    width: 46%;
+    padding: 1%;
+    margin: 1%;
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
+    display: flex;
+    cursor: pointer;
+    &:hover {
+        background: rgba(0, 0, 0, 1);
+    }
+    h2 {
+      margin-top: 3px;
+      a {
+        color: white;
+      }
+    }
     img {
-        width: 50%;
-        margin: 12px auto;
+        width: 130px;
+        margin-right: 22px;
         display: block;
     }
 }
