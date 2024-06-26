@@ -460,13 +460,13 @@
             "id": "boltz",
             "repo": "https://github.com/lnbits/boltz",
             "name": "Boltz",
-            "version": "0.4.0",
+            "version": "0.5.0",
             "min_lnbits_version": "0.12.5",
             "short_description": "Perform onchain/offchain swaps",
             "icon": "https://github.com/lnbits/boltz/raw/main/static/image/boltz.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/boltz/main/config.json",
-            "archive": "https://github.com/lnbits/boltz/archive/refs/tags/v0.4.0.zip",
-            "hash": "f23693092261334c2e429ebfdc17e8ebabbb2d189f73cb3f3574590acfb72c7b"
+            "archive": "https://github.com/lnbits/boltz/archive/refs/tags/v0.5.0.zip",
+            "hash": "c1a5cba5902e98ea4c4dfc72dc04adfbfff89af12fee9d9c467be48ab76752a1"
         },
         {
             "id": "satsdice",
@@ -508,7 +508,7 @@
             "min_lnbits_version": "0.11.0",
             "short_description": "Receive payments for products offline!",
             "icon": "https://github.com/lnbits/offlineshop/raw/main/static/image/offlineshop.png",
-            "details_link": "https://raw.githubusercontent.com/lnbits/offlineshop/main/config.json", 
+            "details_link": "https://raw.githubusercontent.com/lnbits/offlineshop/main/config.json",
             "archive": "https://github.com/lnbits/offlineshop/archive/refs/tags/v0.1.3.zip",
             "hash": "1230518be85fcecfcb1d02ea55002faff89773182c5c3f8c046c5f289677e35b"
         },
@@ -541,7 +541,7 @@
             "min_lnbits_version": "0.12.5",
             "short_description": "Sell subdomains of your domain",
             "icon": "https://github.com/lnbits/subdomains/raw/main/static/image/subdomains.png",
-            "details_link": "https://raw.githubusercontent.com/lnbits/subdomains/main/config.json", 
+            "details_link": "https://raw.githubusercontent.com/lnbits/subdomains/main/config.json",
             "archive": "https://github.com/lnbits/subdomains/archive/refs/tags/v0.2.0.zip",
             "hash": "8360014f6f6d131b3cf8a29cabff217cb996728a488c7e34e505f742acd7a952"
         },
@@ -604,7 +604,7 @@
             "name": "LNURLp",
             "version": "0.3.1",
             "short_description": "Create static payment links",
-            "icon": "https://github.com/lnbits/lnurlp/raw/main/static/image/lnurl-pay.png", 
+            "icon": "https://github.com/lnbits/lnurlp/raw/main/static/image/lnurl-pay.png",
             "archive": "https://github.com/lnbits/lnurlp/archive/refs/tags/0.3.1.zip",
             "hash": "68add89dec0ece8f102243f166d9776dc3fd00b26c600e47a4e6bcab1a76d64f"
         },
