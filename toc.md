@@ -6,7 +6,7 @@ By installing and using the LNbits extension ("Extension"), you agree to be boun
 
 ## 2. License
 
-The Extension is free and open-source software, released under [specify the FOSS license here, e.g., GPL-3.0, MIT, etc.]. You are permitted to use, copy, modify, and distribute the Extension under the terms of that license.
+The Extension is free and open-source software, released under MIT. You are permitted to use, copy, modify, and distribute the Extension under the terms of that license.
 
 ## 3. No Warranty
 
