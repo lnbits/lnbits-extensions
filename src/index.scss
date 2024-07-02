@@ -116,26 +116,26 @@ footer {
         position: relative;
     }
     .overlay {
-      cursor: pointer;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 }
 .gallery-arrow {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  font-size: 32px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
 }
 
 .gallery-item {
-  display: none;
+    display: none;
 }
 .gallery-item-active {
-  display: block;
+    display: block;
 }
 
 .ext-header {

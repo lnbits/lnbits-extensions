@@ -67,7 +67,11 @@ const Gallery = ({ images }) => {
                                 }
                                 fallback={<img src={img.uri} />}>
                                 <div class="embed-youtube">
-                                    <iframe src={img.link} border="0" style="outline:none" />
+                                    <iframe
+                                        src={img.link}
+                                        border="0"
+                                        style="outline:none"
+                                    />
                                 </div>
                             </Show>
                         </div>
@@ -134,10 +138,12 @@ const Details = () => {
                         <br />
                     </p>
                     <a href={ext.archive} target="_blank" class="btn">
-                        <FaSolidDownload />&nbsp;Download
+                        <FaSolidDownload />
+                        &nbsp;Download
                     </a>
                     <a href={ext.repo} target="_blank" class="btn">
-                        <FaBrandsGithub />&nbsp;Github
+                        <FaBrandsGithub />
+                        &nbsp;Github
                     </a>
                 </div>
                 <div id="contributors">
