@@ -103,7 +103,7 @@ footer {
     padding: 8px 0 0 0;
 }
 
-.gallery {
+#gallery {
     display: flex;
     gap: 20px;
     margin: 32px 0 64px;
@@ -111,6 +111,31 @@ footer {
         width: 100%;
         border-radius: 5px;
     }
+    .gallery-images {
+        width: 100%;
+        position: relative;
+    }
+    .overlay {
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+}
+.gallery-arrow {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+}
+
+.gallery-item {
+  display: none;
+}
+.gallery-item-active {
+  display: block;
 }
 
 .ext-header {
@@ -137,7 +162,6 @@ footer {
 #tabs {
     display: flex;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-    margin-bottom: 42px;
 }
 
 #tabs span {
@@ -164,4 +188,28 @@ footer {
 }
 .active-tab {
     display: block;
+    background: #0000005e;
+    padding: 21px;
+    border: 1px solid #ffffff38;
+    border-top: none;
+}
+
+.embed-youtube {
+    position: relative;
+    padding-bottom: 56.25%; /* - 16:9 aspect ratio (most common) */
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.embed-youtube iframe,
+.embed-youtube object,
+.embed-youtube embed {
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
 }

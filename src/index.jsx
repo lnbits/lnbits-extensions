@@ -1,4 +1,4 @@
-import { createSignal, For, onMount, Show } from "solid-js";
+import { createSignal, For, onMount } from "solid-js";
 import { render } from "solid-js/web";
 import "./index.scss";
 import data from "../extensions.json";
@@ -7,7 +7,10 @@ import { Router, Route, useParams, A, useNavigate } from "@solidjs/router";
 import { FaSolidUsers, FaBrandsGithub, FaSolidDownload } from "solid-icons/fa";
 import { BiSolidBolt } from "solid-icons/bi";
 import { Converter } from "showdown";
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from "solid-icons/ai";
+import {
+    RiArrowsArrowLeftSLine,
+    RiArrowsArrowRightSLine,
+} from "solid-icons/ri";
 
 const extensions = [
     ...new Map(data.extensions.map((ext) => [ext.id, ext])).values(),
@@ -25,30 +28,61 @@ const Gallery = ({ images }) => {
     const next = () => setActiveIndex((i) => (i + 1) % images.length);
     const prev = () =>
         setActiveIndex((i) => (i - 1 + images.length) % images.length);
+
+    let touchstartX, touchendX;
+    const touchStart = (e) => (touchstartX = e.changedTouches[0].screenX);
+    const touchEnd = (e) => {
+        touchendX = e.changedTouches[0].screenX;
+        if (touchendX < touchstartX) prev();
+        if (touchendX > touchstartX) next();
+        // if (touchendX === touchstartX) clickAction();
+    };
+    let mouseStartX, mouseEndX;
+    const mouseStart = (e) => (mouseStartX = e.screenX);
+    const mouseEnd = (e) => {
+        mouseEndX = e.screenX;
+        if (mouseEndX < mouseStartX) prev();
+        if (mouseEndX > mouseStartX) next();
+        // if (mouseEndX === mouseStartX) clickAction();
+    };
+
     return (
         <div id="gallery" class={fullScreen() === true ? "fullscreen" : ""}>
-            <div class="gallery-images" onClick={() => setFullScreen(true)}>
+            <span class="gallery-arrow" onClick={prev}>
+                <RiArrowsArrowLeftSLine />
+            </span>
+            <div class="gallery-images">
                 <For each={images}>
                     {(img, i) => (
-                        <Show when={i() === activeIndex()}>
-                            <img src={img.uri} alt={img.alt} />
-                        </Show>
+                        <div
+                            class={
+                                activeIndex() === i()
+                                    ? "gallery-item-active"
+                                    : "gallery-item"
+                            }>
+                            <Show
+                                when={
+                                    img.link &&
+                                    img.link.search("youtube") !== -1
+                                }
+                                fallback={<img src={img.uri} />}>
+                                <div class="embed-youtube">
+                                    <iframe src={img.link} border="0" style="outline:none" />
+                                </div>
+                            </Show>
+                        </div>
                     )}
                 </For>
+                <div
+                    onMouseDown={mouseStart}
+                    onMouseUp={mouseEnd}
+                    onTouchStart={touchStart}
+                    onTouchEnd={touchEnd}
+                    class="overlay"></div>
             </div>
-            <Show when={fullScreen()}>
-                <button class="close" onClick={() => setFullScreen(false)}>
-                    Close
-                </button>
-            </Show>
-            <div class="gallery-buttons">
-                <button onClick={prev}>
-                    <AiOutlineArrowLeft />
-                </button>
-                <button onClick={next}>
-                    <AiOutlineArrowRight />
-                </button>
-            </div>
+            <span class="gallery-arrow" onClick={prev}>
+                <RiArrowsArrowRightSLine />
+            </span>
         </div>
     );
 };
@@ -100,12 +134,10 @@ const Details = () => {
                         <br />
                     </p>
                     <a href={ext.archive} target="_blank" class="btn">
-                        <FaSolidDownload />
-                        Download
+                        <FaSolidDownload />&nbsp;Download
                     </a>
                     <a href={ext.repo} target="_blank" class="btn">
-                        <FaBrandsGithub />
-                        Github
+                        <FaBrandsGithub />&nbsp;Github
                     </a>
                 </div>
                 <div id="contributors">
@@ -123,12 +155,16 @@ const Details = () => {
                     ))}
                 </div>
             </div>
-            <Gallery images={ext.images} />
             <div id="tabs">
                 <span
                     class={activeTab() === "description" ? "active" : ""}
                     onClick={() => setActiveTab("description")}>
                     Description
+                </span>
+                <span
+                    class={activeTab() === "gallery" ? "active" : ""}
+                    onClick={() => setActiveTab("gallery")}>
+                    Gallery
                 </span>
                 <span
                     class={activeTab() === "terms" ? "active" : ""}
@@ -138,7 +174,7 @@ const Details = () => {
                 <span
                     class={activeTab() === "versions" ? "active" : ""}
                     onClick={() => setActiveTab("versions")}>
-                    All Versions
+                    Versions
                 </span>
             </div>
             <div
@@ -146,6 +182,9 @@ const Details = () => {
                 class={
                     activeTab() === "description" ? "active-tab" : "tab"
                 }></div>
+            <div class={activeTab() === "gallery" ? "active-tab" : "tab"}>
+                <Gallery images={ext.images} />
+            </div>
             <div
                 ref={termsRef}
                 class={activeTab() === "terms" ? "active-tab" : "tab"}></div>
