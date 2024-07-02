@@ -59,6 +59,7 @@ a {
     background: $bg;
 }
 
+
 .extension {
     width: 46%;
     padding: 1%;
@@ -82,6 +83,15 @@ a {
         display: block;
     }
 }
+
+@media (max-width: 768px) {
+    .extension {
+        width: 100%;
+    }
+}
+
+
+
 .btn {
     color: white;
     display: inline-block;
@@ -146,6 +156,12 @@ footer {
     border-radius: 10px;
     margin: 32px 0 64px;
 }
+@media (max-width: 768px) {
+    header,
+    .ext-header {
+        flex-direction: column;
+    }
+}
 
 #contributors small {
     color: white;
@@ -180,6 +196,16 @@ footer {
     margin-right: 3px;
     &.active {
         border-bottom: 1px solid #0d1017;
+    }
+}
+@media (max-width: 768px) {
+    #tabs {
+        flex-wrap: wrap;
+        & span {
+            flex-grow: 1;
+            margin-right: 0;
+            width: 100%;
+        }
     }
 }
 
