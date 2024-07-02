@@ -3,9 +3,10 @@
     "version": "1.0.0",
     "description": "LNbits Extension Repository",
     "main": "index.js",
+    "type": "module",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "prettier": "./node_modules/prettier/bin-prettier.js --write .",
+        "prettier": "./node_modules/prettier/bin/prettier.cjs --write src",
         "build": "vite build; cp dist/index.html dist/404.html",
         "start": "vite",
         "serve": "vite preview"
@@ -30,12 +31,15 @@
     },
     "homepage": "https://extensions.lnbits.com/",
     "devDependencies": {
-        "prettier": "^2.8.8",
-        "sass": "^1.64.2",
-        "vite": "^4.3.9",
-        "vite-plugin-solid": "^2.6.1"
+        "prettier": "^3.3.2",
+        "sass": "^1.77.6",
+        "vite": "^5.3.1",
+        "vite-plugin-solid": "^2.10.2"
     },
     "dependencies": {
-        "solid-js": "^1.7.0"
+        "@solidjs/router": "^0.13.6",
+        "showdown": "^2.1.0",
+        "solid-icons": "^1.1.0",
+        "solid-js": "^1.8.17"
     }
 }
