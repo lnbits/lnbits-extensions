@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "LNbits Extension Repository",
     "main": "index.js",
+    "type": "module",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "prettier": "./node_modules/prettier/bin-prettier.js --write .",
@@ -37,6 +38,7 @@
     },
     "dependencies": {
         "@solidjs/router": "^0.13.6",
+        "showdown": "^2.1.0",
         "solid-icons": "^1.1.0",
         "solid-js": "^1.8.17"
     }
