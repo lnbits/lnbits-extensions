@@ -37,6 +37,10 @@ jobs:
                   node-version: "16.x"
             - name: Install dependencies
               run: npm i
+            - name: install build deps
+              run: apt-get install -y jq curl
+            - name: Prepare extension configs
+              run: bash build.sh
             - name: Build
               run: npm run build
             - name: Setup Pages
