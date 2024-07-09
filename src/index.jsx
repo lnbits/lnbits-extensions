@@ -203,7 +203,7 @@ const Details = () => {
                                 <FaSolidDownload /> Download
                             </a>
                             <a
-                                href={`${ext.repo}/releases/${ext.version}`}
+                                href={`${ext.repo}/releases/v${ext.version}`}
                                 target="_blank"
                                 class="btn">
                                 Release Notes
