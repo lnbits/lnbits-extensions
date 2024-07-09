@@ -3,8 +3,9 @@
         "tpos",
         "jukebox",
         "gerty",
-        "usermanager",
-        "lnticket"
+        "lncalendar",
+        "lnurlp",
+        "withdraw"
     ],
     "extensions": [
         {
