@@ -1,4 +1,4 @@
- Terms and Conditions for LNbits Extension
+Terms and Conditions for LNbits Extension
 
 ## 1. Acceptance of Terms
 
