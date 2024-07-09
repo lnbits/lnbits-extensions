@@ -1,11 +1,8 @@
 $pink: #ff1ee6;
 $bg: #1f2234;
 
-html,
-body {
+html {
     background: $bg;
-    color: white;
-    font-family: sans-serif;
     background: radial-gradient(
             89.59% 89.59% at 50% 0%,
             rgb(62, 5, 55) 0%,
@@ -13,6 +10,13 @@ body {
             rgba(13, 16, 23, 0) 100%
         ),
         #0d1017;
+    background-repeat: no-repeat;
+}
+
+html,
+body {
+    color: white;
+    font-family: sans-serif;
 }
 body {
     max-width: 1200px;
