@@ -712,13 +712,13 @@
             "id": "withdraw",
             "repo": "https://github.com/lnbits/withdraw",
             "name": "Withdraw Links",
-            "version": "0.1.9",
+            "version": "0.1.10",
             "min_lnbits_version": "0.11.0",
             "short_description": "Make LNURL withdraw links",
             "icon": "https://github.com/lnbits/withdraw/raw/main/static/image/lnurl-withdraw.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/withdraw/main/config.json",
-            "archive": "https://github.com/lnbits/withdraw/archive/refs/tags/v0.1.9.zip",
-            "hash": "5cb5fab7d8d0d38786749e9547210facd4992fa852706e04e555f23c2138e28c"
+            "archive": "https://github.com/lnbits/withdraw/archive/refs/tags/v0.1.10.zip",
+            "hash": "749c039b2f07339d86590005d7551ccc9bc3e76e1a8fa4a7aa5d7bb395b426ba"
         },
         {
             "id": "paywall",
