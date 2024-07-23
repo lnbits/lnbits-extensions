@@ -1,8 +1,5 @@
 name: LNbits Extension CI
 on:
-  push:
-    branches:
-      - main
   pull_request:
 
 jobs:
