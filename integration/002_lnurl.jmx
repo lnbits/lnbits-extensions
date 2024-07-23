@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.2">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <boolProp name="TestPlan.functional_mode">false</boolProp>
@@ -83,18 +83,13 @@
         <stringProp name="HTTPSampler.domain">${host}</stringProp>
         <stringProp name="HTTPSampler.port">${port}</stringProp>
         <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
-        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-        <stringProp name="HTTPSampler.path"></stringProp>
-        <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
-        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-        <stringProp name="HTTPSampler.response_timeout"></stringProp>
       </ConfigTestElement>
       <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">stopthread</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
-          <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
@@ -104,6 +99,7 @@
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+        <boolProp name="ThreadGroup.delayedStart">false</boolProp>
       </ThreadGroup>
       <hashTree>
         <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
@@ -138,6 +134,7 @@
         </TransactionController>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[lnurlp] Enable &quot;lnurlp&quot;" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
@@ -151,9 +148,12 @@
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
             <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
             <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
           </HTTPSamplerProxy>
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -214,6 +214,7 @@
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[lnurlp] Go to &quot;lnurlp&quot; page" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
@@ -227,9 +228,12 @@
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
             <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
             <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
           </HTTPSamplerProxy>
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -296,6 +300,7 @@
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[lnurlp] Get pay links" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="all_wallets" elementType="HTTPArgument">
@@ -317,9 +322,12 @@
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
             <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
             <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
           </HTTPSamplerProxy>
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -426,9 +434,12 @@
                 <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
                 <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
                 <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+                <boolProp name="HTTPSampler.image_parser">false</boolProp>
+                <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+                <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+                <boolProp name="HTTPSampler.md5">false</boolProp>
+                <intProp name="HTTPSampler.ipSourceType">0</intProp>
               </HTTPSamplerProxy>
               <hashTree>
                 <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -504,6 +515,7 @@
                 <hashTree/>
               </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[lnurlp] Go to pay link page" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments"/>
                 </elementProp>
@@ -517,9 +529,12 @@
                 <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
                 <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
                 <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+                <boolProp name="HTTPSampler.image_parser">false</boolProp>
+                <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+                <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+                <boolProp name="HTTPSampler.md5">false</boolProp>
+                <intProp name="HTTPSampler.ipSourceType">0</intProp>
               </HTTPSamplerProxy>
               <hashTree>
                 <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -582,6 +597,7 @@
                 <hashTree/>
               </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[lnurlp] Get pay link" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="all_wallets" elementType="HTTPArgument">
@@ -603,9 +619,12 @@
                 <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
                 <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
                 <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+                <boolProp name="HTTPSampler.image_parser">false</boolProp>
+                <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+                <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+                <boolProp name="HTTPSampler.md5">false</boolProp>
+                <intProp name="HTTPSampler.ipSourceType">0</intProp>
               </HTTPSamplerProxy>
               <hashTree>
                 <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -666,6 +685,7 @@
                 <hashTree/>
               </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[lnurlp] Decode LNURLp" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="all_wallets" elementType="HTTPArgument">
@@ -687,9 +707,12 @@
                 <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
                 <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
                 <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+                <boolProp name="HTTPSampler.image_parser">false</boolProp>
+                <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+                <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+                <boolProp name="HTTPSampler.md5">false</boolProp>
+                <intProp name="HTTPSampler.ipSourceType">0</intProp>
               </HTTPSamplerProxy>
               <hashTree>
                 <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -839,9 +862,12 @@
                     <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
                     <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
                     <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-                    <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-                    <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-                    <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                    <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+                    <boolProp name="HTTPSampler.image_parser">false</boolProp>
+                    <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+                    <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+                    <boolProp name="HTTPSampler.md5">false</boolProp>
+                    <intProp name="HTTPSampler.ipSourceType">0</intProp>
                   </HTTPSamplerProxy>
                   <hashTree>
                     <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -917,6 +943,7 @@
                     <hashTree/>
                   </hashTree>
                   <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[wallet] Check wallet balance" enabled="true">
+                    <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
                     <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                       <collectionProp name="Arguments.arguments"/>
                     </elementProp>
@@ -930,9 +957,12 @@
                     <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
                     <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
                     <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-                    <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-                    <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-                    <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                    <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+                    <boolProp name="HTTPSampler.image_parser">false</boolProp>
+                    <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+                    <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+                    <boolProp name="HTTPSampler.md5">false</boolProp>
+                    <intProp name="HTTPSampler.ipSourceType">0</intProp>
                   </HTTPSamplerProxy>
                   <hashTree>
                     <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -989,6 +1019,7 @@
                   </ConstantTimer>
                   <hashTree/>
                   <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[wallet] Get Payment" enabled="true">
+                    <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
                     <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                       <collectionProp name="Arguments.arguments"/>
                     </elementProp>
@@ -1002,9 +1033,12 @@
                     <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
                     <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
                     <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-                    <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-                    <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-                    <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                    <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+                    <boolProp name="HTTPSampler.image_parser">false</boolProp>
+                    <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+                    <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+                    <boolProp name="HTTPSampler.md5">false</boolProp>
+                    <intProp name="HTTPSampler.ipSourceType">0</intProp>
                   </HTTPSamplerProxy>
                   <hashTree>
                     <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -1064,6 +1098,7 @@
         </TransactionController>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[lnurlw] Enable &quot;lnurlw&quot;" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
@@ -1077,9 +1112,12 @@
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
             <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
             <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
           </HTTPSamplerProxy>
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -1144,6 +1182,7 @@
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[lnurlw] Go to &quot;lnurlw&quot; page" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
@@ -1157,9 +1196,12 @@
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
             <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
             <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
           </HTTPSamplerProxy>
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -1222,6 +1264,7 @@
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[lnurlw] Get withdraw links" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="all_wallets" elementType="HTTPArgument">
@@ -1243,9 +1286,12 @@
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
             <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
             <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
           </HTTPSamplerProxy>
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -1297,7 +1343,7 @@
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check no withdraw link present" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="2914">[]</stringProp>
+                <stringProp name="1042206696">{&quot;data&quot;:[],&quot;total&quot;:0}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.custom_message"></stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -1333,9 +1379,12 @@
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
             <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
             <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
           </HTTPSamplerProxy>
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -1458,9 +1507,12 @@
                 <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
                 <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
                 <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+                <boolProp name="HTTPSampler.image_parser">false</boolProp>
+                <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+                <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+                <boolProp name="HTTPSampler.md5">false</boolProp>
+                <intProp name="HTTPSampler.ipSourceType">0</intProp>
               </HTTPSamplerProxy>
               <hashTree>
                 <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -1538,6 +1590,7 @@
                 <hashTree/>
               </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[lnurlw] Go to withdraw link page" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments"/>
                 </elementProp>
@@ -1551,9 +1604,12 @@
                 <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
                 <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
                 <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+                <boolProp name="HTTPSampler.image_parser">false</boolProp>
+                <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+                <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+                <boolProp name="HTTPSampler.md5">false</boolProp>
+                <intProp name="HTTPSampler.ipSourceType">0</intProp>
               </HTTPSamplerProxy>
               <hashTree>
                 <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -1612,6 +1668,7 @@
                 <hashTree/>
               </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[lnurlw] Get withdraw link" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="all_wallets" elementType="HTTPArgument">
@@ -1633,9 +1690,12 @@
                 <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
                 <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
                 <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+                <boolProp name="HTTPSampler.image_parser">false</boolProp>
+                <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+                <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+                <boolProp name="HTTPSampler.md5">false</boolProp>
+                <intProp name="HTTPSampler.ipSourceType">0</intProp>
               </HTTPSamplerProxy>
               <hashTree>
                 <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -1696,6 +1756,7 @@
                 <hashTree/>
               </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[lnurlw] Decode LNURLw" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="all_wallets" elementType="HTTPArgument">
@@ -1717,9 +1778,12 @@
                 <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
                 <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
                 <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+                <boolProp name="HTTPSampler.image_parser">false</boolProp>
+                <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+                <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+                <boolProp name="HTTPSampler.md5">false</boolProp>
+                <intProp name="HTTPSampler.ipSourceType">0</intProp>
               </HTTPSamplerProxy>
               <hashTree>
                 <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -1853,9 +1917,12 @@
                     <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
                     <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
                     <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-                    <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-                    <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-                    <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                    <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+                    <boolProp name="HTTPSampler.image_parser">false</boolProp>
+                    <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+                    <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+                    <boolProp name="HTTPSampler.md5">false</boolProp>
+                    <intProp name="HTTPSampler.ipSourceType">0</intProp>
                   </HTTPSamplerProxy>
                   <hashTree>
                     <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -1931,6 +1998,7 @@
                     <hashTree/>
                   </hashTree>
                   <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[wallet] Check wallet balance" enabled="true">
+                    <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
                     <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                       <collectionProp name="Arguments.arguments"/>
                     </elementProp>
@@ -1944,9 +2012,12 @@
                     <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
                     <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
                     <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-                    <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-                    <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-                    <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                    <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+                    <boolProp name="HTTPSampler.image_parser">false</boolProp>
+                    <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+                    <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+                    <boolProp name="HTTPSampler.md5">false</boolProp>
+                    <intProp name="HTTPSampler.ipSourceType">0</intProp>
                   </HTTPSamplerProxy>
                   <hashTree>
                     <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -2003,6 +2074,7 @@
                   </ConstantTimer>
                   <hashTree/>
                   <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[wallet] Get Payment" enabled="true">
+                    <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
                     <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                       <collectionProp name="Arguments.arguments"/>
                     </elementProp>
@@ -2016,9 +2088,12 @@
                     <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
                     <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
                     <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-                    <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-                    <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-                    <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                    <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+                    <boolProp name="HTTPSampler.image_parser">false</boolProp>
+                    <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+                    <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+                    <boolProp name="HTTPSampler.md5">false</boolProp>
+                    <intProp name="HTTPSampler.ipSourceType">0</intProp>
                   </HTTPSamplerProxy>
                   <hashTree>
                     <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -2072,6 +2147,7 @@
             </hashTree>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[wallet] Check receive wallet balance" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
@@ -2085,9 +2161,12 @@
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
             <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
             <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
           </HTTPSamplerProxy>
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
