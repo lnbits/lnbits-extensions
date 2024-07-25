@@ -1,3 +1,4 @@
+test
 # LNbits Vetted Extensions
 
 Official registry for vetted LNbits extensions
