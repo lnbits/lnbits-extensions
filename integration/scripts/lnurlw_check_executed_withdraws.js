@@ -15,7 +15,7 @@ if (resp.length !== parallelWithdrawUsers) {
   var withdrawOkCount = 0;
 
   for (var i = 0; i < resp.length; i++) {
-    if (resp[i].pending === false) {
+    if (resp[i].status === "success") {
       withdrawOkCount++;
     }
   }
