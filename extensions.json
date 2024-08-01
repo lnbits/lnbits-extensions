@@ -320,11 +320,11 @@
             "id": "discordbot",
             "repo": "https://github.com/lnbits/discordbot",
             "name": "Discordbot",
-            "version": "0.1",
+            "version": "0.1.1",
             "short_description": "Provide wallets for Discord users",
             "icon": "https://github.com/lnbits/discordbot/raw/main/static/image/discordbot.png",
-            "archive": "https://github.com/lnbits/discordbot/archive/refs/tags/0.1.zip",
-            "hash": "3e9468ed0d3b2f46ddd2814a1f9865dbc714eb2b07b6a7c68887ed5dd8c2ee38"
+            "archive": "https://github.com/lnbits/discordbot/archive/refs/tags/v0.1.1.zip",
+            "hash": "ae67307ed1bb26ae4a2d43c913008574f35291932c20baa9a7cdc561048333bf"
         },
         {
             "id": "boltcards",
