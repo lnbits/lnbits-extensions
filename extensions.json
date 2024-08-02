@@ -45,6 +45,7 @@
             "id": "decoder",
             "repo": "https://github.com/bitkarrot/decoder",
             "name": "Decoder",
+            "min_lnbits_version": "0.11.0",
             "version": "0.0.5",
             "short_description": "Decode Lightning Network BOLT11, LNURL, and Lightning Address",
             "icon": "https://github.com/bitkarrot/decoder/blob/main/static/unlock.png",
