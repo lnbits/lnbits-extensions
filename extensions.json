@@ -470,6 +470,18 @@
             "hash": "1e22c82a299e45dacef029dbaa26066718c58b551b27b05cadd705c3cb36b3ff"
         },
         {
+            "id": "boltz",
+            "repo": "https://github.com/lnbits/boltz",
+            "name": "Boltz",
+            "version": "0.6.0",
+            "min_lnbits_version": "0.12.11",
+            "short_description": "Perform onchain/offchain swaps",
+            "icon": "https://github.com/lnbits/boltz/raw/main/static/image/boltz.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/boltz/main/config.json",
+            "archive": "https://github.com/lnbits/boltz/archive/refs/tags/v0.6.0.zip",
+            "hash": "a88c02927878f321b14a5c750911803a7d5aa3ab9d427b26b2fed571e82a22ca"
+        },
+        {
             "id": "satsdice",
             "repo": "https://github.com/lnbits/satsdice",
             "name": "Satsdice",
