@@ -647,13 +647,13 @@
             "id": "lnurlp",
             "repo": "https://github.com/lnbits/lnurlp",
             "name": "Pay Links",
-            "version": "0.5.0",
+            "version": "0.5.2",
             "min_lnbits_version": "0.12.4",
             "short_description": "Create static payment links",
             "icon": "https://github.com/lnbits/lnurlp/raw/main/static/image/lnurl-pay.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/lnurlp/main/config.json",
-            "archive": "https://github.com/lnbits/lnurlp/archive/refs/tags/v0.5.0.zip",
-            "hash": "5fe1adc5705bccec0a0e092cfc94d34e3a8bc3d0e4ad317c6df3f9f31256d991"
+            "archive": "https://github.com/lnbits/lnurlp/archive/refs/tags/v0.5.2.zip",
+            "hash": "e8e74bace8b543f63f736c352cb29a6e35b17703d623cab8a358161e01dd7fea"
         },
         {
             "id": "deezy",
