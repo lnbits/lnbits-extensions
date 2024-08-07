@@ -491,7 +491,19 @@
             "id": "boltz",
             "repo": "https://github.com/lnbits/boltz",
             "name": "Boltz",
+            "version": "0.2.6",
+            "max_lnbits_version": "0.11.0",
+            "short_description": "Perform onchain/offchain swaps",
+            "icon": "https://github.com/lnbits/boltz/raw/main/static/image/boltz.png",
+            "archive": "https://github.com/lnbits/boltz/archive/refs/tags/0.2.6.zip",
+            "hash": "85766761091003400993024b01211908bfbc34fd9d057d58366b68b9e8ec9c6f"
+        },
+        {
+            "id": "boltz",
+            "repo": "https://github.com/lnbits/boltz",
+            "name": "Boltz",
             "version": "0.2.8",
+            "min_lnbits_version": "0.11.0",
             "max_lnbits_version": "0.11.2",
             "short_description": "Perform onchain/offchain swaps",
             "icon": "https://github.com/lnbits/boltz/raw/main/static/image/boltz.png",
@@ -687,6 +699,18 @@
             "icon": "https://github.com/lnbits/lnurlp/raw/main/static/image/lnurl-pay.png",
             "archive": "https://github.com/lnbits/lnurlp/archive/refs/tags/0.3.1.zip",
             "hash": "68add89dec0ece8f102243f166d9776dc3fd00b26c600e47a4e6bcab1a76d64f"
+        },
+        {
+            "id": "lnurlp",
+            "repo": "https://github.com/lnbits/lnurlp",
+            "name": "Pay Links",
+            "version": "0.3.3",
+            "min_lnbits_version": "0.11.0",
+            "max_lnbits_version": "0.11.2",
+            "short_description": "Create static payment links",
+            "icon": "https://github.com/lnbits/lnurlp/raw/main/static/image/lnurl-pay.png",
+            "archive": "https://github.com/lnbits/lnurlp/archive/refs/tags/v0.3.3.zip",
+            "hash": "e4f614e986745564ac3e15bccab09860dd007cc1494ecad3a78eb138f918e223"
         },
         {
             "id": "lnurlp",
