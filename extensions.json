@@ -385,7 +385,7 @@
             "repo": "https://github.com/lnbits/nostrnip5",
             "name": "NostrNip5",
             "version": "0.2.6",
-            "min_lnbits_version": "0.12.5",
+            "min_lnbits_version": "0.12.9",
             "short_description": "Create NIP05 address for your domains",
             "icon": "https://github.com/lnbits/nostrnip5/raw/main/static/image/nostrnip5.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/nostrnip5/main/config.json",
