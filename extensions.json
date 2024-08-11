@@ -827,7 +827,7 @@
             "repo": "https://github.com/lnbits/bleskomat",
             "name": "Bleskomat",
             "version": "0.1",
-            "short_description": "Connect a Bleskomat ATM to an lnbits",
+            "short_description": "Connect a Bleskomat ATM to an LNbits",
             "icon": "https://github.com/lnbits/bleskomat/raw/main/static/image/bleskomat.png",
             "archive": "https://github.com/lnbits/bleskomat/archive/refs/tags/0.1.zip",
             "hash": "abf11879aa7c53afb3adf32405aad08b6aa35c7cc2a22e38c03e8acc48b7a8ff"
@@ -838,7 +838,7 @@
             "name": "Bleskomat",
             "version": "0.1.2",
             "min_lnbits_version": "0.11.0",
-            "short_description": "Connect a Bleskomat ATM to an lnbits",
+            "short_description": "Connect a Bleskomat ATM to an LNbits",
             "icon": "https://github.com/lnbits/bleskomat/raw/main/static/image/bleskomat.png",
             "archive": "https://github.com/lnbits/bleskomat/archive/refs/tags/v0.1.2.zip",
             "hash": "d62fe9dc2a5e9f592bf8529d193c986be2661452d85397d1123cba231f2910f1"
@@ -849,7 +849,7 @@
             "name": "Bleskomat",
             "version": "0.2.0",
             "min_lnbits_version": "0.12.6",
-            "short_description": "Connect a Bleskomat ATM to an lnbits",
+            "short_description": "Connect a Bleskomat ATM to an LNbits",
             "icon": "https://github.com/lnbits/bleskomat/raw/main/static/image/bleskomat.png",
             "archive": "https://github.com/lnbits/bleskomat/archive/refs/tags/v0.2.0.zip",
             "hash": "0c35c70fae5bf881a60284511d47dcc8de05687b006f4edfbc58bb89463895a5"
@@ -880,7 +880,7 @@
             "repo": "https://github.com/lnbits/lndhub",
             "name": "LndHub",
             "version": "0.3",
-            "short_description": "Access lnbits from BlueWallet or Zeus",
+            "short_description": "Access LNbits from BlueWallet or Zeus",
             "icon": "https://github.com/lnbits/lndhub/raw/main/static/image/lndhub.png",
             "archive": "https://github.com/lnbits/lndhub/archive/refs/tags/0.3.zip",
             "hash": "d446286f7e19cfdd6ec8e68661ad7e40eba28e09e14743bcb619045b6bf7b59a"
@@ -891,7 +891,7 @@
             "name": "LndHub",
             "version": "0.3.2",
             "min_lnbits_version": "0.11.0",
-            "short_description": "Access lnbits from BlueWallet or Zeus",
+            "short_description": "Access LNbits from BlueWallet or Zeus",
             "icon": "https://github.com/lnbits/lndhub/raw/main/static/image/lndhub.png",
             "archive": "https://github.com/lnbits/lndhub/archive/refs/tags/v0.3.2.zip",
             "hash": "020285c94ac2e4c7001c228d3f9e0199d54421d87743229cf2ff01519dd83bad"
@@ -902,7 +902,7 @@
             "name": "LndHub",
             "version": "0.4.2",
             "min_lnbits_version": "0.12.6",
-            "short_description": "Access lnbits from BlueWallet or Zeus",
+            "short_description": "Access LNbits from BlueWallet or Zeus",
             "icon": "https://github.com/lnbits/lndhub/raw/main/static/image/lndhub.png",
             "archive": "https://github.com/lnbits/lndhub/archive/refs/tags/v0.4.2.zip",
             "hash": "e1d9d4db9b9c38efbf65645e9b2dc535789295e88090e5a5d49e81996c58444a"
@@ -1119,7 +1119,7 @@
             "name": "LNCalendar",
             "version": "0.1.5",
             "min_lnbits_version": "0.12.5",
-            "short_description": "A paid scheduling extension for LNBits that lets you schedule blocks of time on your calendar and get paid in Bitcoin",
+            "short_description": "A paid scheduling extension for LNbits that lets you schedule blocks of time on your calendar and get paid in Bitcoin",
             "icon": "https://raw.githubusercontent.com/lnbits/lncalendar/main/static/image/lncalendar.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/lncalendar/main/config.json",
             "archive": "https://github.com/lnbits/lncalendar/archive/refs/tags/v0.1.5.zip",
