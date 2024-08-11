@@ -1264,12 +1264,12 @@
             "id": "scheduler",
             "repo": "https://github.com/bitkarrot/scheduler",
             "name": "Scheduler",
-            "version": "0.1.1",
-            "min_lnbits_version": "0.12.0",
+            "version": "0.1.2-alpha-2",
+            "min_lnbits_version": "0.12.10",
             "short_description": "Generate Scheduled tasks via crontabs for lnbits",
             "icon": "https://raw.githubusercontent.com/bitkarrot/scheduler/main/static/image/scheduler.png",
-            "archive": "https://github.com/bitkarrot/scheduler/archive/refs/tags/v0.1.1.zip",
-            "hash": "db7470dc51a4d8bf3c0e3da49d6dd37bd584f60302778682165ce359d327e06c"
+            "archive": "https://github.com/bitkarrot/scheduler/archive/refs/tags/v0.1.2-alpha-2.zip",
+            "hash": "f02fab0c1b0d6a6f2909a47e2d1692ae8900b1f0d1e4aeb7782585f8a664d7c0"
         }
     ]
 }
