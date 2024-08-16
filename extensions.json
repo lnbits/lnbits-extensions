@@ -802,13 +802,13 @@
             "id": "satspay",
             "repo": "https://github.com/lnbits/satspay",
             "name": "SatsPay Server",
-            "version": "0.3.0",
+            "version": "0.3.1",
             "min_lnbits_version": "0.12.5",
             "short_description": "Create onchain and LN charges",
             "icon": "https://github.com/lnbits/satspay/raw/main/static/image/satspay.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/satspay/main/config.json",
-            "archive": "https://github.com/lnbits/satspay/archive/refs/tags/v0.3.0.zip",
-            "hash": "698b2bd271a0767fce4b36cbfe34df9fd5b88c02dc5413802fc294d62842bdb9"
+            "archive": "https://github.com/lnbits/satspay/archive/refs/tags/v0.3.1.zip",
+            "hash": "625fa083b3d9531654a3346900df70ab89dc8f06254ed7e068c9dd0d30696c19"
         },
         {
             "id": "bleskomat",
