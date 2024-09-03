@@ -1633,10 +1633,6 @@ if (addresses.length !== 25) {
                 </ResponseAssertion>
                 <hashTree/>
               </hashTree>
-              <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
-                <stringProp name="ConstantTimer.delay">1000</stringProp>
-              </ConstantTimer>
-              <hashTree/>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[satspay] Get lightning charge balance (after)" enabled="true">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments"/>
@@ -1812,7 +1808,7 @@ if (addresses.length !== 25) {
                 </elementProp>
                 <elementProp name="X-Api-Key" elementType="Header">
                   <stringProp name="Header.name">X-Api-Key</stringProp>
-                  <stringProp name="Header.value">${inkey}</stringProp>
+                  <stringProp name="Header.value">${adminkey}</stringProp>
                 </elementProp>
                 <elementProp name="Accept-Encoding" elementType="Header">
                   <stringProp name="Header.name">Accept-Encoding</stringProp>
