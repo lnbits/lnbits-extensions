@@ -808,7 +808,7 @@
             "icon": "https://github.com/lnbits/satspay/raw/main/static/image/satspay.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/satspay/main/config.json",
             "archive": "https://github.com/lnbits/satspay/archive/refs/tags/v0.3.2.zip",
-            "hash": "2569bb018f15f37b8ee400c3f16e0fdebe3b6ba28f1e45ea5c90e7f540556cea"
+            "hash": "85470ef371097de44ed57fff7f0788c5d1ec78f4ffa715133a5a3cb7c59b79d0"
         },
         {
             "id": "bleskomat",
