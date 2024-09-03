@@ -1635,7 +1635,7 @@ if (addresses.length !== 25) {
               </hashTree>
               <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a bit" enabled="true">
                 <stringProp name="TestPlan.comments">wait for the listener</stringProp>
-                <stringProp name="ConstantTimer.delay">200</stringProp>
+                <stringProp name="ConstantTimer.delay">500</stringProp>
               </ConstantTimer>
               <hashTree/>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[satspay] Get lightning charge balance (after)" enabled="true">
