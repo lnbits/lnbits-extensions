@@ -172,7 +172,7 @@ pulling all extensions from `extensions` dir
 sh util.sh pull
 ```
 
-get lnbits env variables for all extensions
+get LNbits env variables for all extensions
 
 ```sh
 sh util.sh env
@@ -197,7 +197,7 @@ https://github.com/lnbits/lnbits-extensions/assets/1743657/0d0a6626-655b-4528-95
 make install-jmeter
 ```
 ## configure
-make sure lnbits is running and start the mirror server
+make sure LNbits is running and start the mirror server
 ```sh
 make start-mirror-server
 ```

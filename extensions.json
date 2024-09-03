@@ -132,13 +132,13 @@
             "id": "lnticket",
             "repo": "https://github.com/lnbits/lnticket",
             "name": "Support Tickets",
-            "version": "0.5.0",
+            "version": "0.5.1",
             "min_lnbits_version": "0.12.5",
             "short_description": "Get paid sats to answer questions",
             "icon": "https://raw.githubusercontent.com/lnbits/lnticket/main/static/image/lntickets.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/lnticket/main/config.json",
-            "archive": "https://github.com/lnbits/lnticket/archive/refs/tags/v0.5.0.zip",
-            "hash": "12993d65493242b939225384464bd56ca3acc9295f0b7cb7a4ec6ec0aac97551"
+            "archive": "https://github.com/lnbits/lnticket/archive/refs/tags/v0.5.1.zip",
+            "hash": "018fa2c7b54622459236dc3f8e2e2d6a69de97214b5b3f3f9e020b3e2e5c6b8c"
         },
         {
             "id": "tpos",
@@ -756,6 +756,18 @@
             "hash": "7672997312b57b74bd5e3ff5203705edef89d091872e4bba6b669377cdd3b5b3"
         },
         {
+            "id": "withdraw",
+            "repo": "https://github.com/lnbits/withdraw",
+            "name": "Withdraw Links",
+            "version": "0.1.12",
+            "min_lnbits_version": "0.12.11",
+            "short_description": "Make LNURL withdraw links",
+            "icon": "https://github.com/lnbits/withdraw/raw/main/static/image/lnurl-withdraw.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/withdraw/main/config.json",
+            "archive": "https://github.com/lnbits/withdraw/archive/refs/tags/v0.1.12.zip",
+            "hash": "1fc33ce010880dcdbf69f2d1df27322ab360d8bddd9d792fe2c64c1f238e00c1"
+        },
+        {
             "id": "paywall",
             "repo": "https://github.com/lnbits/paywall",
             "name": "Paywall",
@@ -813,20 +825,20 @@
             "id": "satspay",
             "repo": "https://github.com/lnbits/satspay",
             "name": "SatsPay Server",
-            "version": "0.3.0",
+            "version": "0.3.2",
             "min_lnbits_version": "0.12.5",
             "short_description": "Create onchain and LN charges",
             "icon": "https://github.com/lnbits/satspay/raw/main/static/image/satspay.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/satspay/main/config.json",
-            "archive": "https://github.com/lnbits/satspay/archive/refs/tags/v0.3.0.zip",
-            "hash": "698b2bd271a0767fce4b36cbfe34df9fd5b88c02dc5413802fc294d62842bdb9"
+            "archive": "https://github.com/lnbits/satspay/archive/refs/tags/v0.3.2.zip",
+            "hash": "85470ef371097de44ed57fff7f0788c5d1ec78f4ffa715133a5a3cb7c59b79d0"
         },
         {
             "id": "bleskomat",
             "repo": "https://github.com/lnbits/bleskomat",
             "name": "Bleskomat",
             "version": "0.1",
-            "short_description": "Connect a Bleskomat ATM to an lnbits",
+            "short_description": "Connect a Bleskomat ATM to an LNbits",
             "icon": "https://github.com/lnbits/bleskomat/raw/main/static/image/bleskomat.png",
             "archive": "https://github.com/lnbits/bleskomat/archive/refs/tags/0.1.zip",
             "hash": "abf11879aa7c53afb3adf32405aad08b6aa35c7cc2a22e38c03e8acc48b7a8ff"
@@ -837,7 +849,7 @@
             "name": "Bleskomat",
             "version": "0.1.2",
             "min_lnbits_version": "0.11.0",
-            "short_description": "Connect a Bleskomat ATM to an lnbits",
+            "short_description": "Connect a Bleskomat ATM to an LNbits",
             "icon": "https://github.com/lnbits/bleskomat/raw/main/static/image/bleskomat.png",
             "archive": "https://github.com/lnbits/bleskomat/archive/refs/tags/v0.1.2.zip",
             "hash": "d62fe9dc2a5e9f592bf8529d193c986be2661452d85397d1123cba231f2910f1"
@@ -848,7 +860,7 @@
             "name": "Bleskomat",
             "version": "0.2.0",
             "min_lnbits_version": "0.12.6",
-            "short_description": "Connect a Bleskomat ATM to an lnbits",
+            "short_description": "Connect a Bleskomat ATM to an LNbits",
             "icon": "https://github.com/lnbits/bleskomat/raw/main/static/image/bleskomat.png",
             "archive": "https://github.com/lnbits/bleskomat/archive/refs/tags/v0.2.0.zip",
             "hash": "0c35c70fae5bf881a60284511d47dcc8de05687b006f4edfbc58bb89463895a5"
@@ -879,7 +891,7 @@
             "repo": "https://github.com/lnbits/lndhub",
             "name": "LndHub",
             "version": "0.3",
-            "short_description": "Access lnbits from BlueWallet or Zeus",
+            "short_description": "Access LNbits from BlueWallet or Zeus",
             "icon": "https://github.com/lnbits/lndhub/raw/main/static/image/lndhub.png",
             "archive": "https://github.com/lnbits/lndhub/archive/refs/tags/0.3.zip",
             "hash": "d446286f7e19cfdd6ec8e68661ad7e40eba28e09e14743bcb619045b6bf7b59a"
@@ -890,7 +902,7 @@
             "name": "LndHub",
             "version": "0.3.2",
             "min_lnbits_version": "0.11.0",
-            "short_description": "Access lnbits from BlueWallet or Zeus",
+            "short_description": "Access LNbits from BlueWallet or Zeus",
             "icon": "https://github.com/lnbits/lndhub/raw/main/static/image/lndhub.png",
             "archive": "https://github.com/lnbits/lndhub/archive/refs/tags/v0.3.2.zip",
             "hash": "020285c94ac2e4c7001c228d3f9e0199d54421d87743229cf2ff01519dd83bad"
@@ -901,7 +913,7 @@
             "name": "LndHub",
             "version": "0.4.2",
             "min_lnbits_version": "0.12.6",
-            "short_description": "Access lnbits from BlueWallet or Zeus",
+            "short_description": "Access LNbits from BlueWallet or Zeus",
             "icon": "https://github.com/lnbits/lndhub/raw/main/static/image/lndhub.png",
             "archive": "https://github.com/lnbits/lndhub/archive/refs/tags/v0.4.2.zip",
             "hash": "e1d9d4db9b9c38efbf65645e9b2dc535789295e88090e5a5d49e81996c58444a"
@@ -1118,7 +1130,7 @@
             "name": "LNCalendar",
             "version": "0.1.5",
             "min_lnbits_version": "0.12.5",
-            "short_description": "A paid scheduling extension for LNBits that lets you schedule blocks of time on your calendar and get paid in Bitcoin",
+            "short_description": "A paid scheduling extension for LNbits that lets you schedule blocks of time on your calendar and get paid in Bitcoin",
             "icon": "https://raw.githubusercontent.com/lnbits/lncalendar/main/static/image/lncalendar.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/lncalendar/main/config.json",
             "archive": "https://github.com/lnbits/lncalendar/archive/refs/tags/v0.1.5.zip",
