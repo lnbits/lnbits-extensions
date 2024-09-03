@@ -63,7 +63,7 @@ It is possible for developers to require a payment for their extensions. In orde
 }
 ```
 
-The [Paywall LNbist Extension](https://github.com/lnbits/paywall/blob/main/README.md#file-paywall) can be used to serve the extension `zip` file.
+The [Paywall LNbits Extension](https://github.com/lnbits/paywall/blob/main/README.md#file-paywall) can be used to serve the extension `zip` file.
 
 If you do not want to use the [Paywall LNbits Extension](https://github.com/lnbits/paywall/) to server your extension, but instead you want to use your own paywall, then the `pay_link` endpoint must follow these specifications:
 

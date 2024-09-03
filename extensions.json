@@ -331,11 +331,11 @@
             "id": "discordbot",
             "repo": "https://github.com/lnbits/discordbot",
             "name": "Discordbot",
-            "version": "0.1",
+            "version": "0.1.1",
             "short_description": "Provide wallets for Discord users",
             "icon": "https://github.com/lnbits/discordbot/raw/main/static/image/discordbot.png",
-            "archive": "https://github.com/lnbits/discordbot/archive/refs/tags/0.1.zip",
-            "hash": "3e9468ed0d3b2f46ddd2814a1f9865dbc714eb2b07b6a7c68887ed5dd8c2ee38"
+            "archive": "https://github.com/lnbits/discordbot/archive/refs/tags/v0.1.1.zip",
+            "hash": "ae67307ed1bb26ae4a2d43c913008574f35291932c20baa9a7cdc561048333bf"
         },
         {
             "id": "boltcards",
@@ -395,13 +395,13 @@
             "id": "nostrnip5",
             "repo": "https://github.com/lnbits/nostrnip5",
             "name": "NostrNip5",
-            "version": "0.1.1",
-            "min_lnbits_version": "0.12.5",
+            "version": "0.2.6",
+            "min_lnbits_version": "0.12.9",
             "short_description": "Create NIP05 address for your domains",
             "icon": "https://github.com/lnbits/nostrnip5/raw/main/static/image/nostrnip5.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/nostrnip5/main/config.json",
-            "archive": "https://github.com/lnbits/nostrnip5/archive/refs/tags/v0.1.1.zip",
-            "hash": "10d56f3fd6754f9eadae71e14232d143ca7116fba8a05fab87dabc2ee5ba711c"
+            "archive": "https://github.com/lnbits/nostrnip5/archive/refs/tags/v0.2.6.zip",
+            "hash": "183715ab5d8b59939966ba8bb6f748f698bc047c820eab17b4cae1e50c97327c"
         },
         {
             "id": "splitpayments",
@@ -479,6 +479,18 @@
             "details_link": "https://raw.githubusercontent.com/lnbits/boltz/main/config.json",
             "archive": "https://github.com/lnbits/boltz/archive/refs/tags/v0.5.3.zip",
             "hash": "1e22c82a299e45dacef029dbaa26066718c58b551b27b05cadd705c3cb36b3ff"
+        },
+        {
+            "id": "boltz",
+            "repo": "https://github.com/lnbits/boltz",
+            "name": "Boltz",
+            "version": "0.6.0",
+            "min_lnbits_version": "0.12.11",
+            "short_description": "Perform onchain/offchain swaps",
+            "icon": "https://github.com/lnbits/boltz/raw/main/static/image/boltz.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/boltz/main/config.json",
+            "archive": "https://github.com/lnbits/boltz/archive/refs/tags/v0.6.0.zip",
+            "hash": "a88c02927878f321b14a5c750911803a7d5aa3ab9d427b26b2fed571e82a22ca"
         },
         {
             "id": "satsdice",
