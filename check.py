@@ -54,7 +54,7 @@ class Extension:
         self.hash = ext["hash"]
         self.min_lnbits_version = ext.get("min_lnbits_version")
 
-    def validate(self) -> (bool, str):
+    def validate(self) -> tuple[bool, str]:
         print(f"Checking '{self.name}' extension ({self.id} {self.version})")
 
         # sanity checks
