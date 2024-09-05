@@ -213,6 +213,11 @@ const Details = () => {
                             Minimum LNbits version:{" "}
                             {ext.min_lnbits_version || "0.0.0"}
                             <br />
+                            <Show when={ext.max_lnbits_version && ext.max_lnbits_version != "0"}>
+                                Maximum LNbits version:{" "}
+                                {ext.max_lnbits_version}
+                            </Show>
+                            <br />
                             Hash: {ext.hash}
                         </p>
                     </div>
@@ -239,10 +244,10 @@ const Home = () => {
                         <div class="ext-desc">
                             <h2>
                                 <A href={ext.id}>{ext.name}</A>
-                                <span class="min-version">
+                                <span class="min-version" title="Minimum LNbits version">
                                     {ext.min_lnbits_version || "0.0.0"}
                                 </span>
-                                <span class="version">{ext.version}</span>
+                                <span class="version" title="Extension version">{ext.version}</span>
                             </h2>
                             <p>{ext.short_description}</p>
                             <span title="contributors" class="contributors">
