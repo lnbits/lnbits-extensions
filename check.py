@@ -53,6 +53,7 @@ class Extension:
         self.archive = ext["archive"]
         self.hash = ext["hash"]
         self.min_lnbits_version = ext.get("min_lnbits_version")
+        self.max_lnbits_version = ext.get("max_lnbits_version")
 
     def validate(self) -> tuple[bool, str]:
         print(f"Checking '{self.name}' extension ({self.id} {self.version})")
@@ -146,6 +147,16 @@ class Extension:
                     False,
                     f"min_lnbits_version mismatch: {min_lnbits_version} != {self.min_lnbits_version}",
                 )
+
+            # check max_lnbits_version only if it's present in the config.json
+            max_lnbits_version = config.get("max_lnbits_version")
+            if max_lnbits_version:
+                print(f"- max_lnbits_version : {max_lnbits_version}")
+                if max_lnbits_version != self.max_lnbits_version:
+                    return (
+                        False,
+                        f"max_lnbits_version mismatch: {max_lnbits_version} != {self.max_lnbits_version}",
+                    )
 
         # check icon
         try:
