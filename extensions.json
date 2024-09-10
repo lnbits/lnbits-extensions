@@ -45,6 +45,17 @@
             "hash": "2ee8e5cbea86786692dff3bf2346064292451d4cc3c1c7b44cd0f9ea9c5994dc"
         },
         {
+            "id": "decoder",
+            "repo": "https://github.com/bitkarrot/decoder",
+            "name": "Decoder",
+            "min_lnbits_version": "0.11.0",
+            "version": "0.0.5",
+            "short_description": "Decode Lightning Network BOLT11, LNURL, and Lightning Address",
+            "icon": "https://raw.githubusercontent.com/bitkarrot/decoder/main/static/unlock.png",
+            "archive": "https://github.com/bitkarrot/decoder/archive/refs/tags/v0.0.5.zip",
+            "hash": "af6f14c31da626326ba002605c6c829e5b4378fa5a8412e695468b7a693c65b2"            
+        },
+        {
             "id": "gerty",
             "repo": "https://github.com/lnbits/gerty",
             "name": "Gerty",
