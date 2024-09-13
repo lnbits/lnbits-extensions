@@ -53,7 +53,7 @@
             "short_description": "Decode Lightning Network BOLT11, LNURL, and Lightning Address",
             "icon": "https://raw.githubusercontent.com/bitkarrot/decoder/main/static/unlock.png",
             "archive": "https://github.com/bitkarrot/decoder/archive/refs/tags/v0.0.5.zip",
-            "hash": "af6f14c31da626326ba002605c6c829e5b4378fa5a8412e695468b7a693c65b2"            
+            "hash": "af6f14c31da626326ba002605c6c829e5b4378fa5a8412e695468b7a693c65b2"
         },
         {
             "id": "gerty",
@@ -739,14 +739,14 @@
             "id": "lnurlp",
             "repo": "https://github.com/lnbits/lnurlp",
             "name": "Pay Links",
-            "version": "0.5.0",
+            "version": "0.5.5",
             "min_lnbits_version": "0.12.4",
-            "max_lnbits_version": "1.0.0",
+            "max_lnbits_version": "0",
             "short_description": "Create static payment links",
             "icon": "https://github.com/lnbits/lnurlp/raw/main/static/image/lnurl-pay.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/lnurlp/main/config.json",
-            "archive": "https://github.com/lnbits/lnurlp/archive/refs/tags/v0.5.0.zip",
-            "hash": "5fe1adc5705bccec0a0e092cfc94d34e3a8bc3d0e4ad317c6df3f9f31256d991"
+            "archive": "https://github.com/lnbits/lnurlp/archive/refs/tags/v0.5.5.zip",
+            "hash": "3058c48e7dd3f7d6e7d5b5a91a6e73790403b8abad22ac04dccd233e02ded9cf"
         },
         {
             "id": "deezy",
