@@ -1696,14 +1696,14 @@ reserved_b</stringProp>
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[nip5] Update address relays" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[nip5] Update address relays and pubkey" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
-    &quot;pubkey&quot;: &quot;04c915daefee38317fa734444acee390a8269fe5810b2241e5e6dd343dfbecc9&quot;,&#xd;
+    &quot;pubkey&quot;: &quot;04c915daefee38317fa734444acee390a8269fe5810b2241e5e6dd343dfbeeee&quot;,&#xd;
     &quot;relays&quot;: [&#xd;
         &quot;wss://relay.nostr.com&quot;,&#xd;
         &quot;ws://relay.nostr.org&quot;&#xd;
@@ -1842,7 +1842,7 @@ reserved_b</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check well-known" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="2104980247">{&quot;names&quot;:{&quot;${identifierOne}&quot;:&quot;04c915daefee38317fa734444acee390a8269fe5810b2241e5e6dd343dfbecc9&quot;},&quot;relays&quot;:{&quot;04c915daefee38317fa734444acee390a8269fe5810b2241e5e6dd343dfbecc9&quot;:[&quot;wss://relay.nostr.com&quot;,&quot;ws://relay.nostr.org&quot;]}}</stringProp>
+                <stringProp name="-1496278545">{&quot;names&quot;:{&quot;${identifierOne}&quot;:&quot;04c915daefee38317fa734444acee390a8269fe5810b2241e5e6dd343dfbeeee&quot;},&quot;relays&quot;:{&quot;04c915daefee38317fa734444acee390a8269fe5810b2241e5e6dd343dfbeeee&quot;:[&quot;wss://relay.nostr.com&quot;,&quot;ws://relay.nostr.org&quot;]}}</stringProp>
               </collectionProp>
               <stringProp name="Assertion.custom_message"></stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -6871,12 +6871,6 @@ reserved_b</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
-          <boolProp name="displayJMeterProperties">false</boolProp>
-          <boolProp name="displayJMeterVariables">true</boolProp>
-          <boolProp name="displaySystemProperties">false</boolProp>
-        </DebugSampler>
-        <hashTree/>
         <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
