@@ -8,7 +8,7 @@ if (!resp.id) {
 	AssertionResult.setFailureMessage("TPoS not updated");
 	AssertionResult.setFailure(true)
 } else if (resp.wallet !== walletId){
-	AssertionResult.setFailureMessage("TPoS description expected to be '"+walletId+"', but was: " + resp.wallet);
+	AssertionResult.setFailureMessage("TPoS wallet expected to be '"+walletId+"', but was: " + resp.wallet);
 	AssertionResult.setFailure(true)
 } else if (resp.tip_wallet != tipWalletId) {
 	AssertionResult.setFailureMessage("Tip wallet expected to be '"+tipWalletId+"', but was: " + resp.tip_wallet);
