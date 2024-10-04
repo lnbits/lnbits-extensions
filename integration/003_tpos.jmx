@@ -646,7 +646,14 @@
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;withdrawpin&quot;:${pin},&quot;withdrawbtwn&quot;:${timeBtw},&quot;name&quot;:&quot;Test ATM&quot;,&quot;wallet&quot;:&quot;${walletId}&quot;,&quot;currency&quot;:&quot;EUR&quot;,&quot;withdrawlimit&quot;:${withdrawLmt}}</stringProp>
+                  <stringProp name="Argument.value">{&#xd;
+    &quot;withdraw_pin&quot;:${pin},&#xd;
+    &quot;withdraw_between&quot;:${timeBtw},&#xd;
+    &quot;name&quot;: &quot;Test ATM&quot;,&#xd;
+    &quot;wallet&quot;: &quot;${walletId}&quot;,&#xd;
+    &quot;currency&quot;: &quot;EUR&quot;,&#xd;
+    &quot;withdraw_limit&quot;:${withdrawLmt}&#xd;
+}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -1194,10 +1201,6 @@
             </JSONPathAssertion>
             <hashTree/>
           </hashTree>
-          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a sec" enabled="false">
-            <stringProp name="ConstantTimer.delay">1000</stringProp>
-          </ConstantTimer>
-          <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[tpos] Check payment 1" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
