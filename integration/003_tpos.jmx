@@ -550,7 +550,13 @@
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;tip_options&quot;:&quot;${tipOptions}&quot;,&quot;tip_wallet&quot;:&quot;${tipWalletId}&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&#xd;
+    &quot;name&quot;: &quot;Test&quot;,&#xd;
+    &quot;wallet&quot;: &quot;${walletId}&quot;,&#xd;
+    &quot;currency&quot;: &quot;USD&quot;,&#xd;
+    &quot;tip_options&quot;: &quot;${tipOptions}&quot;,&#xd;
+    &quot;tip_wallet&quot;: &quot;${tipWalletId}&quot;&#xd;
+}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
