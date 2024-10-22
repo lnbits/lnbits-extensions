@@ -190,14 +190,14 @@
             "id": "tpos",
             "repo": "https://github.com/lnbits/tpos",
             "name": "TPoS",
-            "version": "0.7.1",
+            "version": "1.0.0",
             "min_lnbits_version": "0.12.6",
-            "max_lnbits_version": "1.0.0",
+            "max_lnbits_version": "0",
             "short_description": "Secure, mobile-ready, instant and shareable point of sale",
             "details_link": "https://raw.githubusercontent.com/lnbits/tpos/main/config.json",
             "icon": "https://raw.githubusercontent.com/lnbits/tpos/main/static/image/tpos.png",
-            "archive": "https://github.com/lnbits/tpos/archive/refs/tags/v0.7.1.zip",
-            "hash": "559670df0055af8d99419910739c8906ad9b1bf41d88660452990d33e0dd17c5"
+            "archive": "https://github.com/lnbits/tpos/archive/refs/tags/v1.0.0.zip",
+            "hash": "c39dc7bfe99b4181a218807ff9a80ed986f9759e85272ccf18bf58b9b83ac0aa"
         },
         {
             "id": "usermanager",
