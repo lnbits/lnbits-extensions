@@ -70,14 +70,14 @@
             "id": "gerty",
             "repo": "https://github.com/lnbits/gerty",
             "name": "Gerty",
-            "version": "0.1.6",
+            "version": "1.0.0",
             "min_lnbits_version": "0.11.0",
-            "max_lnbits_version": "1.0.0",
+            "max_lnbits_version": "0",
             "short_description": "Your Bitcoin assistant",
             "icon": "https://raw.githubusercontent.com/lnbits/gerty/main/static/gerty.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/gerty/main/config.json",
-            "archive": "https://github.com/lnbits/gerty/archive/refs/tags/v0.1.6.zip",
-            "hash": "76eda0f26346a238e425b352e2bf953de96b1daae52f54f11add4a925e9cdb98"
+            "archive": "https://github.com/lnbits/gerty/archive/refs/tags/v1.0.0.zip",
+            "hash": "5f7c3d92e19dd96ad06613d81369e810d8f3a17b8f970db22f6350dc52ed8d0e"
         },
         {
             "id": "jukebox",
