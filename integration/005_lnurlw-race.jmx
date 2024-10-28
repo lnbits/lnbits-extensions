@@ -876,7 +876,7 @@
             </ResponseAssertion>
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check success action present" enabled="true">
-              <stringProp name="JSON_PATH">success_action</stringProp>
+              <stringProp name="JSON_PATH">extra.success_action</stringProp>
               <stringProp name="EXPECTED_VALUE"></stringProp>
               <boolProp name="JSONVALIDATION">false</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
