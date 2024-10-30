@@ -4389,7 +4389,7 @@ reserved_b</stringProp>
             </JSONPathAssertion>
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check price" enabled="true">
-              <stringProp name="JSON_PATH">config.price</stringProp>
+              <stringProp name="JSON_PATH">extra.price</stringProp>
               <stringProp name="EXPECTED_VALUE">500.0</stringProp>
               <boolProp name="JSONVALIDATION">true</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
@@ -4408,7 +4408,7 @@ reserved_b</stringProp>
             <hashTree/>
             <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract price in sats" enabled="true">
               <stringProp name="JSONPostProcessor.referenceNames">priceInSats</stringProp>
-              <stringProp name="JSONPostProcessor.jsonPathExprs">config.price_in_sats</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">extra.price_in_sats</stringProp>
               <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
             </JSONPostProcessor>
             <hashTree/>
@@ -4566,9 +4566,9 @@ reserved_b</stringProp>
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 500" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 400" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="52469">500</stringProp>
+                <stringProp name="51508">400</stringProp>
               </collectionProp>
               <stringProp name="Assertion.custom_message"></stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
@@ -4713,7 +4713,7 @@ reserved_b</stringProp>
             </JSONPathAssertion>
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check price (10% discount)" enabled="true">
-              <stringProp name="JSON_PATH">config.price</stringProp>
+              <stringProp name="JSON_PATH">extra.price</stringProp>
               <stringProp name="EXPECTED_VALUE">270.0</stringProp>
               <boolProp name="JSONVALIDATION">true</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
@@ -4732,7 +4732,7 @@ reserved_b</stringProp>
             <hashTree/>
             <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract price in sats" enabled="true">
               <stringProp name="JSONPostProcessor.referenceNames">priceInSats</stringProp>
-              <stringProp name="JSONPostProcessor.jsonPathExprs">config.price_in_sats</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">extra.price_in_sats</stringProp>
               <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
             </JSONPostProcessor>
             <hashTree/>
@@ -4941,7 +4941,7 @@ reserved_b</stringProp>
             </JSONPathAssertion>
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check price (20% discount)" enabled="true">
-              <stringProp name="JSON_PATH">config.price</stringProp>
+              <stringProp name="JSON_PATH">extra.price</stringProp>
               <stringProp name="EXPECTED_VALUE">240.0</stringProp>
               <boolProp name="JSONVALIDATION">true</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
@@ -5094,7 +5094,7 @@ reserved_b</stringProp>
             </JSONPathAssertion>
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check price (25% discount)" enabled="true">
-              <stringProp name="JSON_PATH">config.price</stringProp>
+              <stringProp name="JSON_PATH">extra.price</stringProp>
               <stringProp name="EXPECTED_VALUE">225.0</stringProp>
               <boolProp name="JSONVALIDATION">true</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
@@ -5113,7 +5113,7 @@ reserved_b</stringProp>
             <hashTree/>
             <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract price in sats" enabled="true">
               <stringProp name="JSONPostProcessor.referenceNames">priceInSats</stringProp>
-              <stringProp name="JSONPostProcessor.jsonPathExprs">config.price_in_sats</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">extra.price_in_sats</stringProp>
               <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
             </JSONPostProcessor>
             <hashTree/>
@@ -5327,7 +5327,7 @@ reserved_b</stringProp>
             </JSONPathAssertion>
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check price" enabled="true">
-              <stringProp name="JSON_PATH">config.price</stringProp>
+              <stringProp name="JSON_PATH">extra.price</stringProp>
               <stringProp name="EXPECTED_VALUE">606.0</stringProp>
               <boolProp name="JSONVALIDATION">true</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
@@ -5480,7 +5480,7 @@ reserved_b</stringProp>
             </JSONPathAssertion>
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check price" enabled="true">
-              <stringProp name="JSON_PATH">config.price</stringProp>
+              <stringProp name="JSON_PATH">extra.price</stringProp>
               <stringProp name="EXPECTED_VALUE">1010.0</stringProp>
               <boolProp name="JSONVALIDATION">true</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
@@ -5499,7 +5499,7 @@ reserved_b</stringProp>
             <hashTree/>
             <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract price in sats" enabled="true">
               <stringProp name="JSONPostProcessor.referenceNames">priceInSats</stringProp>
-              <stringProp name="JSONPostProcessor.jsonPathExprs">config.price_in_sats</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">extra.price_in_sats</stringProp>
               <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
             </JSONPostProcessor>
             <hashTree/>
@@ -5657,9 +5657,9 @@ reserved_b</stringProp>
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 500" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 400" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="52469">500</stringProp>
+                <stringProp name="51508">400</stringProp>
               </collectionProp>
               <stringProp name="Assertion.custom_message"></stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
@@ -5804,7 +5804,7 @@ reserved_b</stringProp>
             </JSONPathAssertion>
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check price (10% discount)" enabled="true">
-              <stringProp name="JSON_PATH">config.price</stringProp>
+              <stringProp name="JSON_PATH">extra.price</stringProp>
               <stringProp name="EXPECTED_VALUE">545.4</stringProp>
               <boolProp name="JSONVALIDATION">true</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
@@ -5823,7 +5823,7 @@ reserved_b</stringProp>
             <hashTree/>
             <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract price in sats" enabled="true">
               <stringProp name="JSONPostProcessor.referenceNames">priceInSats</stringProp>
-              <stringProp name="JSONPostProcessor.jsonPathExprs">config.price_in_sats</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">extra.price_in_sats</stringProp>
               <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
             </JSONPostProcessor>
             <hashTree/>
@@ -6032,7 +6032,7 @@ reserved_b</stringProp>
             </JSONPathAssertion>
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check price (20% discount)" enabled="true">
-              <stringProp name="JSON_PATH">config.price</stringProp>
+              <stringProp name="JSON_PATH">extra.price</stringProp>
               <stringProp name="EXPECTED_VALUE">484.8</stringProp>
               <boolProp name="JSONVALIDATION">true</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
@@ -6185,7 +6185,7 @@ reserved_b</stringProp>
             </JSONPathAssertion>
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check price (25% discount)" enabled="true">
-              <stringProp name="JSON_PATH">config.price</stringProp>
+              <stringProp name="JSON_PATH">extra.price</stringProp>
               <stringProp name="EXPECTED_VALUE">454.5</stringProp>
               <boolProp name="JSONVALIDATION">true</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
@@ -6204,7 +6204,7 @@ reserved_b</stringProp>
             <hashTree/>
             <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract price in sats" enabled="true">
               <stringProp name="JSONPostProcessor.referenceNames">priceInSats</stringProp>
-              <stringProp name="JSONPostProcessor.jsonPathExprs">config.price_in_sats</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">extra.price_in_sats</stringProp>
               <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
             </JSONPostProcessor>
             <hashTree/>
@@ -6418,7 +6418,7 @@ reserved_b</stringProp>
             </JSONPathAssertion>
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check price" enabled="true">
-              <stringProp name="JSON_PATH">config.price</stringProp>
+              <stringProp name="JSON_PATH">extra.price</stringProp>
               <stringProp name="EXPECTED_VALUE">300.0</stringProp>
               <boolProp name="JSONVALIDATION">true</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
@@ -6691,7 +6691,7 @@ reserved_b</stringProp>
             </JSONPathAssertion>
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check price" enabled="true">
-              <stringProp name="JSON_PATH">config.price</stringProp>
+              <stringProp name="JSON_PATH">extra.price</stringProp>
               <stringProp name="EXPECTED_VALUE">500.0</stringProp>
               <boolProp name="JSONVALIDATION">true</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
@@ -6710,7 +6710,7 @@ reserved_b</stringProp>
             <hashTree/>
             <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract full price" enabled="true">
               <stringProp name="JSONPostProcessor.referenceNames">identifierThreeFullPrice</stringProp>
-              <stringProp name="JSONPostProcessor.jsonPathExprs">config.price_in_sats</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">extra.price_in_sats</stringProp>
               <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
             </JSONPostProcessor>
             <hashTree/>
@@ -6841,7 +6841,7 @@ reserved_b</stringProp>
             </JSONPathAssertion>
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check price" enabled="true">
-              <stringProp name="JSON_PATH">config.price</stringProp>
+              <stringProp name="JSON_PATH">extra.price</stringProp>
               <stringProp name="EXPECTED_VALUE">375.0</stringProp>
               <boolProp name="JSONVALIDATION">true</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
