@@ -1114,7 +1114,7 @@ reserved_b</stringProp>
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
-    &quot;cost_config&quot;: {&#xd;
+    &quot;cost_extra&quot;: {&#xd;
         &quot;max_years&quot;: &quot;3&quot;,&#xd;
         &quot;char_count_cost&quot;: [],&#xd;
         &quot;rank_cost&quot;: []&#xd;
@@ -1294,7 +1294,7 @@ reserved_b</stringProp>
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
     &quot;cost&quot;: 100,&#xd;
-    &quot;cost_config&quot;: {&#xd;
+    &quot;cost_extra&quot;: {&#xd;
         &quot;char_count_cost&quot;: [&#xd;
             {&#xd;
                 &quot;bracket&quot;: &quot;1&quot;,&#xd;
@@ -1424,7 +1424,7 @@ reserved_b</stringProp>
             </JSONPathAssertion>
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check cost config" enabled="true">
-              <stringProp name="JSON_PATH">cost_config</stringProp>
+              <stringProp name="JSON_PATH">cost_extra</stringProp>
               <stringProp name="EXPECTED_VALUE">{
     &quot;max_years&quot;: 5,
     &quot;char_count_cost&quot;: [
