@@ -75,7 +75,7 @@ jobs:
 
         - name: run jmx scripts
           env:
-            EXTENSIONS_MANIFEST_PATH: "/lnbits/lnbits-extensions/${{ github.head_ref || github.ref_name }}/extensions.json"
+            EXTENSIONS_MANIFEST_PATH: "lnbits/lnbits-extensions/refs/heads/v1_updates/extensions_v1.json"
           run: |
             make test
 
