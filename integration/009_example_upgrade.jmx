@@ -45,12 +45,12 @@
           </elementProp>
           <elementProp name="ext_version_1" elementType="Argument">
             <stringProp name="Argument.name">ext_version_1</stringProp>
-            <stringProp name="Argument.value">0.3.4</stringProp>
+            <stringProp name="Argument.value">1.0.1</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="ext_version_2" elementType="Argument">
             <stringProp name="Argument.name">ext_version_2</stringProp>
-            <stringProp name="Argument.value">0.3.5</stringProp>
+            <stringProp name="Argument.value">1.0.2</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="test_version" elementType="Argument">
