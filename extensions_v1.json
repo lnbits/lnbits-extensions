@@ -301,7 +301,7 @@
             "repo": "https://github.com/lnbits/example",
             "name": "Build your own!",
             "version": "1.0.2",
-            "min_lnbits_version": "0.12.6",
+            "min_lnbits_version": "1.0.0",
             "short_description": "Guide for extension developers",
             "icon": "https://raw.githubusercontent.com/lnbits/example/main/static/bitcoin-extension.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/example/main/config.json",
