@@ -35,25 +35,9 @@ env() {
 }
 
 # param: extension id (example)
-# param: key (version)
-# param: value (v0.0.0)
-update_extension_attribute(){
-    tmp=$(mktemp)
-    version=$(jq -r --arg id $1 '[.extensions[] | select(.id == $id)] | last | .version' ./extensions.json)
-    jq_cmd_string='( .extensions[] | select(.id == $id) | select(.version == $version) ) |= with_entries(if .key == $key then .value = $value else . end)'
-    jq --indent 4 --arg id $1 --arg key $2 --arg value $3 --arg version $version "$jq_cmd_string" extensions.json > "$tmp" && mv "$tmp" extensions.json
-}
-
-# param: extension id (example)
 # param: version (v0.0.0)
 update_extension() {
-    archive="https://github.com/lnbits/$1/archive/refs/tags/$2.zip"
-    wget -q --spider $archive || { echo "ERROR: release does not exist" ; exit 1 ; }
-    update_extension_attribute $1 version $(echo $2 | sed -r "s/v//")
-    # set max_version to 0, which means there is no max version for latest release
-    update_extension_attribute $1 max_lnbits_version 0
-    update_extension_attribute $1 archive $archive
-    update_extension_attribute $1 hash $(wget -O - $archive 2> /dev/null | sha256sum | cut -d" " -f 1)
+    python update_version.py $1 $2
 }
 
 # execute functions
