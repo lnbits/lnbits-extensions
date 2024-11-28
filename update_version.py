@@ -52,6 +52,7 @@ if latest_extension["min_lnbits_version"] != config.get("min_lnbits_version"):
     new_ext["min_lnbits_version"] = config.get("min_lnbits_version")
     # remove max version from latest release
     new_ext.pop("max_lnbits_version", None)
+    # include the new extension in the list at the proper index
     _extensions = extensions["extensions"][:]
     _extensions.insert(latest_index+1, new_ext)
     extensions["extensions"] = _extensions
