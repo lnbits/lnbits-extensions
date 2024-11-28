@@ -39,10 +39,6 @@ for i, extension in enumerate(extensions["extensions"]):
 assert latest_extension, f"Extension {ext_name} not found in extensions.json"
 assert latest_index, f"Extension {ext_name} not found in extensions.json"
 
-# update the config.json into the next release
-extensions["extensions"][latest_index]["name"] = config.get("name")
-extensions["extensions"][latest_index]["short_description"] = config.get("short_description")
-
 # check if min_lnbits_version is different
 if latest_extension["min_lnbits_version"] != config.get("min_lnbits_version"):
     new_ext = latest_extension.copy()
@@ -50,6 +46,8 @@ if latest_extension["min_lnbits_version"] != config.get("min_lnbits_version"):
     new_ext["archive"] = archive
     new_ext["hash"] = archive_hash
     new_ext["min_lnbits_version"] = config.get("min_lnbits_version")
+    new_ext["name"] = config.get("name")
+    new_ext["short_description"] = config.get("short_description")
     # remove max version from latest release
     new_ext.pop("max_lnbits_version", None)
     # include the new extension in the list at the proper index
@@ -63,6 +61,9 @@ else:
     extensions["extensions"][latest_index]["version"] = version.replace("v", "")
     extensions["extensions"][latest_index]["archive"] = archive
     extensions["extensions"][latest_index]["hash"] = archive_hash
+    # update the config.json into the next release
+    extensions["extensions"][latest_index]["name"] = config.get("name")
+    extensions["extensions"][latest_index]["short_description"] = config.get("short_description")
 
 # update the extension.json file
 with open("extensions.json", "w") as ext_json:
