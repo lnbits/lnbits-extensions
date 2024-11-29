@@ -1232,11 +1232,22 @@
             "name": "Tip Jar",
             "version": "0.2.4",
             "min_lnbits_version": "0.11.0",
-            "max_lnbits_version": "1.0.0",
+            "max_lnbits_version": "1.0.1",
             "short_description": "Accept Bitcoin donations, with messages attached!",
             "icon": "https://github.com/lnbits/tipjar/raw/main/static/image/tipjar.png",
             "archive": "https://github.com/lnbits/tipjar/archive/refs/tags/v0.2.4.zip",
             "hash": "1fdb8f18ebbd10f7f1d67cedb8ac3c2f5c97f4096fb3dc650b9475e73c67b289"
+        },
+        {
+            "id": "tipjar",
+            "repo": "https://github.com/lnbits/tipjar",
+            "name": "Tip Jar",
+            "version": "1.0.1",
+            "min_lnbits_version": "1.0.0",
+            "short_description": "Accept Bitcoin donations, with messages attached!",
+            "icon": "https://github.com/lnbits/tipjar/raw/main/static/image/tipjar.png",
+            "archive": "https://github.com/lnbits/tipjar/archive/refs/tags/v1.0.1.zip",
+            "hash": "4db8ecc041e788c50138f003eb3b774523c0092ea570f8e25449d5b9ed8648c6"
         },
         {
             "id": "lndhub",
