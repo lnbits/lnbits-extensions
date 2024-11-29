@@ -524,6 +524,18 @@
             "hash": "9f9ac52beecd0457d0456abb7a581df5c8d97830172a01d0591d38958debb57f"
         },
         {
+            "id": "boltcards",
+            "repo": "https://github.com/lnbits/boltcards",
+            "name": "Bolt Cards",
+            "version": "1.0.0",
+            "min_lnbits_version": "1.0.0",
+            "short_description": "Self custody Bolt Cards with one time LNURLw",
+            "icon": "https://github.com/lnbits/boltcards/raw/main/static/image/boltcard.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/boltcards/main/config.json",
+            "archive": "https://github.com/lnbits/boltcards/archive/refs/tags/v1.0.0.zip",
+            "hash": "38b1e3074bdbe61c3b6cf1883cfd997b04330e147abd50d4a9dc338061da992e"
+        },
+        {
             "id": "nostrnip5",
             "repo": "https://github.com/lnbits/nostrnip5",
             "name": "NostrNip5",
