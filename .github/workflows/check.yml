@@ -63,7 +63,7 @@ jobs:
             LNBITS_ADMIN_UI: true
             DEBUG: true
             LNBITS_EXTENSIONS_DEFAULT_INSTALL: "watchonly, satspay, tipjar, tpos, lnurlp, withdraw"
-            LNBITS_EXTENSIONS_MANIFESTS: "https://raw.githubusercontent.com/lnbits/lnbits-extensions/${{ github.head_ref || github.ref_name }}/extensions_v1.json"
+            LNBITS_EXTENSIONS_MANIFESTS: "https://raw.githubusercontent.com/lnbits/lnbits-extensions/${{ github.head_ref || github.ref_name }}/extensions.json"
             LNBITS_BACKEND_WALLET_CLASS: FakeWallet
           run: |
             git clone https://github.com/lnbits/lnbits.git
@@ -75,7 +75,7 @@ jobs:
 
         - name: run jmx scripts
           env:
-            EXTENSIONS_MANIFEST_PATH: "lnbits/lnbits-extensions/refs/heads/v1_updates/extensions_v1.json"
+            EXTENSIONS_MANIFEST_PATH: "/lnbits/lnbits-extensions/${{ github.head_ref || github.ref_name }}/extensions.json"
           run: |
             make test
 
