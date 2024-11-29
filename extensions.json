@@ -1298,6 +1298,18 @@
             "hash": "2d904d2c966268dab373944cdfad09fac7aeaf41b2265603e98fee2fbb8e2e71"
         },
         {
+            "id": "lncalendar",
+            "repo": "https://github.com/lnbits/lncalendar",
+            "name": "LNCalendar",
+            "version": "1.0.0",
+            "min_lnbits_version": "1.0.0",
+            "short_description": "A paid scheduling extension",
+            "icon": "https://raw.githubusercontent.com/lnbits/lncalendar/main/static/image/lncalendar.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/lncalendar/main/config.json",
+            "archive": "https://github.com/lnbits/lncalendar/archive/refs/tags/v1.0.0.zip",
+            "hash": "5b0d3190a6c18e51755dd89fc77daaa1086875a6079a257a6cad87be9096db5e"
+        },
+        {
             "id": "scheduler",
             "repo": "https://github.com/bitkarrot/scheduler",
             "name": "Scheduler",
