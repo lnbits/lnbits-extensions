@@ -30,7 +30,7 @@
           </elementProp>
           <elementProp name="excludedExtensions" elementType="Argument">
             <stringProp name="Argument.name">excludedExtensions</stringProp>
-            <stringProp name="Argument.value">bleskomat,boltcards,boltz,copilot,decoder,deezy,discordbot,events,gerty,invoices,jukebox,livestream,lnaddress,lncalendar,lnticket,lnurldevice,nostrclient,nostrmarket,nostrrelay,offlineshop,paywall,satsdice,scheduler,scrub,smtp,splitpayments,streamalerts,subdomains,usermanager</stringProp>
+            <stringProp name="Argument.value">discordbot,lnaddress</stringProp>
             <stringProp name="Argument.desc">Comma separated values, no spaces.</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
@@ -41,7 +41,7 @@
           </elementProp>
           <elementProp name="extensionsManifestPath" elementType="Argument">
             <stringProp name="Argument.name">extensionsManifestPath</stringProp>
-            <stringProp name="Argument.value">${__property(extensionsManifestPath,,/lnbits/lnbits-extensions/refs/heads/v1_updates/extensions_v1.json)}</stringProp>
+            <stringProp name="Argument.value">${__property(extensionsManifestPath,,/lnbits/lnbits-extensions/main/extensions.json)}</stringProp>
             <stringProp name="Argument.desc">HTTP path for the raw.githubusercontent.com repo</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
