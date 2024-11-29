@@ -1271,6 +1271,17 @@
             "hash": "03432a3e788fcbfebb74fe58355dc4526bced9173493dcb48269681a190815ee"
         },
         {
+            "id": "lnaddress",
+            "repo": "https://github.com/lnbits/lnaddress",
+            "name": "Lightning Address",
+            "version": "1.0.0",
+            "min_lnbits_version": "1.0.0",
+            "short_description": "Sell LN addresses for your domain",
+            "icon": "https://github.com/lnbits/lnaddress/raw/main/static/image/lnaddress.png",
+            "archive": "https://github.com/lnbits/lnaddress/archive/refs/tags/v1.0.0.zip",
+            "hash": "6476502e702cc7c7ff1e1af05a3b31389d05370a51bdcaca9dc0dfad5466ddd3"
+        },
+        {
             "id": "watchonly",
             "repo": "https://github.com/lnbits/watchonly",
             "name": "Onchain Wallet",
