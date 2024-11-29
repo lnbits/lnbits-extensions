@@ -894,6 +894,18 @@
             "hash": "f4e7cfb6be9ce425f320e78f7b8ebba2bd79b377f4a6547542bf7ca5af386ff3"
         },
         {
+            "id": "paywall",
+            "repo": "https://github.com/lnbits/paywall",
+            "name": "Paywall",
+            "version": "1.0.0",
+            "min_lnbits_version": "1.0.0",
+            "short_description": "Create paywalls for content",
+            "icon": "https://github.com/lnbits/paywall/raw/main/static/image/paywall.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/paywall/main/config.json",
+            "archive": "https://github.com/lnbits/paywall/archive/refs/tags/v1.0.0.zip",
+            "hash": "30000cf6a0e055ba1f0821d1ba3ca1f06a5276214f010d72195b1103811a25e9"
+        },
+        {
             "id": "satspay",
             "repo": "https://github.com/lnbits/satspay",
             "name": "SatsPay Server",
