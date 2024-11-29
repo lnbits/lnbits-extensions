@@ -965,6 +965,17 @@
             "hash": "0c35c70fae5bf881a60284511d47dcc8de05687b006f4edfbc58bb89463895a5"
         },
         {
+            "id": "bleskomat",
+            "repo": "https://github.com/lnbits/bleskomat",
+            "name": "Bleskomat",
+            "version": "1.0.0",
+            "min_lnbits_version": "1.0.0",
+            "short_description": "Connect a Bleskomat ATM to an lnbits",
+            "icon": "https://github.com/lnbits/bleskomat/raw/main/static/image/bleskomat.png",
+            "archive": "https://github.com/lnbits/bleskomat/archive/refs/tags/v1.0.0.zip",
+            "hash": "13c61db674ca86493cd55240294ea5ce48a70ffa2a396374ec0e770fae6e807a"
+        },
+        {
             "id": "tipjar",
             "repo": "https://github.com/lnbits/tipjar",
             "name": "Tip Jar",
