@@ -45,6 +45,18 @@
             "hash": "2ee8e5cbea86786692dff3bf2346064292451d4cc3c1c7b44cd0f9ea9c5994dc"
         },
         {
+            "id": "copilot",
+            "repo": "https://github.com/lnbits/copilot",
+            "name": "Streamer Copilot",
+            "version": "1.0.0",
+            "min_lnbits_version": "1.0.0",
+            "short_description": "Video tips/animations/webhooks",
+            "icon": "https://raw.githubusercontent.com/lnbits/copilot/main/static/bitcoin-streaming.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/copilot/main/config.json",
+            "archive": "https://github.com/lnbits/copilot/archive/refs/tags/v1.0.0.zip",
+            "hash": "ecba257433164ecbfbf08f804883054bb3a0af8dd858c153f6fc35470968b60e"
+        },
+        {
             "id": "decoder",
             "repo": "https://github.com/bitkarrot/decoder",
             "name": "Decoder",
