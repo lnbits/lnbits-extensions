@@ -392,6 +392,18 @@
             "hash": "937afd960b43507e9556de7c4c00b4492369cad8e744ae50127b6538dbfdadc6"
         },
         {
+            "id": "smtp",
+            "repo": "https://github.com/lnbits/smtp",
+            "name": "SMTP",
+            "version": "1.0.0",
+            "min_lnbits_version": "1.0.0",
+            "short_description": "Charge sats for sending emails",
+            "icon": "https://github.com/lnbits/smtp/raw/main/static/smtp-bitcoin-email.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/smtp/main/config.json",
+            "archive": "https://github.com/lnbits/smtp/archive/refs/tags/v1.0.0.zip",
+            "hash": "d516e96cc3d76edee1b9f93c14229ee6fa458bed8886587aa19263adb75e9d0c"
+        },
+        {
             "id": "discordbot",
             "repo": "https://github.com/lnbits/discordbot",
             "name": "Discordbot",
