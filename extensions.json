@@ -607,6 +607,18 @@
             "hash": "6741b3e7ad0d9d37616914de2a032a83d54b9d4eb9ac7c3a2ab6547e26a36263"
         },
         {
+            "id": "satsdice",
+            "repo": "https://github.com/lnbits/satsdice",
+            "name": "Sats Dice",
+            "version": "1.0.0",
+            "min_lnbits_version": "1.0.0",
+            "short_description": "LNURL Satoshi dice",
+            "icon": "https://github.com/lnbits/satsdice/raw/main/static/image/satsdice.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/satsdice/main/config.json",
+            "archive": "https://github.com/lnbits/satsdice/archive/refs/tags/v1.0.0.zip",
+            "hash": "6729793a5aaecf29383ea4c8c569f6e2ecc0f9d7a1844be5c5bde2ca174795a3"
+        },
+        {
             "id": "offlineshop",
             "repo": "https://github.com/lnbits/offlineshop",
             "name": "Offlineshop",
