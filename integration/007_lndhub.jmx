@@ -422,9 +422,9 @@
                 <intProp name="Assertion.test_type">8</intProp>
               </ResponseAssertion>
               <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor paymentRequest" enabled="true">
-                <stringProp name="JSONPostProcessor.referenceNames">paymentRequest</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">payment_request</stringProp>
+              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor bolt11" enabled="true">
+                <stringProp name="JSONPostProcessor.referenceNames">bolt11</stringProp>
+                <stringProp name="JSONPostProcessor.jsonPathExprs">bolt11</stringProp>
                 <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
               </JSONPostProcessor>
               <hashTree/>
@@ -435,7 +435,7 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">{&quot;out&quot;:true,&quot;bolt11&quot;:&quot;${paymentRequest}&quot;}</stringProp>
+                    <stringProp name="Argument.value">{&quot;out&quot;:true,&quot;bolt11&quot;:&quot;${bolt11}&quot;}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
@@ -568,9 +568,9 @@
                 <intProp name="Assertion.test_type">8</intProp>
               </ResponseAssertion>
               <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor paymentRequest" enabled="true">
-                <stringProp name="JSONPostProcessor.referenceNames">paymentRequest</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">payment_request</stringProp>
+              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor bolt11" enabled="true">
+                <stringProp name="JSONPostProcessor.referenceNames">bolt11</stringProp>
+                <stringProp name="JSONPostProcessor.jsonPathExprs">bolt11</stringProp>
                 <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
               </JSONPostProcessor>
               <hashTree/>
@@ -581,7 +581,7 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">{&quot;out&quot;:true,&quot;bolt11&quot;:&quot;${paymentRequest}&quot;}</stringProp>
+                    <stringProp name="Argument.value">{&quot;out&quot;:true,&quot;bolt11&quot;:&quot;${bolt11}&quot;}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
@@ -970,8 +970,8 @@
             <boolProp name="ISREGEX">true</boolProp>
           </JSONPathAssertion>
           <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract paymentRequest" enabled="true">
-            <stringProp name="JSONPostProcessor.referenceNames">paymentRequest</stringProp>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract bolt11" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">bolt11</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">payment_request</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
           </JSONPostProcessor>
@@ -983,7 +983,7 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;out&quot;:true,&quot;bolt11&quot;:&quot;${paymentRequest}&quot;}</stringProp>
+                <stringProp name="Argument.value">{&quot;out&quot;:true,&quot;bolt11&quot;:&quot;${bolt11}&quot;}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -1171,9 +1171,9 @@
             <intProp name="Assertion.test_type">8</intProp>
           </ResponseAssertion>
           <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor paymentRequest" enabled="true">
-            <stringProp name="JSONPostProcessor.referenceNames">paymentRequest</stringProp>
-            <stringProp name="JSONPostProcessor.jsonPathExprs">payment_request</stringProp>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor bolt11" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">bolt11</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">bolt11</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
           </JSONPostProcessor>
           <hashTree/>
@@ -1184,7 +1184,7 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;invoice&quot;: &quot;${paymentRequest}&quot;}</stringProp>
+                <stringProp name="Argument.value">{&quot;invoice&quot;: &quot;${bolt11}&quot;}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -1388,9 +1388,9 @@
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
             <stringProp name="HTTPSampler.path">/lndhub/ext/balance</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
             <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
             <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
@@ -1411,12 +1411,16 @@
                   <stringProp name="Header.name">Authorization</stringProp>
                   <stringProp name="Header.value">Bearer xxx</stringProp>
                 </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 500" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 400" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="52469">500</stringProp>
+                <stringProp name="51508">400</stringProp>
               </collectionProp>
               <stringProp name="Assertion.custom_message"></stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
@@ -1465,9 +1469,9 @@
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 500" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 400" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="52469">500</stringProp>
+                <stringProp name="51508">400</stringProp>
               </collectionProp>
               <stringProp name="Assertion.custom_message"></stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
@@ -1509,12 +1513,16 @@
                   <stringProp name="Header.name">Authorization</stringProp>
                   <stringProp name="Header.value">Bearer xxx</stringProp>
                 </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 500" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 400" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="52469">500</stringProp>
+                <stringProp name="51508">400</stringProp>
               </collectionProp>
               <stringProp name="Assertion.custom_message"></stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
@@ -1563,12 +1571,16 @@
                   <stringProp name="Header.name">Authorization</stringProp>
                   <stringProp name="Header.value">Bearer xxx</stringProp>
                 </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 500" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 400" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="52469">500</stringProp>
+                <stringProp name="51508">400</stringProp>
               </collectionProp>
               <stringProp name="Assertion.custom_message"></stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
@@ -1583,7 +1595,7 @@
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;invoice&quot;: &quot;${paymentRequest}&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;invoice&quot;: &quot;${bolt11}&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -1617,12 +1629,16 @@
                   <stringProp name="Header.name">Authorization</stringProp>
                   <stringProp name="Header.value">Bearer xxx</stringProp>
                 </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 500" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 400" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="52469">500</stringProp>
+                <stringProp name="51508">400</stringProp>
               </collectionProp>
               <stringProp name="Assertion.custom_message"></stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>

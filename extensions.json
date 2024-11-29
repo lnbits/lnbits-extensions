@@ -1005,7 +1005,7 @@
             "name": "Invoices",
             "version": "1.0.0",
             "min_lnbits_version": "1.0.0",
-            "short_description": "Create invoices for your clients.",
+            "short_description": "Create invoices for your clients",
             "icon": "https://github.com/lnbits/invoices/raw/main/static/image/invoices.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/invoices/main/config.json",
             "archive": "https://github.com/lnbits/invoices/archive/refs/tags/v1.0.0.zip",
