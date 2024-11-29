@@ -1343,6 +1343,18 @@
             "hash": "abc6008e53ab6a72a4cf0953816d488bce026542df20937c2d3ca8bae99d4a69"
         },
         {
+            "id": "nostrrelay",
+            "repo": "https://github.com/lnbits/nostrrelay",
+            "name": "Nostr Relay",
+            "version": "1.0.0",
+            "min_lnbits_version": "1.0.0",
+            "short_description": "One click launch your own relay!",
+            "icon": "https://raw.githubusercontent.com/lnbits/nostrrelay/main/static/image/nostrrelay.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/nostrrelay/main/config.json",
+            "archive": "https://github.com/lnbits/nostrrelay/archive/refs/tags/v1.0.0.zip",
+            "hash": "b1a00d3f2a6220a9cb5478faed905e7b98b144a4ae399d3d9f23db6909a4ea23"
+        },
+        {
             "id": "nostrmarket",
             "repo": "https://github.com/lnbits/nostrmarket",
             "name": "Nostr Market",
