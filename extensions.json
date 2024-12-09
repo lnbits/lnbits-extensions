@@ -620,6 +620,18 @@
             "hash": "b3acbf033f711c51b01fab866abedde5ba0edd2f14893ac9fd6b50785329f34f"
         },
         {
+            "id": "splitpayments",
+            "repo": "https://github.com/lnbits/splitpayments",
+            "name": "Split Payments",
+            "version": "1.0.0",
+            "min_lnbits_version": "1.0.0",
+            "short_description": "Split incoming payments across wallets",
+            "icon": "https://github.com/lnbits/splitpayments/raw/main/static/image/split-payments.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/splitpayments/main/config.json",
+            "archive": "https://github.com/lnbits/splitpayments/archive/refs/tags/v1.0.0.zip",
+            "hash": "781fcb954f10947c53696084d8e2df2c23473788345efccbd649b27e3d7d76d8"
+        },
+        {
             "id": "boltz",
             "repo": "https://github.com/lnbits/boltz",
             "name": "Boltz",
