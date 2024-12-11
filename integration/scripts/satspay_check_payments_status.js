@@ -13,7 +13,7 @@ var pendingCount = 0
 
 for (var i=0; i<resp.length; i++) {
   var payment = resp[i]
-  if (payment.pending) pendingCount++
+  if (payment.status === "pending") pendingCount++
 }
 
 if (pendingCount !== 1) {

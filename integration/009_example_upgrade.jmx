@@ -45,12 +45,12 @@
           </elementProp>
           <elementProp name="ext_version_1" elementType="Argument">
             <stringProp name="Argument.name">ext_version_1</stringProp>
-            <stringProp name="Argument.value">0.3.4</stringProp>
+            <stringProp name="Argument.value">1.0.1</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="ext_version_2" elementType="Argument">
             <stringProp name="Argument.name">ext_version_2</stringProp>
-            <stringProp name="Argument.value">0.3.5</stringProp>
+            <stringProp name="Argument.value">1.0.2</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="test_version" elementType="Argument">
@@ -961,7 +961,7 @@ vars.put(&quot;ext_version&quot;, vars.get(&quot;ext_version_1&quot;));
             <stringProp name="HTTPSampler.port">${port}</stringProp>
             <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-            <stringProp name="HTTPSampler.path">/${extension}/api/v1/test/xyz</stringProp>
+            <stringProp name="HTTPSampler.path">/${extension}/api/v1/test/00000000</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1034,8 +1034,8 @@ vars.put(&quot;ext_version&quot;, vars.get(&quot;ext_version_1&quot;));
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname=" Check api param" enabled="true">
               <stringProp name="JSON_PATH">wallet</stringProp>
-              <stringProp name="EXPECTED_VALUE">xyz</stringProp>
-              <boolProp name="JSONVALIDATION">false</boolProp>
+              <stringProp name="EXPECTED_VALUE">00000000</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
               <boolProp name="INVERT">false</boolProp>
               <boolProp name="ISREGEX">true</boolProp>
