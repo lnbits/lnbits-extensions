@@ -4417,7 +4417,7 @@ reserved_b</stringProp>
             <hashTree/>
             <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract price in sats" enabled="true">
               <stringProp name="JSONPostProcessor.referenceNames">priceInSats</stringProp>
-              <stringProp name="JSONPostProcessor.jsonPathExprs">config.price_in_sats</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">extra.price_in_sats</stringProp>
               <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
             </JSONPostProcessor>
             <hashTree/>
@@ -4575,9 +4575,9 @@ reserved_b</stringProp>
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 500" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 400" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="52469">500</stringProp>
+                <stringProp name="51508">400</stringProp>
               </collectionProp>
               <stringProp name="Assertion.custom_message"></stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
@@ -4741,7 +4741,7 @@ reserved_b</stringProp>
             <hashTree/>
             <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract price in sats" enabled="true">
               <stringProp name="JSONPostProcessor.referenceNames">priceInSats</stringProp>
-              <stringProp name="JSONPostProcessor.jsonPathExprs">config.price_in_sats</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">extra.price_in_sats</stringProp>
               <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
             </JSONPostProcessor>
             <hashTree/>
@@ -5122,7 +5122,7 @@ reserved_b</stringProp>
             <hashTree/>
             <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract price in sats" enabled="true">
               <stringProp name="JSONPostProcessor.referenceNames">priceInSats</stringProp>
-              <stringProp name="JSONPostProcessor.jsonPathExprs">config.price_in_sats</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">extra.price_in_sats</stringProp>
               <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
             </JSONPostProcessor>
             <hashTree/>
@@ -5508,7 +5508,7 @@ reserved_b</stringProp>
             <hashTree/>
             <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract price in sats" enabled="true">
               <stringProp name="JSONPostProcessor.referenceNames">priceInSats</stringProp>
-              <stringProp name="JSONPostProcessor.jsonPathExprs">config.price_in_sats</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">extra.price_in_sats</stringProp>
               <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
             </JSONPostProcessor>
             <hashTree/>
@@ -5666,9 +5666,9 @@ reserved_b</stringProp>
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 500" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 400" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="52469">500</stringProp>
+                <stringProp name="51508">400</stringProp>
               </collectionProp>
               <stringProp name="Assertion.custom_message"></stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
@@ -5832,7 +5832,7 @@ reserved_b</stringProp>
             <hashTree/>
             <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract price in sats" enabled="true">
               <stringProp name="JSONPostProcessor.referenceNames">priceInSats</stringProp>
-              <stringProp name="JSONPostProcessor.jsonPathExprs">config.price_in_sats</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">extra.price_in_sats</stringProp>
               <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
             </JSONPostProcessor>
             <hashTree/>
@@ -6213,7 +6213,7 @@ reserved_b</stringProp>
             <hashTree/>
             <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract price in sats" enabled="true">
               <stringProp name="JSONPostProcessor.referenceNames">priceInSats</stringProp>
-              <stringProp name="JSONPostProcessor.jsonPathExprs">config.price_in_sats</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">extra.price_in_sats</stringProp>
               <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
             </JSONPostProcessor>
             <hashTree/>
@@ -6719,7 +6719,7 @@ reserved_b</stringProp>
             <hashTree/>
             <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract full price" enabled="true">
               <stringProp name="JSONPostProcessor.referenceNames">identifierThreeFullPrice</stringProp>
-              <stringProp name="JSONPostProcessor.jsonPathExprs">config.price_in_sats</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">extra.price_in_sats</stringProp>
               <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
             </JSONPostProcessor>
             <hashTree/>
