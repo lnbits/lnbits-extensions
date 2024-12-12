@@ -1,7 +1,7 @@
 install-jmeter:
 	java -version
-	wget https://downloads.apache.org//jmeter/binaries/apache-jmeter-5.6.3.zip
-	unzip apache-jmeter-5.6.3.zip
+	wget --quiet https://downloads.apache.org//jmeter/binaries/apache-jmeter-5.6.3.zip
+	unzip -qq apache-jmeter-5.6.3.zip
 	./apache-jmeter-5.6.3/bin/jmeter -v
 
 start-mirror-server:
