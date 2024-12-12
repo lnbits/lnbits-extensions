@@ -8,6 +8,7 @@ on:
 jobs:
     validate-json:
         runs-on: ubuntu-latest
+        runs-on: ubuntu-24.04
         steps:
             - uses: actions/checkout@v2
             - name: json-syntax-check
@@ -16,7 +17,7 @@ jobs:
                   pattern: "\\.json$"
 
     check-json:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-24.04
         steps:
             - uses: actions/checkout@v3
             - uses: actions/setup-python@v4
@@ -29,7 +30,7 @@ jobs:
 
     jmeter:
       needs: [validate-json, check-json]
-      runs-on: ubuntu-latest
+      runs-on: ubuntu-24.04
       steps:
 
         - uses: actions/checkout@v4
