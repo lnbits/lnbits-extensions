@@ -13,10 +13,6 @@ for (var i = 0; i < resp.extensions.length; i++) {
 
 
 extensionList = Object.keys(extensions);
-//extensionList[1] = 'nostrmarket'
-//extensionList.length = 3
+
 vars.put("extensions", extensionList);
-
-
-
 vars.put("extensionsLength", extensionList.length);
