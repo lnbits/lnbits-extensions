@@ -7,7 +7,7 @@ on:
 
 jobs:
     validate-json:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-24.04
         steps:
             - uses: actions/checkout@v2
             - name: json-syntax-check
@@ -16,7 +16,7 @@ jobs:
                   pattern: "\\.json$"
 
     check-json:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-24.04
         steps:
             - uses: actions/checkout@v3
             - uses: actions/setup-python@v4
@@ -29,7 +29,7 @@ jobs:
 
     jmeter:
       needs: [validate-json, check-json]
-      runs-on: ubuntu-latest
+      runs-on: ubuntu-24.04
       steps:
 
         - uses: actions/checkout@v4
@@ -50,11 +50,21 @@ jobs:
             mkdir logs
             mkdir reports
 
+        - name: setup java version
+          run: |
+            update-java-alternatives --list
+            sudo update-java-alternatives --set /usr/lib/jvm/temurin-8-jdk-amd64
+            java -version
+
         - name: install jmeter
+          env:
+            JAVA_HOME: /usr/lib/jvm/temurin-8-jdk-amd64
           run: |
             make install-jmeter
 
         - name: start mirror server
+          env:
+            JAVA_HOME: /usr/lib/jvm/temurin-8-jdk-amd64
           run: |
             make start-mirror-server
 
@@ -72,11 +82,12 @@ jobs:
             poetry env use python3.10
             poetry install
             poetry run lnbits &
-            sleep 5
+            sleep 10
 
         - name: run jmx scripts
           env:
             EXTENSIONS_MANIFEST_PATH: "/lnbits/lnbits-extensions/${{ github.head_ref || github.ref_name }}/extensions.json"
+            JAVA_HOME: /usr/lib/jvm/temurin-8-jdk-amd64
           run: |
             make test
 
