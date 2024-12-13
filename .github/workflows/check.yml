@@ -83,6 +83,10 @@ jobs:
             update-java-alternatives --list
             sudo update-java-alternatives --set /usr/lib/jvm/temurin-8-jdk-amd64
             java -version
+            echo "JAVA_HOME:"
+            echo $JAVA_HOME
+            echo "JRE_HOME:"
+            echo $JRE_HOME
             echo "##### 2000"
             make test
 
