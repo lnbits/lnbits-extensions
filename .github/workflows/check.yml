@@ -79,8 +79,9 @@ jobs:
             EXTENSIONS_MANIFEST_PATH: "/lnbits/lnbits-extensions/${{ github.head_ref || github.ref_name }}/extensions.json"
           run: |
             echo "##### 1000"
+            java -version
             update-java-alternatives --list
-            update-java-alternatives --set /usr/lib/jvm/temurin-8-jdk-amd64
+            sudo update-java-alternatives --set /usr/lib/jvm/temurin-8-jdk-amd64
             echo "##### 2000"
             make test
 
