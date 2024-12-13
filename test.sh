@@ -1,7 +1,6 @@
 #!/bin/bash
 files=$( ls ./integration/*.jmx)
 echo "Files: $files"
-echo "ASDASDASD"
 for file in $files; do
     echo "Cleaning logs"
     rm -r reports logs
