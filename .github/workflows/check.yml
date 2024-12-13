@@ -78,7 +78,10 @@ jobs:
           env:
             EXTENSIONS_MANIFEST_PATH: "/lnbits/lnbits-extensions/${{ github.head_ref || github.ref_name }}/extensions.json"
           run: |
-            make test
+            echo "##### 1000"
+            update-java-alternatives --list
+            echo "##### 2000"
+            # make test
 
         - name: log results
           if: ${{ always() }}
