@@ -54,19 +54,18 @@ jobs:
           run: |
             update-java-alternatives --list
             sudo update-java-alternatives --set /usr/lib/jvm/temurin-8-jdk-amd64
-            export JAVA_HOME=/usr/lib/jvm/temurin-8-jdk-amd64
             java -version
 
         - name: install jmeter
+          env:
+            JAVA_HOME: /usr/lib/jvm/temurin-8-jdk-amd64
           run: |
-            echo $JAVA_HOME
             make install-jmeter
 
         - name: start mirror server
           env:
             JAVA_HOME: /usr/lib/jvm/temurin-8-jdk-amd64
           run: |
-            echo $JAVA_HOME
             make start-mirror-server
 
         - name: Setup LNbits and run
