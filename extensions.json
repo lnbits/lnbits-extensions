@@ -66,7 +66,8 @@
             "short_description": "Decode Lightning Network BOLT11, LNURL, and Lightning Address",
             "icon": "https://raw.githubusercontent.com/bitkarrot/decoder/main/static/unlock.png",
             "archive": "https://github.com/bitkarrot/decoder/archive/refs/tags/v0.0.5.zip",
-            "hash": "af6f14c31da626326ba002605c6c829e5b4378fa5a8412e695468b7a693c65b2"
+            "hash": "af6f14c31da626326ba002605c6c829e5b4378fa5a8412e695468b7a693c65b2",
+            "details_link": "https://raw.githubusercontent.com/lnbits/decoder/main/config.json"
         },
         {
             "id": "decoder",
@@ -77,7 +78,8 @@
             "short_description": "Decode Lightning Network BOLT11, LNURL, and Lightning Address",
             "icon": "https://raw.githubusercontent.com/bitkarrot/decoder/main/static/unlock.png",
             "archive": "https://github.com/bitkarrot/decoder/archive/refs/tags/v1.0.0.zip",
-            "hash": "e770ec1287dc8f7ed21841bcc47e3c14c6469cfbabb692903174c8e14cdbcb3b"
+            "hash": "e770ec1287dc8f7ed21841bcc47e3c14c6469cfbabb692903174c8e14cdbcb3b",
+            "details_link": "https://raw.githubusercontent.com/lnbits/decoder/main/config.json"
         },
         {
             "id": "gerty",
@@ -473,7 +475,8 @@
             "short_description": "Provide wallets for Discord users",
             "icon": "https://github.com/lnbits/discordbot/raw/main/static/image/discordbot.png",
             "archive": "https://github.com/lnbits/discordbot/archive/refs/tags/v0.1.1.zip",
-            "hash": "ae67307ed1bb26ae4a2d43c913008574f35291932c20baa9a7cdc561048333bf"
+            "hash": "ae67307ed1bb26ae4a2d43c913008574f35291932c20baa9a7cdc561048333bf",
+            "details_link": "https://raw.githubusercontent.com/lnbits/discordbot/main/config.json"
         },
         {
             "id": "boltcards",
@@ -820,7 +823,8 @@
             "short_description": "Bitcoin donations in stream alerts",
             "icon": "https://github.com/lnbits/streamalerts/raw/main/static/image/streamalerts.png",
             "archive": "https://github.com/lnbits/streamalerts/archive/refs/tags/v0.3.0.zip",
-            "hash": "4ac7fe50c19fc700ebfec333a3ba707985c40c61563409977a2161f14f6c24b2"
+            "hash": "4ac7fe50c19fc700ebfec333a3ba707985c40c61563409977a2161f14f6c24b2",
+            "details_link": "https://raw.githubusercontent.com/lnbits/streamalerts/main/config.json"
         },
         {
             "id": "streamalerts",
@@ -831,7 +835,8 @@
             "short_description": "Bitcoin donations in stream alerts",
             "icon": "https://github.com/lnbits/streamalerts/raw/main/static/image/streamalerts.png",
             "archive": "https://github.com/lnbits/streamalerts/archive/refs/tags/v1.0.0.zip",
-            "hash": "8dcecdd66a5dfea017a3011fc01fe5c4518605a4729499ef13818e260dd85057"
+            "hash": "8dcecdd66a5dfea017a3011fc01fe5c4518605a4729499ef13818e260dd85057",
+            "details_link": "https://raw.githubusercontent.com/lnbits/streamalerts/main/config.json"
         },
         {
             "id": "livestream",
@@ -866,7 +871,8 @@
             "short_description": "Sell tracks and split revenue (lnurl-pay)",
             "icon": "https://github.com/lnbits/livestream/raw/main/static/image/livestream.png",
             "archive": "https://github.com/lnbits/livestream/archive/refs/tags/v0.2.0.zip",
-            "hash": "ed764ae3f3a879f7b7a84716216995b6a0f7796628e746c69b350fdeaf5e43e4"
+            "hash": "ed764ae3f3a879f7b7a84716216995b6a0f7796628e746c69b350fdeaf5e43e4",
+            "details_link": "https://raw.githubusercontent.com/lnbits/livestream/main/config.json"
         },
         {
             "id": "livestream",
@@ -877,7 +883,8 @@
             "short_description": "Sell tracks and split revenue (lnurl-pay)",
             "icon": "https://github.com/lnbits/livestream/raw/main/static/image/livestream.png",
             "archive": "https://github.com/lnbits/livestream/archive/refs/tags/v1.0.0.zip",
-            "hash": "939dd92853341ceb591aa788e7f68d12484617b8436815dbebe6561931b2e112"
+            "hash": "939dd92853341ceb591aa788e7f68d12484617b8436815dbebe6561931b2e112",
+            "details_link": "https://raw.githubusercontent.com/lnbits/livestream/main/config.json"
         },
         {
             "id": "lnurlp",
@@ -1202,7 +1209,8 @@
             "short_description": "Connect a Bleskomat ATM to an LNbits",
             "icon": "https://github.com/lnbits/bleskomat/raw/main/static/image/bleskomat.png",
             "archive": "https://github.com/lnbits/bleskomat/archive/refs/tags/v0.2.0.zip",
-            "hash": "0c35c70fae5bf881a60284511d47dcc8de05687b006f4edfbc58bb89463895a5"
+            "hash": "0c35c70fae5bf881a60284511d47dcc8de05687b006f4edfbc58bb89463895a5",
+            "details_link": "https://raw.githubusercontent.com/lnbits/bleskomat/main/config.json"
         },
         {
             "id": "bleskomat",
@@ -1213,7 +1221,8 @@
             "short_description": "Connect a Bleskomat ATM to an lnbits",
             "icon": "https://github.com/lnbits/bleskomat/raw/main/static/image/bleskomat.png",
             "archive": "https://github.com/lnbits/bleskomat/archive/refs/tags/v1.0.0.zip",
-            "hash": "13c61db674ca86493cd55240294ea5ce48a70ffa2a396374ec0e770fae6e807a"
+            "hash": "13c61db674ca86493cd55240294ea5ce48a70ffa2a396374ec0e770fae6e807a",
+            "details_link": "https://raw.githubusercontent.com/lnbits/bleskomat/main/config.json"
         },
         {
             "id": "tipjar",
@@ -1236,7 +1245,8 @@
             "short_description": "Accept Bitcoin donations, with messages attached!",
             "icon": "https://github.com/lnbits/tipjar/raw/main/static/image/tipjar.png",
             "archive": "https://github.com/lnbits/tipjar/archive/refs/tags/v0.2.4.zip",
-            "hash": "1fdb8f18ebbd10f7f1d67cedb8ac3c2f5c97f4096fb3dc650b9475e73c67b289"
+            "hash": "1fdb8f18ebbd10f7f1d67cedb8ac3c2f5c97f4096fb3dc650b9475e73c67b289",
+            "details_link": "https://raw.githubusercontent.com/lnbits/tipjar/main/config.json"
         },
         {
             "id": "tipjar",
@@ -1247,7 +1257,8 @@
             "short_description": "Accept Bitcoin donations, with messages attached!",
             "icon": "https://github.com/lnbits/tipjar/raw/main/static/image/tipjar.png",
             "archive": "https://github.com/lnbits/tipjar/archive/refs/tags/v1.0.0.zip",
-            "hash": "e2b6cee29e5eb415423738b4b6f565c599750f73813a21f344249c72742aa863"
+            "hash": "e2b6cee29e5eb415423738b4b6f565c599750f73813a21f344249c72742aa863",
+            "details_link": "https://raw.githubusercontent.com/lnbits/tipjar/main/config.json"
         },
         {
             "id": "lndhub",
@@ -1294,7 +1305,8 @@
             "short_description": "Access LNbits from BlueWallet or Zeus",
             "icon": "https://github.com/lnbits/lndhub/raw/main/static/image/lndhub.png",
             "archive": "https://github.com/lnbits/lndhub/archive/refs/tags/v0.5.0.zip",
-            "hash": "1fd4c0e879891dfa1ce98150033cb9523c84f4d291efcca0ce9bb477ec4561fb"
+            "hash": "1fd4c0e879891dfa1ce98150033cb9523c84f4d291efcca0ce9bb477ec4561fb",
+            "details_link": "https://raw.githubusercontent.com/lnbits/lndhub/main/config.json"
         },
         {
             "id": "lndhub",
@@ -1305,7 +1317,8 @@
             "short_description": "Access LNbits from BlueWallet or Zeus",
             "icon": "https://github.com/lnbits/lndhub/raw/main/static/image/lndhub.png",
             "archive": "https://github.com/lnbits/lndhub/archive/refs/tags/v1.0.0.zip",
-            "hash": "7788bcde996be4689fe5bc2c6967b6655ab9c8f2e6a9ffbdb0a881a75775f1bd"
+            "hash": "7788bcde996be4689fe5bc2c6967b6655ab9c8f2e6a9ffbdb0a881a75775f1bd",
+            "details_link": "https://raw.githubusercontent.com/lnbits/lndhub/main/config.json"
         },
         {
             "id": "scrub",
@@ -1340,7 +1353,8 @@
             "short_description": "Pass payments to LNURLp/LNaddress",
             "icon": "https://github.com/lnbits/scrub/raw/main/static/image/scrub.png",
             "archive": "https://github.com/lnbits/scrub/archive/refs/tags/v0.4.0.zip",
-            "hash": "5c0db802bd4004f6112f783befb459360fc391fa6c504658ec93fce27565fc25"
+            "hash": "5c0db802bd4004f6112f783befb459360fc391fa6c504658ec93fce27565fc25",
+            "details_link": "https://raw.githubusercontent.com/lnbits/scrub/main/config.json"
         },
         {
             "id": "scrub",
@@ -1351,7 +1365,8 @@
             "short_description": "Pass payments to LNURLp/LNaddress",
             "icon": "https://github.com/lnbits/scrub/raw/main/static/image/scrub.png",
             "archive": "https://github.com/lnbits/scrub/archive/refs/tags/v1.0.0.zip",
-            "hash": "03d0ecb1dad41dde8cf30598371dfb5cb64b205fdb86b793fd88d36ac066d426"
+            "hash": "03d0ecb1dad41dde8cf30598371dfb5cb64b205fdb86b793fd88d36ac066d426",
+            "details_link": "https://raw.githubusercontent.com/lnbits/scrub/main/config.json"
         },
         {
             "id": "lnaddress",
@@ -1386,7 +1401,8 @@
             "short_description": "Sell LN addresses for your domain",
             "icon": "https://github.com/lnbits/lnaddress/raw/main/static/image/lnaddress.png",
             "archive": "https://github.com/lnbits/lnaddress/archive/refs/tags/v0.3.0.zip",
-            "hash": "03432a3e788fcbfebb74fe58355dc4526bced9173493dcb48269681a190815ee"
+            "hash": "03432a3e788fcbfebb74fe58355dc4526bced9173493dcb48269681a190815ee",
+            "details_link": "https://raw.githubusercontent.com/lnbits/lnaddress/main/config.json"
         },
         {
             "id": "lnaddress",
@@ -1397,7 +1413,8 @@
             "short_description": "Sell LN addresses for your domain",
             "icon": "https://github.com/lnbits/lnaddress/raw/main/static/image/lnaddress.png",
             "archive": "https://github.com/lnbits/lnaddress/archive/refs/tags/v1.0.0.zip",
-            "hash": "6476502e702cc7c7ff1e1af05a3b31389d05370a51bdcaca9dc0dfad5466ddd3"
+            "hash": "6476502e702cc7c7ff1e1af05a3b31389d05370a51bdcaca9dc0dfad5466ddd3",
+            "details_link": "https://raw.githubusercontent.com/lnbits/lnaddress/main/config.json"
         },
         {
             "id": "watchonly",
@@ -1468,7 +1485,8 @@
             "short_description": "Nostr event multiplexer",
             "icon": "https://raw.githubusercontent.com/lnbits/nostrclient/main/static/images/nostr-bitcoin.png",
             "archive": "https://github.com/lnbits/nostrclient/archive/refs/tags/v0.4.0.zip",
-            "hash": "4c81c251049599ef0ee32393b45fe5e4870ab02772dadb34e489b1a247411eca"
+            "hash": "4c81c251049599ef0ee32393b45fe5e4870ab02772dadb34e489b1a247411eca",
+            "details_link": "https://raw.githubusercontent.com/lnbits/nostrclient/main/config.json"
         },
         {
             "id": "nostrrelay",
