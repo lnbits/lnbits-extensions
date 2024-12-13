@@ -50,12 +50,23 @@ jobs:
             mkdir logs
             mkdir reports
 
+        - name: setup java version
+          run: |
+            update-java-alternatives --list
+            sudo update-java-alternatives --set /usr/lib/jvm/temurin-8-jdk-amd64
+            export JAVA_HOME=/usr/lib/jvm/temurin-8-jdk-amd64
+            java -version
+
         - name: install jmeter
           run: |
+            echo $JAVA_HOME
             make install-jmeter
 
         - name: start mirror server
+          env:
+            JAVA_HOME: /usr/lib/jvm/temurin-8-jdk-amd64
           run: |
+            echo $JAVA_HOME
             make start-mirror-server
 
         - name: Setup LNbits and run
@@ -72,24 +83,13 @@ jobs:
             poetry env use python3.10
             poetry install
             poetry run lnbits &
-            sleep 5
+            sleep 10
 
         - name: run jmx scripts
           env:
             EXTENSIONS_MANIFEST_PATH: "/lnbits/lnbits-extensions/${{ github.head_ref || github.ref_name }}/extensions.json"
+            JAVA_HOME: /usr/lib/jvm/temurin-8-jdk-amd64
           run: |
-            echo "##### 1000"
-            java -version
-            update-java-alternatives --list
-            sudo update-java-alternatives --set /usr/lib/jvm/temurin-8-jdk-amd64
-            JAVA_HOME="/usr/lib/jvm/temurin-8-jdk-amd64"
-            java -version
-            echo "JAVA_HOME:"
-            echo $JAVA_HOME
-            echo "JRE_HOME:"
-            echo $JRE_HOME
-            
-            echo "##### 2000"
             make test
 
         - name: log results
