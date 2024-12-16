@@ -1489,6 +1489,18 @@
             "details_link": "https://raw.githubusercontent.com/lnbits/nostrclient/main/config.json"
         },
         {
+            "id": "nostrclient",
+            "repo": "https://github.com/lnbits/nostrclient",
+            "name": "Nostr Client",
+            "version": "1.0.0",
+            "min_lnbits_version": "1.0.0",
+            "short_description": "Nostr client for extensions",
+            "icon": "https://raw.githubusercontent.com/lnbits/nostrclient/main/static/images/nostr-bitcoin.png",
+            "archive": "https://github.com/lnbits/nostrclient/archive/refs/tags/v1.0.0.zip",
+            "hash": "f3f149a48b83014bd5869c72535b3b372db45f84b164ae300aba746afa297c7f",
+            "details_link": "https://raw.githubusercontent.com/lnbits/nostrclient/main/config.json"
+        },
+        {
             "id": "nostrrelay",
             "repo": "https://github.com/lnbits/nostrrelay",
             "name": "Nostr Relay",
