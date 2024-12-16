@@ -1640,6 +1640,7 @@
             "min_lnbits_version": "1.0.0",
             "short_description": "FOSSA is a DIY ATM",
             "icon": "https://raw.githubusercontent.com/lnbits/fossa_extension/main/static/image/fossa.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/fossa_extension/main/config.json",
             "archive": "https://github.com/lnbits/fossa_extension/archive/refs/tags/v1.0.0.zip",
             "hash": "6126545d1b71f77044d77efabb12e63babef5e900d8f316f16890b31176e1cf7"
         },
@@ -1651,6 +1652,7 @@
             "min_lnbits_version": "1.0.0",
             "short_description": "LNPoS lightning point of sale",
             "icon": "https://raw.githubusercontent.com/lnbits/lnpos_extension/main/static/image/lnpos.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/lnpos_extension/main/config.json",
             "archive": "https://github.com/lnbits/lnpos_extension/archive/refs/tags/v1.0.0.zip",
             "hash": "b97e8d1c6530a17ec6a6deced33a89b054f4bcada71f97080cfe8142777813d3"
         },
@@ -1662,8 +1664,9 @@
             "min_lnbits_version": "1.0.0",
             "short_description": "Turn things on with bitcoin",
             "icon": "https://raw.githubusercontent.com/lnbits/bitcoinswitch_extension/main/static/image/icon.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/bitcoinswitch_extension/main/config.json",
             "archive": "https://github.com/lnbits/bitcoinswitch_extension/archive/refs/tags/v1.0.0.zip",
-            "hash": "bb9386d1507572c873906e7c0b1aba16064cfba86e08b6af1fd4fc7fa9b33a41"
+            "hash": "3e547a6396273f85c4bc33e0e7654c445cb002e6df8b0d72ce3b3bc133ee11ac"
         }
     ]
 }
