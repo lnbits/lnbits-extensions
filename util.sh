@@ -10,6 +10,10 @@ clone() {
         repo=$(echo $line | cut -f1 -d" " | sed 's/https:\/\//git@/' | sed 's/\//:/')
         id=$(echo $line | cut -f2 -d" ")
         git clone $repo $id
+        if command -v poetry &> /dev/null
+        then
+            poetry lock
+        fi
     done
     cd ..
 }
@@ -23,7 +27,27 @@ pull() {
         id=$(echo $line | cut -f2 -d" ")
         cd $id
         git pull
+        if command -v poetry && command -v npm &> /dev/null
+        then
+            poetry lock
+            poetry install
+            npm install
+        fi
         cd ..
+    done
+    cd ..
+}
+
+# lint
+lint() {
+    cd extensions
+    jq -r "$jq_ext_cmd" ../extensions.json | while read -r line
+    do
+        # repo=$(echo $line | cut -f1 -d" " | sed 's/https:\/\//git@/' | sed 's/\//:/')
+        id=$(echo $line | cut -f2 -d" ")
+        cd $id
+        echo "LINTING $id !!!!!!!!"
+        make
     done
     cd ..
 }
