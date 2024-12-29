@@ -22,7 +22,6 @@ extensions.forEach((ext) => {
     }
     if (!ext.contributors) ext.contributors = [];
 });
-console.log(extensions);
 
 const Gallery = ({ images }) => {
     const [activeIndex, setActiveIndex] = createSignal(0);
