@@ -326,13 +326,13 @@
             "id": "example",
             "repo": "https://github.com/lnbits/example",
             "name": "Build your own!",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "min_lnbits_version": "1.0.0",
             "short_description": "Extension building guide",
             "icon": "https://raw.githubusercontent.com/lnbits/example/main/static/bitcoin-extension.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/example/main/config.json",
-            "archive": "https://github.com/lnbits/example/archive/refs/tags/v1.0.2.zip",
-            "hash": "149a7095e482424194ebba1b2f218675133cb9d21447a40bd89c8385512cdfab"
+            "archive": "https://github.com/lnbits/example/archive/refs/tags/v1.0.3.zip",
+            "hash": "838daaedbe2b13de74ba9457333bda5119250000f25de5aa7c57ffc435c621b8"
         },
         {
             "id": "events",
