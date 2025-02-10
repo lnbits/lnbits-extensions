@@ -54,7 +54,7 @@
             "icon": "https://raw.githubusercontent.com/lnbits/copilot/main/static/bitcoin-streaming.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/copilot/main/config.json",
             "archive": "https://github.com/lnbits/copilot/archive/refs/tags/v1.0.1.zip",
-            "hash": "9067852bb7a1bf491e5c3f88a16019015139e2f8d4d83fdb4563c317276c58a6"
+            "hash": "5b0ec1f1baa30a88554108beea988372a9fa71727b70466854240aaffa84f3ec"
         },
         {
             "id": "decoder",
