@@ -959,30 +959,6 @@
             "hash": "68caad7bc8cae387a0cf2d7f338d2d666fda76144a89fceea26930d4fbbdaf09"
         },
         {
-            "id": "deezy",
-            "repo": "https://github.com/lnbits/deezy",
-            "name": "Deezy",
-            "version": "0.1",
-            "max_lnbits_version": "0.11.0",
-            "short_description": "Swap between LN and Onchain",
-            "icon": "https://github.com/lnbits/deezy/raw/main/static/deezy.png",
-            "archive": "https://github.com/lnbits/deezy/archive/refs/tags/0.1.zip",
-            "hash": "49eb7bd209d3684b87e17e9200dad823f2265493a054e0531d8c5238f0fd9561"
-        },
-        {
-            "id": "deezy",
-            "repo": "https://github.com/lnbits/deezy",
-            "name": "Deezy",
-            "version": "0.2.0",
-            "min_lnbits_version": "0.11.0",
-            "max_lnbits_version": "1.0.0",
-            "short_description": "Swap between LN and Onchain",
-            "icon": "https://github.com/lnbits/deezy/raw/main/static/deezy.png",
-            "details_link": "https://raw.githubusercontent.com/lnbits/deezy/main/config.json",
-            "archive": "https://github.com/lnbits/deezy/archive/refs/tags/v0.2.0.zip",
-            "hash": "8249d8dc9f50cfe91bdedde56484a93ba8b5f541c6e1f13c1c09eaf63ecad993"
-        },
-        {
             "id": "invoices",
             "repo": "https://github.com/lnbits/invoices",
             "name": "Invoices",
