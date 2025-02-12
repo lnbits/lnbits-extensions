@@ -1637,13 +1637,13 @@
             "id": "lncalendar",
             "repo": "https://github.com/lnbits/lncalendar",
             "name": "LNCalendar",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "min_lnbits_version": "1.0.0",
             "short_description": "A paid scheduling extension",
             "icon": "https://raw.githubusercontent.com/lnbits/lncalendar/main/static/image/lncalendar.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/lncalendar/main/config.json",
-            "archive": "https://github.com/lnbits/lncalendar/archive/refs/tags/v1.0.1.zip",
-            "hash": "768c7ad71d7d6a934ce1e4bfa3b728dad9e61f8b832fd31d6569f406434ee90f"
+            "archive": "https://github.com/lnbits/lncalendar/archive/refs/tags/v1.0.2.zip",
+            "hash": "65b0f0028109e29109b7064a08c8122108d06fd0c42666624f07a9d600685d1b"
         },
         {
             "id": "scheduler",
