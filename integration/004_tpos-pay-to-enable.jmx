@@ -898,10 +898,6 @@
                   <stringProp name="Header.name">Accept-Encoding</stringProp>
                   <stringProp name="Header.value">gzip, deflate, br</stringProp>
                 </elementProp>
-                <elementProp name="User-Agent" elementType="Header">
-                  <stringProp name="Header.name">User-Agent</stringProp>
-                  <stringProp name="Header.value">Mozilla/${lnurlpCount}.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0</stringProp>
-                </elementProp>
                 <elementProp name="Sec-Fetch-Dest" elementType="Header">
                   <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
                   <stringProp name="Header.value">empty</stringProp>
