@@ -890,12 +890,12 @@
             "id": "livestream",
             "repo": "https://github.com/lnbits/livestream",
             "name": "DJ Livestream",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "min_lnbits_version": "1.0.0",
             "short_description": "Sell tracks and split revenue (lnurl-pay)",
             "icon": "https://github.com/lnbits/livestream/raw/main/static/image/livestream.png",
-            "archive": "https://github.com/lnbits/livestream/archive/refs/tags/v1.0.0.zip",
-            "hash": "939dd92853341ceb591aa788e7f68d12484617b8436815dbebe6561931b2e112",
+            "archive": "https://github.com/lnbits/livestream/archive/refs/tags/v1.0.1.zip",
+            "hash": "021c60660c838880cc7e9086e43f347c47c409b2900c36ef178e517548b31137",
             "details_link": "https://raw.githubusercontent.com/lnbits/livestream/main/config.json"
         },
         {
