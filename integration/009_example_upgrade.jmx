@@ -50,7 +50,7 @@
           </elementProp>
           <elementProp name="ext_version_2" elementType="Argument">
             <stringProp name="Argument.name">ext_version_2</stringProp>
-            <stringProp name="Argument.value">1.0.2</stringProp>
+            <stringProp name="Argument.value">1.0.5</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="test_version" elementType="Argument">
