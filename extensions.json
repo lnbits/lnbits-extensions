@@ -536,7 +536,8 @@
             "icon": "https://github.com/lnbits/boltcards/raw/main/static/image/boltcard.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/boltcards/main/config.json",
             "archive": "https://github.com/lnbits/boltcards/archive/refs/tags/v1.0.0.zip",
-            "hash": "38b1e3074bdbe61c3b6cf1883cfd997b04330e147abd50d4a9dc338061da992e"
+            "hash": "38b1e3074bdbe61c3b6cf1883cfd997b04330e147abd50d4a9dc338061da992e",
+            "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/hZdoFXQQF6wFSNfGeS4deM"
         },
         {
             "id": "nostrnip5",
