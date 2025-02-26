@@ -41,15 +41,14 @@ pull() {
 # lint
 lint() {
     cd extensions
+    EXTS_DIR=$(pwd)
     jq -r "$jq_ext_cmd" ../extensions.json | while read -r line
     do
-        # repo=$(echo $line | cut -f1 -d" " | sed 's/https:\/\//git@/' | sed 's/\//:/')
         id=$(echo $line | cut -f2 -d" ")
-        cd $id
-        echo "LINTING $id !!!!!!!!"
+        cd $EXTS_DIR/$id
         make
     done
-    cd ..
+    cd ../..
 }
 
 # gives you LNbits env variables for all extensions
