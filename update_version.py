@@ -36,11 +36,20 @@ for i, extension in enumerate(extensions["extensions"]):
         latest_extension = extension
         latest_index = i
 
-assert latest_extension, f"Extension {ext_name} not found in extensions.json"
-assert latest_index, f"Extension {ext_name} not found in extensions.json"
-
+# if not found create a new extension
+if not latest_extension or not latest_index:
+    new_ext = {
+        "id": ext_name,
+        "version": version.replace("v", ""),
+        "archive": archive,
+        "hash": archive_hash,
+        "min_lnbits_version": config.get("min_lnbits_version"),
+        "name": config.get("name"),
+        "short_description": config.get("short_description"),
+    }
+    extensions["extensions"].append(new_ext)
 # check if min_lnbits_version is different
-if latest_extension["min_lnbits_version"] != config.get("min_lnbits_version"):
+elif latest_extension["min_lnbits_version"] != config.get("min_lnbits_version"):
     new_ext = latest_extension.copy()
     new_ext["version"] = version.replace("v", "")
     new_ext["archive"] = archive
