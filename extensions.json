@@ -54,7 +54,8 @@
             "icon": "https://raw.githubusercontent.com/lnbits/copilot/main/static/bitcoin-streaming.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/copilot/main/config.json",
             "archive": "https://github.com/lnbits/copilot/archive/refs/tags/v1.0.2.zip",
-            "hash": "f38757e50a53f19f99fe4396653648481a1e2ff951ae20b6f6a4427f3cbc81be"
+            "hash": "f38757e50a53f19f99fe4396653648481a1e2ff951ae20b6f6a4427f3cbc81be",
+            "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/A9o5kTHbA6kjWGRjzCUi8Q"
         },
         {
             "id": "decoder",
@@ -729,7 +730,8 @@
             "icon": "https://github.com/lnbits/satsdice/raw/main/static/image/satsdice.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/satsdice/main/config.json",
             "archive": "https://github.com/lnbits/satsdice/archive/refs/tags/v1.0.0.zip",
-            "hash": "6729793a5aaecf29383ea4c8c569f6e2ecc0f9d7a1844be5c5bde2ca174795a3"
+            "hash": "6729793a5aaecf29383ea4c8c569f6e2ecc0f9d7a1844be5c5bde2ca174795a3",
+            "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/T2oyoenGmHLasaBhLmA2Sz"
         },
         {
             "id": "offlineshop",
