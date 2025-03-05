@@ -1691,6 +1691,18 @@
             "short_description": "Bet sats on coinflips",
             "icon": "https://raw.githubusercontent.com/lnbits/coinflip/main/static/image/coinflip.gif",
             "details_link": "https://raw.githubusercontent.com/lnbits/coinflip/main/config.json"
+        },
+        {
+            "id": "satspot",
+            "repo": "https://github.com/lnbits/satspot",
+            "version": "1.0.0",
+            "archive": "https://github.com/lnbits/satspot/archive/refs/tags/v1.0.0.zip",
+            "hash": "9c687ad10b2a902ecb5e07474d3bdf3b4fa2c3084b0222d820bf2505e517c9f9",
+            "min_lnbits_version": "1.0.0",
+            "name": "Satspot",
+            "short_description": "Money pool games",
+            "icon": "https://raw.githubusercontent.com/lnbits/satspot/main/static/image/satspot.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/satspot/main/config.json"
         }
     ]
 }
