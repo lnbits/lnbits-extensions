@@ -40,9 +40,9 @@ for i, extension in enumerate(extensions["extensions"]):
 # if not found create a new extension
 if not latest_extension or not latest_index:
     raw_url = f"https://raw.githubusercontent.com/lnbits/{repo_name}/main"
-    icon = config.get("tile")
+    icon = config.get("tile", None)
     if icon:
-        icon = raw_url + icon.replace(f"/{repo_name}", "")
+        icon = raw_url + icon.replace(f"/{repo_name}", "", 1)
     else:
         icon = raw_url + "/static/image/icon.png"
     new_ext = {
