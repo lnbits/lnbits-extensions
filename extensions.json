@@ -1667,6 +1667,18 @@
             "details_link": "https://raw.githubusercontent.com/lnbits/bitcoinswitch_extension/main/config.json",
             "archive": "https://github.com/lnbits/bitcoinswitch_extension/archive/refs/tags/v1.0.0.zip",
             "hash": "3e547a6396273f85c4bc33e0e7654c445cb002e6df8b0d72ce3b3bc133ee11ac"
+        },
+        {
+            "id": "coinflip",
+            "repo": "https://github.com/lnbits/coinflip",
+            "version": "1.0.0",
+            "archive": "https://github.com/lnbits/coinflip/archive/refs/tags/v1.0.0.zip",
+            "hash": "dadef9b22363ce90dc11d4efee98009c21b479a2497b9aff799de781c9954046",
+            "min_lnbits_version": "1.0.0",
+            "name": "Coinflip",
+            "short_description": "Bet sats on coinflips",
+            "icon": "https://raw.githubusercontent.com/lnbits/coinflip/main/static/image/coinflip.gif",
+            "details_link": "https://raw.githubusercontent.com/lnbits/coinflip/main/config.json"
         }
     ]
 }
