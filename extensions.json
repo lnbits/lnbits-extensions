@@ -1667,6 +1667,15 @@
             "details_link": "https://raw.githubusercontent.com/lnbits/bitcoinswitch_extension/main/config.json",
             "archive": "https://github.com/lnbits/bitcoinswitch_extension/archive/refs/tags/v1.0.0.zip",
             "hash": "3e547a6396273f85c4bc33e0e7654c445cb002e6df8b0d72ce3b3bc133ee11ac"
+        },
+        {
+            "id": "eightball",
+            "version": "1.0.0",
+            "archive": "https://github.com/lnbits/eightball/archive/refs/tags/v1.0.0.zip",
+            "hash": "c96657685c0520583cd4d795d9c1f4dae8a4541e15a739cd55d17d46cca5397c",
+            "min_lnbits_version": "1.0.0",
+            "name": "Magic 8ball",
+            "short_description": "MadBitcoin's Magic Eightball"
         }
     ]
 }
