@@ -39,6 +39,12 @@ for i, extension in enumerate(extensions["extensions"]):
 
 # if not found create a new extension
 if not latest_extension or not latest_index:
+    raw_url = f"https://raw.githubusercontent.com/lnbits/{repo_name}/main"
+    icon = config.get("tile")
+    if icon:
+        icon = raw_url + icon.replace(f"/{repo_name}", "")
+    else:
+        icon = raw_url + "/static/image/icon.png"
     new_ext = {
         "id": ext_name,
         "repo": repo,
@@ -48,6 +54,8 @@ if not latest_extension or not latest_index:
         "min_lnbits_version": config.get("min_lnbits_version"),
         "name": config.get("name"),
         "short_description": config.get("short_description"),
+        "icon": icon,
+        "details_link": f"{raw_url}/config.json",
     }
     extensions["extensions"].append(new_ext)
 # check if min_lnbits_version is different
