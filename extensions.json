@@ -1681,7 +1681,8 @@
             "name": "Magic 8ball",
             "short_description": "MadBitcoin's Magic Eightball",
             "icon": "https://raw.githubusercontent.com/lnbits/eightball/main/static/image/eightball.png",
-            "details_link": "https://raw.githubusercontent.com/lnbits/eightball/main/config.json"
+            "details_link": "https://raw.githubusercontent.com/lnbits/eightball/main/config.json",
+            "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/25TmcxLX85UndrGA4cntSP"
         },
         {
             "id": "coinflip",
@@ -1693,7 +1694,8 @@
             "name": "Coinflip",
             "short_description": "Bet sats on coinflips",
             "icon": "https://raw.githubusercontent.com/lnbits/coinflip/main/static/image/coinflip.gif",
-            "details_link": "https://raw.githubusercontent.com/lnbits/coinflip/main/config.json"
+            "details_link": "https://raw.githubusercontent.com/lnbits/coinflip/main/config.json",
+            "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/eaUze6K9ZVzUHF68YxrSg5"
         },
         {
             "id": "satspot",
@@ -1705,7 +1707,8 @@
             "name": "Satspot",
             "short_description": "Money pool games",
             "icon": "https://raw.githubusercontent.com/lnbits/satspot/main/static/image/satspot.png",
-            "details_link": "https://raw.githubusercontent.com/lnbits/satspot/main/config.json"
+            "details_link": "https://raw.githubusercontent.com/lnbits/satspot/main/config.json",
+            "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/X9jN3a4iTWtFMwrYd8zsmE"
         }
     ]
 }
