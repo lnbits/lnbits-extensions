@@ -13,7 +13,8 @@ if len(sys.argv) < 3:
 repo_name = sys.argv[1]
 version = sys.argv[2]
 
-archive = f"https://github.com/lnbits/{repo_name}/archive/refs/tags/{version}.zip"
+repo = f"https://github.com/lnbits/{repo_name}"
+archive = f"{repo}/archive/refs/tags/{version}.zip"
 with urllib.request.urlopen(archive) as f:
     data = f.read()
 
@@ -40,6 +41,7 @@ for i, extension in enumerate(extensions["extensions"]):
 if not latest_extension or not latest_index:
     new_ext = {
         "id": ext_name,
+        "repo": repo,
         "version": version.replace("v", ""),
         "archive": archive,
         "hash": archive_hash,
