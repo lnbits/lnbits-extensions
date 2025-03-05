@@ -277,13 +277,13 @@
             "id": "tpos",
             "repo": "https://github.com/lnbits/tpos",
             "name": "TPoS",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "min_lnbits_version": "1.0.0",
             "short_description": "A shareable PoS terminal!",
             "details_link": "https://raw.githubusercontent.com/lnbits/tpos/main/config.json",
             "icon": "https://raw.githubusercontent.com/lnbits/tpos/main/static/image/tpos.png",
-            "archive": "https://github.com/lnbits/tpos/archive/refs/tags/v1.0.2.zip",
-            "hash": "fbe98098ba091bfea870e187eb8bf992fc61c04fefbcbc8ad387ae0238547929"
+            "archive": "https://github.com/lnbits/tpos/archive/refs/tags/v1.0.3.zip",
+            "hash": "8c5c93368075cb24156d7542e5f950cb3496d0a5f0a065290b4c8c561de8f889"
         },
         {
             "id": "usermanager",
@@ -1679,6 +1679,18 @@
             "short_description": "MadBitcoin's Magic Eightball",
             "icon": "https://raw.githubusercontent.com/lnbits/eightball/main/static/image/eightball.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/eightball/main/config.json"
+        },
+        {
+            "id": "coinflip",
+            "repo": "https://github.com/lnbits/coinflip",
+            "version": "1.0.0",
+            "archive": "https://github.com/lnbits/coinflip/archive/refs/tags/v1.0.0.zip",
+            "hash": "dadef9b22363ce90dc11d4efee98009c21b479a2497b9aff799de781c9954046",
+            "min_lnbits_version": "1.0.0",
+            "name": "Coinflip",
+            "short_description": "Bet sats on coinflips",
+            "icon": "https://raw.githubusercontent.com/lnbits/coinflip/main/static/image/coinflip.gif",
+            "details_link": "https://raw.githubusercontent.com/lnbits/coinflip/main/config.json"
         }
     ]
 }
