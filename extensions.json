@@ -1677,7 +1677,7 @@
             "min_lnbits_version": "1.0.0",
             "name": "Magic 8ball",
             "short_description": "MadBitcoin's Magic Eightball",
-            "icon": "https://raw.githubusercontent.com/lnbits/eightball/main/static/image.png",
+            "icon": "https://raw.githubusercontent.com/lnbits/eightball/main/static/eightball.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/eightball/main/config.json"
         }
     ]
