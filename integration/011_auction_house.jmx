@@ -1796,6 +1796,12 @@
             </DebugSampler>
             <hashTree/>
           </hashTree>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Check Bids" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
           <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait for the invoice listeners" enabled="true">
             <stringProp name="ConstantTimer.delay">1000</stringProp>
           </ConstantTimer>
@@ -1870,10 +1876,46 @@
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check transfer code" enabled="false">
-              <stringProp name="JSON_PATH">transfer_code</stringProp>
-              <stringProp name="EXPECTED_VALUE"></stringProp>
-              <boolProp name="JSONVALIDATION">false</boolProp>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check next min bid" enabled="true">
+              <stringProp name="JSON_PATH">next_min_bid</stringProp>
+              <stringProp name="EXPECTED_VALUE">105.0</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+            </JSONPathAssertion>
+            <hashTree/>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check current price" enabled="true">
+              <stringProp name="JSON_PATH">current_price</stringProp>
+              <stringProp name="EXPECTED_VALUE">100.0</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+            </JSONPathAssertion>
+            <hashTree/>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check user is owner" enabled="true">
+              <stringProp name="JSON_PATH">user_is_owner</stringProp>
+              <stringProp name="EXPECTED_VALUE">false</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+            </JSONPathAssertion>
+            <hashTree/>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check user is participant" enabled="true">
+              <stringProp name="JSON_PATH">user_is_participant</stringProp>
+              <stringProp name="EXPECTED_VALUE">true</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+            </JSONPathAssertion>
+            <hashTree/>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check user is top bidder" enabled="true">
+              <stringProp name="JSON_PATH">user_is_top_bidder</stringProp>
+              <stringProp name="EXPECTED_VALUE">true</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
               <boolProp name="INVERT">false</boolProp>
               <boolProp name="ISREGEX">false</boolProp>
