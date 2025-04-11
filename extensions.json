@@ -1616,13 +1616,13 @@
             "id": "lncalendar",
             "repo": "https://github.com/lnbits/lncalendar",
             "name": "LNCalendar",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "min_lnbits_version": "1.0.0",
             "short_description": "A paid scheduling extension",
             "icon": "https://raw.githubusercontent.com/lnbits/lncalendar/main/static/image/lncalendar.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/lncalendar/main/config.json",
-            "archive": "https://github.com/lnbits/lncalendar/archive/refs/tags/v1.0.3.zip",
-            "hash": "d09445b12b83583d3f81f43bdc1bece6186a979daab4cf4eebbf488b3b4bad2c"
+            "archive": "https://github.com/lnbits/lncalendar/archive/refs/tags/v1.0.4.zip",
+            "hash": "48fd8b81c78296989ba4c6ed6911f19df2a5a321bf7949d5f685300a23f68938"
         },
         {
             "id": "scheduler",
