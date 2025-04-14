@@ -2311,6 +2311,7 @@
               <hashTree/>
             </hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[auction_house] Post bid ${bidIndex}" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
@@ -2320,7 +2321,6 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">${port}</stringProp>
               <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
@@ -3118,11 +3118,12 @@
                 <hashTree/>
                 <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check Balance is not Zero" enabled="true">
                   <stringProp name="JSON_PATH">balance</stringProp>
-                  <stringProp name="EXPECTED_VALUE">0</stringProp>
+                  <stringProp name="EXPECTED_VALUE">${bidIndex}0000</stringProp>
                   <boolProp name="JSONVALIDATION">true</boolProp>
                   <boolProp name="EXPECT_NULL">false</boolProp>
-                  <boolProp name="INVERT">true</boolProp>
+                  <boolProp name="INVERT">false</boolProp>
                   <boolProp name="ISREGEX">false</boolProp>
+                  <stringProp name="TestPlan.comments">check in millisats</stringProp>
                 </JSONPathAssertion>
                 <hashTree/>
               </hashTree>
@@ -3196,12 +3197,6 @@
                 <hashTree/>
               </hashTree>
             </hashTree>
-            <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug check payments ${bidIndex}" enabled="false">
-              <boolProp name="displayJMeterProperties">false</boolProp>
-              <boolProp name="displayJMeterVariables">true</boolProp>
-              <boolProp name="displaySystemProperties">false</boolProp>
-            </DebugSampler>
-            <hashTree/>
           </hashTree>
         </hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Check room owner payments" enabled="true">
