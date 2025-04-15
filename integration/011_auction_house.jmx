@@ -733,6 +733,14 @@
             <stringProp name="Scope.variable">userId</stringProp>
           </JSONPostProcessor>
           <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract owner wallet id" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">ownerWalletId</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+            <stringProp name="Sample.scope">variable</stringProp>
+            <stringProp name="Scope.variable">walletId</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
           <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract owner wallet inkey" enabled="true">
             <stringProp name="JSONPostProcessor.referenceNames">ownerInkey</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">$</stringProp>
@@ -1134,7 +1142,7 @@
             </JSONPathAssertion>
             <hashTree/>
           </hashTree>
-          <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="[owner] Create Identifiers" enabled="true">
+          <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="[seller] Create Identifiers" enabled="true">
             <boolProp name="LoopController.continue_forever">true</boolProp>
             <stringProp name="LoopController.loops">${nipAddressCount}</stringProp>
           </LoopController>
@@ -1431,7 +1439,7 @@
                   <stringProp name="Argument.value">{&#xd;
     &quot;name&quot;: &quot;nip5 sales&quot;,&#xd;
     &quot;description&quot;: &quot;Auctions for Nip5&quot;,&#xd;
-    &quot;fee_wallet_id&quot;: &quot;${walletId}&quot;,&#xd;
+    &quot;fee_wallet_id&quot;: &quot;${ownerWalletId}&quot;,&#xd;
     &quot;currency&quot;: &quot;USD&quot;,&#xd;
     &quot;type&quot;: &quot;fixed_price&quot;&#xd;
 }</stringProp>
@@ -1567,7 +1575,7 @@
     &quot;currency&quot;: &quot;sat&quot;,&#xd;
     &quot;type&quot;: &quot;fixed_price&quot;,&#xd;
     &quot;room_percentage&quot;: 20,&#xd;
-    &quot;fee_wallet_id&quot;: &quot;${walletId}&quot;,&#xd;
+    &quot;fee_wallet_id&quot;: &quot;${ownerWalletId}&quot;,&#xd;
     &quot;is_open_room&quot;: true,&#xd;
     &quot;extra&quot;: {&#xd;
         &quot;duration&quot;: {&#xd;
@@ -1717,7 +1725,7 @@
                   <stringProp name="Argument.value">{&#xd;
     &quot;name&quot;: &quot;nip5 auctions&quot;,&#xd;
     &quot;description&quot;: &quot;Auctions for Nip5&quot;,&#xd;
-    &quot;fee_wallet_id&quot;: &quot;${walletId}&quot;,&#xd;
+    &quot;fee_wallet_id&quot;: &quot;${ownerWalletId}&quot;,&#xd;
     &quot;currency&quot;: &quot;USD&quot;,&#xd;
     &quot;type&quot;: &quot;auction&quot;&#xd;
 }</stringProp>
@@ -1854,7 +1862,7 @@
     &quot;type&quot;: &quot;auction&quot;,&#xd;
     &quot;min_bid_up_percentage&quot;: 5,&#xd;
     &quot;room_percentage&quot;: 10,&#xd;
-    &quot;fee_wallet_id&quot;: &quot;${walletId}&quot;,&#xd;
+    &quot;fee_wallet_id&quot;: &quot;${ownerWalletId}&quot;,&#xd;
     &quot;is_open_room&quot;: true,&#xd;
     &quot;extra&quot;: {&#xd;
         &quot;duration&quot;: {&#xd;
@@ -3663,6 +3671,10 @@
             </JSONPathAssertion>
             <hashTree/>
           </hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">1500</stringProp>
+          </ConstantTimer>
+          <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[wallet] Get owner payments" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
@@ -3721,7 +3733,7 @@
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check non-empty payment list" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="48">0</stringProp>
+                <stringProp name="49">1</stringProp>
               </collectionProp>
               <stringProp name="Assertion.custom_message"></stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -3793,6 +3805,75 @@
               <boolProp name="Assertion.assume_success">false</boolProp>
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[wallet] Get wallet balance" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${host}</stringProp>
+            <stringProp name="HTTPSampler.port">${port}</stringProp>
+            <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+            <stringProp name="HTTPSampler.path">/api/v1/wallet</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Referer" elementType="Header">
+                  <stringProp name="Header.name">Referer</stringProp>
+                  <stringProp name="Header.value">${scheme}://${host}:${port}/wallet?wal=${walletId}</stringProp>
+                </elementProp>
+                <elementProp name="Accept-Language" elementType="Header">
+                  <stringProp name="Header.name">Accept-Language</stringProp>
+                  <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                </elementProp>
+                <elementProp name="X-Api-Key" elementType="Header">
+                  <stringProp name="Header.name">X-Api-Key</stringProp>
+                  <stringProp name="Header.value">${ownerInkey}</stringProp>
+                </elementProp>
+                <elementProp name="Accept-Encoding" elementType="Header">
+                  <stringProp name="Header.name">Accept-Encoding</stringProp>
+                  <stringProp name="Header.value">gzip, deflate</stringProp>
+                </elementProp>
+                <elementProp name="User-Agent" elementType="Header">
+                  <stringProp name="Header.name">User-Agent</stringProp>
+                  <stringProp name="Header.value">Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko/20100101 Firefox/105.0</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 200" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="49586">200</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check Balance is  10%" enabled="true">
+              <stringProp name="JSON_PATH">balance</stringProp>
+              <stringProp name="EXPECTED_VALUE">${bidCount}000</stringProp>
+              <boolProp name="JSONVALIDATION">true</boolProp>
+              <boolProp name="EXPECT_NULL">false</boolProp>
+              <boolProp name="INVERT">false</boolProp>
+              <boolProp name="ISREGEX">false</boolProp>
+              <stringProp name="TestPlan.comments">check in millisats</stringProp>
+            </JSONPathAssertion>
             <hashTree/>
           </hashTree>
         </hashTree>
