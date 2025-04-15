@@ -43,8 +43,8 @@
             <stringProp name="Argument.value">${__BeanShell(import org.apache.jmeter.services.FileServer; FileServer.getFileServer().getBaseDir();)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="idCount" elementType="Argument">
-            <stringProp name="Argument.name">idCount</stringProp>
+          <elementProp name="nipAddressCount" elementType="Argument">
+            <stringProp name="Argument.name">nipAddressCount</stringProp>
             <stringProp name="Argument.value">10</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
@@ -1136,19 +1136,19 @@
           </hashTree>
           <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="[owner] Create Identifiers" enabled="true">
             <boolProp name="LoopController.continue_forever">true</boolProp>
-            <stringProp name="LoopController.loops">${idCount}</stringProp>
+            <stringProp name="LoopController.loops">${nipAddressCount}</stringProp>
           </LoopController>
           <hashTree>
             <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Identifier Counter" enabled="true">
               <stringProp name="CounterConfig.start">1</stringProp>
               <stringProp name="CounterConfig.end"></stringProp>
               <stringProp name="CounterConfig.incr">1</stringProp>
-              <stringProp name="CounterConfig.name">idCounter</stringProp>
+              <stringProp name="CounterConfig.name">nipAddressCounter</stringProp>
               <stringProp name="CounterConfig.format"></stringProp>
               <boolProp name="CounterConfig.per_user">false</boolProp>
             </CounterConfig>
             <hashTree/>
-            <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="[nip5] Create and activate ${idCounter}" enabled="true">
+            <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="[nip5] Create and activate ${nipAddressCounter}" enabled="true">
               <boolProp name="TransactionController.includeTimers">false</boolProp>
               <boolProp name="TransactionController.parent">true</boolProp>
             </TransactionController>
@@ -1166,7 +1166,7 @@
         ]&#xd;
     },&#xd;
     &quot;pubkey&quot;: &quot;04c915daefee38317fa734444acee390a8269fe5810b2241e5e6dd343dfbecc9&quot;,&#xd;
-    &quot;local_part&quot;: &quot;id_${idCounter}__${domainId}&quot;,&#xd;
+    &quot;local_part&quot;: &quot;id_${nipAddressCounter}__${domainId}&quot;,&#xd;
     &quot;domain_id&quot;: &quot;${domainId}&quot;&#xd;
 }</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
@@ -2150,12 +2150,12 @@
           </hashTree>
           <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
             <boolProp name="LoopController.continue_forever">true</boolProp>
-            <stringProp name="LoopController.loops">${idCount}</stringProp>
+            <stringProp name="LoopController.loops">${nipAddressCount}</stringProp>
           </LoopController>
           <hashTree>
             <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Address Counter" enabled="true">
               <stringProp name="CounterConfig.start">0</stringProp>
-              <stringProp name="CounterConfig.end">${idCount}</stringProp>
+              <stringProp name="CounterConfig.end">${nipAddressCount}</stringProp>
               <stringProp name="CounterConfig.incr">1</stringProp>
               <stringProp name="CounterConfig.name">addressIndex</stringProp>
               <stringProp name="CounterConfig.format"></stringProp>
