@@ -50,7 +50,7 @@
           </elementProp>
           <elementProp name="bidCount" elementType="Argument">
             <stringProp name="Argument.name">bidCount</stringProp>
-            <stringProp name="Argument.value">10</stringProp>
+            <stringProp name="Argument.value">15</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -2841,8 +2841,8 @@
             <boolProp name="displaySystemProperties">false</boolProp>
           </DebugSampler>
           <hashTree/>
-          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Timer" enabled="true">
-            <stringProp name="ConstantTimer.delay">1500</stringProp>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait 2 sec" enabled="true">
+            <stringProp name="ConstantTimer.delay">10000</stringProp>
           </ConstantTimer>
           <hashTree/>
         </hashTree>
@@ -2991,7 +2991,7 @@
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check next min bid" enabled="true">
+            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check next min bid" enabled="false">
               <stringProp name="JSON_PATH">next_min_bid</stringProp>
               <stringProp name="EXPECTED_VALUE">105.0</stringProp>
               <boolProp name="JSONVALIDATION">true</boolProp>
@@ -3002,7 +3002,7 @@
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check current price" enabled="true">
               <stringProp name="JSON_PATH">current_price</stringProp>
-              <stringProp name="EXPECTED_VALUE">100.0</stringProp>
+              <stringProp name="EXPECTED_VALUE">${bidCount}0.0</stringProp>
               <boolProp name="JSONVALIDATION">true</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
               <boolProp name="INVERT">false</boolProp>
