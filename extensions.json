@@ -1709,6 +1709,18 @@
             "icon": "https://raw.githubusercontent.com/lnbits/satspot/main/static/image/satspot.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/satspot/main/config.json",
             "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/X9jN3a4iTWtFMwrYd8zsmE"
+        },
+        {
+            "id": "auction_house",
+            "repo": "https://github.com/lnbits/auction_house",
+            "version": "1.0.0",
+            "archive": "https://github.com/lnbits/auction_house/archive/refs/tags/v1.0.0.zip",
+            "hash": "a3814b72233fa07af7a7545703ef062d65613dd1027e528b20f012dec76bd4b3",
+            "min_lnbits_version": "1.0.0",
+            "name": "Auction House",
+            "short_description": "Auction digital goods and services for Bitcoin.",
+            "icon": "https://raw.githubusercontent.com/lnbits/auction_house/main/static/image/auction_house.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/auction_house/main/config.json"
         }
     ]
 }
