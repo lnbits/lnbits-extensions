@@ -1207,12 +1207,12 @@
             "id": "bleskomat",
             "repo": "https://github.com/lnbits/bleskomat",
             "name": "Bleskomat",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "min_lnbits_version": "1.0.0",
             "short_description": "Connect a Bleskomat ATM to an lnbits",
             "icon": "https://github.com/lnbits/bleskomat/raw/main/static/image/bleskomat.png",
-            "archive": "https://github.com/lnbits/bleskomat/archive/refs/tags/v1.0.0.zip",
-            "hash": "13c61db674ca86493cd55240294ea5ce48a70ffa2a396374ec0e770fae6e807a",
+            "archive": "https://github.com/lnbits/bleskomat/archive/refs/tags/v1.0.1.zip",
+            "hash": "6fd93aadce4ac6cf617a0e59fd9f537860e9ec862e676ceb329c7dab8896aead",
             "details_link": "https://raw.githubusercontent.com/lnbits/bleskomat/main/config.json"
         },
         {
