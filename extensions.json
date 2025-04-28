@@ -5,7 +5,7 @@
         "name": "CardaNostra",
         "version": 1.0,
         "short_description": "Control BoltCards via Nostr",      
-        "archive": "https://github.com/ponthief/cardanostra/archive/refs/tags/1.0.1.zip",            
+        "archive": "https://github.com/ponthief/cardanostra/archive/refs/tags/v1.0.1.zip",            
         "min_lnbits_version": "1.0.0",
         "repo": "https://github.com/ponthief/cardanostra",
         "hash": "350484e8382d07f588255920a860c1218738bb81c5af53eb1895200a5c6cc2e1",
