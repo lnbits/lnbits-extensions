@@ -1578,7 +1578,7 @@
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 200" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="49586">200</stringProp>
-                <stringProp name="51509">401</stringProp>
+                <stringProp name="51511">403</stringProp>
               </collectionProp>
               <stringProp name="Assertion.custom_message"></stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
@@ -1586,7 +1586,7 @@
               <intProp name="Assertion.test_type">40</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check Status Code 200 (or 401 for admin extension)" enabled="true">
+            <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check Status Code 200 (or 403 for admin extension)" enabled="true">
               <stringProp name="scriptLanguage">javascript</stringProp>
               <stringProp name="parameters"></stringProp>
               <stringProp name="filename">${config_path}/scripts/check_admin_extension_status_code.js</stringProp>
@@ -1876,7 +1876,7 @@
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check Status Code 200 (or 401 for admin extension)" enabled="true">
+            <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check Status Code 200 (or 403 for admin extension)" enabled="true">
               <stringProp name="scriptLanguage">javascript</stringProp>
               <stringProp name="parameters"></stringProp>
               <stringProp name="filename">${config_path}/scripts/check_admin_extension_status_code.js</stringProp>
@@ -1887,7 +1887,7 @@
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 200" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="49586">200</stringProp>
-                <stringProp name="51509">401</stringProp>
+                <stringProp name="51511">403</stringProp>
               </collectionProp>
               <stringProp name="Assertion.custom_message"></stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
