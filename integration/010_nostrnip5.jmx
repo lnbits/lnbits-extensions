@@ -1017,7 +1017,7 @@ vars.put(&quot;identifierAlan&quot;, &quot;alan_&quot; + vars.get(&quot;userId&q
           <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[admin] Manage Identifiers - (fail 401)" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[admin] Manage Identifiers - (fail 403)" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
@@ -1088,7 +1088,7 @@ reserved_b</stringProp>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 401" enabled="true">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="51509">401</stringProp>
+                <stringProp name="51511">403</stringProp>
               </collectionProp>
               <stringProp name="Assertion.custom_message"></stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
