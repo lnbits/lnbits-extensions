@@ -1086,7 +1086,7 @@ reserved_b</stringProp>
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 401" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 403" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="51511">403</stringProp>
               </collectionProp>
