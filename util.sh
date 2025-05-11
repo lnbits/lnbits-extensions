@@ -12,7 +12,10 @@ clone() {
         git clone $repo $id
         if command -v poetry &> /dev/null
         then
+            poetry env use python3.10
             poetry lock
+            poetry install
+            npm install
         fi
     done
     cd ..
@@ -29,6 +32,7 @@ pull() {
         git pull
         if command -v poetry && command -v npm &> /dev/null
         then
+            poetry env use python3.10
             poetry lock
             poetry install
             npm install
