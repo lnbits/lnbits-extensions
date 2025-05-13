@@ -1721,6 +1721,18 @@
             "short_description": "Auction digital goods and services for Bitcoin",
             "icon": "https://raw.githubusercontent.com/lnbits/auction_house/main/static/image/auction_house.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/auction_house/main/config.json"
+        },
+        {
+            "id": "nwcprovider",
+            "repo": "https://github.com/lnbits/nwcprovider",
+            "version": "1.0.0",
+            "archive": "https://github.com/lnbits/nwcprovider/archive/refs/tags/v1.0.0.zip",
+            "hash": "da52a47c41db70eee693ba32e0c001bfacbc5bb56da16f0593a27bb0eb5fe94f",
+            "min_lnbits_version": "1.0.0",
+            "name": "NWC Service Provider",
+            "short_description": "A NWC service provider for LNbits",
+            "icon": "https://raw.githubusercontent.com/lnbits/nwcprovider/main/static/image/nwcprovider.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/nwcprovider/main/config.json"
         }
     ]
 }
