@@ -3,7 +3,7 @@
         {
         "id": "cardanostra",
         "name": "CardaNostra",
-        "version": 1.0,
+        "version": "1.0.1",
         "short_description": "Control BoltCards via Nostr",      
         "archive": "https://github.com/ponthief/cardanostra/archive/refs/tags/v1.0.1.zip",            
         "min_lnbits_version": "1.0.0",
@@ -11,7 +11,7 @@
         "hash": "350484e8382d07f588255920a860c1218738bb81c5af53eb1895200a5c6cc2e1",
         "icon": "https://github.com/ponthief/cardanostra/raw/main/static/cardanostra.png",
         "details_link": "https://raw.githubusercontent.com/ponthief/cardanostra/main/config.json",
-        "pay_link": "https://bolt.bitbest.net/paywall/api/v1/paywalls/invoice/bwHLzfots4NNfBUqCVSx5b"
+        "pay_link": "https://bolt.bitaurus.net/paywall/api/v1/paywalls/invoice/bQmngK8gMzQHpUzSvEhpAw"
         }
     ]
 }
