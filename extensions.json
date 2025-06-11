@@ -1745,5 +1745,6 @@
             "short_description": "LnurlFlip creates a single LNURL that automatically switches between accepting payments and allowing withdrawals based on the current balance.",
             "icon": "https://raw.githubusercontent.com/echennells/lnurlFlip/main/static/image/lnurlFlip.png",
             "details_link": "https://raw.githubusercontent.com/echennells/lnurlFlip/main/config.json"
+	}
     ]
 }
