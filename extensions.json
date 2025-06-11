@@ -1742,7 +1742,7 @@
             "hash": "c49a1308fd9ccbc6361ed9f438bf1a9276f71cad818faab813aee72f39d412c0",
             "min_lnbits_version": "1.0.0",
             "name": "lnurlFlip",
-            "short_description": "LnurlFlip creates a single LNURL that automatically switches between accepting payments and allowing withdrawals based on the current balance.",
+            "short_description": "Creates a static QR code that can be used by both LNURLp and LNURLw.",
             "icon": "https://raw.githubusercontent.com/echennells/lnurlFlip/main/static/image/lnurlFlip.png",
             "details_link": "https://raw.githubusercontent.com/echennells/lnurlFlip/main/config.json"
 	}
