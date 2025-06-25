@@ -1733,6 +1733,18 @@
             "short_description": "A NWC service provider for LNbits",
             "icon": "https://raw.githubusercontent.com/lnbits/nwcprovider/main/static/image/nwcprovider.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/nwcprovider/main/config.json"
+        },
+        {
+            "id": "nwcprovider",
+            "repo": "https://github.com/lnbits/nwcprovider",
+            "version": "1.0.1",
+            "archive": "https://github.com/lnbits/nwcprovider/archive/refs/tags/v1.0.1.zip",
+            "hash": "87db1fbba2641e58dd5fd6967989034470339d009714e8a6a3545bbf4d2c8669",
+            "min_lnbits_version": "1.0.0",
+            "name": "NWC Service Provider",
+            "short_description": "A NWC service provider for LNbits",
+            "icon": "https://raw.githubusercontent.com/lnbits/nwcprovider/main/static/image/nwcprovider.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/nwcprovider/main/config.json"
         }
     ]
 }
