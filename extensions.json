@@ -1708,6 +1708,20 @@
             "short_description": "Bet sats on coinflips",
             "icon": "https://raw.githubusercontent.com/lnbits/coinflip/main/static/image/coinflip.gif",
             "details_link": "https://raw.githubusercontent.com/lnbits/coinflip/main/config.json",
+            "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/eaUze6K9ZVzUHF68YxrSg5",
+            "max_lnbits_version": "1.1.0"
+        },
+        {
+            "id": "coinflip",
+            "repo": "https://github.com/lnbits/coinflip",
+            "version": "1.1.0",
+            "archive": "https://github.com/lnbits/coinflip/archive/refs/tags/v1.1.0.zip",
+            "hash": "96ae4f7811c61591bb1646fe0762a41ae1da494a40da3d07d17cc73183412c96",
+            "min_lnbits_version": "1.3.0",
+            "name": "Coinflip",
+            "short_description": "Bet sats on coinflips",
+            "icon": "https://raw.githubusercontent.com/lnbits/coinflip/main/static/image/coinflip.gif",
+            "details_link": "https://raw.githubusercontent.com/lnbits/coinflip/main/config.json",
             "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/eaUze6K9ZVzUHF68YxrSg5"
         },
         {
