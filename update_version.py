@@ -13,6 +13,7 @@ if len(sys.argv) < 3:
 repo_name = sys.argv[1]
 version = sys.argv[2]
 
+latest_release = "https://api.github.com/repos/lnbits/lnbits/releases/latest"
 repo = f"https://github.com/lnbits/{repo_name}"
 archive = f"{repo}/archive/refs/tags/{version}.zip"
 with urllib.request.urlopen(archive) as f:
@@ -74,7 +75,11 @@ elif latest_extension["min_lnbits_version"] != config.get("min_lnbits_version"):
     _extensions.insert(latest_index+1, new_ext)
     extensions["extensions"] = _extensions
     # update the max version of the previous release
-    extensions["extensions"][latest_index]["max_lnbits_version"] = version.replace("v", "")
+    with urllib.request.urlopen(latest_release) as f:
+        body = f.read()
+    _json = json.loads(body)
+    latest_version = _json.get("tag_name").replace("v", "")
+    extensions["extensions"][latest_index]["max_lnbits_version"] = latest_version
 else:
     # else its not a breaking change, just update the version and archive
     extensions["extensions"][latest_index]["version"] = version.replace("v", "")
