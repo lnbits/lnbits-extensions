@@ -1670,7 +1670,20 @@
             "icon": "https://raw.githubusercontent.com/lnbits/lnpos_extension/main/static/image/lnpos.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/lnpos_extension/main/config.json",
             "archive": "https://github.com/lnbits/lnpos_extension/archive/refs/tags/v1.0.0.zip",
-            "hash": "b97e8d1c6530a17ec6a6deced33a89b054f4bcada71f97080cfe8142777813d3"
+            "hash": "b97e8d1c6530a17ec6a6deced33a89b054f4bcada71f97080cfe8142777813d3",
+            "max_lnbits_version": "1.1.0"
+        },
+        {
+            "id": "lnpos",
+            "repo": "https://github.com/lnbits/lnpos_extension",
+            "name": "LNPoS",
+            "version": "1.1.0",
+            "min_lnbits_version": "1.3.0",
+            "short_description": "LNPoS lightning point of sale",
+            "icon": "https://raw.githubusercontent.com/lnbits/lnpos_extension/main/static/image/lnpos.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/lnpos_extension/main/config.json",
+            "archive": "https://github.com/lnbits/lnpos_extension/archive/refs/tags/v1.1.0.zip",
+            "hash": "309c37473043071c61586a497ccfc244ba0a1a2b1849408dea686425342a857b"
         },
         {
             "id": "bitcoinswitch",
