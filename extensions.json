@@ -284,7 +284,20 @@
             "details_link": "https://raw.githubusercontent.com/lnbits/tpos/main/config.json",
             "icon": "https://raw.githubusercontent.com/lnbits/tpos/main/static/image/tpos.png",
             "archive": "https://github.com/lnbits/tpos/archive/refs/tags/v1.0.5.zip",
-            "hash": "64739f491ff1acd266219910d62abc760b3bd6bd85a5a55263ed49c349198015"
+            "hash": "64739f491ff1acd266219910d62abc760b3bd6bd85a5a55263ed49c349198015",
+            "max_lnbits_version": "1.2.1"
+        },
+        {
+            "id": "tpos",
+            "repo": "https://github.com/lnbits/tpos",
+            "name": "TPoS",
+            "version": "1.1.0",
+            "min_lnbits_version": "1.3.0",
+            "short_description": "A shareable PoS terminal!",
+            "details_link": "https://raw.githubusercontent.com/lnbits/tpos/main/config.json",
+            "icon": "https://raw.githubusercontent.com/lnbits/tpos/main/static/image/tpos.png",
+            "archive": "https://github.com/lnbits/tpos/archive/refs/tags/v1.1.0.zip",
+            "hash": "df7f43df8216c4f1471047769097d3e10a9d22177dcc21ebf5627c48d614c2fc"
         },
         {
             "id": "usermanager",
