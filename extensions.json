@@ -900,7 +900,7 @@
             "archive": "https://github.com/lnbits/livestream/archive/refs/tags/v1.0.1.zip",
             "hash": "021c60660c838880cc7e9086e43f347c47c409b2900c36ef178e517548b31137",
             "details_link": "https://raw.githubusercontent.com/lnbits/livestream/main/config.json",
-            "max_lnbits_version": "1.1.1"
+            "max_lnbits_version": "1.2.1"
         },
         {
             "id": "livestream",
