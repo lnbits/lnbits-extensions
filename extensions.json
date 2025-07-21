@@ -285,7 +285,7 @@
             "icon": "https://raw.githubusercontent.com/lnbits/tpos/main/static/image/tpos.png",
             "archive": "https://github.com/lnbits/tpos/archive/refs/tags/v1.0.5.zip",
             "hash": "64739f491ff1acd266219910d62abc760b3bd6bd85a5a55263ed49c349198015",
-            "max_lnbits_version": "1.1.0"
+            "max_lnbits_version": "1.2.1"
         },
         {
             "id": "tpos",
