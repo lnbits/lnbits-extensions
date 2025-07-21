@@ -1659,7 +1659,7 @@
             "details_link": "https://raw.githubusercontent.com/lnbits/fossa_extension/main/config.json",
             "archive": "https://github.com/lnbits/fossa_extension/archive/refs/tags/v1.0.0.zip",
             "hash": "6126545d1b71f77044d77efabb12e63babef5e900d8f316f16890b31176e1cf7",
-            "max_lnbits_version": "1.1.0"
+            "max_lnbits_version": "1.2.1"
         },
         {
             "id": "fossa",
