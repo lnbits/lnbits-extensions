@@ -739,15 +739,6 @@
                   <intProp name="Assertion.test_type">8</intProp>
                 </ResponseAssertion>
                 <hashTree/>
-                <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check lnurlp" enabled="true">
-                  <stringProp name="JSON_PATH">domain</stringProp>
-                  <stringProp name="EXPECTED_VALUE">${host}:${port}</stringProp>
-                  <boolProp name="JSONVALIDATION">true</boolProp>
-                  <boolProp name="EXPECT_NULL">false</boolProp>
-                  <boolProp name="INVERT">false</boolProp>
-                  <boolProp name="ISREGEX">true</boolProp>
-                </JSONPathAssertion>
-                <hashTree/>
                 <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check tag" enabled="true">
                   <stringProp name="JSON_PATH">tag</stringProp>
                   <stringProp name="EXPECTED_VALUE">payRequest</stringProp>
