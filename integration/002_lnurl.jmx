@@ -1535,13 +1535,6 @@
                   <stringProp name="JSONPostProcessor.defaultValues">no-withdraw-link-id</stringProp>
                 </JSONPostProcessor>
                 <hashTree/>
-                <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract withdraw link lnurl" enabled="true">
-                  <stringProp name="JSONPostProcessor.referenceNames">withdrawLinkLnurl</stringProp>
-                  <stringProp name="JSONPostProcessor.jsonPathExprs">lnurl</stringProp>
-                  <stringProp name="JSONPostProcessor.match_numbers">0</stringProp>
-                  <stringProp name="JSONPostProcessor.defaultValues">no-withdraw-link-lnurl</stringProp>
-                </JSONPostProcessor>
-                <hashTree/>
               </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[lnurlw] Go to withdraw link page" enabled="true">
                 <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1612,7 +1605,6 @@
                 <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check page content" enabled="true">
                   <collectionProp name="Asserion.test_strings">
                     <stringProp name="-416732094">Copy LNURL</stringProp>
-                    <stringProp name="-1094591029">${withdrawLinkLnurl}</stringProp>
                   </collectionProp>
                   <stringProp name="Assertion.custom_message"></stringProp>
                   <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -1699,17 +1691,8 @@
                   <intProp name="Assertion.test_type">8</intProp>
                 </ResponseAssertion>
                 <hashTree/>
-                <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check lnurlw" enabled="true">
-                  <stringProp name="JSON_PATH">lnurl</stringProp>
-                  <stringProp name="EXPECTED_VALUE">${withdrawLinkLnurl}</stringProp>
-                  <boolProp name="JSONVALIDATION">true</boolProp>
-                  <boolProp name="EXPECT_NULL">false</boolProp>
-                  <boolProp name="INVERT">false</boolProp>
-                  <boolProp name="ISREGEX">true</boolProp>
-                </JSONPathAssertion>
-                <hashTree/>
               </hashTree>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[lnurlw] Decode LNURLw" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[lnurlw] Fetch LNURLw Response" enabled="true">
                 <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
                   <collectionProp name="Arguments.arguments">
@@ -1726,7 +1709,7 @@
                 <stringProp name="HTTPSampler.port">${port}</stringProp>
                 <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
                 <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-                <stringProp name="HTTPSampler.path">/api/v1/lnurlscan/${withdrawLinkLnurl}</stringProp>
+                <stringProp name="HTTPSampler.path">/withdraw/api/v1/lnurl/${withdrawLinkId}</stringProp>
                 <stringProp name="HTTPSampler.method">GET</stringProp>
                 <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
                 <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
