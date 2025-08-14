@@ -1535,6 +1535,13 @@
                   <stringProp name="JSONPostProcessor.defaultValues">no-withdraw-link-id</stringProp>
                 </JSONPostProcessor>
                 <hashTree/>
+                <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract withdraw unique_hash" enabled="true">
+                  <stringProp name="JSONPostProcessor.referenceNames">withdrawLinkUniqueHash</stringProp>
+                  <stringProp name="JSONPostProcessor.jsonPathExprs">unique_hash</stringProp>
+                  <stringProp name="JSONPostProcessor.match_numbers">0</stringProp>
+                  <stringProp name="JSONPostProcessor.defaultValues">no-withdraw-link-unique-hash</stringProp>
+                </JSONPostProcessor>
+                <hashTree/>
               </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[lnurlw] Go to withdraw link page" enabled="true">
                 <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -1709,7 +1716,7 @@
                 <stringProp name="HTTPSampler.port">${port}</stringProp>
                 <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
                 <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-                <stringProp name="HTTPSampler.path">/withdraw/api/v1/lnurl/${withdrawLinkId}</stringProp>
+                <stringProp name="HTTPSampler.path">/withdraw/api/v1/lnurl/${withdrawLinkUniqueHash}</stringProp>
                 <stringProp name="HTTPSampler.method">GET</stringProp>
                 <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
                 <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
