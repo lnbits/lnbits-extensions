@@ -482,13 +482,6 @@
               <stringProp name="JSONPostProcessor.defaultValues">no-pay-link-id</stringProp>
             </JSONPostProcessor>
             <hashTree/>
-            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract pay link URL" enabled="true">
-              <stringProp name="JSONPostProcessor.referenceNames">payLinkLnurl</stringProp>
-              <stringProp name="JSONPostProcessor.jsonPathExprs">lnurl</stringProp>
-              <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
-              <stringProp name="JSONPostProcessor.defaultValues">no-pay-link-url</stringProp>
-            </JSONPostProcessor>
-            <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check Id" enabled="true">
               <stringProp name="JSON_PATH">id</stringProp>
               <stringProp name="EXPECTED_VALUE"></stringProp>
@@ -676,17 +669,8 @@
               <intProp name="Assertion.test_type">8</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check lnurlp" enabled="true">
-              <stringProp name="JSON_PATH">lnurl</stringProp>
-              <stringProp name="EXPECTED_VALUE">${payLinkLnurl}</stringProp>
-              <boolProp name="JSONVALIDATION">true</boolProp>
-              <boolProp name="EXPECT_NULL">false</boolProp>
-              <boolProp name="INVERT">false</boolProp>
-              <boolProp name="ISREGEX">true</boolProp>
-            </JSONPathAssertion>
-            <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[lnurlp] Decode LNURLp" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[lnurlp] Fetch LNURLp res" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
@@ -703,7 +687,7 @@
             <stringProp name="HTTPSampler.port">${port}</stringProp>
             <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-            <stringProp name="HTTPSampler.path">/api/v1/lnurlscan/${payLinkLnurl}</stringProp>
+            <stringProp name="HTTPSampler.path">/lnurlp/${payLinkId}</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1411,11 +1395,11 @@ props.put(&quot;receiveInkey&quot;, receiveInkey)
                   <stringProp name="JSONPostProcessor.defaultValues">no-withdraw-link-id</stringProp>
                 </JSONPostProcessor>
                 <hashTree/>
-                <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract withdraw link lnurl" enabled="true">
-                  <stringProp name="JSONPostProcessor.referenceNames">withdrawLinkLnurl</stringProp>
-                  <stringProp name="JSONPostProcessor.jsonPathExprs">lnurl</stringProp>
+                <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract withdraw link unique_hash" enabled="true">
+                  <stringProp name="JSONPostProcessor.referenceNames">withdrawLinkUniqueHash</stringProp>
+                  <stringProp name="JSONPostProcessor.jsonPathExprs">unique_hash</stringProp>
                   <stringProp name="JSONPostProcessor.match_numbers">0</stringProp>
-                  <stringProp name="JSONPostProcessor.defaultValues">no-withdraw-link-lnurl</stringProp>
+                  <stringProp name="JSONPostProcessor.defaultValues">no-withdraw-link-unique-hash</stringProp>
                 </JSONPostProcessor>
                 <hashTree/>
               </hashTree>
@@ -1575,17 +1559,8 @@ props.put(&quot;receiveInkey&quot;, receiveInkey)
                   <intProp name="Assertion.test_type">8</intProp>
                 </ResponseAssertion>
                 <hashTree/>
-                <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check lnurlw" enabled="true">
-                  <stringProp name="JSON_PATH">lnurl</stringProp>
-                  <stringProp name="EXPECTED_VALUE">${withdrawLinkLnurl}</stringProp>
-                  <boolProp name="JSONVALIDATION">true</boolProp>
-                  <boolProp name="EXPECT_NULL">false</boolProp>
-                  <boolProp name="INVERT">false</boolProp>
-                  <boolProp name="ISREGEX">true</boolProp>
-                </JSONPathAssertion>
-                <hashTree/>
               </hashTree>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[lnurlw] Decode LNURLw" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[lnurlw] Fetch LNURLw response" enabled="true">
                 <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
@@ -1602,7 +1577,7 @@ props.put(&quot;receiveInkey&quot;, receiveInkey)
                 <stringProp name="HTTPSampler.port">${port}</stringProp>
                 <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
                 <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-                <stringProp name="HTTPSampler.path">/api/v1/lnurlscan/${withdrawLinkLnurl}</stringProp>
+                <stringProp name="HTTPSampler.path">/withdraw/api/v1/lnurl/${withdrawLinkUniqueHash}</stringProp>
                 <stringProp name="HTTPSampler.method">GET</stringProp>
                 <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
                 <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
