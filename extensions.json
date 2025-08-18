@@ -1435,6 +1435,19 @@
             "icon": "https://github.com/lnbits/scrub/raw/main/static/image/scrub.png",
             "archive": "https://github.com/lnbits/scrub/archive/refs/tags/v1.0.0.zip",
             "hash": "03d0ecb1dad41dde8cf30598371dfb5cb64b205fdb86b793fd88d36ac066d426",
+            "details_link": "https://raw.githubusercontent.com/lnbits/scrub/main/config.json",
+            "max_lnbits_version": "1.3.0"
+        },
+        {
+            "id": "scrub",
+            "repo": "https://github.com/lnbits/scrub",
+            "name": "Scrub",
+            "version": "1.1.0",
+            "min_lnbits_version": "1.3.0",
+            "short_description": "Pass payments to LNURLp/LNaddress",
+            "icon": "https://github.com/lnbits/scrub/raw/main/static/image/scrub.png",
+            "archive": "https://github.com/lnbits/scrub/archive/refs/tags/v1.1.0.zip",
+            "hash": "e38fb3e68d34a370f1ffd150cc8810bcfce07e08b03c345323e43b49a3ed1a64",
             "details_link": "https://raw.githubusercontent.com/lnbits/scrub/main/config.json"
         },
         {
