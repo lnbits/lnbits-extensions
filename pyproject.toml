@@ -1,14 +1,8 @@
-[tool.poetry]
+[project]
 name = "lnbits-extensions"
 version = "1.0.0"
-description = ""
-authors = ["Alan Bits <alan@lnbits.com>"]
+requires-python = ">=3.10,<3.13"
+description = "LNbits Extensions Repository"
+authors = [{ name = "Alan Bits", email = "alan@lnbits.com" }]
+urls = { Homepage = "https://extensions.lnbits.com", Repository = "https://github.com/lnbits/lnbits-extensions" }
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.9"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
