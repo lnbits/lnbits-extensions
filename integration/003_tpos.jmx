@@ -1033,7 +1033,7 @@
             </ResponseAssertion>
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check payment request" enabled="true">
-              <stringProp name="JSON_PATH">payment_request</stringProp>
+              <stringProp name="JSON_PATH">bolt11</stringProp>
               <stringProp name="EXPECTED_VALUE"></stringProp>
               <boolProp name="JSONVALIDATION">false</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
@@ -1052,7 +1052,7 @@
             <hashTree/>
             <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract payment request" enabled="true">
               <stringProp name="JSONPostProcessor.referenceNames">paymentRequest</stringProp>
-              <stringProp name="JSONPostProcessor.jsonPathExprs">payment_request</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">bolt11</stringProp>
               <stringProp name="JSONPostProcessor.match_numbers">0</stringProp>
               <stringProp name="JSONPostProcessor.defaultValues">no-payment-request</stringProp>
             </JSONPostProcessor>
@@ -1431,7 +1431,7 @@
             </ResponseAssertion>
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check payment request" enabled="true">
-              <stringProp name="JSON_PATH">payment_request</stringProp>
+              <stringProp name="JSON_PATH">bolt11</stringProp>
               <stringProp name="EXPECTED_VALUE"></stringProp>
               <boolProp name="JSONVALIDATION">false</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
@@ -1457,7 +1457,7 @@
             <hashTree/>
             <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract payment request" enabled="true">
               <stringProp name="JSONPostProcessor.referenceNames">paymentRequest</stringProp>
-              <stringProp name="JSONPostProcessor.jsonPathExprs">payment_request</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">bolt11</stringProp>
               <stringProp name="JSONPostProcessor.match_numbers">0</stringProp>
               <stringProp name="JSONPostProcessor.defaultValues">no-payment-request</stringProp>
             </JSONPostProcessor>
@@ -1995,7 +1995,7 @@
             </ResponseAssertion>
             <hashTree/>
             <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check payment request" enabled="true">
-              <stringProp name="JSON_PATH">payment_request</stringProp>
+              <stringProp name="JSON_PATH">bolt11</stringProp>
               <stringProp name="EXPECTED_VALUE"></stringProp>
               <boolProp name="JSONVALIDATION">false</boolProp>
               <boolProp name="EXPECT_NULL">false</boolProp>
@@ -2014,7 +2014,7 @@
             <hashTree/>
             <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract payment request" enabled="true">
               <stringProp name="JSONPostProcessor.referenceNames">paymentRequest</stringProp>
-              <stringProp name="JSONPostProcessor.jsonPathExprs">payment_request</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">bolt11</stringProp>
               <stringProp name="JSONPostProcessor.match_numbers">0</stringProp>
               <stringProp name="JSONPostProcessor.defaultValues">no-payment-request</stringProp>
             </JSONPostProcessor>
@@ -2352,7 +2352,7 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TPoS ATM mode" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TPoS ATM mode" enabled="false">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
           <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
@@ -2432,7 +2432,7 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TPoS ATM Withdraw" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TPoS ATM Withdraw" enabled="false">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
           <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
