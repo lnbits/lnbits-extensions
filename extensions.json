@@ -406,7 +406,20 @@
             "icon": "https://raw.githubusercontent.com/lnbits/events/main/static/image/events.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/events/main/config.json",
             "archive": "https://github.com/lnbits/events/archive/refs/tags/v1.0.0.zip",
-            "hash": "89151a71bad3b49d565118437b46cf84c833ff87be7a4a7b77e6a2fd919e2a04"
+            "hash": "89151a71bad3b49d565118437b46cf84c833ff87be7a4a7b77e6a2fd919e2a04",
+            "max_lnbits_version": "1.3.0"
+        },
+        {
+            "id": "events",
+            "repo": "https://github.com/lnbits/events",
+            "name": "Events",
+            "version": "1.1.0",
+            "min_lnbits_version": "1.3.0",
+            "short_description": "Sell and register event tickets",
+            "icon": "https://raw.githubusercontent.com/lnbits/events/main/static/image/events.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/events/main/config.json",
+            "archive": "https://github.com/lnbits/events/archive/refs/tags/v1.1.0.zip",
+            "hash": "fc10e69ecde49ae1c0e653af9265cca385b6fc040e890e9324bd3eff9e45e518"
         },
         {
             "id": "lnurldevice",
