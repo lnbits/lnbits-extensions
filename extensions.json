@@ -784,6 +784,20 @@
             "details_link": "https://raw.githubusercontent.com/lnbits/satsdice/main/config.json",
             "archive": "https://github.com/lnbits/satsdice/archive/refs/tags/v1.0.0.zip",
             "hash": "6729793a5aaecf29383ea4c8c569f6e2ecc0f9d7a1844be5c5bde2ca174795a3",
+            "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/T2oyoenGmHLasaBhLmA2Sz",
+            "max_lnbits_version": "1.3.0"
+        },
+        {
+            "id": "satsdice",
+            "repo": "https://github.com/lnbits/satsdice",
+            "name": "Sats Dice",
+            "version": "1.1.1",
+            "min_lnbits_version": "1.3.0",
+            "short_description": "LNURL Satoshi dice",
+            "icon": "https://github.com/lnbits/satsdice/raw/main/static/image/satsdice.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/satsdice/main/config.json",
+            "archive": "https://github.com/lnbits/satsdice/archive/refs/tags/v1.1.1.zip",
+            "hash": "c57a438ee39968bd1315314bb8fa29502535a904ab5d4fdffa4655cab871c65e",
             "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/T2oyoenGmHLasaBhLmA2Sz"
         },
         {
