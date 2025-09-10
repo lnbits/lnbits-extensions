@@ -1587,12 +1587,12 @@
             "id": "nostrclient",
             "repo": "https://github.com/lnbits/nostrclient",
             "name": "Nostr Client",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "min_lnbits_version": "1.0.0",
             "short_description": "Nostr client for extensions",
             "icon": "https://raw.githubusercontent.com/lnbits/nostrclient/main/static/images/nostr-bitcoin.png",
-            "archive": "https://github.com/lnbits/nostrclient/archive/refs/tags/v1.0.0.zip",
-            "hash": "f3f149a48b83014bd5869c72535b3b372db45f84b164ae300aba746afa297c7f",
+            "archive": "https://github.com/lnbits/nostrclient/archive/refs/tags/v1.0.1.zip",
+            "hash": "cde77e4454297abf9b9c7400fc5a5f071d0b0dd9c6651f403a0a47dfea544e53",
             "details_link": "https://raw.githubusercontent.com/lnbits/nostrclient/main/config.json"
         },
         {
