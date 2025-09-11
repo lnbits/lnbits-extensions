@@ -720,7 +720,20 @@
             "icon": "https://github.com/lnbits/boltz/raw/main/static/image/boltz.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/boltz/main/config.json",
             "archive": "https://github.com/lnbits/boltz/archive/refs/tags/v1.0.0.zip",
-            "hash": "d3a92020dced7987832dbd84fa40c369e206ebf0f8132e10a35c111cd13552a2"
+            "hash": "d3a92020dced7987832dbd84fa40c369e206ebf0f8132e10a35c111cd13552a2",
+            "max_lnbits_version": "1.0.0"
+        },
+        {
+            "id": "boltz",
+            "repo": "https://github.com/lnbits/boltz",
+            "name": "Boltz",
+            "version": "1.0.1",
+            "min_lnbits_version": "1.0.0",
+            "short_description": "Perform onchain/offchain swaps with Liquid support",
+            "icon": "https://github.com/lnbits/boltz/raw/main/static/image/boltz.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/boltz/main/config.json",
+            "archive": "https://github.com/lnbits/boltz/archive/refs/tags/v1.0.1.zip",
+            "hash": "a3031265e28ac9b1dea2d2bf23133de728038b5a83ede2d5e0d148356df51582"
         },
         {
             "id": "satsdice",
