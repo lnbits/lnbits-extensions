@@ -1972,6 +1972,18 @@
             "short_description": "A NWC service provider for LNbits",
             "icon": "https://raw.githubusercontent.com/lnbits/nwcprovider/main/static/image/nwcprovider.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/nwcprovider/main/config.json"
+        },
+        {
+            "id": "paidreviews",
+            "repo": "https://github.com/lnbits/paidreviews",
+            "version": "0.0.5",
+            "archive": "https://github.com/lnbits/paidreviews/archive/refs/tags/v0.0.5.zip",
+            "hash": "780d1ac68610fb59039cdeb267cbe9a6c0ccd7dae5f214381ee8bf2294005b06",
+            "min_lnbits_version": "1.3.0",
+            "name": "PaidReviews",
+            "short_description": "Pay to leave reviews based on tags",
+            "icon": "https://raw.githubusercontent.com/lnbits/paidreviews/main/static/image/paidreviews.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/paidreviews/main/config.json"
         }
     ]
 }
