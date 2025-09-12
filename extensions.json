@@ -1972,6 +1972,18 @@
             "short_description": "A NWC service provider for LNbits",
             "icon": "https://raw.githubusercontent.com/lnbits/nwcprovider/main/static/image/nwcprovider.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/nwcprovider/main/config.json"
+        },
+        {
+            "id": "sellcoins",
+            "repo": "https://github.com/lnbits/sellcoins",
+            "version": "0.0.2",
+            "archive": "https://github.com/lnbits/sellcoins/archive/refs/tags/v0.0.2.zip",
+            "hash": "61cb58cbf57bf19c1479af422f7c21c1d1507b066bfe6e167482c44fdf79ccd6",
+            "min_lnbits_version": "1.0.0",
+            "name": "SellCoins",
+            "short_description": "Sell coins for fiat",
+            "icon": "https://raw.githubusercontent.com/lnbits/sellcoins/main/static/image/sellcoins.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/sellcoins/main/config.json"
         }
     ]
 }
