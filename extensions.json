@@ -1972,6 +1972,18 @@
             "short_description": "A NWC service provider for LNbits",
             "icon": "https://raw.githubusercontent.com/lnbits/nwcprovider/main/static/image/nwcprovider.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/nwcprovider/main/config.json"
+        },
+        {
+            "id": "numbers",
+            "repo": "https://github.com/lnbits/numbers",
+            "version": "1.0.2",
+            "archive": "https://github.com/lnbits/numbers/archive/refs/tags/v1.0.2.zip",
+            "hash": "85c7eff19ceba395e9c4635647551928bed4f50046cfd203bddd6feaa28212e4",
+            "min_lnbits_version": "1.3.0",
+            "name": "Numbers",
+            "short_description": "Block based numbers game",
+            "icon": "https://raw.githubusercontent.com/lnbits/numbers/main/static/image/numbers.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/numbers/main/config.json"
         }
     ]
 }
