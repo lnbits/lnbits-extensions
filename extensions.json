@@ -1879,6 +1879,20 @@
             "short_description": "MadBitcoin's Magic Eightball",
             "icon": "https://raw.githubusercontent.com/lnbits/eightball/main/static/image/eightball.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/eightball/main/config.json",
+            "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/25TmcxLX85UndrGA4cntSP",
+            "max_lnbits_version": "1.3.0"
+        },
+        {
+            "id": "eightball",
+            "repo": "https://github.com/lnbits/eightball",
+            "version": "1.1.0",
+            "archive": "https://github.com/lnbits/eightball/archive/refs/tags/v1.1.0.zip",
+            "hash": "36ea2fd0dabb5da8fe73852445df9a87c61b7987d937fbbff565cfdf6b3eb8f2",
+            "min_lnbits_version": "1.3.0",
+            "name": "Magic 8ball",
+            "short_description": "MadBitcoin's Magic Eightball",
+            "icon": "https://raw.githubusercontent.com/lnbits/eightball/main/static/image/eightball.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/eightball/main/config.json",
             "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/25TmcxLX85UndrGA4cntSP"
         },
         {
