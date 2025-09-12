@@ -1958,6 +1958,18 @@
             "short_description": "A NWC service provider for LNbits",
             "icon": "https://raw.githubusercontent.com/lnbits/nwcprovider/main/static/image/nwcprovider.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/nwcprovider/main/config.json"
-        }
+        },
+        {
+            "id": "lnurlflip",
+            "repo": "https://github.com/echennells/lnurlFlip",
+            "version": "0.1.1",
+            "archive": "https://github.com/echennells/lnurlFlip/archive/refs/tags/v0.1.1.zip",
+            "hash": "c49a1308fd9ccbc6361ed9f438bf1a9276f71cad818faab813aee72f39d412c0",
+            "min_lnbits_version": "1.0.0",
+            "name": "LnurlFlip",
+            "short_description": "Creates a static QR code that can be used by both LNURLp and LNURLw",
+            "icon": "https://raw.githubusercontent.com/echennells/lnurlFlip/main/static/image/lnurlFlip.png",
+            "details_link": "https://raw.githubusercontent.com/echennells/lnurlFlip/main/config.json"
+	}
     ]
 }
