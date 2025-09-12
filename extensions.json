@@ -1256,13 +1256,13 @@
             "id": "paywall",
             "repo": "https://github.com/lnbits/paywall",
             "name": "Paywall",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "min_lnbits_version": "1.3.0",
             "short_description": "Create paywalls for content",
             "icon": "https://github.com/lnbits/paywall/raw/main/static/image/paywall.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/paywall/main/config.json",
-            "archive": "https://github.com/lnbits/paywall/archive/refs/tags/v1.1.0.zip",
-            "hash": "85c11be9d9c12ba0d3db835c4c290b8906cb6266b20e92481a76b0a4372fd04c"
+            "archive": "https://github.com/lnbits/paywall/archive/refs/tags/v1.2.0.zip",
+            "hash": "0a33314cf615020f3978e82d09ce67659c6c3797b41a2a53c4e540c5af9ed5d5"
         },
         {
             "id": "satspay",
