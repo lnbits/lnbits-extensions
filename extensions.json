@@ -2008,6 +2008,18 @@
             "short_description": "Sell coins for fiat",
             "icon": "https://raw.githubusercontent.com/lnbits/sellcoins/main/static/image/sellcoins.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/sellcoins/main/config.json"
+        },
+        {
+            "id": "myextension",
+            "repo": "https://github.com/lnbits/myextension",
+            "version": "0.0.6",
+            "archive": "https://github.com/lnbits/myextension/archive/refs/tags/v0.0.6.zip",
+            "hash": "7e0077ffa51237acea149058e9fedb1c21cfc060c857838f76661f16f2effc47",
+            "min_lnbits_version": "1.0.0",
+            "name": "MyExtension",
+            "short_description": "Minimal extension to build on",
+            "icon": "https://raw.githubusercontent.com/lnbits/myextension/main/static/image/myextension.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/myextension/main/config.json"
         }
     ]
 }
