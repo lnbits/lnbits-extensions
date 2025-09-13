@@ -1984,6 +1984,18 @@
             "short_description": "Pay to leave reviews based on tags",
             "icon": "https://raw.githubusercontent.com/lnbits/paidreviews/main/static/image/paidreviews.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/paidreviews/main/config.json"
+        },
+        {
+            "id": "sellcoins",
+            "repo": "https://github.com/lnbits/sellcoins",
+            "version": "0.0.4",
+            "archive": "https://github.com/lnbits/sellcoins/archive/refs/tags/v0.0.4.zip",
+            "hash": "7e4fea0f2e0b9e9a72e7e4735ef7df9df4fda0b609a43128bca05108c51866e8",
+            "min_lnbits_version": "1.3.0",
+            "name": "SellCoins",
+            "short_description": "Sell coins for fiat",
+            "icon": "https://raw.githubusercontent.com/lnbits/sellcoins/main/static/image/sellcoins.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/sellcoins/main/config.json"
         }
     ]
 }
