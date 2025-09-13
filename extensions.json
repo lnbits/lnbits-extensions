@@ -1984,6 +1984,18 @@
             "short_description": "Pay to leave reviews based on tags",
             "icon": "https://raw.githubusercontent.com/lnbits/paidreviews/main/static/image/paidreviews.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/paidreviews/main/config.json"
+        },
+        {
+            "id": "numbers",
+            "repo": "https://github.com/lnbits/numbers",
+            "version": "1.0.3",
+            "archive": "https://github.com/lnbits/numbers/archive/refs/tags/v1.0.3.zip",
+            "hash": "44948cd31fe6b04842d244a259bb554f75b3f8cfaa95fc4a1e0b9b47eb4b174e",
+            "min_lnbits_version": "1.3.0",
+            "name": "Numbers",
+            "short_description": "Block based numbers game",
+            "icon": "https://raw.githubusercontent.com/lnbits/numbers/main/static/image/numbers.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/numbers/main/config.json"
         }
     ]
 }
