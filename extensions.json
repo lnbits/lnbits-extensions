@@ -8,7 +8,7 @@
         "archive": "https://github.com/ponthief/cardanostra/archive/refs/tags/v1.0.2.zip",            
         "min_lnbits_version": "1.0.0",
         "repo": "https://github.com/ponthief/cardanostra",
-        "hash": "bcf783e0370351489a87e5f8536b8b1a8242a2f19310a0fac0ec0814b8ae4335",
+        "hash": "575551b28ecb6399c0413b9408e2815dd4e82ba9af368a2765b3e92b0e50909",
         "icon": "https://github.com/ponthief/cardanostra/raw/main/static/cardanostra.png",
         "details_link": "https://raw.githubusercontent.com/ponthief/cardanostra/main/config.json",
         "pay_link": "https://bolt.bitaurus.net/paywall/api/v1/paywalls/invoice/bQmngK8gMzQHpUzSvEhpAw"
