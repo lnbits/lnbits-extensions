@@ -176,7 +176,20 @@
             "icon": "https://raw.githubusercontent.com/lnbits/jukebox/main/static/image/jukebox.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/jukebox/main/config.json",
             "archive": "https://github.com/lnbits/jukebox/archive/refs/tags/v1.0.3.zip",
-            "hash": "40c09536bc9c51e03ab045e052e1700e531809470ca2b8fb0026c0ad68dc90b3"
+            "hash": "40c09536bc9c51e03ab045e052e1700e531809470ca2b8fb0026c0ad68dc90b3",
+            "max_lnbits_version": "1.3.0"
+        },
+        {
+            "id": "jukebox",
+            "repo": "https://github.com/lnbits/jukebox",
+            "name": "Jukebox",
+            "version": "1.0.3",
+            "min_lnbits_version": "1.3.0",
+            "short_description": "Spotify jukebox middleware",
+            "icon": "https://raw.githubusercontent.com/lnbits/jukebox/main/static/image/jukebox.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/jukebox/main/config.json",
+            "archive": "https://github.com/lnbits/jukebox/archive/refs/tags/v1.0.3.zip",
+            "hash": "7a6f979121e6135c25d731a4bef7143eb2e04139eca304d12c1cb5d58d4062b8"
         },
         {
             "id": "lnticket",
