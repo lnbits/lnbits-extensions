@@ -55,6 +55,20 @@
             "details_link": "https://raw.githubusercontent.com/lnbits/copilot/main/config.json",
             "archive": "https://github.com/lnbits/copilot/archive/refs/tags/v1.0.2.zip",
             "hash": "f38757e50a53f19f99fe4396653648481a1e2ff951ae20b6f6a4427f3cbc81be",
+            "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/A9o5kTHbA6kjWGRjzCUi8Q",
+            "max_lnbits_version": "1.3.0"
+        },
+        {
+            "id": "copilot",
+            "repo": "https://github.com/lnbits/copilot",
+            "name": "Streamer Copilot",
+            "version": "1.0.4",
+            "min_lnbits_version": "1.3.0",
+            "short_description": "Video tips/animations/webhooks",
+            "icon": "https://raw.githubusercontent.com/lnbits/copilot/main/static/bitcoin-streaming.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/copilot/main/config.json",
+            "archive": "https://github.com/lnbits/copilot/archive/refs/tags/v1.0.4.zip",
+            "hash": "3de705a8ab849f0f7d5c582ab97f3827609e65237453778799558f656ae8b210",
             "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/A9o5kTHbA6kjWGRjzCUi8Q"
         },
         {
