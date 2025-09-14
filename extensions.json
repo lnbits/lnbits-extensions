@@ -1939,9 +1939,9 @@
         {
             "id": "satspot",
             "repo": "https://github.com/lnbits/satspot",
-            "version": "1.2.1",
-            "archive": "https://github.com/lnbits/satspot/archive/refs/tags/v1.2.1.zip",
-            "hash": "f39308d035195442c5e766737e101ee2a0cd826aecbfe3458837ad71162b7223",
+            "version": "1.2.3",
+            "archive": "https://github.com/lnbits/satspot/archive/refs/tags/v1.2.3.zip",
+            "hash": "43ed5097bf256f908d458396e02ad43dab5ea8ad88d914b1fd8fa7d24edf84d0",
             "min_lnbits_version": "1.3.0",
             "name": "Satspot",
             "short_description": "Money pool games",
