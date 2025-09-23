@@ -2047,6 +2047,18 @@
             "short_description": "Minimal extension to build on",
             "icon": "https://raw.githubusercontent.com/lnbits/myextension/main/static/image/myextension.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/myextension/main/config.json"
+        },
+        {
+            "id": "extension_builder_stub",
+            "repo": "https://github.com/lnbits/extension_builder_stub",
+            "version": "0.0.6",
+            "archive": "https://github.com/lnbits/extension_builder_stub/archive/refs/tags/v0.0.6.zip",
+            "hash": "3e98bfd93e61f2369521a2df17232db10b7a59f9fefce0c34b94dddae6b26b6d",
+            "min_lnbits_version": "1.1.0",
+            "name": "extension_builder_stub_name",
+            "short_description": "extension_builder_stub_short_description",
+            "icon": "https://raw.githubusercontent.com/lnbits/extension_builder_stub/main/static/image/extension_builder_stub.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/extension_builder_stub/main/config.json"
         }
     ]
 }
