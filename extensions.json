@@ -81,7 +81,7 @@
             "short_description": "Decode Lightning Network BOLT11, LNURL, and Lightning Address",
             "icon": "https://raw.githubusercontent.com/bitkarrot/decoder/main/static/unlock.png",
             "archive": "https://github.com/bitkarrot/decoder/archive/refs/tags/v0.0.5.zip",
-            "hash": "af6f14c31da626326ba002605c6c829e5b4378fa5a8412e695468b7a693c65b2",
+            "hash": "86bcc117b1e4aa04252ca6902af17d1e731609cb1a68f0a05f611b5d1d729c6a",
             "details_link": "https://raw.githubusercontent.com/lnbits/decoder/main/config.json"
         },
         {
