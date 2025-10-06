@@ -1714,108 +1714,20 @@
                   <intProp name="Assertion.test_type">8</intProp>
                 </ResponseAssertion>
                 <hashTree/>
-              </hashTree>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[lnurlw] Fetch LNURLw Response" enabled="true">
-                <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-                  <collectionProp name="Arguments.arguments">
-                    <elementProp name="all_wallets" elementType="HTTPArgument">
-                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                      <stringProp name="Argument.name">all_wallets</stringProp>
-                      <stringProp name="Argument.value">true</stringProp>
-                      <stringProp name="Argument.metadata">=</stringProp>
-                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                    </elementProp>
-                  </collectionProp>
-                </elementProp>
-                <stringProp name="HTTPSampler.domain">${host}</stringProp>
-                <stringProp name="HTTPSampler.port">${port}</stringProp>
-                <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
-                <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-                <stringProp name="HTTPSampler.path">/withdraw/api/v1/lnurl/${withdrawLinkUniqueHash}</stringProp>
-                <stringProp name="HTTPSampler.method">GET</stringProp>
-                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-                <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
-                <boolProp name="HTTPSampler.image_parser">false</boolProp>
-                <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
-                <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
-                <boolProp name="HTTPSampler.md5">false</boolProp>
-                <intProp name="HTTPSampler.ipSourceType">0</intProp>
-              </HTTPSamplerProxy>
-              <hashTree>
-                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-                  <collectionProp name="HeaderManager.headers">
-                    <elementProp name="Sec-Fetch-Mode" elementType="Header">
-                      <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
-                      <stringProp name="Header.value">cors</stringProp>
-                    </elementProp>
-                    <elementProp name="Sec-Fetch-Site" elementType="Header">
-                      <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
-                      <stringProp name="Header.value">same-origin</stringProp>
-                    </elementProp>
-                    <elementProp name="Accept-Language" elementType="Header">
-                      <stringProp name="Header.name">Accept-Language</stringProp>
-                      <stringProp name="Header.value">en-US,en;q=0.${paidChargeCount}</stringProp>
-                    </elementProp>
-                    <elementProp name="X-Api-Key" elementType="Header">
-                      <stringProp name="Header.name">X-Api-Key</stringProp>
-                      <stringProp name="Header.value">${adminWalletKey}</stringProp>
-                    </elementProp>
-                    <elementProp name="Accept-Encoding" elementType="Header">
-                      <stringProp name="Header.name">Accept-Encoding</stringProp>
-                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
-                    </elementProp>
-                    <elementProp name="User-Agent" elementType="Header">
-                      <stringProp name="Header.name">User-Agent</stringProp>
-                      <stringProp name="Header.value">Mozilla/${paidChargeCount}.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0</stringProp>
-                    </elementProp>
-                    <elementProp name="Accept" elementType="Header">
-                      <stringProp name="Header.name">Accept</stringProp>
-                      <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
-                    </elementProp>
-                    <elementProp name="Sec-Fetch-Dest" elementType="Header">
-                      <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
-                      <stringProp name="Header.value">empty</stringProp>
-                    </elementProp>
-                  </collectionProp>
-                </HeaderManager>
-                <hashTree/>
-                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 200" enabled="true">
-                  <collectionProp name="Asserion.test_strings">
-                    <stringProp name="49586">200</stringProp>
-                  </collectionProp>
-                  <stringProp name="Assertion.custom_message"></stringProp>
-                  <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
-                  <boolProp name="Assertion.assume_success">false</boolProp>
-                  <intProp name="Assertion.test_type">8</intProp>
-                </ResponseAssertion>
-                <hashTree/>
-                <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check tag" enabled="true">
-                  <stringProp name="JSON_PATH">tag</stringProp>
-                  <stringProp name="EXPECTED_VALUE">withdrawRequest</stringProp>
-                  <boolProp name="JSONVALIDATION">true</boolProp>
+                <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check lnurl field (deprecated)" enabled="true">
+                  <stringProp name="JSON_PATH">lnurl</stringProp>
+                  <stringProp name="EXPECTED_VALUE"></stringProp>
+                  <boolProp name="JSONVALIDATION">false</boolProp>
                   <boolProp name="EXPECT_NULL">false</boolProp>
                   <boolProp name="INVERT">false</boolProp>
-                  <boolProp name="ISREGEX">true</boolProp>
+                  <boolProp name="ISREGEX">false</boolProp>
                 </JSONPathAssertion>
                 <hashTree/>
-                <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check default description" enabled="true">
-                  <stringProp name="JSON_PATH">defaultDescription</stringProp>
-                  <stringProp name="EXPECTED_VALUE">withdraw ${lnurlwCounter}</stringProp>
-                  <boolProp name="JSONVALIDATION">true</boolProp>
-                  <boolProp name="EXPECT_NULL">false</boolProp>
-                  <boolProp name="INVERT">false</boolProp>
-                  <boolProp name="ISREGEX">true</boolProp>
-                </JSONPathAssertion>
-                <hashTree/>
-                <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract res" enabled="true">
-                  <stringProp name="JSONPostProcessor.referenceNames">withdrawLinkRes</stringProp>
-                  <stringProp name="JSONPostProcessor.jsonPathExprs">$</stringProp>
+                <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract lnurl (deprecated)" enabled="true">
+                  <stringProp name="JSONPostProcessor.referenceNames">lnurl</stringProp>
+                  <stringProp name="JSONPostProcessor.jsonPathExprs">lnurl</stringProp>
                   <stringProp name="JSONPostProcessor.match_numbers">0</stringProp>
-                  <stringProp name="JSONPostProcessor.defaultValues">no-withdrawlink-callback</stringProp>
+                  <stringProp name="JSONPostProcessor.defaultValues">no-lnurl</stringProp>
                 </JSONPostProcessor>
                 <hashTree/>
               </hashTree>
@@ -1838,6 +1750,115 @@
                   <boolProp name="TransactionController.includeTimers">false</boolProp>
                 </TransactionController>
                 <hashTree>
+                  <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a bit" enabled="true">
+                    <stringProp name="ConstantTimer.delay">1000</stringProp>
+                    <stringProp name="TestPlan.comments">for the callback to be invoked</stringProp>
+                  </ConstantTimer>
+                  <hashTree/>
+                  <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[lnurlw] Fetch LNURLw Response" enabled="true">
+                    <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+                    <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                      <collectionProp name="Arguments.arguments">
+                        <elementProp name="all_wallets" elementType="HTTPArgument">
+                          <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                          <stringProp name="Argument.name">all_wallets</stringProp>
+                          <stringProp name="Argument.value">true</stringProp>
+                          <stringProp name="Argument.metadata">=</stringProp>
+                          <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                        </elementProp>
+                      </collectionProp>
+                    </elementProp>
+                    <stringProp name="HTTPSampler.domain">${host}</stringProp>
+                    <stringProp name="HTTPSampler.port">${port}</stringProp>
+                    <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
+                    <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+                    <stringProp name="HTTPSampler.path">/api/v1/lnurlscan/${lnurl}</stringProp>
+                    <stringProp name="HTTPSampler.method">GET</stringProp>
+                    <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                    <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                    <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                    <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                    <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+                    <boolProp name="HTTPSampler.image_parser">false</boolProp>
+                    <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+                    <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+                    <boolProp name="HTTPSampler.md5">false</boolProp>
+                    <intProp name="HTTPSampler.ipSourceType">0</intProp>
+                  </HTTPSamplerProxy>
+                  <hashTree>
+                    <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                      <collectionProp name="HeaderManager.headers">
+                        <elementProp name="Sec-Fetch-Mode" elementType="Header">
+                          <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+                          <stringProp name="Header.value">cors</stringProp>
+                        </elementProp>
+                        <elementProp name="Sec-Fetch-Site" elementType="Header">
+                          <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+                          <stringProp name="Header.value">same-origin</stringProp>
+                        </elementProp>
+                        <elementProp name="Accept-Language" elementType="Header">
+                          <stringProp name="Header.name">Accept-Language</stringProp>
+                          <stringProp name="Header.value">en-US,en;q=0.${paidChargeCount}</stringProp>
+                        </elementProp>
+                        <elementProp name="X-Api-Key" elementType="Header">
+                          <stringProp name="Header.name">X-Api-Key</stringProp>
+                          <stringProp name="Header.value">${adminWalletKey}</stringProp>
+                        </elementProp>
+                        <elementProp name="Accept-Encoding" elementType="Header">
+                          <stringProp name="Header.name">Accept-Encoding</stringProp>
+                          <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                        </elementProp>
+                        <elementProp name="User-Agent" elementType="Header">
+                          <stringProp name="Header.name">User-Agent</stringProp>
+                          <stringProp name="Header.value">Mozilla/${paidChargeCount}.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0</stringProp>
+                        </elementProp>
+                        <elementProp name="Accept" elementType="Header">
+                          <stringProp name="Header.name">Accept</stringProp>
+                          <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                        </elementProp>
+                        <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                          <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                          <stringProp name="Header.value">empty</stringProp>
+                        </elementProp>
+                      </collectionProp>
+                    </HeaderManager>
+                    <hashTree/>
+                    <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 200" enabled="true">
+                      <collectionProp name="Asserion.test_strings">
+                        <stringProp name="49586">200</stringProp>
+                      </collectionProp>
+                      <stringProp name="Assertion.custom_message"></stringProp>
+                      <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                      <boolProp name="Assertion.assume_success">false</boolProp>
+                      <intProp name="Assertion.test_type">8</intProp>
+                    </ResponseAssertion>
+                    <hashTree/>
+                    <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check tag" enabled="true">
+                      <stringProp name="JSON_PATH">tag</stringProp>
+                      <stringProp name="EXPECTED_VALUE">withdrawRequest</stringProp>
+                      <boolProp name="JSONVALIDATION">true</boolProp>
+                      <boolProp name="EXPECT_NULL">false</boolProp>
+                      <boolProp name="INVERT">false</boolProp>
+                      <boolProp name="ISREGEX">true</boolProp>
+                    </JSONPathAssertion>
+                    <hashTree/>
+                    <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check default description" enabled="true">
+                      <stringProp name="JSON_PATH">defaultDescription</stringProp>
+                      <stringProp name="EXPECTED_VALUE">withdraw ${lnurlwCounter}</stringProp>
+                      <boolProp name="JSONVALIDATION">true</boolProp>
+                      <boolProp name="EXPECT_NULL">false</boolProp>
+                      <boolProp name="INVERT">false</boolProp>
+                      <boolProp name="ISREGEX">true</boolProp>
+                    </JSONPathAssertion>
+                    <hashTree/>
+                    <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract res" enabled="true">
+                      <stringProp name="JSONPostProcessor.referenceNames">withdrawLinkRes</stringProp>
+                      <stringProp name="JSONPostProcessor.jsonPathExprs">$</stringProp>
+                      <stringProp name="JSONPostProcessor.match_numbers">0</stringProp>
+                      <stringProp name="JSONPostProcessor.defaultValues">no-withdrawlink-callback</stringProp>
+                    </JSONPostProcessor>
+                    <hashTree/>
+                  </hashTree>
                   <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[lnurlw] Withdraw LNURLw" enabled="true">
                     <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
                     <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -2010,11 +2031,6 @@
                     </JSR223Assertion>
                     <hashTree/>
                   </hashTree>
-                  <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a bit" enabled="true">
-                    <stringProp name="ConstantTimer.delay">1000</stringProp>
-                    <stringProp name="TestPlan.comments">for the callback to be invoked</stringProp>
-                  </ConstantTimer>
-                  <hashTree/>
                   <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[wallet] Get Payment" enabled="true">
                     <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
                     <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
