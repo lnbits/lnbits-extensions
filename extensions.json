@@ -1119,7 +1119,7 @@
             "details_link": "https://raw.githubusercontent.com/lnbits/lnurlp/main/config.json",
             "archive": "https://github.com/lnbits/lnurlp/archive/refs/tags/v1.1.2.zip",
             "hash": "e80c3c434291a6526bc4b271a41b132833c1395d5131a6940571d929f1742487",
-            "max_lnbits_version": "1.3.0"
+            "max_lnbits_version": "1.3.1"
         },
         {
             "id": "lnurlp",
