@@ -2011,7 +2011,8 @@
             "name": "PaidReviews",
             "short_description": "Pay to leave reviews based on tags",
             "icon": "https://raw.githubusercontent.com/lnbits/paidreviews/main/static/image/paidreviews.png",
-            "details_link": "https://raw.githubusercontent.com/lnbits/paidreviews/main/config.json"
+            "details_link": "https://raw.githubusercontent.com/lnbits/paidreviews/main/config.json",
+            "paid_features": "Will push 2% of payments for reviews to the LNbits dev fund"
         },
         {
             "id": "numbers",
