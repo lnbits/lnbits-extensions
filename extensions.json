@@ -2039,6 +2039,7 @@
         },
         {
             "id": "numberlottery",
+            "paid_features": "2% of a games haircut will be pushed to the dev team to help support the extension",
             "repo": "https://github.com/lnbits/numberlottery",
             "version": "1.0.0",
             "archive": "https://github.com/lnbits/numberlottery/archive/refs/tags/v1.0.0.zip",
