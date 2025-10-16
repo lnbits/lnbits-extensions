@@ -2014,18 +2014,6 @@
             "details_link": "https://raw.githubusercontent.com/lnbits/paidreviews/main/config.json"
         },
         {
-            "id": "numbers",
-            "repo": "https://github.com/lnbits/numbers",
-            "version": "1.0.7",
-            "archive": "https://github.com/lnbits/numbers/archive/refs/tags/v1.0.7.zip",
-            "hash": "f97dfa725f2c7be20ad3b111c11f945078dfc290218e987d8cf5af434a5100a5",
-            "min_lnbits_version": "1.3.0",
-            "name": "Numbers",
-            "short_description": "Block based numbers game",
-            "icon": "https://raw.githubusercontent.com/lnbits/numbers/main/static/image/numbers.png",
-            "details_link": "https://raw.githubusercontent.com/lnbits/numbers/main/config.json"
-        },
-        {
             "id": "sellcoins",
             "repo": "https://github.com/lnbits/sellcoins",
             "version": "0.0.4",
