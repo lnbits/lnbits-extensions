@@ -82,19 +82,32 @@
             "icon": "https://raw.githubusercontent.com/bitkarrot/decoder/main/static/unlock.png",
             "archive": "https://github.com/bitkarrot/decoder/archive/refs/tags/v0.0.5.zip",
             "hash": "af6f14c31da626326ba002605c6c829e5b4378fa5a8412e695468b7a693c65b2",
-            "details_link": "https://raw.githubusercontent.com/lnbits/decoder/main/config.json"
+            "details_link": "https://raw.githubusercontent.com/bitkarrot/decoder/main/config.json"
         },
         {
             "id": "decoder",
             "repo": "https://github.com/bitkarrot/decoder",
             "name": "Decoder",
             "min_lnbits_version": "1.0.0",
+            "max_lnbits_version": "1.3.0",
             "version": "1.0.0",
             "short_description": "Decode Lightning Network BOLT11, LNURL, and Lightning Address",
             "icon": "https://raw.githubusercontent.com/bitkarrot/decoder/main/static/unlock.png",
             "archive": "https://github.com/bitkarrot/decoder/archive/refs/tags/v1.0.0.zip",
             "hash": "e770ec1287dc8f7ed21841bcc47e3c14c6469cfbabb692903174c8e14cdbcb3b",
-            "details_link": "https://raw.githubusercontent.com/lnbits/decoder/main/config.json"
+            "details_link": "https://raw.githubusercontent.com/bitkarrot/decoder/main/config.json"
+        },
+        {
+            "id": "decoder",
+            "repo": "https://github.com/bitkarrot/decoder",
+            "name": "Decoder",
+            "min_lnbits_version": "1.3.0",
+            "version": "1.0.5",
+            "short_description": "Decode Lightning Network BOLT11, LNURL, and Lightning Address",
+            "icon": "https://raw.githubusercontent.com/bitkarrot/decoder/main/static/unlock.png",
+            "archive": "https://github.com/bitkarrot/decoder/archive/refs/tags/v1.0.5.zip",
+            "hash": "a2be2ed53e95744dc1dc76b8810f9d1071cfe78c7d948a9a8b6d06be2762a627",
+            "details_link": "https://raw.githubusercontent.com/bitkarrot/decoder/main/config.json"
         },
         {
             "id": "gerty",
@@ -321,6 +334,7 @@
             "version": "1.1.3",
             "min_lnbits_version": "1.3.0",
             "short_description": "A shareable PoS terminal!",
+            "paid_features": "Free to use all the PoS features, apart from 0.5% charge for the ATM which draws to help maintain development.",
             "details_link": "https://raw.githubusercontent.com/lnbits/tpos/main/config.json",
             "icon": "https://raw.githubusercontent.com/lnbits/tpos/main/static/image/tpos.png",
             "archive": "https://github.com/lnbits/tpos/archive/refs/tags/v1.1.3.zip",
@@ -1099,13 +1113,13 @@
             "id": "lnurlp",
             "repo": "https://github.com/lnbits/lnurlp",
             "name": "Pay Links",
-            "version": "1.1.2",
+            "version": "1.1.3",
             "min_lnbits_version": "1.3.0",
             "short_description": "Make reusable LNURL pay links",
             "icon": "https://github.com/lnbits/lnurlp/raw/main/static/image/lnurl-pay.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/lnurlp/main/config.json",
-            "archive": "https://github.com/lnbits/lnurlp/archive/refs/tags/v1.1.2.zip",
-            "hash": "e80c3c434291a6526bc4b271a41b132833c1395d5131a6940571d929f1742487"
+            "archive": "https://github.com/lnbits/lnurlp/archive/refs/tags/v1.1.3.zip",
+            "hash": "913b6880fd824e801f05ae50ed6f57817c9a580f1ed1b02b435823d5754e1b98"
         },
         {
             "id": "invoices",
@@ -1222,13 +1236,13 @@
             "id": "withdraw",
             "repo": "https://github.com/lnbits/withdraw",
             "name": "Withdraw Links",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "min_lnbits_version": "1.3.0",
             "short_description": "Make LNURL withdraw links",
             "icon": "https://github.com/lnbits/withdraw/raw/main/static/image/lnurl-withdraw.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/withdraw/main/config.json",
-            "archive": "https://github.com/lnbits/withdraw/archive/refs/tags/v1.2.0.zip",
-            "hash": "643176aadd862f71e78d4f0ae8ec7a5011518925c96b3fbebff901480d29f309"
+            "archive": "https://github.com/lnbits/withdraw/archive/refs/tags/v1.2.1.zip",
+            "hash": "c04b466f2066fef419a17c9400d38c956ae239a88eeb005c76b0048c6d583a34"
         },
         {
             "id": "paywall",
@@ -2013,18 +2027,6 @@
             "details_link": "https://raw.githubusercontent.com/lnbits/paidreviews/main/config.json"
         },
         {
-            "id": "numbers",
-            "repo": "https://github.com/lnbits/numbers",
-            "version": "1.0.7",
-            "archive": "https://github.com/lnbits/numbers/archive/refs/tags/v1.0.7.zip",
-            "hash": "f97dfa725f2c7be20ad3b111c11f945078dfc290218e987d8cf5af434a5100a5",
-            "min_lnbits_version": "1.3.0",
-            "name": "Numbers",
-            "short_description": "Block based numbers game",
-            "icon": "https://raw.githubusercontent.com/lnbits/numbers/main/static/image/numbers.png",
-            "details_link": "https://raw.githubusercontent.com/lnbits/numbers/main/config.json"
-        },
-        {
             "id": "sellcoins",
             "repo": "https://github.com/lnbits/sellcoins",
             "version": "0.0.4",
@@ -2047,6 +2049,19 @@
             "short_description": "Minimal extension to build on",
             "icon": "https://raw.githubusercontent.com/lnbits/myextension/main/static/image/myextension.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/myextension/main/config.json"
+        },
+        {
+            "id": "numberlottery",
+            "paid_features": "2% of a games haircut will be pushed to the dev team to help support the extension",
+            "repo": "https://github.com/lnbits/numberlottery",
+            "version": "1.0.0",
+            "archive": "https://github.com/lnbits/numberlottery/archive/refs/tags/v1.0.0.zip",
+            "hash": "ec081fddb5d981e63fe027cb8d25efa594f130e7481af6dfa30fb93990bda34c",
+            "min_lnbits_version": "1.3.0",
+            "name": "Numberlottery",
+            "short_description": "Block based numbers game",
+            "icon": "https://raw.githubusercontent.com/lnbits/numberlottery/main/static/image/numbers.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/numberlottery/main/config.json"
         }
     ]
 }
