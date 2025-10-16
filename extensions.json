@@ -82,19 +82,32 @@
             "icon": "https://raw.githubusercontent.com/bitkarrot/decoder/main/static/unlock.png",
             "archive": "https://github.com/bitkarrot/decoder/archive/refs/tags/v0.0.5.zip",
             "hash": "af6f14c31da626326ba002605c6c829e5b4378fa5a8412e695468b7a693c65b2",
-            "details_link": "https://raw.githubusercontent.com/lnbits/decoder/main/config.json"
+            "details_link": "https://raw.githubusercontent.com/bitkarrot/decoder/main/config.json"
         },
         {
             "id": "decoder",
             "repo": "https://github.com/bitkarrot/decoder",
             "name": "Decoder",
             "min_lnbits_version": "1.0.0",
+            "max_lnbits_version": "1.3.0",
             "version": "1.0.0",
             "short_description": "Decode Lightning Network BOLT11, LNURL, and Lightning Address",
             "icon": "https://raw.githubusercontent.com/bitkarrot/decoder/main/static/unlock.png",
             "archive": "https://github.com/bitkarrot/decoder/archive/refs/tags/v1.0.0.zip",
             "hash": "e770ec1287dc8f7ed21841bcc47e3c14c6469cfbabb692903174c8e14cdbcb3b",
-            "details_link": "https://raw.githubusercontent.com/lnbits/decoder/main/config.json"
+            "details_link": "https://raw.githubusercontent.com/bitkarrot/decoder/main/config.json"
+        },
+        {
+            "id": "decoder",
+            "repo": "https://github.com/bitkarrot/decoder",
+            "name": "Decoder",
+            "min_lnbits_version": "1.3.0",
+            "version": "1.0.5",
+            "short_description": "Decode Lightning Network BOLT11, LNURL, and Lightning Address",
+            "icon": "https://raw.githubusercontent.com/bitkarrot/decoder/main/static/unlock.png",
+            "archive": "https://github.com/bitkarrot/decoder/archive/refs/tags/v1.0.5.zip",
+            "hash": "fe216e6d567e7a3734c6c94eb712d95eddc2c83957b69baff8ac712684238bb0",
+            "details_link": "https://raw.githubusercontent.com/bitkarrot/decoder/main/config.json"
         },
         {
             "id": "gerty",
