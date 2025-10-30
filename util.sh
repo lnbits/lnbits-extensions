@@ -10,11 +10,11 @@ clone() {
         repo=$(echo $line | cut -f1 -d" " | sed 's/https:\/\//git@/' | sed 's/\//:/')
         id=$(echo $line | cut -f2 -d" ")
         git clone $repo $id
-        if command -v poetry &> /dev/null
+        if command -v uv &> /dev/null
         then
-            poetry env use python3.10
-            poetry lock
-            poetry install
+            uv venv python3.10
+            uv sync
+            uv install
             npm install
         fi
     done
@@ -30,11 +30,11 @@ pull() {
         id=$(echo $line | cut -f2 -d" ")
         cd $id
         git pull
-        if command -v poetry && command -v npm &> /dev/null
+        if command -v uv && command -v npm &> /dev/null
         then
-            poetry env use python3.10
-            poetry lock
-            poetry install
+            uv venv python3.10
+            uv sync
+            uv install
             npm install
         fi
         cd ..
