@@ -12,7 +12,7 @@ clone() {
         git clone $repo $id
         if command -v uv &> /dev/null
         then
-            uv venv python3.10
+            uv venv python3.10 --clear
             uv sync
             npm install
         fi
@@ -31,7 +31,7 @@ pull() {
         git pull
         if command -v uv && command -v npm &> /dev/null
         then
-            uv venv python3.10
+            uv venv python3.10 --clear
             uv sync
             npm install
         fi
