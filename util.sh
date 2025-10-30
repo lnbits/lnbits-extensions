@@ -14,7 +14,6 @@ clone() {
         then
             uv venv python3.10
             uv sync
-            uv install
             npm install
         fi
     done
@@ -34,7 +33,6 @@ pull() {
         then
             uv venv python3.10
             uv sync
-            uv install
             npm install
         fi
         cd ..
