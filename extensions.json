@@ -2062,6 +2062,18 @@
             "short_description": "Block based numbers game",
             "icon": "https://raw.githubusercontent.com/lnbits/numberlottery/main/static/image/numbers.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/numberlottery/main/config.json"
+        },
+        {
+            "id": "dashboard",
+            "repo": "https://github.com/lnbits/dashboard",
+            "version": "0.0.4",
+            "archive": "https://github.com/lnbits/dashboard/archive/refs/tags/v0.0.4.zip",
+            "hash": "6dc2261c84010109ca98d4edaaf1e25e0ba29e2dfe9aa3af38e289288bead7a4",
+            "min_lnbits_version": "1.1.0",
+            "name": "Dashboard",
+            "short_description": "Simple dashboard for public links",
+            "icon": "https://raw.githubusercontent.com/lnbits/dashboard/main/static/image/dashboard.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/dashboard/main/config.json"
         }
     ]
 }
