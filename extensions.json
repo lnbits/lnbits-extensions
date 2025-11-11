@@ -1559,54 +1559,6 @@
             "details_link": "https://raw.githubusercontent.com/lnbits/scrub/main/config.json"
         },
         {
-            "id": "lnaddress",
-            "repo": "https://github.com/lnbits/lnaddress",
-            "name": "Lightning Address",
-            "version": "0.2",
-            "max_lnbits_version": "0.11.0",
-            "short_description": "Sell LN addresses for your domain",
-            "icon": "https://github.com/lnbits/lnaddress/raw/main/static/image/lnaddress.png",
-            "archive": "https://github.com/lnbits/lnaddress/archive/refs/tags/0.2.zip",
-            "hash": "48b01d418d08ae902e30307c2ac425fee70ce0c5212b383bd83bb789ec8ca70c"
-        },
-        {
-            "id": "lnaddress",
-            "repo": "https://github.com/lnbits/lnaddress",
-            "name": "Lightning Address",
-            "version": "0.2.1",
-            "min_lnbits_version": "0.11.0",
-            "max_lnbits_version": "0.12.5",
-            "short_description": "Sell LN addresses for your domain",
-            "icon": "https://github.com/lnbits/lnaddress/raw/main/static/image/lnaddress.png",
-            "archive": "https://github.com/lnbits/lnaddress/archive/refs/tags/v0.2.1.zip",
-            "hash": "be2171a75e9bc8d820459671d6a93a21f0aac80219c9b0856a08f5c7fefa95a6"
-        },
-        {
-            "id": "lnaddress",
-            "repo": "https://github.com/lnbits/lnaddress",
-            "name": "Lightning Address",
-            "version": "0.3.0",
-            "min_lnbits_version": "0.12.5",
-            "max_lnbits_version": "1.0.0",
-            "short_description": "Sell LN addresses for your domain",
-            "icon": "https://github.com/lnbits/lnaddress/raw/main/static/image/lnaddress.png",
-            "archive": "https://github.com/lnbits/lnaddress/archive/refs/tags/v0.3.0.zip",
-            "hash": "03432a3e788fcbfebb74fe58355dc4526bced9173493dcb48269681a190815ee",
-            "details_link": "https://raw.githubusercontent.com/lnbits/lnaddress/main/config.json"
-        },
-        {
-            "id": "lnaddress",
-            "repo": "https://github.com/lnbits/lnaddress",
-            "name": "Lightning Address",
-            "version": "1.0.0",
-            "min_lnbits_version": "1.0.0",
-            "short_description": "Sell LN addresses for your domain",
-            "icon": "https://github.com/lnbits/lnaddress/raw/main/static/image/lnaddress.png",
-            "archive": "https://github.com/lnbits/lnaddress/archive/refs/tags/v1.0.0.zip",
-            "hash": "6476502e702cc7c7ff1e1af05a3b31389d05370a51bdcaca9dc0dfad5466ddd3",
-            "details_link": "https://raw.githubusercontent.com/lnbits/lnaddress/main/config.json"
-        },
-        {
             "id": "watchonly",
             "repo": "https://github.com/lnbits/watchonly",
             "name": "Onchain Wallet",
