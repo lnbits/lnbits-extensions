@@ -1853,13 +1853,13 @@
             "id": "bitcoinswitch",
             "repo": "https://github.com/lnbits/bitcoinswitch_extension",
             "name": "Bitcoin Switch",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "min_lnbits_version": "1.3.0",
             "short_description": "Turn things on with bitcoin",
             "icon": "https://raw.githubusercontent.com/lnbits/bitcoinswitch_extension/main/static/image/icon.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/bitcoinswitch_extension/main/config.json",
-            "archive": "https://github.com/lnbits/bitcoinswitch_extension/archive/refs/tags/v1.1.1.zip",
-            "hash": "f9aa5c356ade2b6141fdef472db1f1e7994db4b6a55d4fa220ecf19f92afde1d"
+            "archive": "https://github.com/lnbits/bitcoinswitch_extension/archive/refs/tags/v1.1.2.zip",
+            "hash": "ea2c5dd744881cf9bfc61f053c3ed0ada1afa92bd1863b731861679398b7453b"
         },
         {
             "id": "eightball",
