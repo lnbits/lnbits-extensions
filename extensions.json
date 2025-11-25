@@ -788,7 +788,7 @@
             "icon": "https://github.com/lnbits/boltz/raw/main/static/image/boltz.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/boltz/main/config.json",
             "archive": "https://github.com/lnbits/boltz/archive/refs/tags/v0.6.0.zip",
-            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "hash": "a88c02927878f321b14a5c750911803a7d5aa3ab9d427b26b2fed571e82a22ca",
             "max_lnbits_version": "1.0.0"
         },
         {
