@@ -40,7 +40,7 @@
           </elementProp>
           <elementProp name="paymentCount" elementType="Argument">
             <stringProp name="Argument.name">paymentCount</stringProp>
-            <stringProp name="Argument.value">2</stringProp>
+            <stringProp name="Argument.value">20</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="userAdminKey" elementType="Argument">
@@ -55,13 +55,13 @@
           </elementProp>
           <elementProp name="testRun" elementType="Argument">
             <stringProp name="Argument.name">testRun</stringProp>
-            <stringProp name="Argument.value">0009</stringProp>
+            <stringProp name="Argument.value">0016</stringProp>
             <stringProp name="Argument.desc">Todo: make random, unique</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="userCount" elementType="Argument">
             <stringProp name="Argument.name">userCount</stringProp>
-            <stringProp name="Argument.value">3</stringProp>
+            <stringProp name="Argument.value">100</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -264,6 +264,45 @@
             </JSONPostProcessor>
             <hashTree/>
           </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[user] Logout User" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${host}</stringProp>
+            <stringProp name="HTTPSampler.port">${port}</stringProp>
+            <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">/api/v1/auth/logout</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">content-type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 200" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="49586">200</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[admin] Login" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -348,16 +387,6 @@
             <stringProp name="CounterConfig.format"></stringProp>
             <boolProp name="CounterConfig.per_user">true</boolProp>
           </CounterConfig>
-          <hashTree/>
-          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="false">
-            <stringProp name="scriptLanguage">javascript</stringProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="cacheKey">true</stringProp>
-            <stringProp name="script">var index = vars.get(&quot;userIndex&quot;)
-var userWalletId = vars.get(&quot;userSendWalletId_&quot;+index)
-vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
-          </JSR223PostProcessor>
           <hashTree/>
           <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
             <stringProp name="cacheKey">true</stringProp>
@@ -592,7 +621,7 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
             </value>
           </objProp>
           <stringProp name="filename"></stringProp>
-          <stringProp name="RespTimeGraph.interval">20000</stringProp>
+          <stringProp name="RespTimeGraph.interval">100</stringProp>
           <stringProp name="RespTimeGraph.graphtitle">Response Time Graph</stringProp>
           <intProp name="RespTimeGraph.linestrockwidth">0</intProp>
         </ResultCollector>
@@ -678,8 +707,8 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <stringProp name="ThreadGroup.num_threads">${userCount}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${userCount}</stringProp>
         <longProp name="ThreadGroup.start_time">1370726934000</longProp>
         <longProp name="ThreadGroup.end_time">1370726934000</longProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
@@ -699,22 +728,13 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
           <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
         <hashTree>
-          <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="Create random namespce" enabled="true">
-            <stringProp name="scriptLanguage">groovy</stringProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="cacheKey">true</stringProp>
-            <stringProp name="script">${__Random(0,1000000000, randomUserNamespace)}</stringProp>
-            <stringProp name="TestPlan.comments">To avoid collision between tests</stringProp>
-          </JSR223Sampler>
-          <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[user] Login" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;username&quot;:&quot;load_user_${__threadNum}&quot;,&quot;password&quot;:&quot;secret1234&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;username&quot;:&quot;uload_${testRun}_${__threadNum}&quot;,&quot;password&quot;:&quot;secret1234&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -842,17 +862,10 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
           </ResponseAssertion>
           <hashTree/>
           <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract wallet adminkey" enabled="true">
-            <stringProp name="JSONPostProcessor.referenceNames">userWalletAdminkey</stringProp>
+            <stringProp name="JSONPostProcessor.referenceNames">userSendAdminKey</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">wallets[0].adminkey</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
-            <stringProp name="JSONPostProcessor.defaultValues">no-user-wallet-adminkey</stringProp>
-          </JSONPostProcessor>
-          <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract wallet id" enabled="true">
-            <stringProp name="JSONPostProcessor.referenceNames">userWalletId</stringProp>
-            <stringProp name="JSONPostProcessor.jsonPathExprs">wallets[0].id</stringProp>
-            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
-            <stringProp name="JSONPostProcessor.defaultValues">no-user-wallet-id</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">no-user-send-adminkey</stringProp>
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
@@ -862,7 +875,7 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;name&quot;:&quot;Wallet for ${${__threadNum}}&quot;,&quot;wallet_type&quot;:&quot;lightning&quot;}</stringProp>
+                <stringProp name="Argument.value">{&quot;name&quot;:&quot;Wallet for ${__threadNum}&quot;,&quot;wallet_type&quot;:&quot;lightning&quot;}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -914,7 +927,7 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">x-api-key</stringProp>
-                <stringProp name="Header.value">${userWalletAdminkey}</stringProp>
+                <stringProp name="Header.value">${userSendAdminKey}</stringProp>
               </elementProp>
             </collectionProp>
           </HeaderManager>
@@ -929,47 +942,24 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
             <intProp name="Assertion.test_type">8</intProp>
           </ResponseAssertion>
           <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract wallet id" enabled="true">
-            <stringProp name="JSONPostProcessor.referenceNames">userNewWalletId</stringProp>
-            <stringProp name="JSONPostProcessor.jsonPathExprs">id</stringProp>
-            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
-            <stringProp name="JSONPostProcessor.defaultValues">no-user-new-wallet-id</stringProp>
-          </JSONPostProcessor>
-          <hashTree/>
           <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract wallet adminkey" enabled="true">
-            <stringProp name="JSONPostProcessor.referenceNames">userNewWalletAdminkey</stringProp>
+            <stringProp name="JSONPostProcessor.referenceNames">userReceiveAdminKey</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">adminkey</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
-            <stringProp name="JSONPostProcessor.defaultValues">no-user-new-wallet-adminkey</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">no-user-receive-adminkey</stringProp>
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="[admin] Topup" enabled="true">
-          <boolProp name="TransactionController.includeTimers">false</boolProp>
-          <boolProp name="TransactionController.parent">true</boolProp>
-        </TransactionController>
-        <hashTree>
-          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Think Time - 2 sec" enabled="true">
-            <stringProp name="ConstantTimer.delay">2000</stringProp>
-          </ConstantTimer>
-          <hashTree/>
-        </hashTree>
-        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug 01" enabled="false">
-          <boolProp name="displayJMeterProperties">false</boolProp>
-          <boolProp name="displayJMeterVariables">true</boolProp>
-          <boolProp name="displaySystemProperties">false</boolProp>
-        </DebugSampler>
-        <hashTree/>
-        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Do for ${userCount} times" enabled="true">
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Do for ${paymentCount} times" enabled="true">
           <boolProp name="LoopController.continue_forever">true</boolProp>
-          <stringProp name="LoopController.loops">${userCount}</stringProp>
+          <stringProp name="LoopController.loops">${paymentCount}</stringProp>
         </LoopController>
         <hashTree>
-          <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="User Counter" enabled="true">
+          <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Payment Counter" enabled="true">
             <stringProp name="CounterConfig.start">1</stringProp>
-            <stringProp name="CounterConfig.end">${userCount}</stringProp>
+            <stringProp name="CounterConfig.end">${paymentCount}</stringProp>
             <stringProp name="CounterConfig.incr">1</stringProp>
-            <stringProp name="CounterConfig.name">userIndex</stringProp>
+            <stringProp name="CounterConfig.name">paymentIndex</stringProp>
             <stringProp name="CounterConfig.format"></stringProp>
             <boolProp name="CounterConfig.per_user">true</boolProp>
           </CounterConfig>
@@ -984,7 +974,7 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
             </ConstantTimer>
             <hashTree/>
             <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random Amount" enabled="true">
-              <stringProp name="maximumValue">1000</stringProp>
+              <stringProp name="maximumValue">100</stringProp>
               <stringProp name="minimumValue">10</stringProp>
               <stringProp name="outputFormat"></stringProp>
               <boolProp name="perThread">true</boolProp>
@@ -1001,7 +991,7 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
                     <stringProp name="Argument.value">{&#xd;
     &quot;out&quot;: false,&#xd;
     &quot;amount&quot;: ${amount},&#xd;
-    &quot;memo&quot;: &quot;${randomUserNamespace}&quot;,&#xd;
+    &quot;memo&quot;: &quot;Payment for test run ${testRun}&quot;,&#xd;
     &quot;unit&quot;: &quot;sat&quot;,&#xd;
     &quot;lnurl_withdraw&quot;: null,&#xd;
     &quot;fiat_provider&quot;: &quot;&quot;,&#xd;
@@ -1066,7 +1056,7 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
                   </elementProp>
                   <elementProp name="" elementType="Header">
                     <stringProp name="Header.name">x-api-key</stringProp>
-                    <stringProp name="Header.value">${userNewWalletAdminkey}</stringProp>
+                    <stringProp name="Header.value">${userReceiveAdminKey}</stringProp>
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
@@ -1081,136 +1071,11 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
                 <intProp name="Assertion.test_type">8</intProp>
               </ResponseAssertion>
               <hashTree/>
-            </hashTree>
-          </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="[admin] Create Invoice" enabled="true">
-            <boolProp name="TransactionController.includeTimers">false</boolProp>
-            <boolProp name="TransactionController.parent">true</boolProp>
-          </TransactionController>
-          <hashTree>
-            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Think Time - 2 sec" enabled="false">
-              <stringProp name="ConstantTimer.delay">2000</stringProp>
-            </ConstantTimer>
-            <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create payment" enabled="true">
-              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-                <collectionProp name="Arguments.arguments">
-                  <elementProp name="" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">{&#xd;
-    &quot;out&quot;: false,&#xd;
-    &quot;amount&quot;: 10,&#xd;
-    &quot;memo&quot;: &quot;${randomUserNamespace}&quot;,&#xd;
-    &quot;unit&quot;: &quot;sat&quot;,&#xd;
-    &quot;lnurl_withdraw&quot;: null,&#xd;
-    &quot;fiat_provider&quot;: &quot;&quot;,&#xd;
-    &quot;payment_hash&quot;: null&#xd;
-}</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                </collectionProp>
-              </elementProp>
-              <stringProp name="HTTPSampler.domain">${host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
-              <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/api/v1/payments</stringProp>
-              <stringProp name="HTTPSampler.method">POST</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
-            <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-                <collectionProp name="HeaderManager.headers">
-                  <elementProp name="Sec-Fetch-Mode" elementType="Header">
-                    <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
-                    <stringProp name="Header.value">cors</stringProp>
-                  </elementProp>
-                  <elementProp name="Sec-Fetch-Site" elementType="Header">
-                    <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
-                    <stringProp name="Header.value">same-origin</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept-Language" elementType="Header">
-                    <stringProp name="Header.name">Accept-Language</stringProp>
-                    <stringProp name="Header.value">en-US,en;q=0.${lnurlpCount}</stringProp>
-                  </elementProp>
-                  <elementProp name="Origin" elementType="Header">
-                    <stringProp name="Header.name">Origin</stringProp>
-                    <stringProp name="Header.value">${scheme}://${host}:${port}</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept" elementType="Header">
-                    <stringProp name="Header.name">Accept</stringProp>
-                    <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
-                  </elementProp>
-                  <elementProp name="Content-Type" elementType="Header">
-                    <stringProp name="Header.name">Content-Type</stringProp>
-                    <stringProp name="Header.value">application/json</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept-Encoding" elementType="Header">
-                    <stringProp name="Header.name">Accept-Encoding</stringProp>
-                    <stringProp name="Header.value">gzip, deflate, br</stringProp>
-                  </elementProp>
-                  <elementProp name="User-Agent" elementType="Header">
-                    <stringProp name="Header.name">User-Agent</stringProp>
-                    <stringProp name="Header.value">Mozilla/${lnurlpCount}.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0</stringProp>
-                  </elementProp>
-                  <elementProp name="Sec-Fetch-Dest" elementType="Header">
-                    <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
-                    <stringProp name="Header.value">empty</stringProp>
-                  </elementProp>
-                  <elementProp name="" elementType="Header">
-                    <stringProp name="Header.name">x-api-key</stringProp>
-                    <stringProp name="Header.value">${adminWalletKey}</stringProp>
-                  </elementProp>
-                </collectionProp>
-              </HeaderManager>
-              <hashTree/>
-              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 201" enabled="true">
-                <collectionProp name="Asserion.test_strings">
-                  <stringProp name="49587">201</stringProp>
-                </collectionProp>
-                <stringProp name="Assertion.custom_message"></stringProp>
-                <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
-                <boolProp name="Assertion.assume_success">false</boolProp>
-                <intProp name="Assertion.test_type">8</intProp>
-              </ResponseAssertion>
-              <hashTree/>
-              <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check payment request" enabled="true">
-                <stringProp name="JSON_PATH">bolt11</stringProp>
-                <stringProp name="EXPECTED_VALUE"></stringProp>
-                <boolProp name="JSONVALIDATION">false</boolProp>
-                <boolProp name="EXPECT_NULL">false</boolProp>
-                <boolProp name="INVERT">false</boolProp>
-                <boolProp name="ISREGEX">true</boolProp>
-              </JSONPathAssertion>
-              <hashTree/>
-              <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check Payment hash" enabled="true">
-                <stringProp name="JSON_PATH">payment_hash</stringProp>
-                <stringProp name="EXPECTED_VALUE"></stringProp>
-                <boolProp name="JSONVALIDATION">false</boolProp>
-                <boolProp name="EXPECT_NULL">false</boolProp>
-                <boolProp name="INVERT">false</boolProp>
-                <boolProp name="ISREGEX">true</boolProp>
-              </JSONPathAssertion>
-              <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract payment request" enabled="true">
-                <stringProp name="JSONPostProcessor.referenceNames">paymentRequest</stringProp>
+              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract bolt11" enabled="true">
+                <stringProp name="JSONPostProcessor.referenceNames">bolt11</stringProp>
                 <stringProp name="JSONPostProcessor.jsonPathExprs">bolt11</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers">0</stringProp>
-                <stringProp name="JSONPostProcessor.defaultValues">no-payment-request</stringProp>
-              </JSONPostProcessor>
-              <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract payment hash" enabled="true">
-                <stringProp name="JSONPostProcessor.referenceNames">paymentHash</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">payment_hash</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers">0</stringProp>
-                <stringProp name="JSONPostProcessor.defaultValues">no-payment-hash</stringProp>
+                <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+                <stringProp name="JSONPostProcessor.defaultValues">no-bolt11</stringProp>
               </JSONPostProcessor>
               <hashTree/>
             </hashTree>
@@ -1228,9 +1093,9 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.value">{&#xd;
   &quot;out&quot;: true,&#xd;
-  &quot;memo&quot;: &quot;paying ${randomUserNamespace}&quot;,&#xd;
+  &quot;memo&quot;: &quot;paying ${testRun}&quot;,&#xd;
   &quot;unit&quot;: &quot;sat&quot;,&#xd;
-  &quot;bolt11&quot;: &quot;${paymentRequest}&quot;&#xd;
+  &quot;bolt11&quot;: &quot;${bolt11}&quot;&#xd;
 }</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
@@ -1275,7 +1140,7 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
                   </elementProp>
                   <elementProp name="X-Api-Key" elementType="Header">
                     <stringProp name="Header.name">X-Api-Key</stringProp>
-                    <stringProp name="Header.value">${userNewWalletAdminkey}</stringProp>
+                    <stringProp name="Header.value">${userSendAdminKey}</stringProp>
                   </elementProp>
                   <elementProp name="Content-Type" elementType="Header">
                     <stringProp name="Header.name">Content-Type</stringProp>
@@ -1305,15 +1170,6 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
                 <intProp name="Assertion.test_type">8</intProp>
               </ResponseAssertion>
-              <hashTree/>
-              <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check payment_hash" enabled="true">
-                <stringProp name="JSON_PATH">payment_hash</stringProp>
-                <stringProp name="EXPECTED_VALUE">${paymentHash}</stringProp>
-                <boolProp name="JSONVALIDATION">true</boolProp>
-                <boolProp name="EXPECT_NULL">false</boolProp>
-                <boolProp name="INVERT">false</boolProp>
-                <boolProp name="ISREGEX">false</boolProp>
-              </JSONPathAssertion>
               <hashTree/>
             </hashTree>
             <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Think Time - 1 sec" enabled="true">
@@ -1335,7 +1191,7 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="offset" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">500</stringProp>
+                    <stringProp name="Argument.value">0</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <stringProp name="Argument.name">offset</stringProp>
@@ -1396,7 +1252,7 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
                   </elementProp>
                   <elementProp name="X-Api-Key" elementType="Header">
                     <stringProp name="Header.name">X-Api-Key</stringProp>
-                    <stringProp name="Header.value">${userWalletAdminkey}</stringProp>
+                    <stringProp name="Header.value">${userSendAdminKey}</stringProp>
                   </elementProp>
                   <elementProp name="Content-Type" elementType="Header">
                     <stringProp name="Header.name">Content-Type</stringProp>
@@ -1429,7 +1285,7 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="[user] Search Payments New Wallet" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="[user] Search Payments All" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
             <boolProp name="TransactionController.parent">true</boolProp>
           </TransactionController>
@@ -1443,7 +1299,7 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="offset" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">500</stringProp>
+                    <stringProp name="Argument.value">0</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <stringProp name="Argument.name">offset</stringProp>
@@ -1468,7 +1324,7 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
               <stringProp name="HTTPSampler.port">${port}</stringProp>
               <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
-              <stringProp name="HTTPSampler.path">/api/v1/payments/paginated</stringProp>
+              <stringProp name="HTTPSampler.path">/api/v1/payments/all/paginated</stringProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1501,10 +1357,6 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
                   <elementProp name="Accept" elementType="Header">
                     <stringProp name="Header.name">Accept</stringProp>
                     <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
-                  </elementProp>
-                  <elementProp name="X-Api-Key" elementType="Header">
-                    <stringProp name="Header.name">X-Api-Key</stringProp>
-                    <stringProp name="Header.value">${userNewWalletAdminkey}</stringProp>
                   </elementProp>
                   <elementProp name="Content-Type" elementType="Header">
                     <stringProp name="Header.name">Content-Type</stringProp>
@@ -1538,7 +1390,46 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
             </hashTree>
           </hashTree>
         </hashTree>
-        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="User Done" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[user] Logout" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${host}</stringProp>
+          <stringProp name="HTTPSampler.port">${port}</stringProp>
+          <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/auth/logout</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 200" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="User Done" enabled="false">
           <boolProp name="displayJMeterProperties">false</boolProp>
           <boolProp name="displayJMeterVariables">true</boolProp>
           <boolProp name="displaySystemProperties">false</boolProp>
@@ -1690,7 +1581,7 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
             </value>
           </objProp>
           <stringProp name="filename"></stringProp>
-          <stringProp name="RespTimeGraph.interval">20000</stringProp>
+          <stringProp name="RespTimeGraph.interval">1000</stringProp>
           <stringProp name="RespTimeGraph.graphtitle">Response Time Graph</stringProp>
           <intProp name="RespTimeGraph.linestrockwidth">0</intProp>
         </ResultCollector>
