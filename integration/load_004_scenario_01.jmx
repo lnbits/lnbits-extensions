@@ -1647,6 +1647,7 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
             </ConstantTimer>
             <hashTree/>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[user] New Wallet" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
@@ -1656,7 +1657,6 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">${port}</stringProp>
               <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
@@ -1718,13 +1718,6 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
                 <intProp name="Assertion.test_type">8</intProp>
               </ResponseAssertion>
-              <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract wallet adminkey" enabled="true">
-                <stringProp name="JSONPostProcessor.referenceNames">userReceiveAdminKey</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">adminkey</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
-                <stringProp name="JSONPostProcessor.defaultValues">no-user-receive-adminkey</stringProp>
-              </JSONPostProcessor>
               <hashTree/>
             </hashTree>
           </hashTree>
@@ -1921,7 +1914,7 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
           </objProp>
           <stringProp name="filename"></stringProp>
           <stringProp name="RespTimeGraph.interval">1000</stringProp>
-          <stringProp name="RespTimeGraph.graphtitle">scenatio_01</stringProp>
+          <stringProp name="RespTimeGraph.graphtitle">scenario_01</stringProp>
           <intProp name="RespTimeGraph.linestrockwidth">1</intProp>
         </ResultCollector>
         <hashTree/>
