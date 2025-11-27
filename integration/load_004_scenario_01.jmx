@@ -30,7 +30,7 @@
           </elementProp>
           <elementProp name="thinkTime" elementType="Argument">
             <stringProp name="Argument.name">thinkTime</stringProp>
-            <stringProp name="Argument.value">3000</stringProp>
+            <stringProp name="Argument.value">1000</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="configPath" elementType="Argument">
@@ -43,16 +43,6 @@
             <stringProp name="Argument.value">20</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="userAdminKey" elementType="Argument">
-            <stringProp name="Argument.name">userAdminKey</stringProp>
-            <stringProp name="Argument.value">070e45be347f47d5becb6b1a1f937709</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
-          <elementProp name="adminWalletKey" elementType="Argument">
-            <stringProp name="Argument.name">adminWalletKey</stringProp>
-            <stringProp name="Argument.value">aba01f535a7241889ebe79035bd13fa9</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
           <elementProp name="testRun" elementType="Argument">
             <stringProp name="Argument.name">testRun</stringProp>
             <stringProp name="Argument.value">${__time(/1000,)}</stringProp>
@@ -61,7 +51,7 @@
           </elementProp>
           <elementProp name="userCount" elementType="Argument">
             <stringProp name="Argument.name">userCount</stringProp>
-            <stringProp name="Argument.value">10</stringProp>
+            <stringProp name="Argument.value">100</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -621,7 +611,7 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
             </value>
           </objProp>
           <stringProp name="filename"></stringProp>
-          <stringProp name="RespTimeGraph.interval">100</stringProp>
+          <stringProp name="RespTimeGraph.interval">1000</stringProp>
           <stringProp name="RespTimeGraph.graphtitle">Response Time Graph</stringProp>
           <intProp name="RespTimeGraph.linestrockwidth">0</intProp>
         </ResultCollector>
@@ -874,8 +864,8 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
           <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
         <hashTree>
-          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Think Time - 1 sec" enabled="true">
-            <stringProp name="ConstantTimer.delay">1000</stringProp>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Think Time " enabled="true">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
           </ConstantTimer>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[user] New Wallet" enabled="true">
@@ -1135,8 +1125,8 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
             <boolProp name="TransactionController.parent">true</boolProp>
           </TransactionController>
           <hashTree>
-            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Think Time - 1 sec" enabled="true">
-              <stringProp name="ConstantTimer.delay">1000</stringProp>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Think Time" enabled="true">
+              <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
             </ConstantTimer>
             <hashTree/>
             <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random Amount" enabled="true">
@@ -1157,7 +1147,7 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
                     <stringProp name="Argument.value">{&#xd;
     &quot;out&quot;: false,&#xd;
     &quot;amount&quot;: ${amount},&#xd;
-    &quot;memo&quot;: &quot;Payment for test run ${testRun}&quot;,&#xd;
+    &quot;memo&quot;: &quot;Payment ${paymentIndex}/${paymentCount} for test run ${__threadNum}/${testRun}&quot;,&#xd;
     &quot;unit&quot;: &quot;sat&quot;,&#xd;
     &quot;lnurl_withdraw&quot;: null,&#xd;
     &quot;fiat_provider&quot;: &quot;&quot;,&#xd;
@@ -1338,18 +1328,18 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
               </ResponseAssertion>
               <hashTree/>
             </hashTree>
-            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Think Time - 1 sec" enabled="true">
-              <stringProp name="ConstantTimer.delay">1000</stringProp>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Think Time" enabled="true">
+              <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
             </ConstantTimer>
             <hashTree/>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="[user] Search Payments" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="[user] Search Wallet Payments" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
             <boolProp name="TransactionController.parent">true</boolProp>
           </TransactionController>
           <hashTree>
-            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Think Time - 1 sec" enabled="true">
-              <stringProp name="ConstantTimer.delay">1000</stringProp>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Think Time " enabled="true">
+              <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
             </ConstantTimer>
             <hashTree/>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[user] Search Payments" enabled="true">
@@ -1376,6 +1366,20 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <stringProp name="Argument.name">direction</stringProp>
                   </elementProp>
+                  <elementProp name="status[ne]" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">failed</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">status[ne]</stringProp>
+                  </elementProp>
+                  <elementProp name="search" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">payment</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">search</stringProp>
+                  </elementProp>
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
@@ -1392,6 +1396,7 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
               <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
               <stringProp name="HTTPSampler.connect_timeout">60000</stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="TestPlan.comments">With search text</stringProp>
             </HTTPSamplerProxy>
             <hashTree>
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
@@ -1451,13 +1456,13 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="[user] Search Payments All" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="[user] Search All Payments" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
             <boolProp name="TransactionController.parent">true</boolProp>
           </TransactionController>
           <hashTree>
-            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Think Time - 1 sec" enabled="true">
-              <stringProp name="ConstantTimer.delay">1000</stringProp>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Think Time" enabled="true">
+              <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
             </ConstantTimer>
             <hashTree/>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[user] Search Payments" enabled="true">
@@ -1560,8 +1565,8 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
             <boolProp name="TransactionController.parent">true</boolProp>
           </TransactionController>
           <hashTree>
-            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Think Time - 1 sec" enabled="true">
-              <stringProp name="ConstantTimer.delay">1000</stringProp>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Think Time" enabled="true">
+              <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
             </ConstantTimer>
             <hashTree/>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[user] Get All Extensions" enabled="true">
@@ -1642,8 +1647,8 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
             <boolProp name="TransactionController.parent">true</boolProp>
           </TransactionController>
           <hashTree>
-            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Think Time - 1 sec" enabled="true">
-              <stringProp name="ConstantTimer.delay">1000</stringProp>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Think Time " enabled="true">
+              <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
             </ConstantTimer>
             <hashTree/>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[user] New Wallet" enabled="true">
@@ -1652,7 +1657,7 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">{&quot;name&quot;:&quot;Wallet for ${__threadNum}&quot;,&quot;wallet_type&quot;:&quot;lightning&quot;}</stringProp>
+                    <stringProp name="Argument.value">{&quot;name&quot;:&quot;Wallet ${paymentIndex}&quot;,&quot;wallet_type&quot;:&quot;lightning&quot;}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
@@ -1913,7 +1918,7 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
             </value>
           </objProp>
           <stringProp name="filename"></stringProp>
-          <stringProp name="RespTimeGraph.interval">1000</stringProp>
+          <stringProp name="RespTimeGraph.interval">2000</stringProp>
           <stringProp name="RespTimeGraph.graphtitle">scenario_01</stringProp>
           <intProp name="RespTimeGraph.linestrockwidth">1</intProp>
         </ResultCollector>
