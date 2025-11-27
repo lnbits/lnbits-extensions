@@ -612,7 +612,7 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
           </objProp>
           <stringProp name="filename"></stringProp>
           <stringProp name="RespTimeGraph.interval">1000</stringProp>
-          <stringProp name="RespTimeGraph.graphtitle">Response Time Graph</stringProp>
+          <stringProp name="RespTimeGraph.graphtitle">scenario_01_setup</stringProp>
           <intProp name="RespTimeGraph.linestrockwidth">0</intProp>
         </ResultCollector>
         <hashTree/>
@@ -1560,7 +1560,7 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="[user] Get All Extensions" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="[user] Get All Extensions" enabled="false">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
             <boolProp name="TransactionController.parent">true</boolProp>
           </TransactionController>
@@ -1918,7 +1918,7 @@ vars.put(&quot;userSendWalletId&quot;, userWalletId)</stringProp>
             </value>
           </objProp>
           <stringProp name="filename"></stringProp>
-          <stringProp name="RespTimeGraph.interval">2000</stringProp>
+          <stringProp name="RespTimeGraph.interval">6000</stringProp>
           <stringProp name="RespTimeGraph.graphtitle">scenario_01</stringProp>
           <intProp name="RespTimeGraph.linestrockwidth">1</intProp>
         </ResultCollector>
