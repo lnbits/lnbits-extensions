@@ -1990,6 +1990,19 @@
             "name": "NWC Service Provider",
             "short_description": "A NWC service provider for LNbits",
             "icon": "https://raw.githubusercontent.com/lnbits/nwcprovider/main/static/image/nwcprovider.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/nwcprovider/main/config.json",
+            "max_lnbits_version": "1.4.0"
+        },
+        {
+            "id": "nwcprovider",
+            "repo": "https://github.com/lnbits/nwcprovider",
+            "version": "1.1.0",
+            "archive": "https://github.com/lnbits/nwcprovider/archive/refs/tags/v1.1.0.zip",
+            "hash": "c58fa5a93aeae8fe0a0cca392a68bf02ac38aa8c9c34eeb1e255938d1005cc92",
+            "min_lnbits_version": "1.4.0",
+            "name": "NWC Service Provider",
+            "short_description": "A NWC service provider for LNbits",
+            "icon": "https://raw.githubusercontent.com/lnbits/nwcprovider/main/static/image/nwcprovider.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/nwcprovider/main/config.json"
         },
         {
