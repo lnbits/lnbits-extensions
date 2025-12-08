@@ -2078,6 +2078,18 @@
             "short_description": "Scrum with paid tasks",
             "icon": "https://raw.githubusercontent.com/lnbits/scrum/main/static/image/scrum.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/scrum/main/config.json"
+        },
+        {
+            "id": "tunnel_me_out",
+            "repo": "https://github.com/lnbits/tunnel_me_out",
+            "version": "0.0.4",
+            "archive": "https://github.com/lnbits/tunnel_me_out/archive/refs/tags/v0.0.4.zip",
+            "hash": "5ed17fc02eaaee39cafa87d2f2da9933c176de96ebebd829fb7cde160f2ce899",
+            "min_lnbits_version": "1.1.0",
+            "name": "TunnelMeOut",
+            "short_description": "One-click tunnel out via lnpro.xyz",
+            "icon": "https://raw.githubusercontent.com/lnbits/tunnel_me_out/main/static/image/tunnel.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/tunnel_me_out/main/config.json"
         }
     ]
 }
