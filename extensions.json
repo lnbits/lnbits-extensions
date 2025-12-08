@@ -2078,6 +2078,18 @@
             "short_description": "Scrum with paid tasks",
             "icon": "https://raw.githubusercontent.com/lnbits/scrum/main/static/image/scrum.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/scrum/main/config.json"
+        },
+        {
+            "id": "custom_public_page",
+            "repo": "https://github.com/lnbits/custom_public_page",
+            "version": "0.0.2",
+            "archive": "https://github.com/lnbits/custom_public_page/archive/refs/tags/v0.0.2.zip",
+            "hash": "4733a36dc077ceb6b5a0bdc2b3f1f611a2bc14ff219aaa1127246f72a1cbf625",
+            "min_lnbits_version": "1.1.0",
+            "name": "CustomPublicPage",
+            "short_description": "Make custom public pages",
+            "icon": "https://raw.githubusercontent.com/lnbits/custom_public_page/main/static/image/custom_public_page.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/custom_public_page/main/config.json"
         }
     ]
 }
