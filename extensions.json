@@ -69,7 +69,8 @@
             "details_link": "https://raw.githubusercontent.com/lnbits/copilot/main/config.json",
             "archive": "https://github.com/lnbits/copilot/archive/refs/tags/v1.0.4.zip",
             "hash": "3de705a8ab849f0f7d5c582ab97f3827609e65237453778799558f656ae8b210",
-            "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/A9o5kTHbA6kjWGRjzCUi8Q"
+            "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/A9o5kTHbA6kjWGRjzCUi8Q",
+            "max_lnbits_version": "1.4.0"
         },
         {
             "id": "decoder",
