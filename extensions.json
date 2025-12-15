@@ -1653,6 +1653,19 @@
             "icon": "https://raw.githubusercontent.com/lnbits/nostrclient/main/static/images/nostr-bitcoin.png",
             "archive": "https://github.com/lnbits/nostrclient/archive/refs/tags/v1.1.0.zip",
             "hash": "25683cc18b7041b21160ba11582797dbcac8fcae8ea55a19e9317ec3512cea45",
+            "details_link": "https://raw.githubusercontent.com/lnbits/nostrclient/main/config.json",
+            "max_lnbits_version": "1.4.0"
+        },
+        {
+            "id": "nostrclient",
+            "repo": "https://github.com/lnbits/nostrclient",
+            "name": "Nostr Client",
+            "version": "1.2.0",
+            "min_lnbits_version": "1.4.0",
+            "short_description": "Nostr relay multiplexer",
+            "icon": "https://raw.githubusercontent.com/lnbits/nostrclient/main/static/images/nostr-bitcoin.png",
+            "archive": "https://github.com/lnbits/nostrclient/archive/refs/tags/v1.2.0.zip",
+            "hash": "0c70b18425976f0260c9a151c80c2e321ce47419fdc3d33e7ed23f507554dcb4",
             "details_link": "https://raw.githubusercontent.com/lnbits/nostrclient/main/config.json"
         },
         {
