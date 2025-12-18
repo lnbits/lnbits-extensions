@@ -2104,6 +2104,18 @@
             "short_description": "Scrum with paid tasks",
             "icon": "https://raw.githubusercontent.com/lnbits/scrum/main/static/image/scrum.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/scrum/main/config.json"
+        },
+        {
+            "id": "webshop",
+            "repo": "https://github.com/lnbits/webshop",
+            "version": "0.0.1",
+            "archive": "https://github.com/lnbits/webshop/archive/refs/tags/v0.0.1.zip",
+            "hash": "43355d4600409ffbadc817bbc78c3d1171f0d678bb6a9b704f190f688c45f015",
+            "min_lnbits_version": "1.1.0",
+            "name": "WebShop",
+            "short_description": "Embedible web-shop",
+            "icon": "https://raw.githubusercontent.com/lnbits/webshop/main/static/image/webshop.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/webshop/main/config.json"
         }
     ]
 }
