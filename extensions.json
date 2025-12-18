@@ -2104,6 +2104,18 @@
             "short_description": "Scrum with paid tasks",
             "icon": "https://raw.githubusercontent.com/lnbits/scrum/main/static/image/scrum.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/scrum/main/config.json"
+        },
+        {
+            "id": "chaospad",
+            "repo": "https://github.com/lnbits/chaospad",
+            "version": "0.1.0",
+            "archive": "https://github.com/lnbits/chaospad/archive/refs/tags/v0.1.0.zip",
+            "hash": "5971fb9a571041e3bf9fc5fe1ece995b525897c20fadfc0a2db097fecd4e8545",
+            "min_lnbits_version": "1.1.0",
+            "name": "ChaosPad",
+            "short_description": "Collaborative pads",
+            "icon": "https://raw.githubusercontent.com/lnbits/chaospad/main/static/image/chaospad.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/chaospad/main/config.json"
         }
     ]
 }
