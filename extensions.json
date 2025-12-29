@@ -2104,6 +2104,16 @@
             "short_description": "Scrum with paid tasks",
             "icon": "https://raw.githubusercontent.com/lnbits/scrum/main/static/image/scrum.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/scrum/main/config.json"
+        },
+        {
+            "id": "fiatbridge",
+            "repo": "https://github.com/btcforplebs/fiatbridge",
+            "name": "Fiat Bridge",
+            "version": "0.1.0",
+            "short_description": "A bridge to allow websites to request Stripe checkout sessions.",
+            "icon": "https://raw.githubusercontent.com/btcforplebs/fiatbridge/main/static/image/fiatbridge.png",
+            "archive": "https://github.com/btcforplebs/fiatbridge/archive/refs/tags/0.1.0.zip",
+            "hash": "712df12d002bf17ab31a13dac4d3e7eea8165b69235a12ae72d9d158987fcfad"
         }
     ]
 }
