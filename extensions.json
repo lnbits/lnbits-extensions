@@ -1847,6 +1847,7 @@
             "name": "Scheduler",
             "version": "0.1.3",
             "min_lnbits_version": "0.12.10",
+            "max_lnbits_version": "1.3.0",
             "short_description": "Generate Scheduled tasks via crontabs for LNbits",
             "icon": "https://raw.githubusercontent.com/bitkarrot/scheduler/main/static/image/scheduler.png",
             "archive": "https://github.com/bitkarrot/scheduler/archive/refs/tags/v0.1.3.zip",
