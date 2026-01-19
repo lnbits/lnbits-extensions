@@ -2118,6 +2118,18 @@
             "short_description": "Scrum with paid tasks",
             "icon": "https://raw.githubusercontent.com/lnbits/scrum/main/static/image/scrum.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/scrum/main/config.json"
+        },
+        {
+            "id": "extension_builder_stub",
+            "repo": "https://github.com/lnbits/extension_builder_stub",
+            "version": "0.3.0",
+            "archive": "https://github.com/lnbits/extension_builder_stub/archive/refs/tags/v0.3.0.zip",
+            "hash": "7dcb7908a31a6cc62457814bcc031777efc7458c51cefe4aec2f718eb30db1b8",
+            "min_lnbits_version": "1.4.2",
+            "name": "extension_builder_stub_name",
+            "short_description": "extension_builder_stub_short_description",
+            "icon": "https://raw.githubusercontent.com/lnbits/extension_builder_stub/main/static/image/extension_builder_stub.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/extension_builder_stub/main/config.json"
         }
     ]
 }
