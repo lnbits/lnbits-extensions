@@ -2118,6 +2118,18 @@
             "short_description": "Scrum with paid tasks",
             "icon": "https://raw.githubusercontent.com/lnbits/scrum/main/static/image/scrum.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/scrum/main/config.json"
+        },
+        {
+            "id": "xerosync",
+            "repo": "https://github.com/lnbits/xerosync",
+            "version": "0.0.2",
+            "archive": "https://github.com/lnbits/xerosync/archive/refs/tags/v0.0.2.zip",
+            "hash": "2a0ce43b1f83af46ebd9b728589d52f662f94a4a0bac85754fd6076028cb27c3",
+            "min_lnbits_version": "1.4.0",
+            "name": "XeroSync",
+            "short_description": "LNbits -> Xero wallet sync",
+            "icon": "https://raw.githubusercontent.com/lnbits/xerosync/main/static/image/xerosync.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/xerosync/main/config.json"
         }
     ]
 }
