@@ -2119,6 +2119,18 @@
             "short_description": "Scrum with paid tasks",
             "icon": "https://raw.githubusercontent.com/lnbits/scrum/main/static/image/scrum.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/scrum/main/config.json"
+        },
+        {
+            "id": "chat",
+            "repo": "https://github.com/lnbits/chat",
+            "version": "0.0.2",
+            "archive": "https://github.com/lnbits/chat/archive/refs/tags/v0.0.2.zip",
+            "hash": "fece95d99ef4ac2c33559f4579005461516b2657cdf1473ad0f64ff4711a1b1e",
+            "min_lnbits_version": "1.4.0",
+            "name": "Chat",
+            "short_description": "Paid chat and support",
+            "icon": "https://raw.githubusercontent.com/lnbits/chat/mainhttps://raw.githubusercontent.com/lnbits/refs/heads/master/static/image/chat.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/chat/main/config.json"
         }
     ]
 }
