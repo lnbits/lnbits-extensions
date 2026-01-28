@@ -2125,7 +2125,7 @@
             "repo": "https://github.com/lnbits/chat",
             "version": "0.0.4",
             "archive": "https://github.com/lnbits/chat/archive/refs/tags/v0.0.4.zip",
-            "hash": "ef1e056f63c7dc650fd22d9a8a4863126ea737ceb19fe485bba1783996380f8b",
+            "hash": "7ceffdebe800f38c764df3b471f4cdc95126057eb0ec7e8d389033ad9733bc2c",
             "min_lnbits_version": "1.4.0",
             "name": "Chat",
             "short_description": "Paid chat and support",
