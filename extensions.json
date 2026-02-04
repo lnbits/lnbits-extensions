@@ -2119,6 +2119,18 @@
             "short_description": "Scrum with paid tasks",
             "icon": "https://raw.githubusercontent.com/lnbits/scrum/main/static/image/scrum.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/scrum/main/config.json"
+        },
+        {
+            "id": "dashboard",
+            "repo": "https://github.com/lnbits/dashboard",
+            "version": "0.0.8",
+            "archive": "https://github.com/lnbits/dashboard/archive/refs/tags/v0.0.8.zip",
+            "hash": "778f3365cea146a56491800a93a2b9b892af69764d76ec9c48037e4bec31fd65",
+            "min_lnbits_version": "1.1.0",
+            "name": "Dashboard",
+            "short_description": "Simple dashboard for public links",
+            "icon": "https://raw.githubusercontent.com/lnbits/dashboard/main/static/image/dashboard.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/dashboard/main/config.json"
         }
     ]
 }
