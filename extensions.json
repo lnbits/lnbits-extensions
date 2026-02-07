@@ -2119,6 +2119,18 @@
             "short_description": "Scrum with paid tasks",
             "icon": "https://raw.githubusercontent.com/lnbits/scrum/main/static/image/scrum.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/scrum/main/config.json"
+        },
+        {
+            "id": "webpages",
+            "repo": "https://github.com/lnbits/webpages",
+            "version": "0.0.4",
+            "archive": "https://github.com/lnbits/webpages/archive/refs/tags/v0.0.4.zip",
+            "hash": "6233f48a76c3403b8696dd8b51e59c6739d97a2394f6600ffcb69d7eb8b6f00e",
+            "min_lnbits_version": "1.4.0",
+            "name": "WebPages",
+            "short_description": "Admin-only HTML/CSS/JS pages served from static/pages.",
+            "icon": "https://raw.githubusercontent.com/lnbits/webpages/main/static/image/webpages.svg",
+            "details_link": "https://raw.githubusercontent.com/lnbits/webpages/main/config.json"
         }
     ]
 }
