@@ -345,14 +345,14 @@
             "id": "tpos",
             "repo": "https://github.com/lnbits/tpos",
             "name": "TPoS",
-            "version": "1.1.7",
+            "version": "1.2.0",
             "min_lnbits_version": "1.4.0",
             "short_description": "A shareable PoS terminal!",
             "paid_features": "Free to use all the PoS features, apart from 0.5% charge for the ATM which draws to help maintain development.",
             "details_link": "https://raw.githubusercontent.com/lnbits/tpos/main/config.json",
             "icon": "https://raw.githubusercontent.com/lnbits/tpos/main/static/image/tpos.png",
-            "archive": "https://github.com/lnbits/tpos/archive/refs/tags/v1.1.7.zip",
-            "hash": "9db49ec0246b42f4cc9a0248e5db47521c5373bd04f7acfddf5eb5bc964ae93b"
+            "archive": "https://github.com/lnbits/tpos/archive/refs/tags/v1.2.0.zip",
+            "hash": "f4a745649901e28877ed7b80c691f2245277835e8786c6ffa4da570bc8160d3f"
         },
         {
             "id": "usermanager",
