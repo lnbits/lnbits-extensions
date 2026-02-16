@@ -1493,7 +1493,7 @@
             "name": "LndHub",
             "version": "0.4.2",
             "min_lnbits_version": "0.12.6",
-            "max_lnbits_version": "0.12.1",
+            "max_lnbits_version": "1.0.0",
             "short_description": "Access LNbits from BlueWallet or Zeus",
             "icon": "https://github.com/lnbits/lndhub/raw/main/static/image/lndhub.png",
             "archive": "https://github.com/lnbits/lndhub/archive/refs/tags/v0.4.2.zip",
