@@ -1140,13 +1140,13 @@
             "id": "lnurlp",
             "repo": "https://github.com/lnbits/lnurlp",
             "name": "Pay Links",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "min_lnbits_version": "1.4.0",
             "short_description": "Make reusable LNURL pay links",
             "icon": "https://github.com/lnbits/lnurlp/raw/main/static/image/lnurl-pay.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/lnurlp/main/config.json",
-            "archive": "https://github.com/lnbits/lnurlp/archive/refs/tags/v1.2.0.zip",
-            "hash": "d3872eb5f65b9e962fc201d6784f94f3fd576284582b980805142a2b3f62d8e8"
+            "archive": "https://github.com/lnbits/lnurlp/archive/refs/tags/v1.3.0.zip",
+            "hash": "71701b5756628fec6d7418192158c647e840e1fbf9a65e6fd2372bc73f626562"
         },
         {
             "id": "invoices",
