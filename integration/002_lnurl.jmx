@@ -973,7 +973,7 @@
                     <hashTree/>
                   </hashTree>
                   <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a bit" enabled="true">
-                    <stringProp name="ConstantTimer.delay">100</stringProp>
+                    <stringProp name="ConstantTimer.delay">400</stringProp>
                     <stringProp name="TestPlan.comments">for the webhook to be called</stringProp>
                   </ConstantTimer>
                   <hashTree/>
