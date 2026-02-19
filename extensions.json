@@ -2119,6 +2119,18 @@
             "short_description": "Scrum with paid tasks",
             "icon": "https://raw.githubusercontent.com/lnbits/scrum/main/static/image/scrum.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/scrum/main/config.json"
+        },
+        {
+            "id": "inventory",
+            "repo": "https://github.com/lnbits/inventory",
+            "version": "0.2.0",
+            "archive": "https://github.com/lnbits/inventory/archive/refs/tags/v0.2.0.zip",
+            "hash": "8addbe9570a4ed23e15a6945dac532d2277a4a2ea31b9164744f9f027fffb679",
+            "min_lnbits_version": "1.3.0",
+            "name": "Inventory",
+            "short_description": "Shared Inventory extension",
+            "icon": "https://raw.githubusercontent.com/lnbits/inventory/main/static/inventory.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/inventory/main/config.json"
         }
     ]
 }
