@@ -2119,6 +2119,18 @@
             "short_description": "Scrum with paid tasks",
             "icon": "https://raw.githubusercontent.com/lnbits/scrum/main/static/image/scrum.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/scrum/main/config.json"
+        },
+        {
+            "id": "orders",
+            "repo": "https://github.com/lnbits/orders",
+            "version": "0.1.0",
+            "archive": "https://github.com/lnbits/orders/archive/refs/tags/v0.1.0.zip",
+            "hash": "7150f8efeb5b60b0c899ccc7c529df2e57b79988581a5a15e13411544d74f9a4",
+            "min_lnbits_version": "1.4.0",
+            "name": "Orders",
+            "short_description": "If enabled orders from tpos and webshop will be pulled.",
+            "icon": "https://raw.githubusercontent.com/lnbits/orders/main/static/image/orders.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/orders/main/config.json"
         }
     ]
 }
