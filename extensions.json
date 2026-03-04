@@ -2119,6 +2119,18 @@
             "short_description": "Scrum with paid tasks",
             "icon": "https://raw.githubusercontent.com/lnbits/scrum/main/static/image/scrum.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/scrum/main/config.json"
+        },
+        {
+            "id": "shipping",
+            "repo": "https://github.com/lnbits/shipping",
+            "version": "0.1.0",
+            "archive": "https://github.com/lnbits/shipping/archive/refs/tags/v0.1.0.zip",
+            "hash": "af1dc6289006bb60d72e3eeab9b5d0a13d12571635c56d4f87d602bd182329f3",
+            "min_lnbits_version": "1.4.2",
+            "name": "Shipping",
+            "short_description": "Shared shipping extension",
+            "icon": "https://raw.githubusercontent.com/lnbits/shipping/main/static/image/shipping.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/shipping/main/config.json"
         }
     ]
 }
