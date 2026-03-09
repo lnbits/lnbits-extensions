@@ -2228,7 +2228,7 @@
             "min_lnbits_version": "1.4.0",
             "name": "WebPages",
             "short_description": "Admin-only HTML/CSS/JS pages served from static/pages",
-            "icon": "https://raw.githubusercontent.com/lnbits/webpages/main/static/image/webpages.svg",
+            "icon": "https://raw.githubusercontent.com/lnbits/webpages/main/static/image/webpages.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/webpages/main/config.json"
         }
     ]
