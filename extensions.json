@@ -345,14 +345,14 @@
             "id": "tpos",
             "repo": "https://github.com/lnbits/tpos",
             "name": "TPoS",
-            "version": "1.1.7",
+            "version": "1.2.0",
             "min_lnbits_version": "1.4.0",
             "short_description": "A shareable PoS terminal!",
             "paid_features": "Free to use all the PoS features, apart from 0.5% charge for the ATM which draws to help maintain development.",
             "details_link": "https://raw.githubusercontent.com/lnbits/tpos/main/config.json",
             "icon": "https://raw.githubusercontent.com/lnbits/tpos/main/static/image/tpos.png",
-            "archive": "https://github.com/lnbits/tpos/archive/refs/tags/v1.1.7.zip",
-            "hash": "9db49ec0246b42f4cc9a0248e5db47521c5373bd04f7acfddf5eb5bc964ae93b"
+            "archive": "https://github.com/lnbits/tpos/archive/refs/tags/v1.2.0.zip",
+            "hash": "f4a745649901e28877ed7b80c691f2245277835e8786c6ffa4da570bc8160d3f"
         },
         {
             "id": "usermanager",
@@ -1140,13 +1140,13 @@
             "id": "lnurlp",
             "repo": "https://github.com/lnbits/lnurlp",
             "name": "Pay Links",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "min_lnbits_version": "1.4.0",
             "short_description": "Make reusable LNURL pay links",
             "icon": "https://github.com/lnbits/lnurlp/raw/main/static/image/lnurl-pay.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/lnurlp/main/config.json",
-            "archive": "https://github.com/lnbits/lnurlp/archive/refs/tags/v1.2.0.zip",
-            "hash": "d3872eb5f65b9e962fc201d6784f94f3fd576284582b980805142a2b3f62d8e8"
+            "archive": "https://github.com/lnbits/lnurlp/archive/refs/tags/v1.3.0.zip",
+            "hash": "71701b5756628fec6d7418192158c647e840e1fbf9a65e6fd2372bc73f626562"
         },
         {
             "id": "invoices",
@@ -1493,7 +1493,7 @@
             "name": "LndHub",
             "version": "0.4.2",
             "min_lnbits_version": "0.12.6",
-            "max_lnbits_version": "0.12.1",
+            "max_lnbits_version": "1.0.0",
             "short_description": "Access LNbits from BlueWallet or Zeus",
             "icon": "https://github.com/lnbits/lndhub/raw/main/static/image/lndhub.png",
             "archive": "https://github.com/lnbits/lndhub/archive/refs/tags/v0.4.2.zip",
@@ -2062,9 +2062,9 @@
         {
             "id": "paidreviews",
             "repo": "https://github.com/lnbits/paidreviews",
-            "version": "0.2.0",
-            "archive": "https://github.com/lnbits/paidreviews/archive/refs/tags/v0.2.0.zip",
-            "hash": "3e7b38e0db17e8d093761a632155c9a48e78331a59a1be67aba201adf9f4109e",
+            "version": "0.2.1",
+            "archive": "https://github.com/lnbits/paidreviews/archive/refs/tags/v0.2.1.zip",
+            "hash": "12a54b17040c21b5e2e64670644f0fa4bf6385189a3d446c34d5c0ea58ed68c7",
             "min_lnbits_version": "1.3.0",
             "name": "PaidReviews",
             "short_description": "Pay to leave reviews based on tags",
@@ -2099,9 +2099,9 @@
             "id": "numberlottery",
             "paid_features": "2% of a games haircut will be pushed to the dev team to help support the extension",
             "repo": "https://github.com/lnbits/numberlottery",
-            "version": "1.0.0",
-            "archive": "https://github.com/lnbits/numberlottery/archive/refs/tags/v1.0.0.zip",
-            "hash": "ec081fddb5d981e63fe027cb8d25efa594f130e7481af6dfa30fb93990bda34c",
+            "version": "1.0.1",
+            "archive": "https://github.com/lnbits/numberlottery/archive/refs/tags/v1.0.1.zip",
+            "hash": "230b62cdbe94c62954e0b9c4323cc13cc260f2059c51bc1b8d9acdafd798b62a",
             "min_lnbits_version": "1.3.0",
             "name": "Numberlottery",
             "short_description": "Block based numbers game",
@@ -2131,6 +2131,18 @@
             "short_description": "Simple dashboard for public links",
             "icon": "https://raw.githubusercontent.com/lnbits/dashboard/main/static/image/dashboard.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/dashboard/main/config.json"
+        },
+        {
+            "id": "custom_public_page",
+            "repo": "https://github.com/lnbits/custom_public_page",
+            "version": "0.1.0",
+            "archive": "https://github.com/lnbits/custom_public_page/archive/refs/tags/v0.1.0.zip",
+            "hash": "043ee9362dba322b9975912c9f831a3a8be86f4f1c7e1e51a18f05e28558da0f",
+            "min_lnbits_version": "1.1.0",
+            "name": "CustomPublicPage",
+            "short_description": "Make custom public pages",
+            "icon": "https://raw.githubusercontent.com/lnbits/custom_public_page/main/static/image/custom_public_page.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/custom_public_page/main/config.json"
         }
     ]
 }
