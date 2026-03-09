@@ -2131,6 +2131,18 @@
             "short_description": "Paid chat and support",
             "icon": "https://raw.githubusercontent.com/lnbits/chat/main/static/image/chat.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/chat/main/config.json"
+        },
+        {
+            "id": "custom_public_page",
+            "repo": "https://github.com/lnbits/custom_public_page",
+            "version": "0.1.0",
+            "archive": "https://github.com/lnbits/custom_public_page/archive/refs/tags/v0.1.0.zip",
+            "hash": "043ee9362dba322b9975912c9f831a3a8be86f4f1c7e1e51a18f05e28558da0f",
+            "min_lnbits_version": "1.1.0",
+            "name": "CustomPublicPage",
+            "short_description": "Make custom public pages",
+            "icon": "https://raw.githubusercontent.com/lnbits/custom_public_page/main/static/image/custom_public_page.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/custom_public_page/main/config.json"
         }
     ]
 }
