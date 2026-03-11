@@ -2207,9 +2207,9 @@
         {
             "id": "custom_public_page",
             "repo": "https://github.com/lnbits/custom_public_page",
-            "version": "0.1.0",
-            "archive": "https://github.com/lnbits/custom_public_page/archive/refs/tags/v0.1.0.zip",
-            "hash": "043ee9362dba322b9975912c9f831a3a8be86f4f1c7e1e51a18f05e28558da0f",
+            "version": "0.1.1",
+            "archive": "https://github.com/lnbits/custom_public_page/archive/refs/tags/v0.1.1.zip",
+            "hash": "7df56617ba4ed7f26046d3516007f51e0e57501d23ac1ca2a8a20dea2b77865a",
             "min_lnbits_version": "1.1.0",
             "name": "CustomPublicPage",
             "short_description": "Make custom public pages",
