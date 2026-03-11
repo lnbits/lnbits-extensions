@@ -2131,6 +2131,78 @@
             "short_description": "Collaborative pads",
             "icon": "https://raw.githubusercontent.com/lnbits/chaospad/main/static/image/chaospad.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/chaospad/main/config.json"
+        },
+        {
+            "id": "xerosync",
+            "repo": "https://github.com/lnbits/xerosync",
+            "version": "0.1.0",
+            "archive": "https://github.com/lnbits/xerosync/archive/refs/tags/v0.1.0.zip",
+            "hash": "c988ba2be4776777bdd2bc3ad7fe37803e6bba97bb2a6fc0b844126475355b80",
+            "min_lnbits_version": "1.4.0",
+            "name": "XeroSync",
+            "short_description": "LNbits -> Xero wallet sync",
+            "icon": "https://raw.githubusercontent.com/lnbits/xerosync/main/static/image/xerosync.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/xerosync/main/config.json"
+        },
+        {
+            "id": "shipping",
+            "repo": "https://github.com/lnbits/shipping",
+            "version": "0.1.0",
+            "archive": "https://github.com/lnbits/shipping/archive/refs/tags/v0.1.0.zip",
+            "hash": "af1dc6289006bb60d72e3eeab9b5d0a13d12571635c56d4f87d602bd182329f3",
+            "min_lnbits_version": "1.4.2",
+            "name": "Shipping",
+            "short_description": "Shared shipping extension",
+            "icon": "https://raw.githubusercontent.com/lnbits/shipping/main/static/image/shipping.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/shipping/main/config.json"
+        },
+        {
+            "id": "orders",
+            "repo": "https://github.com/lnbits/orders",
+            "version": "0.1.0",
+            "archive": "https://github.com/lnbits/orders/archive/refs/tags/v0.1.0.zip",
+            "hash": "7150f8efeb5b60b0c899ccc7c529df2e57b79988581a5a15e13411544d74f9a4",
+            "min_lnbits_version": "1.4.0",
+            "name": "Orders",
+            "short_description": "If enabled orders from tpos and webshop will be pulled",
+            "icon": "https://raw.githubusercontent.com/lnbits/orders/main/static/image/orders.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/orders/main/config.json"
+        },
+        {
+            "id": "chat",
+            "repo": "https://github.com/lnbits/chat",
+            "version": "0.0.7",
+            "archive": "https://github.com/lnbits/chat/archive/refs/tags/v0.0.7.zip",
+            "hash": "3b6788eed743f754d989423fc77d4ed72596df002856272a5165da8950d3ca9f",
+            "min_lnbits_version": "1.4.0",
+            "name": "Chat",
+            "short_description": "Paid chat and support",
+            "icon": "https://raw.githubusercontent.com/lnbits/chat/main/static/image/chat.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/chat/main/config.json"
+        },
+        {
+            "id": "dashboard",
+            "repo": "https://github.com/lnbits/dashboard",
+            "version": "0.0.8",
+            "archive": "https://github.com/lnbits/dashboard/archive/refs/tags/v0.0.8.zip",
+            "hash": "778f3365cea146a56491800a93a2b9b892af69764d76ec9c48037e4bec31fd65",
+            "min_lnbits_version": "1.1.0",
+            "name": "Dashboard",
+            "short_description": "Simple dashboard for public links",
+            "icon": "https://raw.githubusercontent.com/lnbits/dashboard/main/static/image/dashboard.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/dashboard/main/config.json"
+        },
+        {
+            "id": "custom_public_page",
+            "repo": "https://github.com/lnbits/custom_public_page",
+            "version": "0.1.0",
+            "archive": "https://github.com/lnbits/custom_public_page/archive/refs/tags/v0.1.0.zip",
+            "hash": "043ee9362dba322b9975912c9f831a3a8be86f4f1c7e1e51a18f05e28558da0f",
+            "min_lnbits_version": "1.1.0",
+            "name": "CustomPublicPage",
+            "short_description": "Make custom public pages",
+            "icon": "https://raw.githubusercontent.com/lnbits/custom_public_page/main/static/image/custom_public_page.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/custom_public_page/main/config.json"
         }
     ]
 }
