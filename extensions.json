@@ -2121,6 +2121,18 @@
             "details_link": "https://raw.githubusercontent.com/lnbits/scrum/main/config.json"
         },
         {
+            "id": "chaospad",
+            "repo": "https://github.com/lnbits/chaospad",
+            "version": "0.1.1",
+            "archive": "https://github.com/lnbits/chaospad/archive/refs/tags/v0.1.1.zip",
+            "hash": "30a85051ee71a2e0ae6396c3580149b9a949e655dde2e2911bbf98b0deadafdb",
+            "min_lnbits_version": "1.1.0",
+            "name": "ChaosPad",
+            "short_description": "Collaborative pads",
+            "icon": "https://raw.githubusercontent.com/lnbits/chaospad/main/static/image/chaospad.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/chaospad/main/config.json"
+        },
+        {
             "id": "xerosync",
             "repo": "https://github.com/lnbits/xerosync",
             "version": "0.1.0",
