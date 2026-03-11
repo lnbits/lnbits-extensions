@@ -1,11 +1,14 @@
 {
     "featured": [
         "tpos",
-        "jukebox",
-        "gerty",
-        "lncalendar",
-        "lnurlp",
-        "withdraw"
+        "chat",
+        "orders",
+        "shipping",
+        "xerosync",
+        "inventory",
+        "withdraw",
+        "scrum",
+        "coinflip"
     ],
     "extensions": [
         {
