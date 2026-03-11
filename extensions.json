@@ -2121,6 +2121,18 @@
             "details_link": "https://raw.githubusercontent.com/lnbits/scrum/main/config.json"
         },
         {
+            "id": "xerosync",
+            "repo": "https://github.com/lnbits/xerosync",
+            "version": "0.1.0",
+            "archive": "https://github.com/lnbits/xerosync/archive/refs/tags/v0.1.0.zip",
+            "hash": "c988ba2be4776777bdd2bc3ad7fe37803e6bba97bb2a6fc0b844126475355b80",
+            "min_lnbits_version": "1.4.0",
+            "name": "XeroSync",
+            "short_description": "LNbits -> Xero wallet sync",
+            "icon": "https://raw.githubusercontent.com/lnbits/xerosync/main/static/image/xerosync.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/xerosync/main/config.json"
+        },
+        {
             "id": "shipping",
             "repo": "https://github.com/lnbits/shipping",
             "version": "0.1.0",
