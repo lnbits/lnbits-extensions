@@ -2218,6 +2218,18 @@
             "short_description": "Make custom public pages",
             "icon": "https://raw.githubusercontent.com/lnbits/custom_public_page/main/static/image/custom_public_page.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/custom_public_page/main/config.json"
+        },
+        {
+            "id": "webpages",
+            "repo": "https://github.com/lnbits/webpages",
+            "version": "0.1.0",
+            "archive": "https://github.com/lnbits/webpages/archive/refs/tags/v0.1.0.zip",
+            "hash": "c4d587ccbba02c5c4d23f370c3753f8da2a7e52718c9cf7f06b5a9a24d8b84e7",
+            "min_lnbits_version": "1.4.0",
+            "name": "WebPages",
+            "short_description": "Admin-only HTML/CSS/JS pages served from static/pages",
+            "icon": "https://raw.githubusercontent.com/lnbits/webpages/main/static/image/webpages.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/webpages/main/config.json"
         }
     ]
 }
