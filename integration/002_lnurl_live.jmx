@@ -15,12 +15,12 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="host" elementType="Argument">
             <stringProp name="Argument.name">host</stringProp>
-            <stringProp name="Argument.value">${__property(host,,guiltyeland1.lnbits.com)}</stringProp>
+            <stringProp name="Argument.value">${__property(host,,localhost)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="scheme" elementType="Argument">
             <stringProp name="Argument.name">scheme</stringProp>
-            <stringProp name="Argument.value">${__property(scheme,,https)}</stringProp>
+            <stringProp name="Argument.value">${__property(scheme,,http)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="port" elementType="Argument">
@@ -41,6 +41,16 @@
           <elementProp name="lnurlLinkId" elementType="Argument">
             <stringProp name="Argument.name">lnurlLinkId</stringProp>
             <stringProp name="Argument.value">KJPijT</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="demoApiKey" elementType="Argument">
+            <stringProp name="Argument.name">demoApiKey</stringProp>
+            <stringProp name="Argument.value">96fd9f927311455c902c790c343143bb</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="saasApiKey" elementType="Argument">
+            <stringProp name="Argument.name">saasApiKey</stringProp>
+            <stringProp name="Argument.value">12084246eef14de2ac5b216ec49759ad</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -148,7 +158,7 @@
                   </elementProp>
                   <elementProp name="X-Api-Key" elementType="Header">
                     <stringProp name="Header.name">X-Api-Key</stringProp>
-                    <stringProp name="Header.value">96fd9f927311455c902c790c343143bb</stringProp>
+                    <stringProp name="Header.value">${demoApiKey}</stringProp>
                   </elementProp>
                   <elementProp name="Content-Type" elementType="Header">
                     <stringProp name="Header.name">Content-Type</stringProp>
@@ -229,7 +239,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="X-Api-Key" elementType="Header">
                     <stringProp name="Header.name">X-Api-Key</stringProp>
-                    <stringProp name="Header.value">12084246eef14de2ac5b216ec49759ad</stringProp>
+                    <stringProp name="Header.value">${saasApiKey}</stringProp>
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
@@ -326,7 +336,7 @@
                   </elementProp>
                   <elementProp name="X-Api-Key" elementType="Header">
                     <stringProp name="Header.name">X-Api-Key</stringProp>
-                    <stringProp name="Header.value">96fd9f927311455c902c790c343143bb</stringProp>
+                    <stringProp name="Header.value">${demoApiKey}</stringProp>
                   </elementProp>
                   <elementProp name="Content-Type" elementType="Header">
                     <stringProp name="Header.name">Content-Type</stringProp>
@@ -396,7 +406,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="X-Api-Key" elementType="Header">
                     <stringProp name="Header.name">X-Api-Key</stringProp>
-                    <stringProp name="Header.value">12084246eef14de2ac5b216ec49759ad</stringProp>
+                    <stringProp name="Header.value">${saasApiKey}</stringProp>
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
@@ -493,7 +503,7 @@
                   </elementProp>
                   <elementProp name="X-Api-Key" elementType="Header">
                     <stringProp name="Header.name">X-Api-Key</stringProp>
-                    <stringProp name="Header.value">12084246eef14de2ac5b216ec49759ad</stringProp>
+                    <stringProp name="Header.value">${saasApiKey}</stringProp>
                   </elementProp>
                   <elementProp name="Content-Type" elementType="Header">
                     <stringProp name="Header.name">Content-Type</stringProp>
