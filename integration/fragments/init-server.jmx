@@ -368,7 +368,8 @@
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
-    &quot;lnbits_callback_url_rules&quot;: []&#xd;
+    &quot;lnbits_callback_url_rules&quot;: [],&#xd;
+    &quot;auth_https_only&quot;: true&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
