@@ -102,6 +102,7 @@ a {
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
     padding: 1.35rem;
     border-radius: 1.6rem;
@@ -154,10 +155,28 @@ a {
         font-size: clamp(1.35rem, 2vw, 1.8rem);
         line-height: 1.1;
         letter-spacing: -0.02em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
 
         a {
             color: $text;
             text-decoration: none;
+            width: 100%;
+        }
+
+        .min-version,
+        .version {
+            display: inline-flex;
+            width: fit-content;
+            margin-top: 0.55rem;
+            margin-left: 0;
+        }
+
+        .version + .min-version,
+        .min-version + .version {
+            margin-left: 0.35rem;
         }
     }
 
@@ -169,6 +188,7 @@ a {
 
     p {
         margin: 0 0 0.8rem;
+        text-align: center;
     }
 
     img {
@@ -213,8 +233,11 @@ a {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        justify-content: center;
         gap: 0.35rem 0.85rem;
-        margin-top: 0.15rem;
+        margin-top: 0.35rem;
+        padding-top: 0.35rem;
+        width: 100%;
     }
 }
 
