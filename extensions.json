@@ -1,12 +1,4 @@
 {
-    "merchant": [
-        "tpos",
-        "orders",
-        "shipping",
-        "xerosync",
-        "inventory",
-        "webshop"
-    ],
     "featured": [
         "tpos",
         "chat",
@@ -19,6 +11,28 @@
         "scrum",
         "coinflip"
     ],
+    "profiles": {
+        "featured": [
+            "tpos",
+            "chat",
+            "orders",
+            "shipping",
+            "xerosync",
+            "inventory",
+            "lnurlp",
+            "withdraw",
+            "scrum",
+            "coinflip"
+        ],
+        "merchant": [
+            "tpos",
+            "orders",
+            "shipping",
+            "xerosync",
+            "inventory",
+            "webshop"
+        ]
+    },
     "extensions": [
         {
             "id": "copilot",
