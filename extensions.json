@@ -24,6 +24,7 @@
             "scrum",
             "coinflip"
         ],
+
         "merchant": [
             "tpos",
             "orders",
@@ -31,6 +32,12 @@
             "xerosync",
             "inventory",
             "webshop"
+        ],
+        "nostr": [
+            "nostrrelay",
+            "nostrclient",
+            "nostrmarket",
+            "nostrnip5"
         ]
     },
     "extensions": [
