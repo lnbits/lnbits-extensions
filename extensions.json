@@ -1,4 +1,12 @@
 {
+    "merchant": [
+        "tpos",
+        "orders",
+        "shipping",
+        "xerosync",
+        "inventory",
+        "webshop"
+    ],
     "featured": [
         "tpos",
         "chat",
@@ -6,6 +14,7 @@
         "shipping",
         "xerosync",
         "inventory",
+        "lnurlp",
         "withdraw",
         "scrum",
         "coinflip"
