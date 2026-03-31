@@ -24,7 +24,6 @@
             "scrum",
             "coinflip"
         ],
-
         "merchant": [
             "tpos",
             "orders",
