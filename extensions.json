@@ -6,10 +6,39 @@
         "shipping",
         "xerosync",
         "inventory",
+        "lnurlp",
         "withdraw",
         "scrum",
         "coinflip"
     ],
+    "profiles": {
+        "featured": [
+            "tpos",
+            "chat",
+            "orders",
+            "shipping",
+            "xerosync",
+            "inventory",
+            "lnurlp",
+            "withdraw",
+            "scrum",
+            "coinflip"
+        ],
+        "merchant": [
+            "tpos",
+            "orders",
+            "shipping",
+            "xerosync",
+            "inventory",
+            "webshop"
+        ],
+        "nostr": [
+            "nostrrelay",
+            "nostrclient",
+            "nostrmarket",
+            "nostrnip5"
+        ]
+    },
     "extensions": [
         {
             "id": "copilot",
