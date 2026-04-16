@@ -11,19 +11,7 @@
         "scrum",
         "coinflip"
     ],
-    "profiles": {
-        "featured": [
-            "tpos",
-            "chat",
-            "orders",
-            "shipping",
-            "xerosync",
-            "inventory",
-            "lnurlp",
-            "withdraw",
-            "scrum",
-            "coinflip"
-        ],
+    "categories": {
         "merchant": [
             "tpos",
             "orders",
