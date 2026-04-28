@@ -2273,6 +2273,18 @@
             "short_description": "Admin-only HTML/CSS/JS pages served from static/pages",
             "icon": "https://raw.githubusercontent.com/lnbits/webpages/main/static/image/webpages.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/webpages/main/config.json"
+        },
+        {
+            "id": "blackjack",
+            "repo": "https://github.com/lnbits/blackjack",
+            "version": "0.1.0",
+            "archive": "https://github.com/lnbits/blackjack/archive/refs/tags/v0.1.0.zip",
+            "hash": "80d2ec75ec313830aecc2fa0effe07e34fd55cf90c0f07b79f6a678518eecb6c",
+            "min_lnbits_version": "1.4.0",
+            "name": "BlackJack",
+            "short_description": "A BlackJack Dealer",
+            "icon": "https://raw.githubusercontent.com/lnbits/blackjack/main/static/image/blackjack.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/blackjack/main/config.json"
         }
     ]
 }
