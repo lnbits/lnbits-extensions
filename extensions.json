@@ -2282,7 +2282,7 @@
             "hash": "fa81fe1ba34e8801b415ab979816f4d9c3c9f0ddaa4a879e421eb616efa9ba86",
             "min_lnbits_version": "1.5.4",
             "name": "Tabs",
-            "short_description": "",
+            "short_description": "A reusable merchant ledger for open balances",
             "icon": "https://raw.githubusercontent.com/lnbits/tabs/main/static/image/tabs.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/tabs/main/config.json"
         }
