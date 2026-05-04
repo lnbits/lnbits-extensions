@@ -2273,6 +2273,18 @@
             "short_description": "Admin-only HTML/CSS/JS pages served from static/pages",
             "icon": "https://raw.githubusercontent.com/lnbits/webpages/main/static/image/webpages.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/webpages/main/config.json"
+        },
+        {
+            "id": "tabs",
+            "repo": "https://github.com/lnbits/tabs",
+            "version": "0.1.0",
+            "archive": "https://github.com/lnbits/tabs/archive/refs/tags/v0.1.0.zip",
+            "hash": "fa81fe1ba34e8801b415ab979816f4d9c3c9f0ddaa4a879e421eb616efa9ba86",
+            "min_lnbits_version": "1.5.4",
+            "name": "Tabs",
+            "short_description": "",
+            "icon": "https://raw.githubusercontent.com/lnbits/tabs/main/static/image/tabs.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/tabs/main/config.json"
         }
     ]
 }
