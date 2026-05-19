@@ -2109,9 +2109,9 @@
         {
             "id": "nwcprovider",
             "repo": "https://github.com/lnbits/nwcprovider",
-            "version": "1.1.1",
-            "archive": "https://github.com/lnbits/nwcprovider/archive/refs/tags/v1.1.1.zip",
-            "hash": "3ae31deb599feed29fa826cb529d40fe7c6a97c4f8ab1a88ce10a1cc7c8ff1a1",
+            "version": "1.1.2",
+            "archive": "https://github.com/lnbits/nwcprovider/archive/refs/tags/v1.1.2.zip",
+            "hash": "82282235dfd683cd0fdc2a25d3ac4c1f80c1fd5effc7696ee16b3408d2b3b219",
             "min_lnbits_version": "1.4.0",
             "name": "NWC Service Provider",
             "short_description": "A NWC service provider for LNbits",
