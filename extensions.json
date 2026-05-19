@@ -2119,6 +2119,18 @@
             "details_link": "https://raw.githubusercontent.com/lnbits/nwcprovider/main/config.json"
         },
         {
+            "id": "nwcprovider",
+            "repo": "https://github.com/lnbits/nwcprovider",
+            "version": "1.1.2",
+            "archive": "https://github.com/lnbits/nwcprovider/archive/refs/tags/v1.1.2.zip",
+            "hash": "3ae31deb599feed29fa826cb529d40fe7c6a97c4f8ab1a88ce10a1cc7c8ff1a1",
+            "min_lnbits_version": "1.4.0",
+            "name": "NWC Service Provider",
+            "short_description": "A NWC service provider for LNbits",
+            "icon": "https://raw.githubusercontent.com/lnbits/nwcprovider/main/static/image/nwcprovider.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/nwcprovider/main/config.json"
+        },
+        {
             "id": "paidreviews",
             "repo": "https://github.com/lnbits/paidreviews",
             "version": "0.2.1",
