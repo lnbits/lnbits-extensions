@@ -2298,6 +2298,18 @@
             "short_description": "A BlackJack Dealer",
             "icon": "https://raw.githubusercontent.com/lnbits/blackjack/main/static/image/blackjack.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/blackjack/main/config.json"
+        },
+        {
+            "id": "nostr_bunker",
+            "repo": "https://github.com/lnbits/nostr_bunker",
+            "version": "0.0.3",
+            "archive": "https://github.com/lnbits/nostr_bunker/archive/refs/tags/v0.0.3.zip",
+            "hash": "f4f599ce9f19ef5642800aa2da4d9a7c0a74f62c9009115d04395344e698fdb8",
+            "min_lnbits_version": "1.4.2",
+            "name": "Nostr Bunker",
+            "short_description": "Run a NIP-46 bunker with per-client signing policies",
+            "icon": "https://raw.githubusercontent.com/lnbits/nostr_bunker/main/static/image/nostr_bunker.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/nostr_bunker/main/config.json"
         }
     ]
 }
