@@ -2298,6 +2298,18 @@
             "short_description": "A BlackJack Dealer",
             "icon": "https://raw.githubusercontent.com/lnbits/blackjack/main/static/image/blackjack.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/blackjack/main/config.json"
+        },
+        {
+            "id": "paylink",
+            "repo": "https://github.com/lnbits/lnurlp",
+            "version": "1.3.1",
+            "archive": "https://github.com/lnbits/lnurlp/archive/refs/tags/v1.3.1.zip",
+            "hash": "5af19ac503f6be932b5029510e05388ff59dbca7ed1107e166e2f4408b7ef9a9",
+            "min_lnbits_version": "1.4.0",
+            "name": "Pay Links",
+            "short_description": "Make static reusable LNURL pay links or lightning addresses",
+            "icon": "https://raw.githubusercontent.com/lnbits/lnurlp/main/static/image/lnurl-pay.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/lnurlp/main/config.json"
         }
     ]
 }
