@@ -2206,9 +2206,9 @@
         {
             "id": "xerosync",
             "repo": "https://github.com/lnbits/xerosync",
-            "version": "0.1.0",
-            "archive": "https://github.com/lnbits/xerosync/archive/refs/tags/v0.1.0.zip",
-            "hash": "c988ba2be4776777bdd2bc3ad7fe37803e6bba97bb2a6fc0b844126475355b80",
+            "version": "0.1.4",
+            "archive": "https://github.com/lnbits/xerosync/archive/refs/tags/v0.1.4.zip",
+            "hash": "bd733e59cb94c12d8269d2c1b2657f0626c5ed1c093677d8d904c5f6c304feec",
             "min_lnbits_version": "1.4.0",
             "name": "XeroSync",
             "short_description": "LNbits -> Xero wallet sync",
