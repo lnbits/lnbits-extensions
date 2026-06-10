@@ -2298,6 +2298,18 @@
             "short_description": "A BlackJack Dealer",
             "icon": "https://raw.githubusercontent.com/lnbits/blackjack/main/static/image/blackjack.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/blackjack/main/config.json"
+        },
+        {
+            "id": "tabs",
+            "repo": "https://github.com/lnbits/tabs",
+            "version": "0.1.0",
+            "archive": "https://github.com/lnbits/tabs/archive/refs/tags/v0.1.0.zip",
+            "hash": "43b51621e4a2127ed65855fa0bb598f7300dd835f85b6711dc75e2f7588eb6f7",
+            "min_lnbits_version": "1.5.4",
+            "name": "Tabs",
+            "short_description": "A reusable merchant ledger for open balances",
+            "icon": "https://raw.githubusercontent.com/lnbits/tabs/main/static/image/tabs.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/tabs/main/config.json"
         }
     ]
 }
