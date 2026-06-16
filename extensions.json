@@ -1431,13 +1431,13 @@
             "id": "satspay",
             "repo": "https://github.com/lnbits/satspay",
             "name": "SatsPay Server",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "min_lnbits_version": "1.0.0",
             "short_description": "Create onchain and LN charges",
             "icon": "https://github.com/lnbits/satspay/raw/main/static/image/satspay.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/satspay/main/config.json",
-            "archive": "https://github.com/lnbits/satspay/archive/refs/tags/v1.0.1.zip",
-            "hash": "0205c8569ccfe8d8363872ac41b1de8b5bff470eb71d7b71cafa9a0ae30cf943"
+            "archive": "https://github.com/lnbits/satspay/archive/refs/tags/v1.0.2.zip",
+            "hash": "a3838d5aa3422259cc9f9067a37a8f5b21e4f201049907caf2346ffe1bbc29bb"
         },
         {
             "id": "bleskomat",
