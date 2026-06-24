@@ -130,6 +130,18 @@
             "details_link": "https://raw.githubusercontent.com/bitkarrot/decoder/main/config.json"
         },
         {
+            "id": "decoder",
+            "repo": "https://github.com/bitkarrot/decoder",
+            "name": "Decoder",
+            "min_lnbits_version": "1.5.4",
+            "version": "1.1.3",
+            "short_description": "Decode Lightning Network BOLT11, LNURL, and Lightning Address",
+            "icon": "https://raw.githubusercontent.com/bitkarrot/decoder/main/static/unlock.png",
+            "archive": "https://github.com/bitkarrot/decoder/archive/refs/tags/v1.1.3.zip",
+            "hash": "29fb701cb3399d8924f4db7b49d1398d3a9cb9147f3611a770f1b066fee27445",
+            "details_link": "https://raw.githubusercontent.com/bitkarrot/decoder/main/config.json"
+        },
+        {
             "id": "gerty",
             "repo": "https://github.com/lnbits/gerty",
             "name": "Gerty",
@@ -1899,6 +1911,18 @@
             "icon": "https://raw.githubusercontent.com/bitkarrot/scheduler/main/static/image/scheduler.png",
             "archive": "https://github.com/bitkarrot/scheduler/archive/refs/tags/v0.1.3.zip",
             "hash": "8d152c00371f001ed9712be1b265f5ff9900066fc78707e79fec24302151bbde"
+        },
+        {
+            "id": "scheduler",
+            "repo": "https://github.com/bitkarrot/scheduler",
+            "name": "Scheduler",
+            "version": "1.0.7",
+            "min_lnbits_version": "1.0.0",
+            "short_description": "Generate Scheduled tasks via crontabs for LNbits",
+            "icon": "https://raw.githubusercontent.com/bitkarrot/scheduler/main/static/image/scheduler.png",
+            "details_link": "https://raw.githubusercontent.com/bitkarrot/scheduler/main/config.json",
+            "archive": "https://github.com/bitkarrot/scheduler/archive/refs/tags/v1.0.7.zip",
+            "hash": "8db1a8076a273560c813557b59dbd7e8181b0878a4c4fbae713bd4a7a48107de"
         },
         {
             "id": "fossa",
