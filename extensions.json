@@ -2286,6 +2286,18 @@
             "short_description": "A BlackJack Dealer",
             "icon": "https://raw.githubusercontent.com/lnbits/blackjack/main/static/image/blackjack.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/blackjack/main/config.json"
+        },
+        {
+            "id": "market_town",
+            "repo": "https://github.com/lnbits/market_town",
+            "version": "0.0.9",
+            "archive": "https://github.com/lnbits/market_town/archive/refs/tags/v0.0.9.zip",
+            "hash": "57a9585e9d9a907e223d52180129e1035b343477279e1002ed130296ea93c96f",
+            "min_lnbits_version": "1.4.2",
+            "name": "Market Town",
+            "short_description": "",
+            "icon": "https://raw.githubusercontent.com/lnbits/market_town/main/static/image/market_town.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/market_town/main/config.json"
         }
     ]
 }
