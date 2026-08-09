@@ -2311,6 +2311,18 @@
             "short_description": "Run a NIP-46 bunker with per-client signing policies",
             "icon": "https://raw.githubusercontent.com/lnbits/nostr_bunker/main/static/image/nostr_bunker.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/nostr_bunker/main/config.json"
+        },
+        {
+            "id": "clink",
+            "repo": "https://github.com/WoompaLoompa/lnbits-clink",
+            "version": "0.1.0",
+            "archive": "https://github.com/WoompaLoompa/lnbits-clink/archive/refs/tags/v0.1.0.zip",
+            "hash": "a9fcebcb7d4fa78ca43e7c286bed38c56f31cc1409226689461e4398f6f11144",
+            "min_lnbits_version": "1.0.0",
+            "name": "CLINK",
+            "short_description": "Nostr-native Lightning: offers, subscriptions and wallet debits",
+            "icon": "https://raw.githubusercontent.com/WoompaLoompa/lnbits-clink/main/clink/static/clink.png",
+            "details_link": "https://raw.githubusercontent.com/WoompaLoompa/lnbits-clink/main/config.json"
         }
     ]
 }
