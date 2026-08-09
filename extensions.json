@@ -2321,7 +2321,7 @@
             "min_lnbits_version": "1.0.0",
             "name": "CLINK",
             "short_description": "Nostr-native Lightning: offers, subscriptions and wallet debits",
-            "icon": "https://raw.githubusercontent.com/WoompaLoompa/lnbits-clink/main/clink/static/clink.png",
+            "icon": "https://raw.githubusercontent.com/WoompaLoompa/lnbits-clink/main/static/clink.png",
             "details_link": "https://raw.githubusercontent.com/WoompaLoompa/lnbits-clink/main/config.json"
         }
     ]
