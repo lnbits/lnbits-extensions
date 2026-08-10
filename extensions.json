@@ -2311,6 +2311,18 @@
             "short_description": "Run a NIP-46 bunker with per-client signing policies",
             "icon": "https://raw.githubusercontent.com/lnbits/nostr_bunker/main/static/image/nostr_bunker.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/nostr_bunker/main/config.json"
+        },
+        {
+            "id": "tabs",
+            "repo": "https://github.com/lnbits/tabs",
+            "version": "0.1.0",
+            "archive": "https://github.com/lnbits/tabs/archive/refs/tags/v0.1.0.zip",
+            "hash": "ed40ae9fd91d678b5a248a652774c3f0903cacf2b506e8feb81483ff6c9ea1aa",
+            "min_lnbits_version": "1.5.4",
+            "name": "Tabs",
+            "short_description": "A reusable merchant ledger for open balances",
+            "icon": "https://raw.githubusercontent.com/lnbits/tabs/main/static/image/tabs.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/tabs/main/config.json"
         }
     ]
 }
