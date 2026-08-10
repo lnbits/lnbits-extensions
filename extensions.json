@@ -2323,6 +2323,18 @@
             "short_description": "A reusable merchant ledger for open balances",
             "icon": "https://raw.githubusercontent.com/lnbits/tabs/main/static/image/tabs.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/tabs/main/config.json"
+        },
+        {
+            "id": "clink",
+            "repo": "https://github.com/WoompaLoompa/lnbits-clink",
+            "version": "0.1.2",
+            "archive": "https://github.com/WoompaLoompa/lnbits-clink/archive/refs/tags/v0.1.2.zip",
+            "hash": "1864419e3d107b1854163994deb264314bf600bcc1d6cbcbcdeb0a11a0283393",
+            "min_lnbits_version": "1.0.0",
+            "name": "CLINK",
+            "short_description": "Nostr-native Lightning: offers, subscriptions and wallet debits",
+            "icon": "https://raw.githubusercontent.com/WoompaLoompa/lnbits-clink/main/static/clink.png",
+            "details_link": "https://raw.githubusercontent.com/WoompaLoompa/lnbits-clink/main/config.json"
         }
     ]
 }
