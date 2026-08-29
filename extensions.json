@@ -2340,12 +2340,12 @@
             "id": "giftcards",
             "repo": "https://github.com/bitkarrot/giftcards",
             "name": "Gift Cards",
-            "version": "0.2.1",
+            "version": "0.2.2",
             "min_lnbits_version": "1.5.4",
             "short_description": "Create and redeem sats-denominated gift cards with unique secure links",
             "icon": "https://raw.githubusercontent.com/bitkarrot/giftcards/main/static/image/giftcards.png",
-            "archive": "https://github.com/bitkarrot/giftcards/archive/refs/tags/v0.2.1.zip",
-            "hash": "aab0eb858a7a418ceab1eb68076d4707dbcf3b2ece2b6c3a440d55deff379a4f",
+            "archive": "https://github.com/bitkarrot/giftcards/archive/refs/tags/v0.2.2.zip",
+            "hash": "dd307559ab45f09685db064efd5c6eb900a25fa51ed1c19811123facd6e47a97",
             "details_link": "https://raw.githubusercontent.com/bitkarrot/giftcards/main/config.json"
         }
     ]
