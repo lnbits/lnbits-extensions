@@ -2335,6 +2335,18 @@
             "short_description": "A reusable merchant ledger for open balances",
             "icon": "https://raw.githubusercontent.com/lnbits/tabs/main/static/image/tabs.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/tabs/main/config.json"
+        },
+        {
+            "id": "giftcards",
+            "repo": "https://github.com/bitkarrot/giftcards",
+            "name": "Gift Cards",
+            "version": "0.2.1",
+            "min_lnbits_version": "1.5.4",
+            "short_description": "Create and redeem sats-denominated gift cards with unique secure links",
+            "icon": "https://raw.githubusercontent.com/bitkarrot/giftcards/main/static/image/giftcards.png",
+            "archive": "https://github.com/bitkarrot/giftcards/archive/refs/tags/v0.2.1.zip",
+            "hash": "aab0eb858a7a418ceab1eb68076d4707dbcf3b2ece2b6c3a440d55deff379a4f",
+            "details_link": "https://raw.githubusercontent.com/bitkarrot/giftcards/main/config.json"
         }
     ]
 }
