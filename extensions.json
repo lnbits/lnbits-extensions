@@ -29,6 +29,16 @@
     },
     "extensions": [
         {
+            "id": "incomereport",
+            "repo": "https://github.com/lightning-goats/incomereport_extension",
+            "name": "Income Report",
+            "version": "0.1.0",
+            "short_description": "Accounting reports: daily, weekly, monthly and yearly income per wallet with fiat values and CSV export",
+            "icon": "https://raw.githubusercontent.com/lightning-goats/incomereport_extension/main/static/image/incomereport.png",
+            "archive": "https://github.com/lightning-goats/incomereport_extension/archive/refs/tags/v0.1.0.zip",
+            "hash": "3ea2440dc2b5f36254ef46884876204b44aae18ecde14eb0cef01c9a2e6f212b"
+        },
+        {
             "id": "copilot",
             "repo": "https://github.com/lnbits/copilot",
             "name": "Streamer Copilot",
