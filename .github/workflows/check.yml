@@ -75,7 +75,7 @@ jobs:
             AUTH_HTTPS_ONLY: false
             AUTH_ALLOWED_METHODS: "user-id-only, username-password"
             LNBITS_EXTENSIONS_DEFAULT_INSTALL: "watchonly, satspay, tipjar, tpos, lnurlp, withdraw"
-            LNBITS_EXTENSIONS_MANIFESTS: "https://raw.githubusercontent.com/lnbits/lnbits-extensions/${{ github.head_ref || github.ref_name }}/extensions.json"
+            LNBITS_EXTENSIONS_MANIFESTS: "https://raw.githubusercontent.com/${{ github.event.pull_request.head.repo.full_name || github.repository }}/${{ github.event.pull_request.head.ref || github.ref_name }}/extensions.json"
             LNBITS_BACKEND_WALLET_CLASS: FakeWallet
           run: |
             git clone https://github.com/lnbits/lnbits.git
