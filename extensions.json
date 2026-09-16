@@ -187,7 +187,7 @@
             "icon": "https://raw.githubusercontent.com/lnbits/gerty/main/static/gerty.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/gerty/main/config.json",
             "archive": "https://github.com/lnbits/gerty/archive/refs/tags/v1.1.2.zip",
-            "hash": "f83f22a54f12532d6a845ad90974fce53b9c8d2fe5ea3c3c95907169718b6d72"
+            "hash": "64e542f28aee29b68458233c86f3859cf84ac218c8b78b0830f6eb455cfb0099"
         },
         {
             "id": "jukebox",
