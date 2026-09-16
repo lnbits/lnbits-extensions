@@ -181,13 +181,13 @@
             "id": "gerty",
             "repo": "https://github.com/lnbits/gerty",
             "name": "Gerty",
-            "version": "1.1.1",
+            "version": "1.1.4",
             "min_lnbits_version": "1.0.0",
             "short_description": "Desktop bitcoin Assistant",
             "icon": "https://raw.githubusercontent.com/lnbits/gerty/main/static/gerty.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/gerty/main/config.json",
-            "archive": "https://github.com/lnbits/gerty/archive/refs/tags/v1.1.1.zip",
-            "hash": "c5cb0aa486c05f77cc71c2da57ce077d73c287a14e35bc71c92556629d33a357"
+            "archive": "https://github.com/lnbits/gerty/archive/refs/tags/v1.1.4.zip",
+            "hash": "48897bdc4db8e0d0eaf85630decce0ddf236d20e039f27f47f9eb551d371fcaa"
         },
         {
             "id": "jukebox",
