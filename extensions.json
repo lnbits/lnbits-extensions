@@ -1408,12 +1408,12 @@
             "id": "pocketmoney",
             "repo": "https://github.com/TrezorHannes/pocketmoney",
             "name": "PocketMoney",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "min_lnbits_version": "0.12.0",
             "short_description": "Recurring allowances and scheduled batch disbursements in any currency",
             "icon": "https://raw.githubusercontent.com/TrezorHannes/pocketmoney/main/static/image/tile.png",
-            "archive": "https://github.com/TrezorHannes/pocketmoney/archive/refs/tags/v0.1.0.zip",
-            "hash": "3f70b9bc91b43373230593809b796d7b3a4be19958f3c81cbd3162dfcd5fb319",
+            "archive": "https://github.com/TrezorHannes/pocketmoney/archive/refs/tags/v0.1.1.zip",
+            "hash": "3a28c3918cd7a6b20fb5f7a03849afa30d8bd89f017ac07ec100ed7238b8eccd",
             "details_link": "https://raw.githubusercontent.com/TrezorHannes/pocketmoney/main/config.json"
         },
         {
