@@ -1939,6 +1939,18 @@
             "hash": "8d152c00371f001ed9712be1b265f5ff9900066fc78707e79fec24302151bbde"
         },
         {
+            "id": "scheduler",
+            "repo": "https://github.com/bitkarrot/scheduler",
+            "name": "Scheduler",
+            "version": "1.0.8",
+            "min_lnbits_version": "1.0.0",
+            "short_description": "Generate Scheduled tasks via crontabs for LNbits",
+            "icon": "https://raw.githubusercontent.com/bitkarrot/scheduler/main/static/image/scheduler.png",
+            "details_link": "https://raw.githubusercontent.com/bitkarrot/scheduler/main/config.json",
+            "archive": "https://github.com/bitkarrot/scheduler/archive/refs/tags/v1.0.8.zip",
+            "hash": "4fbc3183cb1e0b1322ef8b7e541e693a40ee02fa4c6765deab18e17f5242b219"
+        },
+        {
             "id": "fossa",
             "repo": "https://github.com/lnbits/fossa_extension",
             "name": "FOSSA",
