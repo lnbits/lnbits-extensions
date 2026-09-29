@@ -2220,9 +2220,9 @@
         {
             "id": "chaospad",
             "repo": "https://github.com/lnbits/chaospad",
-            "version": "0.1.1",
-            "archive": "https://github.com/lnbits/chaospad/archive/refs/tags/v0.1.1.zip",
-            "hash": "30a85051ee71a2e0ae6396c3580149b9a949e655dde2e2911bbf98b0deadafdb",
+            "version": "0.1.2",
+            "archive": "https://github.com/lnbits/chaospad/archive/refs/tags/v0.1.2.zip",
+            "hash": "6a50fdb617bb3a0b6a9871d94fcb9730fc0f330a6677365a619c6ca0cb985c4c",
             "min_lnbits_version": "1.1.0",
             "name": "ChaosPad",
             "short_description": "Collaborative pads",
