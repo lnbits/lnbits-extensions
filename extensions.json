@@ -2222,7 +2222,7 @@
             "repo": "https://github.com/lnbits/chaospad",
             "version": "0.1.2",
             "archive": "https://github.com/lnbits/chaospad/archive/refs/tags/v0.1.2.zip",
-            "hash": "6a50fdb617bb3a0b6a9871d94fcb9730fc0f330a6677365a619c6ca0cb985c4c",
+            "hash": "63ca0e18dc37551147aaa337dd7962f37a6e061481d5f97df82427a260197d5c",
             "min_lnbits_version": "1.1.0",
             "name": "ChaosPad",
             "short_description": "Collaborative pads",
