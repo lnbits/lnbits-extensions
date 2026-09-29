@@ -87,7 +87,7 @@ jobs:
 
         - name: run jmx scripts
           env:
-            EXTENSIONS_MANIFEST_PATH: "/lnbits/lnbits-extensions/${{ github.head_ref || github.ref_name }}/extensions.json"
+            EXTENSIONS_MANIFEST_PATH: "/${{ github.event.pull_request.head.repo.full_name || github.repository }}/${{ github.event.pull_request.head.ref || github.ref_name }}/extensions.json"
             JAVA_HOME: /usr/lib/jvm/temurin-8-jdk-amd64
           run: |
             make test
