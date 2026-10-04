@@ -2348,6 +2348,18 @@
             "short_description": "A reusable merchant ledger for open balances",
             "icon": "https://raw.githubusercontent.com/lnbits/tabs/main/static/image/tabs.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/tabs/main/config.json"
+        },
+        {
+            "id": "allowance",
+            "repo": "https://github.com/BenGWeeks/allowance",
+            "name": "Allowance",
+            "version": "1.2.1",
+            "min_lnbits_version": "1.6.0",
+            "short_description": "Automatic recurring payments",
+            "icon": "https://raw.githubusercontent.com/BenGWeeks/allowance/v1.2.1/static/image/allowance.png",
+            "details_link": "https://raw.githubusercontent.com/BenGWeeks/allowance/v1.2.1/config.json",
+            "archive": "https://github.com/BenGWeeks/allowance/archive/refs/tags/v1.2.1.zip",
+            "hash": "831caaea77bb00bd48168eb6ef540b5abf105c968d03de9be0814d9534acb226"
         }
     ]
 }
