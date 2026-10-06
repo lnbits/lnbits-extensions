@@ -2348,6 +2348,18 @@
             "short_description": "A reusable merchant ledger for open balances",
             "icon": "https://raw.githubusercontent.com/lnbits/tabs/main/static/image/tabs.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/tabs/main/config.json"
+        },
+        {
+            "id": "lnurlmint",
+            "repo": "https://github.com/bitkarrot/lnurlmint",
+            "name": "Lnurlmint",
+            "version": "0.2.0",
+            "min_lnbits_version": "1.5.4",
+            "short_description": "Mint Lightning-funded bearer notes (LUD-25 lnurlcash)",
+            "icon": "https://raw.githubusercontent.com/bitkarrot/lnurlmint/main/static/image/lnurlmint.png",
+            "details_link": "https://raw.githubusercontent.com/bitkarrot/lnurlmint/main/config.json",
+            "archive": "https://github.com/bitkarrot/lnurlmint/archive/refs/tags/v0.2.0.zip",
+            "hash": "ce3f7390697103889ed36ec77cd726621162f489b281100897f9347646eebb40"
         }
     ]
 }
