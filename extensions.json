@@ -2348,6 +2348,16 @@
             "short_description": "A reusable merchant ledger for open balances",
             "icon": "https://raw.githubusercontent.com/lnbits/tabs/main/static/image/tabs.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/tabs/main/config.json"
+        },
+        {
+            "id": "nfcgiftcards",
+            "repo": "https://github.com/ErnestoQuezada/lnbits-nfcgiftcards",
+            "name": "NFC Gift Cards",
+            "version": "0.2.3",
+            "short_description": "Create Lightning gift cards on NFC tags",
+            "icon": "https://raw.githubusercontent.com/ErnestoQuezada/lnbits-nfcgiftcards/main/static/nfc-gift-card.png",
+            "archive": "https://github.com/ErnestoQuezada/lnbits-nfcgiftcards/archive/refs/tags/v0.2.3.zip",
+            "hash": "2e10b40017a02a3bbeab18a414b9a1f6c2a88fdad9d8cd259acec833d13ca705"
         }
     ]
 }
