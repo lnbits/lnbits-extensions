@@ -68,6 +68,11 @@
             <stringProp name="Argument.value">${__property(mirrorPort,,8500)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="webhookCapturePort" elementType="Argument">
+            <stringProp name="Argument.name">webhookCapturePort</stringProp>
+            <stringProp name="Argument.value">${__property(webhookCapturePort,,8501)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
           <elementProp name="configPath" elementType="Argument">
             <stringProp name="Argument.name">configPath</stringProp>
             <stringProp name="Argument.value">${__BeanShell(import org.apache.jmeter.services.FileServer; FileServer.getFileServer().getBaseDir();)}</stringProp>
@@ -105,6 +110,14 @@
           <boolProp name="CookieManager.clearEachIteration">false</boolProp>
           <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
         </CookieManager>
+        <hashTree/>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="Start webhook capture" enabled="true">
+          <stringProp name="scriptLanguage">groovy</stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="filename">${configPath}/scripts/lnurl_start_webhook_capture.groovy</stringProp>
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="script"></stringProp>
+        </JSR223Sampler>
         <hashTree/>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Init Server" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
@@ -406,7 +419,7 @@
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                      <stringProp name="Argument.value">{&quot;description&quot;:&quot;receive payments ${lnurlpCounter}&quot;,&quot;min&quot;:11,&quot;comment_chars&quot;:128,&quot;webhook_url&quot;:&quot;http://localhost:${mirrorPort}&quot;,&quot;webhook_headers&quot;:&quot;{\&quot;h1\&quot;: \&quot;1\&quot;}&quot;,&quot;webhook_body&quot;:&quot;{\&quot;b2\&quot;: 2}&quot;,&quot;success_text&quot;:&quot;All goood!&quot;,&quot;success_url&quot;:&quot;https://lnbits.com&quot;,&quot;max&quot;:${lnurlpCounter}1}</stringProp>
+                      <stringProp name="Argument.value">{&quot;description&quot;:&quot;receive payments ${lnurlpCounter}&quot;,&quot;min&quot;:11,&quot;comment_chars&quot;:128,&quot;webhook_url&quot;:&quot;http://127.0.0.1:${webhookCapturePort}/&quot;,&quot;webhook_headers&quot;:&quot;{\&quot;h1\&quot;: \&quot;1\&quot;}&quot;,&quot;webhook_body&quot;:&quot;{\&quot;b2\&quot;: 2}&quot;,&quot;success_text&quot;:&quot;All goood!&quot;,&quot;success_url&quot;:&quot;https://lnbits.com&quot;,&quot;max&quot;:${lnurlpCounter}1}</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                     </elementProp>
                   </collectionProp>
@@ -972,11 +985,6 @@
                     </JSR223Assertion>
                     <hashTree/>
                   </hashTree>
-                  <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a bit" enabled="true">
-                    <stringProp name="ConstantTimer.delay">100</stringProp>
-                    <stringProp name="TestPlan.comments">for the webhook to be called</stringProp>
-                  </ConstantTimer>
-                  <hashTree/>
                   <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[wallet] Get Payment" enabled="true">
                     <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
                     <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
@@ -1019,6 +1027,14 @@
                       <intProp name="Assertion.test_type">8</intProp>
                     </ResponseAssertion>
                     <hashTree/>
+                    <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Wait for webhook completion" enabled="true">
+                      <stringProp name="scriptLanguage">groovy</stringProp>
+                      <stringProp name="parameters"></stringProp>
+                      <stringProp name="filename">${configPath}/scripts/lnurl_wait_for_webhook.groovy</stringProp>
+                      <stringProp name="cacheKey">true</stringProp>
+                      <stringProp name="script"></stringProp>
+                    </JSR223PostProcessor>
+                    <hashTree/>
                     <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check webhook success" enabled="true">
                       <stringProp name="JSON_PATH">$.details.extra.wh_success</stringProp>
                       <stringProp name="EXPECTED_VALUE">true</stringProp>
@@ -1030,17 +1046,17 @@
                     <hashTree/>
                     <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check webhook message" enabled="true">
                       <stringProp name="JSON_PATH">$.details.extra.wh_message</stringProp>
-                      <stringProp name="EXPECTED_VALUE">OK</stringProp>
+                      <stringProp name="EXPECTED_VALUE">Webhook delivered.</stringProp>
                       <boolProp name="JSONVALIDATION">true</boolProp>
                       <boolProp name="EXPECT_NULL">false</boolProp>
                       <boolProp name="INVERT">false</boolProp>
                       <boolProp name="ISREGEX">false</boolProp>
                     </JSONPathAssertion>
                     <hashTree/>
-                    <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check webhook response" enabled="true">
+                    <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check captured webhook request and redaction" enabled="true">
                       <stringProp name="scriptLanguage">javascript</stringProp>
                       <stringProp name="parameters"></stringProp>
-                      <stringProp name="filename">${configPath}/scripts/lnurl_check_webhook_response.js</stringProp>
+                      <stringProp name="filename">${configPath}/scripts/lnurlp_check_webhook_request.js</stringProp>
                       <stringProp name="cacheKey">true</stringProp>
                       <stringProp name="script"></stringProp>
                     </JSR223Assertion>
@@ -1213,7 +1229,7 @@
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check page conent" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="851725123">Withdraw links</stringProp>
-                <stringProp name="1102950636">curl -X GET http://127.0.0.1:5000/withdraw/api/v1/links -H</stringProp>
+                <stringProp name="1102950636">curl -X GET ${scheme}://${host}:${port}/withdraw/api/v1/links -H</stringProp>
               </collectionProp>
               <stringProp name="Assertion.custom_message"></stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -2062,6 +2078,14 @@
                       <intProp name="Assertion.test_type">8</intProp>
                     </ResponseAssertion>
                     <hashTree/>
+                    <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Wait for webhook completion" enabled="true">
+                      <stringProp name="scriptLanguage">groovy</stringProp>
+                      <stringProp name="parameters"></stringProp>
+                      <stringProp name="filename">${configPath}/scripts/lnurl_wait_for_webhook.groovy</stringProp>
+                      <stringProp name="cacheKey">true</stringProp>
+                      <stringProp name="script"></stringProp>
+                    </JSR223PostProcessor>
+                    <hashTree/>
                     <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check webhook success" enabled="true">
                       <stringProp name="JSON_PATH">$.details.extra.wh_success</stringProp>
                       <stringProp name="EXPECTED_VALUE">true</stringProp>
@@ -2483,6 +2507,27 @@
           </objProp>
           <stringProp name="filename">recording.xml</stringProp>
         </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <PostThreadGroup guiclass="PostThreadGroupGui" testclass="PostThreadGroup" testname="Stop webhook capture" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+      </PostThreadGroup>
+      <hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="Stop webhook capture" enabled="true">
+          <stringProp name="scriptLanguage">groovy</stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="script">props.remove('lnurlWebhookServer')?.stop(0)
+props.remove('lnurlWebhookRequests')</stringProp>
+        </JSR223Sampler>
         <hashTree/>
       </hashTree>
     </hashTree>
