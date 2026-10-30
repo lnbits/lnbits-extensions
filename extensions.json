@@ -1359,7 +1359,20 @@
             "icon": "https://github.com/lnbits/invoices/raw/main/static/image/invoices.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/invoices/main/config.json",
             "archive": "https://github.com/lnbits/invoices/archive/refs/tags/v1.1.0.zip",
-            "hash": "012b9a5d6ae4e1b687de705b935077dd5fa57d56051340f39270745983b2f79b"
+            "hash": "012b9a5d6ae4e1b687de705b935077dd5fa57d56051340f39270745983b2f79b",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "invoices",
+            "repo": "https://github.com/lnbits/invoices",
+            "name": "Invoices",
+            "version": "1.2.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Create invoices for your clients",
+            "icon": "https://github.com/lnbits/invoices/raw/main/static/image/invoices.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/invoices/main/config.json",
+            "archive": "https://github.com/lnbits/invoices/archive/refs/tags/v1.2.0.zip",
+            "hash": "a947f6ab7d062f76e16b087491fabe971dc1203b968216bb7d3c88b3e6618f39"
         },
         {
             "id": "withdraw",
