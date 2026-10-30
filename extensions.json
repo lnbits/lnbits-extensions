@@ -2218,6 +2218,19 @@
             "name": "MyExtension",
             "short_description": "Minimal extension to build on",
             "icon": "https://raw.githubusercontent.com/lnbits/myextension/main/static/image/myextension.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/myextension/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "myextension",
+            "repo": "https://github.com/lnbits/myextension",
+            "version": "0.1.0",
+            "archive": "https://github.com/lnbits/myextension/archive/refs/tags/v0.1.0.zip",
+            "hash": "dd898ec4c5d56dfd8cabb1120c0a75025a1acddf1a26da647a8c7770ec1262cd",
+            "min_lnbits_version": "1.7.0-rc1",
+            "name": "MyExtension",
+            "short_description": "Minimal extension to build on",
+            "icon": "https://raw.githubusercontent.com/lnbits/myextension/main/static/image/myextension.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/myextension/main/config.json"
         },
         {
