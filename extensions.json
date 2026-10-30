@@ -2538,6 +2538,19 @@
             "name": "PaidReviews",
             "short_description": "Pay to leave reviews based on tags",
             "icon": "https://raw.githubusercontent.com/lnbits/paidreviews/main/static/image/paidreviews.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/paidreviews/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "paidreviews",
+            "repo": "https://github.com/lnbits/paidreviews",
+            "version": "0.3.0",
+            "archive": "https://github.com/lnbits/paidreviews/archive/refs/tags/v0.3.0.zip",
+            "hash": "40f2963bfc2b16ee78e2cf50992e896f41982873a3c9ef2e607918d6792b2ec1",
+            "min_lnbits_version": "1.7.0-rc1",
+            "name": "PaidReviews",
+            "short_description": "Pay to leave reviews based on tags",
+            "icon": "https://raw.githubusercontent.com/lnbits/paidreviews/main/static/image/paidreviews.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/paidreviews/main/config.json"
         },
         {
