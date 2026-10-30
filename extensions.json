@@ -698,13 +698,13 @@
             "id": "boltcards",
             "repo": "https://github.com/lnbits/boltcards",
             "name": "Bolt Cards",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "min_lnbits_version": "1.3.0",
             "short_description": "Self custody Bolt Cards with one time LNURLw",
             "icon": "https://github.com/lnbits/boltcards/raw/main/static/image/boltcard.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/boltcards/main/config.json",
-            "archive": "https://github.com/lnbits/boltcards/archive/refs/tags/v1.1.1.zip",
-            "hash": "438c588c4df57ee50b58793a923c332a41bf7a7ae88ef179588f16f02abee7f9",
+            "archive": "https://github.com/lnbits/boltcards/archive/refs/tags/v1.1.2.zip",
+            "hash": "76e8447814ff95400ed54f7f96f3c1d332363ef7c56583f817e5c701985ae47d",
             "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/hZdoFXQQF6wFSNfGeS4deM"
         },
         {
