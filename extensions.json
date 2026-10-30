@@ -683,7 +683,20 @@
             "icon": "https://github.com/lnbits/smtp/raw/main/static/smtp-bitcoin-email.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/smtp/main/config.json",
             "archive": "https://github.com/lnbits/smtp/archive/refs/tags/v1.0.0.zip",
-            "hash": "d516e96cc3d76edee1b9f93c14229ee6fa458bed8886587aa19263adb75e9d0c"
+            "hash": "d516e96cc3d76edee1b9f93c14229ee6fa458bed8886587aa19263adb75e9d0c",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "smtp",
+            "repo": "https://github.com/lnbits/smtp",
+            "name": "SMTP",
+            "version": "1.1.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Charge sats for sending emails",
+            "icon": "https://github.com/lnbits/smtp/raw/main/static/smtp-bitcoin-email.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/smtp/main/config.json",
+            "archive": "https://github.com/lnbits/smtp/archive/refs/tags/v1.1.0.zip",
+            "hash": "699f829ef47c23dd44e5bab741165edb7c4ead2b62b83b5e7d2679d878881090"
         },
         {
             "id": "discordbot",
