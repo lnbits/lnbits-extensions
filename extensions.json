@@ -1164,6 +1164,19 @@
             "icon": "https://github.com/lnbits/streamalerts/raw/main/static/image/streamalerts.png",
             "archive": "https://github.com/lnbits/streamalerts/archive/refs/tags/v1.0.0.zip",
             "hash": "8dcecdd66a5dfea017a3011fc01fe5c4518605a4729499ef13818e260dd85057",
+            "details_link": "https://raw.githubusercontent.com/lnbits/streamalerts/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "streamalerts",
+            "repo": "https://github.com/lnbits/streamalerts",
+            "name": "Stream Alerts",
+            "version": "1.1.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Bitcoin donations in stream alerts",
+            "icon": "https://github.com/lnbits/streamalerts/raw/main/static/image/streamalerts.png",
+            "archive": "https://github.com/lnbits/streamalerts/archive/refs/tags/v1.1.0.zip",
+            "hash": "02738bf6fae3a8fbc7b2d53eb37d57e329b9e57059ec91da902b7d373b0692d5",
             "details_link": "https://raw.githubusercontent.com/lnbits/streamalerts/main/config.json"
         },
         {
