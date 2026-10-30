@@ -2315,6 +2315,19 @@
             "name": "Chat",
             "short_description": "Paid chat and support",
             "icon": "https://raw.githubusercontent.com/lnbits/chat/main/static/image/chat.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/chat/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "chat",
+            "repo": "https://github.com/lnbits/chat",
+            "version": "0.2.0",
+            "archive": "https://github.com/lnbits/chat/archive/refs/tags/v0.2.0.zip",
+            "hash": "54640032b3461b74daffe38ce9e7231aeaf1976aedb554ceaf5aee6ba3451107",
+            "min_lnbits_version": "1.7.0-rc1",
+            "name": "Chat",
+            "short_description": "Paid chat and support",
+            "icon": "https://raw.githubusercontent.com/lnbits/chat/main/static/image/chat.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/chat/main/config.json"
         },
         {
