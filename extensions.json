@@ -2374,6 +2374,19 @@
             "name": "Inventory",
             "short_description": "Shared Inventory extension",
             "icon": "https://raw.githubusercontent.com/lnbits/inventory/main/static/inventory.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/inventory/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "inventory",
+            "repo": "https://github.com/lnbits/inventory",
+            "version": "0.4.0",
+            "archive": "https://github.com/lnbits/inventory/archive/refs/tags/v0.4.0.zip",
+            "hash": "049b51a70b2029dbbd4afb57bb471297a89b846f83b79388b481ee94398a0354",
+            "min_lnbits_version": "1.7.0-rc1",
+            "name": "Inventory",
+            "short_description": "Shared Inventory extension",
+            "icon": "https://raw.githubusercontent.com/lnbits/inventory/main/static/inventory.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/inventory/main/config.json"
         },
         {
