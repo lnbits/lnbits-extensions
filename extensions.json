@@ -2674,6 +2674,19 @@
             "name": "Shipping",
             "short_description": "Shared shipping extension",
             "icon": "https://raw.githubusercontent.com/lnbits/shipping/main/static/image/shipping.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/shipping/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "shipping",
+            "repo": "https://github.com/lnbits/shipping",
+            "version": "0.2.0",
+            "archive": "https://github.com/lnbits/shipping/archive/refs/tags/v0.2.0.zip",
+            "hash": "fcf914ba354a8a61af321715dddcc83d77e11b9fcab79f676f0be770f94549cf",
+            "min_lnbits_version": "1.7.0-rc1",
+            "name": "Shipping",
+            "short_description": "Shared shipping extension",
+            "icon": "https://raw.githubusercontent.com/lnbits/shipping/main/static/image/shipping.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/shipping/main/config.json"
         },
         {
