@@ -336,7 +336,20 @@
             "icon": "https://raw.githubusercontent.com/lnbits/lnticket/main/static/image/lntickets.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/lnticket/main/config.json",
             "archive": "https://github.com/lnbits/lnticket/archive/refs/tags/v1.0.0.zip",
-            "hash": "1c14f2295a613b08f4007b9b9087b5a1fc8a8b1e484d9b06929a694f1b1ad901"
+            "hash": "1c14f2295a613b08f4007b9b9087b5a1fc8a8b1e484d9b06929a694f1b1ad901",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "lnticket",
+            "repo": "https://github.com/lnbits/lnticket",
+            "name": "Support Tickets",
+            "version": "1.1.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "LN support ticket system",
+            "icon": "https://raw.githubusercontent.com/lnbits/lnticket/main/static/image/lntickets.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/lnticket/main/config.json",
+            "archive": "https://github.com/lnbits/lnticket/archive/refs/tags/v1.1.0.zip",
+            "hash": "02ce12f5511c41453333e5f7fa1d2f44d925ceeee60f6e4d121b92056aad5d8d"
         },
         {
             "id": "tpos",
