@@ -2633,6 +2633,19 @@
             "name": "Orders",
             "short_description": "If enabled orders from tpos and webshop will be pulled",
             "icon": "https://raw.githubusercontent.com/lnbits/orders/main/static/image/orders.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/orders/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "orders",
+            "repo": "https://github.com/lnbits/orders",
+            "version": "0.2.0",
+            "archive": "https://github.com/lnbits/orders/archive/refs/tags/v0.2.0.zip",
+            "hash": "48ea3025951928f946e89710eca071ca4a744ed561fe45342415dbca4363c187",
+            "min_lnbits_version": "1.7.0-rc1",
+            "name": "Orders",
+            "short_description": "If enabled orders from tpos and webshop will be pulled.",
+            "icon": "https://raw.githubusercontent.com/lnbits/orders/main/static/image/orders.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/orders/main/config.json"
         },
         {
