@@ -1146,6 +1146,19 @@
             "icon": "https://github.com/lnbits/livestream/raw/main/static/image/livestream.png",
             "archive": "https://github.com/lnbits/livestream/archive/refs/tags/v1.1.2.zip",
             "hash": "02593f4832174477e10bc98c0bfbb2860cbff81a75ca8983e9c493028b8e8c24",
+            "details_link": "https://raw.githubusercontent.com/lnbits/livestream/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "livestream",
+            "repo": "https://github.com/lnbits/livestream",
+            "name": "DJ Livestream",
+            "version": "1.2.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Sell tracks and split revenue (lnurl-pay)",
+            "icon": "https://github.com/lnbits/livestream/raw/main/static/image/livestream.png",
+            "archive": "https://github.com/lnbits/livestream/archive/refs/tags/v1.2.0.zip",
+            "hash": "643c8635aea929cd78f16574694ec4c982c8bc811e6fb1d71e17d3442ab1e8fe",
             "details_link": "https://raw.githubusercontent.com/lnbits/livestream/main/config.json"
         },
         {
