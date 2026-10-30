@@ -36,7 +36,7 @@
           </elementProp>
           <elementProp name="adminExtensions" elementType="Argument">
             <stringProp name="Argument.name">adminExtensions</stringProp>
-            <stringProp name="Argument.value">nostrclient</stringProp>
+            <stringProp name="Argument.value">nostrclient,tunnel_me_out</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="extensionsManifestPath" elementType="Argument">
