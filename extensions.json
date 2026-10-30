@@ -719,6 +719,20 @@
             "details_link": "https://raw.githubusercontent.com/lnbits/boltcards/main/config.json",
             "archive": "https://github.com/lnbits/boltcards/archive/refs/tags/v1.1.2.zip",
             "hash": "76e8447814ff95400ed54f7f96f3c1d332363ef7c56583f817e5c701985ae47d",
+            "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/hZdoFXQQF6wFSNfGeS4deM",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "boltcards",
+            "repo": "https://github.com/lnbits/boltcards",
+            "name": "Bolt Cards",
+            "version": "1.2.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Self custody Bolt Cards with one time LNURLw",
+            "icon": "https://github.com/lnbits/boltcards/raw/main/static/image/boltcard.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/boltcards/main/config.json",
+            "archive": "https://github.com/lnbits/boltcards/archive/refs/tags/v1.2.0.zip",
+            "hash": "6cb1f2571eaf004ee2ca50c8be6721599c888676502b2b3c14a73a24a442f3ee",
             "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/hZdoFXQQF6wFSNfGeS4deM"
         },
         {
