@@ -1381,7 +1381,20 @@
             "icon": "https://github.com/lnbits/withdraw/raw/main/static/image/lnurl-withdraw.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/withdraw/main/config.json",
             "archive": "https://github.com/lnbits/withdraw/archive/refs/tags/v1.3.0.zip",
-            "hash": "5a4def7c80d131843a850fa15e2cf8e8da4836f9649bbfdf55ee6236db227063"
+            "hash": "5a4def7c80d131843a850fa15e2cf8e8da4836f9649bbfdf55ee6236db227063",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "withdraw",
+            "repo": "https://github.com/lnbits/withdraw",
+            "name": "Withdraw Links",
+            "version": "1.4.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Make LNURL withdraw links",
+            "icon": "https://github.com/lnbits/withdraw/raw/main/static/image/lnurl-withdraw.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/withdraw/main/config.json",
+            "archive": "https://github.com/lnbits/withdraw/archive/refs/tags/v1.4.0.zip",
+            "hash": "7a729237dba31df7186e28ea60875af5c1a289bbab4b65d4ce3a15972826c0e1"
         },
         {
             "id": "paywall",
