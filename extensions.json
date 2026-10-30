@@ -2363,6 +2363,19 @@
             "name": "BlackJack",
             "short_description": "A BlackJack Dealer",
             "icon": "https://raw.githubusercontent.com/lnbits/blackjack/main/static/image/blackjack.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/blackjack/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "blackjack",
+            "repo": "https://github.com/lnbits/blackjack",
+            "version": "0.2.0",
+            "archive": "https://github.com/lnbits/blackjack/archive/refs/tags/v0.2.0.zip",
+            "hash": "7dea541ef0f3008a28079baf2224216de0e7adc26949191e616972ec93e677f6",
+            "min_lnbits_version": "1.7.0-rc1",
+            "name": "BlackJack",
+            "short_description": "A BlackJack Dealer",
+            "icon": "https://raw.githubusercontent.com/lnbits/blackjack/main/static/image/blackjack.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/blackjack/main/config.json"
         },
         {
