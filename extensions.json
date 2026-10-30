@@ -2343,6 +2343,20 @@
             "short_description": "Money pool games",
             "icon": "https://raw.githubusercontent.com/lnbits/satspot/main/static/image/satspot.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/satspot/main/config.json",
+            "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/X9jN3a4iTWtFMwrYd8zsmE",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "satspot",
+            "repo": "https://github.com/lnbits/satspot",
+            "version": "1.3.0",
+            "archive": "https://github.com/lnbits/satspot/archive/refs/tags/v1.3.0.zip",
+            "hash": "1e81e4b78148623628db1e21870b4cd18767dc4a05ace9d5df12c167c76ced37",
+            "min_lnbits_version": "1.7.0-rc1",
+            "name": "Satspot",
+            "short_description": "Money pool games",
+            "icon": "https://raw.githubusercontent.com/lnbits/satspot/main/static/image/satspot.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/satspot/main/config.json",
             "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/X9jN3a4iTWtFMwrYd8zsmE"
         },
         {
