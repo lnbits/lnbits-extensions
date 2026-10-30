@@ -412,7 +412,21 @@
             "details_link": "https://raw.githubusercontent.com/lnbits/tpos/main/config.json",
             "icon": "https://raw.githubusercontent.com/lnbits/tpos/main/static/image/tpos.png",
             "archive": "https://github.com/lnbits/tpos/archive/refs/tags/v1.6.1.zip",
-            "hash": "695b293bff182a504f3aaaa6d3b33b7cb63d356d02d80922c8f6b1060ec7a818"
+            "hash": "695b293bff182a504f3aaaa6d3b33b7cb63d356d02d80922c8f6b1060ec7a818",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "tpos",
+            "repo": "https://github.com/lnbits/tpos",
+            "name": "TPoS",
+            "version": "1.7.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "A shareable PoS terminal!",
+            "paid_features": "Free to use all the PoS features, apart from 0.5% charge for the ATM which draws to help maintain development.",
+            "details_link": "https://raw.githubusercontent.com/lnbits/tpos/main/config.json",
+            "icon": "https://raw.githubusercontent.com/lnbits/tpos/main/static/image/tpos.png",
+            "archive": "https://github.com/lnbits/tpos/archive/refs/tags/v1.7.0.zip",
+            "hash": "5e28791290c97ad6b115f278c83d41aceef24da427942a47ba2da187fb4da408"
         },
         {
             "id": "usermanager",
