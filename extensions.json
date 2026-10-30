@@ -473,7 +473,20 @@
             "icon": "https://raw.githubusercontent.com/lnbits/example/main/static/bitcoin-extension.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/example/main/config.json",
             "archive": "https://github.com/lnbits/example/archive/refs/tags/v1.0.6.zip",
-            "hash": "b0f35fc6810aca9a9d1a740bf1bd6fd73c81a9434f0d430f29e73ab5ab79f3c8"
+            "hash": "b0f35fc6810aca9a9d1a740bf1bd6fd73c81a9434f0d430f29e73ab5ab79f3c8",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "example",
+            "repo": "https://github.com/lnbits/example",
+            "name": "Build your own!",
+            "version": "1.1.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Extension building guide",
+            "icon": "https://raw.githubusercontent.com/lnbits/example/main/static/bitcoin-extension.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/example/main/config.json",
+            "archive": "https://github.com/lnbits/example/archive/refs/tags/v1.1.0.zip",
+            "hash": "4d4a74b09d4d29183b2de828348b2d81beda427cd55860a50e76f8647bab88ad"
         },
         {
             "id": "events",
