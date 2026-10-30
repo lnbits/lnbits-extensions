@@ -27,6 +27,11 @@
             <stringProp name="Argument.value">${__property(port,,5000)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="mirrorPort" elementType="Argument">
+            <stringProp name="Argument.name">mirrorPort</stringProp>
+            <stringProp name="Argument.value">${__property(mirrorPort,,8500)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
           <elementProp name="paidChargeCountXXX" elementType="Argument">
             <stringProp name="Argument.name">paidChargeCountXXX</stringProp>
             <stringProp name="Argument.value">5</stringProp>
@@ -1028,7 +1033,7 @@
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check page conent" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="851725123">Withdraw links</stringProp>
-                <stringProp name="1102950636">curl -X GET http://127.0.0.1:5000/withdraw/api/v1/links -H</stringProp>
+                <stringProp name="1102950636">curl -X GET ${scheme}://${host}:${port}/withdraw/api/v1/links -H</stringProp>
               </collectionProp>
               <stringProp name="Assertion.custom_message"></stringProp>
               <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -2006,10 +2011,10 @@ props.put(&quot;withdrawLinkRes&quot;, withdrawLinkRes)</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
             <stringProp name="cacheKey">true</stringProp>
-            <stringProp name="script">var withdrawLinkCallback = props.get(&quot;withdrawLinkCallback&quot;)
+            <stringProp name="script">var withdrawLinkRes = props.get(&quot;withdrawLinkRes&quot;)
 var receiveInkey = props.get(&quot;receiveInkey&quot;)
 
-vars.put(&quot;withdrawLinkCallback&quot;, withdrawLinkCallback)
+vars.put(&quot;withdrawLinkRes&quot;, withdrawLinkRes)
 vars.put(&quot;receiveInkey&quot;, receiveInkey)
 
 </stringProp>
@@ -2079,7 +2084,7 @@ vars.put(&quot;receiveInkey&quot;, receiveInkey)
           <stringProp name="HTTPSampler.port">${port}</stringProp>
           <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
           <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-          <stringProp name="HTTPSampler.path">/api/v1/payments</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/payments?limit=${parallelWithdrawUsers}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
