@@ -89,6 +89,20 @@
             "details_link": "https://raw.githubusercontent.com/lnbits/copilot/main/config.json",
             "archive": "https://github.com/lnbits/copilot/archive/refs/tags/v1.0.4.zip",
             "hash": "3de705a8ab849f0f7d5c582ab97f3827609e65237453778799558f656ae8b210",
+            "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/A9o5kTHbA6kjWGRjzCUi8Q",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "copilot",
+            "repo": "https://github.com/lnbits/copilot",
+            "name": "Streamer Copilot",
+            "version": "1.1.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Video tips/animations/webhooks",
+            "icon": "https://raw.githubusercontent.com/lnbits/copilot/main/static/bitcoin-streaming.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/copilot/main/config.json",
+            "archive": "https://github.com/lnbits/copilot/archive/refs/tags/v1.1.0.zip",
+            "hash": "8b9bfcf944f95971b37e5cd212baa5f3140eafcd1f0aee8d4a5fd0cb5ee5c198",
             "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/A9o5kTHbA6kjWGRjzCUi8Q"
         },
         {
@@ -187,7 +201,20 @@
             "icon": "https://raw.githubusercontent.com/lnbits/gerty/main/static/gerty.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/gerty/main/config.json",
             "archive": "https://github.com/lnbits/gerty/archive/refs/tags/v1.1.3.zip",
-            "hash": "bae4fcf55d4c0480bd9317ecb0f83fb6daaf2aee75fc756b9b26239bf02f03f9"
+            "hash": "bae4fcf55d4c0480bd9317ecb0f83fb6daaf2aee75fc756b9b26239bf02f03f9",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "gerty",
+            "repo": "https://github.com/lnbits/gerty",
+            "name": "Gerty",
+            "version": "1.2.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Desktop bitcoin Assistant",
+            "icon": "https://raw.githubusercontent.com/lnbits/gerty/main/static/gerty.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/gerty/main/config.json",
+            "archive": "https://github.com/lnbits/gerty/archive/refs/tags/v1.2.0.zip",
+            "hash": "184b8743be92c2dbc9ec20181b2f5c1674822dee7fcfe727dab96cd433e96792"
         },
         {
             "id": "jukebox",
@@ -248,7 +275,20 @@
             "icon": "https://raw.githubusercontent.com/lnbits/jukebox/main/static/image/jukebox.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/jukebox/main/config.json",
             "archive": "https://github.com/lnbits/jukebox/archive/refs/tags/v1.0.4.zip",
-            "hash": "28f5d7e2d1127bb3e3d37ecb721a13e077ddadcc00cffdd0e5334291097e34ee"
+            "hash": "28f5d7e2d1127bb3e3d37ecb721a13e077ddadcc00cffdd0e5334291097e34ee",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "jukebox",
+            "repo": "https://github.com/lnbits/jukebox",
+            "name": "Jukebox",
+            "version": "1.1.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Spotify jukebox middleware",
+            "icon": "https://raw.githubusercontent.com/lnbits/jukebox/main/static/image/jukebox.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/jukebox/main/config.json",
+            "archive": "https://github.com/lnbits/jukebox/archive/refs/tags/v1.1.0.zip",
+            "hash": "b4ff2132e97b2e4eef0f1bd64cca11a9832538b2b7c8d990801a7ac664e3ea17"
         },
         {
             "id": "lnticket",
@@ -296,7 +336,20 @@
             "icon": "https://raw.githubusercontent.com/lnbits/lnticket/main/static/image/lntickets.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/lnticket/main/config.json",
             "archive": "https://github.com/lnbits/lnticket/archive/refs/tags/v1.0.0.zip",
-            "hash": "1c14f2295a613b08f4007b9b9087b5a1fc8a8b1e484d9b06929a694f1b1ad901"
+            "hash": "1c14f2295a613b08f4007b9b9087b5a1fc8a8b1e484d9b06929a694f1b1ad901",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "lnticket",
+            "repo": "https://github.com/lnbits/lnticket",
+            "name": "Support Tickets",
+            "version": "1.1.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "LN support ticket system",
+            "icon": "https://raw.githubusercontent.com/lnbits/lnticket/main/static/image/lntickets.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/lnticket/main/config.json",
+            "archive": "https://github.com/lnbits/lnticket/archive/refs/tags/v1.1.0.zip",
+            "hash": "02ce12f5511c41453333e5f7fa1d2f44d925ceeee60f6e4d121b92056aad5d8d"
         },
         {
             "id": "tpos",
@@ -412,7 +465,21 @@
             "details_link": "https://raw.githubusercontent.com/lnbits/tpos/main/config.json",
             "icon": "https://raw.githubusercontent.com/lnbits/tpos/main/static/image/tpos.png",
             "archive": "https://github.com/lnbits/tpos/archive/refs/tags/v1.6.1.zip",
-            "hash": "695b293bff182a504f3aaaa6d3b33b7cb63d356d02d80922c8f6b1060ec7a818"
+            "hash": "695b293bff182a504f3aaaa6d3b33b7cb63d356d02d80922c8f6b1060ec7a818",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "tpos",
+            "repo": "https://github.com/lnbits/tpos",
+            "name": "TPoS",
+            "version": "1.7.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "A shareable PoS terminal!",
+            "paid_features": "Free to use all the PoS features, apart from 0.5% charge for the ATM which draws to help maintain development.",
+            "details_link": "https://raw.githubusercontent.com/lnbits/tpos/main/config.json",
+            "icon": "https://raw.githubusercontent.com/lnbits/tpos/main/static/image/tpos.png",
+            "archive": "https://github.com/lnbits/tpos/archive/refs/tags/v1.7.0.zip",
+            "hash": "5e28791290c97ad6b115f278c83d41aceef24da427942a47ba2da187fb4da408"
         },
         {
             "id": "usermanager",
@@ -473,7 +540,20 @@
             "icon": "https://raw.githubusercontent.com/lnbits/example/main/static/bitcoin-extension.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/example/main/config.json",
             "archive": "https://github.com/lnbits/example/archive/refs/tags/v1.0.6.zip",
-            "hash": "b0f35fc6810aca9a9d1a740bf1bd6fd73c81a9434f0d430f29e73ab5ab79f3c8"
+            "hash": "b0f35fc6810aca9a9d1a740bf1bd6fd73c81a9434f0d430f29e73ab5ab79f3c8",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "example",
+            "repo": "https://github.com/lnbits/example",
+            "name": "Build your own!",
+            "version": "1.1.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Extension building guide",
+            "icon": "https://raw.githubusercontent.com/lnbits/example/main/static/bitcoin-extension.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/example/main/config.json",
+            "archive": "https://github.com/lnbits/example/archive/refs/tags/v1.1.0.zip",
+            "hash": "4d4a74b09d4d29183b2de828348b2d81beda427cd55860a50e76f8647bab88ad"
         },
         {
             "id": "events",
@@ -560,7 +640,20 @@
             "icon": "https://raw.githubusercontent.com/lnbits/events/main/static/image/events.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/events/main/config.json",
             "archive": "https://github.com/lnbits/events/archive/refs/tags/v1.6.9.zip",
-            "hash": "b944c78e6d0d1d9328f177b6826138836aadb574cac727eb5fddfc5ca941dfce"
+            "hash": "b944c78e6d0d1d9328f177b6826138836aadb574cac727eb5fddfc5ca941dfce",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "events",
+            "repo": "https://github.com/lnbits/events",
+            "name": "Events",
+            "version": "1.7.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Sell and register event tickets",
+            "icon": "https://raw.githubusercontent.com/lnbits/events/main/static/image/events.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/events/main/config.json",
+            "archive": "https://github.com/lnbits/events/archive/refs/tags/v1.7.0.zip",
+            "hash": "a24ef57bd4e7b500784fdd501f3510a6124048ac0636302084aeeaf60bbf6019"
         },
         {
             "id": "lnurldevice",
@@ -644,7 +737,20 @@
             "icon": "https://github.com/lnbits/smtp/raw/main/static/smtp-bitcoin-email.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/smtp/main/config.json",
             "archive": "https://github.com/lnbits/smtp/archive/refs/tags/v1.0.0.zip",
-            "hash": "d516e96cc3d76edee1b9f93c14229ee6fa458bed8886587aa19263adb75e9d0c"
+            "hash": "d516e96cc3d76edee1b9f93c14229ee6fa458bed8886587aa19263adb75e9d0c",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "smtp",
+            "repo": "https://github.com/lnbits/smtp",
+            "name": "SMTP",
+            "version": "1.1.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Charge sats for sending emails",
+            "icon": "https://github.com/lnbits/smtp/raw/main/static/smtp-bitcoin-email.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/smtp/main/config.json",
+            "archive": "https://github.com/lnbits/smtp/archive/refs/tags/v1.1.0.zip",
+            "hash": "699f829ef47c23dd44e5bab741165edb7c4ead2b62b83b5e7d2679d878881090"
         },
         {
             "id": "discordbot",
@@ -719,6 +825,20 @@
             "details_link": "https://raw.githubusercontent.com/lnbits/boltcards/main/config.json",
             "archive": "https://github.com/lnbits/boltcards/archive/refs/tags/v1.1.2.zip",
             "hash": "76e8447814ff95400ed54f7f96f3c1d332363ef7c56583f817e5c701985ae47d",
+            "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/hZdoFXQQF6wFSNfGeS4deM",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "boltcards",
+            "repo": "https://github.com/lnbits/boltcards",
+            "name": "Bolt Cards",
+            "version": "1.2.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Self custody Bolt Cards with one time LNURLw",
+            "icon": "https://github.com/lnbits/boltcards/raw/main/static/image/boltcard.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/boltcards/main/config.json",
+            "archive": "https://github.com/lnbits/boltcards/archive/refs/tags/v1.2.0.zip",
+            "hash": "6cb1f2571eaf004ee2ca50c8be6721599c888676502b2b3c14a73a24a442f3ee",
             "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/hZdoFXQQF6wFSNfGeS4deM"
         },
         {
@@ -767,7 +887,20 @@
             "icon": "https://github.com/lnbits/nostrnip5/raw/main/static/image/nostrnip5.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/nostrnip5/main/config.json",
             "archive": "https://github.com/lnbits/nostrnip5/archive/refs/tags/v1.1.0.zip",
-            "hash": "1995dfde0eb792f6e04e23104809bdeed18c88b8f0009d06faffc1b05cfc198f"
+            "hash": "1995dfde0eb792f6e04e23104809bdeed18c88b8f0009d06faffc1b05cfc198f",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "nostrnip5",
+            "repo": "https://github.com/lnbits/nostrnip5",
+            "name": "Nostr NIP-5",
+            "version": "1.2.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Verify addresses for Nostr NIP-5",
+            "icon": "https://github.com/lnbits/nostrnip5/raw/main/static/image/nostrnip5.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/nostrnip5/main/config.json",
+            "archive": "https://github.com/lnbits/nostrnip5/archive/refs/tags/v1.2.0.zip",
+            "hash": "ebe90fb7516e139d25286cb9027fbc0b0914781ac2c908e37a0e0e800779a2e8"
         },
         {
             "id": "splitpayments",
@@ -828,7 +961,20 @@
             "icon": "https://github.com/lnbits/splitpayments/raw/main/static/image/split-payments.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/splitpayments/main/config.json",
             "archive": "https://github.com/lnbits/splitpayments/archive/refs/tags/v1.1.0.zip",
-            "hash": "d21f8234ca3ffdfe0a939f082cec6712fe7ec218bae066d70e01391dd510b74b"
+            "hash": "d21f8234ca3ffdfe0a939f082cec6712fe7ec218bae066d70e01391dd510b74b",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "splitpayments",
+            "repo": "https://github.com/lnbits/splitpayments",
+            "name": "Split Payments",
+            "version": "1.2.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Split incoming payments across wallets",
+            "icon": "https://github.com/lnbits/splitpayments/raw/main/static/image/split-payments.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/splitpayments/main/config.json",
+            "archive": "https://github.com/lnbits/splitpayments/archive/refs/tags/v1.2.0.zip",
+            "hash": "ae418949077fe6c019951f45c24c5a8aeda840b6b095aeb5ee74392d459c2d4e"
         },
         {
             "id": "boltz",
@@ -901,7 +1047,20 @@
             "icon": "https://github.com/lnbits/boltz/raw/main/static/image/boltz.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/boltz/main/config.json",
             "archive": "https://github.com/lnbits/boltz/archive/refs/tags/v1.1.1.zip",
-            "hash": "26d9596b0966845f637d6ce465b78acf7098b8feee89d10b4f433fa806ce44c8"
+            "hash": "26d9596b0966845f637d6ce465b78acf7098b8feee89d10b4f433fa806ce44c8",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "boltz",
+            "repo": "https://github.com/lnbits/boltz",
+            "name": "Boltz",
+            "version": "1.2.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Perform onchain/offchain swaps with Liquid support",
+            "icon": "https://github.com/lnbits/boltz/raw/main/static/image/boltz.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/boltz/main/config.json",
+            "archive": "https://github.com/lnbits/boltz/archive/refs/tags/v1.2.0.zip",
+            "hash": "02f84dbb5c317eb7c0fc5df804c9716ed65b4e255b0cb4d6e101c276183596ac"
         },
         {
             "id": "satsdice",
@@ -952,6 +1111,20 @@
             "details_link": "https://raw.githubusercontent.com/lnbits/satsdice/main/config.json",
             "archive": "https://github.com/lnbits/satsdice/archive/refs/tags/v1.1.1.zip",
             "hash": "c57a438ee39968bd1315314bb8fa29502535a904ab5d4fdffa4655cab871c65e",
+            "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/T2oyoenGmHLasaBhLmA2Sz",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "satsdice",
+            "repo": "https://github.com/lnbits/satsdice",
+            "name": "Sats Dice",
+            "version": "1.2.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "LNURL Satoshi dice",
+            "icon": "https://github.com/lnbits/satsdice/raw/main/static/image/satsdice.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/satsdice/main/config.json",
+            "archive": "https://github.com/lnbits/satsdice/archive/refs/tags/v1.2.0.zip",
+            "hash": "7755137306482dc047023fe9fed7066e6b3e056f553f6d2edb9158ef3bd267ae",
             "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/T2oyoenGmHLasaBhLmA2Sz"
         },
         {
@@ -1001,7 +1174,20 @@
             "icon": "https://github.com/lnbits/offlineshop/raw/main/static/image/offlineshop.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/offlineshop/main/config.json",
             "archive": "https://github.com/lnbits/offlineshop/archive/refs/tags/v1.1.1.zip",
-            "hash": "69ca676a5db9537504eafc23b8a45c4daba634bbf343d2febfb912260fdb6e4c"
+            "hash": "69ca676a5db9537504eafc23b8a45c4daba634bbf343d2febfb912260fdb6e4c",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "offlineshop",
+            "repo": "https://github.com/lnbits/offlineshop",
+            "name": "OfflineShop",
+            "version": "1.2.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Receive payments for products offline!",
+            "icon": "https://github.com/lnbits/offlineshop/raw/main/static/image/offlineshop.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/offlineshop/main/config.json",
+            "archive": "https://github.com/lnbits/offlineshop/archive/refs/tags/v1.2.0.zip",
+            "hash": "d294ddf6b4a77dee050be1dad17f574c40d945d5c6a670ea4afdfc95cf3c6233"
         },
         {
             "id": "subdomains",
@@ -1049,7 +1235,20 @@
             "icon": "https://github.com/lnbits/subdomains/raw/main/static/image/subdomains.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/subdomains/main/config.json",
             "archive": "https://github.com/lnbits/subdomains/archive/refs/tags/v1.0.0.zip",
-            "hash": "f2ca0334cfd68b912c589c6b23fdb98db9354a188ee43b3ae1f0714b5ce8521a"
+            "hash": "f2ca0334cfd68b912c589c6b23fdb98db9354a188ee43b3ae1f0714b5ce8521a",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "subdomains",
+            "repo": "https://github.com/lnbits/subdomains",
+            "name": "Subdomains",
+            "version": "1.1.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Sell subdomains of your domain",
+            "icon": "https://github.com/lnbits/subdomains/raw/main/static/image/subdomains.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/subdomains/main/config.json",
+            "archive": "https://github.com/lnbits/subdomains/archive/refs/tags/v1.1.0.zip",
+            "hash": "953783f0436c4b57ef935a5232b428e68d0b8a6a863b99d082792236fdf84f57"
         },
         {
             "id": "streamalerts",
@@ -1085,6 +1284,19 @@
             "icon": "https://github.com/lnbits/streamalerts/raw/main/static/image/streamalerts.png",
             "archive": "https://github.com/lnbits/streamalerts/archive/refs/tags/v1.0.0.zip",
             "hash": "8dcecdd66a5dfea017a3011fc01fe5c4518605a4729499ef13818e260dd85057",
+            "details_link": "https://raw.githubusercontent.com/lnbits/streamalerts/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "streamalerts",
+            "repo": "https://github.com/lnbits/streamalerts",
+            "name": "Stream Alerts",
+            "version": "1.1.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Bitcoin donations in stream alerts",
+            "icon": "https://github.com/lnbits/streamalerts/raw/main/static/image/streamalerts.png",
+            "archive": "https://github.com/lnbits/streamalerts/archive/refs/tags/v1.1.0.zip",
+            "hash": "02738bf6fae3a8fbc7b2d53eb37d57e329b9e57059ec91da902b7d373b0692d5",
             "details_link": "https://raw.githubusercontent.com/lnbits/streamalerts/main/config.json"
         },
         {
@@ -1146,6 +1358,19 @@
             "icon": "https://github.com/lnbits/livestream/raw/main/static/image/livestream.png",
             "archive": "https://github.com/lnbits/livestream/archive/refs/tags/v1.1.2.zip",
             "hash": "02593f4832174477e10bc98c0bfbb2860cbff81a75ca8983e9c493028b8e8c24",
+            "details_link": "https://raw.githubusercontent.com/lnbits/livestream/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "livestream",
+            "repo": "https://github.com/lnbits/livestream",
+            "name": "DJ Livestream",
+            "version": "1.2.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Sell tracks and split revenue (lnurl-pay)",
+            "icon": "https://github.com/lnbits/livestream/raw/main/static/image/livestream.png",
+            "archive": "https://github.com/lnbits/livestream/archive/refs/tags/v1.2.0.zip",
+            "hash": "643c8635aea929cd78f16574694ec4c982c8bc811e6fb1d71e17d3442ab1e8fe",
             "details_link": "https://raw.githubusercontent.com/lnbits/livestream/main/config.json"
         },
         {
@@ -1245,7 +1470,20 @@
             "icon": "https://github.com/lnbits/lnurlp/raw/main/static/image/lnurl-pay.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/lnurlp/main/config.json",
             "archive": "https://github.com/lnbits/lnurlp/archive/refs/tags/v1.3.3.zip",
-            "hash": "22433f3710a4a4538afa8a0e7a5b0c5916ecbeee0f61ffffa9e582d151c40ee1"
+            "hash": "22433f3710a4a4538afa8a0e7a5b0c5916ecbeee0f61ffffa9e582d151c40ee1",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "lnurlp",
+            "repo": "https://github.com/lnbits/lnurlp",
+            "name": "Pay Links",
+            "version": "1.5.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Make static reusable LNURL pay links or lightning addresses",
+            "icon": "https://github.com/lnbits/lnurlp/raw/main/static/image/lnurl-pay.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/lnurlp/main/config.json",
+            "archive": "https://github.com/lnbits/lnurlp/archive/refs/tags/v1.5.0.zip",
+            "hash": "b4d195115b6a3406b0222c7370d63f0b441159185d49c8a5bc8c3df1297da153"
         },
         {
             "id": "invoices",
@@ -1293,7 +1531,20 @@
             "icon": "https://github.com/lnbits/invoices/raw/main/static/image/invoices.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/invoices/main/config.json",
             "archive": "https://github.com/lnbits/invoices/archive/refs/tags/v1.1.0.zip",
-            "hash": "012b9a5d6ae4e1b687de705b935077dd5fa57d56051340f39270745983b2f79b"
+            "hash": "012b9a5d6ae4e1b687de705b935077dd5fa57d56051340f39270745983b2f79b",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "invoices",
+            "repo": "https://github.com/lnbits/invoices",
+            "name": "Invoices",
+            "version": "1.2.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Create invoices for your clients",
+            "icon": "https://github.com/lnbits/invoices/raw/main/static/image/invoices.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/invoices/main/config.json",
+            "archive": "https://github.com/lnbits/invoices/archive/refs/tags/v1.2.0.zip",
+            "hash": "a947f6ab7d062f76e16b087491fabe971dc1203b968216bb7d3c88b3e6618f39"
         },
         {
             "id": "withdraw",
@@ -1381,7 +1632,20 @@
             "icon": "https://github.com/lnbits/withdraw/raw/main/static/image/lnurl-withdraw.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/withdraw/main/config.json",
             "archive": "https://github.com/lnbits/withdraw/archive/refs/tags/v1.3.0.zip",
-            "hash": "5a4def7c80d131843a850fa15e2cf8e8da4836f9649bbfdf55ee6236db227063"
+            "hash": "5a4def7c80d131843a850fa15e2cf8e8da4836f9649bbfdf55ee6236db227063",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "withdraw",
+            "repo": "https://github.com/lnbits/withdraw",
+            "name": "Withdraw Links",
+            "version": "1.4.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Make LNURL withdraw links",
+            "icon": "https://github.com/lnbits/withdraw/raw/main/static/image/lnurl-withdraw.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/withdraw/main/config.json",
+            "archive": "https://github.com/lnbits/withdraw/archive/refs/tags/v1.4.0.zip",
+            "hash": "7a729237dba31df7186e28ea60875af5c1a289bbab4b65d4ce3a15972826c0e1"
         },
         {
             "id": "paywall",
@@ -1442,7 +1706,20 @@
             "icon": "https://github.com/lnbits/paywall/raw/main/static/image/paywall.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/paywall/main/config.json",
             "archive": "https://github.com/lnbits/paywall/archive/refs/tags/v1.2.0.zip",
-            "hash": "0a33314cf615020f3978e82d09ce67659c6c3797b41a2a53c4e540c5af9ed5d5"
+            "hash": "0a33314cf615020f3978e82d09ce67659c6c3797b41a2a53c4e540c5af9ed5d5",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "paywall",
+            "repo": "https://github.com/lnbits/paywall",
+            "name": "Paywall",
+            "version": "1.3.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Create paywalls for content",
+            "icon": "https://github.com/lnbits/paywall/raw/main/static/image/paywall.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/paywall/main/config.json",
+            "archive": "https://github.com/lnbits/paywall/archive/refs/tags/v1.3.0.zip",
+            "hash": "5a53393847ae6bbff88fe1ed91c902dae908616c12fd3d445fc89629b24cbe2a"
         },
         {
             "id": "satspay",
@@ -1490,7 +1767,20 @@
             "icon": "https://github.com/lnbits/satspay/raw/main/static/image/satspay.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/satspay/main/config.json",
             "archive": "https://github.com/lnbits/satspay/archive/refs/tags/v1.0.2.zip",
-            "hash": "a3838d5aa3422259cc9f9067a37a8f5b21e4f201049907caf2346ffe1bbc29bb"
+            "hash": "a3838d5aa3422259cc9f9067a37a8f5b21e4f201049907caf2346ffe1bbc29bb",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "satspay",
+            "repo": "https://github.com/lnbits/satspay",
+            "name": "SatsPay Server",
+            "version": "1.1.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Create onchain and LN charges",
+            "icon": "https://github.com/lnbits/satspay/raw/main/static/image/satspay.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/satspay/main/config.json",
+            "archive": "https://github.com/lnbits/satspay/archive/refs/tags/v1.1.0.zip",
+            "hash": "e1650f25922a0983bb6739ee857a8611857bcb2b3a27240d147d4a0d3fc47b11"
         },
         {
             "id": "bleskomat",
@@ -1538,6 +1828,19 @@
             "icon": "https://github.com/lnbits/bleskomat/raw/main/static/image/bleskomat.png",
             "archive": "https://github.com/lnbits/bleskomat/archive/refs/tags/v1.0.1.zip",
             "hash": "6fd93aadce4ac6cf617a0e59fd9f537860e9ec862e676ceb329c7dab8896aead",
+            "details_link": "https://raw.githubusercontent.com/lnbits/bleskomat/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "bleskomat",
+            "repo": "https://github.com/lnbits/bleskomat",
+            "name": "Bleskomat",
+            "version": "1.1.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Connect a Bleskomat ATM to an lnbits",
+            "icon": "https://github.com/lnbits/bleskomat/raw/main/static/image/bleskomat.png",
+            "archive": "https://github.com/lnbits/bleskomat/archive/refs/tags/v1.1.0.zip",
+            "hash": "cdc6c2448a4c72f4a7221490d9303203996c53d1b75d90711f3db20d8c45a7a9",
             "details_link": "https://raw.githubusercontent.com/lnbits/bleskomat/main/config.json"
         },
         {
@@ -1574,6 +1877,19 @@
             "icon": "https://github.com/lnbits/tipjar/raw/main/static/image/tipjar.png",
             "archive": "https://github.com/lnbits/tipjar/archive/refs/tags/v1.0.2.zip",
             "hash": "a6c05d3cc57718c349634c6702a35b7e82746a03f9e691f983791932ef03a74f",
+            "details_link": "https://raw.githubusercontent.com/lnbits/tipjar/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "tipjar",
+            "repo": "https://github.com/lnbits/tipjar",
+            "name": "Tip Jar",
+            "version": "1.1.1",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Accept Bitcoin donations, with optional messages attached!",
+            "icon": "https://github.com/lnbits/tipjar/raw/main/static/image/tipjar.png",
+            "archive": "https://github.com/lnbits/tipjar/archive/refs/tags/v1.1.1.zip",
+            "hash": "b2fc329ea1e44fba3fe1f6f7f6a12cced341cae0e62df8eb62ed37d62392a269",
             "details_link": "https://raw.githubusercontent.com/lnbits/tipjar/main/config.json"
         },
         {
@@ -1634,6 +1950,19 @@
             "icon": "https://github.com/lnbits/lndhub/raw/main/static/image/lndhub.png",
             "archive": "https://github.com/lnbits/lndhub/archive/refs/tags/v1.0.3.zip",
             "hash": "07776fd857e6ca4beba985d42843805b8a9383a769e2130420b18017611da027",
+            "details_link": "https://raw.githubusercontent.com/lnbits/lndhub/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "lndhub",
+            "repo": "https://github.com/lnbits/lndhub",
+            "name": "LndHub",
+            "version": "1.1.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Access LNbits from BlueWallet or Zeus",
+            "icon": "https://github.com/lnbits/lndhub/raw/main/static/image/lndhub.png",
+            "archive": "https://github.com/lnbits/lndhub/archive/refs/tags/v1.1.0.zip",
+            "hash": "e89650364484f8a262552e9543c71ae87ef5a5e39ff02dbe59f9e885f1cc96d8",
             "details_link": "https://raw.githubusercontent.com/lnbits/lndhub/main/config.json"
         },
         {
@@ -1695,6 +2024,19 @@
             "icon": "https://github.com/lnbits/scrub/raw/main/static/image/scrub.png",
             "archive": "https://github.com/lnbits/scrub/archive/refs/tags/v1.1.1.zip",
             "hash": "cfafc9225b24e8df82cf85baa357bae3b1796fbaaa743c5a786551d5a58bb978",
+            "details_link": "https://raw.githubusercontent.com/lnbits/scrub/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "scrub",
+            "repo": "https://github.com/lnbits/scrub",
+            "name": "Scrub",
+            "version": "1.2.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Pass payments to LNURLp/LNaddress",
+            "icon": "https://github.com/lnbits/scrub/raw/main/static/image/scrub.png",
+            "archive": "https://github.com/lnbits/scrub/archive/refs/tags/v1.2.0.zip",
+            "hash": "05aa0f62adfe20b005508593b3e5d55597056711c643fa7725861c9a0eabe23e",
             "details_link": "https://raw.githubusercontent.com/lnbits/scrub/main/config.json"
         },
         {
@@ -1744,7 +2086,20 @@
             "icon": "https://github.com/lnbits/watchonly/raw/main/static/bitcoin-wallet.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/watchonly/main/config.json",
             "archive": "https://github.com/lnbits/watchonly/archive/refs/tags/v1.1.0.zip",
-            "hash": "a9b76159ccbdb668706af60542c5d02ec7ae51680adc06bf73e15cb310fcc973"
+            "hash": "a9b76159ccbdb668706af60542c5d02ec7ae51680adc06bf73e15cb310fcc973",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "watchonly",
+            "repo": "https://github.com/lnbits/watchonly",
+            "name": "Onchain Wallet",
+            "version": "1.2.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Onchain watch only wallets",
+            "icon": "https://github.com/lnbits/watchonly/raw/main/static/bitcoin-wallet.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/watchonly/main/config.json",
+            "archive": "https://github.com/lnbits/watchonly/archive/refs/tags/v1.2.0.zip",
+            "hash": "a9b6ba3caae7b1a3cf1232d16a7b54b83619245f7f81d0131a1f82516da27a7b"
         },
         {
             "id": "nostrclient",
@@ -1805,6 +2160,19 @@
             "icon": "https://raw.githubusercontent.com/lnbits/nostrclient/main/static/images/nostr-bitcoin.png",
             "archive": "https://github.com/lnbits/nostrclient/archive/refs/tags/v1.2.0.zip",
             "hash": "0c70b18425976f0260c9a151c80c2e321ce47419fdc3d33e7ed23f507554dcb4",
+            "details_link": "https://raw.githubusercontent.com/lnbits/nostrclient/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "nostrclient",
+            "repo": "https://github.com/lnbits/nostrclient",
+            "name": "Nostr Client",
+            "version": "1.3.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Nostr relay multiplexer",
+            "icon": "https://raw.githubusercontent.com/lnbits/nostrclient/main/static/images/nostr-bitcoin.png",
+            "archive": "https://github.com/lnbits/nostrclient/archive/refs/tags/v1.3.0.zip",
+            "hash": "21fe91d6b9d454902f316d2bce30d60b8437b7177d25bc8a8adcae1348aef8e1",
             "details_link": "https://raw.githubusercontent.com/lnbits/nostrclient/main/config.json"
         },
         {
@@ -1866,7 +2234,20 @@
             "icon": "https://raw.githubusercontent.com/lnbits/nostrrelay/main/static/image/nostrrelay.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/nostrrelay/main/config.json",
             "archive": "https://github.com/lnbits/nostrrelay/archive/refs/tags/v1.1.1.zip",
-            "hash": "454e926f4d4b1357d1ed3f0087e5bbf4356519f556e18cefcfbf249140d0f954"
+            "hash": "454e926f4d4b1357d1ed3f0087e5bbf4356519f556e18cefcfbf249140d0f954",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "nostrrelay",
+            "repo": "https://github.com/lnbits/nostrrelay",
+            "name": "Nostr Relay",
+            "version": "1.2.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "One click launch your own relay!",
+            "icon": "https://raw.githubusercontent.com/lnbits/nostrrelay/main/static/image/nostrrelay.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/nostrrelay/main/config.json",
+            "archive": "https://github.com/lnbits/nostrrelay/archive/refs/tags/v1.2.0.zip",
+            "hash": "c9392c087c040514fbab3ccc4732f6bf54598bcd906badb1ebf10aa3f6d184fe"
         },
         {
             "id": "nostrmarket",
@@ -1939,7 +2320,20 @@
             "icon": "https://raw.githubusercontent.com/lnbits/nostrmarket/main/static/images/bitcoin-shop.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/nostrmarket/main/config.json",
             "archive": "https://github.com/lnbits/nostrmarket/archive/refs/tags/v1.1.0.zip",
-            "hash": "9176e0bcb2c20938bd6155eaae337a6c63c2bdc45fd06e5a65dcb8eb2a330da6"
+            "hash": "9176e0bcb2c20938bd6155eaae337a6c63c2bdc45fd06e5a65dcb8eb2a330da6",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "nostrmarket",
+            "repo": "https://github.com/lnbits/nostrmarket",
+            "name": "Nostr Market",
+            "version": "1.2.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Nostr Webshop/market on LNbits",
+            "icon": "https://raw.githubusercontent.com/lnbits/nostrmarket/main/static/images/bitcoin-shop.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/nostrmarket/main/config.json",
+            "archive": "https://github.com/lnbits/nostrmarket/archive/refs/tags/v1.2.0.zip",
+            "hash": "bfcb7d16f75473ff7d72517e8b4228c33fa92c611009e62130946a37b126a6b8"
         },
         {
             "id": "lncalendar",
@@ -1964,7 +2358,20 @@
             "icon": "https://raw.githubusercontent.com/lnbits/lncalendar/main/static/image/lncalendar.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/lncalendar/main/config.json",
             "archive": "https://github.com/lnbits/lncalendar/archive/refs/tags/v1.0.4.zip",
-            "hash": "48fd8b81c78296989ba4c6ed6911f19df2a5a321bf7949d5f685300a23f68938"
+            "hash": "48fd8b81c78296989ba4c6ed6911f19df2a5a321bf7949d5f685300a23f68938",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "lncalendar",
+            "repo": "https://github.com/lnbits/lncalendar",
+            "name": "LNCalendar",
+            "version": "1.1.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "A paid scheduling extension",
+            "icon": "https://raw.githubusercontent.com/lnbits/lncalendar/main/static/image/lncalendar.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/lncalendar/main/config.json",
+            "archive": "https://github.com/lnbits/lncalendar/archive/refs/tags/v1.1.0.zip",
+            "hash": "98ac4b9b10fbf5f30122d29986aa1891eee34f3dda1a350b7a79ce2d79e6e939"
         },
         {
             "id": "scheduler",
@@ -2001,7 +2408,20 @@
             "icon": "https://raw.githubusercontent.com/lnbits/fossa_extension/main/static/image/fossa.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/fossa_extension/main/config.json",
             "archive": "https://github.com/lnbits/fossa_extension/archive/refs/tags/v1.3.0.zip",
-            "hash": "60f74331a6f4968e2847ee07247c4d22a172245a2d62257a72124a1d8dd9df9d"
+            "hash": "60f74331a6f4968e2847ee07247c4d22a172245a2d62257a72124a1d8dd9df9d",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "fossa",
+            "repo": "https://github.com/lnbits/fossa_extension",
+            "name": "FOSSA",
+            "version": "1.4.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Bitcoin ATMs",
+            "icon": "https://raw.githubusercontent.com/lnbits/fossa_extension/main/static/image/fossa.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/fossa_extension/main/config.json",
+            "archive": "https://github.com/lnbits/fossa_extension/archive/refs/tags/v1.4.0.zip",
+            "hash": "eb87758373cce239f51c1e31a643df96742f6d2ca4ba8ffe2be11be781073eed"
         },
         {
             "id": "lnpos",
@@ -2026,7 +2446,20 @@
             "icon": "https://raw.githubusercontent.com/lnbits/lnpos_extension/main/static/image/lnpos.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/lnpos_extension/main/config.json",
             "archive": "https://github.com/lnbits/lnpos_extension/archive/refs/tags/v1.1.2.zip",
-            "hash": "863eaa31ad15d46a22bcaa06af7e7d147532610d28ba64ccdc0797b585dd89cb"
+            "hash": "863eaa31ad15d46a22bcaa06af7e7d147532610d28ba64ccdc0797b585dd89cb",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "lnpos",
+            "repo": "https://github.com/lnbits/lnpos_extension",
+            "name": "LNPoS",
+            "version": "1.2.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "LNPoS lightning point of sale",
+            "icon": "https://raw.githubusercontent.com/lnbits/lnpos_extension/main/static/image/lnpos.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/lnpos_extension/main/config.json",
+            "archive": "https://github.com/lnbits/lnpos_extension/archive/refs/tags/v1.2.0.zip",
+            "hash": "ff4c325ca30d0d263bba063269982a47e4407f7d2639b2a99b8b95089a73a09b"
         },
         {
             "id": "bitcoinswitch",
@@ -2064,7 +2497,20 @@
             "icon": "https://raw.githubusercontent.com/lnbits/bitcoinswitch_extension/main/static/image/icon.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/bitcoinswitch_extension/main/config.json",
             "archive": "https://github.com/lnbits/bitcoinswitch_extension/archive/refs/tags/v1.2.1.zip",
-            "hash": "874d297a72757e29c7fe543bf76cd22f7b693e16b254de18f624b3386e5f721a"
+            "hash": "874d297a72757e29c7fe543bf76cd22f7b693e16b254de18f624b3386e5f721a",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "bitcoinswitch",
+            "repo": "https://github.com/lnbits/bitcoinswitch_extension",
+            "name": "Bitcoin Switch",
+            "version": "1.3.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Turn things on with bitcoin",
+            "icon": "https://raw.githubusercontent.com/lnbits/bitcoinswitch_extension/main/static/image/icon.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/bitcoinswitch_extension/main/config.json",
+            "archive": "https://github.com/lnbits/bitcoinswitch_extension/archive/refs/tags/v1.3.0.zip",
+            "hash": "86da2a83371a0f72da07638b54292c9d0e7a7f605a919bd42f337f3021811fde"
         },
         {
             "id": "eightball",
@@ -2087,6 +2533,20 @@
             "archive": "https://github.com/lnbits/eightball/archive/refs/tags/v1.1.0.zip",
             "hash": "36ea2fd0dabb5da8fe73852445df9a87c61b7987d937fbbff565cfdf6b3eb8f2",
             "min_lnbits_version": "1.3.0",
+            "name": "Magic 8ball",
+            "short_description": "MadBitcoin's Magic Eightball",
+            "icon": "https://raw.githubusercontent.com/lnbits/eightball/main/static/image/eightball.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/eightball/main/config.json",
+            "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/25TmcxLX85UndrGA4cntSP",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "eightball",
+            "repo": "https://github.com/lnbits/eightball",
+            "version": "1.2.0",
+            "archive": "https://github.com/lnbits/eightball/archive/refs/tags/v1.2.0.zip",
+            "hash": "114258b6750448b193116e28b694e476a6aa0b6725fbd00c06e0dcfb2abbd407",
+            "min_lnbits_version": "1.7.0-rc1",
             "name": "Magic 8ball",
             "short_description": "MadBitcoin's Magic Eightball",
             "icon": "https://raw.githubusercontent.com/lnbits/eightball/main/static/image/eightball.png",
@@ -2118,6 +2578,20 @@
             "short_description": "Bet sats on coinflips",
             "icon": "https://raw.githubusercontent.com/lnbits/coinflip/main/static/image/coinflip.gif",
             "details_link": "https://raw.githubusercontent.com/lnbits/coinflip/main/config.json",
+            "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/eaUze6K9ZVzUHF68YxrSg5",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "coinflip",
+            "repo": "https://github.com/lnbits/coinflip",
+            "version": "1.2.0",
+            "archive": "https://github.com/lnbits/coinflip/archive/refs/tags/v1.2.0.zip",
+            "hash": "6c10d7fda90eae67991010d667c9b6d00862693d6e3c5dd52c5c4c4a5b5b7140",
+            "min_lnbits_version": "1.7.0-rc1",
+            "name": "Coinflip",
+            "short_description": "Bet sats on coinflips",
+            "icon": "https://raw.githubusercontent.com/lnbits/coinflip/main/static/image/coinflip.gif",
+            "details_link": "https://raw.githubusercontent.com/lnbits/coinflip/main/config.json",
             "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/eaUze6K9ZVzUHF68YxrSg5"
         },
         {
@@ -2145,6 +2619,20 @@
             "short_description": "Money pool games",
             "icon": "https://raw.githubusercontent.com/lnbits/satspot/main/static/image/satspot.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/satspot/main/config.json",
+            "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/X9jN3a4iTWtFMwrYd8zsmE",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "satspot",
+            "repo": "https://github.com/lnbits/satspot",
+            "version": "1.3.0",
+            "archive": "https://github.com/lnbits/satspot/archive/refs/tags/v1.3.0.zip",
+            "hash": "1e81e4b78148623628db1e21870b4cd18767dc4a05ace9d5df12c167c76ced37",
+            "min_lnbits_version": "1.7.0-rc1",
+            "name": "Satspot",
+            "short_description": "Money pool games",
+            "icon": "https://raw.githubusercontent.com/lnbits/satspot/main/static/image/satspot.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/satspot/main/config.json",
             "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/X9jN3a4iTWtFMwrYd8zsmE"
         },
         {
@@ -2154,6 +2642,19 @@
             "archive": "https://github.com/lnbits/auction_house/archive/refs/tags/v1.0.0.zip",
             "hash": "beb68e17aa5dd35e10e078ba8a7a44d91439515b3fc11b6d8d921e21bb349c24",
             "min_lnbits_version": "1.0.0",
+            "name": "Auction House",
+            "short_description": "Auction digital goods and services for Bitcoin",
+            "icon": "https://raw.githubusercontent.com/lnbits/auction_house/main/static/image/auction_house.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/auction_house/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "auction_house",
+            "repo": "https://github.com/lnbits/auction_house",
+            "version": "1.1.0",
+            "archive": "https://github.com/lnbits/auction_house/archive/refs/tags/v1.1.0.zip",
+            "hash": "f3a6253dc81e28d2cc23225b5e90e216922b602885bfbbf74f5fe9ce7f8f3c28",
+            "min_lnbits_version": "1.7.0-rc1",
             "name": "Auction House",
             "short_description": "Auction digital goods and services for Bitcoin",
             "icon": "https://raw.githubusercontent.com/lnbits/auction_house/main/static/image/auction_house.png",
@@ -2182,6 +2683,19 @@
             "name": "NWC Service Provider",
             "short_description": "A NWC service provider for LNbits",
             "icon": "https://raw.githubusercontent.com/lnbits/nwcprovider/main/static/image/nwcprovider.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/nwcprovider/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "nwcprovider",
+            "repo": "https://github.com/lnbits/nwcprovider",
+            "version": "1.2.0",
+            "archive": "https://github.com/lnbits/nwcprovider/archive/refs/tags/v1.2.0.zip",
+            "hash": "8c63ea531eddbf66e436b3a312210d0ab22ae3a2bfab05864c0e88e6476451e5",
+            "min_lnbits_version": "1.7.0-rc1",
+            "name": "NWC Service Provider",
+            "short_description": "A NWC service provider for LNbits",
+            "icon": "https://raw.githubusercontent.com/lnbits/nwcprovider/main/static/image/nwcprovider.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/nwcprovider/main/config.json"
         },
         {
@@ -2191,6 +2705,19 @@
             "archive": "https://github.com/lnbits/paidreviews/archive/refs/tags/v0.2.1.zip",
             "hash": "12a54b17040c21b5e2e64670644f0fa4bf6385189a3d446c34d5c0ea58ed68c7",
             "min_lnbits_version": "1.3.0",
+            "name": "PaidReviews",
+            "short_description": "Pay to leave reviews based on tags",
+            "icon": "https://raw.githubusercontent.com/lnbits/paidreviews/main/static/image/paidreviews.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/paidreviews/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "paidreviews",
+            "repo": "https://github.com/lnbits/paidreviews",
+            "version": "0.3.0",
+            "archive": "https://github.com/lnbits/paidreviews/archive/refs/tags/v0.3.0.zip",
+            "hash": "40f2963bfc2b16ee78e2cf50992e896f41982873a3c9ef2e607918d6792b2ec1",
+            "min_lnbits_version": "1.7.0-rc1",
             "name": "PaidReviews",
             "short_description": "Pay to leave reviews based on tags",
             "icon": "https://raw.githubusercontent.com/lnbits/paidreviews/main/static/image/paidreviews.png",
@@ -2206,6 +2733,19 @@
             "name": "SellCoins",
             "short_description": "Sell coins for fiat",
             "icon": "https://raw.githubusercontent.com/lnbits/sellcoins/main/static/image/sellcoins.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/sellcoins/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "sellcoins",
+            "repo": "https://github.com/lnbits/sellcoins",
+            "version": "0.1.0",
+            "archive": "https://github.com/lnbits/sellcoins/archive/refs/tags/v0.1.0.zip",
+            "hash": "cad915afc023674b97fd3abc5b21cd30283051105c7dc8c093b01bf7a18cf0a5",
+            "min_lnbits_version": "1.7.0-rc1",
+            "name": "SellCoins",
+            "short_description": "Sell coins for fiat",
+            "icon": "https://raw.githubusercontent.com/lnbits/sellcoins/main/static/image/sellcoins.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/sellcoins/main/config.json"
         },
         {
@@ -2215,6 +2755,19 @@
             "archive": "https://github.com/lnbits/myextension/archive/refs/tags/v0.0.7.zip",
             "hash": "15b78ce5654eb2ff1657c5b3c4b554e2e13edd269105b09cad036a9e9552ce6f",
             "min_lnbits_version": "1.3.0",
+            "name": "MyExtension",
+            "short_description": "Minimal extension to build on",
+            "icon": "https://raw.githubusercontent.com/lnbits/myextension/main/static/image/myextension.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/myextension/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "myextension",
+            "repo": "https://github.com/lnbits/myextension",
+            "version": "0.1.0",
+            "archive": "https://github.com/lnbits/myextension/archive/refs/tags/v0.1.0.zip",
+            "hash": "dd898ec4c5d56dfd8cabb1120c0a75025a1acddf1a26da647a8c7770ec1262cd",
+            "min_lnbits_version": "1.7.0-rc1",
             "name": "MyExtension",
             "short_description": "Minimal extension to build on",
             "icon": "https://raw.githubusercontent.com/lnbits/myextension/main/static/image/myextension.png",
@@ -2231,6 +2784,20 @@
             "name": "Numberlottery",
             "short_description": "Block based numbers game",
             "icon": "https://raw.githubusercontent.com/lnbits/numberlottery/main/static/image/numbers.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/numberlottery/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "numberlottery",
+            "paid_features": "2% of a games haircut will be pushed to the dev team to help support the extension",
+            "repo": "https://github.com/lnbits/numberlottery",
+            "version": "1.1.0",
+            "archive": "https://github.com/lnbits/numberlottery/archive/refs/tags/v1.1.0.zip",
+            "hash": "c417e854c18dc85b473410b9152fd97f9ca94724c386c380def5792215c9168d",
+            "min_lnbits_version": "1.7.0-rc1",
+            "name": "Numberlottery",
+            "short_description": "Block based numbers game",
+            "icon": "https://raw.githubusercontent.com/lnbits/numberlottery/main/static/image/numbers.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/numberlottery/main/config.json"
         },
         {
@@ -2240,6 +2807,19 @@
             "archive": "https://github.com/lnbits/scrum/archive/refs/tags/v0.2.0.zip",
             "hash": "9682fa574a5d40d4cea1ea8d7ece96ba745594838ecd08707782d457f1fbca20",
             "min_lnbits_version": "1.3.0",
+            "name": "Scrum",
+            "short_description": "Scrum with paid tasks",
+            "icon": "https://raw.githubusercontent.com/lnbits/scrum/main/static/image/scrum.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/scrum/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "scrum",
+            "repo": "https://github.com/lnbits/scrum",
+            "version": "0.3.0",
+            "archive": "https://github.com/lnbits/scrum/archive/refs/tags/v0.3.0.zip",
+            "hash": "66cde57b9764a9e8156542c61571449a23d9b74f7e0de402491a4cef05954fcc",
+            "min_lnbits_version": "1.7.0-rc1",
             "name": "Scrum",
             "short_description": "Scrum with paid tasks",
             "icon": "https://raw.githubusercontent.com/lnbits/scrum/main/static/image/scrum.png",
@@ -2255,6 +2835,19 @@
             "name": "Inventory",
             "short_description": "Shared Inventory extension",
             "icon": "https://raw.githubusercontent.com/lnbits/inventory/main/static/inventory.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/inventory/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "inventory",
+            "repo": "https://github.com/lnbits/inventory",
+            "version": "0.4.0",
+            "archive": "https://github.com/lnbits/inventory/archive/refs/tags/v0.4.0.zip",
+            "hash": "049b51a70b2029dbbd4afb57bb471297a89b846f83b79388b481ee94398a0354",
+            "min_lnbits_version": "1.7.0-rc1",
+            "name": "Inventory",
+            "short_description": "Shared Inventory extension",
+            "icon": "https://raw.githubusercontent.com/lnbits/inventory/main/static/inventory.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/inventory/main/config.json"
         },
         {
@@ -2264,6 +2857,19 @@
             "archive": "https://github.com/lnbits/chaospad/archive/refs/tags/v0.1.4.zip",
             "hash": "833987490b0519f28753eb09cf52e64c4eda2c8ef171ec30cc1cf3d3f282486c",
             "min_lnbits_version": "1.1.0",
+            "name": "ChaosPad",
+            "short_description": "Collaborative pads",
+            "icon": "https://raw.githubusercontent.com/lnbits/chaospad/main/static/image/chaospad.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/chaospad/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "chaospad",
+            "repo": "https://github.com/lnbits/chaospad",
+            "version": "0.2.0",
+            "archive": "https://github.com/lnbits/chaospad/archive/refs/tags/v0.2.0.zip",
+            "hash": "bc922ccec02fd39f061ced71ff4cd522d0d480afe959d0909b32b3e5d73f17f9",
+            "min_lnbits_version": "1.7.0-rc1",
             "name": "ChaosPad",
             "short_description": "Collaborative pads",
             "icon": "https://raw.githubusercontent.com/lnbits/chaospad/main/static/image/chaospad.png",
@@ -2279,6 +2885,19 @@
             "name": "XeroSync",
             "short_description": "LNbits -> Xero wallet sync",
             "icon": "https://raw.githubusercontent.com/lnbits/xerosync/main/static/image/xerosync.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/xerosync/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "xerosync",
+            "repo": "https://github.com/lnbits/xerosync",
+            "version": "0.2.0",
+            "archive": "https://github.com/lnbits/xerosync/archive/refs/tags/v0.2.0.zip",
+            "hash": "daade7b979b6b2789bce6f892966be324db402503f5f5a603dbdbc4eca4e9549",
+            "min_lnbits_version": "1.7.0-rc1",
+            "name": "XeroSync",
+            "short_description": "LNbits -> Xero wallet sync",
+            "icon": "https://raw.githubusercontent.com/lnbits/xerosync/main/static/image/xerosync.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/xerosync/main/config.json"
         },
         {
@@ -2288,6 +2907,19 @@
             "archive": "https://github.com/lnbits/shipping/archive/refs/tags/v0.1.0.zip",
             "hash": "af1dc6289006bb60d72e3eeab9b5d0a13d12571635c56d4f87d602bd182329f3",
             "min_lnbits_version": "1.4.2",
+            "name": "Shipping",
+            "short_description": "Shared shipping extension",
+            "icon": "https://raw.githubusercontent.com/lnbits/shipping/main/static/image/shipping.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/shipping/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "shipping",
+            "repo": "https://github.com/lnbits/shipping",
+            "version": "0.2.0",
+            "archive": "https://github.com/lnbits/shipping/archive/refs/tags/v0.2.0.zip",
+            "hash": "fcf914ba354a8a61af321715dddcc83d77e11b9fcab79f676f0be770f94549cf",
+            "min_lnbits_version": "1.7.0-rc1",
             "name": "Shipping",
             "short_description": "Shared shipping extension",
             "icon": "https://raw.githubusercontent.com/lnbits/shipping/main/static/image/shipping.png",
@@ -2303,6 +2935,19 @@
             "name": "Orders",
             "short_description": "If enabled orders from tpos and webshop will be pulled",
             "icon": "https://raw.githubusercontent.com/lnbits/orders/main/static/image/orders.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/orders/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "orders",
+            "repo": "https://github.com/lnbits/orders",
+            "version": "0.2.0",
+            "archive": "https://github.com/lnbits/orders/archive/refs/tags/v0.2.0.zip",
+            "hash": "48ea3025951928f946e89710eca071ca4a744ed561fe45342415dbca4363c187",
+            "min_lnbits_version": "1.7.0-rc1",
+            "name": "Orders",
+            "short_description": "If enabled orders from tpos and webshop will be pulled",
+            "icon": "https://raw.githubusercontent.com/lnbits/orders/main/static/image/orders.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/orders/main/config.json"
         },
         {
@@ -2312,6 +2957,19 @@
             "archive": "https://github.com/lnbits/chat/archive/refs/tags/v0.1.0.zip",
             "hash": "01697848ebeec0bb995aa703d7515e56867ec43d9e716ff4bfa733f9bf6fa482",
             "min_lnbits_version": "1.4.0",
+            "name": "Chat",
+            "short_description": "Paid chat and support",
+            "icon": "https://raw.githubusercontent.com/lnbits/chat/main/static/image/chat.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/chat/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "chat",
+            "repo": "https://github.com/lnbits/chat",
+            "version": "0.2.0",
+            "archive": "https://github.com/lnbits/chat/archive/refs/tags/v0.2.0.zip",
+            "hash": "54640032b3461b74daffe38ce9e7231aeaf1976aedb554ceaf5aee6ba3451107",
+            "min_lnbits_version": "1.7.0-rc1",
             "name": "Chat",
             "short_description": "Paid chat and support",
             "icon": "https://raw.githubusercontent.com/lnbits/chat/main/static/image/chat.png",
@@ -2327,6 +2985,19 @@
             "name": "Dashboard",
             "short_description": "Simple dashboard for public links",
             "icon": "https://raw.githubusercontent.com/lnbits/dashboard/main/static/image/dashboard.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/dashboard/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "dashboard",
+            "repo": "https://github.com/lnbits/dashboard",
+            "version": "0.1.0",
+            "archive": "https://github.com/lnbits/dashboard/archive/refs/tags/v0.1.0.zip",
+            "hash": "7733a5d805f508d659da175db2bfcf5df843c0c8b32ec24ca00a6c82d1d8c02d",
+            "min_lnbits_version": "1.7.0-rc1",
+            "name": "Dashboard",
+            "short_description": "Simple dashboard for public links",
+            "icon": "https://raw.githubusercontent.com/lnbits/dashboard/main/static/image/dashboard.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/dashboard/main/config.json"
         },
         {
@@ -2336,6 +3007,19 @@
             "archive": "https://github.com/lnbits/custom_public_page/archive/refs/tags/v0.1.1.zip",
             "hash": "7df56617ba4ed7f26046d3516007f51e0e57501d23ac1ca2a8a20dea2b77865a",
             "min_lnbits_version": "1.1.0",
+            "name": "CustomPublicPage",
+            "short_description": "Make custom public pages",
+            "icon": "https://raw.githubusercontent.com/lnbits/custom_public_page/main/static/image/custom_public_page.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/custom_public_page/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "custom_public_page",
+            "repo": "https://github.com/lnbits/custom_public_page",
+            "version": "0.2.0",
+            "archive": "https://github.com/lnbits/custom_public_page/archive/refs/tags/v0.2.0.zip",
+            "hash": "48c53ff15250ddc0beb8fef90591361402bf3e51b6cfbb561b208f42ee60a249",
+            "min_lnbits_version": "1.7.0-rc1",
             "name": "CustomPublicPage",
             "short_description": "Make custom public pages",
             "icon": "https://raw.githubusercontent.com/lnbits/custom_public_page/main/static/image/custom_public_page.png",
@@ -2363,6 +3047,19 @@
             "name": "BlackJack",
             "short_description": "A BlackJack Dealer",
             "icon": "https://raw.githubusercontent.com/lnbits/blackjack/main/static/image/blackjack.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/blackjack/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "blackjack",
+            "repo": "https://github.com/lnbits/blackjack",
+            "version": "0.2.0",
+            "archive": "https://github.com/lnbits/blackjack/archive/refs/tags/v0.2.0.zip",
+            "hash": "7dea541ef0f3008a28079baf2224216de0e7adc26949191e616972ec93e677f6",
+            "min_lnbits_version": "1.7.0-rc1",
+            "name": "BlackJack",
+            "short_description": "A BlackJack Dealer",
+            "icon": "https://raw.githubusercontent.com/lnbits/blackjack/main/static/image/blackjack.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/blackjack/main/config.json"
         },
         {
@@ -2384,6 +3081,19 @@
             "archive": "https://github.com/lnbits/tabs/archive/refs/tags/v0.1.0.zip",
             "hash": "ed40ae9fd91d678b5a248a652774c3f0903cacf2b506e8feb81483ff6c9ea1aa",
             "min_lnbits_version": "1.5.4",
+            "name": "Tabs",
+            "short_description": "A reusable merchant ledger for open balances",
+            "icon": "https://raw.githubusercontent.com/lnbits/tabs/main/static/image/tabs.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/tabs/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "tabs",
+            "repo": "https://github.com/lnbits/tabs",
+            "version": "0.2.0",
+            "archive": "https://github.com/lnbits/tabs/archive/refs/tags/v0.2.0.zip",
+            "hash": "9ef99af5b6150ebddb8db5a61f92012b8f0f4b03724f0c43a1eedced62c25d6d",
+            "min_lnbits_version": "1.7.0-rc1",
             "name": "Tabs",
             "short_description": "A reusable merchant ledger for open balances",
             "icon": "https://raw.githubusercontent.com/lnbits/tabs/main/static/image/tabs.png",
