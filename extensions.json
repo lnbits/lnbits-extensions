@@ -2057,7 +2057,20 @@
             "icon": "https://raw.githubusercontent.com/lnbits/nostrmarket/main/static/images/bitcoin-shop.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/nostrmarket/main/config.json",
             "archive": "https://github.com/lnbits/nostrmarket/archive/refs/tags/v1.1.0.zip",
-            "hash": "9176e0bcb2c20938bd6155eaae337a6c63c2bdc45fd06e5a65dcb8eb2a330da6"
+            "hash": "9176e0bcb2c20938bd6155eaae337a6c63c2bdc45fd06e5a65dcb8eb2a330da6",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "nostrmarket",
+            "repo": "https://github.com/lnbits/nostrmarket",
+            "name": "Nostr Market",
+            "version": "1.2.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Nostr Webshop/market on LNbits",
+            "icon": "https://raw.githubusercontent.com/lnbits/nostrmarket/main/static/images/bitcoin-shop.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/nostrmarket/main/config.json",
+            "archive": "https://github.com/lnbits/nostrmarket/archive/refs/tags/v1.2.0.zip",
+            "hash": "bfcb7d16f75473ff7d72517e8b4228c33fa92c611009e62130946a37b126a6b8"
         },
         {
             "id": "lncalendar",
