@@ -973,7 +973,7 @@
                     <hashTree/>
                   </hashTree>
                   <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait a bit" enabled="true">
-                    <stringProp name="ConstantTimer.delay">100</stringProp>
+                    <stringProp name="ConstantTimer.delay">500</stringProp>
                     <stringProp name="TestPlan.comments">for the webhook to be called</stringProp>
                   </ConstantTimer>
                   <hashTree/>
@@ -1030,20 +1030,21 @@
                     <hashTree/>
                     <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check webhook message" enabled="true">
                       <stringProp name="JSON_PATH">$.details.extra.wh_message</stringProp>
-                      <stringProp name="EXPECTED_VALUE">OK</stringProp>
+                      <stringProp name="EXPECTED_VALUE">Webhook delivered.</stringProp>
                       <boolProp name="JSONVALIDATION">true</boolProp>
                       <boolProp name="EXPECT_NULL">false</boolProp>
                       <boolProp name="INVERT">false</boolProp>
                       <boolProp name="ISREGEX">false</boolProp>
                     </JSONPathAssertion>
                     <hashTree/>
-                    <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check webhook response" enabled="true">
-                      <stringProp name="scriptLanguage">javascript</stringProp>
-                      <stringProp name="parameters"></stringProp>
-                      <stringProp name="filename">${configPath}/scripts/lnurl_check_webhook_response.js</stringProp>
-                      <stringProp name="cacheKey">true</stringProp>
-                      <stringProp name="script"></stringProp>
-                    </JSR223Assertion>
+                    <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check webhook response is empty" enabled="true">
+                      <stringProp name="JSON_PATH">$.details.extra.wh_response</stringProp>
+                      <stringProp name="EXPECTED_VALUE"></stringProp>
+                      <boolProp name="JSONVALIDATION">true</boolProp>
+                      <boolProp name="EXPECT_NULL">false</boolProp>
+                      <boolProp name="INVERT">false</boolProp>
+                      <boolProp name="ISREGEX">false</boolProp>
+                    </JSONPathAssertion>
                     <hashTree/>
                   </hashTree>
                 </hashTree>
