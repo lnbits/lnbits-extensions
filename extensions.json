@@ -2026,7 +2026,20 @@
             "icon": "https://raw.githubusercontent.com/lnbits/lnpos_extension/main/static/image/lnpos.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/lnpos_extension/main/config.json",
             "archive": "https://github.com/lnbits/lnpos_extension/archive/refs/tags/v1.1.2.zip",
-            "hash": "863eaa31ad15d46a22bcaa06af7e7d147532610d28ba64ccdc0797b585dd89cb"
+            "hash": "863eaa31ad15d46a22bcaa06af7e7d147532610d28ba64ccdc0797b585dd89cb",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "lnpos",
+            "repo": "https://github.com/lnbits/lnpos_extension",
+            "name": "LNPoS",
+            "version": "1.2.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "LNPoS lightning point of sale",
+            "icon": "https://raw.githubusercontent.com/lnbits/lnpos_extension/main/static/image/lnpos.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/lnpos_extension/main/config.json",
+            "archive": "https://github.com/lnbits/lnpos_extension/archive/refs/tags/v1.2.0.zip",
+            "hash": "ff4c325ca30d0d263bba063269982a47e4407f7d2639b2a99b8b95089a73a09b"
         },
         {
             "id": "bitcoinswitch",
