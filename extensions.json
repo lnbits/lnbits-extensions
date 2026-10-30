@@ -2064,7 +2064,20 @@
             "icon": "https://raw.githubusercontent.com/lnbits/bitcoinswitch_extension/main/static/image/icon.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/bitcoinswitch_extension/main/config.json",
             "archive": "https://github.com/lnbits/bitcoinswitch_extension/archive/refs/tags/v1.2.1.zip",
-            "hash": "874d297a72757e29c7fe543bf76cd22f7b693e16b254de18f624b3386e5f721a"
+            "hash": "874d297a72757e29c7fe543bf76cd22f7b693e16b254de18f624b3386e5f721a",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "bitcoinswitch",
+            "repo": "https://github.com/lnbits/bitcoinswitch_extension",
+            "name": "Bitcoin Switch",
+            "version": "1.3.0",
+            "min_lnbits_version": "1.7.0-rc1",
+            "short_description": "Turn things on with bitcoin",
+            "icon": "https://raw.githubusercontent.com/lnbits/bitcoinswitch_extension/main/static/image/icon.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/bitcoinswitch_extension/main/config.json",
+            "archive": "https://github.com/lnbits/bitcoinswitch_extension/archive/refs/tags/v1.3.0.zip",
+            "hash": "86da2a83371a0f72da07638b54292c9d0e7a7f605a919bd42f337f3021811fde"
         },
         {
             "id": "eightball",
