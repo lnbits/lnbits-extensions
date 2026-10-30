@@ -2243,6 +2243,19 @@
             "name": "Scrum",
             "short_description": "Scrum with paid tasks",
             "icon": "https://raw.githubusercontent.com/lnbits/scrum/main/static/image/scrum.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/scrum/main/config.json",
+            "max_lnbits_version": "1.7.0-rc1"
+        },
+        {
+            "id": "scrum",
+            "repo": "https://github.com/lnbits/scrum",
+            "version": "0.3.0",
+            "archive": "https://github.com/lnbits/scrum/archive/refs/tags/v0.3.0.zip",
+            "hash": "66cde57b9764a9e8156542c61571449a23d9b74f7e0de402491a4cef05954fcc",
+            "min_lnbits_version": "1.7.0-rc1",
+            "name": "Scrum",
+            "short_description": "Scrum with paid tasks",
+            "icon": "https://raw.githubusercontent.com/lnbits/scrum/main/static/image/scrum.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/scrum/main/config.json"
         },
         {
