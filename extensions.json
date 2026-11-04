@@ -2841,9 +2841,9 @@
         {
             "id": "tunnel_me_out",
             "repo": "https://github.com/lnbits/tunnel_me_out",
-            "version": "0.1.0",
-            "archive": "https://github.com/lnbits/tunnel_me_out/archive/refs/tags/v0.1.0.zip",
-            "hash": "434c8b5c11e8df150dbf1c5535e218b493f130ceeac502cbc4f32ee3ca544b94",
+            "version": "0.1.1",
+            "archive": "https://github.com/lnbits/tunnel_me_out/archive/refs/tags/v0.1.1.zip",
+            "hash": "812baaf40ca39c136b1f70092a28fa6bda7d195f41834434d5a98e7e9c63b4f4",
             "min_lnbits_version": "1.7.0-rc1",
             "name": "TunnelMeOut",
             "short_description": "One-click tunnel out via lnpro.xyz",
