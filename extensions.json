@@ -29,6 +29,16 @@
     },
     "extensions": [
         {
+            "id": "nsec_oracle",
+            "repo": "https://github.com/lightning-goats/nsec_oracle",
+            "name": "Nsec Oracle",
+            "version": "1.0.0",
+            "short_description": "Server-side Nostr signing oracle for LNbits extensions (per-key permissions, rate limits, audit)",
+            "icon": "https://raw.githubusercontent.com/lightning-goats/nsec_oracle/main/static/image/nsec_oracle.png",
+            "archive": "https://github.com/lightning-goats/nsec_oracle/archive/refs/tags/v1.0.0.zip",
+            "hash": "832cff09e963d3f38b2149a1f3bc058b9ba36be9b02c95866c52ff2c2815c818"
+        },
+        {
             "id": "copilot",
             "repo": "https://github.com/lnbits/copilot",
             "name": "Streamer Copilot",
