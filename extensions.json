@@ -1719,7 +1719,20 @@
             "icon": "https://github.com/lnbits/paywall/raw/main/static/image/paywall.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/paywall/main/config.json",
             "archive": "https://github.com/lnbits/paywall/archive/refs/tags/v1.3.0.zip",
-            "hash": "5a53393847ae6bbff88fe1ed91c902dae908616c12fd3d445fc89629b24cbe2a"
+            "hash": "5a53393847ae6bbff88fe1ed91c902dae908616c12fd3d445fc89629b24cbe2a",
+            "max_lnbits_version": "1.7.0"
+        },
+        {
+            "id": "paywall",
+            "repo": "https://github.com/lnbits/paywall",
+            "name": "Paywall",
+            "version": "1.4.0",
+            "min_lnbits_version": "1.7.0",
+            "short_description": "Create paywalls for content",
+            "icon": "https://github.com/lnbits/paywall/raw/main/static/image/paywall.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/paywall/main/config.json",
+            "archive": "https://github.com/lnbits/paywall/archive/refs/tags/v1.4.0.zip",
+            "hash": "b3ff7a2d5d995eeea2e0d6862bfd2c864aa679d7ee3ab9c6d2425628cd6d9f7b"
         },
         {
             "id": "satspay",
