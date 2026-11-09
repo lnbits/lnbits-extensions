@@ -6,6 +6,7 @@ from os.path import basename
 from zipfile import ZipFile
 
 import requests
+from packaging.version import InvalidVersion, Version
 from PIL import Image
 
 EXTENSIONS_FILE = "extensions.json"
@@ -142,10 +143,22 @@ class Extension:
 
             min_lnbits_version = config.get("min_lnbits_version")
             print(f"- min_lnbits_version : {min_lnbits_version}")
-            if min_lnbits_version != self.min_lnbits_version:
+            try:
+                config_min = Version(min_lnbits_version) if min_lnbits_version else None
+                manifest_min = (
+                    Version(self.min_lnbits_version) if self.min_lnbits_version else None
+                )
+            except InvalidVersion as exc:
+                return False, f"invalid min_lnbits_version: {exc}"
+
+            # The manifest may tighten the extension's minimum version requirement.
+            if config_min is not None and (
+                manifest_min is None or manifest_min < config_min
+            ):
                 return (
                     False,
-                    f"min_lnbits_version mismatch: {min_lnbits_version} != {self.min_lnbits_version}",
+                    f"min_lnbits_version must be >= {min_lnbits_version}, "
+                    f"got {self.min_lnbits_version}",
                 )
 
             # check max_lnbits_version only if it's present in the config.json

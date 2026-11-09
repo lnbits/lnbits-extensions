@@ -23,7 +23,7 @@ jobs:
               with:
                   python-version: "3.10"
             - name: Install dependencies
-              run: pip install Pillow requests
+              run: pip install Pillow requests packaging
             - name: Run check.py
               run: python check.py
 
