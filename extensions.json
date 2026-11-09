@@ -2247,7 +2247,20 @@
             "icon": "https://raw.githubusercontent.com/lnbits/nostrrelay/main/static/image/nostrrelay.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/nostrrelay/main/config.json",
             "archive": "https://github.com/lnbits/nostrrelay/archive/refs/tags/v1.2.0.zip",
-            "hash": "c9392c087c040514fbab3ccc4732f6bf54598bcd906badb1ebf10aa3f6d184fe"
+            "hash": "c9392c087c040514fbab3ccc4732f6bf54598bcd906badb1ebf10aa3f6d184fe",
+            "max_lnbits_version": "1.7.0"
+        },
+        {
+            "id": "nostrrelay",
+            "repo": "https://github.com/lnbits/nostrrelay",
+            "name": "Nostr Relay",
+            "version": "1.2.1",
+            "min_lnbits_version": "1.7.0",
+            "short_description": "One click launch your own relay!",
+            "icon": "https://raw.githubusercontent.com/lnbits/nostrrelay/main/static/image/nostrrelay.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/nostrrelay/main/config.json",
+            "archive": "https://github.com/lnbits/nostrrelay/archive/refs/tags/v1.2.1.zip",
+            "hash": "ba118a279b800e78c802079d2a4495c14ad1d4d0ac7e43e688165e9fb13d18f8"
         },
         {
             "id": "nostrmarket",
