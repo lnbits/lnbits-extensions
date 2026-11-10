@@ -3271,6 +3271,19 @@
             "name": "Nostr Bunker",
             "short_description": "Run a NIP-46 bunker with per-client signing policies",
             "icon": "https://raw.githubusercontent.com/lnbits/nostr_bunker/main/static/image/nostr_bunker.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/nostr_bunker/main/config.json",
+            "max_lnbits_version": "1.7.0"
+        },
+        {
+            "id": "nostr_bunker",
+            "repo": "https://github.com/lnbits/nostr_bunker",
+            "version": "0.1.0",
+            "archive": "https://github.com/lnbits/nostr_bunker/archive/refs/tags/v0.1.0.zip",
+            "hash": "2f08d4f689c55055e957713f93168c739d4c111983eee3d43dc35825c744433a",
+            "min_lnbits_version": "1.7.0",
+            "name": "Nostr Bunker",
+            "short_description": "Run a NIP-46 bunker with per-client signing policies",
+            "icon": "https://raw.githubusercontent.com/lnbits/nostr_bunker/main/static/image/nostr_bunker.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/nostr_bunker/main/config.json"
         },
         {
