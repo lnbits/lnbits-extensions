@@ -1538,13 +1538,13 @@
             "id": "invoices",
             "repo": "https://github.com/lnbits/invoices",
             "name": "Invoices",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "min_lnbits_version": "1.7.0",
             "short_description": "Create invoices for your clients",
             "icon": "https://github.com/lnbits/invoices/raw/main/static/image/invoices.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/invoices/main/config.json",
-            "archive": "https://github.com/lnbits/invoices/archive/refs/tags/v1.2.0.zip",
-            "hash": "a947f6ab7d062f76e16b087491fabe971dc1203b968216bb7d3c88b3e6618f39"
+            "archive": "https://github.com/lnbits/invoices/archive/refs/tags/v1.2.1.zip",
+            "hash": "30847a2223b095bbb58cdfa98f58eb85921a1050e3a292c0bad9e98b8fdf84a3"
         },
         {
             "id": "withdraw",
