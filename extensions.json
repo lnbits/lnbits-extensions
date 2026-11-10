@@ -2971,7 +2971,7 @@
             "hash": "46192954860b1e9d2c29405868bd2026d3f2fa3ffc6e06012bf5f3f47c6dfd59",
             "min_lnbits_version": "1.7.0",
             "name": "Orders",
-            "short_description": "If enabled orders from tpos and webshop will be pulled.",
+            "short_description": "If enabled orders from tpos and webshop will be pulled",
             "icon": "https://raw.githubusercontent.com/lnbits/orders/main/static/image/orders.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/orders/main/config.json"
         },
