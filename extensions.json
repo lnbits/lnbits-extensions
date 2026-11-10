@@ -2904,6 +2904,20 @@
             "name": "Numberlottery",
             "short_description": "Block based numbers game",
             "icon": "https://raw.githubusercontent.com/lnbits/numberlottery/main/static/image/numbers.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/numberlottery/main/config.json",
+            "max_lnbits_version": "1.7.0"
+        },
+        {
+            "id": "numberlottery",
+            "paid_features": "2% of a games haircut will be pushed to the dev team to help support the extension",
+            "repo": "https://github.com/lnbits/numberlottery",
+            "version": "1.1.1",
+            "archive": "https://github.com/lnbits/numberlottery/archive/refs/tags/v1.1.1.zip",
+            "hash": "be267b0bcb36c73b5d16a4543f8a45cb3f5414a85da8b6b539225693187322a6",
+            "min_lnbits_version": "1.7.0",
+            "name": "Numberlottery",
+            "short_description": "Block based numbers game",
+            "icon": "https://raw.githubusercontent.com/lnbits/numberlottery/main/static/image/numbers.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/numberlottery/main/config.json"
         },
         {
