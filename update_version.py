@@ -29,18 +29,13 @@ ext_name = config.get("id") or basename(repo_name)
 with open("extensions.json", "r+") as ext_json:
     extensions = json.load(ext_json)
 
-# find lastest version of extension
-latest_extension = None
-latest_index = None
-for i, extension in enumerate(extensions["extensions"]):
-    if extension["id"] == ext_name:
-        latest_extension = extension
-        latest_index = i
-
-# if not found create a new extension
-if not latest_extension or not latest_index:
+# Preserve release-specific metadata, such as paid-extension links.
+previous = [e for e in extensions["extensions"] if e["id"] == ext_name]
+if previous:
+    new_ext = previous[-1].copy()
+else:
     raw_url = f"https://raw.githubusercontent.com/lnbits/{repo_name}/main"
-    icon = config.get("tile", None)
+    icon = config.get("tile")
     if icon:
         icon = raw_url + icon.replace(f"/{repo_name}", "", 1)
     else:
@@ -48,42 +43,40 @@ if not latest_extension or not latest_index:
     new_ext = {
         "id": ext_name,
         "repo": repo,
-        "version": version.replace("v", ""),
+        "icon": icon,
+        "details_link": f"{raw_url}/config.json",
+    }
+
+new_ext.update(
+    {
+        "version": version.removeprefix("v"),
         "archive": archive,
         "hash": archive_hash,
         "min_lnbits_version": config.get("min_lnbits_version"),
         "name": config.get("name"),
         "short_description": config.get("short_description"),
-        "icon": icon,
-        "details_link": f"{raw_url}/config.json",
     }
-    extensions["extensions"].append(new_ext)
-# check if min_lnbits_version is different
-elif latest_extension["min_lnbits_version"] != config.get("min_lnbits_version"):
-    new_ext = latest_extension.copy()
-    new_ext["version"] = version.replace("v", "")
-    new_ext["archive"] = archive
-    new_ext["hash"] = archive_hash
-    new_ext["min_lnbits_version"] = config.get("min_lnbits_version")
-    new_ext["name"] = config.get("name")
-    new_ext["short_description"] = config.get("short_description")
-    # remove max version from latest release
-    new_ext.pop("max_lnbits_version", None)
-    # include the new extension in the list at the proper index
-    _extensions = extensions["extensions"][:]
-    _extensions.insert(latest_index+1, new_ext)
-    extensions["extensions"] = _extensions
-    # update the max version of the previous release
-    # max version is the min_lnbits_version of the current release
-    extensions["extensions"][latest_index]["max_lnbits_version"] = config.get("min_lnbits_version")
+)
+# Use the submitted release's bounds, never an older entry's compatibility cap.
+if config.get("max_lnbits_version"):
+    new_ext["max_lnbits_version"] = config["max_lnbits_version"]
 else:
-    # else its not a breaking change, just update the version and archive
-    extensions["extensions"][latest_index]["version"] = version.replace("v", "")
-    extensions["extensions"][latest_index]["archive"] = archive
-    extensions["extensions"][latest_index]["hash"] = archive_hash
-    # update the config.json into the next release
-    extensions["extensions"][latest_index]["name"] = config.get("name")
-    extensions["extensions"][latest_index]["short_description"] = config.get("short_description")
+    new_ext.pop("max_lnbits_version", None)
+
+# Replace all older entries for this extension at its original position.
+# Other extensions and manifest sections remain unchanged.
+entries = []
+inserted = False
+for extension in extensions["extensions"]:
+    if extension["id"] == ext_name:
+        if not inserted:
+            entries.append(new_ext)
+            inserted = True
+    else:
+        entries.append(extension)
+if not inserted:
+    entries.append(new_ext)
+extensions["extensions"] = entries
 
 # update the extension.json file
 with open("extensions.json", "w") as ext_json:

@@ -178,7 +178,12 @@ get LNbits env variables for all extensions
 sh util.sh env
 ```
 
-update a extension in extensions.json with id and version
+Update an extension in extensions.json with its id and version. This replaces
+all previous manifest entries for that extension with the submitted release,
+including entries for older LNbits versions. Other extensions are unchanged.
+The submitted release's minimum and maximum LNbits versions come from its
+`config.json`; older LNbits installations must upgrade if incompatible.
+Historical entries remain available in Git history.
 
 ```sh
 sh util.sh update_extension example v0.4.2
