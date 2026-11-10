@@ -2093,13 +2093,13 @@
             "id": "watchonly",
             "repo": "https://github.com/lnbits/watchonly",
             "name": "Onchain Wallet",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "min_lnbits_version": "1.7.0",
             "short_description": "Onchain watch only wallets",
             "icon": "https://github.com/lnbits/watchonly/raw/main/static/bitcoin-wallet.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/watchonly/main/config.json",
-            "archive": "https://github.com/lnbits/watchonly/archive/refs/tags/v1.2.0.zip",
-            "hash": "a9b6ba3caae7b1a3cf1232d16a7b54b83619245f7f81d0131a1f82516da27a7b"
+            "archive": "https://github.com/lnbits/watchonly/archive/refs/tags/v1.2.1.zip",
+            "hash": "94d9f340f9378b274f5e5fbfdb49e601355f0697ed15cdd826cc105b355f4b8a"
         },
         {
             "id": "nostrclient",
