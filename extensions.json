@@ -647,13 +647,13 @@
             "id": "events",
             "repo": "https://github.com/lnbits/events",
             "name": "Events",
-            "version": "1.7.0",
+            "version": "1.7.1",
             "min_lnbits_version": "1.7.0",
             "short_description": "Sell and register event tickets",
             "icon": "https://raw.githubusercontent.com/lnbits/events/main/static/image/events.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/events/main/config.json",
-            "archive": "https://github.com/lnbits/events/archive/refs/tags/v1.7.0.zip",
-            "hash": "a24ef57bd4e7b500784fdd501f3510a6124048ac0636302084aeeaf60bbf6019"
+            "archive": "https://github.com/lnbits/events/archive/refs/tags/v1.7.1.zip",
+            "hash": "3107c0743ed0a7734cc7e52e5a11d4e920886ff2fdeca66d29852c4a875e759b"
         },
         {
             "id": "lnurldevice",
@@ -744,13 +744,13 @@
             "id": "smtp",
             "repo": "https://github.com/lnbits/smtp",
             "name": "SMTP",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "min_lnbits_version": "1.7.0",
             "short_description": "Charge sats for sending emails",
             "icon": "https://github.com/lnbits/smtp/raw/main/static/smtp-bitcoin-email.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/smtp/main/config.json",
-            "archive": "https://github.com/lnbits/smtp/archive/refs/tags/v1.1.0.zip",
-            "hash": "699f829ef47c23dd44e5bab741165edb7c4ead2b62b83b5e7d2679d878881090"
+            "archive": "https://github.com/lnbits/smtp/archive/refs/tags/v1.1.1.zip",
+            "hash": "ad2eb6b73455ae11d59fd7a70e6ae743749c9c0360db6f60c8919496b02882e2"
         },
         {
             "id": "discordbot",
@@ -832,13 +832,13 @@
             "id": "boltcards",
             "repo": "https://github.com/lnbits/boltcards",
             "name": "Bolt Cards",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "min_lnbits_version": "1.7.0",
             "short_description": "Self custody Bolt Cards with one time LNURLw",
             "icon": "https://github.com/lnbits/boltcards/raw/main/static/image/boltcard.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/boltcards/main/config.json",
-            "archive": "https://github.com/lnbits/boltcards/archive/refs/tags/v1.2.0.zip",
-            "hash": "6cb1f2571eaf004ee2ca50c8be6721599c888676502b2b3c14a73a24a442f3ee",
+            "archive": "https://github.com/lnbits/boltcards/archive/refs/tags/v1.2.1.zip",
+            "hash": "69b2248118c59fdaead23cc081543e6ee13efcc7926164106f772897f6769e31",
             "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/hZdoFXQQF6wFSNfGeS4deM"
         },
         {
@@ -894,13 +894,13 @@
             "id": "nostrnip5",
             "repo": "https://github.com/lnbits/nostrnip5",
             "name": "Nostr NIP-5",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "min_lnbits_version": "1.7.0",
             "short_description": "Verify addresses for Nostr NIP-5",
             "icon": "https://github.com/lnbits/nostrnip5/raw/main/static/image/nostrnip5.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/nostrnip5/main/config.json",
-            "archive": "https://github.com/lnbits/nostrnip5/archive/refs/tags/v1.2.0.zip",
-            "hash": "ebe90fb7516e139d25286cb9027fbc0b0914781ac2c908e37a0e0e800779a2e8"
+            "archive": "https://github.com/lnbits/nostrnip5/archive/refs/tags/v1.2.1.zip",
+            "hash": "bdf034380043cd431104c854b4b7ab48de77725fa00f791db41f5b3d5f1fa36d"
         },
         {
             "id": "splitpayments",
@@ -968,13 +968,13 @@
             "id": "splitpayments",
             "repo": "https://github.com/lnbits/splitpayments",
             "name": "Split Payments",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "min_lnbits_version": "1.7.0",
             "short_description": "Split incoming payments across wallets",
             "icon": "https://github.com/lnbits/splitpayments/raw/main/static/image/split-payments.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/splitpayments/main/config.json",
-            "archive": "https://github.com/lnbits/splitpayments/archive/refs/tags/v1.2.0.zip",
-            "hash": "ae418949077fe6c019951f45c24c5a8aeda840b6b095aeb5ee74392d459c2d4e"
+            "archive": "https://github.com/lnbits/splitpayments/archive/refs/tags/v1.2.1.zip",
+            "hash": "a09a67b3c31109c87088e23dd21a66a174f1f9c0858af91847f3077d69f25de0"
         },
         {
             "id": "boltz",
@@ -1054,13 +1054,13 @@
             "id": "boltz",
             "repo": "https://github.com/lnbits/boltz",
             "name": "Boltz",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "min_lnbits_version": "1.7.0",
             "short_description": "Perform onchain/offchain swaps with Liquid support",
             "icon": "https://github.com/lnbits/boltz/raw/main/static/image/boltz.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/boltz/main/config.json",
-            "archive": "https://github.com/lnbits/boltz/archive/refs/tags/v1.2.0.zip",
-            "hash": "02f84dbb5c317eb7c0fc5df804c9716ed65b4e255b0cb4d6e101c276183596ac"
+            "archive": "https://github.com/lnbits/boltz/archive/refs/tags/v1.2.1.zip",
+            "hash": "49e12f90a3dd55676e2d1505c99b92db1586f1656a1fbffd90fa2326f2a4af1f"
         },
         {
             "id": "satsdice",
@@ -1118,13 +1118,13 @@
             "id": "satsdice",
             "repo": "https://github.com/lnbits/satsdice",
             "name": "Sats Dice",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "min_lnbits_version": "1.7.0",
             "short_description": "LNURL Satoshi dice",
             "icon": "https://github.com/lnbits/satsdice/raw/main/static/image/satsdice.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/satsdice/main/config.json",
-            "archive": "https://github.com/lnbits/satsdice/archive/refs/tags/v1.2.0.zip",
-            "hash": "7755137306482dc047023fe9fed7066e6b3e056f553f6d2edb9158ef3bd267ae",
+            "archive": "https://github.com/lnbits/satsdice/archive/refs/tags/v1.2.1.zip",
+            "hash": "5c1743896ea8dad9844882b5e44f6d2f09c392ec68688ce5cc9d07b67f17dd60",
             "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/T2oyoenGmHLasaBhLmA2Sz"
         },
         {
@@ -1835,12 +1835,12 @@
             "id": "bleskomat",
             "repo": "https://github.com/lnbits/bleskomat",
             "name": "Bleskomat",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "min_lnbits_version": "1.7.0",
             "short_description": "Connect a Bleskomat ATM to an lnbits",
             "icon": "https://github.com/lnbits/bleskomat/raw/main/static/image/bleskomat.png",
-            "archive": "https://github.com/lnbits/bleskomat/archive/refs/tags/v1.1.0.zip",
-            "hash": "cdc6c2448a4c72f4a7221490d9303203996c53d1b75d90711f3db20d8c45a7a9",
+            "archive": "https://github.com/lnbits/bleskomat/archive/refs/tags/v1.1.1.zip",
+            "hash": "715c303f1b9b40863ffa156d5d1797f01664678c0003705414f05fe8b6d6ebd1",
             "details_link": "https://raw.githubusercontent.com/lnbits/bleskomat/main/config.json"
         },
         {
@@ -1957,12 +1957,12 @@
             "id": "lndhub",
             "repo": "https://github.com/lnbits/lndhub",
             "name": "LndHub",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "min_lnbits_version": "1.7.0",
             "short_description": "Access LNbits from BlueWallet or Zeus",
             "icon": "https://github.com/lnbits/lndhub/raw/main/static/image/lndhub.png",
-            "archive": "https://github.com/lnbits/lndhub/archive/refs/tags/v1.1.0.zip",
-            "hash": "e89650364484f8a262552e9543c71ae87ef5a5e39ff02dbe59f9e885f1cc96d8",
+            "archive": "https://github.com/lnbits/lndhub/archive/refs/tags/v1.1.1.zip",
+            "hash": "a1254b129a3260fbc7ad22bfd511728977e51cd1d8885e013d1e40cf4ca28dda",
             "details_link": "https://raw.githubusercontent.com/lnbits/lndhub/main/config.json"
         },
         {
@@ -2327,13 +2327,13 @@
             "id": "nostrmarket",
             "repo": "https://github.com/lnbits/nostrmarket",
             "name": "Nostr Market",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "min_lnbits_version": "1.7.0",
             "short_description": "Nostr Webshop/market on LNbits",
             "icon": "https://raw.githubusercontent.com/lnbits/nostrmarket/main/static/images/bitcoin-shop.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/nostrmarket/main/config.json",
-            "archive": "https://github.com/lnbits/nostrmarket/archive/refs/tags/v1.2.0.zip",
-            "hash": "bfcb7d16f75473ff7d72517e8b4228c33fa92c611009e62130946a37b126a6b8"
+            "archive": "https://github.com/lnbits/nostrmarket/archive/refs/tags/v1.2.1.zip",
+            "hash": "0e7babef808bb8f054d0aff6a58fe0d86831d9f32a1e7091925e4c074a94aa66"
         },
         {
             "id": "lncalendar",
@@ -2543,9 +2543,9 @@
         {
             "id": "eightball",
             "repo": "https://github.com/lnbits/eightball",
-            "version": "1.2.0",
-            "archive": "https://github.com/lnbits/eightball/archive/refs/tags/v1.2.0.zip",
-            "hash": "114258b6750448b193116e28b694e476a6aa0b6725fbd00c06e0dcfb2abbd407",
+            "version": "1.2.1",
+            "archive": "https://github.com/lnbits/eightball/archive/refs/tags/v1.2.1.zip",
+            "hash": "fb62f167f01a61ae446b60ccc0f856ecc89a9082cdb7c441fb23dd191efdf641",
             "min_lnbits_version": "1.7.0",
             "name": "Magic 8ball",
             "short_description": "MadBitcoin's Magic Eightball",
@@ -2941,9 +2941,9 @@
         {
             "id": "shipping",
             "repo": "https://github.com/lnbits/shipping",
-            "version": "0.2.0",
-            "archive": "https://github.com/lnbits/shipping/archive/refs/tags/v0.2.0.zip",
-            "hash": "fcf914ba354a8a61af321715dddcc83d77e11b9fcab79f676f0be770f94549cf",
+            "version": "0.2.1",
+            "archive": "https://github.com/lnbits/shipping/archive/refs/tags/v0.2.1.zip",
+            "hash": "e901fd2afa7de69963398d4f87330be18ef21ffa61cfb2bb7ca820e9db02aa87",
             "min_lnbits_version": "1.7.0",
             "name": "Shipping",
             "short_description": "Shared shipping extension",
@@ -2991,9 +2991,9 @@
         {
             "id": "chat",
             "repo": "https://github.com/lnbits/chat",
-            "version": "0.2.0",
-            "archive": "https://github.com/lnbits/chat/archive/refs/tags/v0.2.0.zip",
-            "hash": "54640032b3461b74daffe38ce9e7231aeaf1976aedb554ceaf5aee6ba3451107",
+            "version": "0.2.1",
+            "archive": "https://github.com/lnbits/chat/archive/refs/tags/v0.2.1.zip",
+            "hash": "07ababcc4a325ba89b4194157a3303c4b95544452ee6eef535de0ef98ac96fae",
             "min_lnbits_version": "1.7.0",
             "name": "Chat",
             "short_description": "Paid chat and support",
@@ -3078,9 +3078,9 @@
         {
             "id": "blackjack",
             "repo": "https://github.com/lnbits/blackjack",
-            "version": "0.2.0",
-            "archive": "https://github.com/lnbits/blackjack/archive/refs/tags/v0.2.0.zip",
-            "hash": "7dea541ef0f3008a28079baf2224216de0e7adc26949191e616972ec93e677f6",
+            "version": "0.2.1",
+            "archive": "https://github.com/lnbits/blackjack/archive/refs/tags/v0.2.1.zip",
+            "hash": "b68bb279a5e0ef730fefec6159176705dbc97df307ed10c90e34c34faff9b87e",
             "min_lnbits_version": "1.7.0",
             "name": "BlackJack",
             "short_description": "A BlackJack Dealer",
