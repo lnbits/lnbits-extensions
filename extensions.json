@@ -1835,12 +1835,12 @@
             "id": "bleskomat",
             "repo": "https://github.com/lnbits/bleskomat",
             "name": "Bleskomat",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "min_lnbits_version": "1.7.0",
             "short_description": "Connect a Bleskomat ATM to an lnbits",
             "icon": "https://github.com/lnbits/bleskomat/raw/main/static/image/bleskomat.png",
-            "archive": "https://github.com/lnbits/bleskomat/archive/refs/tags/v1.1.0.zip",
-            "hash": "cdc6c2448a4c72f4a7221490d9303203996c53d1b75d90711f3db20d8c45a7a9",
+            "archive": "https://github.com/lnbits/bleskomat/archive/refs/tags/v1.1.1.zip",
+            "hash": "715c303f1b9b40863ffa156d5d1797f01664678c0003705414f05fe8b6d6ebd1",
             "details_link": "https://raw.githubusercontent.com/lnbits/bleskomat/main/config.json"
         },
         {
