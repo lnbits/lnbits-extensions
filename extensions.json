@@ -1478,12 +1478,12 @@
             "repo": "https://github.com/lnbits/lnurlp",
             "name": "Pay Links",
             "version": "1.5.2",
-            "min_lnbits_version": "1.7.0-rc2",
+            "min_lnbits_version": "1.7.0",
             "short_description": "Make static reusable LNURL pay links or lightning addresses",
             "icon": "https://github.com/lnbits/lnurlp/raw/main/static/image/lnurl-pay.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/lnurlp/main/config.json",
             "archive": "https://github.com/lnbits/lnurlp/archive/refs/tags/v1.5.2.zip",
-            "hash": "b36448e9908e41fac9d7a62fb5f5980de2f86708350935167cf8a778994e38fc"
+            "hash": "82685f813cf93c3def1b7eb8a1d21bc204312f4430aaefa479fd7aabbaf3d832"
         },
         {
             "id": "invoices",

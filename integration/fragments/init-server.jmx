@@ -369,7 +369,7 @@
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
     &quot;lnbits_allow_new_accounts&quot;: true,&#xd;
-    &quot;lnbits_callback_url_rules&quot;: [],&#xd;
+    &quot;lnbits_callback_url_rules&quot;: [&quot;http://localhost:${__property(mirrorPort,,8500)}&quot;, &quot;${scheme}://${host}:${__property(mirrorPort,,8500)}&quot;, &quot;.*&quot;],&#xd;
     &quot;lnbits_lnurl_allow_private_ips&quot;: true,&#xd;
     &quot;lnbits_callback_allow_private_ips&quot;: true&#xd;
 }</stringProp>
