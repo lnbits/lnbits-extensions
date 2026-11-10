@@ -2714,9 +2714,9 @@
         {
             "id": "paidreviews",
             "repo": "https://github.com/lnbits/paidreviews",
-            "version": "0.3.0",
-            "archive": "https://github.com/lnbits/paidreviews/archive/refs/tags/v0.3.0.zip",
-            "hash": "40f2963bfc2b16ee78e2cf50992e896f41982873a3c9ef2e607918d6792b2ec1",
+            "version": "0.3.1",
+            "archive": "https://github.com/lnbits/paidreviews/archive/refs/tags/v0.3.1.zip",
+            "hash": "8b1c645f3eb9446d39c7d2dbb9fad659b54c4993c98413d6b2cdf71ee567129c",
             "min_lnbits_version": "1.7.0",
             "name": "PaidReviews",
             "short_description": "Pay to leave reviews based on tags",
