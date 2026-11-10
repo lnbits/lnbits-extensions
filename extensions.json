@@ -2453,13 +2453,13 @@
             "id": "lnpos",
             "repo": "https://github.com/lnbits/lnpos_extension",
             "name": "LNPoS",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "min_lnbits_version": "1.7.0",
             "short_description": "LNPoS lightning point of sale",
             "icon": "https://raw.githubusercontent.com/lnbits/lnpos_extension/main/static/image/lnpos.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/lnpos_extension/main/config.json",
-            "archive": "https://github.com/lnbits/lnpos_extension/archive/refs/tags/v1.2.0.zip",
-            "hash": "ff4c325ca30d0d263bba063269982a47e4407f7d2639b2a99b8b95089a73a09b"
+            "archive": "https://github.com/lnbits/lnpos_extension/archive/refs/tags/v1.2.1.zip",
+            "hash": "407950e93ef3fb36b533b88bb792ed5b36a8cd72ed7f09083331b347680bc151"
         },
         {
             "id": "bitcoinswitch",
