@@ -3060,6 +3060,19 @@
             "name": "WebPages",
             "short_description": "Admin-only HTML/CSS/JS pages served from static/pages",
             "icon": "https://raw.githubusercontent.com/lnbits/webpages/main/static/image/webpages.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/webpages/main/config.json",
+            "max_lnbits_version": "1.7.0"
+        },
+        {
+            "id": "webpages",
+            "repo": "https://github.com/lnbits/webpages",
+            "version": "0.1.1",
+            "archive": "https://github.com/lnbits/webpages/archive/refs/tags/v0.1.1.zip",
+            "hash": "4056f1d5dbc71cdbd07bc93d5e762fa5b9b56ee0bea9277cb8676a438234a1d3",
+            "min_lnbits_version": "1.7.0",
+            "name": "WebPages",
+            "short_description": "Admin-only HTML/CSS/JS pages served from static/pages",
+            "icon": "https://raw.githubusercontent.com/lnbits/webpages/main/static/image/webpages.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/webpages/main/config.json"
         },
         {
