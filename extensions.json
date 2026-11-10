@@ -3016,9 +3016,9 @@
         {
             "id": "dashboard",
             "repo": "https://github.com/lnbits/dashboard",
-            "version": "0.1.0",
-            "archive": "https://github.com/lnbits/dashboard/archive/refs/tags/v0.1.0.zip",
-            "hash": "7733a5d805f508d659da175db2bfcf5df843c0c8b32ec24ca00a6c82d1d8c02d",
+            "version": "0.1.1",
+            "archive": "https://github.com/lnbits/dashboard/archive/refs/tags/v0.1.1.zip",
+            "hash": "503fc75dedb376a6986ad628f3f4a1e6a1ebe179d23b745756cdaf51c8223767",
             "min_lnbits_version": "1.7.0",
             "name": "Dashboard",
             "short_description": "Simple dashboard for public links",
