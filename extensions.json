@@ -2966,9 +2966,9 @@
         {
             "id": "orders",
             "repo": "https://github.com/lnbits/orders",
-            "version": "0.2.0",
-            "archive": "https://github.com/lnbits/orders/archive/refs/tags/v0.2.0.zip",
-            "hash": "48ea3025951928f946e89710eca071ca4a744ed561fe45342415dbca4363c187",
+            "version": "0.2.1",
+            "archive": "https://github.com/lnbits/orders/archive/refs/tags/v0.2.1.zip",
+            "hash": "46192954860b1e9d2c29405868bd2026d3f2fa3ffc6e06012bf5f3f47c6dfd59",
             "min_lnbits_version": "1.7.0",
             "name": "Orders",
             "short_description": "If enabled orders from tpos and webshop will be pulled",
