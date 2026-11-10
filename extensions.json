@@ -3078,9 +3078,9 @@
         {
             "id": "blackjack",
             "repo": "https://github.com/lnbits/blackjack",
-            "version": "0.2.0",
-            "archive": "https://github.com/lnbits/blackjack/archive/refs/tags/v0.2.0.zip",
-            "hash": "7dea541ef0f3008a28079baf2224216de0e7adc26949191e616972ec93e677f6",
+            "version": "0.2.1",
+            "archive": "https://github.com/lnbits/blackjack/archive/refs/tags/v0.2.1.zip",
+            "hash": "b68bb279a5e0ef730fefec6159176705dbc97df307ed10c90e34c34faff9b87e",
             "min_lnbits_version": "1.7.0",
             "name": "BlackJack",
             "short_description": "A BlackJack Dealer",
