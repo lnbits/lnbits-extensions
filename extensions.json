@@ -2543,9 +2543,9 @@
         {
             "id": "eightball",
             "repo": "https://github.com/lnbits/eightball",
-            "version": "1.2.0",
-            "archive": "https://github.com/lnbits/eightball/archive/refs/tags/v1.2.0.zip",
-            "hash": "114258b6750448b193116e28b694e476a6aa0b6725fbd00c06e0dcfb2abbd407",
+            "version": "1.2.1",
+            "archive": "https://github.com/lnbits/eightball/archive/refs/tags/v1.2.1.zip",
+            "hash": "fb62f167f01a61ae446b60ccc0f856ecc89a9082cdb7c441fb23dd191efdf641",
             "min_lnbits_version": "1.7.0",
             "name": "Magic 8ball",
             "short_description": "MadBitcoin's Magic Eightball",
