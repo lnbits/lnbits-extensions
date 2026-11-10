@@ -1248,13 +1248,13 @@
             "id": "offlineshop",
             "repo": "https://github.com/lnbits/offlineshop",
             "name": "OfflineShop",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "min_lnbits_version": "1.7.0-rc1",
             "short_description": "Receive payments for products offline!",
             "icon": "https://github.com/lnbits/offlineshop/raw/main/static/image/offlineshop.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/offlineshop/main/config.json",
-            "archive": "https://github.com/lnbits/offlineshop/archive/refs/tags/v1.2.0.zip",
-            "hash": "d294ddf6b4a77dee050be1dad17f574c40d945d5c6a670ea4afdfc95cf3c6233"
+            "archive": "https://github.com/lnbits/offlineshop/archive/refs/tags/v1.2.1.zip",
+            "hash": "788e6d9314486ac585cee52e3cdf355b3c2f4e320a7b40d4a10012272af9ee12"
         },
         {
             "id": "subdomains",
