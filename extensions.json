@@ -2167,12 +2167,12 @@
             "id": "nostrclient",
             "repo": "https://github.com/lnbits/nostrclient",
             "name": "Nostr Client",
-            "version": "1.3.0",
+            "version": "1.3.1",
             "min_lnbits_version": "1.7.0",
             "short_description": "Nostr relay multiplexer",
             "icon": "https://raw.githubusercontent.com/lnbits/nostrclient/main/static/images/nostr-bitcoin.png",
-            "archive": "https://github.com/lnbits/nostrclient/archive/refs/tags/v1.3.0.zip",
-            "hash": "21fe91d6b9d454902f316d2bce30d60b8437b7177d25bc8a8adcae1348aef8e1",
+            "archive": "https://github.com/lnbits/nostrclient/archive/refs/tags/v1.3.1.zip",
+            "hash": "2a9416533707415efba49d4fee1a2038cc4615fabc6abaf6371f8d704ab7e2f2",
             "details_link": "https://raw.githubusercontent.com/lnbits/nostrclient/main/config.json"
         },
         {
