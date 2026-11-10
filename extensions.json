@@ -744,13 +744,13 @@
             "id": "smtp",
             "repo": "https://github.com/lnbits/smtp",
             "name": "SMTP",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "min_lnbits_version": "1.7.0",
             "short_description": "Charge sats for sending emails",
             "icon": "https://github.com/lnbits/smtp/raw/main/static/smtp-bitcoin-email.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/smtp/main/config.json",
-            "archive": "https://github.com/lnbits/smtp/archive/refs/tags/v1.1.0.zip",
-            "hash": "699f829ef47c23dd44e5bab741165edb7c4ead2b62b83b5e7d2679d878881090"
+            "archive": "https://github.com/lnbits/smtp/archive/refs/tags/v1.1.1.zip",
+            "hash": "ad2eb6b73455ae11d59fd7a70e6ae743749c9c0360db6f60c8919496b02882e2"
         },
         {
             "id": "discordbot",
