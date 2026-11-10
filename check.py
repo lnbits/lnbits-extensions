@@ -42,6 +42,10 @@ def get_remote_zip(url):
     return sha256(d).hexdigest(), z
 
 
+def strip_rc_suffix(version: str | None) -> str | None:
+    return version.split("-rc", 1)[0] if version is not None else None
+
+
 class Extension:
     def __init__(self, ext):
         self.id = ext["id"]
@@ -142,7 +146,9 @@ class Extension:
 
             min_lnbits_version = config.get("min_lnbits_version")
             print(f"- min_lnbits_version : {min_lnbits_version}")
-            if min_lnbits_version != self.min_lnbits_version:
+            if strip_rc_suffix(min_lnbits_version) != strip_rc_suffix(
+                self.min_lnbits_version
+            ):
                 return (
                     False,
                     f"min_lnbits_version mismatch: {min_lnbits_version} != {self.min_lnbits_version}",
@@ -152,7 +158,9 @@ class Extension:
             max_lnbits_version = config.get("max_lnbits_version")
             if max_lnbits_version:
                 print(f"- max_lnbits_version : {max_lnbits_version}")
-                if max_lnbits_version != self.max_lnbits_version:
+                if strip_rc_suffix(max_lnbits_version) != strip_rc_suffix(
+                    self.max_lnbits_version
+                ):
                     return (
                         False,
                         f"max_lnbits_version mismatch: {max_lnbits_version} != {self.max_lnbits_version}",

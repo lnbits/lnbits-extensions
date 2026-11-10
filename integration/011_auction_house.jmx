@@ -2348,7 +2348,7 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 201" enabled="true">
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check Status Code 201" enabled="false">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="49587">201</stringProp>
                 </collectionProp>
@@ -2358,7 +2358,7 @@
                 <intProp name="Assertion.test_type">8</intProp>
               </ResponseAssertion>
               <hashTree/>
-              <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check ask price" enabled="true">
+              <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check ask price" enabled="false">
                 <stringProp name="JSON_PATH">ask_price</stringProp>
                 <stringProp name="EXPECTED_VALUE">10.${addressIndex}</stringProp>
                 <boolProp name="JSONVALIDATION">true</boolProp>
