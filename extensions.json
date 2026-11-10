@@ -1118,13 +1118,13 @@
             "id": "satsdice",
             "repo": "https://github.com/lnbits/satsdice",
             "name": "Sats Dice",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "min_lnbits_version": "1.7.0",
             "short_description": "LNURL Satoshi dice",
             "icon": "https://github.com/lnbits/satsdice/raw/main/static/image/satsdice.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/satsdice/main/config.json",
-            "archive": "https://github.com/lnbits/satsdice/archive/refs/tags/v1.2.0.zip",
-            "hash": "7755137306482dc047023fe9fed7066e6b3e056f553f6d2edb9158ef3bd267ae",
+            "archive": "https://github.com/lnbits/satsdice/archive/refs/tags/v1.2.1.zip",
+            "hash": "5c1743896ea8dad9844882b5e44f6d2f09c392ec68688ce5cc9d07b67f17dd60",
             "pay_link": "https://v1.lnbits.com/paywall/api/v1/paywalls/invoice/T2oyoenGmHLasaBhLmA2Sz"
         },
         {
