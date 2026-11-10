@@ -498,12 +498,24 @@
             "name": "User Manager",
             "version": "0.4.1",
             "min_lnbits_version": "0.11.0",
-            "max_lnbits_version": "1.0.0",
+            "max_lnbits_version": "1.7.0",
             "short_description": "Generate users and wallets",
             "icon": "https://raw.githubusercontent.com/lnbits/usermanager/main/static/image/usermanager.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/usermanager/main/config.json",
             "archive": "https://github.com/lnbits/usermanager/archive/refs/tags/v0.4.1.zip",
             "hash": "b27384070ef0d9d579f7ba60dca502c72211fab4f67b2354b75fa0c56d5a7631"
+        },
+        {
+            "id": "usermanager",
+            "repo": "https://github.com/lnbits/usermanager",
+            "name": "Usermanger",
+            "version": "1.0.1",
+            "min_lnbits_version": "1.7.0",
+            "short_description": "Users managing users/wallets",
+            "icon": "https://raw.githubusercontent.com/lnbits/usermanager/main/static/image/usermanager.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/usermanager/main/config.json",
+            "archive": "https://github.com/lnbits/usermanager/archive/refs/tags/v1.0.1.zip",
+            "hash": "484e697e21f7cc400c515698369f5f27e4e1f45c83d28216a4f385f2444ddf8a"
         },
         {
             "id": "example",
