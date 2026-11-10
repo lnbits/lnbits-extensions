@@ -2866,9 +2866,9 @@
         {
             "id": "inventory",
             "repo": "https://github.com/lnbits/inventory",
-            "version": "0.4.0",
-            "archive": "https://github.com/lnbits/inventory/archive/refs/tags/v0.4.0.zip",
-            "hash": "049b51a70b2029dbbd4afb57bb471297a89b846f83b79388b481ee94398a0354",
+            "version": "0.4.1",
+            "archive": "https://github.com/lnbits/inventory/archive/refs/tags/v0.4.1.zip",
+            "hash": "292d0658be13bebb869821d2321e928a82f7a93b2888e6631622f23272492759",
             "min_lnbits_version": "1.7.0",
             "name": "Inventory",
             "short_description": "Shared Inventory extension",
