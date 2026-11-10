@@ -3141,9 +3141,9 @@
         {
             "id": "tabs",
             "repo": "https://github.com/lnbits/tabs",
-            "version": "0.2.0",
-            "archive": "https://github.com/lnbits/tabs/archive/refs/tags/v0.2.0.zip",
-            "hash": "9ef99af5b6150ebddb8db5a61f92012b8f0f4b03724f0c43a1eedced62c25d6d",
+            "version": "0.2.1",
+            "archive": "https://github.com/lnbits/tabs/archive/refs/tags/v0.2.1.zip",
+            "hash": "6fbc4393ea14b5e2d033e9d435d33df175f8c7a040e54c29611eb2b2ee60175a",
             "min_lnbits_version": "1.7.0",
             "name": "Tabs",
             "short_description": "A reusable merchant ledger for open balances",
