@@ -2684,6 +2684,19 @@
             "name": "Auction House",
             "short_description": "Auction digital goods and services for Bitcoin",
             "icon": "https://raw.githubusercontent.com/lnbits/auction_house/main/static/image/auction_house.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/auction_house/main/config.json",
+            "max_lnbits_version": "1.7.0"
+        },
+        {
+            "id": "auction_house",
+            "repo": "https://github.com/lnbits/auction_house",
+            "version": "1.1.1",
+            "archive": "https://github.com/lnbits/auction_house/archive/refs/tags/v1.1.1.zip",
+            "hash": "84f86e4aa96c1abab2b5e05c89ad59fe73db0c37400be3bf2175d7199015e4dd",
+            "min_lnbits_version": "1.7.0",
+            "name": "Auction House",
+            "short_description": "Auction digital goods and services for Bitcoin",
+            "icon": "https://raw.githubusercontent.com/lnbits/auction_house/main/static/image/auction_house.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/auction_house/main/config.json"
         },
         {
