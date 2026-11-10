@@ -2893,6 +2893,19 @@
             "name": "SellCoins",
             "short_description": "Sell coins for fiat",
             "icon": "https://raw.githubusercontent.com/lnbits/sellcoins/main/static/image/sellcoins.png",
+            "details_link": "https://raw.githubusercontent.com/lnbits/sellcoins/main/config.json",
+            "max_lnbits_version": "1.7.0"
+        },
+        {
+            "id": "sellcoins",
+            "repo": "https://github.com/lnbits/sellcoins",
+            "version": "0.1.1",
+            "archive": "https://github.com/lnbits/sellcoins/archive/refs/tags/v0.1.1.zip",
+            "hash": "97c9e37a730575056176cd595a6d75808b398aff5aede9401cbb23d10af22985",
+            "min_lnbits_version": "1.7.0",
+            "name": "SellCoins",
+            "short_description": "Sell coins for fiat",
+            "icon": "https://raw.githubusercontent.com/lnbits/sellcoins/main/static/image/sellcoins.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/sellcoins/main/config.json"
         },
         {
