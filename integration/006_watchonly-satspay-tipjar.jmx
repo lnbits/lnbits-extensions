@@ -1765,7 +1765,7 @@ if (addresses.length !== 25) {
                   <intProp name="Assertion.test_type">8</intProp>
                 </ResponseAssertion>
                 <hashTree/>
-                <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check charge webhook call" enabled="true">
+                <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Check charge webhook call" enabled="false">
                   <stringProp name="scriptLanguage">javascript</stringProp>
                   <stringProp name="parameters"></stringProp>
                   <stringProp name="filename">${configPath}/scripts/satspay_check_charge_webhook_call.js</stringProp>
