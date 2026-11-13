@@ -2584,9 +2584,9 @@
         {
             "id": "coinflip",
             "repo": "https://github.com/lnbits/coinflip",
-            "version": "1.2.1",
-            "archive": "https://github.com/lnbits/coinflip/archive/refs/tags/v1.2.1.zip",
-            "hash": "5a581c454d5bab2fb981d74c7e2ebcd03c35e24f23bbe9bd81c9b3ed6c867a5d",
+            "version": "1.2.2",
+            "archive": "https://github.com/lnbits/coinflip/archive/refs/tags/v1.2.2.zip",
+            "hash": "118661d6d2ec05803c4dfb88cb927799ac4cfa2dc8b814e4113a95323b99690e",
             "min_lnbits_version": "1.7.0",
             "name": "Coinflip",
             "short_description": "Bet sats on coinflips",
