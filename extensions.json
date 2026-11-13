@@ -2415,13 +2415,13 @@
             "id": "fossa",
             "repo": "https://github.com/lnbits/fossa_extension",
             "name": "FOSSA",
-            "version": "1.4.1",
+            "version": "1.4.2",
             "min_lnbits_version": "1.7.0",
             "short_description": "Bitcoin ATMs",
             "icon": "https://raw.githubusercontent.com/lnbits/fossa_extension/main/static/image/fossa.png",
             "details_link": "https://raw.githubusercontent.com/lnbits/fossa_extension/main/config.json",
-            "archive": "https://github.com/lnbits/fossa_extension/archive/refs/tags/v1.4.1.zip",
-            "hash": "97cd21b385b8de8247c25d9792b6fcf25ec23ba9f9c43aa8904d7ac4da638bc1"
+            "archive": "https://github.com/lnbits/fossa_extension/archive/refs/tags/v1.4.2.zip",
+            "hash": "07b48b7c7c2e901d607427c12f2b9d2e23d8da1ebc1431b945b1ea9940ed7ba6"
         },
         {
             "id": "lnpos",
