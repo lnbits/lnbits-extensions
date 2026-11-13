@@ -2031,12 +2031,12 @@
             "id": "scrub",
             "repo": "https://github.com/lnbits/scrub",
             "name": "Scrub",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "min_lnbits_version": "1.7.0",
             "short_description": "Pass payments to LNURLp/LNaddress",
             "icon": "https://github.com/lnbits/scrub/raw/main/static/image/scrub.png",
-            "archive": "https://github.com/lnbits/scrub/archive/refs/tags/v1.2.1.zip",
-            "hash": "412454d6dc9db4b325c0994e5715cbc6da2bb099285bcf7efbdb847443504324",
+            "archive": "https://github.com/lnbits/scrub/archive/refs/tags/v1.2.2.zip",
+            "hash": "baaf32e6fb5265b9b676efc106e9681b70c4946a94c3e52720a02b455e58bc59",
             "details_link": "https://raw.githubusercontent.com/lnbits/scrub/main/config.json"
         },
         {
