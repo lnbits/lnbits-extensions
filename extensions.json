@@ -2764,9 +2764,9 @@
         {
             "id": "myextension",
             "repo": "https://github.com/lnbits/myextension",
-            "version": "0.1.0",
-            "archive": "https://github.com/lnbits/myextension/archive/refs/tags/v0.1.0.zip",
-            "hash": "dd898ec4c5d56dfd8cabb1120c0a75025a1acddf1a26da647a8c7770ec1262cd",
+            "version": "0.1.1",
+            "archive": "https://github.com/lnbits/myextension/archive/refs/tags/v0.1.1.zip",
+            "hash": "c6f65a14bfcc0889e3369258a554f8c5fb8471b009bf8ed04d6bc01a12fdd16e",
             "min_lnbits_version": "1.7.0",
             "name": "MyExtension",
             "short_description": "Minimal extension to build on",
