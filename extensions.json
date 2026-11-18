@@ -290,6 +290,16 @@
             "archive": "https://github.com/lnbits/jukebox/archive/refs/tags/v1.1.1.zip",
             "hash": "a6ac28a964f65c41c87935b058025faf55638ec5207b3eefdf1f983ba94b9840"
         },
+         {
+            "id": "laisee",
+            "repo": "https://github.com/liongrass/laisee_extension",
+            "name": "Laisee",
+            "version": "0.7",
+            "short_description": "Little red envelopes with money: Lightning Laisee.",
+            "icon": "https://raw.githubusercontent.com/Liongrass/laisee_extension/a8206fe479f7d4075f2e53b09ecb047169b1a834/assets/icon.png",
+            "archive": "https://github.com/Liongrass/laisee_extension/archive/refs/tags/v0.7.zip",
+            "hash": "6457798f6a90b96fd1306faf896b92aa66671548aaa9de1d3e87fad988b97367"
+        },
         {
             "id": "lnticket",
             "repo": "https://github.com/lnbits/lnticket",
