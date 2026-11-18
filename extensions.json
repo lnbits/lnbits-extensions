@@ -1722,6 +1722,18 @@
             "hash": "b3ff7a2d5d995eeea2e0d6862bfd2c864aa679d7ee3ab9c6d2425628cd6d9f7b"
         },
         {
+            "id": "pocketmoney",
+            "repo": "https://github.com/TrezorHannes/pocketmoney",
+            "name": "PocketMoney",
+            "version": "0.1.4",
+            "min_lnbits_version": "0.12.0",
+            "short_description": "Recurring allowances and scheduled batch disbursements in any currency",
+            "icon": "https://raw.githubusercontent.com/TrezorHannes/pocketmoney/main/static/image/tile.png",
+            "archive": "https://github.com/TrezorHannes/pocketmoney/archive/refs/tags/v0.1.4.zip",
+            "hash": "4787e7a0a1962b3c9216b967791b13a60b6f6f69133b18a19a34c46c289c1a77",
+            "details_link": "https://raw.githubusercontent.com/TrezorHannes/pocketmoney/main/config.json"
+        },
+        {
             "id": "satspay",
             "repo": "https://github.com/lnbits/satspay",
             "name": "SatsPay Server",
